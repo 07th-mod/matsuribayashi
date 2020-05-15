@@ -190,10 +190,10 @@
 	OutputLine(NULL, "「ご苦労さん！",
 		   NULL, "\"Good work, everyone!", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_shitsu2003", 128, 64);
-	OutputLine(NULL, "　所轄署は１５分くれることになってる。秒で制圧しろッ！！",
+	OutputLine(NULL, "　所轄署は１５分くれることになってる。",
 		   NULL, " The local police have given us fifteen minutes to wrap this up, but I'm only giving you a few seconds!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
-	OutputLine(NULL, "　ひとりたりとも逃がすなッ！",
+	PlaySE(4, "S20/00/VTK2_shitsu2003_1", 128, 64);
+	OutputLine(NULL, "秒で制圧しろッ！！　ひとりたりとも逃がすなッ！",
 		   NULL, " Don't let a single person escape!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_shitsu2004", 128, 64);
 	OutputLine(NULL, "　ターゲットの１人は外交官だ。",
@@ -212,10 +212,8 @@
 	PlaySE(4, "ps3/s20/00/vtk2_niimi2003", 128, 64);
 	OutputLine(NULL, "「外交官特権で地元暴力団と癒着している外道どもだ。",
 		   NULL, "\"They're dirtbags who hide under diplomatic immunity to deal with the local gangsters.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ヤクで荒稼ぎし、借金のカタにはめて人身売買にまで手を染めてやがる。",
 		   NULL, " They launder money from drug dealing and force people into the sex trade to pay off high interest debts.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "現地大使館の話じゃ被害者には１０代未満の少女まで含まれてる。」",
 		   NULL, " According to the local embassy, some of the victims are younger than teenagers.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -326,7 +324,7 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "G_Tactics", 120, 0 );
 
-	PlaySE(4, "ps3/s20/12/441100022", 128, 64);
+	PlaySE(4, "ps3/s20/13/vtk2_akasaka2001", 128, 64);
 	OutputLine(NULL, "「……赤坂了解。",
 		   NULL, "\"This is Akasaka. I copy.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/13/vtk2_akasaka2002", 128, 64);
@@ -354,13 +352,12 @@
 		   NULL, "When he got to the entrance of the underground club, a bouncer with a heavy foreign accent stopped him.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_guarda2001", 128, 64);
 	OutputLine(NULL, "「ココ、",
 		   NULL, "\"This place,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "会員制。",
 		   NULL, " members only.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_guarda2002", 128, 64);
@@ -369,12 +366,11 @@
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "会員証ある？」",
 		   NULL, " have membership card?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2003", 128, 64);
 	OutputLine(NULL, "「…………………。」",
 		   NULL, "\".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -398,7 +394,7 @@
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_niimi2012", 128, 64);
 	OutputLine(NULL, "「……赤坂さん、地上護衛突破。",
 		   NULL, "\"Akasaka-san passed the bouncer at the entrance.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_niimi2013", 128, 64);
@@ -427,7 +423,7 @@
 		   NULL, " May I see your membership card?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2004", 128, 64);
 	OutputLine(NULL, "「…………………。」",
 		   NULL, "\"............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -497,7 +493,7 @@
 		   NULL, "Immediately after that, the lock on the door opened up.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_guardb2003", 128, 64);
 	OutputLine(NULL, "「お待たせしました。",
 		   NULL, "\"Thank you for waiting.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_guardb2004", 128, 64);
@@ -559,7 +555,7 @@
 		   NULL, "Akasaka was the only one who could do that.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s20/12/441100022", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_kano2005", 128, 64);
 	OutputLine(NULL, "「……赤坂。",
 		   NULL, "\"This is Akasaka.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_kano2006", 128, 64);
@@ -573,6 +569,7 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "Rain", 120, 0 );
 
+	PlaySE(4, "S20/00/VTK2_shitsu2012", 128, 64);
 	OutputLine(NULL, "『作戦開始ッ！！！』",
 		   NULL, "\"GO, GO, GO!!!\"", Line_Normal);
 	ClearMessage();
@@ -748,7 +745,7 @@
 		   NULL, "\"...This is Akasaka. I'm going in.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_kano2007", 128, 64);
 	OutputLine(NULL, "「ま、待て！！",
 		   NULL, "\"W-Wait!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_kano2008", 128, 64);
@@ -1071,12 +1068,11 @@
 	PlaySE(4, "ps3/s20/00/vtk2_gaiko2006", 128, 64);
 	OutputLine(NULL, "「これ、外交問題になります！",
 		   NULL, "\"This will be an international incident!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_gaiko2007", 128, 64);
 	OutputLine(NULL, "　大使館へ連絡させてくだ」",
 		   NULL, " I will be calling the embas-\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
 	Wait( 600 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「おあああああぁッ！！！！」",
 		   NULL, " \"Ohhahhhhhhhh!!!!\"", Line_ContinueAfterTyping);
 
@@ -1147,7 +1143,7 @@
 		   NULL, "\"Haa...haahhh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s20/12/441100022", 128, 64);
+	PlaySE(4, "ps3/s20/13/vtk2_akasaka2011", 128, 64);
 	OutputLine(NULL, "「……赤坂。",
 		   NULL, "\"This is Akasaka.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/13/vtk2_akasaka2012", 128, 64);
@@ -1330,7 +1326,7 @@
 		   NULL, " The local police will get here quickly!!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s20/12/441100022", 128, 64);
+	PlaySE(4, "ps3/s20/13/vtk2_akasaka2018", 128, 64);
 	OutputLine(NULL, "「……赤坂了解。",
 		   NULL, "\"This is Akasaka. Understood.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/13/vtk2_akasaka2019", 128, 64);
@@ -1485,20 +1481,20 @@
 
 	DrawSceneWithMask( "Jimu2", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "ps3/s20/00/monkaa44001", 128, 64);
+	PlaySE(4, "ps3/s20/00/VTK2_monkaA2001", 128, 64);
 	OutputLine(NULL, "「……赤坂さんって、警察に勤めてるって噂だぜ…？」",
 		   NULL, "\"I heard Akasaka-san works at the police department.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/VTK2_monkaB2001", 128, 64);
 	OutputLine(NULL, "「マジかよ…。",
 		   NULL, "\"Really?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/VTK2_monkaB2002", 128, 64);
 	OutputLine(NULL, "あんな人が警官やってるなら、俺は悪いことする気なんかおきねぇぜ…。」",
 		   NULL, " If someone like him is a police officer, I don't want to do anything bad...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s20/00/monkaa44002", 128, 64);
+	PlaySE(4, "ps3/s20/00/VTK2_monkaC2001", 128, 64);
 	OutputLine(NULL, "「しかし、……赤坂さんも集中力がすげぇよな。",
 		   NULL, "\"Still... his concentration sure is amazing.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_monkac2002", 128, 64);
@@ -1571,39 +1567,41 @@
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaA2002", 128, 64);
 	OutputLine(NULL, "「噂に聞いたんだけどよ…。",
 		   NULL, "\"The rumors say", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaA2003", 128, 64);
 	OutputLine(NULL, "あの人、奥さん死んじゃってるらしいんだよ。",
 		   NULL, " that his wife is dead.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaA2004", 128, 64);
 	OutputLine(NULL, "それを忘れるために空手を始めたって噂だぜ。」",
 		   NULL, " Supposedly, he does karate to forget about that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_monkab2003", 128, 64);
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"Really?", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/00/vtk2_monkab2004", 128, 64);
 	OutputLine(NULL, "　俺が聞いた話は違うぜ。",
 		   NULL, " That's different from what I heard.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/00/vtk2_monkab2005", 128, 64);
 	OutputLine(NULL, "…任務中に、女の子を救えなかったとか何とかで、それで自分の無力さを痛感したとか何とか…。」",
 		   NULL, " I heard he couldn't save a girl on the job, leading him to realize his weaknesses, or something like that...\"", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "Jimu1", "maskleft", 1, 0, 300 );
 
-	PlaySE(4, "ps3/s20/13/441300050", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2020", 128, 64);
 	OutputLine(NULL, "「………おい、聞こえてるぞ。",
 		   NULL, "\"...Hey, I can hear you.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2021", 128, 64);
 	OutputLine(NULL, "人の噂話なんかしてないで稽古をしろ。」",
 		   NULL, " Quit talking about other people and train.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaA2005", 128, 64);
+	PlaySE(5, "ps3/S20/00/VTK2_monkaB2006", 128, 64);
+	PlaySE(6, "ps3/S20/00/VTK2_monkaC2003", 128, 64);
 	OutputLine(NULL, "「「「お、押忍ッ！！」」」",
 		   NULL, "\"\"\"Yes, sir!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -1614,15 +1612,15 @@
 		   NULL, " Somebody's watch was letting them know it was noon.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaC2004", 128, 64);
 	OutputLine(NULL, "「あ、赤坂さん。",
 		   NULL, "\"Akasaka-san, we're going to get some lunch.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/00/VTK2_monkaC2005", 128, 64);
 	OutputLine(NULL, "俺たち、弁当買ってきますけど、赤坂さんのも買って来ましょうか？」",
 		   NULL, " Can we get you something too?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s20/13/441300052", 128, 64);
+	PlaySE(4, "ps3/s20/13/vtk2_akasaka2022", 128, 64);
 	OutputLine(NULL, "「………助かる。",
 		   NULL, "\"......Sure.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/13/vtk2_akasaka2023", 128, 64);
@@ -1644,10 +1642,10 @@
 		   NULL, "When they left, silence filled the building.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2025", 128, 64);
 	OutputLine(NULL, "「…クソ。",
 		   NULL, "\"...Shit.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2026", 128, 64);
 	OutputLine(NULL, "人の話なんかしやがるから、集中が途切れちまったじゃないか。」",
 		   NULL, " My focus dissipated because they were talking about me.\"", Line_Normal);
 	ClearMessage();
@@ -1969,25 +1967,23 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	PlaySE(4, "ps3/s20/13/441300056", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2027", 128, 64);
 	OutputLine(NULL, "「……もう一度…。",
 		   NULL, "\"...Please...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2028", 128, 64);
 	OutputLine(NULL, "もう一度、あの時に戻らせてくれ…。",
 		   NULL, " Please give me another chance to go back to that time.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2029", 128, 64);
 	OutputLine(NULL, "そうしたら、",
 		   NULL, " I swear,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……今度こそ俺は、",
 		   NULL, " that this time,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "二人を救う…ッ！！」",
 		   NULL, " I will save the both of them!!\"", Line_Normal);
 	ClearMessage();
@@ -2013,10 +2009,10 @@
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
 	DrawScene( "Fure2", 3000 );
 
-	PlaySE(4, "ps3/s20/12/441100016", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2021", 128, 64);
 	OutputLine(NULL, "「……ありがとう、赤坂。",
 		   NULL, "\"...Thank you, Akasaka.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2022", 128, 64);
 	OutputLine(NULL, "…あなたの思いが私たちにはとても必要だった。」",
 		   NULL, " ...We needed your thoughts.\"", Line_Normal);
 	ClearMessage();
@@ -2029,19 +2025,18 @@
 		   NULL, "Akasaka felt like a stranger was talking to him.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s20/12/441100018", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2023", 128, 64);
 	OutputLine(NULL, "「私たちが奇跡を願い、",
 		   NULL, "\"We must wish for a miracle,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "ps3/s20/12/441100019", 128, 64);
 	OutputLine(NULL, "……あなたも奇跡を願わなければ、奇跡は起こらない。",
 		   NULL, " and you must wish for a miracle too, otherwise a miracle will never occur.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100020", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2024", 128, 64);
 	OutputLine(NULL, "……だって、奇跡は全員が願わなかったら、起こらない。",
 		   NULL, " Unless everyone wishes for a miracle, it won't occur.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2025", 128, 64);
 	OutputLine(NULL, "双方が手を伸ばしあわなかったら、届かない。」",
 		   NULL, " Unless both sides reach out, their hands won't meet in the middle.\"", Line_Normal);
 	ClearMessage();
@@ -2057,53 +2052,52 @@
 		   NULL, " ...He felt like it was something very, very important.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s20/12/441100022", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2026", 128, 64);
 	OutputLine(NULL, "「……赤坂。",
 		   NULL, "\"...Akasaka,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2027", 128, 64);
 	OutputLine(NULL, "もし、あなたも望んでくれるなら、…あなたに奇跡を。",
 		   NULL, " if you wish for it, I'll grant you this miracle.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2028", 128, 64);
 	OutputLine(NULL, "私たちに奇跡を。",
 		   NULL, " And it'll be a miracle for us too.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100025", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2029", 128, 64);
 	OutputLine(NULL, "……それは欠けたカケラを結び合わせ、より大きな大きなカケラを生み出すきっかけになる。",
 		   NULL, " ...Joining these broken Fragments will give us the chance to create an even greater Fragment.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100026", 128, 64);
+	PlaySE(4, "ps3/S20/12/VTK2_hanyu2030", 128, 64);
 	OutputLine(NULL, "……あなたのたった一つの決意が、全員の思いや運命に大きな影響を及ぼすこともあるのだから。」",
 		   NULL, " ...Your resolve, on its own, may greatly influence everyone's fates and intentions.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s20/13/441300059", 128, 64);
+	PlaySE(4, "ps3/S20/13/VTK2_akasaka2030", 128, 64);
 	OutputLine(NULL, "「あの時に、",
 		   NULL, "\"Can you", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "ps3/s20/13/441300060", 128, 64);
 	OutputLine(NULL, "……もう一度時間を巻き戻してくれるというのか…？」",
 		   NULL, " turn back time to that day?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/12/vtk2_hanyu2031", 128, 64);
 	OutputLine(NULL, "「うぅん。",
 		   NULL, "\"No,", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/12/vtk2_hanyu2032", 128, 64);
 	OutputLine(NULL, "そんなこと、私にはできないのです。",
 		   NULL, " I can't do that.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100028", 128, 64);
+	PlaySE(4, "ps3/s20/12/vtk2_hanyu2033", 128, 64);
 	OutputLine(NULL, "……私にできるのは、気付かせることだけ。",
 		   NULL, " The only thing I can do is to let you notice.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100029", 128, 64);
+	PlaySE(4, "ps3/s20/12/vtk2_hanyu2034", 128, 64);
 	OutputLine(NULL, "……１つのカケラだけでは学べないことを、他のカケラで学んだことを、気付かせてあげるだけ。",
 		   NULL, " To let you notice that things you can't learn from one Fragment, you can learn from others.", Line_WaitForInput);
 	PlaySE(4, "ps3/s20/12/vtk2_hanyu2035", 128, 64);
 	OutputLine(NULL, "…だから、この欠けたカケラをあるべきところへ戻すだけ。",
 		   NULL, " So all you have to do is to return this broken Fragment to where it belongs.", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/12/441100031", 128, 64);
+	PlaySE(4, "ps3/s20/12/vtk2_hanyu2036", 128, 64);
 	OutputLine(NULL, "……それでもきっと大きな奇跡。",
 		   NULL, " That's a big miracle itself.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s20/12/vtk2_hanyu2037", 128, 64);
 	OutputLine(NULL, "…もっとも、その奇跡を、あなたはきっと気付かないだろうけれど。」",
 		   NULL, " Although, you probably won't even notice it.\"", Line_Normal);
 	ClearMessage();
