@@ -1,0 +1,715 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawSceneWithMask( "Sinryo_matiai1", "maskup", 1, 0, 1300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Iri_Def1+", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 1300, TRUE );
+	DisplayWindow();
+
+	PlayBGM( 0, "demo_48khz", 120, 0 );
+
+	OutputLine(NULL, "「古手さん、お待たせしました。",
+		   NULL, "\"Furude-san, thank you for waiting.", Line_WaitForInput);
+	OutputLine(NULL, "今、最後の検査を終えたところです。",
+		   NULL, " We just finished the last test.", Line_WaitForInput);
+	OutputLine(NULL, "もうすぐ戻って来ると思います。」",
+		   NULL, " She'll be back soon.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「娘が村のために役に立てばいいのですが…。」",
+		   NULL, "\"I hope she is able to help...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「とんでもない！",
+		   NULL, "\"Of course!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花さんの協力は村を救うことにもなります。",
+		   NULL, " Rika-san will help the whole village.", Line_WaitForInput);
+	OutputLine(NULL, "お陰でようやく治療方法にも目処がついてきたところです。",
+		   NULL, " I think we'll be able to come up with a treatment soon.", Line_WaitForInput);
+	OutputLine(NULL, "仕組みはまだ調べているところですが、梨花さんの存在がやはり、村人にとってとても大切なものであることがわかってきました。",
+		   NULL, " We're still looking into the structure, but we're finding out how important Rika-san is to the villagers.", Line_WaitForInput);
+	OutputLine(NULL, "レベルの進んでしまった一般感染者は、自力ではそのレベルを下げて症状を安定させるのが非常に困難です。",
+		   NULL, " People with more serious conditions can't stabilize themselves.", Line_WaitForInput);
+	OutputLine(NULL, "ですが、女王感染者に接近することで脳内にある種の物質が作られることがわかっています。",
+		   NULL, " But we've found out if they get close to the queen carrier, they generate some kind of substance in their brain.", Line_WaitForInput);
+	OutputLine(NULL, "その物質には鎮静効果があり、また、進んでしまった症状のレベルを抑え回復させる力もあるようなのです。",
+		   NULL, " This substance has a calming effect, and it seems to have the power to bring their symptoms down.", Line_WaitForInput);
+	OutputLine(NULL, "この物質を処方できるようになれば、治療の強力な決め手となるでしょう。」",
+		   NULL, " If we can produce this substance, it'll end up making for a powerful treatment.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうですか。",
+		   NULL, "\"I see...", Line_WaitForInput);
+	OutputLine(NULL, "……梨花にそのような力が。」",
+		   NULL, " Rika has that kind of power...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ta_Warai+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "驚かれるには値しないのでは？",
+		   NULL, " You shouldn't be surprised.", Line_WaitForInput);
+	OutputLine(NULL, "　古手の巫女には荒れた心・鬼を鎮める神通力があると代々伝えられているんではありませんでしたっけ？",
+		   NULL, " People say that maidens of the Furude Shrine have the psychic power to calm both souls and demons, don't they?", Line_WaitForInput);
+	OutputLine(NULL, "　私たちが解明しなくても、村の数百年にわたる歴史はすでにそれを知っていたわけですわ。」",
+		   NULL, " Even before we discovered it, it was already recorded in the history of the last few hundred years.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そうですね。",
+		   NULL, "\"That's true.", Line_WaitForInput);
+	OutputLine(NULL, "……大昔の方の聡明さは、時に現代医学から見ても感心させられます。」",
+		   NULL, " ...I'm impressed with how wise people were back then.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ri_NikoA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……みー。",
+		   NULL, "\"......Meep.", Line_WaitForInput);
+	OutputLine(NULL, "検査が終わったのです。」",
+		   NULL, " The tests are all done.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「梨花、大変だったな。",
+		   NULL, "\"Rika, good work.", Line_WaitForInput);
+	OutputLine(NULL, "疲れただろう。",
+		   NULL, " You must be getting tired.", Line_WaitForInput);
+	OutputLine(NULL, "これで自動販売機でジュースを買ってきなさい。」",
+		   NULL, " Why don't you take this and go get something to drink?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……み〜！",
+		   NULL, "\"...Meep~!", Line_WaitForInput);
+	OutputLine(NULL, "　血をいっぱい抜かれたから補給なのです。」",
+		   NULL, " They took a lot of my blood, so I need to replenish.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花は神主から百円玉をもらうと、廊下へ飛び出していった。",
+		   NULL, "Rika took the 100-yen coin that was offered to her and ran out into the hallway.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 1, "Iri_Def1+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「………本当に、梨花さんの協力のお陰です。",
+		   NULL, "\"...I appreciate Rika-san's help.", Line_WaitForInput);
+	OutputLine(NULL, "彼女がこれほどまでに献身的に協力に応じてくれなければ、これほどまでに研究が進むことはありませんでした。」",
+		   NULL, " If she hadn't offered her assistance, our research wouldn't have progressed this far.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「梨花は、自分の友達もその病気に掛かっているということを気にしていて、友達のためにも協力したいと常に言っていました。",
+		   NULL, "\"Rika is very concerned about her friend with the syndrome. She said she wants to help because of her.", Line_WaitForInput);
+	OutputLine(NULL, "……どうか先生方、梨花の心意気を汲んでやってください。」",
+		   NULL, " ...Doctor, please take Rika's feelings into acount.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「もちろんです。",
+		   NULL, "\"Of course.", Line_WaitForInput);
+	OutputLine(NULL, "毎週日曜日に貴重な時間を割いていただいているのです。",
+		   NULL, " We're taking up her precious time every Sunday,", Line_WaitForInput);
+	OutputLine(NULL, "必ずや成果にして見せます。",
+		   NULL, " so we'll make sure to get to the bottom of this...", Line_WaitForInput);
+	OutputLine(NULL, "……今後も梨花さんに過酷な実験を強いることがあると思いますが、どうかお許しいただければと思います。」",
+		   NULL, " We may have to put her through some rather rough experiments, but I hope you'll understand.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ta_Def+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「彼女に危害を加えることは絶対にありませんわ。",
+		   NULL, "\"We'll never harm her in any way, though.", Line_WaitForInput);
+	OutputLine(NULL, "彼女はとてもとても大切な身なのです。",
+		   NULL, " She's such an important person.", Line_WaitForInput);
+	OutputLine(NULL, "……くす、何しろオヤシロさまの生まれ変わりなんですから。」",
+		   NULL, " ...Hee hee, she's the reincarnation of Oyashiro-sama, after all.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………大昔の村人は、どのようにしてこの病気のことを知り、",
+		   NULL, "\"......I wonder how people back then found out about this syndrome,", Line_WaitForInput);
+	OutputLine(NULL, "古手家にその女王の血が流れていることを知ったのやら…。",
+		   NULL, " and how they knew the Furude family were the descendants of the queen.", Line_WaitForInput);
+	OutputLine(NULL, "……ご先祖さまたちにはつくづく頭が下がります。」",
+		   NULL, " I'm truly impressed.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……それで、実はまた辛いご協力をお願いしなくてはなりません。",
+		   NULL, "\"By the way, there's something I have to ask you.", Line_WaitForInput);
+	OutputLine(NULL, "……彼女の脳脊髄液の採取のご許可をいただきたいのです。",
+		   NULL, " I would like to ask you for permission to collect her cerebrospinal fluid.", Line_WaitForInput);
+	OutputLine(NULL, "また、…場合によっては彼女の頭蓋に穿孔を空け、直接頭部の中を検査させていただくことになるかもしれません。」",
+		   NULL, " Also, there's a chance that we'll have to drill a hole in her skull to examine the inside of her head.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ず、頭蓋骨に穴、ですか……。」",
+		   NULL, "\"A-A hole in her skull...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「もちろん安全性には最大限注意します。",
+		   NULL, "\"Of course, we'll take every precaution.", Line_WaitForInput);
+	OutputLine(NULL, "梨花さんはたった１人しかいない女王感染者なのです。",
+		   NULL, " Rika-san is the one and only queen carrier.", Line_WaitForInput);
+	OutputLine(NULL, "間違っても危害を加えることがないよう、私どもでもっとも安全な方法を模索した上で提案させていただいています。」",
+		   NULL, " We'll make sure that she's safe. Her safety is our priority.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Warai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「もちろん、梨花ちゃんは女の子ですもの。",
+		   NULL, "\"Of course, since Rika-chan is a girl...", Line_WaitForInput);
+	OutputLine(NULL, "頭部穿孔周辺の頭髪には気を遣いますので、丸坊主にしてしまうようなことはありません。",
+		   NULL, " we won't shave her entire head.", Line_WaitForInput);
+	OutputLine(NULL, "ただ、経過を慎重に見るために、しばらく入院をしてもらうことになりますが。」",
+		   NULL, " However, we'll have to ask her to stay at the clinic a little longer so we can keep our eyes on her.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「もちろん、その間、面会謝絶ということはありません。",
+		   NULL, "\"She can still receive visitors, of course.", Line_WaitForInput);
+	OutputLine(NULL, "検査にもぜひ立ち会ってください。",
+		   NULL, " You're more than welcome to attend the examination.", Line_WaitForInput);
+	OutputLine(NULL, "お父さんが身近におられた方が梨花さんも安心するでしょう。」",
+		   NULL, " I'm sure she'll be more relaxed to have someone she knows nearby.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………その検査はどうしても必要なもので、",
+		   NULL, "\".........Do you really need to perform this examination?", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…絶対に安全なものなのですか。」",
+		   NULL, " Is it really safe?\"", Line_Normal);
+	ClearMessage();
+
+
+	OutputLine(NULL, "「脳脊椎液の採取も頭蓋穿孔も、どちらも１００％の安全を保証することはできません。",
+		   NULL, "\"I can't absolutely guarantee her safety for either collecting cerebrospinal fluid or for drilling a hole in her skull.", Line_WaitForInput);
+	OutputLine(NULL, "常に１％の危険があります。",
+		   NULL, " There's always the off chance something might go wrong.", Line_WaitForInput);
+	OutputLine(NULL, "また、梨花さんに身体的、あるいは精神的苦痛を与えるでしょう。",
+		   NULL, " Also, Rika-san may suffer from some physical and emotional discomfort.", Line_WaitForInput);
+	OutputLine(NULL, "……いくら重要な検査と言えども、ご家族の同意なしには行なえません。」",
+		   NULL, " ...Even if it's this important, we can't perform it without the parents' consent.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……………………。」",
+		   NULL, "\".............\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Def+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「梨花ちゃんには、実はもう同じ話をしていますわ。」",
+		   NULL, "\"Actually, I've already talked to Rika-chan about it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……梨花はなんと？」",
+		   NULL, "\"...What did she say?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Warai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「自分は構わないと、それはもうあっけらかんと。",
+		   NULL, "\"She said that it's fine.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす。」",
+		   NULL, " Hee hee.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…梨花さんには危険や苦痛が伴う可能性があることをもちろん充分に説明しています。",
+		   NULL, "\"I've explained to her the possibility of danger.", Line_WaitForInput);
+	OutputLine(NULL, "ですがやはり、保護者の方の承諾をいただかないわけにはいきません。」",
+		   NULL, " But we still need your consent.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………梨花は、自分のことを本当にオヤシロさまの生まれ変わりだと信じている時があります。",
+		   NULL, "\"......Sometimes, Rika truly believes that she's the reincarnation of Oyashiro-sama.", Line_WaitForInput);
+	OutputLine(NULL, "……だから、村人のために自分の身を捧げるのが、自分の義務だと思っているところがあるのかもしれません。」",
+		   NULL, " So maybe she feels obligated to sacrifice herself for the villagers.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……立派なお子さんだと思います。」",
+		   NULL, "\"...What an impressive child.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「一応、家内とも相談させてください。",
+		   NULL, "\"Could you please let me talk to my wife?", Line_WaitForInput);
+	OutputLine(NULL, "納得はしてくれてるのですが、…やはりことがことなので、話をしないわけにもいかない。」",
+		   NULL, " She understands the situation, but I still need to explain it to her.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Iri_Def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇ、ご家族の同意は不可欠だと思います。",
+		   NULL, "\"Sure, of course.", Line_WaitForInput);
+	OutputLine(NULL, "よくご相談なさってください。」",
+		   NULL, " Please talk it over with her.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_matiai2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「その検査は、病気の根絶のために重要な意味があるのですね…？」",
+		   NULL, "\"So this examination is an extremely important step in the process of stamping out the syndrome, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢症候群のベールを剥ぐ決定的なものになるでしょう。」",
+		   NULL, " It will solve the mysteries of Hinamizawa Syndrome for sure.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ta_Def+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「決定的なものの第一歩に、ですわね。」",
+		   NULL, "\"At least, it'll be the first step.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_majime+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……すでにご説明しておりますように、…女王感染者に万一のことがあった場合、感染コミュニティに致命的な崩壊をもたらす危険性が予見されています。",
+		   NULL, "\"......As I already explained, if something happens to the queen carrier, the whole community here may be in danger.", Line_WaitForInput);
+	OutputLine(NULL, "…平たく申し上げると、村人全員が突如として末期発症を起こす可能性もあるということです。」",
+		   NULL, " In other words, it's possible the whole village could end up with terminal symptoms.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "急性発症の平均から見て、女王感染者死亡から４８時間以内に全感染者が末期発症を起こします。",
+		   NULL, " According to the studies, within 48 hours of the death of the queen carrier, everyone with the disease will become dangerously sick.", Line_WaitForInput);
+	OutputLine(NULL, "それだけは絶対に防がなくてはなりません。」",
+		   NULL, " We must prevent that from happening no matter what.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………梨花が死ぬようなことがあれば、…村中が発狂し、恐ろしいことに…。」",
+		   NULL, "\"...If something happens to Rika, the whole village will go insane...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "それを防ぐのも私たちの役目です。",
+		   NULL, " It's our job to prevent that.", Line_WaitForInput);
+	OutputLine(NULL, "そのために危険を冒さなければならないのはとても皮肉なことですが、",
+		   NULL, " It might seem ironic that we have to put your daughter in danger...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……根絶のためには避けて通れない道だと思っています。」",
+		   NULL, " but this is the only way to stamp out the syndrome.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……入江先生。",
+		   NULL, "\"...Dr. Irie,", Line_WaitForInput);
+	OutputLine(NULL, "……必ず、その検査を成功させていただけますか…？」",
+		   NULL, " I hope you'll succeed in that examination.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 1, "Ta_Warai+", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, FALSE );
+	ChangeBustshot( 2, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ですから、医学には１００％や絶対などという、」",
+		   NULL, "\"As I said, there are no guarantees in medicine...\"", Line_ContinueAfterTyping);
+	Wait( 600 );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「えぇ。」",
+		   NULL, " \"Sure.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　曖昧な言い方をする鷹野を制して、入江が真剣な表情で頷きながら言った。",
+		   NULL, "Irie answered with a nod, interrupting Takano's vague response.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私、入江京介が命をかけて、必ずや。",
+		   NULL, "\"I will succeed.", Line_WaitForInput);
+	OutputLine(NULL, "梨花さんを救います。",
+		   NULL, " I'll save Rika-san", Line_WaitForInput);
+	OutputLine(NULL, "村人も救います。",
+		   NULL, " and the villagers, too.", Line_WaitForInput);
+	OutputLine(NULL, "絶対にです。」",
+		   NULL, " I promise.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……わかりました。",
+		   NULL, "\"...Okay.", Line_WaitForInput);
+	OutputLine(NULL, "家内と相談させてください。",
+		   NULL, " I'll talk to my wife.", Line_WaitForInput);
+	OutputLine(NULL, "…その上で後日、改めてお返事させていただきます。」",
+		   NULL, " I'll let you know our decision.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "よろしくお願いいたします。」",
+		   NULL, " Thank you.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	PlaySE( 0, "s_M_Door8k", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Sinryo_matiai1", 1000 );
+
+	DisableWindow();
+	DrawBustshot( 0, "Ta_Akuwarai+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "「くすくすくす、",
+		   NULL, "\"Hee hee hee hee,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "あっはははははははははは…。」",
+		   NULL, " ahhhhhhahahaahahahahahahaha...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花たちが帰った後、鷹野は奇妙な声で笑い出した。",
+		   NULL, "After Rika and her father left, Takano started to laugh.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「どうしましたか？",
+		   NULL, "\"What is it?", Line_WaitForInput);
+	OutputLine(NULL, "　何か愉快なことでも…？」",
+		   NULL, " What's so funny?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Warai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くすくす…。",
+		   NULL, "\"Hee hee...", Line_WaitForInput);
+	OutputLine(NULL, "いえいえ。",
+		   NULL, " Oh, nothing.", Line_WaitForInput);
+	OutputLine(NULL, "………患者とご家族に律儀に事前承諾を取られていたのが、何だか可笑しくって。」",
+		   NULL, " I just thought it was amusing to get permission from both the patient and her parents beforehand.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……梨花ちゃんには、本来無用の苦痛を強いています。",
+		   NULL, "\"...Rika-chan is going through something she doesn't have to.", Line_WaitForInput);
+	OutputLine(NULL, "それくらいは最低限の礼儀だと思いまして。",
+		   NULL, " I thought I should as a courtesy......", Line_WaitForInput);
+	OutputLine(NULL, "…………去年の男も、正常な状態にあれば、事前承諾を取りたかったところです。」",
+		   NULL, " I would have gotten consent from the man last year, had he been in a normal condition.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「入江所長は、ここの研究を始められてからずっと、罪の意識に苛まれているのではありません？」",
+		   NULL, "\"Are you being tormented with guilt ever since you started your research here?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………それはどういう意味ですか？」",
+		   NULL, "\"......What do you mean?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野がからかうような口調なのはいつものことだが、…少しだけその度が過ぎたように感じ、入江は不快感を示しながら足を止める。",
+		   NULL, "This type of teasing was normal from Takano, but maybe she had gone a little too far. Irie made it clear how displeased he was to hear that.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Def+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「雛見沢症候群の研究は、生きた検体を捌くことでしか進められない。",
+		   NULL, "\"You can only research Hinamizawa Syndrome by using living beings.", Line_WaitForInput);
+	OutputLine(NULL, "それがわかってなお、あなたはこの研究を進めることに罪の意識を感じている。」",
+		   NULL, " You feel guilty continuing your work because of that.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……罪の意識は必要です。",
+		   NULL, "\"...Those guilty feelings are a necessity.", Line_WaitForInput);
+	OutputLine(NULL, "殺人であれ解剖であれ、相手に死を強いる点で変わりません。",
+		   NULL, " Whether it's a murder or dissection, the fact that you're taking someone's life is the same.", Line_WaitForInput);
+	OutputLine(NULL, "私たちはその罪を受け止めてなお、その死を無駄にしないために最大限の努力と研究を重ねなくてはなりません。」",
+		   NULL, " We have to accept that, and at the same time, devote ourselves to our research.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
+	DisplayWindow();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
+
+	OutputLine(NULL, "「ご高説ですわね。",
+		   NULL, "\"That's an extremely impressive theory you have there.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす。",
+		   NULL, " Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "……では入江所長？",
+		   NULL, " Then, Dr. Irie,", Line_WaitForInput);
+	OutputLine(NULL, "　あなたはこれまで、人の脳を切り取ることに何度の事前承諾を取られたというんですの？」",
+		   NULL, " how many times have you gotten consent before you cut into people's brains?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………………………ぅ。」",
+		   NULL, "\"...............\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それは鷹野には知られていないと思った過去。",
+		   NULL, "...Irie didn't think Takano knew about that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あなたの、人の罪は脳の疾患によるものという独り善がりで、一体何人の患者が事前承諾なく脳を切除されたんですの？",
+		   NULL, "\"How many brains have you cut up without consent, using your selfish theory that people commit crimes due to mental disorders as your excuse?", Line_WaitForInput);
+	OutputLine(NULL, "　くすくす。」",
+		   NULL, " Hee hee hee.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………それは、」",
+		   NULL, "\".........That is...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Warai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「常識は時代で変わる。",
+		   NULL, "\"Common sense changes with time.", Line_WaitForInput);
+	OutputLine(NULL, "当時は医者が治療をいちいち説明することなどなかったし、事前承諾なんて大したものではなかった。",
+		   NULL, " Back then, doctors didn't need to explain anything or get consent beforehand.", Line_WaitForInput);
+	OutputLine(NULL, "だから、当時のことは気にしなくていいんじゃないですかしら？",
+		   NULL, " So I don't think you have to be concerned about the past.", Line_WaitForInput);
+	OutputLine(NULL, "　今は倫理上問題があっても、当時は問題なかった。",
+		   NULL, " It'd be a problem now, but it was okay back then.", Line_WaitForInput);
+	OutputLine(NULL, "ならばいいじゃありませんの。",
+		   NULL, " So that's fine.", Line_WaitForInput);
+	OutputLine(NULL, "くすくすくす。",
+		   NULL, " Hee hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "……でも、それに罪を感じているから、梨花ちゃんや、あの男にさえも、事前承諾が取りたかった？」",
+		   NULL, " But you feel guilty, and that's why you want to get consent from Rika-chan beforehand, and why you wanted to get it from him, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「それは誤解です…。",
+		   NULL, "\"That's not true.", Line_WaitForInput);
+	OutputLine(NULL, "そもそも治療と解剖では患者、」",
+		   NULL, " In the first place, the treatment and dissection are...\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ねぇ坊や。",
+		   NULL, "\"Listen, boy.", Line_WaitForInput);
+	OutputLine(NULL, "あなたが欲しいのは事前承諾という名の免罪符。",
+		   NULL, " What you want is the stamp of forgiveness known as prior consent.", Line_WaitForInput);
+	OutputLine(NULL, "そうでしょう？",
+		   NULL, " Right?", Line_WaitForInput);
+	OutputLine(NULL, "　あなたが欲しいのは、過去の罪を贖いたいという心を満たすだけの欺瞞、そのためだけの免罪符。",
+		   NULL, " What you want is some stamp of forgiveness, some deception to fill your heart so you can atone for your past sins.", Line_WaitForInput);
+	OutputLine(NULL, "後悔しているならば二度と脳に関わらなければいい。",
+		   NULL, " If you regretted what you've done, then you'd never get involved with brains again.", Line_WaitForInput);
+	OutputLine(NULL, "なのに、だらだらと後悔しながらあなたはいつまでも未練がましくこの世界で脳に関わっている。",
+		   NULL, " Yet you're dragging regrets behind as you continue to deal with brains, guilty all the while.", Line_WaitForInput);
+	OutputLine(NULL, "その罪の意識が本物なら、あなたはあの時、所長就任の話を断ればよかったはず。",
+		   NULL, " If you truly acknowledged your actions as a sin, then you would've refused to accept the appointment as director.", Line_WaitForInput);
+	OutputLine(NULL, "そうでしょう、坊や？」",
+		   NULL, " Isn't that right, boy?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_matiai2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「………とても不快です。",
+		   NULL, "\"......I don't need to listen to this.", Line_WaitForInput);
+	OutputLine(NULL, "私は失礼させていただきます。」",
+		   NULL, " Excuse me.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「聞きなさい。",
+		   NULL, "\"You must listen.", Line_WaitForInput);
+	OutputLine(NULL, "医学は常にその時代の倫理や価値観との戦いから勝ち取られるの。",
+		   NULL, " The field of medicine is constantly won in battles against that era's ethics and social values.", Line_WaitForInput);
+	OutputLine(NULL, "かつて高野先生が雛見沢症候群の存在を予見した時、その時代の権威たちは自分たちの無知を棚に上げその先見性を嘲笑った。",
+		   NULL, " When Dr. Takano discovered the existence of the syndrome, the people in power at the time just disregarded their own ignorance and scoffed at his foresight.", Line_WaitForInput);
+	OutputLine(NULL, "でも病に倒れる直前まで研究を捨てなかったわ。",
+		   NULL, " But he didn't stop researching until he collapsed.", Line_WaitForInput);
+	OutputLine(NULL, "必ず自分がいつか評価される日が来ると信じて。",
+		   NULL, " He believed that someday he'd be acknowledged.", Line_WaitForInput);
+	OutputLine(NULL, "そしてその日が自分の死後であったとしても、必ず来ると信じて！",
+		   NULL, " Even if it was after he died, he still believed in it!", Line_WaitForInput);
+	OutputLine(NULL, "　それは強い信念と揺らぎのない鉄の意思があるから成し遂げられること。",
+		   NULL, " He could do that only because of how strong his conviction was.", Line_WaitForInput);
+	OutputLine(NULL, "そうでなければ時代の無理解に高野先生は屈していたはず。",
+		   NULL, " If it wasn't for that, he would have given up.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　研究はね、意思の力で成し遂げるのよ。",
+		   NULL, "A strong will is what keeps research going.", Line_WaitForInput);
+	OutputLine(NULL, "絶対的に強固な意志だけが、結果を紡ぎだす！",
+		   NULL, " Only the most determined can achieve a result!", Line_WaitForInput);
+	OutputLine(NULL, "　でもあなたにはそれがない。",
+		   NULL, " But you don't have that.", Line_WaitForInput);
+	OutputLine(NULL, "あなたは自分の実績を、誇るべきか恥じるべきかすら自分で決めかねている臆病者よ。",
+		   NULL, " You're a coward who still can't decide if he should be proud or ashamed of his achievements.", Line_WaitForInput);
+	OutputLine(NULL, "そんな中途半端な覚悟で、よくこのような研究の所長を引き受けられたものね…！",
+		   NULL, " How could you accept the position of director with such half-hearted determination...?!", Line_WaitForInput);
+	OutputLine(NULL, "　血塗られた両手を、さらに血に浸すことでしか明かせぬ研究だと、最初からわかっていたはずなのに！！」",
+		   NULL, " You knew from the beginning that this research couldn't be brought to fruition without adding further blood to your already-stained hands!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Ta_Def+", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「……………………否定はしません。",
+		   NULL, "\".........I don't know what to say.", Line_WaitForInput);
+	OutputLine(NULL, "私は、中途半端かもしれない。」",
+		   NULL, " Maybe I am half-hearted.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ならば所長を辞任なさっては？",
+		   NULL, "\"Then why don't you resign?", Line_WaitForInput);
+	OutputLine(NULL, "　守秘義務は残るでしょうけど、あなたはこれ以上、罪の意識に苛まれなくて済むでしょう。",
+		   NULL, " You'll still have the obligation to keep things secret, but at least you won't have to feel guilty anymore.", Line_WaitForInput);
+	OutputLine(NULL, "私にとってあなたはパートナーである以前に、クライアントが要求した人事上の駒でしかない。",
+		   NULL, " You may be my partner, but you're also a simply a person who was requested by my client.", Line_WaitForInput);
+	OutputLine(NULL, "こうして研究機関が成立した今、あなたの存在はもう重要ではないの。",
+		   NULL, " Now that this research institute is fully developed, you aren't needed.", Line_WaitForInput);
+	OutputLine(NULL, "…しかもその上、研究に対する覚悟が足りず、研究のパートナーとしても役立たずなら、あなたは無能の用無しよ。",
+		   NULL, " If you don't even have the necessary determination to do research to begin with, you're an especially useless partner.", Line_WaitForInput);
+	OutputLine(NULL, "私は一人でも研究をやめない。",
+		   NULL, " I'll never quit researching.", Line_WaitForInput);
+	OutputLine(NULL, "どんな罪も後悔も恐れない。",
+		   NULL, " I'm not afraid of guilt or regret.", Line_WaitForInput);
+	OutputLine(NULL, "強固な意志だけが未来を紡ぐ。",
+		   NULL, " My conviction is what will take me to the future.", Line_WaitForInput);
+	OutputLine(NULL, "…かつて高野先生が高潔な精神で成し遂げたように、私もたったひとりでも成し遂げてみせる…！」",
+		   NULL, " Just like Dr. Takano succeeded, I'll succeed alone!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………………立派な決意だと思います。",
+		   NULL, "\"......That's impressive.", Line_WaitForInput);
+	OutputLine(NULL, "…ですが、私にもあなたに及ばないにしても、わずかの決意があってここへ来ています。",
+		   NULL, " However, though my determination may not come close to yours, I too have a will, and that's why I'm here...", Line_WaitForInput);
+	OutputLine(NULL, "…そして、あなたの言う通り、私の手はすでに血に塗れています。",
+		   NULL, " As you said, I already have blood on my hands.", Line_WaitForInput);
+	OutputLine(NULL, "そして雛見沢に来て、さらに血に浸しました。",
+		   NULL, " After I arrived in Hinamizawa, they got even bloodier.", Line_WaitForInput);
+	OutputLine(NULL, "……だから、その責任を全うするまでは、私は逃げることはできません。",
+		   NULL, " ...So I can't just run from my responsibilities.", Line_WaitForInput);
+	OutputLine(NULL, "……相変わらず私は罪を清算できず苛まれ続けるでしょう。",
+		   NULL, " ...I'll probably continue to be tormented by my unatoned sins.", Line_WaitForInput);
+	OutputLine(NULL, "でも、逃げない。",
+		   NULL, " But I won't run.", Line_WaitForInput);
+	OutputLine(NULL, "…必ず雛見沢症候群の研究を決着させます。",
+		   NULL, " I'll get to the bottom of Hinamizawa Syndrome.", Line_WaitForInput);
+	OutputLine(NULL, "それだけが、この研究に命を捧げてくださった方、",
+		   NULL, " That's the least I can do for all the people who gave their lives for this research", Line_WaitForInput);
+	OutputLine(NULL, "そしてこれから捧げることになるかもしれない方への最後の誠意だと思っています。」",
+		   NULL, " and also for those who will give their lives from now on.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いつの間にか入江の表情にはある種の決意が浮かんでいた。",
+		   NULL, "Irie wore a determined look on his face.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ほんの少し前まで、鷹野に思い出したくない過去を指摘されていた時のうろたえた様子とは違う。",
+		   NULL, "He appeared different from even a moment before, when he was baffled by Takano having brought up those painful memories.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しばらくの間、その意思の強さを目で示した後、入江は踵を返す。",
+		   NULL, "For a short while, Irie's eyes displayed his strong will, and then he turned around.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_matiai2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……恐らく、梨花ちゃんの検査は承諾が取れるでしょう。",
+		   NULL, "\"...We'll probably get consent for Rika-chan's examination.", Line_WaitForInput);
+	OutputLine(NULL, "準備をお願いします。」",
+		   NULL, " So please start preparing for it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇ、心得ましたわ。",
+		   NULL, "\"Yes, I understand...", Line_WaitForInput);
+	OutputLine(NULL, "………所長。」",
+		   NULL, " Director.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　翌週、その承諾は得られた。",
+		   NULL, "They got their consent the following week.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

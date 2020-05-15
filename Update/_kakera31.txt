@@ -1,0 +1,387 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 1000 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "white", "maskup", 1, 0, 300 );
+	DrawScene( "Oki_G1", 400 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「……そうですか。",
+		   NULL, "\"...I see.", Line_WaitForInput);
+	OutputLine(NULL, "…いえいえ届けなんていりません。",
+		   NULL, " No, you don't need to do that.", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんは我が雛見沢ファイターズの頼もしい選手なんですからね。",
+		   NULL, " You're a promising member of the Hinamizawa Fighters.", Line_WaitForInput);
+	OutputLine(NULL, "席はちゃんと開けてあります。",
+		   NULL, " We'll save your spot.", Line_WaitForInput);
+	OutputLine(NULL, "いつでも戻ってきていいんですからね。」",
+		   NULL, " So you can come back anytime, okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Sato_Komaru", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「わかりません……。",
+		   NULL, "\"Ahh... I don't know about that though...", Line_WaitForInput);
+	OutputLine(NULL, "当分は戻って来れないと思うので、一度、退部にしてもらった方がいいと思いまして…。」",
+		   NULL, " I have no idea when I can come back, so I thought I should resign at least for now...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんが、雛見沢ファイターズを辞めたいと言い出した。",
+		   NULL, "Satoshi-kun says he wants to quit the Hinamizawa Fighters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……悟史くんと沙都子ちゃんを取り巻く環境については、私も事情を知っていたので、",
+		   NULL, "I know very well of Satoshi-kun and Satoko-chan's situation,", Line_WaitForInput);
+	OutputLine(NULL, "…こういうことを言い出すのもあるかもしれないとは思っていた…。",
+		   NULL, " so I was expecting that he might say this.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　沙都子ちゃんと叔母の仲違いはもはや致命的なものらしく、それはもう苛めというより虐待に近いものらしい。",
+		   NULL, "The relationship between Satoko-chan and her aunt has gotten worse, to the point that it can be considered abuse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　最近、その絡みで児童相談所の人が指導に来たらしく、その時だけは叔母もわずかに大人しくなったが、",
+		   NULL, "When someone from the child consultation center came, of course her aunt behaved herself.", Line_WaitForInput);
+	OutputLine(NULL, "……すぐにより陰湿な形での苛めに切り替わったという。",
+		   NULL, " ...Then immediately after, her harassment turned even more vicious.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　近所の人の話では、叔母の怒鳴り声と沙都子ちゃんの泣き声が聞こえない夜はないらしく、しかもそれは深夜にまで及ぶことも珍しくないという。",
+		   NULL, "According to the neighbors, the aunt's scolding and Satoko-chan's crying can be heard nightly, and sometimes it goes on past midnight.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子ちゃんに毎週施している定期検査の数値も、じわじわと悪化を辿っており、",
+		   NULL, "Satoko-chan's weekly physical check up results are slowly growing worse,", Line_WaitForInput);
+	OutputLine(NULL, "それに対し、投薬量を増やすことで何とかすれすれを維持させているが、",
+		   NULL, " and we're trying to keep her stable by increasing her medication.", Line_WaitForInput);
+	OutputLine(NULL, "………叔母との関係を改善しない限り、いつか彼女はＬ５の症状をぶり返し錯乱するだろう。",
+		   NULL, " But... unless her relationship with her aunt improves, she's sure to go terminal, and sink into madness.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…いや、確か彼女の末期症状は錯乱するタイプではない。",
+		   NULL, "...Although, she isn't the type to become deranged, even at the terminal stage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……心の中に狂気を宿しつつも、表向きにはそれを押し隠してしまえるタイプだ。",
+		   NULL, "She's the type who holds everything in, harboring her insanity inside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……一昨年、両親を突き落としたように、…叔母を沙都子ちゃんが殺してしまうこともあるかもしれない。",
+		   NULL, "Just like she pushed her parents off the cliff two years ago, Satoko-chan may kill her aunt.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　山狗の工作のお陰で、あの転落事故は事故ということで決着し、大石も手を引いたが、彼自身は未だ疑い続けている。",
+		   NULL, "Thanks to the Mountain Dogs, the incident was resolved as an accident and Ooishi stepped aside, although he is still suspicious.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……沙都子ちゃんの近辺で再びこのような事件が起きたなら、",
+		   NULL, "If something like that happens again around Satoko-chan...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……今度こそ彼は沙都子ちゃんに対し容赦のない捜査を行なうだろう。",
+		   NULL, " he's sure to investigate her mercilessly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……沙都子ちゃんの環境の悪化は、もはや私にはどうしようもないレベルにまで至っている。",
+		   NULL, "...I can't do anything more about Satoko-chan's environment changing for worse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを見かねて、妹思いの悟史くんが野球を辞めて常に妹に付き添っていてやりたいと言い出したとしても、それは不思議なことではなかった…。",
+		   NULL, "So I'm not surprised to hear that Satoshi-kun wants to quit the baseball team so he can be with his sister more.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawBustshotWithFiltering( 0, "Sato_Tukare", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+
+	PlayBGM( 0, "demo_48khz", 120, 0 );
+
+	OutputLine(NULL, "「実は僕、アルバイトを始めるんです。",
+		   NULL, "\"Actually, I'm starting a part-time job.", Line_WaitForInput);
+	OutputLine(NULL, "それで、あまり野球に出られなくて…。」",
+		   NULL, " That's why I can't come to practice...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…アルバイト、",
+		   NULL, "\"...A part-time", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ですか。",
+		   NULL, " job?", Line_WaitForInput);
+	OutputLine(NULL, "何か買いたいものでもあるんですか…？」",
+		   NULL, " Is there something you want to buy?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……はい。",
+		   NULL, "\"...Yes.", Line_WaitForInput);
+	OutputLine(NULL, "…もうすぐ沙都子の誕生日なんです。",
+		   NULL, " It's almost Satoko's birthday.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子が欲しがっているぬいぐるみがあるので、それをプレゼントしてやりたいと思いまして。」",
+		   NULL, " There's a teddy bear Satoko has been looking at, and I want to get it for her.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そう言えばそうだっけ。",
+		   NULL, "That's right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　保険証に書かれていた日付を思い出す。",
+		   NULL, "I remember the birth date on her insurance card.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　確か、６月の２４日。",
+		   NULL, "I think it's June 24th.", Line_WaitForInput);
+	OutputLine(NULL, "綿流しのお祭りの直後じゃなかったっけ。",
+		   NULL, " Right after the Watanagashi festival.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうですか。",
+		   NULL, "\"I see...", Line_WaitForInput);
+	OutputLine(NULL, "……悟史くんは本当に妹思いのお兄さんですね。",
+		   NULL, " ...You're such a good brother.", Line_WaitForInput);
+	OutputLine(NULL, "それはきっと沙都子ちゃんも喜んでくれるでしょう。」",
+		   NULL, " I'm sure Satoko-chan will be thrilled!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……喜んでくれると、うれしいです。」",
+		   NULL, "\"......I hope so.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんの話しぶりから、かなり心労が溜まっているのがうかがえた。",
+		   NULL, "I can tell Satoshi-kun is also stressed out.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……彼にとって、沙都子ちゃんが苛められるのを見ることは、自分が苛められていることと同じなのだから…。",
+		   NULL, "To him, seeing Satoko-chan being harassed is the same thing as being harassed himself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　心労は、スポーツなど適度な運動でのストレス発散、そして規則正しく充分な睡眠時間で癒すのが基本だ。",
+		   NULL, "His stress can be released through moderate exercise, such as with sports, and also with plenty of rest.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子ちゃんが夜な夜な叔母に叱りつけられているのだとすれば、…それを庇う悟史くんは充分な睡眠を取れているとは思い難い。",
+		   NULL, "If Satoko-chan is being yelled at nightly, then it's easy to figure out that Satoshi-kun isn't getting enough sleep either.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……また、どんなバイトをするのか知らないが、スポーツと違いストレスの発散にはなり難いだろう。",
+		   NULL, "I don't know what kind of job he's starting, but I don't think he will be able to vent his stress on it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…はっきり言って、身も心も参っている悟史くんに、さらに追い討ちをかけるようなバイトは、あまり賛成できなかった。",
+		   NULL, "In fact, I don't like the idea of Satoshi-kun taking a part-time job, because he's already so worn out in every way.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私が少し、プレゼント代を出してあげようかと提案したが、もちろん彼の性分からして、それに甘んじるわけもない。",
+		   NULL, "I asked him if he wanted me to help him pay for the present, but of course, he declined the offer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼は、自分が贈るプレゼントなのだから、そのお金は自分が全て用意して当然だと、模範的に断るのみだった。",
+		   NULL, "It's a present from him, so he wants to earn the money himself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　アルバイトは、沙都子ちゃんのプレゼントを買うためだけにするので、短期間のみのものらしい。",
+		   NULL, "He's taking this part-time job only to earn enough money to buy Satoko-chan's present, so it'll be a temporary thing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それくらいの期間だったら、それほど彼を追い詰めることにはならないか…。",
+		   NULL, "If it's for a short period of time, maybe it won't be that bad.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本当は、心が参っている時期に、さらに負担を増やすようなことは避けさせたいのだが、",
+		   NULL, "While I want to stop him from working because I don't want him to get even more stressed,", Line_WaitForInput);
+	OutputLine(NULL, "沙都子ちゃんの誕生日が近いと言われれば、妹思いの悟史くんにそれを思い止まらせるのは難しい。",
+		   NULL, " since he says Satoko-chan's birthday is near, I don't think I can stop him.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………悟史くんの決意は固い。",
+		   NULL, "Satoshi-kun is determined.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　バイトをやめろとこれ以上しつこくすると、私と彼の信頼関係を損なってしまうかもしれない。",
+		   NULL, "If I say any more, I may lose his trust.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを恐れた私は、彼の休部を受け入れて見守ることにした。",
+		   NULL, "So I'll have to accept his leave of absence.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DisplayWindow();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「……そうだ、監督。",
+		   NULL, "\"...Oh, Coach.", Line_WaitForInput);
+	OutputLine(NULL, "…バット、一本借りて行ってもいいですか？」",
+		   NULL, " ...Can I maybe borrow a bat?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　その言葉の意味を、私は大きく履き違えてしまう。",
+		   NULL, "I completely misunderstood his words.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…後に、彼がそのバットを護身用のための武器として持ち歩いていたという話を聞き、",
+		   NULL, "Later I found out he carried around that bat to protect himself...", Line_WaitForInput);
+	OutputLine(NULL, "……この時点で悟史くんには、ある種の危険な兆候が現れていたのだと知る。",
+		   NULL, " and realized that, even then, he was already showing some dangerous symptoms.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼は、連続怪死事件が四年目の今年も起こり、",
+		   NULL, "He believed there would be a fourth mysterious death this year", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…その犠牲者が自分になるに違いないという思い込みを持っていた。",
+		   NULL, " and that he would be the victim.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……誰かが自分の命を狙っているに違いないと信じる強迫観念。",
+		   NULL, "He became obsessed with the idea that someone was after his life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは紛れもない、雛見沢症候群のかなり末期に近い症状。",
+		   NULL, "That is a symptom of Hinamizawa Syndrome's terminal stage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だが、この時点での私は、雛見沢症候群に関わる人間でありながら、あまりに迂闊だった…。",
+		   NULL, "But although I was involved so deeply with the syndrome, I was careless...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「バットですか？",
+		   NULL, "\"A bat?", Line_WaitForInput);
+	OutputLine(NULL, "　はて、何に使うんですか？」",
+		   NULL, " What do you need a bat for?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんの私物のバットはある。",
+		   NULL, "Satoshi-kun had his own bat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、借りて行くというよりは持って帰ってもいいですか、というのが正しいのだが、彼は、借りて行っていいかと聞いた。",
+		   NULL, "So he should have asked if he could take it home, but instead, he asked if he could borrow it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…それを、私に承諾を得て持ち帰ろうというのは、後から考えれば罪の意識の軽減行為なのだが、この時点ではわかろうはずもない…。",
+		   NULL, "When I think about it now, he said it that way to lighten his guilty conscience. But how could I have known then?", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Tukare", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……いえ、その。",
+		   NULL, "\"Well...", Line_WaitForInput);
+	OutputLine(NULL, "……野球にはそんなに来れなくなりますけど、",
+		   NULL, " although I can't come to practice...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……でもきっと、一人で素振りの練習をするくらいの時間は取れると思うので。」",
+		   NULL, " I think I'll have a little time to practice swinging on my own.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「それはいいですねぇ！",
+		   NULL, "\"That's great!", Line_WaitForInput);
+	OutputLine(NULL, "　そういうことならぜひ持って行ってください。",
+		   NULL, " Sure, please take it with you.", Line_WaitForInput);
+	OutputLine(NULL, "素振りをする時は、充分周りを確認して危険がないよう注意してからやってくださいね。",
+		   NULL, " But make sure you do it in an open space, okay?", Line_WaitForInput);
+	OutputLine(NULL, "ご近所迷惑でなければ、タイヤを吊るしてそれを打つのも良い練習になるでしょう。」",
+		   NULL, " If it won't bother your neighbors, it's good practice to hit a hanging tire.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　バットを振るだけでも、きっとストレスの解消になる。",
+		   NULL, "Swinging a bat can release stress.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、バットを持たせてやることは彼の心労をわずかでも和らげることになる。",
+		   NULL, "So letting him take his bat home will help.", Line_WaitForInput);
+	OutputLine(NULL, "…そう思ってしまった。",
+		   NULL, " That's what I thought.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……………だが、…それは大きな誤りだった。",
+		   NULL, "But...... that was a huge mistake.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　後に、私は取り返しがつかない段階に至って、それを知ることになる…。",
+		   NULL, "I realized it only when things were already past the point of no return.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,542 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawSceneWithMask( "Heya6", "maskup", 1, 0, 1300 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　梨花が高熱を出した。",
+		   NULL, "Rika has developed a high fever.", Line_WaitForInput);
+	OutputLine(NULL, "それも相当な。",
+		   NULL, " A very high fever.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　インフルエンザのような伝染性の病気が流行っている季節でもない。",
+		   NULL, "It's not flu season, nor a season for any type of contagious disease.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私はすぐに、つい最近、梨花が受けたという怪しげな実験を思い出した。",
+		   NULL, "...I could only think of the suspicious experiments Rika has gone through.", Line_WaitForInput);
+	OutputLine(NULL, "それの影響なのかもしれない。",
+		   NULL, " Maybe the fever is being caused by those.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　梨花は同い年の子たちに比べ、やや発育が遅れている。",
+		   NULL, "Her growth is rather slow compared to other children her age.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　毎週毎週、怪しげな注射やら実験やらを施されたら、体が参ってしまうに違いないのだ。",
+		   NULL, "Receiving mysterious shots and going through experiments every week, I'm sure her body is exhausted.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　少しは加減してほしいと言っているのだが、当人の梨花はまるで怖い物知らずで、どのような実験にもほいほい応じてしまう。",
+		   NULL, "I've asked the staff to go easy on her, but Rika herself is fearless and is willing to go through anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを諭すべき夫も、村人二千人以上に関わる大事だからと吹き込まれて鵜呑みにし、自分の娘を毎週、診療所に連れて行っている。",
+		   NULL, "My husband, who should be admonishing her for that, truly believes their story that it's crucial to the lives of over 2,000 villagers, and takes our own daughter to that clinic every week.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…私だけが、梨花の体のことを本当に心配しているのだ。",
+		   NULL, "I'm the only one who's sincerely worried about her health.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、入江先生に対し、もう少し梨花のことを気遣って欲しいと文句を言ってやりたかった。",
+		   NULL, "That's why I want to ask Dr. Irie to be a little more considerate towards Rika.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　とにかく、この責任をどう取るのかと彼らに釈明させることにする。",
+		   NULL, "Anyway, I have to talk to them about taking responsibility for this.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Sinryo_soto2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　電話してすぐに診療所の人が車で駆けつけ、梨花をすぐに診療所へ入院させることになった。",
+		   NULL, "Right after I called, a staff member came to pick Rika up to admit her to the clinic.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに、私も保護者としてついて行くことにする。",
+		   NULL, "As her guardian, I came with them.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "Iri_def2+", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「落ち着いてください、お母さん。",
+		   NULL, "\"Please, calm down.", Line_WaitForInput);
+	OutputLine(NULL, "必ず救いますから、もうしばらくお待ちになってください。」",
+		   NULL, " We'll make sure she'll be okay, so please wait for a while.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「これが落ち着けるかと言うんです！",
+		   NULL, "\"How can I calm down?!", Line_WaitForInput);
+	OutputLine(NULL, "　急にこんな高熱が出るなんておかしいじゃないですか…！！",
+		   NULL, " Why did she come down with such a high fever?!", Line_WaitForInput);
+	OutputLine(NULL, "　これも先週にやったという何とか何とかという怪しげな実験の影響じゃないんですか？！",
+		   NULL, " Isn't this caused by the experiment you performed last week?!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花はね、歳相応の小さな女の子なんですよ？！",
+		   NULL, " Rika is just a little girl, you know!?", Line_WaitForInput);
+	OutputLine(NULL, "　梨花は友達思いだから、病気にかかった友達のためにと、」",
+		   NULL, " She cares about her friend, so she's doing what she can for the sick girl...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「わかっております…。",
+		   NULL, "\"I understand...", Line_WaitForInput);
+	OutputLine(NULL, "それに私たちの研究が、間違っても梨花さんに悪い影響を及ぼすようなことはありえませんし、万一そのようなことが起こらないよう、常に注意をしています。」",
+		   NULL, " There's no way our research would affect Rika-san negatively. Besides, we're being extremely careful so that something like that won't happen.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だったらこの梨花の熱は一体どういうことなんですか！！」",
+		   NULL, "\"Then explain this high fever!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「恐らくは季節の変わり目ですので、」",
+		   NULL, "\"It's probably due to the change in seasons, and...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「風邪のわけないでしょう？！",
+		   NULL, "\"How could this be a simple cold?!", Line_WaitForInput);
+	OutputLine(NULL, "　あなたたちが妙な薬を注射したからに決まっています！！」",
+		   NULL, " This is because of the weird shot you gave her!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　入江先生は、落ち着けの一点張りで、梨花の熱が自分たちのミスだとは決して認めないようだった。",
+		   NULL, "Dr. Irie only told me to calm down and refused to accept responsibility.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　…夫に、村の一大事だからと言われ、私は今日まで心の中の不信感を抑えて来たが。",
+		   NULL, "My husband told me this is all for the sake of the village, and that's why I've held back my doubts until now.", Line_WaitForInput);
+	OutputLine(NULL, "正直なところ、それももう限界だった。",
+		   NULL, " But I'm at my limit.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大体、彼らの存在は一番初めから不審過ぎるのだ。",
+		   NULL, "Their existence has been suspicious from the beginning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　プライバシー保護だか何だかの観点から秘密に研究。",
+		   NULL, "They're conducting their research in secret, using a privacy policy as an excuse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…これだって十分疑わしい。",
+		   NULL, "...That was shady enough on its own.", Line_WaitForInput);
+	OutputLine(NULL, "そんなのあるわけがない。",
+		   NULL, " It's just impossible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　実際、私は厚生省に電話を掛けてみたが、そんな事実はないとあっさり言われてしまった。",
+		   NULL, "In fact, I called the Ministry of Health, and was told that wasn't true at all.", Line_WaitForInput);
+	OutputLine(NULL, "私が古手梨花の母だと名乗ってもだ。",
+		   NULL, " Even after I told them I'm Rika Furude's mother.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼らはそれを、自分たちは特別な機関なので、一般職員は存在を知らないこともある、などとはぐらかすが…。",
+		   NULL, "The clinic even came up with stupid excuses, saying normal workers often don't know of a special institute like theirs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　絶対におかしい。",
+		   NULL, "That doesn't make sense at all.", Line_WaitForInput);
+	OutputLine(NULL, "疑わしい。",
+		   NULL, " It's much, much too suspicious.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに、研究所の中には研究員とは明らかに違う人間たちがいる。",
+		   NULL, "Also, there are people who don't appear to be researchers working at the institute.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……一見するとそれは警備員だが、一般的な病院のそれに比べてあまりに違和感のある人間たちなのだ。",
+		   NULL, "They look like security guards, but they seem so different from normal guards at a normal hospital.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私は以前、見てしまっている。",
+		   NULL, "In fact, one time I accidentally saw", Line_WaitForInput);
+	OutputLine(NULL, "彼らが実は拳銃で武装しているということも。",
+		   NULL, " that they were armed with guns.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Iri_Def1+", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……それはですね、……。」",
+		   NULL, "\"...That is, well...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あの人たちは警察なんですか？",
+		   NULL, "\"Are they policemen?", Line_WaitForInput);
+	OutputLine(NULL, "　とてもそうには見えません！",
+		   NULL, " I don't think so!!", Line_WaitForInput);
+	OutputLine(NULL, "　大体、あなた方は何者なんですか！",
+		   NULL, " Who are you all, anyway?", Line_WaitForInput);
+	OutputLine(NULL, "　厚生省の人間だなんて、私は今さら信じませんよ！」",
+		   NULL, " I refuse to believe you're from the Ministry of Health!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　入江先生は、すっかり私の気迫に飲まれてしまって、満足な返事もできないようだった。",
+		   NULL, "Dr. Irie seems taken aback by my intensity, and can't even answer properly.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼らはまだまだ私たちに何かを隠しているのだ。",
+		   NULL, "They're still hiding a lot more from us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そしてそれは、梨花を巡るこの研究が、まともなものではないことを示しているのだ。",
+		   NULL, "That tells me the research they're working on with Rika isn't anything proper.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「とにかく、私は梨花の保護者です！",
+		   NULL, "\"Anyway, I'm Rika's guardian!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花はまだまだ子供です。",
+		   NULL, " Rika is still a child.", Line_WaitForInput);
+	OutputLine(NULL, "あの子が何をどう返事しようとも、今後は一切、研究を手伝わせるつもりはありません！」",
+		   NULL, " It doesn't matter what she says. I won't let her participate in this research anymore!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshotWithFiltering( 2, "Ta_Warai+", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「…あらあら。",
+		   NULL, "\"...My, my.", Line_WaitForInput);
+	OutputLine(NULL, "梨花ちゃんのお母さんではありませんの。",
+		   NULL, " It's Rika-chan's mother.", Line_WaitForInput);
+	OutputLine(NULL, "どうもこんにちは。",
+		   NULL, " Hello.", Line_WaitForInput);
+	OutputLine(NULL, "……………あら、どうかなさいまして？」",
+		   NULL, " .........Oh, what's the matter? Is everything okay?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Iri_Majime+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いえ、…その。",
+		   NULL, "\"Ah, well.", Line_WaitForInput);
+	OutputLine(NULL, "…お母さんが、梨花ちゃんをこれ以上、研究に関わらせたくないと仰ってまして…。」",
+		   NULL, " ...Rika-chan's mother says she won't let Rika-chan participate in the research any longer...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Def+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……それはどうしてですか？」",
+		   NULL, "\"......Why is that?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うちの子はあなたたちの実験動物ではないからです！！」",
+		   NULL, "\"Because she's not your guinea pig!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_AkuWarai+", 200, TRUE );
+	DisplayWindow();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「…………そう扱ったことなどございませんわよ？",
+		   NULL, "\"......We've never treated her that way.", Line_WaitForInput);
+	OutputLine(NULL, "　それは大きな誤解ですわ。」",
+		   NULL, " You're misunderstanding us.\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　少しだけぎょっとする。",
+		   NULL, "I'm a little startled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…入江先生は少し押したら引いてくれる気の弱い人のようだった。",
+		   NULL, "...Dr. Irie is a weak person who backs down under pressure.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、この鷹野さんという人は、……私が怒鳴る側だというのに、まるで怖気づかないのだ。",
+		   NULL, "Takano-san is different... I'm yelling at her, but she's not afraid at all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いや、それどころか、目をぎらぎらさせて、私に食って掛かろうという風にすら見える…。",
+		   NULL, "On the contrary, she's glaring daggers, and looks as if she's about to jump on me.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Ta_Def+", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Sinryo_matiai1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「梨花ちゃんの熱は風邪によるものですわ。",
+		   NULL, "\"Rika-chan's fever is caused by a cold.", Line_WaitForInput);
+	OutputLine(NULL, "私たちのせいだなんてとんでもない。",
+		   NULL, " We didn't cause it.", Line_WaitForInput);
+	OutputLine(NULL, "私たちは安全や衛生には国立研究所クラスの注意を払ってます。",
+		   NULL, " When it comes to safety and sanitation, we pay the same level of attention as a national research center.", Line_WaitForInput);
+	OutputLine(NULL, "失礼ですが、アルコール消毒もしない手で、梨花ちゃんの手を引いて歩いているあなたより衛生的なくらいですわよ？」",
+		   NULL, " I don't mean to be rude, but considering you walk around while holding Rika-chan's hands without disinfecting yours with alcohol first, we are far more sanitary.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………そ、そんなことは聞いていません！！",
+		   NULL, "\"......We're not talking about that!!", Line_WaitForInput);
+	OutputLine(NULL, "　とにかく、梨花はあなたたちの玩具じゃないんです！！",
+		   NULL, " Anyhow, Rika isn't your toy!!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花はもう二度とここへは連れて来ません！」",
+		   NULL, " She'll never come back here again!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Ikari+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あなたの一存で決められては困りますわね。",
+		   NULL, "\"You can't decide that by yourself.", Line_WaitForInput);
+	OutputLine(NULL, "ご協力をいただくことについて、ご両親には誓約書にサインをしてもらっているはずではございませんの？",
+		   NULL, " You and your husband both signed the statement of consent, didn't you?", Line_WaitForInput);
+	OutputLine(NULL, "　研究に協力していただく見返りに、決して少なくない額を毎月お口座に振り込ませていただいてるはずですわ。」",
+		   NULL, " We have been depositing money that's by no means a small amount into your account every single month for her cooperation in the research.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そ、…そんなお金、私は知りませんよ？！",
+		   NULL, "\"What? I know nothing about any money!", Line_WaitForInput);
+	OutputLine(NULL, "　聞いたこともないです！！」",
+		   NULL, " I've never even heard of that before!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花が研究に協力することでお金が出ていたなんて初耳だった。",
+		   NULL, "Rika receiving money for participating in their research really is news to me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…夫の性分から考えて、私に内緒で小遣いにしていた、ということはあるまい。",
+		   NULL, "Knowing my husband's character, he wouldn't have used it as spending money behind my back.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　恐らく、村人のための無料奉仕とか考えて、お金が振り込まれているなんて話はとんと忘れているに違いない。",
+		   NULL, "I bet he thought of it as a free service for the villagers, and completely forgot about the money being deposited into our account.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……普通預金にはそんなおかしな入金はないから、…定期預金の方だろうか…。",
+		   NULL, "...There haven't been any strange deposits in the regular account, so it may be in our savings...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…とにかくとにかく、そんな話は私は知らない！",
+		   NULL, "Anyway, I don't care about that!", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Ikari2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「契約を反故にされる場合には、それまでの振込み額を全て返還していただくことになっているのはご存知ですわね？",
+		   NULL, "\"If you want to breach our contract, we'll have to ask you to return the full amount of deposits we have made up until this point.", Line_WaitForInput);
+	OutputLine(NULL, "　他にも一方的な反故についてそちらに非がある場合、」",
+		   NULL, " Also, if one party is at fault for the breach of contract--\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Majime2+", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「鷹野さん…！",
+		   NULL, "\"Takano-san!", Line_WaitForInput);
+	OutputLine(NULL, "　落ち着いてください。",
+		   NULL, " Please calm down.", Line_WaitForInput);
+	OutputLine(NULL, "お母さんもどうか…。",
+		   NULL, " Mrs. Furude, you too.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢症候群は以前にもご説明させていただきましたように、村人たちが安心してこれからも生活していくために、絶対に治療していかなくてはならないものなのです。",
+		   NULL, " Just as I explained to you before, we must find a cure for Hinamizawa Syndrome so the villagers can continue to live without worries.", Line_WaitForInput);
+	OutputLine(NULL, "その為には梨花さんにどうしてもご協力が必要なのです…！」",
+		   NULL, " For that reason, we need to have Rika-san continue to participate.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「治療のためって、じゃあその治療薬はいつになったら出来上がるんですか？！",
+		   NULL, "\"Then tell me, when are you going to find a cure?", Line_WaitForInput);
+	OutputLine(NULL, "　大体おかしいじゃないですか！！",
+		   NULL, " It doesn't make sense!!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花の友達の沙都子ちゃんのためということでしたけど、その沙都子ちゃんはもう退院して元気に生活しているというじゃありませんか。",
+		   NULL, " At first, you said this was for Rika's friend, Satoko-chan, but Satoko-chan has been released from the clinic and is now carrying on happily.", Line_WaitForInput);
+	OutputLine(NULL, "確か、先々週にうちの人が話を聞いた時にも、もう治療の目処は立ったというようなお話をされていたはずですわよね？！」",
+		   NULL, " You even told my husband two weeks ago that you've found a cure already, didn't you?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「え、えぇ。",
+		   NULL, "\"Y-Yes.", Line_WaitForInput);
+	OutputLine(NULL, "目処はついた、というような話はしたと思います…。",
+		   NULL, " I think I told him something like that...", Line_WaitForInput);
+	OutputLine(NULL, "ですが、雛見沢症候群の全貌を解明するためには…、」",
+		   NULL, " But, you see, to solve the mysteries of the syndrome...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「全貌の解明なんか最初の話で聞いていません！",
+		   NULL, "\"You didn't mention anything about solving mysteries at the beginning!!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花が協力するのは村人の病気を治療するためのはずです。",
+		   NULL, " Rika was to participate to find a cure for the villagers.", Line_WaitForInput);
+	OutputLine(NULL, "ならもう充分ではありませんの！！",
+		   NULL, " So now her job is done!!", Line_WaitForInput);
+	OutputLine(NULL, "　皆さんが梨花に怪しげな研究やら検査やらをしているのは、あなた方の興味本位であって、治療とは何の関係もないんじゃありませんの？！」",
+		   NULL, " All the research and experiments you're performing on Rika have nothing to do with the cure. You're doing them out of your own self-interest. Aren't I right?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そんなことはありません、",
+		   NULL, "\"That's not true,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "そんなことはありません…！",
+		   NULL, " it really isn't...!", Line_WaitForInput);
+	OutputLine(NULL, "　とにかく梨花さんの風邪の件は誤解なんです。",
+		   NULL, " Anyway, this matter of Rika-san's cold is just a misunderstanding.", Line_WaitForInput);
+	OutputLine(NULL, "もし、どうしても御不審ということでございましたら、」",
+		   NULL, " If you still don't trust us, then...\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「とにかく、もう結構です！",
+		   NULL, "\"That's enough!!", Line_WaitForInput);
+	OutputLine(NULL, "　お金の話もあるみたいなので、私も帰って夫と相談しますから！",
+		   NULL, " Since money is involved here, I'll have to discuss it with my husband!", Line_WaitForInput);
+	OutputLine(NULL, "　それでは失礼します！！」",
+		   NULL, " Excuse me!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sinryo_soto2", 400 );
+
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "　…大体、この連中は初めから胡散臭かった。",
+		   NULL, "...They were just too shady from the very start.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何だか大仰なことを言われて、うちの二人はすっかり丸め込まれてしまったけれど、私はそうは行かない。",
+		   NULL, "Because of their exaggerated story, Rika and my husband took their side, but it won't work on me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　とにかく、ここできっちりと清算しなくては。",
+		   NULL, "Anyhow, I must settle things with them right away", Line_WaitForInput);
+	OutputLine(NULL, "梨花はあいつらの玩具なんかじゃない。",
+		   NULL, " because Rika isn't their toy.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…特に気に入らないのは、あの鷹野という人だ。",
+		   NULL, "I especially don't trust that woman called Takano.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……入江先生はまだ医者という感じがするが、あの人にはそういう感じがない。",
+		   NULL, "Dr. Irie seems to me like he's still a doctor, but she doesn't.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……何て言えばいいんだろう。",
+		   NULL, "...How can I describe her?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そう、眼に宿る光が嫌らしいとでも言おうか…。",
+		   NULL, "...I guess I can say the glow in her eyes is just unpleasant...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花のことを実験動物としてしか見ていない。",
+		   NULL, "She only sees Rika as a guinea pig.", Line_WaitForInput);
+	OutputLine(NULL, "そういう残酷さがひしひしと感じられるのだ。",
+		   NULL, " I can feel cruelty emitting from her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを、うちの人も梨花もまったく気付いていない。",
+		   NULL, "Neither my husband nor Rika have noticed that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私が守らなくては。",
+		   NULL, "I must protect her.", Line_WaitForInput);
+	OutputLine(NULL, "母として梨花を守らなくてはいけない…！",
+		   NULL, " As a mother, I must protect Rika!", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawBustshot( 2, "Iri_majime+", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Sinryo_matiai1", 1000 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "「…鷹野さんらしくもない。",
+		   NULL, "\"...That's not like you, Takano-san.", Line_WaitForInput);
+	OutputLine(NULL, "あそこで喧嘩を買ってしまったら、余計に話がこじれてしまうではありませんか。",
+		   NULL, " Getting into an argument with her will only makes things more complicated...", Line_WaitForInput);
+	OutputLine(NULL, "……あなたらしくもないですよ。」",
+		   NULL, " It's so unlike you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ta_Komaru+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………そうですわね。",
+		   NULL, "\"......I know.", Line_WaitForInput);
+	OutputLine(NULL, "ごめんなさい、取り乱してしまって。」",
+		   NULL, " Sorry for losing my cool.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　何か不機嫌になることでもあったのだろうか。",
+		   NULL, "Did something happen to put her in a bad mood, Irie wondered.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　先ほどのやりとりは、鷹野さんらしくもなく感情的だった。",
+		   NULL, "The heated conversation she just had didn't involve the Takano he knew.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

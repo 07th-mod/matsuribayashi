@@ -1,0 +1,927 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawFilm( 2, 0xbb, 0xbb, 0xbb, 256, 0, 0, TRUE );
+	DrawSceneWithMask( "Sora6", "maskc", 1, 0, 1300 );
+
+	PlayBGM( 0, "Testament", 120, 0 );
+
+	OutputLine(NULL, "　父さんと母さんが死んだ。",
+		   NULL, "My father and mother died.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　享年が何歳だったかも、よくわからない。",
+		   NULL, "I don't know exactly how old they were.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私はそれくらいに幼かったから。",
+		   NULL, "I was too young to remember.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私ひとりを留守番に残し、両親の二人だけでお出掛けをしたからバチに当たったに違いない。",
+		   NULL, "They went shopping without me, and that must be why they were punished.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鉄道の事故だったという。",
+		   NULL, "It was a train accident.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ひどい惨事だったという。",
+		   NULL, "What a terrible disaster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　大勢の人が犠牲になったという。",
+		   NULL, "A lot of people died in that incident.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　でも、まだ父さんは幸運な方だったかもしれない。",
+		   NULL, "But maybe my father was one of the lucky ones.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……生きて病院に担ぎ込まれて、私にいくつかの言葉を残すことができたのだから。",
+		   NULL, "He was still alive when he arrived at the hospital, so he was able to share his final words with me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お母さんなど、原型を留めてもいなかったらしいから。",
+		   NULL, "My mother died instantly.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sinryo_sinsatu4", 1000 );
+	DrawSprite( 1, "Waku_b", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
+
+	OutputLine(NULL, "「……お、…お父さん、お父さんお父さんお父さん…！！」",
+		   NULL, "\"...Daddy, Daddy, Daddy, Daddy!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その、あまりに憐れな変わり果てた姿を、私は父さんだと認めたくなかった。",
+		   NULL, "I didn't want to admit that this person I could hardly recognize was my father.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　父さんと呼びながら、それが違う人であって欲しいと願った。",
+		   NULL, "As I called out to him, I hoped that it was someone else instead.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 1500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　だが、",
+		   NULL, "But", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…無情にも、",
+		   NULL, " unfortunately", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それは父さんだった。",
+		   NULL, " it was my father.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　本当は父さんを起こすべきではなかっただろう。",
+		   NULL, "Maybe I shouldn't have woken him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…父さんは、私にまどろみを破られることによって、",
+		   NULL, "Because when I woke him up, he was reminded", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ようやく忘れかけていた苦痛を思い出してしまったのだから。",
+		   NULL, " of the miserable agony that he had forgotten.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………うぅうぅ………。",
+		   NULL, "\"Oooh...", Line_WaitForInput);
+	OutputLine(NULL, "ぅぅぅ………。」",
+		   NULL, " Oooh...\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「お父さん、",
+		   NULL, "\"Daddy,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お父さん",
+		   NULL, " Daddy,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お父さん",
+		   NULL, " Daddy,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お父さん！！」",
+		   NULL, " Daddy!!\"", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　父さんはきっと、泣きじゃくる私の頭を撫でたかったのだろうと思う。",
+		   NULL, "He tried to move his right arm", Line_WaitForInput);
+	OutputLine(NULL, "…だって、右の腕を動かそうとしたから。",
+		   NULL, " so he could pat my head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、その腕は包帯でぐるぐる巻きにされていて、",
+		   NULL, "But his arm was wrapped in bandages", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……しかも肘から先がなくなっていた。",
+		   NULL, " and his hand was no longer there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私の頭に被せるべき手の平は、ベッドの上には見当たらなかった。",
+		   NULL, "I couldn't find his hand anywhere on the bed.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　父さんの右手は、本当は怖い思い出しかない。",
+		   NULL, "I only had scary memories of his right hand.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私がいたずらや嘘をついた時、平手で打つのが主な役割だったから。",
+		   NULL, "Its main job was to slap me when I did something bad.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、だからといって、なくなって欲しいなんて願ったことは一度もない。",
+		   NULL, "But I never wished it to be gone.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに、平手で打たれた回数に比べたら本当に微々たるものだけど…、",
+		   NULL, "Besides, that hand also patted my head...", Line_WaitForInput);
+	OutputLine(NULL, "……たまには私の頭を撫でてくれた。",
+		   NULL, " even though that only happened a few times.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大きな手の平で、それ自体がご褒美であるように、…私の頭をやさしく撫でてくれたんだ。",
+		   NULL, "It was a big, warm hand, and it stroked my head very gently.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私がどんなにちゃんと早起きをしても、",
+		   NULL, "But no matter what good deeds I did", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ちゃんとおつかいを出来ても、",
+		   NULL, " he could no longer", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "もう父さんは私の頭を撫でることができないのだ。",
+		   NULL, " rub my head...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いや、",
+		   NULL, "No...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……本当はそれすらも微々たる問題だった。",
+		   NULL, " his hand was the least of his worries.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　緊急手術の時間は迫っていた。",
+		   NULL, "He had to go into emergency surgery.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　手術の成功率は高くないと、予めお医者様には釘を刺されていた。",
+		   NULL, "The doctors already warned me that the chance of him surviving was very low.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　本当なら面会謝絶なのに、会わせてくれたのもそういう意味なのだ。",
+		   NULL, "That was why I was allowed to see him, regardless of his condition.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　父さんは、私の頭を二度と撫でられないどころか、",
+		   NULL, "Not only could he no longer rub my head,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私の前から永遠にいなくなってしまうかもしれない瀬戸際にいたのだから…。",
+		   NULL, " he might be gone forever...", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_sinsatu4", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「…お父さん、手術できっと良くなるよね？！",
+		   NULL, "\"Daddy, the surgery will make you better, right?", Line_WaitForInput);
+	OutputLine(NULL, "　お父さん、きっと元気になれるよね？！",
+		   NULL, " Daddy, you'll get better, right?", Line_WaitForInput);
+	OutputLine(NULL, "　なれるよね？！」",
+		   NULL, " Right?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………よ、よく聞きなさい。",
+		   NULL, "\"......L-Listen carefully.", Line_WaitForInput);
+	OutputLine(NULL, "…お父さんは駄目かもしれない。",
+		   NULL, " ...Your daddy might not make it.", Line_WaitForInput);
+	OutputLine(NULL, "もしもお父さんが死んでも、お前はしっかり生きるんだよ。」",
+		   NULL, " Even if I die, you have to be strong, okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「嫌だ嫌だ！",
+		   NULL, "\"No, no!!", Line_WaitForInput);
+	OutputLine(NULL, "　お父さんは元気になるよ！",
+		   NULL, " You'll get better!!", Line_WaitForInput);
+	OutputLine(NULL, "　お医者様がちゃんと手術してくれるもん！！",
+		   NULL, " The doctor is going to make you better!!", Line_WaitForInput);
+	OutputLine(NULL, "　だから死んだりなんかしないんだよ！！」",
+		   NULL, " So you're not going to die!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古い時代の人らしい頑固な父さんだった。",
+		   NULL, "He was a stubborn and old-fashioned father.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　痩せ我慢が美徳で、絶対に辛いとは口にしない人だった。",
+		   NULL, "He believed endurance was a virtue, and he never complained about anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、自分が死ぬかもしれないなんて弱気な言葉がその口から出て来ることが信じられなくて……、",
+		   NULL, "That was why I couldn't believe he actually said he might not make it.", Line_WaitForInput);
+	OutputLine(NULL, "私は必死にそれを否定しようとした。",
+		   NULL, " I tried desperately to deny his words.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……だが、私の願いごときでは、父さんの残された時間を延ばすことはできない。",
+		   NULL, "But even that wish wouldn't prolong his life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　父さんは、自分が言葉を残せる時間がすでに限られていることを知っていて、私に、本当に大切なことを伝えようとしていた。",
+		   NULL, "My father, knowing his time was limited, tried to tell me some important things.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな父さんの必死の努力を、私は否定するように泣きじゃくって掻き消す。",
+		   NULL, "But I interrupted his efforts by crying like a baby.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…いっそのこと、そんな私を平手打ちしてほしかった。",
+		   NULL, "I just wanted him to slap me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　泣いてわがままを言う私に、いつも父さんがそうしたように。",
+		   NULL, "Just like he used to do every time I cried like a baby.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……でも、父さんは私に平手打ちをすることはもう二度とない…。",
+		   NULL, "But he would never slap me again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「よ……、",
+		   NULL, "\"L...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "よく聞きなさい。",
+		   NULL, " Listen well.", Line_WaitForInput);
+	OutputLine(NULL, "……お父さんもお母さんもな、",
+		   NULL, " Your mother and I both", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "戦争で親類をみんな失ってしまった。",
+		   NULL, " lost all of our family in the war.", Line_WaitForInput);
+	OutputLine(NULL, "だから…、",
+		   NULL, " So...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お父さんが死んだら、",
+		   NULL, " after I'm dead,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お前の世話をしてくれる人は誰もいない…。」",
+		   NULL, " there won't be anyone left to take care of you...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを改めて言われる必要はなかった。",
+		   NULL, "He didn't need to tell me that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　父さんも母さんも日頃からそれを口にしていたから私はそれをよく知っていた。",
+		   NULL, "My parents used to tell me that all the time, so I was aware of that fact.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……つまり、私にとって、父さんはこの世に唯一残る肉親なのだ。",
+		   NULL, "In other words, my father was the only relative I had left in this entire world.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「もしもな、",
+		   NULL, "\"If, if", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お父さんが死んだら、",
+		   NULL, " I die", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "高野先生を頼りなさい。",
+		   NULL, " you can count on Dr. Takano.", Line_WaitForInput);
+	OutputLine(NULL, "高野一二三先生だよ。",
+		   NULL, " Doctor Hifumi Takano.", Line_WaitForInput);
+	OutputLine(NULL, "言ってみなさい。」",
+		   NULL, " Can you say it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「高野、",
+		   NULL, "\"Hi", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ひ",
+		   NULL, " fu", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ふ",
+		   NULL, " mi", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "み…。」",
+		   NULL, " Takano...\"", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "高野一二三先生だよ。",
+		   NULL, " Doctor Hifumi Takano.", Line_WaitForInput);
+	OutputLine(NULL, "…高野先生はお父さんの恩師なんだ。",
+		   NULL, " He is my former teacher.", Line_WaitForInput);
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "きっと、",
+		   NULL, " He will", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "お前を助け、",
+		   NULL, " help you...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "けっ、",
+		   NULL, " cough", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "げほッ！！",
+		   NULL, " cough!!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　げへがはッ！！」",
+		   NULL, " Cough!!\"", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「お父さん、お父さんお父さんお父さん！！！」",
+		   NULL, "\"Daddy, Daddy, Daddy, Daddy!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_door", 128, 64 );
+	DrawSceneWithMask( "Sinryo_sinsatu4", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　お医者様たちが大慌てでなだれ込んで来る。",
+		   NULL, "Many doctors came into the room in a hurry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お父さんはまだ何かを伝えようとしていたが、それはしゃべらないようにと制止するお医者様たちのせいで聞き取ることはできなかった。",
+		   NULL, "He wanted to tell me something else, but the doctors stopped him from talking, so I wasn't able to hear him.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Ke4", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　私は弾き飛ばされて病室を追い出される。",
+		   NULL, "I was kicked out of the room.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして病院の廊下でおろおろするばかり。",
+		   NULL, "I didn't know what to do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……父さんがどういう状態なのか、手術はいつ始まるのか、誰も教えてはくれなかった。",
+		   NULL, "Nobody told me how my father was doing or when the surgery was going to start.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、父さんともう永遠に言葉を交わすことができなくなることも、",
+		   NULL, "And nobody told me...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…誰も教えてはくれなかった…。",
+		   NULL, " that was going to be the last conversation I ever had with my father.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "black", 1000 );
+	Wait( 2000 );
+
+	PlayBGM( 0, "T1_Requiem", 120, 0 );
+
+	DrawScene( "Sora3", 1000 );
+
+	OutputLine(NULL, "　……父さんの言い残した「高野先生」の名前を、お役所の人とか色々な人に言ったと思う。",
+		   NULL, "I think I asked people at the government office about Dr. Takano.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうすると必ず、連絡先は？",
+		   NULL, "They'd ask me if I knew his phone number.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　と聞かれた。",
+		   NULL, "I said I didn't.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は、知らないと答える他なかった。",
+		   NULL, "Then they didn't ask me anything further.", Line_WaitForInput);
+	OutputLine(NULL, "　すると決まって、その話はそれで終わってしまい、",
+		   NULL, " Sometimes they told me they'd look into it, but nothing led to anything.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "あるいはたまに「調べておく」という返事がもらえたが、それでも結果は大して変わらなかった。",
+		   NULL, "They couldn't find me a guardian, so I ended up going to an orphanage.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の後見人は現れず、私は社会的な権利を享受するため、施設へ生活の場を移すことになった。",
+		   NULL, "At the time, there were plenty of orphans from the war, so although there were many orphanages around, they were all full.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　当時は、まだ戦災孤児が少なくなく、公立の施設もたくさんあったがどこも満員の状態だった。",
+		   NULL, "There were also some orphanages run by civilians.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　また、善意の個人による民間の施設も多く存在していた。",
+		   NULL, "I was sent to one of those civilian orphanages.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　私が送られたのも、そんな民間の施設だった。",
+		   NULL, "There was no profit to be had in taking in an orphan in the first place.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そもそも、孤児を引き取っても何の儲けにもならない。",
+		   NULL, "So, I thought, those civilians who were running orphanages must have been very good people.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　だから、敢えてそれをやろうという人間には、私財を投げ出しても孤児を救おうという、尊敬に値する博愛の精神があったに違いない。",
+		   NULL, "I was sure", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　…そして、",
+		   NULL, " they hoped that the children", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "そんな愛に触れ、",
+		   NULL, " would grow", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "子供たちが健やかに育ち、",
+		   NULL, " in this loving environment", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "感謝の言葉を述べて社会へ巣立っていくことを期待したに違いないだろう。",
+		   NULL, " and enter into society with a sense of gratitude.", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　だが、そんなに世の中は甘くない。",
+		   NULL, "But reality isn't so kind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　親に自分を育ててくれた恩を、自分が幼い内に示せる子供が一体、世の中に何人いるというのか…？",
+		   NULL, "How many children in this world can actually express their gratitude towards their parents in the first place?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　子供は両親の愛で育てられるようにできている。",
+		   NULL, "Children are supposed to be nurtured by their parents' love.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、そんな環境を引き裂かれた子供たちは皆、心に深い傷を負っていた。",
+		   NULL, "Therefore, when that environment is destroyed, their hearts are wounded.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　増してや、子供の個性など子供の数だけあるのだ。",
+		   NULL, "Every child has his or her own personality.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……等しく慈愛を受けたからといって、誰もが天使のように育つわけじゃない。",
+		   NULL, "Receiving affection doesn't guarantee that a child will become someone angelic.", Line_WaitForInput);
+	OutputLine(NULL, "全員の心の傷が癒せるわけじゃない。",
+		   NULL, " Not everyone's heart can be healed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だから、子供たちの中には少なからず問題児もいた。",
+		   NULL, "That was why there were some problem kids at the orphanage.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……いや、問題児と呼ぶのが適当だったかどうかもわからない。",
+		   NULL, "Maybe I shouldn't call them problem kids, though.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは、両親を失ってしまったことへの悲しみであったり、",
+		   NULL, "The sadness and despair of losing their parents", Line_WaitForInput);
+	OutputLine(NULL, "その悲しみを覆い隠すためのやり場のない怒りであったり。",
+		   NULL, " and the anger at having to hide such feelings filled those kids' hearts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ひとりひとりと向かい合って話をすれば、きっと分かり合えることだったに違いない。",
+		   NULL, "Spending time individually with the children could have solved their problems.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ko3", 400 );
+
+	OutputLine(NULL, "　だが、…少なくとも私のいた施設では、そこまでの時間を職員が割いて、理解しようとする努力はしていなかった。",
+		   NULL, "But at the orphanage where I was, none of the staff members even tried to spend time with them or put in an effort to understand them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　少ない人数の職員が、規律に反しないよう見張り、統制するので精一杯だった。",
+		   NULL, "All they could do was make sure that the kids followed the rules.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、子供たちが心の傷の痛みに呻くのを、問題行為としてしか括れなかった。",
+		   NULL, "Therefore, they could only see the children's emotional pleas for help... as problems.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　見返りを求めない愛など、この世に存在しない。",
+		   NULL, "In this world, nobody expresses love without expecting something in return.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この施設を創設した人間も、結局は見返りを求めていたのだ。",
+		   NULL, "The person who founded that orphanage was expecting something in return as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…子供たちの感謝という見返りを。",
+		   NULL, "He wanted the children to appreciate him.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka1", 400 );
+
+	OutputLine(NULL, "　だから、そんな淡い夢は現実にあっさりと引き裂かれた。",
+		   NULL, "That was why such a faint dream was destroyed by cruel reality.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　子供たちは、施設を収容所呼ばわりし、職員たちの献身的努力に一切感謝せず、不満ばかりをぶつけた。",
+		   NULL, "The children called the orphanage a prison, and nobody appreciated the staff at all. In fact, all they did was complain.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………だから、次第に職員たちも夢が醒め、慈愛だけではやっていけないことを悟ったに違いない。",
+		   NULL, "That made the staff slowly realize that love alone couldn't run a facility like that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　子供たちが収容所呼ばわりするように。",
+		   NULL, "Just like how the children called it a prison,", Line_WaitForInput);
+	OutputLine(NULL, "…職員たちも次第に、収容所であろうとするようになっていった。",
+		   NULL, " the staff started to recognize the facility as a prison, too.", Line_WaitForInput);
+	OutputLine(NULL, "相互の不信感による悲しい連鎖だった。",
+		   NULL, " It was a chain reaction resulting from mistrust on both sides.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、子供たちを規律で縛りつけ、問題行為を抑圧する体制へとなっていく…。",
+		   NULL, "The staff bound the children with rules so they could suppress problem behavior.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この施設の設立者の額縁は飾られているが、その顔が訪れたのを見たことはない。",
+		   NULL, "There was a framed picture of the founder of this orphanage, but I had never seen him in person.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼は、施設に対して私財を投入しているだけで社会奉仕の悦に浸っているのか、",
+		   NULL, "Was he satisfied with the fact that he put his own money into this social service?", Line_WaitForInput);
+	OutputLine(NULL, "…それとも、天使のように育った子供たちに囲まれて祝福されるという現実感のない夢がようやく醒めたのか。",
+		   NULL, " Or maybe he finally realized his dream of being surrounded by angelic children and being celebrated for what he did was simply that, a dream?", Line_WaitForInput);
+	OutputLine(NULL, "…どちらかはわからない。",
+		   NULL, " I don't know.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　とにかくひとつ言えることは。",
+		   NULL, "But there's one thing I'm certain of.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawScene( "black", 200 );
+
+	OutputLine(NULL, "　私がいた施設は、そんな夢はとうの昔に醒めてしまっていたということだった。",
+		   NULL, "Such a dream didn't exist at the orphanage.", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 0, TRUE );
+	DrawSceneWithMask( "Ke6", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "　規律はたくさんあり、もっともらしいことをいくつも定めていたが、",
+		   NULL, "There were so many rules, and several plausible standards outlined for us,", Line_WaitForInput);
+	OutputLine(NULL, "何よりも尊ばれているのは、沈黙だった。",
+		   NULL, " but the most valued one was silence.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　子供のおしゃべりは、近付けあったマイクのように、互いが互いを増幅して大きくなる一方。",
+		   NULL, "Children's chatter tends to increase each other's volume, just like mics drawing closer.", Line_WaitForInput);
+	OutputLine(NULL, "その挙句に喧嘩などが起こり、規律が乱れる。",
+		   NULL, " And sometimes that leads to fights, and the disturbance of order.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのため、子供たちの間での私語は禁止された。",
+		   NULL, "So children were forbidden from speaking with each other.", Line_WaitForInput);
+	OutputLine(NULL, "私語さえなければ、全てはうまく行くと思ったのだろう。",
+		   NULL, " With those disallowed, they must have thought things would go smoothly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　にもかかわらず、施設にはいつも人の声が聞こえていたと思う。",
+		   NULL, "However, I think I always heard people's voices at the orphanage.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　その聞こえる声は概ね、二つ。",
+		   NULL, "There were two kinds of voices.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　職員の怒鳴る声か、子供の泣き声かのどちらかだった…。",
+		   NULL, "One was the staff yelling, and the other was the children crying.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　施設の中を自由に歩き回ることは許されていなかったから、どこで誰が泣いているのかを知ることもできない。",
+		   NULL, "We were not allowed to walk around inside of the orphanage freely, so we never knew who it was that was crying.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ko3", "maskup", 1, 0, 1300 );
+
+	OutputLine(NULL, "　泣き声と怒声に混じって聞こえる、ガンガンと叩きつける金属音。",
+		   NULL, "One time, along with the crying and yelling, we heard the noise of metallic things being smashed against each other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…何かしらの仕置きを受けているに違いないが、それがどんなものなのか想像もつかず、私たちは震えながら俯いて、聞こえないふりをしながら漢字ドリルを続けるしかない。",
+		   NULL, "We knew it was some kind of punishment, but there was no way for us to even imagine what it was. We trembled, pretended we didn't hear anything, and kept working on our assignments.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同室の誰かがそれを、「棺桶の刑」だと教えてくれたが、",
+		   NULL, "One of my roommates told me it was the \"Casket Punishment\"", Line_WaitForInput);
+	OutputLine(NULL, "それ以上を教えてはくれなかったし、私もそれ以上を知りたいとは思わなかった…。",
+		   NULL, " but she didn't tell me any further, and I didn't want to know either.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　昨日までとまったく同じに過ごしていても、職員の機嫌が悪ければ何にケチをつけられるかわからない。",
+		   NULL, "Even if we behaved exactly the same way as yesterday, if the staff were in a bad mood, they might pick on us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だから、私が知ろうとしなくても、「棺桶の刑」がどのようなものか身をもって知らされてしまう日が、突然訪れるかもしれないのだから…。",
+		   NULL, "So, even if I didn't want to know, I might suddenly find out what the Casket Punishment is one day.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　廊下を職員の足音が近付いてくる。",
+		   NULL, "The footsteps of a staff member were getting closer.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに私たちは気付き、背筋を伸ばし、より一層、勉強に集中している風を装った。",
+		   NULL, "We noticed them, so we straightened our backs and pretended we were studying hard.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　実際に勉強しているかどうかより、職員が見て勉強しているように見えるかどうかが重要だったからだ。",
+		   NULL, "It was more important that the staff saw us doing so than us actually getting any work done.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の隣の子がうつらうつらとしていたのに気付き、私は肘で小突く。",
+		   NULL, "I noticed the girl next to me was falling asleep, so I poked her with my elbow.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それだけの合図でその子は気付き、周りの子と同じように背筋を伸ばすのだった。",
+		   NULL, "She noticed my signal and straightened her back like the other children.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　夕方が近い。",
+		   NULL, "It was almost evening.", Line_WaitForInput);
+	OutputLine(NULL, "……この時間が一番眠くて辛くて、",
+		   NULL, " This was the hardest time for us to keep ourselves awake", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…そして危険な時間だったのだ。",
+		   NULL, " and the most dangerous time.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_M_Door8k", 128, 64 );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　ガチャリと私たちのグループ室の扉が開き、不機嫌そうな形相をした職員が姿を現す。",
+		   NULL, "The door to our room opened, and a mean-looking man showed up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、全員が居眠りをしていないかをジロリと見回すのだ。",
+		   NULL, "Then he looked around to make sure none of us were falling asleep.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ko3", 400 );
+
+	OutputLine(NULL, "　例え、本当に真面目に勉強していたとしても、職員が居眠りをしていると感じたら駄目だ。",
+		   NULL, "Even if we were actually studying hard, if he thought we were asleep, we were out.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だから私たちは、必要以上に真剣さをアピールしなければならない。",
+		   NULL, "That was why we had to make sure we appeared to be studying very hard.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私たちの席の間を職員が見回る。",
+		   NULL, "The man walked around our desks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…その足音が自分の脇をすんなりと通り抜けてほしい……。",
+		   NULL, "I hoped he would just walk by me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちはそれだけを祈りながら、同じ漢字を何度も何度も何度も繰り返し書き続ける。",
+		   NULL, "That was what we all prayed, as we kept working on our homework.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうやって勉強のふりをすればするほど、どこかの誰かの気の毒な仕置きの金属音がより一層耳に染み込んで来るのだった。",
+		   NULL, "The more we pretended to study hard, the more we could hear the sound of metal objects.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ガンガンと金属と金属をぶつけ合うような嫌な音と、その度に聞こえる金切り声のような悲鳴…。",
+		   NULL, "The sound of metal objects crashing into each other, along with screams.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　一体どんな目に遭っているのか。そしてそれはどれほど恐ろしいことなのか。",
+		   NULL, "We couldn't even imagine what the poor subject of that punishment was going through.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…そして、「棺桶の刑」以上に恐ろしい刑罰がまだまだあるのではないか。",
+		   NULL, "...Maybe there was something even worse than the Casket Punishment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちはその恐ろしい想像を少しでも紛らわすために、より一層、画数の多い漢字を何度も何度も繰り返し書くのだった。",
+		   NULL, "To erase such fears, we tried to concentrate even harder on our work.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　かりかり、かりかりかりかり…………。",
+		   NULL, "We kept working...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…金属音と悲鳴が、いつまでも聞こえていた。",
+		   NULL, "As the metal sounds and the screams went on forever.", Line_Normal);
+	ClearMessage();
+
+}

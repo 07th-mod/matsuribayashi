@@ -1,0 +1,71 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 1000 );
+
+	PlayBGM( 0, "maturi_01_Ver2", 120, 0 );
+
+	DrawSceneWithMask( "Fure3", "maskm1", 1, 0, 1300 );
+
+	OutputLine(NULL, "　……長かった。",
+		   NULL, "It was long.", Line_WaitForInput);
+	OutputLine(NULL, "…本当に長かった。",
+		   NULL, " It really was long.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大丈夫…？",
+		   NULL, "Are you okay?", Line_WaitForInput);
+	OutputLine(NULL, "　まだ、あなたの精神は生きている…？",
+		   NULL, " Is your spirit still alive?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これで、私たちが欲しい駒は全てゲーム盤に並んだのかしら。",
+		   NULL, "Do we have all the pieces we want lined up on the game board?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　昭和５８年６月を巡る、運命のゲームで、鷹野たちに勝てるだけの駒が並んだのかしら。",
+		   NULL, "Is this everything we have that can go up against Takano and her minions in the game of fate in the June of 1983?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……私は、",
+		   NULL, "I think,", Line_WaitForInput);
+	OutputLine(NULL, "多分、",
+		   NULL, " maybe,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "並んだと思ってる。",
+		   NULL, " we have everything.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あとは、羽入。",
+		   NULL, "And last but not least, Hanyuu,", Line_WaitForInput);
+	OutputLine(NULL, "…あなただけね。",
+		   NULL, " it's you.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あなたが駒として登場できる時間は、もう相当に制限されている。",
+		   NULL, "The time you have left to be a piece is limited.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、ゲームに登場できなくなったわけじゃない。",
+		   NULL, "But that doesn't mean you can't show up in the game.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………さぁ、始めましょう？",
+		   NULL, "...Shall we begin?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この日のために、数百年もの時間を賭けたのだから。",
+		   NULL, "I've put in hundreds of years just for this moment.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 5000 );
+	SetValidityOfInput( TRUE );
+
+}

@@ -1,0 +1,112 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Instict", 120, 0 );
+
+	DrawScene( "Fure2", 1000 );
+	DrawScene( "white", 1000 );
+	DrawBustshotWithFiltering( 0, "Kei_Def2", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "GK2", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　前原圭一が、みんなを率いる駒に成長してくれるために、…まず学ばなければならない、",
+		   NULL, "In order for Keiichi Maebara to become a game piece that can lead everyone, there's something he has to learn about first.", Line_WaitForInput);
+	OutputLine(NULL, "痛く、辛く、悲しいカケラ。",
+		   NULL, " The piece that's very painful, pitiful, and sad.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　仲間を学び、疑わないことを学ぶ。",
+		   NULL, "He has to learn about his friends and he has to learn to not doubt them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼は仲間を信じるという言葉の重さを、",
+		   NULL, "He doesn't know the importance of trusting his friends.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "まだ、",
+		   NULL, " He doesn't know,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "知らない。",
+		   NULL, " just yet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　わずかの不信感から疑心暗鬼を育て、ルールＸに囚われる前原圭一。",
+		   NULL, "A slight mistrust grows into paranoia, and Keiichi Maebara is trapped within Rule X.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　圭一は悲しい遺書を残し、",
+		   NULL, "At the end of Rule X,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ルールＸの果てに、",
+		   NULL, " Keiichi leaves a sad note,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "死ぬ。",
+		   NULL, " and dies.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Fure2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　それは辛く悲しいことだけど、",
+		   NULL, "While it may be very bitter, and very painful,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………でも、大切なことを学ぶための大切なプロセス。",
+		   NULL, " it also puts him through the process of learning something very important.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Fure1", 1000 );
+
+	OutputLine(NULL, "　…ねぇ、羽入。",
+		   NULL, "...Hey, Hanyuu.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　やっぱりあなたは謝らなくてよかったのよ。",
+		   NULL, "You didn't have to apologize.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼が親類のお葬式で雛見沢を離れたわずか数日。",
+		   NULL, "In the few days he left Hinamizawa to attend his relative's funeral...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…その間に彼が発症してしまったことは確かに悲劇的だけれど。",
+		   NULL, "Tragically, he experienced an outbreak.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でもそれは、彼が大切なことを学ぶための第一歩として必要なことだったんじゃないかって思う。",
+		   NULL, "But I think this was necessary, as his first step towards learning something important.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ルールＸをあぶり出し、やがては打ち勝つための最初の第一歩として。",
+		   NULL, "The very first step towards smoking out Rule X, and eventually defeating it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　このカケラしかなかった頃は、そんなこと、考えもしなかったけれどね……。",
+		   NULL, "When this piece was all I had, I didn't even think of that, though...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

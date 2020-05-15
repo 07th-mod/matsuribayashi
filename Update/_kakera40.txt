@@ -1,0 +1,777 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+
+	PlayBGM( 0, "er_Ver3", 120, 0 );
+
+	OutputLine(NULL, "　お母さんに買い物を頼まれ、スーパーへ買い物に行く途中、沙都子に出会った。",
+		   NULL, "I ran into Satoko while on my way to the grocery store for my mother.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　聞けば、沙都子も同じような買い物を頼まれたという。",
+		   NULL, "Satoko said she was going there too,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ならば一緒に行こうということになった。",
+		   NULL, "so we decided to go together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　買い物メモを見せっこすると、お互いの家の今晩のメニューが想像できて楽しい。",
+		   NULL, "After exchanging our shopping lists, it became easy to guess what the other family would be having for dinner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子の家はどうやら魚と煮物らしい。",
+		   NULL, "Satoko's family is having grilled fish and cooked vegetables.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ちなみに私のうちはハンバーグのようだった。",
+		   NULL, "We're having Salisbury steak.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 0, "Sa_WaraiB1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "M_Hi4", 400 );
+
+	OutputLine(NULL, "「あら、ハンバーグとは羨ましいですわね…！",
+		   NULL, "\"My, that sounds so very good!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_AkireruA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　私、魚はともかく、煮物というのがちょっと怖いんですのよ？",
+		   NULL, " I don't mind the grilled fish, but it's the vegetables I'm less fond of.", Line_WaitForInput);
+	OutputLine(NULL, "　先日買ったカボチャがまだ、だいぶ残ってるみたいなんですもの。」",
+		   NULL, " I'm certain there's still plenty of pumpkin left from the other day.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……きっと今夜もカボチャの煮物三昧なのです。",
+		   NULL, "\"......Then I bet you'll be getting a lot tonight.", Line_WaitForInput);
+	OutputLine(NULL, "かわいそかわいそなのです☆」",
+		   NULL, " Poor, poor Satoko☆.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_YareyareB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「予めカボチャが出て来るとわかってるのも憂鬱でございますわね。",
+		   NULL, "\"I don't appreciate knowing that pumpkin is going to show up on the dinner table...", Line_WaitForInput);
+	OutputLine(NULL, "はぁ。」",
+		   NULL, " Haahh...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……み〜☆",
+		   NULL, "\"......Meep~☆.", Line_WaitForInput);
+	OutputLine(NULL, "　突然カボチャを出されても怒るくせに贅沢な沙都子なのです。」",
+		   NULL, " You don't like pumpkin, no matter how it shows up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_OdorokiA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「り、梨花にだって少しは嫌いな食べ物があるはずですわよ？！",
+		   NULL, "\"R-Rika, you have some food you're not fond of, don't you?", Line_WaitForInput);
+	OutputLine(NULL, "　そういえば梨花、大福とかシュークリームとか、甘い物が嫌いだったんではございませんこと？！」",
+		   NULL, " That's right, you don't like daifuku, cream puffs, or anything sweet, don't you!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……別に嫌いではないのです。",
+		   NULL, "\"......It's not that I don't like those things.", Line_WaitForInput);
+	OutputLine(NULL, "意地悪で食べないだけなのですよ。",
+		   NULL, " I just choose not to eat them.", Line_WaitForInput);
+	OutputLine(NULL, "食べる気なら何個でも食べられちゃいますのです。",
+		   NULL, " If I wanted to, I could eat sweets forever.", Line_WaitForInput);
+	OutputLine(NULL, "パンプキンパイだっておいしくいただけますのですよ、にぱ〜☆」",
+		   NULL, " I could even eat pumpkin pie too. Nipah~☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_AkireruA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ぅうぅぅ、梨花だけ好き嫌いがないなんてずるいですわー！！」",
+		   NULL, "\"Oooh, it's not fair that you aren't a picky eater!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなやり取りがとても楽しい。",
+		   NULL, "Conversations like this are how I have fun.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子はボクにとっての一番の親友。",
+		   NULL, "Satoko is my best friend.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　面倒臭いと思っていたお買い物も、沙都子と一緒になれただけで、楽しい夕方のお散歩に早変りするのだった。",
+		   NULL, "I usually don't like grocery shopping, but if I'm with Satoko, I can make it into an enjoyable evening stroll.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora2", 400 );
+
+	OutputLine(NULL, "　スーパーの近くは他にもお惣菜屋さんとかが並び、雛見沢のちょっとした商店街になっていた。",
+		   NULL, "Near the supermarket, there's a grocers and other shops, forming a little shopping district.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　夕飯の買い物に一番繁盛する時間だ。",
+		   NULL, "The grocery store is busy this time of day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢の主婦たちが集まり、賑やかな買い物をしていた。",
+		   NULL, "All the housewives in Hinamizawa gather here to shop.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　とりあえず、私と沙都子では買うものが違うので、それぞれ分かれて目的の物を買うことにする。",
+		   NULL, "Since Satoko and I have different things to buy, we decide to do our shopping separately.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ぇい、いらっしゃいいらっしゃい！！",
+		   NULL, "\"Welcome, welcome!!", Line_WaitForInput);
+	OutputLine(NULL, "　おや、梨花ちゃま、いらっしゃい！",
+		   NULL, " Oh, Rika-chama!", Line_WaitForInput);
+	OutputLine(NULL, "　お買い物かい？",
+		   NULL, " Are you shopping for your mother?", Line_WaitForInput);
+	OutputLine(NULL, "　偉いねぇ！」",
+		   NULL, " What a good girl!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……にぱ〜☆",
+		   NULL, "\"......Nipah~☆.", Line_WaitForInput);
+	OutputLine(NULL, "　ボクはお買い物ができる偉い子なのです。」",
+		   NULL, " I'm a good girl who can go shopping by herself.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうかそうか、梨花ちゃまは偉いなぁ！",
+		   NULL, "\"Wow, you really are a good girl!", Line_WaitForInput);
+	OutputLine(NULL, "　ほら偉い子のご褒美にこれをあげよう。」",
+		   NULL, " Here, I'll give you this.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　軒先に吊るしてあるお釣り用の小銭入れのザルの中には、時折喘息を患う主人のために飴がいくつか入れてあった。",
+		   NULL, "There were several candies for the owner's occasional asthma attack inside a sieve full of change hanging in the front.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを１つ取り、ボクに放ってくれる。",
+		   NULL, "He picked out a sweet from there and gave it to me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　苺ミルクの味がする、ボクの大好きな飴だった。",
+		   NULL, "It was my favorite flavor, strawberry milk.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あとで沙都子の前で、自分だけがもらえたと自慢するために、今は食べず、わざわざポケットにしまう。",
+		   NULL, "I put it in my pocket so I can brag about it to Satoko later.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ボクにとって、沙都子をからかったり、羨ましがらせたりするのはとても楽しいこと。",
+		   NULL, "I get a lot of fun out of teasing Satoko and making her jealous.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子はそれらに対して、いつも過剰なまでにリアクションをしてくれる。",
+		   NULL, "She always overreacts,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　一緒にいれば退屈に感じることなどない、最高の友人だった。",
+		   NULL, "so I never get bored when I'm with her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「おや、梨花ちゃまのところは今日は何だい。",
+		   NULL, "\"What are you having for dinner tonight, Rika-chama?", Line_WaitForInput);
+	OutputLine(NULL, "豚の挽き肉だと、う〜ん、」",
+		   NULL, " Ground pork... hmmm...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……ハンバーグなのですよ。",
+		   NULL, "\"...We're making Salisbury steak.", Line_WaitForInput);
+	OutputLine(NULL, "お花の形の目玉焼きを乗っけて、ケチャップでお絵描きをするのです。」",
+		   NULL, " We're going to put flower-shaped fried eggs on top and draw pictures on them with ketchup.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おっほっほっほ！　それはいいねぇ！」",
+		   NULL, "\"Oh ho ho ho! That sounds like fun!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんなやり取りを楽しみながら、私は買い物袋の中を少しずつ満たしてく。",
+		   NULL, "I enjoyed that conversation while filling my shopping basket.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　…その時、主婦たちのひそひそ話がふと耳に入った。",
+		   NULL, "...But then I overheard some women whispering.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは、…少しだけ冷たい内容。",
+		   NULL, "They're talking about something that's a little harsh.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………買い物に訪れている沙都子に対するものだった。",
+		   NULL, "......They're talking about Satoko.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　村を国に売る裏切り者のくせにいつまで村に居座るつもりなのか。",
+		   NULL, "\"How long do those village traitors plan to stay here?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　早く出て行けばいいのに。",
+		   NULL, "\"They should just leave.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、堂々と買い物に来る度胸もなく、娘に買い物をやらせるとは。",
+		   NULL, "\"They don't even have the guts to go shopping themselves and make their daughter do it instead.\"", Line_WaitForInput);
+	OutputLine(NULL, "…ぐちぐち、ぐちぐち…。",
+		   NULL, " The women went on and on...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……ダム計画の地元説明会で、北条家と園崎本家が徹底的に対立することになる大喧嘩をして以来。",
+		   NULL, "Ever since the Houjou family and the Sonozaki family got into a huge fight at the explanatory meeting for the dam project,", Line_WaitForInput);
+	OutputLine(NULL, "北条家は村の中での孤立を深めていた。",
+		   NULL, " the Houjou family has been ostracized within the village.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　当初こそ、北条家に同調する立ち退き派も少なからずいたのだが。",
+		   NULL, "At first, there were a significant number of families in favor of leaving like the Houjous.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　園崎本家が主導で村中の徹底的な意見調整が図られ、全体主義的な論調に固められていくと、徐々に立ち退き派は鳴りを潜めていった。",
+		   NULL, "But the main branch of the Sonozakis led a push to completely solidify the village's opinion, and as that tone of unified resistance grew stronger, the pro-evacuation families steadily grew quiet.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　また、園崎家や公由家などの、村に大きな影響力を持つ御三家筋からの露骨な嫌がらせも大きく作用していた。",
+		   NULL, "The public harassment led by the Sonozakis and Kimiyoshis, two of the Three Families with powerful influence on the village, also played an effect too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　園崎本家は、北条家を見せしめに苛め抜くことで、同調する立ち退き派が現れないようにする戦略に出たらしい。",
+		   NULL, "The Sonozaki family made the Houjou family into an example, to ensure there would be no more pro-evacuation supporters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは、先祖から何代にもわたって住み続け、そして自分たちも恐らくはこの村で骨を埋めることになるだろう住民たちにとって、とても圧力のある嫌がらせだった。",
+		   NULL, "The ancestors of the villagers have lived here for generations, and the villagers also know that they themselves will be buried in this village, so this harassment put a lot of pressure on them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　かつて地元説明会で、鼻息荒く北条家に同調し、立ち退き派のリーダーとして煽り立てるような威勢のいいことを言ったのはどこの誰だったやら…。",
+		   NULL, "Who was it that agreed to make the Houjou family the leader of the pro-evacuation group at the explanatory meeting?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのような者はすっかり鳴りを潜めてしまい、踏み絵的に北条家への冷遇に参加していった…。",
+		   NULL, "Those same people no longer said anything, and they even joined in on harassing the Houjou family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　北条家への苛めは、今や村全体からかけられる圧力となっていた。",
+		   NULL, "The harassment they faced then became pressure from the entire village.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　北条家は裕福な家庭ではないから、町会費を長いこと滞納していた。",
+		   NULL, "The Houjou family is hardly wealthy, and they haven't paid the town council fees in a long time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　平和だった頃は、互助の精神でそれを大目に見て、いつかまとめて払ってくれればいいと寛容だったのだが、",
+		   NULL, "When things were peaceful, nobody said anything about it,", Line_WaitForInput);
+	OutputLine(NULL, "ここに来て一気に風向きが変わり、滞納分の町会費を一括ですぐに払えと北条家に迫ったのだ。",
+		   NULL, " but now that the wind was blowing a different way, the Houjou family was asked to pay off all of their late council fees immediately.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　払って払えない額ではなかっただろうが、こういう風に売られた喧嘩は、北条家も買ってしまう。",
+		   NULL, "It wasn't an amount they couldn't afford, but the Houjous recognized a fight was being picked with them, and they responded to it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　挑発に乗るように町会を脱退してしまった。",
+		   NULL, "And so, the Houjou family quit the town council.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だが、これはまんまと悪意ある策に乗ってしまっただけだった。",
+		   NULL, "...But that only played right into the village's evil plan.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka1", 400 );
+
+	OutputLine(NULL, "　町会を敵に回すというのは、陰湿ないじめが行なわれることを意味する。",
+		   NULL, "Making an enemy of the town council meant facing vicious harassment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　例えば、北条家がゴミを出していた場所は、清掃局と町会が掛け合って設けられた仮設のゴミ捨て場だった。",
+		   NULL, "For example, the place the Houjous dumped their trash was a provisional dumping site established by the town council and the waste management department.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　町会の規約では、町会員の家庭だけが使えることになっている。",
+		   NULL, "Under the council agreement, only council members could use it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…北条家が町会を脱退した次の日から。",
+		   NULL, "Ever since the day the Houjou family quit the village council...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　北条家がゴミ捨て場に捨てたはずのゴミ袋は全て、いつの間にか玄関先へ送り返されていた。",
+		   NULL, "Their trash bags were returned to their front door.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、袋が破れて散乱した状態で。",
+		   NULL, "Furthermore, all the bags were torn.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka2", 400 );
+
+	OutputLine(NULL, "　また、北条家のすぐ近くにある垣根道に看板が立った。",
+		   NULL, "On top of that a sign went up on the hedge road near the Houjou family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　「私道につき通り抜け禁止。",
+		   NULL, "It said \"Private road, no trespassing.", Line_WaitForInput);
+	OutputLine(NULL, "町会員以外の通り抜けを禁ずる」。",
+		   NULL, " Only council members permitted.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこには頑固親父が朝晩立ち、北条家の人間を一切通さなかった。",
+		   NULL, "A stubborn old man stood and guarded the road, saying that he would not let any of the Houjou family members pass through.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…私道とは、私有地を道路にして開放したもので、外見は普通の道路と何の違いもない。",
+		   NULL, "...A private road is private property opened up to the public, so it looks just like a normal road.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、立派な私有地であり、土地所有者以外の通り抜けを禁ずるのは決しておかしいことではないのだ。",
+		   NULL, "However, as private property, the owner can forbid anyone else to pass through whenever they like.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　他にも他にも。",
+		   NULL, "More and more...", Line_WaitForInput);
+	OutputLine(NULL, "……陰湿な村ぐるみの苛めは重ねられた。",
+		   NULL, " ...The village piled on vicious harassment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その村八分のような恐ろしさが村中に蔓延し、",
+		   NULL, "The fear of antagonism spread through the entire village", Line_WaitForInput);
+	OutputLine(NULL, "…北条家に同調すれば同じ目に遭わされるかもしれないと怯えさせ、",
+		   NULL, " and people became afraid that if they supported the Houjou family, they'd go through the same thing.", Line_WaitForInput);
+	OutputLine(NULL, "…ますますに北条家を孤立させていく。",
+		   NULL, " ...This has made the Houjou family even more isolated.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……大人たちは、そういう泥臭い暗闘を子どもたちには話さなかったから、沙都子が学校で苛めに遭うということだけはなかったが。",
+		   NULL, "...The grownups haven't told their kids about what's going on, so Satoko isn't harassed in any way at school.", Line_WaitForInput);
+	OutputLine(NULL, "…窒息しそうなぐらいの緊張感を毎日強いられていただろうことは想像に難しくない…。",
+		   NULL, " But it wasn't hard to imagine she probably spent her days feeling so anxious she could hardly breathe.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今、ぼそぼそ陰口を言っている主婦たちも、別に沙都子に直接言ってるわけではない。",
+		   NULL, "Even the women whispering in here aren't saying anything directly to Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……でも、だからといって、時折零れて聞こえる内容と、冷たい目線に沙都子がまったく気付かないわけもない。",
+		   NULL, "But it's not like she doesn't notice their muttering and the cold stares.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……いつから村は、こんなにも沙都子に冷たくなったのか。",
+		   NULL, "...When did this village become so cold towards her?", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子の親友としてとても悲しかった。",
+		   NULL, " ...As her best friend, it's very sad for me.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta2_Mura", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　こうして見てみれば、沙都子の買い物はボクの和気藹々としたものとは全然違う。",
+		   NULL, "Satoko's shopping experience is nothing like mine.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私が挨拶したり買い物したりすれば、オマケがもらえたりお得にしてもらったり、色々あるのに、…沙都子にはない。",
+		   NULL, "When I say hello or buy things, I usually get treats or a discount. But that doesn't happen to Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いや、それどころか、",
+		   NULL, "On the contrary,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………わざと後回しにされたり、聞こえないふりをされたり、",
+		   NULL, " she's served last on purpose, and sometimes shop owners even pretend they don't hear her.", Line_WaitForInput);
+	OutputLine(NULL, "……沙都子に関わりたくないという気配が充満しているのがわかった。",
+		   NULL, " Obviously, people don't want to have anything to do with her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…ごった返す主婦たちの合間を縫って、ずっと魚屋の主人にほしいものを言っていたはずなのに、最後の最後まで後回しにされた沙都子。",
+		   NULL, "...Satoko had been weaving through the housewives crowding the shop, telling the fishmonger what she wanted, but she kept getting ignored.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……沙都子は強気な笑顔を浮かべて、全然気にしない風を装っているが、……ボクにはわかる。",
+		   NULL, "...She's decided to keep her smile and pretend she doesn't mind... but I know.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはあまりに痛々しい痩せ我慢…。",
+		   NULL, "It was far too painful for her to endure...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 0 );
+	DrawScene( "black", 10 );
+
+	OutputLine(NULL, "　その時、沙都子が小銭を地面にばらまいてしまった。",
+		   NULL, "At that point, Satoko dropped her coins on the ground.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　渡されたお釣りを財布に戻そうとして、ちょっと指に引っ掛かったのかもしれない。",
+		   NULL, "Maybe her finger got stuck on something when she was trying to put the change back into her wallet.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ボクは沙都子から少し離れていたので、主婦たちの間を潜り抜けて、一緒に小銭を拾ってやろうとする。",
+		   NULL, "I ran through the crowd to help her pick them up.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………でも、そこではっとした。",
+		   NULL, "......But as I did, I noticed something.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……沙都子が、たくさんの小銭を落としてしまって、右往左往しながらそれを拾っているのに、",
+		   NULL, "Satoko dropped a lot of coins, and is struggling to pick all of them up, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………誰もそれを手伝わない。",
+		   NULL, "but nobody is helping her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いや、手伝わないというより、…まるで沙都子がそこにいないかのように振舞っているのだ。",
+		   NULL, "It's not just that... it's almost like they're acting like they don't even see her there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…自分のミスで落とした小銭なのだから、沙都子も誰かが拾うのを手伝ってくれるのを期待しているわけじゃない。",
+		   NULL, "Satoko isn't expecting anyone to help her, since she's the one who dropped them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………でも、……それでも…。",
+		   NULL, "......But... but...", Line_WaitForInput);
+	OutputLine(NULL, "…これだけの人が行き来しているのに、",
+		   NULL, " there are so many people around", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………ただの一人も手伝おうとしないなんて…。",
+		   NULL, " and not even one is trying to aid her...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……沙都子、ボクも拾いますですよ。」",
+		   NULL, "\"......Satoko, I'll help you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あ、",
+		   NULL, "\"Ah...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………ぁ、",
+		   NULL, " ah...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "だ、",
+		   NULL, " I'm", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "大丈夫ですわよ梨花…。」",
+		   NULL, " okay, Rika...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのわずかな仕草だけで、私には彼女の傷ついた心の痛みがわかる。",
+		   NULL, "That reaction is all I need to tell how hurt she is.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しかも、…私が沙都子の小銭拾いを始めたら、他の主婦も一緒に小銭を拾い出したのだ。",
+		   NULL, "Furthermore, when I started to help Satoko, other housewives started to pick up the coins too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そうするのが当然であるとでも言うような顔で。",
+		   NULL, "As if it's the natural thing to do.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……古手家の巫女のボクが拾い出したなら手伝ってもいいのか。",
+		   NULL, "...So they can only help if a shrine maiden of the Furude family does?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ボクが拾わなかったら、最後まで見て見ぬふりをしていたくせに…。",
+		   NULL, "If I didn't help, they would have disregarded her completely.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、……「ボク」が拾えばみんなが手伝ってくれるというのが、沙都子の心をどれだけ傷つけているというのか…。",
+		   NULL, "And the fact that other people helped only because I did hurts Satoko even more.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は主婦たちが拾ってくれた小銭を礼も言わずに奪い取る。",
+		   NULL, "I grabbed the coins from the housewives without thanking them.", Line_WaitForInput);
+	OutputLine(NULL, "……礼どころか唾を吐いてやりたいくらいの気持ち。",
+		   NULL, " ...I'd rather spit at them than do that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta2_Mura", "maskup", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Sa_MuhyouA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ぁ、……ぁりがとうございますわ。",
+		   NULL, "\"Th... Thank you very much.", Line_WaitForInput);
+	OutputLine(NULL, "梨花。",
+		   NULL, " Rika.", Line_WaitForInput);
+	OutputLine(NULL, "皆さん。」",
+		   NULL, " Everyone.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…感謝の言葉を述べないと、またどこかで、北条の娘は礼儀知らずだ、みたいなことを言われかねないのだろう。",
+		   NULL, "If she didn't thank them, people would talk about that too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子は、苦々しくその感謝の言葉を口にした。",
+		   NULL, "Satoko forced out her words of gratitude.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを見下ろす主婦たちの、さもどうでもいいような淡白な表情が、",
+		   NULL, "The housewives looked down at her with blank expressions.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私にはとにかく耐えられない。",
+		   NULL, " ...I can't stand this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…沙都子が今、負っている心の痛みが、耐えられない…。",
+		   NULL, "...I can't stand what Satoko is going through right now...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……お買い物が終わりましたら行きましょうです、沙都子。」",
+		   NULL, "\"...If we're done, let's go, Satoko.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sa_HannbesoB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「え、……えぇ…。」",
+		   NULL, "\"S-Sure...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は沙都子の腕を掴んで、そこを抜け出す。",
+		   NULL, "I grabbed Satoko's arm and pulled her away.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 1, "higurashi", 120, 0 );
+
+	DrawSceneWithMask( "M_Hi9", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　…悔しい、",
+		   NULL, "...I was frustrated,", Line_WaitForInput);
+	OutputLine(NULL, "悲しい、",
+		   NULL, " sad,", Line_WaitForInput);
+	OutputLine(NULL, "辛い。",
+		   NULL, " and bitter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子に何の罪があるというのか…。",
+		   NULL, "What has Satoko done?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その冷たい現実が、悔しくて悲しい。",
+		   NULL, "Reality is just too cruel.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分はマスコットのように可愛がられている。",
+		   NULL, "Everyone loves me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、それと同じものを沙都子に分け与えることができない…。",
+		   NULL, "But can I share that love with Satoko?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……沙都子は今頃、…どうして同い年の自分と梨花で、ここまで対応が違うのかと呆然としているに違いない…。",
+		   NULL, "...Satoko must be wondering why people treat me so differently.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………こんな思いを沙都子にさせるくらいなら、一緒にお買い物になんて来なければ…、",
+		   NULL, "...I shouldn't come shopping with her...", Line_WaitForInput);
+	OutputLine(NULL, "いや違う。",
+		   NULL, " or rather,", Line_WaitForInput);
+	OutputLine(NULL, "私が沙都子の分まで一緒にお買い物をしてあげればよかった…。",
+		   NULL, " I should have done her shopping instead.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……沙都子。」",
+		   NULL, "\"......Satoko.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Sa_OdorokiA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…な、……なんですの、梨花。」",
+		   NULL, "\"...Wh... What is it, Rika?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……小銭をばらまいてしまって、かわいそかわいそなのです。",
+		   NULL, "\"......I feel bad that you dropped your coins.", Line_WaitForInput);
+	OutputLine(NULL, "…なので、これは沙都子への残念賞なのですよ。」",
+		   NULL, " So here's something that'll make you happy.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は、せめて沙都子の心の傷を、ほんのわずかでも癒してあげたくて、",
+		   NULL, "I wanted to at least ease her pain a little bit...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…さっきもらった苺ミルクの飴を取り出す。",
+		   NULL, " ...so I pulled out the strawberry milk candy I just received.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、…沙都子は受け取らなかった。",
+		   NULL, "But... Satoko refused to take it.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 200 );
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「……その飴は、梨花がもらったものではありませんの。」",
+		   NULL, "\"That candy was given to you.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の手が、びくっと凍える…。",
+		   NULL, "My hand froze.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…沙都子は見ていたのだ。",
+		   NULL, "...She saw.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この飴を私が受け取るところを……。",
+		   NULL, "She saw me getting this candy...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…渡した人だって、梨花に食べてほしいと思って渡したんですわ。",
+		   NULL, "\"...That person wanted you to eat it.", Line_WaitForInput);
+	OutputLine(NULL, "………だから、私が食べたら失礼ですわよ……。」",
+		   NULL, " ...So if I did, it'd be rude...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…沙都子は私に背を向け、別れ道に至るまで、ずっとそのままだった…。",
+		   NULL, "...Satoko turned her back on me and kept walking...", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora2", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　別れの挨拶すらなく、……沙都子は買い物袋を持ってとぼとぼと去っていく。",
+		   NULL, "Without even saying goodbye... she continued on to her house with the shopping bags in her hands.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……私は、",
+		   NULL, "...I...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…沙都子の心を癒したいつもりだったのに、",
+		   NULL, " I only wanted to ease her pain.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……最後の最後で塩を塗るような真似まで………。",
+		   NULL, " But I ended up rubbing salt in her wound.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　こんな自分がどうして沙都子の親友だなんて？",
+		   NULL, "How can I call myself her best friend?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もし私に握力があったなら、…そのまま飴を手の中で握り潰してしまいたかった………。",
+		   NULL, "If I could, I would have crushed the candy right there.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

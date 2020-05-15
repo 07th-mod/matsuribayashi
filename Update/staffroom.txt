@@ -1,0 +1,449 @@
+﻿void main()
+{
+
+	SetFontOfMessage( 2, 24, 1 );
+
+	DrawScene( "black", 1000 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawScene( "DSC00038", 1000 );
+
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+
+	OutputLine(NULL, "　こんにちは、竜騎士07です。",
+		   NULL, "Hello, this is Ryukishi07.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この度は「祭囃し編」を、いえ、",
+		   NULL, "Thank you for playing Matsuribayashi, no,", Line_WaitForInput);
+
+	OutputLine(NULL, "『ひぐらしのなく頃に』を最後までお付き合いくださり、誠にありがとうございます。",
+		   NULL, " thank you very much for playing Higurashi - When They Cry until the end.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「祭囃し編」は、ある意味、",
+		   NULL, "Matsuribayashi is, in a way,", Line_WaitForInput);
+	OutputLine(NULL, "「皆殺し編」の後半に描かれている鷹野との対決に対する解等編です。",
+		   NULL, " the solution episode for the situation with Takano and the kids starting from halfway through Minagoroshi.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　どうすれば鷹野の陰謀を打ち砕けるか。",
+		   NULL, "How can they defeat Takano's conspiracy?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうすれば理想の結末を迎えられるか。",
+		   NULL, "How can they reach their ideal ending?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今回は、それに対する解をご用意できた皆さんと、作者である私との一騎打ちとして描きました。",
+		   NULL, "I wrote this episode as a duel between you, the reader, and me, the writer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ですのでつまり、私が今回「祭囃し編」でお届けした物語より、より素晴らしい解（世界）を描けたとお感じになられた方は、",
+		   NULL, "So if you think you created a better resolution (world) than my Matsuribayashi,", Line_WaitForInput);
+	OutputLine(NULL, "竜騎士07との一騎打ちに勝った、と思っていただいてよろしいかと思います。",
+		   NULL, " that means you've defeated Ryukishi07 in this duel.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　竜騎士07の用意させていただいた解は、大きく分けて２つあります。",
+		   NULL, "I, Ryukishi07, have provided two resolutions.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　１つ目の解は、鷹野との戦い方。",
+		   NULL, "One is how to fight against Takano.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まず、「皆殺し編」のヒント。",
+		   NULL, "First, here is a hint from the Minagoroshi chapter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女の陰謀を知り、その第一歩が緊急マニュアル第３４号に依存していること。",
+		   NULL, "You find out about Takano's conspiracy, which relies on Emergency Manual 34.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、「綿流し編」「目明し編」でのヒント。",
+		   NULL, "Next, here are hints from the Watanagashi and Meakashi chapters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花が死亡した後、４８時間が経過した世界があるにもかかわらず、村が平穏であること。",
+		   NULL, "It has been 48 hours after Rika's death, yet the village is peaceful.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これを重ね合わせれば、高野一二三が記した緊急マニュアルの根拠の、４８時間以内に全員が末期発症する、が真実でないことが明白です。",
+		   NULL, "If you put those two things together, obviously the basis of the emergency manual which Hifumi Takano wrote, that everyone will develop terminal symptoms within 48 hours, isn't true.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これらは重ね合わせて透かしますと、梨花の死が４８時間以上経ってから確認されれば、",
+		   NULL, "When you put these two together, you can realize that if Rika's body was discovered 48 hours after her death,", Line_WaitForInput);
+	OutputLine(NULL, "終末作戦を防ぐことが可能であることがわかると思います。",
+		   NULL, " then it's possible to prevent the final operation.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　「祭囃し編」では、それを巡る攻防を、読み物になるようにどたばたと描いていますが、",
+		   NULL, "In the Matsuribayashi chapter, I wrote about an attacking side and a defending side like a novel.", Line_WaitForInput);
+	OutputLine(NULL, "淡々と解だけを描くなら、大石が梨花は死後４８時間と宣言し、それが「東京」に伝わった時点で、鷹野の陰謀の撃退に成功していたのです。",
+		   NULL, " If I were to simply write about the resolution, all I had to write was for Ooishi to announce that Rika died at least 48 hours ago, and Takano's conspiracy would fall apart once the news reached Tokyo.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これは、かなり簡単なパズル的解答ですので、正解された方も少なくないだろうと思います。",
+		   NULL, "This was rather an easy resolution, like a puzzle, so I'm sure many of you got this right.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もう１つの解は、この世界の理想の結末。",
+		   NULL, "The other resolution was the ideal ending for this world.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これに答えるには、先にこの世界の世界観を説明しなければなりません。",
+		   NULL, "To answer this, I have to explain the worldview of this story first.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　このヒントは、かなり細かく散らされていますが、特徴的なものとしては「祟殺し編」「皆殺し編」が挙げられると思います。",
+		   NULL, "There are hints all over, but the crucial ones are in the Tatarigoroshi and Minagoroshi chapters.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子の叔父が帰宅し、沙都子が辛い境遇に落ちる。",
+		   NULL, "Satoko's uncle comes home and Satoko's life becomes miserable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこから救い出すにはどうすればいいか。",
+		   NULL, "How can she be rescued from that situation?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　本作が殺人を肯定的に描く、いわゆる殺人エンタメ作品であるならば、「祟殺し編」が正解です。",
+		   NULL, "If this story was an exercise in murder, then the Tatarigoroshi chapter is the correct answer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　圭一はうまく鉄平を殺害し、死体を隠せてハッピーエンド。",
+		   NULL, "Keiichi kills Teppei and hides his body well. There's a happy ending.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかし、私はそれを美しい世界として締めくくらず、明白なバッドエンドを当てて否定しました。",
+		   NULL, "But I didn't end the episode that way. Instead, I denied it with a bad ending.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この『ひぐらし』の世界観が示す解とは、",
+		   NULL, "The resolution the worldview of Higurashi - When They Cry advocates", Line_WaitForInput);
+	OutputLine(NULL, "「皆殺し編」の、みんなで連帯して非暴力主義で訴えていく、というものでした。",
+		   NULL, " is a nonviolent one, with everyone united together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　特に出題編である「鬼隠し編」「綿流し編」「祟殺し編」で多く描いていますが、",
+		   NULL, "That is established in 'Question' chapters such as Onikakushi, Watanagashi, and Tatarigoroshi.", Line_WaitForInput);
+	OutputLine(NULL, "この世界では、疑心暗鬼に陥り、１人で悩みこみ始めると必ず事態は悪化し惨劇を招くようになっています。",
+		   NULL, " In those worlds, when someone becomes suspicious about everything and worries about it alone, things get worse, and that leads to tragedy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　「目明し編」に至っては、それの極みであると言えるでしょう。",
+		   NULL, "The Meakashi chapter is the sublimation of that situation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　逆に、仲間に打ち明け相談した場合、数々の惨劇の火種は、どれも呆気ないくらいにくだらないものであったことが次々わかることが「罪滅し編」「皆殺し編」で示されています。",
+		   NULL, "On the other hand, when one talks to their friends, it's revealed that the causes of the tragedies are quite silly. That is indicated in the Tsumihoroboshi and Minagoroshi episodes.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　つまり、『ひぐらし』の世界では、打ち明けあい連帯することで、いかなる困難にも打ち勝てる、という世界観が示されているのがおわかりになりますでしょうか。",
+		   NULL, "In other words, can you see that in the worlds of Higurashi, anything can be overcome when people talk to each other and help one another?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…非常に残酷ですが、現実世界はそこまでやさしくありません。",
+		   NULL, "Unfortunately, that doesn't happen in reality...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　連帯はかえって不和を招き、１人で進める方が事態を混乱させない事例も少なくありません。",
+		   NULL, "Helping each other creates friction, and often times, working alone is a lot simpler.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ですが、私たちは人と連帯し、理解し合いながら困難に立ち向かいたいと日々願っている…。",
+		   NULL, "However, we always hope that we can connect with other people and understand each other, so that we can face any difficulty...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その一点においてのみ、この世界はファンタジーであると言ってもいいでしょう。",
+		   NULL, "In that sense, this world is a fantasy.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そう。",
+		   NULL, "That's right.", Line_WaitForInput);
+	OutputLine(NULL, "この『ひぐらし』の世界にはたった１つ、魔法の法則がある。",
+		   NULL, " In the worlds of Higurashi, there is one magical rule.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは、みんなに相談し、みんなの力を得れば、どんな困難にも打ち勝てるということ。",
+		   NULL, "That is to talk to others and accept help from them. Then you can defeat anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どんな奇跡も起こせるということ。",
+		   NULL, "With that, it is possible to make a miracle happen.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それが絶対法則として示されるなら、これはもはや魔法、",
+		   NULL, "If that could be cast into an absolute rule, it would be a sort of magical", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…そう、「システム化された奇跡」と呼べるでしょう。",
+		   NULL, " \"systematic miracle\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　劇中で羽入たちが語ったとおりです。",
+		   NULL, "Just like what Hanyuu and her friends said in the story.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これこそが『ひぐらしのなく頃に』の世界観です。",
+		   NULL, "That is the worldview of Higurashi - When They Cry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それに則って理想の結末を考えれば、最初に思いつくのは、登場人物全てが結束して鷹野と戦いこれを打ち破るという、爽快なエンドだと思います。",
+		   NULL, "If you follow that rule and think about an ideal ending, I bet the first thing you'll think about is an ending where all the club members unite and defeat Takano.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　実際、「祭囃し編」の劇中でもそのシーンを爽快に描くことでそれを肯定しています。",
+		   NULL, "Actually, there are scenes in the Matsuribayashi chapter that affirm that sort of ending.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ですが、同時に、鷹野という人物については非常に孤独に描き、",
+		   NULL, "However, at the same time, Takano is described as a very lonely person.", Line_WaitForInput);
+	OutputLine(NULL, "爽快感とは逆行する演出をすることで、その解に対する疑問も提起しています。",
+		   NULL, " By doing so, I raise a question about the resolution.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鷹野を除く全員が結束して、鷹野を生贄の羊にして叩きのめし、鷹野を除く全員がハッピーエンド。",
+		   NULL, "Everyone else unites, defeats Takano, and makes her into a sacrifice. This is a happy ending... for everyone except Takano.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この、生贄を捧げることでその他全員が結束するのを美談として描く風潮は、非常に根強いものです。",
+		   NULL, "It is a very popular style of story for the protagonists to unite together and sacrifice the antagonist.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　宇宙からエイリアンが攻めてきたため、世界各国は争いをやめて仲良く連携し、これを撃退。",
+		   NULL, "Aliens come to the earth to invade us, so the world unites and defeats the aliens.", Line_WaitForInput);
+	OutputLine(NULL, "人類万歳、同じ人間同士仲良くがいいね。",
+		   NULL, " Hooray for humans, and we must all get along.", Line_WaitForInput);
+	OutputLine(NULL, "という構図は古今東西に溢れているはずです。",
+		   NULL, " This is a very popular storyline all over the world.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　エイリアンや悪魔、モンスターという、明白な悪役を生贄に捧げることで人類愛をテーマとした作品は枚挙に暇がありません。",
+		   NULL, "There are plenty of stories that use aliens, devils, or monsters as clear \"bad guys\", and make them into sacrifices.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　物語の途中までいがみ合っていた陣営が、第３の敵に対し、争いをやめて手を結び合って撃退するエピソードは確かに熱いものがあるのですが…。",
+		   NULL, "Two parties fighting with each other become allies once the third party shows up. Storylines like these are indeed exciting...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この、生贄を投じることで手を結ぶ禊ぎには、友好的関係を作りだすため、常に第３の敵（生贄）を求め続けなくてはならないという不毛（鬼）をも生み出すと考えています。",
+		   NULL, "By adding a sacrifice, differing parties unite and become allies. To create this situation, there has to be always the third party (the sacrifice) as well.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いえ、数々の物語を生み出された方々もそれに気付いています。",
+		   NULL, "I'm sure many of those who created such stories must have already noticed that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ですから、絶対に私たちと相容れることのできない存在を、第３の敵に描くのです。",
+		   NULL, "We always add a third enemy that can't possibly unite with us.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　互いが仲直りするために、共同の敵を外に求める。",
+		   NULL, "To make up with each other, we try to find a common enemy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……何だか、今日の世界情勢にも通じそうな気がするキーワードだと思うのは、私だけでしょうか。",
+		   NULL, "Am I the only one who feels that describes our world today?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　現実世界は人間だけの世界です。",
+		   NULL, "In reality, this world belongs only to humans.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこにはエイリアンも悪魔もモンスターもいません。",
+		   NULL, "There are no aliens or devils or monsters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこに敵を求めるというのはつまり、人同士が永遠に争いあうこと。",
+		   NULL, "So for us to find an enemy, we'll have to fight each other forever.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして仲直りをするにも、また新しい敵が必要になるという、永遠の争いの連鎖です。",
+		   NULL, "To make up with each other, we need a new enemy, so we just end up fighting someone else.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それこそが人の世の鬼だと、この度の『ひぐらし』の中では断じさせていただきました。",
+		   NULL, "In this chapter of Higurashi, I declared that to be the demon of the world of man.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこまで世界観を説明した上で「祭囃し編」を見ると、",
+		   NULL, "With these explanations of the worldview here in mind,", Line_WaitForInput);
+	OutputLine(NULL, "……鷹野という存在を叩きのめすのが果たして理想的な解なのか、少々の疑問が生じるのではないでしょうか。",
+		   NULL, " do you wonder if the resolution of defeating Takano is in fact an ideal resolution of the Matsuribayashi chapter?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…そう。",
+		   NULL, "That's right.", Line_WaitForInput);
+	OutputLine(NULL, "これでは「祟殺し編」の愚を再び冒したのと大差ないのです。",
+		   NULL, " It's basically the same foolishness found in Tatarigoroshi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "（その論法から行くと、沙都子救出を巡る問題は、",
+		   NULL, "(According to that logic, the Minagoroshi chapter isn't the best resolution for the problems that surround Satoko either.", Line_WaitForInput);
+	OutputLine(NULL, "「皆殺し編」すらも実は最高の解ではない、という結論に行き着くのが、ご理解できますでしょうか……？）",
+		   NULL, " Do you understand that...?)", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼らは、どうやったら鷹野と仲良くなれるのでしょう。",
+		   NULL, "How can they make up with Takano?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まさか、「東京」を新しい敵に据え、鷹野と共同戦線を張って仲直り…とは言いませんよね？",
+		   NULL, "You wouldn't suggest to make Tokyo into a new enemy and let the club members join with Takano, would you?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この話を延々と続けていくと、最後には宗教的な次元にまで達してしまうような気がしますので、これ以上の議論は控えましょう。",
+		   NULL, "If I continue to talk about this issue, I will probably end up mentioning something religious, so let me stop here.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　『ひぐらしのなく頃に』の世界観に沿った、最高の結末とは果たしてどのようなものなのか。",
+		   NULL, "What kind of ending would be the best outcome following the worldview of Higurashi - When They Cry?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それはひょっとすると、「祭囃し編」よりも、もっともっと素晴らしい物語なのかも…。",
+		   NULL, "Perhaps it's something better than the Matsuribayashi chapter...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この問題はきっと、『ひぐらしのなく頃に』の卒業問題になるかと思います。",
+		   NULL, "You can consider this a graduating question for Higurashi - When They Cry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この最後の出題を『ひぐらしのなく頃に』という物語に、４年半もの長きにわたりお付き合いくださりました皆さんへの、最後の置き土産ということにさせていただければ幸いです。",
+		   NULL, "Maybe I will leave it as my final gift to those who enjoyed this tale for four and a half years.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何が語りたいやらもわかりにくい、このような難解な作品に今日までお付き合いくださり、本当にありがとうございました。",
+		   NULL, "Thank you for reading this extremely complicated story.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　結局、この物語は何だったのか。",
+		   NULL, "In the end, what was this all for?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを全て統括したなら、やはり最後には「エンターテイメント」だったとご評価いただけるのがもっとも適当ではないかと思います。",
+		   NULL, "If I were to put the answer to that question in one word, it would be \"entertainment\".", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　煙に巻くような謎掛けに答えられたかどうかが重要なんじゃない。",
+		   NULL, "It's not important if you were able to answer the riddles.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　結局のところ、楽しんだ方が一番の勝者なのですから。",
+		   NULL, "After all, if you enjoyed yourself, you won.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　竜騎士07としての挑戦意欲はまだまだ衰えません。",
+		   NULL, "Ryukishi07 will continue to challenge you.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "『ひぐらしのなく頃に』は、これで物語の幕を閉じますが、また異なる世界にて皆さんと再会できることを願ってやみません。",
+		   NULL, "Higurashi - When They Cry ends here, but I hope I get to see you again in a different world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今度はどんな作品を描こうかな…。",
+		   NULL, "What kind of work do I want to create next?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを無限の可能性の中から、ひぐらしの声を聞きながらのんびり思いを馳せるのも、今は非常に乙なことではないかと考えます。",
+		   NULL, "Maybe it's fitting to choose my next work from an infinite number of possibilities while listening to the chorus of the higurashi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今日まで、この作品に献身的な協力をしてくださった全ての方々に深く感謝いたします。",
+		   NULL, "I want to express my gratitude to all the people who have supported me until today.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本当にありがとうございました。",
+		   NULL, "Thank you very much.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　皆さんとまた再会できることを、心より祈っております。",
+		   NULL, "I look forward to seeing you all again soon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetDrawingPointOfMessage( 0, 10 );
+
+	OutputLine(NULL, "竜騎士07",
+		   NULL, "                                    Ryukishi07", Line_Normal);
+	ClearMessage();
+	CallScript( "&eye" );
+
+}

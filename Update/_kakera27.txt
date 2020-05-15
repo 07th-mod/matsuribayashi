@@ -1,0 +1,439 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	DrawScene( "JYS2", 400 );
+
+	OutputLine(NULL, "　古手神社の境内の中にある集会所こそ、鬼ヶ淵死守同盟の本部事務所であった。",
+		   NULL, "The gathering place inside of the Furude Shrine is in fact the headquarters of the Onigafuchi Guardians.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本来は閑静であるべき境内の中は、あちこちに「ダム反対！」と書かれたノボリが立てられており、まさに反ダム勢力の本陣であることを物語っている。",
+		   NULL, "Normally, a shrine should be a calm and quiet place, but there are anti-dam signs everywhere, making it very obvious what this location has become.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "JS4", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　事務所内には、死守同盟の幹部たちが３０人以上、ぎっしりと座っており、今後の方針などについて熱心な意見交換をしていた。",
+		   NULL, "There are over thirty members of the Guardians here at the moment, and they are having a heated conversation about their plans for the future.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　集会所は古手家の敷地内にあるとは言え、村人共有の施設なので、使用時間は午後の９時までという規則が定められていた。",
+		   NULL, "Although this meeting place is on the Furude family's property, it's a community facility, so it closes at nine PM.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もちろん、議論が過熱すれば、それを超えてしまうこともあるが、基本的には会合は午後の９時で終えるのが流れになっていた。",
+		   NULL, "Of course, sometimes a discussion gets so heated that it goes on past closing time, but meetings are supposed to end by nine.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もし話し合いが早くに終わってしまえば、午後の９時までは雑談をして過ごす。",
+		   NULL, "If a discussion ends early, they usually chitchat until that time.", Line_WaitForInput);
+	OutputLine(NULL, "それが彼らの基本的な流れだった。",
+		   NULL, " That's what usually happens.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もっとも雑談と言っても、ダム戦争の真っ最中であり、その内容は大抵、ダムに関わるもの。",
+		   NULL, "Of course, they mostly talk about the dam even when they chitchat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……どこどこへ陳情に行って門前払いにされたとか、誰々が警察に不当逮捕されたとか、ダム現場事務所の対応が乱暴であるとか、そんなものばかりだった。",
+		   NULL, "They talk about someone's mistreatment at the government office, or someone getting arrested unjustly, or complain that people at the dam construction site are too violent.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雑談のため、やや感情的な話も多く、そのためか、北条家に対する陰口も少なくなかった。",
+		   NULL, "Since it's idle chatter, the topics are slightly emotional, and because of that, there was a good deal of badmouthing the Houjous.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "JS5", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「…そしたらさぁ、回覧板捨てちゃったっとか言い出すんだよ！",
+		   NULL, "\"...Then she threw the circulation notes away!!", Line_WaitForInput);
+	OutputLine(NULL, "　普通に考えてそんなことするかねぇ？！」",
+		   NULL, " Can you believe that?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あそこの奥さんはさ、チョイと頭のネジがイカレちまってんだよ。",
+		   NULL, "\"That woman is crazy.", Line_WaitForInput);
+	OutputLine(NULL, "この間もさ、ゴミ置き場で牧野さんとこの婆さんとすんげー口論してて！」",
+		   NULL, " Just the other day, she got into a huge argument with Makino-san's grandmother at the trash pickup!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「大体、何て言うかね。",
+		   NULL, "\"You know,", Line_WaitForInput);
+	OutputLine(NULL, "本当に粗暴だよね、あそこのご主人は。",
+		   NULL, " the husband is rude too!", Line_WaitForInput);
+	OutputLine(NULL, "理性がないというか！」",
+		   NULL, " He's so irrational!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あぁ、お前さんは地元説明会の時を見てないのかい？",
+		   NULL, "\"Ah, did you see him at the explanatory meeting?", Line_WaitForInput);
+	OutputLine(NULL, "　あれはすごかったよ、なぁ？！",
+		   NULL, " That was bad, huh?", Line_WaitForInput);
+	OutputLine(NULL, "　あそこまで言うからにゃもう村にはいられないよ。",
+		   NULL, " I can't believe they're still here.", Line_WaitForInput);
+	OutputLine(NULL, "さっさと出てけばいいのにさ！",
+		   NULL, " I wish they'd just leave!!", Line_WaitForInput);
+	OutputLine(NULL, "　カネがもらえないのどうのこうの！",
+		   NULL, " He said something about money.", Line_WaitForInput);
+	OutputLine(NULL, "　浅ましいったらありゃしないね！」",
+		   NULL, " He has absolutely no shame!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いやいやいやいや！",
+		   NULL, "\"No, no, no!!", Line_WaitForInput);
+	OutputLine(NULL, "　理性のなさで言ったらあそこの奥さんも相当のもんだよ！",
+		   NULL, " If you talk about being irrational, his wife is the same or even worse!!!", Line_WaitForInput);
+	OutputLine(NULL, "　わはははははは！」",
+		   NULL, " Wahahahahahaha!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「それでやっぱり遺伝なのかしらね！",
+		   NULL, "\"It must be hereditary!!", Line_WaitForInput);
+	OutputLine(NULL, "　あそこのお嬢さん、買い物によく見掛けるんで挨拶するんだけど、向こうから挨拶は絶対に返さないのよ？",
+		   NULL, " I see their daughter shopping quite often, so I used to say hello to her, but she never replied. Can you believe that?", Line_WaitForInput);
+	OutputLine(NULL, "　だから私たち馬鹿馬鹿しくなっちゃって、以来、見掛けても知らないふりしてんだから。」",
+		   NULL, " So I got tired of it and I don't say anything to her anymore.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「それ言ったら、あそこの坊主も、いーっつも暗そうな顔してるよなー！",
+		   NULL, "\"Hey, their son always looks sooooo depressed, doesn't he?", Line_WaitForInput);
+	OutputLine(NULL, "　うっははははは！」",
+		   NULL, " Hahahahahaha!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "JS6", 400 );
+
+	OutputLine(NULL, "　いつの間にか、北条家は村の敵、裏切り者という図式が出来上がってしまい、",
+		   NULL, "By now, the Houjou family has become the enemy of the whole village.", Line_WaitForInput);
+	OutputLine(NULL, "北条家の陰口話なら、誰もが気軽に乗れる最大公約数的話題になってしまっている。",
+		   NULL, " Badmouthing the Houjou family was the greatest shared topic that anyone could easily contribute to.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…この村で御三家、特に今や園崎家がどれだけの影響力を持つのか。",
+		   NULL, "...If he had known how powerful the Three Families were, especially the Sonozaki family...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そしてお魎さんがどういう気性の人かを理解していたなら、ああいう喧嘩を吹っかけることは絶対にない。",
+		   NULL, "And if he had known Oryou-san's character, he wouldn't have said the things he did.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　北条夫妻とて村の住人。",
+		   NULL, "The Houjou couple are residents here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　町会活動にそれほど熱心でなかったとはいえ、お魎さんがどういう人か知らなかったはずはない。",
+		   NULL, "Though they were never very enthusiastic about the council activities, they should've known what kind of person Oryou-san is.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それを公衆の面前で罵倒するようなことをすれば、必ずや何倍にもなって跳ね返ってくることが想像できたはずだ。",
+		   NULL, "He could have imagined just what would happen to him if he talked to her that way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…にもかかわらず、一時の感情に任せて暴言を口にしてしまった。",
+		   NULL, "Yet, he let his anger take over and voiced his unpleasant feelings.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その意味で、今日の北条家の孤立は、気の毒だとするよりも自業自得だとする論調の方が強い。",
+		   NULL, "So most people think the Houjou family brought their isolation upon themselves.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…立ち退きで国と交渉したければ、水面下でこっそり個人的にやればよかったのだ。",
+		   NULL, "If they wanted to negotiate with the government regarding the move, they should have done so privately.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あのような場で堂々と口にしたこと事態が愚かしいと言えば愚かしい。",
+		   NULL, "Yet he was foolish enough to express himself at a public gathering like that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そういう意味でも、北条家に対して同情する者は少なかった。",
+		   NULL, "So not too many sympathize with the Houjou family.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あの説明会の大喧嘩のせいで、園崎家は北条家を目の仇にし、徹底的な攻撃を加え始めた。",
+		   NULL, "Ever since the big fight at the explanatory meeting, the Sonozaki family has looked at the Houjou family as their enemy, and started to go after them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そのせいで、北条家以外にもいた立ち退き派は声を大にできなくなり、自分もスケープゴートにされることを恐れて、渋々、立ち退きを諦めなければならなかった。",
+		   NULL, "...That caused the other pro-dam families to go quiet, fearing they'd be made into scapegoats too, and those who wanted to leave were bitterly forced to give up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…そんな人たちにとっても、あそこで北条夫妻が軽率な喧嘩をしなければ、立ち退きの補償金をもらい損ねることはなかったのだと批判する声もあるという。",
+		   NULL, "...Even those people started criticizing the Houjou couple, saying they could've gotten their compensation to leave if the two hadn't picked that reckless fight.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ダム反対派からも、元立ち退き派からも嫌われ、文字通り村で孤立を深める北条家…。",
+		   NULL, "Both the anti-dam and pro-dam people hate the Houjous now, and the family has become even more isolated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、北条夫妻は気性が荒く、嵐が過ぎ去るまで頭を垂れていればよかったものを、",
+		   NULL, "Moreover, the Houjous are both very aggressive. They should have stayed quiet at least until things settled down, but they didn't.", Line_WaitForInput);
+	OutputLine(NULL, "売られた喧嘩は買うとばかりに息巻いたため、わずかにいた同情する人たちもいなくなってしまい、…今や北条家批判に対し異論を挟む者はひとりもいない。",
+		   NULL, " That alienated the handful of people who took pity on them as well, so now nobody even says anything to them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは、この集会所の中のあちこちでされている陰口を聞けば一目瞭然だった…。",
+		   NULL, "All of that was immediately obvious by listening to the foul talk here and there at the gathering place.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "JS4", 400 );
+
+	PlayBGM( 0, "livescene", 120, 0 );
+
+	OutputLine(NULL, "　梨花は、湯飲み茶碗の後片付けを手伝っているが、その陰口はきっと耳に入っている。",
+		   NULL, "Rika always helps out by putting the tea cups away, so I'm sure she hears what they say as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……彼らが陰口を叩く内の１人は、梨花の友達の沙都子ちゃんでもあるのだ。",
+		   NULL, "One of the Houjou family members they're bad-mouthing is Rika's friend, Satoko-chan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…梨花がどんな思いでそれらを耳にしているか想像すると、胸が痛む…。",
+		   NULL, "It hurts to think about what Rika feels while hearing that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　…古手神社の神主として、私はこれらを放置していていいのだろうか。",
+		   NULL, "As priest of the Furude Shrine, should I let this continue?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　オヤシロさまは本来は、敵対する者すらも融和し仲を取り持つ縁結びの神さまだ。",
+		   NULL, "Oyashiro-sama is a god who makes peace between enemies.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　相容れぬ存在である人と鬼が戦った時、天より降臨されて、その仲を取り持ったはず。",
+		   NULL, "When the humans and demons fought, Oyashiro-sama descended from heaven and mediated between both sides.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その神社を祀る自分がこのような状態を放置していることは許されないのでは…。",
+		   NULL, "As the caretaker of this shrine, I must do something before it goes too far.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "JS6", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　私は、唾を散らしながら口汚く北条家批判をしているお魎さんの脇に座った。",
+		   NULL, "I'm sitting next Oryou-san, who is spitefully disparaging the Houjou family.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「すったらん、だぁほが抜かしよるんよ、あのボケはッ！！",
+		   NULL, "\"So that ass was talking shit to me!!", Line_WaitForInput);
+	OutputLine(NULL, "　ならんしゃもあーもないんかいね、ほんまに恩を知らんやっちゃいな！！",
+		   NULL, " Who the hell cares!!", Line_WaitForInput);
+	OutputLine(NULL, "　あんの裏切者には絶対、オヤシロさまの祟りが下るんね、許されなかといな！！！」",
+		   NULL, " He'll be cursed by Oyashiro-sama, that's for sure!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうだそうだと持ち上げる老人たち。",
+		   NULL, "The elderly people cheer her on as they listen to her speak.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………これだけ気持ち良さそうに話しているところに割り込むのだ。",
+		   NULL, "......If I barge in now,", Line_WaitForInput);
+	OutputLine(NULL, "穏便な話にはならないかもしれない…。",
+		   NULL, " I have a feeling it won't be a peaceful conversation.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも私は覚悟を決める。",
+		   NULL, "But I have to make up my mind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…古手神社の神主として。",
+		   NULL, "As the priest of the Furude Shrine.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、梨花の友達である沙都子ちゃんのために。",
+		   NULL, "Also for the sake of Rika's friend, Satoko-chan.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……お魎さん。",
+		   NULL, "\"...Oryou-san,", Line_WaitForInput);
+	OutputLine(NULL, "…北条さんの悪口を言うのはそろそろこれくらいにしませんかね…？」",
+		   NULL, " don't you think you've said enough by now?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はぁあぁあ？！",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　何ね、何ば言いよりおるんかいな…！！」",
+		   NULL, " What the hell are you trying to tell me?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…いや。",
+		   NULL, "\"Well,", Line_WaitForInput);
+	OutputLine(NULL, "北条さんもそんな悪気はなかったと思うんだが。",
+		   NULL, " I'm sure Houjou-san really didn't mean what he said.", Line_WaitForInput);
+	OutputLine(NULL, "あまりいつまでも尾を引くのは可哀想だと…、」",
+		   NULL, " Isn't it a bit much for this kind of treatment to go on for so long...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「しゃあらしいんね！！！",
+		   NULL, "\"SHUT UP!!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　おんめ、あれを聞いちゃらどんなすったらん、思わんとね？！",
+		   NULL, " You heard what he said, didn't you?", Line_WaitForInput);
+	OutputLine(NULL, "　なぁんをしゃあらしい！！",
+		   NULL, " Weren't you pissed? He pissed me off!!", Line_WaitForInput);
+	OutputLine(NULL, "　あぁ、しゃあらしいしゃあらしい！！」",
+		   NULL, " Shit, shit!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……お魎さんは園崎家頭首。",
+		   NULL, "Oryou-san is the head of the Sonozaki family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鬼を継ぐ者だ。",
+		   NULL, "The heir to the demons.", Line_WaitForInput);
+	OutputLine(NULL, "自分に敵対した者は絶対に許さない。",
+		   NULL, " She never forgives anyone who stands against her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その耳に、もう許してやったらなんて言葉は届くはずもない…。",
+		   NULL, "So there's no way she would even listen to what I'm trying to say.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　お魎さんたちは、もうすっかり激昂してしまい、話は聞いてくれそうになかった。",
+		   NULL, "Oryou-san and the others became furious and refused to listen to me.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "JS4", 400 );
+
+	OutputLine(NULL, "　また、私は話の中で、ダム計画などその内なくなってしまうから、もう少し落ち着いたらどうか、ということを口にしてしまった。",
+		   NULL, "I also mentioned that the dam construction plan will be cancelled soon, so they should calm down already.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……これは、入江診療所の人たちから、政府の裏側ですでに圧力が掛けられていて、ダム計画は近いうちに必ず中止されるのを聞かされていたからである。",
+		   NULL, "I said that because the staff at the Irie Clinic told me that the government is putting some kind of pressure on the Ministry of Construction.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それが、彼らには私が日和見的に見えたらしい。",
+		   NULL, "But thinking that I'm being an opportunist,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…いつの間にか、私に対する批判も始まっていたようだった。",
+		   NULL, "soon criticism of me began to circulate the room.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…この日以降、私はいつの間にか、日和見主義者の烙印をもらっていることに気付く…。",
+		   NULL, "...After that, I realize that I've become branded as a fence-sitter.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………鬼とて、話を聞いてくれる余地があるならば仲も取り持てよう。",
+		   NULL, "...If the demons are willing to listen, then there's a chance to make peace.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だが、聞く耳を持たない人々の仲を、どうやって取り持つというのか。",
+		   NULL, "But how can I make peace with people who refuse to listen?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　すっかり彼らの機嫌を損ねてしまい、私は諦め顔で口をつぐむしかない…。",
+		   NULL, "I destroyed their mood... so I just have to give up and shut my mouth.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな私の背中に、そっと掛かる小さな手があった。",
+		   NULL, "Then I felt a little hand on my back.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ri_KomaruA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "JS5", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「梨花か。",
+		   NULL, "\"Rika...", Line_WaitForInput);
+	OutputLine(NULL, "………もう遅い時間だから家に戻っていなさい。」",
+		   NULL, " It's getting late, why don't you go home?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………私たちがいくら努力しても、…届かない。」",
+		   NULL, "\"......No matter how hard we try, we can't reach them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花は遠い目をしながら、そう言った。",
+		   NULL, "Rika looked into the distance while she spoke.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_FumanA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……この澱みきった村の悪弊は、その澱みに住まう私たちにはどうしようもないのかもしれない……。",
+		   NULL, "\"...The evil of this corrupted village is probably beyond the means of those of us living in that muck...", Line_WaitForInput);
+	OutputLine(NULL, "でも、……希望をなくすものか。",
+		   NULL, " But... I won't lose hope.", Line_WaitForInput);
+	OutputLine(NULL, "……今にきっと、…こいつらを打ち破ってくれる人がやってくる。",
+		   NULL, " ...Surely... someone who will destroy this stagnation will arrive.", Line_WaitForInput);
+	OutputLine(NULL, "今に、…きっと…。」",
+		   NULL, " Very soon... I know...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その目には、……古手の巫女にしか見えない未来が映っているようだった…。",
+		   NULL, "Her eyes shone as if seeing a future that only the maiden of the Furude Shrine could see.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

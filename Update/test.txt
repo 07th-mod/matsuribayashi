@@ -1,0 +1,276 @@
+void main() 
+{
+	//OutputLine(NULL, "_mina_002_1 satoko test", NULL, "_mina_002_1 satoko test", Line_WaitForInput);
+	//ClearMessage();
+
+	//------------------------------
+
+	// CallSection("_mina_002_1_test");
+
+
+	//OutputLine(NULL, "_mina_008_test face cut-in test", NULL, "_mina_008_test face cut-in test", Line_WaitForInput);
+	//ClearMessage();
+
+	CallSection("windowtest");
+
+}
+
+void windowtest()
+{
+	DrawScene( "Jansou2", 400 );
+
+	OutputLine(NULL, "", NULL, "Displaying normal.", Line_Normal);
+
+	DisableWindow();
+	SetWindowBackground("r_black");
+
+	OutputLine(NULL, "", NULL, "Background is changed.", Line_Normal);
+	OutputLine(NULL, "", NULL, "Test.", Line_Normal);
+
+	DisableWindow();
+	SetWindowBackground("");
+
+	OutputLine(NULL, "", NULL, "Back to normal.", Line_Normal);
+}
+
+void filmtest()
+{
+	DrawBustshot( 7, "filter_Hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	DrawBustshotWithFiltering( 2, "Ha_YowakiA1%", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10*2, 300, TRUE );
+
+	OutputLine(NULL, "", NULL, "Displaying normal.", Line_Normal);
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 128, 0, 3000, TRUE );
+
+	OutputLine(NULL, "", NULL, "First film effect.", Line_Normal);
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 192, 0, 3000, TRUE );
+
+	OutputLine(NULL, "", NULL, "Second film effect.", Line_Normal);
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 256, 0, 3000, TRUE );
+
+	OutputLine(NULL, "", NULL, "Third film effect.", Line_Normal);
+
+	ClearMessage();
+}
+
+void _mina_020_test()
+{
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawScene( "JE3", 0 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Tie1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshotWithFiltering( 1, "Iri_Def2#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_jikuu", 128, 64 );
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Warai#", 200, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_Down", 128, 64 );
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskdown" , 7, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "Sa_YareyareA1#", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ri_WaraiA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_boyoon", 128, 64 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Iri_Warai#", "maskup", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "white", 0 );
+	DrawScene( "JE3", 0 );
+	DisableWindow();
+	DrawBustshot( 2, "Ri_WaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
+	DrawBustshot( 1, "Sa_YareyareA1#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
+	//ChangeBustshot( 1, "Sa_YareyareA1#", 200, TRUE );
+	DisplayWindow();
+	Wait( 500 );
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkireruB1#", 200, TRUE );
+	DisplayWindow();
+	Wait( 800 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawBustshot( 0, "Kei_Warai#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "JE2", 400 );
+	DisableWindow();
+	DrawBustshot( 2, "Re_WaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, FALSE );
+	DrawBustshot( 1, "Tomi_Warai#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DisplayWindow();
+
+	DisableWindow();
+	DrawSpriteWithFiltering( 10, "R_black", "maskright", 1, -320, -240, FALSE, FALSE, 0, 0, 14, 1300, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+
+	//fixed size version forces the sprite to a specific size, regardless of the source image size
+	DrawSpriteFixedSize( 11, "Mina1", NULL, 50, -240, 0, 0, 0, 257, 480, 0, FALSE, FALSE, 0, 0, 15, 1000, TRUE );
+	//DrawSprite( 1, "Mina1", NULL, 50, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 15, 1000, TRUE );
+	Wait( 20000 );
+	DisplayWindow();
+
+	DrawScene( "black", 1000 );
+	DrawBustshotWithFiltering( 2, "Oisi2", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "JD3", "maskup", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「おや皆さん、さっそくはしゃぎ回っているようですねぇ。」",
+		   NULL, "\"My, hello. You all seem to be enjoying yourselves.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+}
+
+void _mina_008_test()
+{
+	
+	DrawScene( "Jansou2", 400 );
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSpriteFixedSize( 0, "Kei_eyexa2", NULL, -150-320, 100-240, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, -150-320+150, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「まず、こうですね………？",
+		   NULL, "\"First of all...", Line_WaitForInput);
+	OutputLine(NULL, "　ここまではわかります。",
+		   NULL, " Okay, I got that one...", Line_WaitForInput);
+	OutputLine(NULL, "……それからそれから…？」",
+		   NULL, " then what do I do...?\"", Line_Normal);
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DisableWindow();
+	DrawSpriteFixedSize( 1, "Oh_eyexa1", NULL, 277-320, 300-240, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 1, 277-320-170, 300-240, 0, 0, 0, 0, 0, 20*17, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「そこで、こう。いえいえ違います、持ち上げなくていいんです。",
+		   NULL, "\"Then you do it like this. No, don't lift it up.", Line_WaitForInput);
+	ClearMessage();
+}
+
+void _mina_002_1_test() 
+{
+	
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "mati_O5", "maskright", 1, 0, 300 );
+
+	PlayBGM( 0, "T1", 120, 0 );
+
+	DisableWindow();
+	DrawBustshot( 7, "filter_Hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 400, TRUE );
+	DrawBustshotWithFiltering( 2, "Ha_DefA2%", "mask00", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10*2, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………………頑張りましょうなのです。」",
+		   NULL, "\"........Let's do our best.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私の強い決心とは相反して、羽入の表情は少しおぼろげに見えるのだった。",
+		   NULL, "In contrast to my motivation, Hanyuu was wearing a sad expression...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 7, "mask00" , 1, FALSE, 0, 0, 1000, FALSE );
+	FadeBustshotWithFiltering( 2, "mask00" , 1, FALSE, 0, 0, 1000, TRUE );
+	DisplayWindow();
+	DrawBustshot( 2, "Re_WaraiB1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "mati_O5", 400 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "Sa_HannbesoB1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	//DisableWindow();
+	DrawSpriteFixedSize( 0, "Sa_eyexa2", NULL, -50-320, 100-240, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 256-90, 20, 0, TRUE );
+	MoveSprite( 0, -50-320+50, 100-240, 0, 0, 0, 0, 0, 20*10, TRUE );
+	DisplayWindow();
+
+	Wait( 400 );
+
+	DrawScene( "white", 10 );
+	SetValidityOfInput( FALSE );
+	Wait( 50 );
+	SetValidityOfInput( TRUE );
+
+	DrawBustshot( 1, "Sa_AkuwaraiA1#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "mati_O5", 0 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "Kei_Komaru#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "mati_O5", "maskright", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_AkuwaraiA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "Kei_Warai#", 200, TRUE );
+	DisplayWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 3000 );
+	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Sora2", 3000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "mati_O1", 3000 );
+
+	PlayBGM( 0, "z2_hig2", 120, 0 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Kei_Def1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "「そっかぁ！",
+		   NULL, "\"I see...", Line_WaitForInput);
+	OutputLine(NULL, "　おじさんの店の手伝いってんじゃ仕方ねえなぁ…！」",
+		   NULL, " We can't hold you here if you have to go help your uncle...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+}

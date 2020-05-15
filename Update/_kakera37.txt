@@ -1,0 +1,596 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 400 );
+
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+
+	DrawSceneWithMask( "Sora2", "maskm1", 1, 0, 300 );
+
+	OutputLine(NULL, "「ごめんくださぁい。」",
+		   NULL, "\"Hello?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はいはいはい、あらあらこんにちは。",
+		   NULL, "\"Hello hello, good afternoon.", Line_WaitForInput);
+	OutputLine(NULL, "…あれ、どちら様？」",
+		   NULL, " ...Oh, who are you?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あ、どうも。",
+		   NULL, "\"Ah, sorry.", Line_WaitForInput);
+	OutputLine(NULL, "私、お隣に引っ越してきました竜宮と申します。",
+		   NULL, " We just moved in next door.", Line_WaitForInput);
+	OutputLine(NULL, "引越しのご挨拶にお伺いしました。",
+		   NULL, " We're here to introduce ourselves.", Line_WaitForInput);
+	OutputLine(NULL, "どうかよろしくお願いします。」",
+		   NULL, " Pleased to meet you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あらあらあら！",
+		   NULL, "\"Oh my, oh my!", Line_WaitForInput);
+	OutputLine(NULL, "　こんな田舎の村にこんな若い子が引っ越してきちゃったのかい？",
+		   NULL, " Someone as young as you moved here?", Line_WaitForInput);
+	OutputLine(NULL, "　そうかいそうかい、よく来たねぇ！",
+		   NULL, " I see, I see, welcome!!", Line_WaitForInput);
+	OutputLine(NULL, "　お母ちゃん！",
+		   NULL, " Mom!!", Line_WaitForInput);
+	OutputLine(NULL, "　お隣さん、引越しのご挨拶来られたわよー！！」",
+		   NULL, " Our new neighbor is here to say hello!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「でっけぇ声出さんでも聞こえてぇんな！",
+		   NULL, "\"Don't yell like that!", Line_WaitForInput);
+	OutputLine(NULL, "　すったらん、わんざわざ丁寧に挨拶、すまなっしゃろなぁ。」",
+		   NULL, " Thank you for taking time to come over.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「竜宮さんだって。",
+		   NULL, "\"They're the Ryuugu family.", Line_WaitForInput);
+	OutputLine(NULL, "お隣の空き家に引っ越されてきたって。」",
+		   NULL, " They just moved into the empty house next door.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………ああぁああぁ！！",
+		   NULL, "\"......Aaahhhh!!", Line_WaitForInput);
+	OutputLine(NULL, "　あんた、礼奈ちゃんかいな！",
+		   NULL, " You're Reina-chan, aren't you?", Line_WaitForInput);
+	OutputLine(NULL, "　大きゅなって！」",
+		   NULL, " My, how you've grown!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あ、あはははは。",
+		   NULL, "\"Ah, ahahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "はい、礼奈です。",
+		   NULL, " Yes, I'm Reina.", Line_WaitForInput);
+	OutputLine(NULL, "よく覚えてましたね、はぅ。」",
+		   NULL, " Thank you for remembering, hauu...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「なぁんね、お母ちゃん、知ってるのかい？！」",
+		   NULL, "\"Mom, do you know her?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「知ってるもなぁんと！",
+		   NULL, "\"Of course I do!", Line_WaitForInput);
+	OutputLine(NULL, "　あー、お前興宮に住んどったから知らんかぁ。",
+		   NULL, " You were living in Okinomiya then, so you probably don't remember.", Line_WaitForInput);
+	OutputLine(NULL, "ずいぶん前に住んでたお隣さんね。",
+		   NULL, " But they used to live next door.", Line_WaitForInput);
+	OutputLine(NULL, "…そうかいそうかい、戻ってきたかい！",
+		   NULL, " So, you came back huh?", Line_WaitForInput);
+	OutputLine(NULL, "　やっぱり都会よか村の方が落ち着くんねぇなぁ。」",
+		   NULL, " This village is better than the big city, is it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「住んでたのは小さい頃なんて、あんまりよくは覚えていないんですけど、",
+		   NULL, "\"I don't remember much because I was so small when we lived here...", Line_WaitForInput);
+	OutputLine(NULL, "……でも、ここが私の帰ってくるところだったんだなって。とても懐かしくなります。」",
+		   NULL, " but I feel this is where I belong.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「なら馴染むのは早いねぇ！",
+		   NULL, "\"Then you'll fit right in!", Line_WaitForInput);
+	OutputLine(NULL, "　何かお手伝いできることがあったらいつでも言ってね！",
+		   NULL, " If there's anything we can do for you, let us know!", Line_WaitForInput);
+	OutputLine(NULL, "　遠慮はしないのがココのルールだから。」",
+		   NULL, " There's no need to hesitate. Being unreserved is the rule here, after all.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あ、はい！",
+		   NULL, "\"Ah, yes!", Line_WaitForInput);
+	OutputLine(NULL, "　ありがとうございます。」",
+		   NULL, " Thank you very much.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Hi8", "maskleft", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　少し村の中を歩けば、昔のことを思い出せるかと思ったが、まったく思い出せなかった。",
+		   NULL, "I thought I'd remember things if I walked around the village, but I still don't remember much.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、都会のように寝惚けていない鮮烈な空気や風、眩しいくらいの新緑だけは覚えてる。",
+		   NULL, "I do recall, however, the vivid breeze, as well as the brilliant greenery.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　村のことは覚えていないけど、…ここが私の帰ってくるべき故郷であることだけは、覚えてる。",
+		   NULL, "I don't remember the village, but I remember that this is my hometown.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……まだ体の一部には、赤い線が残っている。",
+		   NULL, "...Red scars still remain on my body.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、うっすらと残っているだけで、目をつぶってそこを撫でてみても、何もわからないくらいに治っている。",
+		   NULL, "They're hardly visible, and I can't even feel them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　多分、気付かない内にその跡すらも消えるだろう。",
+		   NULL, "I'm sure they'll disappear soon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　こうして雛見沢に戻って来ると、茨城にいた時の自分は一体誰だったのだろうと思う時がある。",
+		   NULL, "Now that I'm back in Hinamizawa, sometimes I wonder who I was back in Ibaraki.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…いや、多分、雛見沢から出て行った時から、もう私は私じゃなかったのだ。",
+		   NULL, "In fact, I think I wasn't myself from the moment I left.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、雛見沢に戻って来ることで、ようやく私は、本当の私を取り戻したのだ……。",
+		   NULL, "And now, by coming back here, I've finally regained my true self.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　茨城の頃の自分は、もう思い出そうとしてもおぼろげにしか思い出せない。",
+		   NULL, "I can hardly remember what I was like back in Ibaraki.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……きっと、あの赤い変な薬のせいだ。",
+		   NULL, "...Well, that's probably because of the red medicine.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あの薬は、私の辛かった記憶を消し去ってしまった。",
+		   NULL, "The medicine erased all of my painful memories.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、………それでよかったのかもしれない。",
+		   NULL, "Maybe... that was for the best.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あの時の私は、許しが欲しかったに違いないのだから。",
+		   NULL, "I just wanted to be forgiven back then.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora6", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　母が許せなくて、",
+		   NULL, "I couldn't forgive my mother,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "アキヒトおじさんが許せなくて、",
+		   NULL, " I couldn't forgive Uncle Akihito,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…そして私が一番許せなくて。",
+		   NULL, " and more than anybody, I couldn't forgive myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰かに私は悪くないのだと認めてもらいたかった。",
+		   NULL, "I wanted someone to acknowledge that I wasn't at fault.", Line_WaitForInput);
+	OutputLine(NULL, "許してもらいたかった。",
+		   NULL, " I wanted to be forgiven.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……そしたら、オヤシロさまが謝ってくれたんだ。",
+		   NULL, "...So Oyashiro-sama apologized.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これはオヤシロさまの祟りのせいだから、あなたは悪くないのだと、教えてくれた。",
+		   NULL, "She told me I wasn't at fault, because it was the curse of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、私は自分を許すことができたんだ。",
+		   NULL, "That's how I was able to forgive myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だから、体中の血管を裂いて、血を流しきって死なずに済んだんだ。",
+		   NULL, "I didn't have to die by tearing my blood vessels out of my body.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…人は、穢れることで、死ななければいけないのだと思う。",
+		   NULL, "...I think people have to die because they become corrupted.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、我が身が穢れないように穢れないように、大切にしながら生きているんじゃないだろうか。",
+		   NULL, "That's why people try their hardest not to dirty themselves all their lives.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、穢れた身の私は、こうして生きている。",
+		   NULL, "But I'm still living, despite how dirty I am.", Line_WaitForInput);
+	OutputLine(NULL, "生きることを許されている。",
+		   NULL, " I've been allowed to live.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…私の身に、まだ穢れは残っているのだろうか。",
+		   NULL, "Is there still some filth left on me?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それとも綺麗に清算されているのだろうか。",
+		   NULL, "Or am I all clean?", Line_WaitForInput);
+	OutputLine(NULL, "…わからない。",
+		   NULL, " I don't know.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ただひとつわかるのは、…茨城の私と、ここにいる私は別人だということ。",
+		   NULL, "The only thing I know is that the me who lived in Ibaraki and the me who's here right now are two different people.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、今の私には、穢れに耐えかねて我が身を裂かねばならないという、使命感はもうなくなっているということだ…。",
+		   NULL, "I no longer feel the need to take responsibility by ripping myself apart because of the filth.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Re_s3", "maskleft", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Re_H1", "maskleft", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　夜、家具の配置や梱包した荷物の開封が何とか一段落し、遅くなった夕食を取った。",
+		   NULL, "After arranging some furniture and unpacking some boxes, we finally had dinner.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私にとってはおぼろげな記憶しかない雛見沢でも、お父さんにとってはついこの間のように記憶しているらしかった。",
+		   NULL, "Although I hardly remember Hinamizawa, my father remembers things very clearly.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「お父さんたちが雛見沢に住んでた頃にもあったんだけど、今は綿流しという行事がとても大きなお祭りになってるらしい。",
+		   NULL, "\"Although it was around when we lived here before, the Watanagashi festival has grown huge these days.", Line_WaitForInput);
+	OutputLine(NULL, "６月の終わり頃にあるらしいね。」",
+		   NULL, " It's held at the end of June.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……綿流し？」",
+		   NULL, "\"Watanagashi?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「お父さんも見たことないんでわからないんだけど、体に付いた穢れを、綿に吸い取らせて沢に流す行事らしい。」",
+		   NULL, "\"I've never seen it myself, so I don't know too much about it. But supposedly people let cotton absorb the filth on their bodies and drift it down the stream.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　穢れを、",
+		   NULL, "Absorb", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…流す。",
+		   NULL, " the filth.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……穢れって、流してしまえるものなんだね。」",
+		   NULL, "\"You can wash your filth down the stream, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あはははは、そりゃそうだ。",
+		   NULL, "\"Aha ha ha ha, of course.", Line_WaitForInput);
+	OutputLine(NULL, "人間は罪深い生き物だからね。",
+		   NULL, " Humans are sinners.", Line_WaitForInput);
+	OutputLine(NULL, "生きてるだけで日々、穢れが我が身に降り積もっていくものなんだそうだ。",
+		   NULL, " As we live every day, filth piles up on our bodies, supposedly.", Line_WaitForInput);
+	OutputLine(NULL, "それを、年に一回、体をお掃除するように、綿に吸い取ってもらって捨ててしまうということらしいよ。」",
+		   NULL, " And once a year, we get rid of the filth by letting the cotton absorb it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人は悪いことをすることで、穢れや罪を背負う。",
+		   NULL, "People become burdened with filth and sin by doing something bad.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　犯した罪は、懲役などで法律上の清算を受けるが、",
+		   NULL, "Court sentences can settle your crimes legally, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……だからといって、罪の十字架、穢れは生涯消えることはない。",
+		   NULL, "but that doesn't mean the burden of sin, of the filth, will just go away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　つまりそれは、…人の世で、人の手では人の穢れを払うことができないことを示す。",
+		   NULL, "In other words, human hands can't erase human filth in this human world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…人に払えない穢れだから、",
+		   NULL, "The filth is something humans can't get rid of", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "この世を去り、別の世で神さまに払ってもらうしかない。",
+		   NULL, " and that's why we need a god from a different world to do that.", Line_WaitForInput);
+	OutputLine(NULL, "…そんなことを考えてきた。",
+		   NULL, " ...That's what I thought.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、……綿流しというものは驚きだった。",
+		   NULL, "But... I'm surprised to learn about Watanagashi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　人の世にいながら、人の手で人の穢れを払う。",
+		   NULL, "Human hands erasing human filth in the human world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　穢れを綿に吸い取らせて、沢に流してしまう。",
+		   NULL, "Letting the cotton absorb the filth and drifting it down the stream.", Line_WaitForInput);
+	OutputLine(NULL, "……それはつまり、この世に生きていてもいいということだ。",
+		   NULL, " That means it's okay to live in this world.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分を許せなくて、死のうと思った私。",
+		   NULL, "I tried to commit suicide because I couldn't forgive myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな私に謝り、許し、雛見沢に帰ることを勧めてくれたオヤシロさま。",
+		   NULL, "Oyashiro-sama apologized to me and told me to come back to Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして雛見沢には、穢れを払う儀式、綿流しがあった。",
+		   NULL, "And now, here in Hinamizawa, there's this Watanagashi, a ceremony to get rid of filth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…これは偶然の一致なんかじゃない。",
+		   NULL, "This isn't just a coincidence.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雛見沢は、",
+		   NULL, "Hinamizawa is", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…穢れを払う里。",
+		   NULL, " a place to wash away your filth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　罪を赦す（ゆるす）。",
+		   NULL, "It forgives sins.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赦す里なんだ。",
+		   NULL, "It is a place of forgiveness.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「そういうのをな、禊（みそぎ）って言うんだ。」",
+		   NULL, "\"It's called a purification ceremony.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…あ、",
+		   NULL, "\"...Ah,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…言葉だけは聞いたことあるかな。」",
+		   NULL, " I've heard of those before.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「日本文化というのは、穢れというものにものすごく厳格だろう。",
+		   NULL, "\"Japanese culture is very strict about filth.", Line_WaitForInput);
+	OutputLine(NULL, "穢れを残したまま、表舞台に留まることを許さない。",
+		   NULL, " You aren't allowed to remain in the spotlight if you accumulate too much.", Line_WaitForInput);
+	OutputLine(NULL, "ほら、政治家や社長で汚職があると、すぐに辞職するのもそういうことだ。",
+		   NULL, " See, that's the reason why politicians and company presidents resign immediately once people find out about their dirty deeds.", Line_WaitForInput);
+	OutputLine(NULL, "穢れた人は表舞台を去らなければならない。",
+		   NULL, " You must leave the spotlight if you're filthy.", Line_WaitForInput);
+	OutputLine(NULL, "……悪く言うと、穢れを誰か一人に押し付けて引責させるわけだな。」",
+		   NULL, " To put it in a bad way, the filth is basically pushed onto someone else, and they are held responsible for it.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　罪や穢れは、消し去らなければならない。",
+		   NULL, "Sins and filth must be removed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから人は、罪や穢れをとにかく誰かに押し付けて、その人ごと切り捨てることで、穢れを消し去ろうとする。",
+		   NULL, "That's why people push them onto someone else and then try to get rid of the filth by sacrificing that person.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、だとしたら、穢れが生じる度に不毛な責任の押し付け合いが起こる。",
+		   NULL, "But if that's the case, every time that filth is created, people will try to pass around responsibility for it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それはとても醜いもので、人の世に鬼を見るものだ。",
+		   NULL, "That's awfully hideous. It's almost like seeing demons in the human world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、人でなく、…綿に穢れを押し付けることを考えた。",
+		   NULL, "That's why they came up with the idea of letting the cotton absorb all the filth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そうすることで、人々は誰かひとりに責任や罪、穢れを押し付けなくても生きていけることになったのだ。",
+		   NULL, "By doing so, people can live without making someone else take on all the responsibility, sins, and filth.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……全員の罪を肩代わりさせて殺すことは、きっと生贄に通ずる。",
+		   NULL, "Putting everyone's sins onto someone and then killing that person makes that person a sacrifice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰だって生贄にされたくない。",
+		   NULL, "Who wants to be a sacrifice?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから必死に醜悪に、罪を押し付けあう。",
+		   NULL, "That's why they desperately push their sins around.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その生贄役を、人でない物に代わらせる、禊。",
+		   NULL, "A purification ceremony is about replacing the human sacrifice with a nonhuman one.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　誰かひとりを生贄にして殺さなくてはならないという日本文化に、劇的な変化をもたらした、禊。",
+		   NULL, "The purification ceremony dramatically changed Japanese culture. Before then, people always believed someone had to become a sacrifice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはつまり、",
+		   NULL, "In other words, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…穢れが降りかかっても、誰のせいにしなくてもみんなが生きていけることを示す。",
+		   NULL, "even with filth, everyone can live without blaming someone else.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Moon", 400 );
+
+	OutputLine(NULL, "　穢れが、人の死以外の方法で、許される。",
+		   NULL, "Filth can be forgiven by a method other than death.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人を許せる存在は、人以上の存在だけだ。",
+		   NULL, "Only an existence higher than humans can forgive them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　オヤシロさまに許され、帰ってきた里。",
+		   NULL, "I was forgiven by Oyashiro-sama and came back to this place.", Line_WaitForInput);
+	OutputLine(NULL, "そこにある綿流しという禊。",
+		   NULL, " To Watanagashi, the purification ceremony that exists here.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　我が身の穢れを綿に吸い取らせ、流して捨ててしまう。",
+		   NULL, "Letting cotton absorb the filth and drifting it away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　我が身という生贄は必要ない。",
+		   NULL, "There's no need for a sacrifice.", Line_WaitForInput);
+	OutputLine(NULL, "だから私は、生きていてもいい。",
+		   NULL, " That's why I've been allowed to live.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　穢れた私は沢に消え、",
+		   NULL, "The filthy me has drifted away,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……だからやっぱり、ここにいる私は、もう竜宮礼奈じゃなかったんだ。",
+		   NULL, " so the me that remains is no longer Reina Ryuugu.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　礼奈じゃないなら、",
+		   NULL, "If I'm not Reina, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…私は竜宮、",
+		   NULL, "then", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…誰なの？",
+		   NULL, " who am I?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　穢れも、嫌なことも全て洗い流された私は、何て名前なの？",
+		   NULL, "If I'm without filth, without all the icky things, who am I?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………頭にぼんやりと浮かぶ、ある名前。",
+		   NULL, "...A name vaguely appeared in my head.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは私の名前、礼奈から平仮名を一文字抜いただけだけど、",
+		   NULL, "My new name, that only removes one of the letters from 'Reina', ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……何だか可愛らしかった。",
+		   NULL, "but I think it's a cute name.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　“い”やなことはもう全部なしになって許された。",
+		   NULL, "All the 'i'-cky things are erased and forgiven with the removal of that one letter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから私はもう礼奈じゃない。",
+		   NULL, "So my name is no longer Reina.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私の名前は。",
+		   NULL, "My name is...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

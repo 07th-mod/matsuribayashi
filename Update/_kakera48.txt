@@ -1,0 +1,101 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Instict", 120, 0 );
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentGroup", 1000);
+		DrawScene( "Fure1", 1000 );
+	} else {
+		DrawScene( "Kakera2", 1000 );
+	}
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawBustshot( 2, "Sa_MuhyouB2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "Tetu3", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "Ho1_Houjouke", 400 );
+
+	OutputLine(NULL, "　このカケラは、沙都子を取り巻く理不尽なルールＺの存在と、ゲーム盤におけるもっとも強敵な法則であるルールＹがその姿を見せる。",
+		   NULL, "This piece shows us the existence of the unreasonable Rule Z surrounding Satoko, and reveals the most powerful adversary rule on the game board, Rule Y.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　これで、ルール、Ｘ、Ｙ、Ｚの姿が浮き彫りにされたのだろうか。",
+		   NULL, "Can the Rules X, Y, and Z be seen now?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちが戦うべき相手。",
+		   NULL, "The enemy we need to fight.", Line_WaitForInput);
+	OutputLine(NULL, "学ぶべきこと。",
+		   NULL, " The things we need to learn.", Line_WaitForInput);
+	OutputLine(NULL, "それらが全て揃い、明かされるカケラ。",
+		   NULL, " All are gathered and revealed here in this Fragment.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Fure1", 400 );
+
+	OutputLine(NULL, "　この時点ではルールＹの存在には至れない。",
+		   NULL, "At this point, it's impossible to reach Rule Y.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…せいぜい、沙都子を取り巻くルールＺと戦うのが限界だ。",
+		   NULL, "...Fighting against Rule Z's effect on Satoko is the best that can be done.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　だが、このカケラでは戦い方を誤る。",
+		   NULL, "But, in this piece, we make a mistake in our approach for fighting it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誤った方法で手に入れた結果は、誤ったものでしかない。",
+		   NULL, "The outcome we gained through erroneous means is erroneous itself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それを、前原圭一は自らの経験を経て、学び取る。",
+		   NULL, "Keiichi Maebara learned that through his own experiences.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　惨劇に打ち勝つ力は、惨劇じゃない。",
+		   NULL, "A tragedy doesn't possess the power to overcome tragedy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　暴力に打ち勝つ力も、暴力じゃない。",
+		   NULL, "Violence doesn't possess the power to overcome violence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを学び取ることができれば、……駒たちは、このゲーム盤の上での、本当の戦い方を覚えることができる。",
+		   NULL, "If they can grasp that, all the pieces on this game board will learn the true way to fight.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "Fure1", 400 );
+
+	OutputLine(NULL, "　でも、……鷹野たちはあまりに強大。",
+		   NULL, "But Takano is too powerful.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　カケラの最後に待つ強烈な最期は、",
+		   NULL, "The shocking end of this piece", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それを容易に学び取らすことを許さないのだ…。",
+		   NULL, " doesn't allow us to learn it that easily.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,638 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	DrawSceneWithMask( "Hu_R1", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "　その夜。",
+		   NULL, "That very night.", Line_WaitForInput);
+	OutputLine(NULL, "古手家頭首である神主は、家族会議があるといって妻と梨花を和室に集めた。",
+		   NULL, " The head of the Furude family, the priest, gathered his wife and Rika together for a family meeting.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　御三家が集まり、村について合議するのが雛見沢の伝統だ。",
+		   NULL, "In Hinamizawa, it was tradition for the Three Families to gather and discuss the village's issues.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに伴い、園崎家や公由家のような大所帯なら、意見調整のために予め親族会議や家族会議をすることもありえるだろう。",
+		   NULL, "So it was hardly unusual for big families like the Sonozaki family and the Kimiyoshi family to have meetings beforehand to sort out opinions among themselves.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……だが、古手家は分家筋が途絶え、今や本家の一家族３人しかいない。",
+		   NULL, "...However, the Furude family had lost its branch families, so there were only three of them left.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だからこれまで一度も、家族会議なるものを開いたことはなかった。",
+		   NULL, "So until that day, they had never had a family meeting at all.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「どうしたんですか、改まって。",
+		   NULL, "\"What is it? You're being so formal.", Line_WaitForInput);
+	OutputLine(NULL, "……ひょっとして、ダムに関わるお話ですか？」",
+		   NULL, " Is it about the dam construction?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今この村で一番重要な問題はダム問題しかない。",
+		   NULL, "The dam was the most important issue in the village at the moment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　妻は神主が切り出そうとしている話は、それに絡むものに違いないと思った。",
+		   NULL, "The wife naturally assumed the priest wanted to talk about the dam.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…そして、家族を集めてまで話すのだから、きっとそれは大きな決意を伴うもの。",
+		   NULL, "For him to gather all of them together like that, it must be a huge decision he had to make.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……例えば、立ち退きに応じるとか、そういう話になるだろうと思っていた。",
+		   NULL, "Perhaps he was going to talk about joining the pro-evacuation camp.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Heya6", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「……いや、ダムの話ではない。",
+		   NULL, "\"......No, it's not about the dam...", Line_WaitForInput);
+	OutputLine(NULL, "…………だがこの村に関わる、いや、この村のご先祖さまたちにも関わるとてもとても大事な問題だ。」",
+		   NULL, " But it's about something extremely important which concerns this village, and perhaps all the ancestors of the villagers too.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古手家は代々、神職にあり、村の守り神であるオヤシロさまを祀ってきた。",
+		   NULL, "The Furude family had served in the priesthood of Oyashiro-sama, the guardian deity of the village, for generations.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…その頭首がこう切り出すのだから、それはよっぽどの話に違いなかった。",
+		   NULL, "So for him, the head of the family, to start out that way, it must be something extremely important.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　にもかかわらず、ダムの話ではないというなら、一体何の話なのか…。",
+		   NULL, "Yet, he said it wasn't about the dam. So what could he want to talk about?", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Hu_R1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「…私は入り婿だ。",
+		   NULL, "\"I married into this family,", Line_WaitForInput);
+	OutputLine(NULL, "だから、古手家の本当の血を受け継ぐ、お前と梨花にはよく聞いてほしい。",
+		   NULL, " so I want you and Rika, who carry the true blood of the Furude family, to listen very carefully.", Line_WaitForInput);
+	OutputLine(NULL, "……………お前たちは普通の人間ではないのだ。」",
+		   NULL, " .........You two aren't normal human beings.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_NikoA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ボクはオヤシロさまの生まれ変わりなのですよ？」",
+		   NULL, "\"......I'm the reincarnation of Oyashiro-sama, right?\"", Line_Normal);
+	ClearMessage();
+
+	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+
+	OutputLine(NULL, "「梨花、そういうのは口にしてはいけません！",
+		   NULL, "\"Rika, you shouldn't say such things!", Line_WaitForInput);
+	OutputLine(NULL, "　…あなた、そういう話は梨花のいないところでしましょう。",
+		   NULL, " Dear, let's talk about things like that without her.", Line_WaitForInput);
+	OutputLine(NULL, "それでなくっても集会所のお年寄りたちが梨花に妙なことばかり吹き込んで、」",
+		   NULL, " She's heard enough nonsense from the elderly people at the village hall already.\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "「その、オヤシロさまの生まれ変わりというのが、",
+		   NULL, "\"What she just said, about her being the reincarnation of Oyashiro-sama...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……どうも本当らしいのだ。」",
+		   NULL, " That appears to be true.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はぁ…？！」",
+		   NULL, "\"What...?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……少し長い話になる。",
+		   NULL, "\"...It's rather a long story.", Line_WaitForInput);
+	OutputLine(NULL, "二人ともしばらく黙って私の話を聞きなさい。」",
+		   NULL, " Please, just sit tight and listen to me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　妻は何の話が始まるのかと怪訝な表情を浮かべていたが、梨花はいつものきょとんとした表情で、まったく平静だった。",
+		   NULL, "The wife had a dumbfounded expression on her face, not knowing what he was going to say, but Rika was completely relaxed, wearing her usual carefree expression.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　神主は、妻が落ち着きを取り戻すまで待った後、語り始めた…。",
+		   NULL, "The priest started to talk after his wife calmed down.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「この村には、大昔からある病気があるのだ。",
+		   NULL, "\"There is a disease in this village that has been here for many years.", Line_WaitForInput);
+	OutputLine(NULL, "……それはこの地にだけある特別な病気、風土病というものらしい。",
+		   NULL, " It's a special disease which only exists here in this area.", Line_WaitForInput);
+	OutputLine(NULL, "…それには、この村に住むものが全員かかっている。",
+		   NULL, " Everyone who lives in this village has the disease.", Line_WaitForInput);
+	OutputLine(NULL, "今、この村に住んでいる者だけではない。",
+		   NULL, " Not only the people who live here now,", Line_WaitForInput);
+	OutputLine(NULL, "大昔から住んでいたご先祖さまたちも、みんなみんな、ずーっとこの病気にかかってきたのだ。」",
+		   NULL, " but all the people who ever lived here had the disease.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんな…。",
+		   NULL, "\"What...?", Line_WaitForInput);
+	OutputLine(NULL, "だって、私たちはみんな普通に生活していますよ。",
+		   NULL, " But we're all perfectly healthy.", Line_WaitForInput);
+	OutputLine(NULL, "この村だけの病気なんて、聞いたこともない…！」",
+		   NULL, " I've never heard of a disease exclusive to this village...!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「落ち着きなさい。",
+		   NULL, "\"Calm down.", Line_WaitForInput);
+	OutputLine(NULL, "……その病気はな、この村にいる限り、何も問題はないのだ。",
+		   NULL, " As long as we are here in the village, the disease won't cause any problems.", Line_WaitForInput);
+	OutputLine(NULL, "だが、この村を出て遠くの地へ行くと発病してしまう。",
+		   NULL, " But once you move away from this village, that's when it starts to act out.", Line_WaitForInput);
+	OutputLine(NULL, "…わかるか？」",
+		   NULL, " Do you understand?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わ、…わかるわけないでしょう、何のことだかさっぱり！」",
+		   NULL, "\"How... How can you expect me to understand such a thing? I have no idea what you're talking about.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_DefA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……オヤシロさまの祟りと同じなのです。」",
+		   NULL, "\"......It's the same as the curse of Oyashiro-sama.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　取り乱しかける妻とは正反対に、落ち着いた声で梨花が言った。",
+		   NULL, "Rika said it so calmly while her mother became frustrated.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Heya6", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "この村から離れると祟りがあるのと同じなのだ。",
+		   NULL, " They say that when you leave this village, you're cursed. It's just like that.", Line_WaitForInput);
+	OutputLine(NULL, "……つまり、オヤシロさまの祟りだとご先祖さまたちが代々恐れてきたのは、この村だけにしかない風土病のせいだったのだ。」",
+		   NULL, " In other words, the curse of Oyashiro-sama, which our ancestors have feared for generations, is actually a disease that only exists in this village.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなことあるわけないです。",
+		   NULL, "\"How could that be possible?", Line_WaitForInput);
+	OutputLine(NULL, "だって、私たちだって時には村を離れることもあるじゃないですか。",
+		   NULL, " We've left the village before.", Line_WaitForInput);
+	OutputLine(NULL, "村の人だって、仕事で遠くへ出掛ける人だっているし、海外に出掛ける人だって！」",
+		   NULL, " Other villagers, too. Some have gone on business trips, and some even traveled to foreign countries!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"True.", Line_WaitForInput);
+	OutputLine(NULL, "それは長い長い時間を経て、病気が徐々に弱まってきたかららしい。",
+		   NULL, " But that's probably because the disease has weakened over a long time.", Line_WaitForInput);
+	OutputLine(NULL, "だから、このままさらに長い時間を掛ければ、消えてなくなってしまうものだったのだ。",
+		   NULL, " So it was going to disappear eventually.", Line_WaitForInput);
+	OutputLine(NULL, "……だがそれが、ダム戦争のせいでおかしくなったらしい。",
+		   NULL, " ...But the business with the dam disrupted that process.", Line_WaitForInput);
+	OutputLine(NULL, "……ダム戦争で、今、村中が熱に浮かされたように興奮している状態にあるのは、みんなもわかっているだろう。",
+		   NULL, " ...Everyone knew that during the dam war, the entire village was aflame with agitation.", Line_WaitForInput);
+	OutputLine(NULL, "…そういう興奮状態や情緒不安定な状態は、この病気を悪化させてしまうらしいのだ。」",
+		   NULL, " Such excitement and emotional instability makes the disease stronger.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「よく…話がわかりませんけど。",
+		   NULL, "\"I still don't know what you're trying to say.", Line_WaitForInput);
+	OutputLine(NULL, "…つまり、この大昔から祟りだと呼んできたものは全て、…その病気の仕業だと仰るんですね？」",
+		   NULL, " What we thought was a curse all this time was actually caused by the disease?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまの作った決まりは全て、この病気から村人を守るための決まりだったのだ。」",
+		   NULL, " All the rules Oyashiro-sama came up with were to protect the villagers from the disease.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……そんな…！",
+		   NULL, "\"...No way...!!", Line_WaitForInput);
+	OutputLine(NULL, "　それじゃオヤシロさまは神さまではなく、…病気が正体なんですか！",
+		   NULL, " Then Oyashiro-sama's actually a disease... not a god?!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなこと！！",
+		   NULL, " How could that be?!", Line_WaitForInput);
+	OutputLine(NULL, "　古手家代々のご先祖さまたちに説明できますか！！」",
+		   NULL, " How can I explain that to the Furude family ancestors?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「落ち着きなさい。",
+		   NULL, "\"Calm down.", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまの信仰は変わらない。",
+		   NULL, " The faith in Oyashiro-sama won't change.", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまが雛見沢を見守ってくださることに何の変わりもない。",
+		   NULL, " The fact that Oyashiro-sama is watching over Hinamizawa will remain the same...", Line_WaitForInput);
+	OutputLine(NULL, "……オヤシロさまの祟りを再現する病気が、この村には大昔からあったということ、それだけなんだ。」",
+		   NULL, " ...It just means the disease producing Oyashiro-sama's curse was in this village since long ago, that's all.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなのは認められません！！",
+		   NULL, "\"I won't accept that!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなこと、亡くなった先代や先々代に説明できますか？！",
+		   NULL, " How can I explain that to our ancestors?!", Line_WaitForInput);
+	OutputLine(NULL, "　古手家数百年の伝統に対する、いえ！",
+		   NULL, " This is a desecration of the Furude family's age-old traditions.", Line_WaitForInput);
+	OutputLine(NULL, "　オヤシロさまに対する冒涜ですッ！！",
+		   NULL, " No, this is a desecration of Oyashiro-sama!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなことをあなたに吹き込んだのは誰ですか？",
+		   NULL, " Who told you such a thing?!", Line_WaitForInput);
+	OutputLine(NULL, "　失礼極まりない！！",
+		   NULL, " This isn't acceptable!!", Line_WaitForInput);
+	OutputLine(NULL, "　第一、そんな変な病気が実在するという証拠があるんですか！！」",
+		   NULL, " In the first place, can you prove such a disease actually exists?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………ある！」",
+		   NULL, "\"......I can!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「それはどんな？",
+		   NULL, "\"What kind of proof?", Line_WaitForInput);
+	OutputLine(NULL, "　誰が！」",
+		   NULL, " Who gave it to you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「厚生省と国立感染症予防研究所の方からだ。",
+		   NULL, "\"The people from the Ministry of Health and the National Institute of Infectious Disease Prevention.", Line_WaitForInput);
+	OutputLine(NULL, "病原体もすでに特定され、現在、治療方法などを研究している最中だという。",
+		   NULL, " They've already found the pathogen, and they are searching for a cure right now.", Line_WaitForInput);
+	OutputLine(NULL, "…先週、実際にその資料や標本などを見せてもらった。",
+		   NULL, " I saw the documents and the samples last week.", Line_WaitForInput);
+	OutputLine(NULL, "厚生省の方はこの病気を雛見沢症候群と呼んでいるらしい。」",
+		   NULL, " The people at the Ministry of Health call it 'Hinamizawa Syndrome'.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………そんな……！！」",
+		   NULL, "\"No way...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「雛見沢症候群は、普通に生活している分には何も影響のない無害なものらしい。",
+		   NULL, "\"As long as you lead a normal life, the syndrome is harmless.", Line_WaitForInput);
+	OutputLine(NULL, "だが、雛見沢を遠く離れたり、精神や情緒が不安定になったりすると発病しやすくなるという。",
+		   NULL, " But once you go far from Hinamizawa, or if you become emotionally unstable, it's easy for the disease to manifest itself.", Line_WaitForInput);
+	OutputLine(NULL, "発病すると、妄想などに取り付かれ、最悪の場合、発狂したりすることもあるらしい。",
+		   NULL, " When the disease acts out, you can be possessed by your own delusions and, in the worst-case scenario, you can go mad.", Line_WaitForInput);
+	ClearMessage();
+	OutputLine(NULL, "……この病気は、戦争中に発見されたんだそうだ。",
+		   NULL, "They discovered this disease during the war.", Line_WaitForInput);
+	OutputLine(NULL, "戦地で雛見沢の兵隊だけ異常な病気を起こすことがあるのに偉い学者の先生が気が付いて、研究がずっと進められてきたんだと言う。",
+		   NULL, " A distinguished scholar noticed that only the soldiers from Hinamizawa came down with an abnormal disease, and he has been researching it all these years.", Line_WaitForInput);
+	OutputLine(NULL, "……その辺の話はだいぶ詳しくしてもらったんだが、…すまん。",
+		   NULL, " They explained some details of this research, but I'm sorry...", Line_WaitForInput);
+	OutputLine(NULL, "難しい内容だったので私の口からはこれ以上うまく説明できん。",
+		   NULL, " They are too complicated for me to explain.", Line_WaitForInput);
+	OutputLine(NULL, "もし私の説明では納得できんというなら、お前も直接話を聞いてみればいい。",
+		   NULL, " If you don't believe what I'm saying, why don't you go listen to them yourself?", Line_WaitForInput);
+	OutputLine(NULL, "……私だって最初は、何を馬鹿なことを、オヤシロさまを冒涜する気かと憤慨していたのだから。」",
+		   NULL, " ...At first I was indignant too, wondering how they dared to blaspheme Oyashiro-sama and spout such nonsense.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………………………。」",
+		   NULL, "\".............\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「その病気を研究するために、入江診療所が作られたというんだ。",
+		   NULL, "\"The Irie Clinic was built to study the syndrome.", Line_WaitForInput);
+	OutputLine(NULL, "あそこは表向きはただの診療所ということになっているが、実際は病気を調べるための隠し研究所らしい。」",
+		   NULL, " It appears to be just a clinic on the outside, but it's actually a secret research center for studying the syndrome.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「秘密で研究しているなんて、胡散臭いじゃないですか！",
+		   NULL, "\"Secret research? That's ridiculous!!", Line_WaitForInput);
+	OutputLine(NULL, "　それも厚生省がやっていることなら、堂々とやればいいじゃないですか！」",
+		   NULL, " If it's actually backed by the Ministry of Health, why aren't they doing it out in the open?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Hu_R1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「いや、そうはいかんらしい。",
+		   NULL, "\"Well, I guess they can't.", Line_WaitForInput);
+	OutputLine(NULL, "例えば、ハンセン病の人たちが長い間誤解を受けて隔離され、今なおその誤解が解けきれず勘違いした差別を受けていることを考えなさい。",
+		   NULL, " For example, think about leprosy victims who were misunderstood and exiled. They are still misunderstood and discriminated against even today, in fact.", Line_WaitForInput);
+	OutputLine(NULL, "…雛見沢の人間は皆、怪しげな病気に掛かっていて、突然、発狂してとんでもないことをするかもしれないなどと言うことが日本中に知れ渡ったら、大変なことになってしまうだろう。",
+		   NULL, " If the whole country finds out about this and thinks that everyone in Hinamizawa who has contracted this weird disease can go mad at any moment, it'll turn into chaos.", Line_WaitForInput);
+	OutputLine(NULL, "厚生省もそのことを反省していて、この病気については厳重に伏せた上で治療を目指すらしい。",
+		   NULL, " The Ministry of Health has taken that into consideration and is working on developing a cure while keeping the disease a secret.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　勘違いするな、私たちを見世物にするというんじゃないぞ。",
+		   NULL, "Don't get me wrong, though. They aren't trying to put us on display or anything.", Line_WaitForInput);
+	OutputLine(NULL, "この病気を根絶させ、この村を病気から解放しようとしているのだ。",
+		   NULL, " They are trying to eliminate this disease and free this village from it.", Line_WaitForInput);
+	OutputLine(NULL, "……自給自足ができていた大昔ならともかく、現代では村から一歩も出ずに生活などなりたたん。",
+		   NULL, " It was a different story long ago when we supported ourselves, but nowadays, it's impossible not to leave the village.", Line_WaitForInput);
+	OutputLine(NULL, "村から出るだけで発病するかもしれない病気など、村人にとってどれほど危険なものか、わかるだろう。",
+		   NULL, " If a simple act of leaving the village can trigger the disease, you realize how dangerous it is for the villagers, right?", Line_WaitForInput);
+	OutputLine(NULL, "……繰り返しになるが、昨今、反ダム闘争で村全体が強い興奮状態にあって、雛見沢症候群にとって、非常に良くない状態にあるらしい。」",
+		   NULL, " ...I'm repeating myself now, but in the recent dam protests, the whole village entered a strong excited state, which is very bad for the Hinamizawa Syndrome.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ri_KomaruA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……もし村人がおかしくなって大変なことをしたら、きっとマスコミがパシャパシャでいっぱいなのです。」",
+		   NULL, "\"...If some villagers go crazy and do something horrible, it'll be all over the media.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "そうなってからでは手遅れなのだ。」",
+		   NULL, " If that happens, it'll be too late.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……………そんな。",
+		   NULL, "\".........But...", Line_WaitForInput);
+	OutputLine(NULL, "…いきなり言われても信用できませんわ…。",
+		   NULL, " how can I believe this?", Line_WaitForInput);
+	OutputLine(NULL, "本当に相手は国の人？",
+		   NULL, " Are you sure we're dealing with people from the government?", Line_WaitForInput);
+	OutputLine(NULL, "　変な詐欺に騙されてるんじゃないですか？」",
+		   NULL, " Are you sure you aren't being tricked?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「信用できんのも無理はない。",
+		   NULL, "\"I don't blame you for not being able to believe it...", Line_WaitForInput);
+	OutputLine(NULL, "……先方は研究所はいつでも見に来ていいと言っている。",
+		   NULL, " They said we can come take a look at their facility anytime.", Line_WaitForInput);
+	OutputLine(NULL, "私はもう見せてもらっているが、あれは詐欺とかそういうレベルではない。",
+		   NULL, " I've seen it before and I know that no mere fraud could have set up something like that...", Line_WaitForInput);
+	OutputLine(NULL, "……穀倉の大病院でもあんな大掛かりな設備はないぞ。",
+		   NULL, " Even the big hospitals in Gogura don't have such large-scale equipment.", Line_WaitForInput);
+	OutputLine(NULL, "………お前も、私の話に納得できないなら、研究所で詳しい話を聞かせてもらうといい。",
+		   NULL, " If you can't believe what I just told you, you should go to the research center yourself and ask questions.", Line_WaitForInput);
+	OutputLine(NULL, "私よりもっと詳しく説明してくれるだろう。",
+		   NULL, " They can explain it better than I can.", Line_WaitForInput);
+	OutputLine(NULL, "向こうは、研究所の説明でも納得できないなら、東京の国立研究所で説明してもいいし、厚生省の本庁舎で直接説明してもいいと言ってる。」",
+		   NULL, " They said if their explanation isn't good enough, they can explain it to you at the National Research Institute in Tokyo, or even at the Ministry of Health's main office.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………………………。",
+		   NULL, "\"............", Line_WaitForInput);
+	OutputLine(NULL, "…でも、信じる信じないは別にして、…それが私たちにどういう関係があるんです？」",
+		   NULL, " Whether I believe it or not, how are we related to that?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「古手家は代々、オヤシロさまの血を受け継ぐと言われている。",
+		   NULL, "\"It is said that the Furude family inherited the blood of Oyashiro-sama.", Line_WaitForInput);
+	OutputLine(NULL, "そして、八代続いて女子が生まれれば、その八代目はオヤシロさまの生まれ変わりであるとも。」",
+		   NULL, " And it is also said that if a girl was born for eight continuous generations, that eighth generation girl would be the reincarnation of Oyashiro-sama.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……みー。」",
+		   NULL, "\"......Meep.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうですわ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "私が七代目。",
+		   NULL, " I'm the seventh", Line_WaitForInput);
+	OutputLine(NULL, "梨花が八代目。",
+		   NULL, " and Rika is the eighth generation.", Line_WaitForInput);
+	OutputLine(NULL, "でも、それとその病気に何の関係があるというんです？」",
+		   NULL, " But what does that have to do with the disease?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Hmm.", Line_WaitForInput);
+	OutputLine(NULL, "………この雛見沢症候群という病気は、ある種の寄生虫によるらしい。",
+		   NULL, " ...This Hinamizawa Syndrome is caused by a type of parasite.", Line_WaitForInput);
+	OutputLine(NULL, "虫といってもものすごく小さい。",
+		   NULL, " Although they're very tiny.", Line_WaitForInput);
+	OutputLine(NULL, "人の目には決して見えんくらいに。",
+		   NULL, " You can't even see them with the naked eye.", Line_WaitForInput);
+	OutputLine(NULL, "……その虫たちには親分格がいるというのだ。」",
+		   NULL, " ...They say there's a sort of leader among these parasites.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ま、",
+		   NULL, "\"A-", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…まさか、",
+		   NULL, " Are you saying...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "それが古手家だと仰るんですか！！」",
+		   NULL, " that's the Furude family?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「その親分格の寄生虫は、代々古手家の直系だけに受け継がれるらしい。",
+		   NULL, "\"It appears that the leader of these parasites is passed down through the generations only by people with a direct bloodline to the Furude family.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、…先代はお前。",
+		   NULL, " In other words, in the previous generation, it was you", Line_WaitForInput);
+	OutputLine(NULL, "今は、梨花だ。」",
+		   NULL, " and now it's Rika.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_WaraiA1#", 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……みー。」",
+		   NULL, "\"......Meep.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「ば、馬鹿馬鹿しい！！",
+		   NULL, "\"Th-That's ridiculous!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんな話やっぱりおかしいですわ？！",
+		   NULL, " That's absolutely ridiculous!!", Line_WaitForInput);
+	OutputLine(NULL, "　大体ですね、寄生虫なんてそんな気持ち悪いもの！！」",
+		   NULL, " Why would it be something as disgusting as parasites in the first place?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だから落ち着きなさい！！",
+		   NULL, "\"Calm down!!", Line_WaitForInput);
+	OutputLine(NULL, "　私では説明が下手だ。",
+		   NULL, " I'm not good at explaining things.", Line_WaitForInput);
+	OutputLine(NULL, "専門の人に説明を受けなさい。",
+		   NULL, " Please have the experts explain it to you.", Line_WaitForInput);
+	OutputLine(NULL, "そして、彼らが言うには、この病気の治療を研究するためには、親分格の研究が不可欠だと言うのだ。」",
+		   NULL, " According to them, studying this parasite leader is necessary in order to research the disease.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「嫌です！！！",
+		   NULL, "\"No!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんな怪しげな研究、まっぴらごめんですし、梨花だってそんな研究には関わりません！！」",
+		   NULL, " I won't have anything to do with such suspicious research, and Rika won't either!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だから落ち着きなさいと言うのに！！",
+		   NULL, "\"I'm telling you to calm down!!", Line_WaitForInput);
+	OutputLine(NULL, "　彼らの研究では、雛見沢症候群は、村から離れると発病するのではなく、親分格から離れると発病するということらしいのだ。",
+		   NULL, " They think that Hinamizawa Syndrome acts out when separated from the parasite leader, not the village itself.", Line_WaitForInput);
+	OutputLine(NULL, "……お前も小さかった頃、村人から神通力があると言われていたことがあるだろう？",
+		   NULL, " ...When you were little, do you remember villagers telling you that you had psychic powers?", Line_WaitForInput);
+	OutputLine(NULL, "　遠方に出掛け、偏頭痛などにかかったお年寄りが、お前に払ってもらうとたちまち頭痛が消えたという神通力。",
+		   NULL, " You were able to cure elderly people who got migraines after taking a long trip.", Line_WaitForInput);
+	OutputLine(NULL, "…それこそが親分格の証拠でもあるというのだ。",
+		   NULL, " That's the proof that you were carrying the parasite leader.", Line_WaitForInput);
+	OutputLine(NULL, "古手の血には、発病者を救う力がある。",
+		   NULL, " The Furude bloodline has the power to cure people with the disease.", Line_WaitForInput);
+	OutputLine(NULL, "それを研究するのは治療薬を見つけるためにも、とても重要なことなのだそうだ。」",
+		   NULL, " To discover a cure, it's extremely important that we participate in their research.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 2, "Ri_DefA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Hu_R2", 400 );
+
+	OutputLine(NULL, "「……ボクを研究すると、村のみんなが助かるのですか？」",
+		   NULL, "\"......If they study me, will the villagers be saved?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「先方はそう言っている。」",
+		   NULL, "\"That's what they say.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……その病気は村の全員が掛かっているのですか？",
+		   NULL, "\"......And all the villagers are infected?", Line_WaitForInput);
+	OutputLine(NULL, "　ボクも？",
+		   NULL, " Me?", Line_WaitForInput);
+	OutputLine(NULL, "　みんなも？",
+		   NULL, " Everyone else?", Line_WaitForInput);
+	OutputLine(NULL, "　沙都子も？」",
+		   NULL, " Satoko, too?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…うむ。",
+		   NULL, "\"......Yes.", Line_WaitForInput);
+	OutputLine(NULL, "村に住む人間全員だけでなく、興宮に住む親類なども全て含むそうだ。",
+		   NULL, " Not only the people who live in the village, but their relatives in Okinomiya too.", Line_WaitForInput);
+	OutputLine(NULL, "多分、何千人という規模になるだろう。",
+		   NULL, " We're talking thousands of people.", Line_WaitForInput);
+	OutputLine(NULL, "それだけの大変な病気だから、厚生省がわざわざたくさんの予算を投じて専門の研究所を作ってくれたのだ。」",
+		   NULL, " That's why the Ministry of Health spent so much money to build a specialized research center.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「わ、私は反対です！",
+		   NULL, "\"I-I object!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花をそんな怪しげな研究の生贄にするだなんて！！」",
+		   NULL, " How can you let Rika be a sacrifice for something that suspicious?!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ボクはいいのですよ。",
+		   NULL, "\"......I don't mind.", Line_WaitForInput);
+	OutputLine(NULL, "ボクが生贄で沙都子が助かるなら、全然平気なのです。」",
+		   NULL, " If Satoko can be saved, I don't mind being a sacrifice. I really don't.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「梨花は黙っていなさいッ！！",
+		   NULL, "\"You be quiet, Rika!!", Line_WaitForInput);
+	OutputLine(NULL, "　とにかく絶対反対です！",
+		   NULL, " I absolutely refuse!", Line_WaitForInput);
+	OutputLine(NULL, "　あなたにそんな妙なことを吹き込んだ人たちには、私が直接会ってはっきりとお断りをします。",
+		   NULL, " I'll go talk to them and refuse them directly.", Line_WaitForInput);
+	OutputLine(NULL, "梨花を変な実験で殺されてたまるものですか！！",
+		   NULL, " I won't let them kill Rika in some crazy experiment!!", Line_WaitForInput);
+	OutputLine(NULL, "　大体、梨花は古手家のたった一人の跡継ぎなんですよ？！",
+		   NULL, " Besides, Rika is the one and only heir of the Furude family!!", Line_WaitForInput);
+	OutputLine(NULL, "　もしものことがあれば古手の血はここで絶えてしまうかもしれないじゃないですか！！",
+		   NULL, " What if something happens to her? The Furude family will die right there. Don't you see that?!", Line_WaitForInput);
+	OutputLine(NULL, "　あなたはもっとですね、古手の家のことを考えていただかないと！！",
+		   NULL, " You need to think more about our family!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなだから村の人たちに日和見主義とか何とか言われて…！！",
+		   NULL, " That's why the villagers call you an opportunist.", Line_WaitForInput);
+	OutputLine(NULL, "　大体、おかしいじゃないですか！！",
+		   NULL, " After all, don't you think it's odd?!", Line_WaitForInput);
+	OutputLine(NULL, "　建設省は村をダムに沈める。",
+		   NULL, " The Ministry of Construction is trying to submerge the village", Line_WaitForInput);
+	OutputLine(NULL, "厚生省は村の病気を治す。",
+		   NULL, " and the Ministry of Health is trying to cure a disease.", Line_WaitForInput);
+	OutputLine(NULL, "何が何だかさっぱりわからないです！！」",
+		   NULL, " What in the world is going on?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「厚生省は、この病気は環境の変化で大変発病しやすいと警告していて、建設省に対しダム計画を中止するよう働きかけてくれているそうだ。",
+		   NULL, "\"The Ministry of Health has warned that this disease could be triggered by a change in environment. So they're actually trying to have the Ministry of Construction stop the dam construction plan.", Line_WaitForInput);
+	OutputLine(NULL, "…だからお前も研究所を見せてもらいなさい。",
+		   NULL, " ...You really should go to the research center.", Line_WaitForInput);
+	OutputLine(NULL, "あれだけの大設備を、ダム湖に沈むかもしれない土地に建てるわけがない。」",
+		   NULL, " Why would they build such a huge facility in a location that could be submerged?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_KomaruA1#", 200, TRUE );
+	DisplayWindow();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	OutputLine(NULL, "「……くぁぁぁあぁぁ…。」",
+		   NULL, "\"......Hwaaaaaah...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　梨花が大きく欠伸をする。",
+		   NULL, "Rika let out a big yawn.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花のような少女には、もう堪える時間なのだろう。",
+		   NULL, "It was long past bedtime for a little girl like her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……ボクはもう寝ますです。",
+		   NULL, "\"......I'm going to bed now.", Line_WaitForInput);
+	OutputLine(NULL, "……父さん、ボクはいつでも協力すると、その人たちに言っておいてくださいなのです。」",
+		   NULL, " Dad, please let them know I'm willing to participate, okay?\"", Line_Normal);
+	ClearMessage();
+
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+
+	OutputLine(NULL, "「り、梨花！！",
+		   NULL, "\"R-Rika!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなこと私に断りなく勝手に決めちゃいけません！！！",
+		   NULL, " You can't make such a decision without consulting me!!!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花ッ！",
+		   NULL, " Rika!", Line_WaitForInput);
+	OutputLine(NULL, "　待ちなさい梨花！！！」",
+		   NULL, " Wait, Rika!!!\"", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,725 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 1000 );
+	DrawScene( "G1", 1000 );
+	PlaySE( 0, "s_chaim", 128, 64 );
+	Wait( 300 );
+	PlaySE( 0, "s_chaim", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1500 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 0, "er_Ver3", 120, 0 );
+
+	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　学校は子供の世界だ。",
+		   NULL, "School is the children's world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大人の世界のどんな価値観もここには入り込めない。",
+		   NULL, "The values of grownups don't apply.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　子供たちは自分たちで価値を決め、自分たちだけの世界を築くのだ。",
+		   NULL, "Children decide their own values and create their own world.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だから、……村という大人の世界でどんな理不尽なルールが蔓延っていようとも、こことは関係ない。",
+		   NULL, "So the rules of the grown-up world, of the village, don't mean anything here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　村の中で北条家が孤立していて、大人たちが陰口を言っていることをそれとなく知っていても、学校の中にそれが持ち込まれることはなかった。",
+		   NULL, "Even when the villagers badmouth the Houjou family and try to isolate them... that has no meaning at our school.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　子供の世界では、その価値観は子供が決める。",
+		   NULL, "In the children's world, children decide the rules.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……彼らが理不尽だと思ったルールはここには及ばないのだ。",
+		   NULL, "Rules they think are irrational don't exist here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから。",
+		   NULL, "That's why,", Line_WaitForInput);
+	OutputLine(NULL, "私は子供の世界の代表として、委員長として、その理不尽なルールをわずかほども忍び込ませないと誓ったのだ。",
+		   NULL, " as the representative for the children here, I vow that I will never let any irrational rules come into our world.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　学校の中では、北条兄妹に対するどんな苛めも許さない。",
+		   NULL, "Within the school, no harassment is allowed towards the Houjou siblings.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　本当に初期の初期、男子がふざけて沙都子にちょっかいを出そうとしたことがあったが、",
+		   NULL, "In the very beginning, some boys teased Satoko, ", Line_WaitForInput);
+	OutputLine(NULL, "容赦なく制裁してやったので、それ以来、そういうことは一切なくなった。",
+		   NULL, "but they were punished severely, and it hasn't happened ever since.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それが、私にできる村の理不尽へのささやかな反抗だった…。",
+		   NULL, "That's the least I can do to resist the madness of the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、少なくとも学校の中でだけは、悟史と沙都子にとって安心できる空間であったと思いたい。",
+		   NULL, "So I hope Satoshi and Satoko both feel that the school is a safe place for them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史は、私のそんな気遣いに気付いてくれたようで、学校にいる時はやわらかな笑顔を浮かべてくれるようになった。",
+		   NULL, "Satoshi must notice my concern, because he often smiles when he's here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、沙都子の表情に同じ笑顔が浮かぶことはなかった。",
+		   NULL, "However, I never see Satoko smile...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……沙都子を元気付けようという同い年のクラスメートたちは、やがてそっとしておくのが一番だという結論に達し、沙都子に近寄らないようになった。",
+		   NULL, "...Satoko's classmates used to try to cheer her up, but soon after, they decided that it was best to just leave her alone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私も最初は積極的に声を掛けていたが、",
+		   NULL, "I used to try to talk to her...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……途中で気付き、それをやめた。",
+		   NULL, " but when I realized something, I stopped doing that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　自分は園崎の人間なのだ。",
+		   NULL, "I'm a member of the Sonozaki family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子にとって、近寄られるだけで不快な思いをさせることもあるかもしれない…。",
+		   NULL, "To Satoko, I'm one of her enemies, so I'm sure she feels uncomfortable to have me around her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私にできるのは、影からそっと見守るだけなのだ。",
+		   NULL, "All I can do is to watch over her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、教室ではいつも沙都子はひとりぼっちだった。",
+		   NULL, "That's why Satoko is alone in the classroom.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しつこいと言われても、つきまとうように側にいる梨花ちゃんと、必ず隣に居てあげようとする悟史。",
+		   NULL, "That said, Rika-chan is always hanging around with her, even though Satoko told her she was annoying. Satoshi, too, is always beside her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……この二人だけが、沙都子の側にいてくれる例外だった。",
+		   NULL, "These two are the only ones who remain by her side.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawScene( "Hi2", 400 );
+
+	OutputLine(NULL, "　沙都子に限らず、",
+		   NULL, "It isn't limited to Satoko, of course.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……北条家に対する陰湿な村八分は収まるところを知らない。",
+		   NULL, " ...The malicious isolation is still continuing towards the Houjou family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ヒステリックな叔母が、敵対感情を剥き出しにして近所に角を立てているため、誰も同情するものがいないのだ。",
+		   NULL, "Because their hysterical aunt is so hostile towards her neighbors, there's nobody who sympathizes with her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……喧嘩には、買うべきものと控えた方がいいものがある。",
+		   NULL, "...It's wise to know there are fights worth picking and also fights better set aside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　叔母にわずかの自制心と我慢があれば、北条夫妻が被っていた村八分を引き継ぐこともなかったのだ。",
+		   NULL, "If the aunt had even a little tolerance or self control, this isolation wouldn't have continued.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……もっとも、兄夫婦のとばっちりを無関係な自分たちに引き継がされるという理不尽を最初に強いたのは村側なのだが…。",
+		   NULL, "Of course, the villagers were the ones who forced them into that role, even though they weren't related to the issue.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、…じっと頭を垂れていれば、ここまでおかしなことになることはなかった。",
+		   NULL, "But if she had stayed quiet, then it wouldn't have gone so far.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　叔母ひとりの喧嘩ならともかく、…生活を共にする家族まで巻き込んでいる。",
+		   NULL, "The aunt's hostility is one thing, but she's dragging everyone in the family into it as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　叔父は元々叔母とは仲が悪かったらしく、あまり家に帰ってこないで出歩いてばかりいるらしい。",
+		   NULL, "The uncle and the aunt haven't been getting along, and he hardly comes home.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史も沙都子も、肩身の狭いとても辛い思いを強いられている。",
+		   NULL, "Both Satoshi and Satoko are forced to live in shame.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　叔母はストレスのはけ口を沙都子に求めてしまっているようで、沙都子は叔母から陰険な苛めをずっと受け続けているらしい。",
+		   NULL, "The aunt vents her stress by harassing Satoko.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……これについても同じだ。",
+		   NULL, "...This was the same too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…仮にも保護者である叔母に、沙都子は明らかな嫌悪感を示し、表向きだけでも大人しくしていようという素振りすらしなかったのだから。",
+		   NULL, "The aunt is her guardian, after all, but Satoko doesn't even try to hide her disgust, so things aren't going smoothly between them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史を見習い、慎ましやかに過ごしていれば、叔母に目の仇にされることはなかったのだ。",
+		   NULL, "If she had behaved like Satoshi, then she wouldn't have been made into a target.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…なら、沙都子が今、こうして光の宿らぬ瞳で俯きながら日々を過ごしていることを、自業自得だなどと言ってしまえるのか。",
+		   NULL, "So does that mean the sad life Satoko is living right now is something she caused herself?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………そんなことはなかった。",
+		   NULL, "...No, it doesn't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、同情したくても助けたくても、",
+		   NULL, "But no matter how much I sympathize and how much I want to help her, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……もう誰にどうすればいいかなんてわからない。",
+		   NULL, "nobody knows what to do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もう、誰かが誰かに謝ったくらいじゃ、…この状況は変わらない。",
+		   NULL, "An apology won't change the situation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　出来てしまった流れは、変わらない。",
+		   NULL, "The flow can't be reversed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　北条家が、村中から苛められているという仕組みが、風向きが、変えられない。",
+		   NULL, "The fact that the Houjou family is ostracized by the entire village can't be changed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな恐ろしい状況が、私たちの生活のすぐ裏には潜んでいる。",
+		   NULL, "That's the horribleness lurking underneath our lives.", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　……ご近所、",
+		   NULL, "...The neighbors,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "町内、",
+		   NULL, " the village, ", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "コミュニティ。",
+		   NULL, "and the community.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そういうものを敵に回せば、…世界はここまで残酷になれる。",
+		   NULL, "Once they become your enemies, the world can become so cruel.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それを古来、日本人は知ってたから、ご近所に対し礼を尽くす義理と人情を育んでいったんじゃないか。",
+		   NULL, "...Japanese people have known that since ancient times, which is why we cultivated empathy and an obligation to show courtesy to one's neighbors.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを、誰かのせいにしたって、沙都子の顔に笑顔は戻せない。",
+		   NULL, "No matter who I blame, Satoko won't smile.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私にできるのは、せめて学校にいる時くらい、心安らかに過ごせるよう見守ってやることだけだ。",
+		   NULL, "So the only thing I can do is to watch over her and make sure that she's safe when she's at school.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK1", "maskup", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshot( 0, "Sato_Def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………ありがとう。",
+		   NULL, "\"...Thank you,", Line_WaitForInput);
+	OutputLine(NULL, "魅音。」",
+		   NULL, " Mion.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…え？",
+		   NULL, "\"...Eh?", Line_WaitForInput);
+	OutputLine(NULL, "　あははは、ごめん、何？」",
+		   NULL, " Ahahaha, sorry, what?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「うぅん。",
+		   NULL, "\"Mmph.", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子にいつも気を遣ってくれて、ありがとうって。」",
+		   NULL, " I just want to thank you for being so concerned about Satoko.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史はぼんやりしているようで、…たまに人の心を読むようなことを言う。",
+		   NULL, "Satoshi kind of appears absent-minded, but sometimes he says things as if he can read your thoughts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は、柄にもないことを見抜かれたことを慌てながら否定するが、そんな私の気持ちまでお見通しなようで、くすりと笑ってくれた。",
+		   NULL, "I tried to deny it since it's out of character for me, but he smiled as if he could tell exactly what I was thinking.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_def2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「沙都子は、笑顔の浮かべ方を忘れてしまっただけなんだよ。",
+		   NULL, "\"Satoko's just forgotten how to smile.", Line_WaitForInput);
+	OutputLine(NULL, "……学校にいる時は、…本当に少しだけ、肩の力を抜ける時間を得られてる。",
+		   NULL, " ...When she's at school... she can let go of a little tension for a while.", Line_WaitForInput);
+	OutputLine(NULL, "それはきっと、沙都子にとってとてもやさしい時間になってるって思ってるよ。」",
+		   NULL, " I'm sure she treasures that time.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あははははは…。",
+		   NULL, "\"Ahahahahaha...", Line_WaitForInput);
+	OutputLine(NULL, "……おじさんに気を遣えるのは、せいぜいこの程度だしね。」",
+		   NULL, " That's basically the only thing this ol' man can do for her...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………そんなことないよ。",
+		   NULL, "\"...That's not true.", Line_WaitForInput);
+	OutputLine(NULL, "僕も感謝してるよ。」",
+		   NULL, " I really appreciate it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「よしてよ。",
+		   NULL, "\"Stop that.", Line_WaitForInput);
+	OutputLine(NULL, "……感謝されることなんかないって。",
+		   NULL, " ...You don't need to say that.", Line_WaitForInput);
+	OutputLine(NULL, "迷惑掛けてるのは、多分、ウチなんだしさ。」",
+		   NULL, " Besides, my family is the one who's causing all this grief.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………そんなこと、思ってないよ。",
+		   NULL, "\"...I don't think that way.", Line_WaitForInput);
+	OutputLine(NULL, "全然。」",
+		   NULL, " I really don't.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…私は人の機微を読むのがそんなに得意な方じゃないが、悟史のこの言葉だけは嘘だとわかった。",
+		   NULL, "...I'm not good at reading people's subtle cues, but I know for sure what he just said is a lie.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史も、…自分たちを村八分にしている元凶が園崎家にあり、",
+		   NULL, "Satoshi knows that he and his family are being isolated because of the Sonozakis,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私がその本家の娘であることを意識せずにはいられないのだ。",
+		   NULL, " and he's, of course, aware that I am a member of the Sonozaki family too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史が大人だから、私に当り散らさないだけで。",
+		   NULL, "Satoshi is mature, and that's the only reason he doesn't take it out on me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………もし、悟史が叔母のように短気だったなら、私を露骨に毛嫌いしていたとしても、何の不思議もない。",
+		   NULL, "If he had the same temper as his aunt, he would hate me bitterly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ならばせめて気を利かせて、私は彼らに近付かないようにするのが正しい気の利かせ方なのかもしれない。",
+		   NULL, "Knowing that, the least I can do is not get close to them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………でも、私はお節介だから、暗く沈む沙都子や、…健気に笑顔を装う悟史を、見過ごせないのだ。",
+		   NULL, "....But I'm a meddlesome person, and when I see Satoko looking depressed or Satoshi forcing himself to smile, I have to do something.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それがかえって、悟史や沙都子に余計な気を遣わせているかもしれないのに。",
+		   NULL, "...That might be even more troublesome to Satoshi and Satoko though.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………………私、",
+		   NULL, "\"............Maybe...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……沙都子の気持ちを全然理解していないのかなぁ。」",
+		   NULL, " I just don't understand Satoko's feelings.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……どうして？」",
+		   NULL, "\"...Why?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「沙都子が辛い思いをしている一番の原因はウチにある。",
+		   NULL, "\"My family is causing Satoko grief.", Line_WaitForInput);
+	OutputLine(NULL, "……そこの娘の私が、沙都子の周りをうろちょろすることは、その、",
+		   NULL, " So for me, a member of that family, to hang around her...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……空気の読めていないことなのかなぁって。」",
+		   NULL, " Is that the right thing to do?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そんなことはないよ。",
+		   NULL, "\"Sure.", Line_WaitForInput);
+	OutputLine(NULL, "魅音はそれくらいがちょうどいいと思うけどな。」",
+		   NULL, " That's you being you.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「何よそれ。",
+		   NULL, "\"What do you mean by that?", Line_WaitForInput);
+	OutputLine(NULL, "私ゃ無神経な方がぴったりだっていうの？」",
+		   NULL, " Are you saying I'm insensitive?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「むぅ、そういう意味じゃないよ。",
+		   NULL, "\"Hmm... I don't mean that.", Line_WaitForInput);
+	OutputLine(NULL, "…………その空気というのが、沙都子から笑顔を奪っているのなら。",
+		   NULL, " ...If this atmosphere itself is robbing Satoko of her smile...", Line_WaitForInput);
+	OutputLine(NULL, "…そんな空気なんか全然気にしない人じゃなきゃ、沙都子に笑顔は戻せないって思ってるから。」",
+		   NULL, " then only someone who can completely ignore it can bring her smile back.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……う、うまいこと言ってるけど、さり気なくおじさんのこと馬鹿にしてるでしょー？",
+		   NULL, "\"...Th-This ol' man can't tell if you're trying to compliment him or not.", Line_WaitForInput);
+	OutputLine(NULL, "　ひどいなぁ、あははは！」",
+		   NULL, " You're mean, ahahaha!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「馬鹿にしてなんかいないよ。",
+		   NULL, "\"I'm not ridiculing you, really.", Line_WaitForInput);
+	OutputLine(NULL, "………助けてほしいだけなんだよ。」",
+		   NULL, " I just want you to help.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…ぇ？」",
+		   NULL, "\"...Eh?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………僕ひとりの力じゃ、沙都子に笑顔は戻せない。",
+		   NULL, "\"...I can't make Satoko smile again by myself.", Line_WaitForInput);
+	OutputLine(NULL, "……魅音みたいな、力強い人の助けがいるんだよ。」",
+		   NULL, " I need someone like you to help me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「で、でも…。",
+		   NULL, "\"B-But...", Line_WaitForInput);
+	OutputLine(NULL, "私、……園崎家の魅音だよ…？",
+		   NULL, " I'm... Mion Sonozaki, you know?", Line_WaitForInput);
+	OutputLine(NULL, "　私なんかが無神経なことをやったら、かえって沙都子を傷つけるかも…。」",
+		   NULL, " If I do something insensitive, I might end up hurting Satoko even more...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「その空気が、沙都子をひとりぼっちにしているのに…？",
+		   NULL, "\"Satoko is already lonely...", Line_WaitForInput);
+	OutputLine(NULL, "　だから魅音も、沙都子をひとりぼっちにするのかい…？」",
+		   NULL, " Are you going to leave her alone too?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………………………。」",
+		   NULL, "\".........\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史が、こんなにも積極的に私に何かを求めるなんて、…初めての経験だった。",
+		   NULL, "This is the first time Satoshi has asked me for something so aggressively.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼にとって、沙都子は大切な存在。",
+		   NULL, "Satoko is a very important person to him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その沙都子に笑顔を取り戻すには、私の協力が必要だと、そうはっきり言っているのだ。",
+		   NULL, "He's saying he needs my help to make her smile again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、……。",
+		   NULL, "But still...", Line_WaitForInput);
+	OutputLine(NULL, "……いや…。",
+		   NULL, " No...", Line_WaitForInput);
+	OutputLine(NULL, "……そうかもしれない。",
+		   NULL, " Maybe he's right.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　園崎家と北条家のいさかいなんて、大人の都合であって、",
+		   NULL, "What's going on between the Sonozaki family and the Houjou family is an issue among the grownups.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…私たち子供には全然どうでもいいことなんだ。",
+		   NULL, " We children don't need to care about that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たち子供の世界には、そんな理不尽な大人のルールなんて関係ない。",
+		   NULL, "The irrational rules of the grownups don't mean anything in our world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私には、私の世界のやり方で、大人の世界の理不尽に対し抗議することができるんじゃないか。",
+		   NULL, "...So I have to object to the irrationality of the grownup world using methods of my own.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……沙都子は、本当に私のこと、迷惑に思わないかな。」",
+		   NULL, "\"...Are you sure Satoko won't feel bothered by me?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「初めは少しは思うかもしれない。",
+		   NULL, "\"She may, at first.", Line_WaitForInput);
+	OutputLine(NULL, "でも、僕も一緒だから。",
+		   NULL, " But I'll be with you.", Line_WaitForInput);
+	OutputLine(NULL, "魅音と一緒だから。",
+		   NULL, " I'll be with you, Mion.", Line_WaitForInput);
+	OutputLine(NULL, "すぐに打ち解けるよ。」",
+		   NULL, " So she'll open up right away.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そ、そうかな…！",
+		   NULL, "\"Y-You think so...?!", Line_WaitForInput);
+	OutputLine(NULL, "　………………今日、学校が終わったら、沙都子を遊びに誘ってみる？」",
+		   NULL, " ......Should we do something after school today?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…家に帰ると叔母さんに色々言われて、表に出られなくなってしまうかもしれない。」",
+		   NULL, "\"If we go home first, our aunt might say something, and we might not be able to leave.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あは、なら簡単だね。",
+		   NULL, "\"Okay, then it's simple.", Line_WaitForInput);
+	OutputLine(NULL, "家に帰らずに遊べばいいんだ。」",
+		   NULL, " Don't go home first.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも、帰りがあまりにも遅くなると、何の道草を食っていたんだと……。」",
+		   NULL, "\"But if we get home too late, she'll ask us what we were doing...\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+
+	OutputLine(NULL, "「えっと、ならさ、あれだあれだ！",
+		   NULL, "\"Hmmm... let's see... I know!", Line_WaitForInput);
+	OutputLine(NULL, "　部活動に加わったっていうのはどう？」",
+		   NULL, " Why don't you join a club?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「部活？」",
+		   NULL, "\"A club?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "部活ってことにして、学校で遊んでから帰ればいいじゃん。",
+		   NULL, " Tell her you are going to an after-school club. Tell her that you're doing something after school before going home.", Line_WaitForInput);
+	OutputLine(NULL, "だって、学校から帰らないでそのまま遊んでる男の子だって大勢いるんだしね。",
+		   NULL, " There are plenty of people who go out after school before they go home.", Line_WaitForInput);
+	OutputLine(NULL, "全然、問題ないよ！」",
+		   NULL, " That'll be no problem!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Tukare", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あ、でも、服を汚すとまた叔母さんに…、」",
+		   NULL, "\"Ah, but... if we mess up our clothes, our aunt will say...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ふふん、ならさ、アウトドアじゃなくてインドア中心にすればいいわけよ！",
+		   NULL, "\"Okay, then we'll do something indoors!", Line_WaitForInput);
+	OutputLine(NULL, "　それなら服も汚れないしね。」",
+		   NULL, " Then your clothes will stay clean.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「インドアってことは教室？",
+		   NULL, "\"Indoors? Do you mean in the classroom?", Line_WaitForInput);
+	OutputLine(NULL, "　でもあんまり暴れると知恵先生に…。」",
+		   NULL, " But wouldn't Chie-sensei say something?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「くっくっく！",
+		   NULL, "\"Heh heh heh!", Line_WaitForInput);
+	OutputLine(NULL, "　インドアで暴れずに、だけれども熱く遊ぶことは可能なんだよ。",
+		   NULL, " It's possible to play passionately while not going wild indoors.", Line_WaitForInput);
+	OutputLine(NULL, "おじさん、こう見えてもゲームが大好きでね！",
+		   NULL, " Contrary to my appearance, I love playing games!", Line_WaitForInput);
+	OutputLine(NULL, "　海外物の貴重なものとか、結構集めてたりするのさ。",
+		   NULL, " I've collected some treasures from overseas too.", Line_WaitForInput);
+	OutputLine(NULL, "マニュアルが英語だったり難しかったりで、対戦してくれる相手がいなくって死蔵しちゃってるのが多いんだけどね。」",
+		   NULL, " Some of the manuals are written in English and are a little complicated, while with some of them I need someone to play with, so a lot of them are just sitting in the storage room.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Sato_Def2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それ、沙都子にも遊べるかな。」",
+		   NULL, "\"Do you think Satoko can play those too?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「もちろん！",
+		   NULL, "\"Sure!!", Line_WaitForInput);
+	OutputLine(NULL, "　あはは、ルールなんてね、わかんなかったらその場で作っちゃえばいいんだよ！",
+		   NULL, " Ahaha, if you don't know the rules, then you just make them up!", Line_WaitForInput);
+	OutputLine(NULL, "　全員が同じルールに従う以上、どんなルールだったって公平なんだからね！」",
+		   NULL, " As long as everyone is following the same rules, it's totally okay!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　威勢よく言ってみたものの、ウチからゲームを持ってきてそれに誘うだけで沙都子に笑顔を取り戻せるだろうか。",
+		   NULL, "I said it so confidently, but would bringing games from home and asking Satoko to play with us actually make her smile again?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……駄目で元々。",
+		   NULL, "...What have I got to lose?", Line_WaitForInput);
+	OutputLine(NULL, "…明日、何かスゴロクみたいなものでも持ってきてみようか。",
+		   NULL, " ...Maybe I'll bring one of the board games tomorrow.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あ、…あとさ、魅音。",
+		   NULL, "\"Oh... also, Mion.", Line_WaitForInput);
+	OutputLine(NULL, "相談があるんだけど。」",
+		   NULL, " I have something else I want to ask you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「何？",
+		   NULL, "\"What?", Line_WaitForInput);
+	OutputLine(NULL, "　おじさんで乗れる相談なら何でも聞いてよ。」",
+		   NULL, " This ol' man is all ears!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「僕、",
+		   NULL, "\"I", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……アルバイトを探してるんだ。",
+		   NULL, " am looking for a part-time job.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子を元気付けるのに、…誕生日に素敵なプレゼントをしたら喜ぶかなって思って。」",
+		   NULL, " I thought if I could get her a nice birthday present, that might make her feel better.\"", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

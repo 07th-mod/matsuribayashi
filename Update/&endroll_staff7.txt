@@ -1,0 +1,45 @@
+#include	"Include\bss.h"
+#include	"Include\WorksAndFlags.h"
+void main()
+
+{
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+
+	Wait( 1000 );
+	DrawScene( "white" , 2000 );
+	PlayBGM( 1, "LIVE_2", 120, 0 );
+
+	//InitializeTiming( 0 );
+
+	if(GetGlobalFlag(GLanguage) == 1) {
+		DrawSprite( 5, "staff_mina", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+		MoveSprite( 5, -320, -3760, 0, 0, 0, 0, 0,160000, FALSE );
+	} else {
+		DrawSprite( 5, "staff_mina", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+		MoveSprite( 5, -320, -4160, 0, 0, 0, 0, 0,160000, FALSE );
+	}
+
+	Update(); //start the queued move without waiting for it
+	Wait(80000);
+
+	PlayBGM( 0, "higurashi", 55, 5000 );
+
+	Wait(80000);
+
+	FadeOutBGM( 0, 8000, FALSE );
+	FadeOutBGM( 1, 8000, FALSE );
+	FadeOutBGM( 2, 8000, FALSE );
+
+	Update();
+	Wait(5000);
+
+	FadeSprite( 5, 2000, TRUE ); //layer 32 and up persists across scenes, so we have to manually fade it out
+
+	Wait(2000);
+
+	DrawScene( "black" , 1000 );
+
+	Wait(2000);
+}

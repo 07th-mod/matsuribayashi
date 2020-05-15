@@ -1,0 +1,88 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "instict2", 120, 0 );
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentDiamondNarrow", 400);
+		DrawScene( "fure3", 400 );
+	} else {
+		DrawScene( "Kakera5", 400 );
+	}
+
+	OutputLine(NULL, "　このカケラは私たちにとって、とても重要な意味を持つ。",
+		   NULL, "This game piece has a very important meaning for us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは、抗えない運命と諦めていた昭和５８年６月に、風穴を開けられるのではないかという可能性を初めて見せてくれたからだ。",
+		   NULL, "Because it showed us for the first time that it was possible to poke a hole in the fate of the June of 1983.", Line_Normal);
+	ClearMessage();
+	StopFragment(400);
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　結論から言えば、最後にはルールＹに取り込まれ、全ては台無しとなる。",
+		   NULL, "To start from the conclusion, everything gets taken in by Rule Y at the end, and all our effort is wasted.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、このゲーム盤を支配する大きな法則であるルールＸに真正面から挑み、",
+		   NULL, "But we're challenging the great law that governs this game board, Rule X, head on.", Line_WaitForInput);
+	OutputLine(NULL, "…これまでのカケラで学んできたことを活かし、打ち勝てることを証明した。",
+		   NULL, " We're using everything we've learned so far from other Fragments, which prove we can defeat it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　学ぶことで、私たちは成長できる。",
+		   NULL, "We grow by learning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　勝ち目のないゲームに、わずかの勝ち目を見出すことができる。",
+		   NULL, "In a game with no hope of winning, we can discover a slight chance of victory.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを、教えてくれたとても大切なカケラ…。",
+		   NULL, "This piece taught us that.", Line_Normal);
+	ClearMessage();
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentDiamondNarrow", 400);
+		DrawScene( "fure3", 400 );
+	} else {
+		DrawScene( "Kakera5", 400 );
+	}
+
+	OutputLine(NULL, "　このカケラで、ルールＸはほぼ完全に打ち破られた。",
+		   NULL, "With this game piece, Rule X was almost completely defeated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　前原圭一たちが、雛見沢症候群などという下らないものに惑わされ、惨劇に踊ることは、二度とない…。",
+		   NULL, "Keiichi Maebara and our other friends won't be led astray by something as pathetic as the Hinamizawa Syndrome and dance in tragedy any longer.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ルールは無敵の存在ではなく、打ち破れることも教えてくれた。",
+		   NULL, "It has also taught us that the Rules aren't indestructible, and are possible to overcome.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それはつまり、ゲーム盤の外にいる私たちに希望を与えてくれたわけでもある。",
+		   NULL, "In other words, it has given us, the ones who are on the outside of the game board, hope.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…全てのきっかけと、そしてターニングポイントとなる、重要なカケラ…。",
+		   NULL, "...It's an important Fragment that serves as our turning point, and the trigger for everything else.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyefragment" );
+	StopFragment(400);
+	DrawScene( "black", 1000 );
+
+}

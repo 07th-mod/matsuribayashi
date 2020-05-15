@@ -1,0 +1,14 @@
+#include	"Include\bss.h"
+#include	"Include\WorksAndFlags.h"
+void main()
+{
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering( 6, "cinema", "maskx", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	FadeBustshotWithFiltering( 7, "maskx", 1, FALSE, 0, 0, 1300, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+}

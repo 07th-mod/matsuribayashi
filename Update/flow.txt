@@ -1,0 +1,445 @@
+﻿
+void main()
+{
+	SetValidityOfSaving( FALSE );
+	CallSection("BrandLogo");
+	JumpSection("Title");
+}
+
+void BrandLogo()
+{
+	DrawScene("black", 0);
+
+	if(GetGlobalFlag(GFlag_FirstPlay) == 0)
+	{
+		LanguagePrompt();
+		Wait(500);
+	}
+
+	SetGlobalFlag(GFlag_FirstPlay, 1);
+
+	DrawBG( "07thlogo", 1000, TRUE );
+	Wait( 2000 );
+	DrawSceneWithMask( "mangagamer", "logomask", 0, 0, 1000 );
+
+	Wait( 2000 );
+
+	DrawSceneWithMask( "black", "logomask", 0, 0, 1000 );
+}
+
+void Title()
+{
+	SetValidityOfSaving( FALSE );
+
+	//DrawScene("black", 1000);
+
+	DrawScene("white", 1000);
+
+	Wait(100);
+
+	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
+
+	DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+
+	DrawSceneWithMask("black", "maskc", 0, 0, 1000);
+
+	Wait(1500);
+	//MoveSprite( 10, 0, -100, 0, 0, 0, 5, 0, 1500, TRUE );
+
+	DrawScene("white", 1000);	
+
+	PlayBGM( 2, "higurashi", 128, 0 );
+
+	if(GetGlobalFlag(GFlag_GameClear) == 0)
+		DrawScene("moon", 1500);
+	else
+		DrawScene("hi6", 1500);
+
+	Wait(1000);
+
+	DrawSpriteWithFiltering( 10, "SGTitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
+
+	DrawSprite( 12, "titlelogo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 12, 1000, TRUE );
+
+	Wait(1000);
+
+	//
+
+	//DrawBG( "bg_216", 0, TRUE );
+
+	//FadeSprite( 2, 2000, TRUE );
+
+	StoreValueToLocalWork( LOCALWORK_NO_RESULT, 0 );
+	StoreValueToLocalWork(s_jump, 0);
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	TitleScreen();
+
+	CallSection("ChapterPreview");
+
+	JumpSection("Title");
+}
+
+void ChapterPreview()
+{
+	PlayBGM( 2, "lsys13", 128, 0 );
+
+	DrawSceneWithMask( "black", "mask2", 0, 0, 1000 );
+
+	Wait(1000);
+
+	DrawScene("scenario_a", 1000);
+
+	DrawSceneWithMask( "scenario_b", "mask6", 0, 0, 1000 );
+
+	DrawSceneWithMask( "scenario_c", "mask5", 0, 0, 1000 );
+
+	ShowChapterPreview();
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 1)
+	{
+		StopBGM( 2 );
+		PlaySE( 1, "wa_037", 128, 64 );
+
+		DrawScene( "black", 1000 );
+
+		JumpSection("Game");
+	}
+
+	FadeOutBGM( 2, 1000, FALSE );
+
+	DrawScene("black", 1000);
+	
+	CallSection("Title");
+}
+
+void ViewTipsDisplay()
+{
+	//uses local flag TipsMode to determine what happens
+	//0 - Leave, 1 - Show Extras Menu, 2 - Show Mid Chapter Screen, 3 - Show New Tips, 4 - Show All Tips (Local), 5 - Show All Tips (Global)
+
+	SetValidityOfSaving( TRUE );
+
+	DisableWindow();
+
+	if(GetLocalFlag( TipsMode ) < 3)
+		DrawScene("black", 0);
+
+	if(GetLocalFlag( TipsMode ) == 1)
+		ShowExtras();
+
+	if(GetLocalFlag( TipsMode ) == 2)
+		ShowChapterScreen();
+
+	if(GetLocalFlag( TipsMode ) > 2)
+	{
+		ShowTips(GetLocalFlag( TipsMode ) - 3);
+		CheckTipsAchievements();
+	}
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
+		CallSection("ViewTipsDisplay");
+}
+
+void ViewTips()
+{
+	int starttips;
+	int tipcount;
+	int totaltips;
+	int chapter;
+
+	starttips = GetLocalFlag(NewTipsStart);
+	tipcount = GetLocalFlag(NewTipsCount);
+	totaltips = starttips + tipcount;
+
+	StoreValueToLocalWork(TipsCount, totaltips);
+
+	if(GetGlobalFlag(GTotalTips) < totaltips)
+		SetGlobalFlag(GTotalTips, totaltips);
+
+	StoreValueToLocalWork( TipsMode , 2 );
+
+	chapter = GetLocalFlag(ChapterNumber);
+
+	if(GetGlobalFlag(GHighestChapter) < chapter)
+		SetGlobalFlag(GHighestChapter, chapter);
+
+	CallSection("ViewTipsDisplay");
+}
+
+void StartFragmentLoop()
+{
+	SetLocalFlag( TipsMode, 0);
+	SetLocalFlag( LFragmentLoop, 1);
+
+	CallSection("FragmentChapterDisplay");
+
+	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+}
+
+void FragmentChapterDisplay()
+{
+	//TipsMode 0 is Chapter display, TipsMode 1 is Fragment List
+
+	SetValidityOfSaving( TRUE );
+
+	SavePoint("カケラ紡ぎをする", "Connecting Fragments");
+
+	DisableWindow();
+
+	if(GetLocalFlag( TipsMode ) == 0)
+		FragmentViewChapterScreen();
+		
+	if(GetLocalFlag( TipsMode ) == 1)
+	{
+		if(GetLocalFlag( LFragmentRead ) >= 50) { DrawScene("kakera_back_06", 500); PlayBGM(1, "It_move2", 128, 0 ); }
+		else if(GetLocalFlag( LFragmentRead ) >= 40) { DrawScene("kakera_back_05", 500); PlayBGM(1, "It_move2", 128, 0 ); }
+		else if(GetLocalFlag( LFragmentRead ) >= 30) { DrawScene("kakera_back_04", 500); PlayBGM(1, "as_time_goes_by", 128, 0 ); }
+		else if(GetLocalFlag( LFragmentRead ) >= 20) { DrawScene("kakera_back_03", 500); PlayBGM(1, "INSTICT", 128, 0 ); }
+		else if(GetLocalFlag( LFragmentRead ) >= 10) { DrawScene("kakera_back_02", 500); PlayBGM(1, "it_moves", 128, 0 ); }
+		else if(GetLocalFlag( LFragmentRead ) >= 0) { DrawScene("kakera_back_01", 500); PlayBGM(1, "It_move2", 128, 0 ); }
+		
+		FragmentListScreen();
+		DrawScene("black", 500);
+	}
+
+	if(GetLocalFlag( LFragmentLoop ) > 0)
+		ShiftSection("FragmentChapterDisplay"); //ShiftSection move sections without updating call stack or current scope
+}
+
+void FinalFragment()
+{
+	CallScript( "_kakera52" );
+	GetAchievement("HIGURASHI_STORY_EP08_FINAL");
+	CallScript( "&endroll_staff9" );
+
+	JumpSection("Title");
+
+}
+
+void Game()
+{
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	SetValidityOfSaving( TRUE );
+	SetValidityOfInput( TRUE );
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	DrawScene( "black", 1000 );
+
+
+	if(LoadValueFromLocalWork(s_jump) <= 0)
+	{
+		CallScript( "_mats_op" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 1)
+	{
+		CallScript( "_mats_001" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 2)
+	{
+		CallScript( "_mats_002" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_01");
+
+		StoreValueToLocalWork( ChapterNumber, 1 );
+		SavePoint("Ch.1 終わり", "End of Chapter 1");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 3)
+	{
+		CallScript( "_mats_003" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 4)
+	{
+		CallScript( "_mats_004" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_02");
+
+		StoreValueToLocalWork( ChapterNumber, 2 );
+		SavePoint("Ch.2 終わり", "End of Chapter 2");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 5)
+	{
+		CallScript( "_mats_005" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 6)
+	{
+		CallScript( "_mats_006" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_03");
+
+		StoreValueToLocalWork( ChapterNumber, 3 );
+		SavePoint("Ch.3 終わり", "End of Chapter 3");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 7)
+	{
+		CallScript( "_mats_007" );
+
+
+		GetAchievement("HIGURASHI_STORY_EP08_04");
+
+		StoreValueToLocalWork( ChapterNumber, 4 );
+		SavePoint("Ch.4 終わり", "End of Chapter 4");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 8)
+	{
+		CallScript( "_mats_008" );
+
+		CallSection("StartFragmentLoop"); //Fraagggggmeeeentttsssss
+
+		GetAchievement("HIGURASHI_STORY_FRAGMENTS");
+	}
+
+	if(LoadValueFromLocalWork(s_jump) <= 9)
+	{
+		CallScript( "_mats_009" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 10)
+	{
+		CallScript( "_mats_010" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_05");
+
+		StoreValueToLocalWork( ChapterNumber, 5 );
+		SavePoint("Ch.5 終わり", "End of Chapter 5");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+
+	}
+
+	if(LoadValueFromLocalWork(s_jump) <= 11)
+	{
+		CallScript( "_mats_011" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 12)
+	{
+		CallScript( "_mats_012" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_06");
+
+		StoreValueToLocalWork( ChapterNumber, 6 );
+		SavePoint("Ch.6 終わり", "End of Chapter 6");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 13)
+	{
+		CallScript( "_mats_013" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 14)
+	{
+		CallScript( "_mats_014" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_07");
+
+		StoreValueToLocalWork( ChapterNumber, 7 );
+		SavePoint("Ch.7 終わり", "End of Chapter 7");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 15)
+	{
+		CallScript( "_mats_015" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 16)
+	{
+		CallScript( "_mats_016" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_08");
+
+		StoreValueToLocalWork( ChapterNumber, 8 );
+		SavePoint("Ch.8 終わり", "End of Chapter 8");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 17)
+	{
+		CallScript( "_mats_017" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 18)
+	{
+		CallScript( "_mats_018" );
+
+		GetAchievement("HIGURASHI_STORY_EP08_09");
+
+		StoreValueToLocalWork( ChapterNumber, 9 );
+		SavePoint("Ch.9 終わり", "End of Chapter 9");
+
+		CallSection("ViewTips");
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 19)
+	{
+		CallScript( "_mats_019" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 20)
+	{
+		CallScript( "_mats_020" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 21)
+	{
+		CallScript( "_mats_021" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 22)
+	{
+		CallScript( "_mats_022" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 23)
+	{
+		CallScript( "_mats_023" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 24)
+	{
+		CallScript( "_mats_024" );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 25)
+	{
+		CallScript( "_mats_025" );
+	}
+
+	SetGlobalFlag( GFlag_GameClear, TRUE );
+	SetGlobalFlag( GHighestChapter, 10 );
+	GetAchievement("HIGURASHI_STORY_EP08_ENDING");
+
+	SetGlobalFlag(GTotalTips, 52);
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	FadeOutBGM( 0, 1000, TRUE );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	JumpSection("Title");
+
+}
+

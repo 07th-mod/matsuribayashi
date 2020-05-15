@@ -1,0 +1,761 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Feel", 120, 0 );
+
+	OutputLine(NULL, "　悟史くんは本当に妹思いな良い兄だった。",
+		   NULL, "Satoshi-kun is a good brother who takes great care of his sister.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　学校が終われば必ずそのまま沙都子ちゃんのお見舞いに訪れ、彼女が一日でも早く元気を取り戻せるよう、温かく言葉を掛け続けてくれていた。",
+		   NULL, "He went to visit Satoko-chan straight after school and kept encouraging her to get better every day.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんの話を聞くまでもなく、…沙都子ちゃんはこれまで、家族とよい関係を築くことができなかった。",
+		   NULL, "Without even hearing Satoshi-kun's stories, it's obvious to me that Satoko-chan never had a good relationship with her step-parents...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……特に義父との対立は激しく、沙都子ちゃんが虐待ＳＯＳに嘘の通報をして騒ぎになるまでに至ったという。",
+		   NULL, "She especially didn't get along with her stepfather. Satoko-chan even called a child abuse hotline once.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなところへ、さらに両親が二人揃って転落事故で死んでしまったのだから、……心がそれらのダメージを受け止め切れなかったに違いない。",
+		   NULL, "Not only that, her parents ended up dying in an accident, so she just wasn't able to withstand all that damage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　まだまだ年端も行かない沙都子ちゃんにとって、それはあまりに辛い出来事だったに違いないが、",
+		   NULL, "Satoko-chan is still very young, so everything must have been horrible for her to go through.", Line_WaitForInput);
+	OutputLine(NULL, "…………彼女には悟史くんという素晴らしい兄がいてくれたのが、不幸中の幸いだった。",
+		   NULL, " ......Fortunately, she has a wonderful brother.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　傷ついた心は容易には治せない。",
+		   NULL, "Emotional wounds are hard to heal.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、肉親の愛に勝る治療薬は存在しないのだ。",
+		   NULL, "But nothing heals those wounds better than love from family members.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……私は、きっといつの日にか沙都子ちゃんが笑顔を取り戻してくれると確信していた。",
+		   NULL, "I'm sure that one day, Satoko-chan will be able to smile again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まだまだショックから立ち直れないようだが、悟史くんとのコミュニケーションにより、少しずつ笑顔を取り戻しつつある。",
+		   NULL, "She's still in shock, but when she talks to Satoshi-kun, she smiles a little bit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…警察の大石は、相変わらずしつこく彼女への面会を求めてくるが、もうしばらく私が防波堤になってやる必要があるだろう。",
+		   NULL, "...Ooishi from the police department keeps requesting to see her, but I think I need to protect her for just a little longer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……あの男には警官としての情熱はあるのかもしれないが、人の心を思いやるやさしさはない。",
+		   NULL, "...While he's passionate about his job, I wish he'd be a touch more sensitive.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あの男が無神経に両親の事故を思い出させれば、彼女は再び心の傷を開いてしまうに違いないのだ。",
+		   NULL, "If he reminds her of her parents' accident, her emotional wounds will start to open again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………その点だけが、沙都子ちゃんを巡る心配だった。",
+		   NULL, "...That's the one point I worry about with Satoko-chan.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_knock", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Sinryo_sinsatu2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　コンコンとノックの音。",
+		   NULL, "I heard someone knocking on the door.", Line_WaitForInput);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ta_Def+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "…鷹野さんだった。",
+		   NULL, " ...It was Takano-san.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…しかし、彼女の看護婦姿は、…どういうわけか似合わない。",
+		   NULL, "...It doesn't look right, wearing a nurse's uniform like that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　医師免許を持っているのだから、白衣を着て医師らしく振舞えばいいのに。",
+		   NULL, "She's a licensed doctor, so she should wear a white coat and act like one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……彼女なりの遊び心なのかもしれないが、正規の看護婦に対し失礼な気もする。",
+		   NULL, "Maybe this is fun for her, but I think she might be insulting the real nurses...", Line_WaitForInput);
+	OutputLine(NULL, "…それをわざわざ口にしたりはしないが。",
+		   NULL, " I didn't say anything, though.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「入江先生、ちょっとよろしいですか？」",
+		   NULL, "\"Dr. Irie, may I talk to you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あぁ、はい。",
+		   NULL, "\"Oh, yes.", Line_WaitForInput);
+	OutputLine(NULL, "それでは悟史くん、私は失礼します。」",
+		   NULL, " Well, Satoshi-kun, if you'll excuse me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sato_Def1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あ、はい。」",
+		   NULL, "\"Ah, sure.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Warai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「悟史くん、こんにちは。",
+		   NULL, "\"Hello, Satoshi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "沙都子ちゃんと遊んであげててね。",
+		   NULL, " Please keep Satoko-chan company.", Line_WaitForInput);
+	OutputLine(NULL, "ずっとひとりでいるから、きっと寂しいと思うの。",
+		   NULL, " She's always alone, so I bet she's lonely.", Line_WaitForInput);
+	OutputLine(NULL, "…ね？」",
+		   NULL, " Okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 0, "Sa_OdorokiB1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そ、そんなことございませんわよ…。」",
+		   NULL, "\"O-Oh no, that's not true.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sato_Komaru2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「むぅ。」",
+		   NULL, "\"Mmph.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「では悟史くん、よろしくお願いします。」",
+		   NULL, "\"Okay Satoshi-kun, you're in charge.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は席を外し、悟史くんに沙都子ちゃんを預けた。",
+		   NULL, "I got up and let Satoshi-kun take over.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「ところで、何かありましたか…？」",
+		   NULL, "\"Did something happen?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「ここでは何ですので、所長室で。",
+		   NULL, "\"Not right here, let's go to your office.", Line_WaitForInput);
+	OutputLine(NULL, "……くすくす。」",
+		   NULL, " Hee hee.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　鷹野さんは、時々意味深に笑う。",
+		   NULL, "Takano-san smiled meaningfully.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　多くの人にとって笑顔は幸せを共感させてくれる良いものだが。",
+		   NULL, "Usually, smiles bring happy feelings.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…この頃には、鷹野さんに限り、笑顔はそういう意味にならないことに気付き始めていた…。",
+		   NULL, "But when it comes to Takano-san, that's rarely the case.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_sinsatu1", "maskright", 1, 0, 300 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「…それは本当ですか。」",
+		   NULL, "\"...Are you sure?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Ta_Def+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	PlayBGM( 0, "hitoe_2", 120, 0 );
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "簡易検査の結果、Ｌ３以上と思われる高い発症レベルの可能性が指摘されました。",
+		   NULL, " The initial test results show there's a possibility she's at L3 or above.", Line_WaitForInput);
+	OutputLine(NULL, "彼女をさらに入院させ、より精度の高い検査を行う必要があります。",
+		   NULL, " We need to keep her here and run some more tests.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……結果待ちですが、私の見たところ、Ｌ４の可能性すらありえるかと。」",
+		   NULL, " The results aren't in yet, but from what I can see, it's very possible that she's at L4.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野さんの目がいやらしく笑うのがわかった。",
+		   NULL, "Takano-san's eyes sparkled in a weird way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それには理由がある。",
+		   NULL, "There's a reason for that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…………末期発症者を生体で得ることが、私たちの研究を進める上でもっとも価値のあることだったからだ。",
+		   NULL, "......For us, finding patients in the terminal stage is a valuable boon to our research.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　実際、去年の、……バラバラ殺人犯を検体とした非人道的解剖の結果、私たちの研究は飛躍的進歩を遂げていた。",
+		   NULL, "In fact, as a result of dissecting the murder suspect from last year, we've made great progress in our research.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　つまり、私たちはとうとう、病原体の特定に成功したのである。",
+		   NULL, "In other words, we finally managed to isolate the pathogen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　宿主の人間が死ぬと、その死後数時間以内に溶解する特徴も発見した。",
+		   NULL, "We also discovered that when the host dies, the pathogen melts away within a few hours.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　溶解後は体内に存在するごく普通の成分となってしまうため、その痕跡の発見はほぼ不可能に近いこともわかった。",
+		   NULL, "Once that happens, it's undetectable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……これで、これまでいくら検死解剖をしても病原体が発見されなかった理由も説明がついた。",
+		   NULL, "That's why we never found the pathogen when we performed autopsies.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "File", 400 );
+
+	OutputLine(NULL, "　そこからの研究は、それまでとは次元が違うほどに進んだ。",
+		   NULL, "Our research made a lot of progress after that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この１年で、故高野氏の数十年分の研究を凌駕したと言っても過言ではないだろう。",
+		   NULL, "What we've found in this past year has easily surpassed what the late Dr. Takano found in decades.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今では、病原体の性質や及ぼす影響、症状、治療薬や予防薬等、様々な研究に展開していた。",
+		   NULL, "We're now studying the nature, the effect, and the symptoms of the pathogen, as well as treatments and vaccines.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、…生きた末期発症者の検体なくして、私たちの研究に進歩はない、ということなのだ。",
+		   NULL, "In other words, a living specimen who's at the terminal stage is a necessity for our research.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だが、末期発症者、通称Ｌ５が自然発生するのは稀だ。",
+		   NULL, "However, we rarely find a patient who's gone that far. Who's reached L5.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　太古の雛見沢症候群はＬ５をもっと大量に発生させたようだが、今日にその猛威はない。",
+		   NULL, "Hinamizawa Syndrome once created huge numbers of L5 patients, but today, it doesn't have such potency.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　となれば、Ｌ５、もしくはＬ５に限りなく近い重度発症者の確保が急務となってくる。",
+		   NULL, "Because of that, we have to secure L5 patients, or patients who are close to reaching L5, as quickly as possible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………沙都子ちゃんは、その条件を満たす、一年ぶりの生贄の可能性がある、ということだった。",
+		   NULL, "......Satoko-chan possibly qualifies to be that next sacrifice.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　奇病の機密保持のため、Ｌ５の恐れがある患者は野放しにできないことになっている。",
+		   NULL, "To keep this strange disease a secret, we can't let patients who may be at L5 go.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…まずは精密検査をし、",
+		   NULL, "We have to run more tests first,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…その結果を見てから対応を考えるしかない。",
+		   NULL, " then we'll figure out what to do next.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何しろ、沙都子ちゃんはあれだけ落ち着いているのだ。",
+		   NULL, "In any case, Satoko-chan seems so calm.", Line_WaitForInput);
+	OutputLine(NULL, "…去年のあの殺人犯のような錯乱は見られない。",
+		   NULL, " Her behavior is nothing like the man from last year.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……簡易検査は時に大きな誤差を出す。",
+		   NULL, "Initial tests are in error sometimes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子ちゃんが重度発症者かどうかは精密検査の結果を待ちたいところだった。",
+		   NULL, "We'll have to wait for the results of more detailed tests to determine how serious her condition is.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_sinsatu4", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……わかりました。",
+		   NULL, "\"...Okay.", Line_WaitForInput);
+	OutputLine(NULL, "経過観察のため入院ということにしましょう。",
+		   NULL, " Let's admit her for observation.", Line_WaitForInput);
+	OutputLine(NULL, "スタッフの皆さんへの手配をお願いいたします。」",
+		   NULL, " Please let the staff know to get things ready.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは形式的な返答だが、……もし検査の結果、クロだったなら、直ちに解剖に移れ、ともつながる返答になる。",
+		   NULL, "That sounds like a formal answer, but if the results come back positive, that will be the green light for her dissection.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子ちゃんとの面識はそんなになかったが、",
+		   NULL, "I don't know Satoko-chan that well,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…その兄の悟史くんとは、少年野球を通じて、すでに短くない交流を重ねていた。",
+		   NULL, " but I've known her brother, Satoshi-kun, through the baseball team for a long time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その悟史くんが、目に入れても痛くないほどに可愛がる妹を、",
+		   NULL, "How could I dissect", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………私は解剖などできるのか……？",
+		   NULL, " the apple of Satoshi-kun's eyes?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこまで至って初めて、私は恐ろしい想像が足元から登ってくるのを感じるのだった…。",
+		   NULL, "I can feel scary images flashing in my head for the first time.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "ご安心を。",
+		   NULL, " Don't worry.", Line_WaitForInput);
+	OutputLine(NULL, "万事すでに手配させておりますわ。」",
+		   NULL, " Everything is already taken care of.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　解剖手術の手配まで済ませているとでも言いたげな、邪悪な笑みだった。",
+		   NULL, "She smiled as if telling me that the dissection is already being prepared for too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、それは彼女だけの笑みなのだろうか。",
+		   NULL, "Is it just her who's smiling?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私の口元は醜く歪んで笑みを湛えてはいないだろうか………。",
+		   NULL, "Am I smiling like her, too?", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawScene( "Ryuuketu1", 1000 );
+
+	OutputLine(NULL, "　去年の解剖の時。",
+		   NULL, "When I dissected that man last year,", Line_WaitForInput);
+	OutputLine(NULL, "…解剖前は確かに罪の意識があった。",
+		   NULL, " I did feel guilt beforehand.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、覚悟を決めて解剖に臨むと、",
+		   NULL, "But once I started,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……そこは知的好奇心の楽園だったのだ。",
+		   NULL, " it was like I was in paradise.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　故高野氏が断片的に残した先見性溢れるピースがみるみる収まり、あるいは裏切り、とにかくとにかく興奮の連続だった。",
+		   NULL, "All the pieces of the puzzle that were left by the late Dr. Takano fell into place, and at the same time, they didn't. How exciting it was.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　誰もが解き明かしたことのない神秘に、自分たちが人類で初めて踏み込んだ興奮…。",
+		   NULL, "Knowing that we are the first ones to take the first steps to solve a mystery, that is.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この麻薬のように虜にしてしまう興奮の味を、味わったことのない人間にどう説明すればいいというのか。",
+		   NULL, "I don't even know how to explain this feeling to those who have never experienced it.", Line_WaitForInput);
+	OutputLine(NULL, "説明できる言葉などない。",
+		   NULL, " There's no way to describe it with words.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一言だけ言えるのは、……その知的興奮は一年を経た今になっても忘れることができないということだけだ。",
+		   NULL, "The only thing I can say is that even a year later, I still remember it vividly.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だから、もし検査の結果、……悟史くんの大切な妹が解剖の対象となることがわかったら、",
+		   NULL, "So if the results show that Satoshi-kun's beloved sister is to be dissected......", Line_WaitForInput);
+	OutputLine(NULL, "…………私は舌なめずりをせずにいられるのだろうか。",
+		   NULL, " Can I control myself? Can I stay calm?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、…それは人間としての失格を意味することだ。",
+		   NULL, "But... that means I'm a failure of a human being.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　北条家がどれだけ村で冷遇され、沙都子ちゃんがどれだけ辛い思いをしてきたか、私はそれをよく知っているのだ。",
+		   NULL, "I know very well that the Houjou family was treated poorly by the villagers, and I know what Satoko-chan had to go through.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そして、悟史くんがそんな妹を唯一の肉親として大切にしていることも。",
+		   NULL, "Also, I know Satoshi-kun loves his sister, who is his one and only blood relative.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな沙都子ちゃんを、私は知的興奮だけで生きながらに解剖することなどできるのか………。",
+		   NULL, "How can I dissect Satoko-chan, using my research as an excuse?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　去年の男には大して罪の意識は感じなかったのに、……沙都子ちゃんには重い罪の意識を感じる。",
+		   NULL, "I didn't feel much guilt for the man from last year, but I feel unbearable guilt towards Satoko-chan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そのことは、私が忘れようとしていた去年の罪を改めて思い出させた。",
+		   NULL, "...That means what I did last year was very sinful.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　面識のない男なら死んでもいい。",
+		   NULL, "I don't care if a stranger dies.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子ちゃんなら死なせたくない、という道理はない。",
+		   NULL, "But I don't want Satoko-chan to die. That's not right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　命の重さは誰だって等しいはずだ。",
+		   NULL, "All lives are equally precious.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに、罪の意識を薄れさせた理由の、……あの男が凶悪殺人犯であるというのも、",
+		   NULL, "I tried to convince myself that he was a violent murderer,", Line_WaitForInput);
+	OutputLine(NULL, "末期発症によるものだったかもしれないじゃないか。",
+		   NULL, " but maybe he only became that way because he was at the terminal stage.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……私は、錯乱する前のあの男のことは何も知らない。",
+		   NULL, "I don't know anything about him before he became deranged.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ひょっとすると模範的な尊敬できる人間だったのかもしれない。",
+		   NULL, "Maybe he was a model citizen who was worthy of respect.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それが不幸にして発症してしまい、その結果、反社会的行為に及んでしまっただけの、哀れな犠牲者なのかもしれないのだ…。",
+		   NULL, "......Unfortunately, he became ill and ended up doing what he did. Maybe he was a victim himself.", Line_WaitForInput);
+	OutputLine(NULL, "そう、私の父のように…。",
+		   NULL, " Just like my father...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は他の誰よりも雛見沢症候群について知っていた。",
+		   NULL, "I know more about Hinamizawa Syndrome than anybody.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この病気は、人を望まずして奇行に駆り立てる。",
+		   NULL, "This disease makes people act in bizarre ways,", Line_WaitForInput);
+	OutputLine(NULL, "本人に違和感を感じさせることさえなく。",
+		   NULL, " without those people realizing it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…だから、この病気の末期発症者が、いかに凶悪な奇行に走ろうとも、それは同情すべきことのはずなのだ。",
+		   NULL, "So when the people at the terminal stage do such strange and violent things, one should be sympathetic.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんなことは、この道を進もうと決意したあの頃に、もう知っていたはずなのに…！",
+		   NULL, "I already knew that back when I decided to go down this path.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな、私にとっては当り前だったはずのことを、私は今さらのように思い出し、",
+		   NULL, "I should have remembered it sooner, but I only did just now.", Line_WaitForInput);
+	OutputLine(NULL, "…本当に今さらのように、自分がいかに罪深き研究に身を投じているのかを知るのだった。",
+		   NULL, " I've finally realized what sinful research I'm working on.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sinryo_sinsatu1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　やがて、北条沙都子の精密検査の結果が出た。",
+		   NULL, "Satoko Houjou's detailed test results came back.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　結果は、",
+		   NULL, "The results say", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "Ｌ５。",
+		   NULL, " L5.", Line_WaitForInput);
+	OutputLine(NULL, "…末期の末期。",
+		   NULL, " She's at the terminal stage of the terminal stage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはある意味、とても驚くべき結果だった。",
+		   NULL, "It's actually a surprising result.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　去年のケースの場合、末期発症者は重度な錯乱状態にあった。",
+		   NULL, "In last year's case, the patient was extremely deranged.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野さんの観察記録によると、全身のリンパ腺に激しい痒みを訴え、故高野氏が指摘するよう、喉を掻き毟りたがったという。",
+		   NULL, "According to Takano-san's records, he complained about itching coming from the lymph nodes all over his body, and wanted to claw at his throat, just as the late Dr. Takano mentioned.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、沙都子ちゃんにその症状は見られない。",
+		   NULL, "But Satoko-chan isn't displaying such symptoms.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　故高野氏の資料でも、喉の掻き毟りは極めて特徴的な末期症状だとしながらも、患者の全員に必ず発症するとは記していない。",
+		   NULL, "Even in the late Takano's data, throat clawing is said to be a characteristic symptom of terminal stage patients. However, not all patients experience that symptom.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それに、感情の発露は個人差がある。",
+		   NULL, "Besides, emotional expression is very different in each person.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　同じ感情であっても、激しく発露させる人もいれば、内に秘めて隠してしまえる人もいる。",
+		   NULL, "Even if it's the same emotion, one patient may express it rather violently and another may express it calmly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　初見でそれを測ることなどできない。",
+		   NULL, "There's no way of knowing by just looking at a person.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　でも、沙都子ちゃんの精密検査結果は末期の末期、Ｌ５を示している。",
+		   NULL, "But Satoko-chan's detailed test results says that she's at the terminal stage of the terminal stage, L5.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka1", 400 );
+
+	OutputLine(NULL, "　つまり、…去年の男のように錯乱した様子を見せないだけで、",
+		   NULL, "In other words, she may be feeling what the man from last year was feeling.", Line_WaitForInput);
+	OutputLine(NULL, "……心の中には、まったく同じ狂気にも似た異常な感情が渦巻いているはずなのだ。",
+		   NULL, " It's just that she isn't expressing that feeling in the same way the man was.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雛見沢症候群は、人間の前頭葉に作用し、…人としてもっとも原始的感情のひとつ「疑い」に特に強く働きかける。",
+		   NULL, "Hinamizawa Syndrome affects the frontal lobes of the brain. It stimulates the most primitive of emotions-\"doubt\"- very strongly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……その結果、末期発症者は極めて重度の妄想的疑心暗鬼に囚われ、その結果として恐ろしい凶行を犯してしまうことになる…。",
+		   NULL, "As a result, terminal patients are trapped in delusions and paranoia, and end up committing horrible crimes.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　お見舞いの悟史くんと温かなコミュニケーションを交わし、一見、回復の兆しを見せている沙都子ちゃん。",
+		   NULL, "Satoko-chan seems to show improvement when she's exchanging friendly words with Satoshi-kun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………だがその胸の内には、いつ錯乱してもおかしくないくらいの疑心暗鬼が、ずっと渦を巻き続けている……。",
+		   NULL, "But...... there's a paranoia stirring inside her that may put her in a deranged stage at any moment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……沙都子ちゃんを、このまま退院させることは出来ない。",
+		   NULL, "...I can't let her leave the clinic like this.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、…このまま、対応マニュアル通りに進めば、私は北条沙都子の解剖プランに決裁を求められることになるだろう。",
+		   NULL, "However, if things go according to the manual, I will have to make a decision on her dissection.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そうなれば、私の決裁など形式だ。",
+		   NULL, "......My decision will only be a formality.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私にそれを拒むことなどできない。",
+		   NULL, "I can't actually refuse.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　鷹野さんは解剖のスケジュール作りにすでに着手しているらしかった。",
+		   NULL, "Takano-san appears to be already working on the dissection schedule.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その案が私のところへ回ってくる。",
+		   NULL, "That plan will then come to me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………沙都子ちゃんを生きながらに解剖したならば。",
+		   NULL, "Would I feel the same way", Line_WaitForInput);
+	OutputLine(NULL, "…再びあの知的興奮を味わえるのだろうか。",
+		   NULL, " while dissecting Satoko-chan?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　恍惚の境地に再び至ることができるのだろうか。",
+		   NULL, "Would I be able to experience that trance once again?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…いや、…私はその誘惑に打ち勝てるのか。",
+		   NULL, "...No, the question is, can I fight the temptation?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　自問自答するふりをしながら、鷹野さんが勝手に進めてくれるのを放置しながら、消極的に沙都子ちゃんの解剖に同意しているのではないか。",
+		   NULL, "As I pretend to question myself, I'm letting Takano-san prepare things on her own. By doing so, am I passively agreeing to Satoko-chan's dissection?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…できるなら沙都子ちゃんを救いたい。",
+		   NULL, "If possible, I want to save Satoko-chan.", Line_WaitForInput);
+	OutputLine(NULL, "研究のための生贄にしたくない。",
+		   NULL, " I don't want her to be a sacrifice for this research.", Line_WaitForInput);
+	OutputLine(NULL, "解剖など絶対にしたくない。",
+		   NULL, " I don't want to dissect her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、それならば去年の男はどうだと言うのか。",
+		   NULL, "Then, what about the man from last year?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は知人の命にだけ重さを感じる差別主義者なのか。",
+		   NULL, "Do I only care about the lives of the people I know?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　解剖しないなら、生かして退院させるのか。",
+		   NULL, "If I don't dissect her, do I let her live and leave the clinic?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女が錯乱して恐ろしい事件が起こるのを漠然と待つのか。",
+		   NULL, "Do I simply wait for her to become deranged and commit a horrible crime?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そして、去年の男のように錯乱状態になった彼女が担ぎこまれ、",
+		   NULL, "And then she'll end up here, just like the man from last year,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…やはりは結局、彼女を生きたまま解剖することになるのか。",
+		   NULL, " and I'll end up dissecting her anyway.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　去年の男は、",
+		   NULL, "The man from last year", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1100 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……生きながらに解剖されながら、",
+		   NULL, " was dissected alive", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……数ヶ月間も延命された。",
+		   NULL, " ...and kept that way for several months.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　頭蓋を外された状態で、数ヶ月間も死を許されず、残酷な実験のためだけに延命されたのだ。",
+		   NULL, "With his skull left open, he wasn't allowed to die for several months. He was kept alive, just for our cruel experiments.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女にそれを強いたくない……！",
+		   NULL, "I don't want to do that to her!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　どうしたらいいのか…。",
+		   NULL, "I don't know what to do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悩むことすら、葛藤することすら、彼女の解剖に消極的に同意していく…。",
+		   NULL, "Even debating and agonizing over it is leading toward consent to her dissection by elimination...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

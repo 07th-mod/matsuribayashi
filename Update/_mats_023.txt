@@ -1,0 +1,2722 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawBustshotWithFiltering( 0, "Ta_Ikari", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Mo1", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "　鷹野はこんな山地を歩くほどの体力はなく、息も絶え絶えになりながらも、無線で山狗たちを怒鳴り続けていた。",
+		   NULL, "Takano didn't have enough stamina to walk around in the mountains. She was running out of breath, but even so she continued to scream at the Mountain Dogs on the radio.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼女は他の山狗たちのようなインカムではなく、",
+		   NULL, "She wasn't using an intercom like the Mountain Dogs were.", Line_WaitForInput);
+	OutputLine(NULL, "隊員の背負った通信機で怒鳴るから、背負っている隊員は背中越しに延々と鷹野の怒鳴りを聞かねばならず、辟易としていた。",
+		   NULL, " Instead, she was using the communication unit on the back of one of the Dogs, so he constantly had to listen to her yelling.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ta_Ikari2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…………く！",
+		   NULL, "\"......Damn!", Line_WaitForInput);
+	OutputLine(NULL, "　どいつもこいつも頼りないったらありゃしない…！",
+		   NULL, " Everyone is so useless!", Line_WaitForInput);
+	OutputLine(NULL, "　それでも特殊部隊なの？！",
+		   NULL, " How can they call themselves a special unit?", Line_WaitForInput);
+	OutputLine(NULL, "　天下の山狗はどうしたというのよ…！！」",
+		   NULL, " Whatever happened to the famous Mountain Dogs, huh?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　イラつきながら下唇を噛み、左の腕を握り締めながら爪をぎゅうっと立てる…。",
+		   NULL, "Takano bit her lower lip and squeezed her left arm with her nails.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　よく見れば、腕のあちこちが爪の跡だらけになっていた。",
+		   NULL, "Her arms had nail marks all over them.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　……その左手には、…父の研究スクラップが一冊。",
+		   NULL, "She was holding her grandfather's research scrapbook in her left hand.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いつの間にこんなものを小脇に抱えていたのかわからない。",
+		   NULL, "Even Takano didn't even know why she was holding it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……せめて祖父の助けとぬくもりが欲しいと、無意識の内に手にしていたのかもしれない。",
+		   NULL, "Maybe she grabbed it unconsciously because she wanted her grandfather to comfort her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　山狗たちはすでに壊滅的な打撃を受けていた。",
+		   NULL, "The Mountain Dogs had already suffered devastating damage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　土地勘のない山中をぐるぐると引っ張りまわされ、",
+		   NULL, "They had to walk around in an area they weren't familiar with,", Line_WaitForInput);
+	OutputLine(NULL, "十重二十重のトラップ地帯で幾度も消耗を強いられ、",
+		   NULL, " and they wasted their energy on the multitude of traps that had been set.", Line_WaitForInput);
+	OutputLine(NULL, "強靭な彼らにも根をあげさせるほどだった。",
+		   NULL, " Although they were as tough as can be, they are getting exhausted.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mo3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「…………くそ、",
+		   NULL, "\"...Shit.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……うちの三佐にゃ、",
+		   NULL, " ...Does the Major even know", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……突撃以外に知ってる言葉はねぇのか……。",
+		   NULL, " ...any commands other than 'attack'...?", Line_WaitForInput);
+	OutputLine(NULL, "……はぁ、",
+		   NULL, " Hah,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………はぁ…！！」",
+		   NULL, " hah...!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "「鶯１より鶯１３…、",
+		   NULL, "\"Nightingale 1 to Nightingale 13...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "用心しろ、お前の左翼が沈黙した。",
+		   NULL, " watch out, your left wing is down.", Line_WaitForInput);
+	OutputLine(NULL, "今度はお前が狙われるぞ…！」",
+		   NULL, " You're next...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ふ、…ふざけるなよ、",
+		   NULL, "\"Y-You've got to be kidding me!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…何だってんだよ……俺かよ畜生！！」",
+		   NULL, " Why me... damn it!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼が焦るのも無理はない。",
+		   NULL, "He panicked.", Line_WaitForInput);
+	OutputLine(NULL, "……先ほどから繰り返しなのだ。",
+		   NULL, " The same thing kept happening.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　１人ずつ左から徐々に削られていく…！！",
+		   NULL, "His team members had been going down one at a time, starting from the left flank!!", Line_WaitForInput);
+	OutputLine(NULL, "　そして今度は…自分の番なのかッ！！",
+		   NULL, " And he was next!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	PlayBGM( 3, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　なら９時方向から敵は来るのか…？！",
+		   NULL, "Did that mean the enemy was coming from his nine o'clock?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いやそんなのあの悪魔たちには通用しない…！！",
+		   NULL, "No, those demons didn't think normally!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そもそもこの山中じゃ、前後３６０度でも警戒が足りない！",
+		   NULL, "On this mountain, being aware of 360 degrees around yourself wasn't enough!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　足元から頭上まで全ての全てに警戒してもなお足りないってんだぞ！！",
+		   NULL, "Even being cautious of the ground below your feet and sky above your head wasn't enough!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ど、どこから来やがるんだッ？！",
+		   NULL, "W-Where are they fucking coming from?!", Line_WaitForInput);
+	OutputLine(NULL, "　くそったれ、来やがれ来やがれ来やがれッ！！！",
+		   NULL, " Those bastards! Come here, come here, come the fuck at me!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　男はテーサーを構え前後を怯えながら振り向く。",
+		   NULL, "Nightingale 13 held his taser in front of him as he looked around timidly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……このテーサーも本来なら強力な武器となるはずだった。",
+		   NULL, "This taser could have been a powerful weapon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、それは元々屋内で使うものだ。",
+		   NULL, "But it was far more effectively used indoors.", Line_WaitForInput);
+	OutputLine(NULL, "この茂みの深い山中ではまったく効果が発揮できない。",
+		   NULL, " On this mountain, it was almost worthless.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mo2", "maskright", 7, 0, 300 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　男の背後でがさごそッと茂みが動く音がした。",
+		   NULL, "Nightingale 13 heard a noise behind him from a bush.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　そこに人影を見た気がして、男はテーサーを発砲する！！",
+		   NULL, "He thought he saw something, so he fired his taser!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　電極針が射出され、誰もいない茂みに飛び込む。",
+		   NULL, "The electrodes flew out into the bush.", Line_WaitForInput);
+	OutputLine(NULL, "……き、気のせいか？！",
+		   NULL, " ...Did he just imagine it?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その時、テーサーに妙な手応え。",
+		   NULL, "He felt a tug on his taser.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………そう、テーサーと電極針を結ぶ伸び切ったコードが茂みに絡まり巻き戻せないのだッ！！",
+		   NULL, "The cord from the taser was stuck in the bush, and he couldn't rewind it!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だから彼らは武器がまったく役に立たず、丸腰も同然だったのだ。",
+		   NULL, "If it wasn't useless before, it had certainly become that way.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "　その時、彼の後に再びがさがさっと音がして、今度こそ人影が飛び出る！！",
+		   NULL, "Then he heard a noise behind him again, and this time, he saw someone coming at him!!", Line_WaitForInput);
+	OutputLine(NULL, "　だが、頼みの綱の武器は今や役立たずだ！",
+		   NULL, " But his weapon was useless!", Line_WaitForInput);
+	OutputLine(NULL, "　その人影が吼えるッ！！！",
+		   NULL, " The newcomer growled at him!!!", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "white", 10 );
+	DrawBustshot( 0, "Ha_NiramuA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Mo2", 0 );
+	PlayBGM( 0, "search_and", 120, 0 );
+
+	OutputLine(NULL, "「あうあうあうあうあうあうあうッ！！！」",
+		   NULL, "\"Au au au au au au au!!!\"", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 241, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 3*2, TRUE );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「ぅわあああぁあぁ！！",
+		   NULL, "\"Whaaahhh!!", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "　ぃ、…ぃ野郎ぉおおぉッ！！！」",
+		   NULL, " Damn you!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それで充分だった！",
+		   NULL, "That was all it took!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　恐怖に駆られ飛びかかろうとしたその瞬間、彼の思考は完全に単純化し、",
+		   NULL, "Because he was so scared, he didn't think.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……沙都子の読みに完全にはまる！！",
+		   NULL, " ...That was exactly what Satoko expected!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　頭上の枝の上にいる沙都子が下にブリキバケツを落とす。",
+		   NULL, "Satoko, who was up in the tree, dropped a metal bucket on his head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "black", 200 );
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "　…それは、戦略弾頭も裸足で逃げ出す正確さで男の頭にはまるッ！！",
+		   NULL, "It landed perfectly!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ぅ、うわああぁあぁああ、何だこれ、何だこれッ！！！」",
+		   NULL, "\"Whaahhh, what the heck? What is this?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そのブリキバケツには、妙なラクガキがされていた。",
+		   NULL, "The bucket had some drawings on it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……何だろう。",
+		   NULL, "What were they?", Line_WaitForInput);
+	OutputLine(NULL, "妙な謎生物のラクガキだ。",
+		   NULL, " They were drawings of strange unknown creatures.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…ほら、あれだ、よく教育番組のお姉さんが絵描き歌で描くような得体の知れないマスコットキャラ！！",
+		   NULL, "...They somehow resembled those strange characters you see on educational TV programs.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mo3", 200 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Re_HauA1#", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「かぁいいよぉおぉおおお〜〜、おッ持ち帰りぃいいぃッ！！！」",
+		   NULL, "\"Aren't they just shoooooooo kyute? Take it home with you!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_chisibuki", 128, 64 );
+	DisableWindow();
+	ChangeBustshot( 2, "Re_KaiiB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　別の茂みから飛び出したレナの、萌える拳の一撃がブリキバケツごと男を打つッ！！！",
+		   NULL, "As Rena jumped out from another bush, she hit the bucket with a stick!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+	DrawScene( "white", 10 );
+	DrawScene( "F_a", 0 );
+	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, TRUE );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　いや、その鋭さは打つと形容するのは妥当じゃない。",
+		   NULL, "No, maybe it should be described as a strike...", Line_WaitForInput);
+	OutputLine(NULL, "…穿つというべきだッ！！",
+		   NULL, " instead of a hit.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mo1", 0 );
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "　後に弾き飛ばされる男の先には、",
+		   NULL, "The man flew backwards.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………圭一の姿が。",
+		   NULL, " Keiichi was ready for him.", Line_WaitForInput);
+	OutputLine(NULL, "その姿はまるで、",
+		   NULL, " The stance he was in", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……何だっけえっと、",
+		   NULL, " looked a bit like...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "そうだあれだ！！",
+		   NULL, " that's it!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　バッターボックスに入った打者のよう！！",
+		   NULL, "He looked like a batter in a batter's box!!", Line_WaitForInput);
+	OutputLine(NULL, "　片足立ちするその構えは…世界のホームラン王が編み出したという、",
+		   NULL, " He was on one foot... that was", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "伝説の一本足打法ッ？！？！",
+		   NULL, " the legendary one foot swing, created by that one world famous baseball player!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　破壊力は一方だけでは決まらない。",
+		   NULL, "Destructive force can't be measured from just one direction.", Line_WaitForInput);
+	OutputLine(NULL, "双方の衝突の相対速度で決まる！！",
+		   NULL, " It's a function of both speeds added together!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　圭一の一撃と、レナに吹き飛ばされたそのスピードが、驚異的な破壊力を生むッ！！！",
+		   NULL, "Both Keiichi's strike and the speed of his opponent created a truly amazing destructive force!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora3", 200 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「うぉおおおおおおぉ、バスターホームランッ！！！」",
+		   NULL, "\"Whooooaaaah, a home run bunt!!!\"", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 6*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 6*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　グワァアアァァアン……、あまりに壮絶かつ爽快な快音が響き渡り、レナに吹き飛ばされたのとは１８０度逆の方向に錐揉み状態で男は空を飛んでいた。",
+		   NULL, "With an exhilarating and magnificent sound, the Mountain Dog flew into the air in the opposite direction.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mo4", 0 );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 2*2, TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 2*2, TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+	DisableWindow();
+	DrawBustshot( 0, "Ri_NikoA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　そしてごろごろと転がり、地面に突っ伏した先には、しゃがんだ梨花ちゃんが待ち構えていた。",
+		   NULL, "Then he rolled down on the ground and stopped. There Rika awaited him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……もうそこに飛んでくるのが最初から計算済みのような配置だった。",
+		   NULL, "It was almost as though they calculated that he would end up there.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ri_WaraiA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「かぁいそかぁいそなのです。",
+		   NULL, "\"Poor thing, poor thing.", Line_WaitForInput);
+	OutputLine(NULL, "なでなで、みーみー☆」",
+		   NULL, " Pat, pat, meep meep~☆.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　バケツ越しでもわかる巨大タンコブを撫でてご満悦の梨花。",
+		   NULL, "Rika patted the bucket happily.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…隊員を一瞬だけ迎えた癒しの時は本当に一瞬で終りだった。",
+		   NULL, "This comforting moment for Nightingale 13 only lasted for a second.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawBustshot( 0, "Me_AkuwaraiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Mo2", 400 );
+
+	OutputLine(NULL, "　その尻に魅音がテーサーの針を打ち込むと、隊員は電撃でビクンと跳ねて無力化した。",
+		   NULL, "Mion shot her taser at his butt. Nightingale 13 jerked for a moment, then went limp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「くっくっくっく！",
+		   NULL, "\"Heh heh heh!", Line_WaitForInput);
+	OutputLine(NULL, "　一丁上がりぃ！！　こいつもフン縛っちまいなぁ！！」",
+		   NULL, " Another one down!! Let's tie him up!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その隙に、待ってましたとばかりに圭一とレナが飛び掛り、後手に針金で締めてしまう。",
+		   NULL, "Keiichi and Rena jumped on him and tied his hands behind his back with wire.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mo1", "maskright", 7, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ha_Waraia1", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あぅ〜あぅ〜！！",
+		   NULL, "\"Auuu auuu!!", Line_WaitForInput);
+	OutputLine(NULL, "　完全に決まりましたですよ、部活コンビネーションなのです！！」",
+		   NULL, " That was great!! What a team we are!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_WaraiA1#", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「をっほっほっほっほ！！",
+		   NULL, "\"Oh ho ho ho ho!!", Line_WaitForInput);
+	OutputLine(NULL, "　バーッチリですわね！！",
+		   NULL, " That was perfect!!", Line_WaitForInput);
+	OutputLine(NULL, "　次はコンビネーションその７で参りますわよ！！」",
+		   NULL, " We shall do Combination 7 next!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ha_AuA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あぅあぅ！！",
+		   NULL, "\"Au au!!", Line_WaitForInput);
+	OutputLine(NULL, "　僕はさっきのその５がもう１回行きたいのです！」",
+		   NULL, " I want to do 5 again!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Sa_AkuwaraiB1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あらあら、あの爽快感がわかるなら羽入さん、トラップ使いの才能がございましてよー！！」",
+		   NULL, "\"Oh, you liked that one, did you? You might have a hidden talent for using traps, Hanyuu-san!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 1, "Sa_WaraiA1#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, FALSE );
+	ChangeBustshot( 2, "Ha_WaraiA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　羽入と沙都子が、いえーい！と手を打ち合わせる。",
+		   NULL, "Hanyuu and Satoko high-fived.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "Mo2", 400 );
+
+	OutputLine(NULL, "　圭一とレナが隊員を縛り上げる間。",
+		   NULL, "While Keiichi and Rena tied Nightingale 13 up...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ri_DefA1#", "maskleft", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　梨花は五感を研ぎ澄まし、四方の気配を探っていた。",
+		   NULL, "Rika tried to sense something in the air.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……みー、みー、みー。",
+		   NULL, "\"...Meep, meep, meep.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "ぴこーん。",
+		   NULL, " Bing.", Line_WaitForInput);
+	OutputLine(NULL, "……向こうの方角から別の気配が近付いてくるのですよ。",
+		   NULL, " I feel something coming towards us from that direction.", Line_WaitForInput);
+	OutputLine(NULL, "……みー、みー、みー、",
+		   NULL, " ...Meep, meep, meep,", Line_WaitForInput);
+	OutputLine(NULL, "反応は２、",
+		   NULL, " there are two,", Line_WaitForInput);
+	OutputLine(NULL, "かなり怯えてるのですよ、にぱ〜☆」",
+		   NULL, " and they are both very scared. Nipah~☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして魅音に周囲の状況を伝える。",
+		   NULL, "Rika reported to Mion.", Line_WaitForInput);
+	OutputLine(NULL, "まるでレーダー要員だった。",
+		   NULL, " She was a bit like a radar.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 0, "Me_HutekiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Mo3", 200 );
+
+	OutputLine(NULL, "　魅音は、すでに倒した男は眼中にない。",
+		   NULL, "Mion didn't even care about the guy they had just knocked out.", Line_WaitForInput);
+	OutputLine(NULL, "梨花の検知した敵気配を加味して、沙都子の裏山地図を見ながら次の転戦先の検討に入っている。",
+		   NULL, " She was already trying to figure out their next move while looking at Satoko's map and using the info Rika gave her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　みんなが、次はどこへ攻めどうするのかとわくわくしながら魅音の指示を待つ。",
+		   NULL, "Everyone eagerly awaited Mion's next order.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Me_AkuwaraiA2#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くっくっくっく！！",
+		   NULL, "\"Heh heh heh heh!!", Line_WaitForInput);
+	OutputLine(NULL, "　何だいみんなのその目はぁ。",
+		   NULL, " Why are you looking at me that way?", Line_WaitForInput);
+	OutputLine(NULL, "まぁだまだ食い足りないってぇ？",
+		   NULL, " You haven't had enough fun yet?", Line_WaitForInput);
+	OutputLine(NULL, "　確かにねぇ。",
+		   NULL, " Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "我が部としちゃあようやく体が温まってきた程度だしねぇ！！",
+		   NULL, " I guess we're just getting warmed up, huh?", Line_WaitForInput);
+	OutputLine(NULL, "　行っちまう？",
+		   NULL, " Shall we continue?", Line_WaitForInput);
+	OutputLine(NULL, "　この山で、みんなやっちまうかあぁあぁ！！！」",
+		   NULL, " Let's get them all!!!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 2, "Re_WaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
+	DrawBustshot( 1, "Kei_Warai#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
+	DisplayWindow();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「「「うおおおおおおお！！！」」」",
+		   NULL, "\"\"\"Yeahhhhhh!!!\"\"\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 6*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 6*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　魅音の部長としての才能は、指揮能力や作戦能力もさることながら、もっとも評価されるべきなのが士気を鼓舞する能力だろう。",
+		   NULL, "Mion was a great leader. She had both leadership skills and tactical ability, but more than anything else, she was great at encouraging people's spirits.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　勇将の下、弱卒なし。",
+		   NULL, "There are no cowardly soldiers under a brave General.", Line_WaitForInput);
+	OutputLine(NULL, "そして勇敢な兵士は魅音の指揮の下、百万の兵に匹敵する英雄の活躍をするッ！！",
+		   NULL, " And brave soldiers fight like a million men under Mion's command!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今の魅音を、いや、部活メンバーを、…誰が止められる？！",
+		   NULL, "Nobody could stop Mion and her club members!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　当初の魅音や小此木の見積もりも今ではすでに甘い。",
+		   NULL, "Both Mion and Okonogi's original estimates were too low.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mo4", 400 );
+
+	OutputLine(NULL, "　小此木はこの頃、思っていた。",
+		   NULL, "Now Okonogi was thinking something else.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……この包囲戦を始める前、自分は彼ら１人をよく訓練された１個小隊などと例えたが、",
+		   NULL, "...Before they started this siege, he likened one of them to a well trained a platoon,", Line_WaitForInput);
+	OutputLine(NULL, "……もうそれは適当ではない。",
+		   NULL, " ...but that didn't fit anymore.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…連中は、最精鋭の１個機甲師団に匹敵する。",
+		   NULL, "...They were on par with an elite armored division.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……機甲師団に歩兵が勝てるわけがない。",
+		   NULL, "...Foot soldiers couldn't beat an armored division.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　増してやこっちはせいぜい中隊規模なんだぞ！！",
+		   NULL, "What Okonogi had was just a company!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　重爆の航空支援、さもなきゃ艦砲射撃、砲兵陣地はどこだよ？！",
+		   NULL, "Where was the air support, or a bombardment from a warship, or an artillery base?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この山を野戦砲で地図の書き換えがいるほどに穴だらけにしろ！！",
+		   NULL, "Okonogi needed someone to pump the mountain full of holes!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それができないってんなら潜水艦に頼んで戦術核をブチ込んでくれ！！",
+		   NULL, "If he couldn't have that, he needed a submarine to fire a nuclear weapon!!", Line_WaitForInput);
+	OutputLine(NULL, "　それが駄目なら退却させろぉおぉおぉぉッ！！！",
+		   NULL, " If he couldn't have that, he wanted to retreat!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もう小此木は疑わなかった。",
+		   NULL, "Okonogi no longer doubted it.", Line_WaitForInput);
+	OutputLine(NULL, "……敵の指揮官は何者か知らないが天才級だ。",
+		   NULL, " The enemy commander was a genius.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　名将の下に全ての兵士は万夫不当の豪傑となる！！",
+		   NULL, "Under a mighty commander, all soldiers become heroes!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　せめて顔を拝ませろ、どんな悪魔なのか名前だけでも教えてくれッ！！",
+		   NULL, "He wanted to see the face of the commander, or at least he wanted to know their name!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あぁ、雛見沢って鬼の住む村ってぇことになってたんだよな…。",
+		   NULL, "But then Okonogi remembered that demons used to live in Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………今ならわかるぜ、",
+		   NULL, "...He also realized", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……こいつが、…鬼ってヤツかッ！！！",
+		   NULL, " the commander had to be a demon!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mo7", 400 );
+
+	OutputLine(NULL, "「鶯１３、沈黙！」",
+		   NULL, "\"This is Nightingale 13, I'm down!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「鳳４、沈黙！！」",
+		   NULL, "\"Phoenix 4, I'm down!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こ、こちら雲雀１０…！",
+		   NULL, "\"Th-This is Skylark 10...!", Line_WaitForInput);
+	OutputLine(NULL, "　こ、子供の笑い声が聞こえる…、",
+		   NULL, " I-I can hear the voices of children...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ほほ、包囲された！！",
+		   NULL, " I'm surrounded!!", Line_WaitForInput);
+	OutputLine(NULL, "　た、頼む助けてくれッ！！！」",
+		   NULL, " Help, help me!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「雲雀１０、退却しろ退却しろ！！」",
+		   NULL, "\"Skylark 10, fall back, fall back!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「退却ってどっちにだよ？！",
+		   NULL, "\"To where?", Line_WaitForInput);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 100 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 150 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 3*2, TRUE );
+
+	OutputLine(NULL, "　うッうわあああああああ！！！」",
+		   NULL, " Whahhhhhh!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
+
+	OutputLine(NULL, "「お、鳳９だ…！",
+		   NULL, "\"Th-This is Phoenix 9...!", Line_WaitForInput);
+	OutputLine(NULL, "　Ｒを発見、追跡している、応援を送ってくれ！！」",
+		   NULL, " I found R. I'm following her, I need assistance!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「鳳９、どこにいるんだ、所在地がわからない！",
+		   NULL, "\"Phoenix 9, where are you? I don't know where you are!", Line_WaitForInput);
+	OutputLine(NULL, "　周辺の状況を送られたし！！」",
+		   NULL, " Give me your current location!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……き、霧が出てる、",
+		   NULL, "\"There is... a fog,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……寒い寒い…、",
+		   NULL, " it's cold...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……こ、ここは河原？！」",
+		   NULL, " Is this a riverbank?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「鳳９、地図上ありえない、落ち着いて状況を確認しろ！！」",
+		   NULL, "\"Phoenix 9, there are no rivers anywhere near us. Calm down, where are you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そ、そんな……河原の向こうに……、",
+		   NULL, "\"What...? I can see...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "し、死んだ姉ちゃんが……！！",
+		   NULL, " my dead sister on the other side of the river...!!", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　お姉ちゃーん！！」",
+		   NULL, " Sis!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「鳳９、鳳９！！",
+		   NULL, "\"Phoenix 9, Phoenix 9!!", Line_WaitForInput);
+	OutputLine(NULL, "　応答しろッ！！",
+		   NULL, " Answer me!!", Line_WaitForInput);
+	OutputLine(NULL, "　お、鳳９、沈黙ッ！！」",
+		   NULL, " Ph-Phoenix 9 is down!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora3", 400 );
+
+	OutputLine(NULL, "「無理だ、やつらはこの山の鬼だッ！！",
+		   NULL, "\"This is impossible! They must be the demons of this mountain!!", Line_WaitForInput);
+	OutputLine(NULL, "　俺は知ってる、これは鬼隠しなんだ！！",
+		   NULL, " I know, they're all being demoned away!!", Line_WaitForInput);
+	OutputLine(NULL, "　俺たちは全員この山で消されちまうんだッ！！」",
+		   NULL, " None of us are making it out of here alive tonight!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ば、馬鹿なことを口走るのはやめろ！！",
+		   NULL, "\"St-Stop saying things like that!!", Line_WaitForInput);
+	OutputLine(NULL, "　各班長は再点呼で状況把握と士気高揚に努めろ！！",
+		   NULL, " All unit leaders, conduct a roll call and give your members some encouragement!!", Line_WaitForInput);
+	OutputLine(NULL, "　敵は悪魔なんかじゃない！！",
+		   NULL, " Our enemies aren't demons!!", Line_WaitForInput);
+	OutputLine(NULL, "　ただのクソガキだ！！",
+		   NULL, " They're just a bunch of damn kids!!", Line_WaitForInput);
+	OutputLine(NULL, "　ビビるな、格の違いを見せてやれッ！！」",
+		   NULL, " Show them what we've got!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「……ぁははははははは、ぁははははははは……。」",
+		   NULL, "\"...Ahahahahahahahaha ahahahahahahaha...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「き、聞こえる、誰のインカムから聞こえてるんだッ？！",
+		   NULL, "\"I-I hear that, whose intercom is it coming from?", Line_WaitForInput);
+	OutputLine(NULL, "　俺じゃない、俺じゃない！！」",
+		   NULL, " Not mine, it's not coming from mine!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「くッ熊だ！！！",
+		   NULL, "\"A bear!!!", Line_WaitForInput);
+	OutputLine(NULL, "　うわあああああああああああッ！！！」",
+		   NULL, " Whahhhhhhhhh!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	OutputLine(NULL, "「鳳３だ。",
+		   NULL, "\"This is Phoenix 3.", Line_WaitForInput);
+	OutputLine(NULL, "ここには野生の熊がいるのか？！",
+		   NULL, " Are there wild bears here?", Line_WaitForInput);
+	OutputLine(NULL, "　聞いていない！！",
+		   NULL, " That wasn't in the briefing!!", Line_WaitForInput);
+	OutputLine(NULL, "　鳳１、一度撤退し火器の武装の検討を！！」",
+		   NULL, " Phoenix 1, let's fall back. Give us approval to use fireams!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Oko_Akuwarai#", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Mo2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「ば、馬鹿言うんじゃねぇ、いくら谷河内山系ったって野生の熊がいるはずねぇだろッ！！",
+		   NULL, "\"Don't be stupid, there are no wild bears around here!!", Line_WaitForInput);
+	OutputLine(NULL, "　連中のはったりだ、乗せられるなッ！！！」",
+		   NULL, " It's just them, don't let them fool you!!\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "「……人の身に過ぎたるを知らぬ愚かなる人間たちよ。",
+		   NULL, "\"You foolish humans...", Line_WaitForInput);
+	OutputLine(NULL, "穢すことを許されぬ聖地を踏み荒らす罪を知るがいい……。",
+		   NULL, " Know your sins for stepping onto this sacred ground...", Line_WaitForInput);
+	OutputLine(NULL, "我に感謝せよ、聖地を穢した罪を償う機会を与えしことを感謝せよ、",
+		   NULL, " Be grateful to me, for I am giving you a chance to atone...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……くすくすくす、",
+		   NULL, " ...Hee hee hee,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ぅふふふふふはははははははははは…。」",
+		   NULL, " Bwaaaahahahahahahahahahaha...\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Oko_Ikari#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ち、畜生、誰かのインカムを奪ってやがるんだ！！",
+		   NULL, "\"Damn it, she has one of our intercoms!!", Line_WaitForInput);
+	OutputLine(NULL, "　敵の士気減退戦術に乗るな！！」",
+		   NULL, " Don't let the enemy fool you!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……恐れを知ることかなわぬ哀れな人間どもよ。",
+		   NULL, "\"You, fearless humans.", Line_WaitForInput);
+	OutputLine(NULL, "よかろう汝らがその身でしか知ることができないというなら、我がそれを教えようぞ…。」",
+		   NULL, " If you can only learn by making mistakes, then I shall teach you...\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
+	PlayBGM( 3, "semi", 120, 0 );
+
+	OutputLine(NULL, "「…う、鶯１だ…！！",
+		   NULL, "\"Th-This is Nightingale 1...!!", Line_WaitForInput);
+	OutputLine(NULL, "　後衛が来ていない…！！",
+		   NULL, " Where is everyone?", Line_WaitForInput);
+	OutputLine(NULL, "　馬鹿な、どこへ行った、応答しろッ！！！」",
+		   NULL, " Where did you all go? Come in, come in!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……くすくすくす。",
+		   NULL, "\"...Hee hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "哀れな鶯が一羽、踏み込むこと許されぬ地に迷い込む。",
+		   NULL, " I see a helpless bird getting lost in a forbidden forest.", Line_WaitForInput);
+	OutputLine(NULL, "…そんなにも知りたいか？",
+		   NULL, " Do you want to know that badly?", Line_WaitForInput);
+	OutputLine(NULL, "　鬼の世を知りたいか…？",
+		   NULL, " Do you want to know about the world of demons?", Line_WaitForInput);
+	OutputLine(NULL, "　告げよ人の世に別れを。",
+		   NULL, " Say goodbye to the world of humans.", Line_WaitForInput);
+	OutputLine(NULL, "我が忠告に耳を貸さぬ愚を今より知れ…。」",
+		   NULL, " Curse your foolishness for not listening to my warning...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……ぐ、",
+		   NULL, "\"...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…ぇぇえぇ",
+		   NULL, " Ehhhhh...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ぐぎぇッ！！！」",
+		   NULL, " gyahhhh!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「だ、だだ、誰の悲鳴だ今のは！！",
+		   NULL, "\"Wh-Who was that?", Line_WaitForInput);
+	OutputLine(NULL, "　鶯、点呼を取れ！！」",
+		   NULL, " Nightingale, roll call!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………ぐがッ、",
+		   NULL, "\"......Ghahh", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……く、…かか、",
+		   NULL, " ...gahhh...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……かかか………！」",
+		   NULL, " kahhh...!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「またやられた！！",
+		   NULL, "\"One more down!!", Line_WaitForInput);
+	OutputLine(NULL, "　誰が沈黙した？！",
+		   NULL, " Who was it?", Line_WaitForInput);
+	OutputLine(NULL, "　それより本部、俺の左肩には誰かいるんだよな？！",
+		   NULL, " By the way, HQ, I have someone on my left, right?", Line_WaitForInput);
+	OutputLine(NULL, "　俺は孤立してるんじゃないよな？！」",
+		   NULL, " I'm not alone, am I?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……くすくすくす、………まだ聞きたいか、痛みを伴う声が。」",
+		   NULL, "\"Hee hee hee... do you want to hear more painful voices...?\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「バギョッ！！",
+		   NULL, "\"Gyahh!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　………ザザ…ザ…。」",
+		   NULL, " ......bzzt...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「な、何だよ今の音！！",
+		   NULL, "\"Wh-What was that?", Line_WaitForInput);
+	OutputLine(NULL, "　何がひしゃげたらあんな音になるんだよ…！！」",
+		   NULL, " What made that sound?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「俺、昔、電車の飛び込みを見たことある…！",
+		   NULL, "\"I've seen someone jump in front of a train before...", Line_WaitForInput);
+	OutputLine(NULL, "　あん時と同じだ！！",
+		   NULL, " It made the exact same sound!!", Line_WaitForInput);
+	OutputLine(NULL, "　全身がひしゃげる音だッ！！」",
+		   NULL, " That's the sound of a human body being crushed!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「嫌だ、そんな死に方ごめんだ！！！",
+		   NULL, "\"No, I don't want to die like that!!!", Line_WaitForInput);
+	OutputLine(NULL, "　死にたくねぇ、死にたくねぇ！！！",
+		   NULL, " I don't want to die, I don't want to die!!!", Line_WaitForInput);
+	OutputLine(NULL, "　やめてくれ山の神さま！！",
+		   NULL, " Please, god of the mountain, please stop!!", Line_WaitForInput);
+	OutputLine(NULL, "　俺も好きでやってるわけじゃねぇんだ、給料もらってやってるだけなんだ！！」",
+		   NULL, " I'm not doing this because I want to, I'm doing this because I get paid for it!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「う、鶯１より本部！！",
+		   NULL, "\"N-Nightingale 1 to base!!", Line_WaitForInput);
+	OutputLine(NULL, "　駄目だ、士気の高揚は困難。",
+		   NULL, " This isn't working.", Line_WaitForInput);
+	OutputLine(NULL, "隊員の脱落と士気低下は深刻！",
+		   NULL, " Too many unit members are dropping out and it's almost impossible to get them to fight anymore.", Line_WaitForInput);
+	OutputLine(NULL, "　これ以上の戦線維持は困難！！",
+		   NULL, " We can't maintain the battle line!!", Line_WaitForInput);
+	OutputLine(NULL, "　損害が増えるだけだ…！！」",
+		   NULL, " We are just going to lose more men!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だから落ち着け鶯１…！",
+		   NULL, "\"Calm down, Nightingale 1...!", Line_WaitForInput);
+	OutputLine(NULL, "　他の隊員は野戦の素人ばかりじゃねぇか！！",
+		   NULL, " The rest of our soldiers are all amateurs in the field!!", Line_WaitForInput);
+	OutputLine(NULL, "　お前はあの地獄の卒業生だろうが！！",
+		   NULL, " You graduated from that hell!!", Line_WaitForInput);
+	OutputLine(NULL, "　そのお前が混乱してどうするんだ！！",
+		   NULL, " So what are you doing, getting shook up?!", Line_WaitForInput);
+	OutputLine(NULL, "　落ち着け、お前が範を示せッ！！」",
+		   NULL, " Calm down, and set an example!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「……ほ、本部、鶯１が応答しない…！！",
+		   NULL, "\"Base... there's no response from Nightingale 1...!!", Line_WaitForInput);
+	OutputLine(NULL, "　そんな、あの人がやられるなんて、",
+		   NULL, " I can't believe it, but he's down...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……だめだ、やっぱり悪魔だ！！」",
+		   NULL, " this is impossible, they are demons!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Oko_Ikari#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Mo3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「だ、駄目だ……、くそ！！",
+		   NULL, "\"N-No... damn it!!", Line_WaitForInput);
+	OutputLine(NULL, "　敵は心理戦までこなしやがるのかッ！！",
+		   NULL, " Our enemy is even using psychological warfare!!", Line_WaitForInput);
+	OutputLine(NULL, "　ガキどもの癖に、プロの不正規戦部隊に士気減退戦術まで仕掛けやがるというのかッ！！！」",
+		   NULL, " Those damn punks are winning against a professional unconventional warfare unit!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　無線は本来、連絡をスムーズにして連携を取らせるための武器となるはずだ。",
+		   NULL, "Radios are usually helpful communication tools.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だが、著しく減退した士気に付け込まれ、それが裏目に出た。",
+		   NULL, "But in this case, they backfired.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　敵は倒した隊員からインカムを奪い、混乱をより深める心理攻撃に出てきたのだ。",
+		   NULL, "The club members took an intercom from a Mountain Dog they knocked out, and used it to corner the other members psychologically.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　落ち着いて考えればチープなそれも、前後左右もわからない敵地の山中で孤立し、徹底的な打撃を受けて消耗している彼らには有効だ。",
+		   NULL, "It worked even more effectively because they were in enemy territory and were unfamiliar with the terrain.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一番有効な手は全員にインカムの使用をやめさせることだが、それでは敵による各個撃破をさらに招いてしまう！！",
+		   NULL, "The best solution would be to make everyone stop using the intercom, but that would give the enemy more chances to attack them individually.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　小此木は、その全貌も知らぬ部活メンバーに対し、畏怖の念を抱かずにはいられなかった…。",
+		   NULL, "Okonogi was growing fearful of the club members, as he still hadn't grasped their true identities...", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ta_Komaru", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Mo4", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　それに比べ、びくびくするなと、ただ怒鳴り続けるだけの鷹野の現状認識の甘さは、今や滑稽なくらいだった。",
+		   NULL, "However, Takano still hadn't recognized how serious the situation was. She kept yelling at the Mountain Dogs to get their act together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………ひたすら突撃しか言わず、部下を死地に着き落としてきた指揮官ってのは、こういう背広将校なんだろうよ…。",
+		   NULL, "...Okonogi could tell she was exactly the type of commander who only commanded to attack and let her men die...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、鷹野のがむしゃらな突撃命令は、皮肉にも多少の効果を上げている。",
+		   NULL, "But Takano's reckless orders were working in a way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　敵は絶大な戦果を挙げつつも確実に後退し、行動範囲を狭めている。",
+		   NULL, "Although the club members were winning, their area of operation was getting smaller.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　敵はトラップ地帯に誘い込み、そこから撤退し次のトラップ地帯へ誘い込むのを戦略としてる。",
+		   NULL, "The club members were trying to lure their enemies to one trap area after another.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…つまり、自分たちの陣地と引き換えにこちらに出血を強いているのだ。",
+		   NULL, "In other words, they were defeating the Mountain Dogs by allowing them to come into their territory.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………すでに山狗は壊滅状態だが、……連中の行動範囲もかなり狭まっている。",
+		   NULL, "The Mountain Dogs were about to be annihilated... but the curtains were closing on the club members' theater, too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　向こうが心理戦に出てきたのは、決着を急いでいることの表れだ。",
+		   NULL, "Okonogi realized his enemies were trying to finish this battle in a hurry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……ここで撤退すれば、むしろこれまでの損害が無意味になる。",
+		   NULL, "If the Mountain Dogs fell back, everything they'd done would be for nothing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……悔しいがお姫様の言う通りにするしかない。",
+		   NULL, "He didn't want to, but he had to follow the princess's order.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…もうじきで連中の首根っこをふん捕まえることができるのだ…！！",
+		   NULL, "Okonogi figured he was finally about to get his enemies...!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Kei_Warai#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "Ha_DefA1", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "Mo1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　敵から奪ったインカムの前では、羽入と圭一が交互に出ては、色々と演技していた。",
+		   NULL, "Hanyuu and Keiichi continued to act over the commandeered radio.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_WaraiB1#", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Mo2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「はぅ〜、羽入ちゃんすごいよ、本当の神さまみたいだった！！」",
+		   NULL, "\"Hauuu, that was great, Hanyuu-chan, you sounded like a real god!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_WaraiA1#", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「っていうか、すごいね羽入。",
+		   NULL, "\"You really were awesome, Hanyuu!", Line_WaitForInput);
+	OutputLine(NULL, "あのドスは並みの人間にゃちょいと無理だよ…！」",
+		   NULL, " I never thought a normal person could sound like that...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 0, "Ri_WaraiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……だって神さまなのですから。",
+		   NULL, "\"...That's because she is a god.", Line_WaitForInput);
+	OutputLine(NULL, "にぱ〜☆」",
+		   NULL, " Nipah~☆!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ha_AuA1", "maskleft", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Mo1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "「あぅあぅあぅ！",
+		   NULL, "\"Au au au!", Line_WaitForInput);
+	OutputLine(NULL, "　それを言ったら圭一もすごいのです。",
+		   NULL, " But Keiichi was great too.", Line_WaitForInput);
+	OutputLine(NULL, "鶏の首を絞めたみたいなすごい悲鳴を出してましたです。」",
+		   NULL, " His scream was incredible, like someone was strangling a chicken.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_WaraiB1#", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「をっほっほっほ！",
+		   NULL, "\"Oh ho ho ho!", Line_WaitForInput);
+	OutputLine(NULL, "　こんなの圭一さんには朝飯前ですわよ？",
+		   NULL, " That was easy for Keiichi-san, no?", Line_WaitForInput);
+	OutputLine(NULL, "　何しろ我が部の通り名は口先の魔術師でございますもの！！」",
+		   NULL, " In our club, he is also known as the Magician of Words!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 7, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Kei_Warai#", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「へっへっへ！！",
+		   NULL, "\"Heh heh heh!!", Line_WaitForInput);
+	OutputLine(NULL, "　相手が人で耳がついてる限り！！",
+		   NULL, " As long as my opponent is a human being with ears,", Line_WaitForInput);
+	OutputLine(NULL, "　誰だろうと俺様の圭一マジックで思いのままに操ってやるぜッ！！！」",
+		   NULL, " I can control him!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Ri_WaraiA1#", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「将来、圭一は声優になるといいのです。",
+		   NULL, "\"You should become a voice actor.", Line_WaitForInput);
+	OutputLine(NULL, "きっとガ□ダムとかでかっこいい役をやれますですよ。",
+		   NULL, " I bet you'd be famous.", Line_WaitForInput);
+	OutputLine(NULL, "にぱ〜☆」",
+		   NULL, " Nipah~☆.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+
+	OutputLine(NULL, "「聞こえる？！",
+		   NULL, "\"Can you hear me?", Line_WaitForInput);
+	OutputLine(NULL, "　私は鷹野よ、三等陸佐よ！！",
+		   NULL, " I am Takano, Major Takano!!", Line_WaitForInput);
+	OutputLine(NULL, "　あんた達の最上位の上司よ！！",
+		   NULL, " I'm your boss's boss!!", Line_WaitForInput);
+	OutputLine(NULL, "　聞きなさい、鬼もいないし神さまもいないわ。",
+		   NULL, " Listen well! There is no god or demon.", Line_WaitForInput);
+	OutputLine(NULL, "もしいるなら戦いなさい。",
+		   NULL, " And if there is, then you can still fight.", Line_WaitForInput);
+	OutputLine(NULL, "神などその座から引き摺り下ろしてやるのよ！！",
+		   NULL, " Drag God down from its pedestal!!", Line_WaitForInput);
+	OutputLine(NULL, "　雲雀と鶯は合流して戦力を立て直しなさい。",
+		   NULL, " Skylark and Nightingale, join up and reorganize your forces.", Line_WaitForInput);
+	OutputLine(NULL, "鳳は白鷺の残存と合流。",
+		   NULL, " Phoenix, you join the remainder of Heron.", Line_WaitForInput);
+	OutputLine(NULL, "敵は山頂付近の、営林署の資材小屋あたりを本拠地にしている模様！",
+		   NULL, " The enemies are near the top of the mountain. Their base is probably somewhere by the forestry service's storage shed!", Line_WaitForInput);
+	OutputLine(NULL, "　高所を取られてるわ、こちらの動きが筒抜けのはず！！",
+		   NULL, " They're at the top, so of course they could see our movements!!", Line_WaitForInput);
+	OutputLine(NULL, "　奇襲はあって当り前よ、刺し違えてでも倒しなさい！！」",
+		   NULL, " They'll be trying to ambush you. Even if you have to stab each other, make sure you take them out!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mo6", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「三佐、武装に戻る許可を！！",
+		   NULL, "\"Major, let us arm ourselves!!", Line_WaitForInput);
+	OutputLine(NULL, "　やつらを制圧するにはテーサーでは無理です！！」",
+		   NULL, " We need more than tasers!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ta_Ikari2", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「許可できるわけないでしょ！！",
+		   NULL, "\"Absolutely not!!", Line_WaitForInput);
+	OutputLine(NULL, "　私たちは今、やつらを完全に包囲して追い詰めているのよ！！",
+		   NULL, " We've finally surrounded them!!", Line_WaitForInput);
+	OutputLine(NULL, "　ここで退けば逃がすわよ！！",
+		   NULL, " If we fall back, they'll escape!!", Line_WaitForInput);
+	OutputLine(NULL, "　私たちはあいつらの首に両手をかけてる。後は絞めるだけなのよッ！！！」",
+		   NULL, " We almost have our hands around their necks. We just have to squeeze them!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Oko_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Mo8", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　無線で部下たちを怒鳴り続ける鷹野を尻目に、小此木へ別の回線で連絡が入った。",
+		   NULL, "At the same time, Okonogi received another radio call.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　通常では使用しない回線でわざわざ、ということは、鷹野に聞かれずに隊長と話をしたい、ということに違いない。",
+		   NULL, "Using that line meant his caller didn't want Takano to hear the conversation.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　小此木はその意味を理解し、鷹野から少し離れて小声で無線に応えた。",
+		   NULL, "Okonogi understood the meaning of that, so he walked away from Takano and answered quietly.", Line_Normal);
+	ClearMessage();
+
+
+	OutputLine(NULL, "「指揮車より鳳１。",
+		   NULL, "\"Command vehicle to Phoenix 1.", Line_WaitForInput);
+	OutputLine(NULL, "…緊急事態です。",
+		   NULL, " There's been an emergency.", Line_WaitForInput);
+	OutputLine(NULL, "診療所研究区画が襲撃を受けたようです。",
+		   NULL, " The research area of the clinic has been attacked.", Line_WaitForInput);
+	OutputLine(NULL, "エントランス区画への侵入者警報を受信しましたが、すぐに解除されました。",
+		   NULL, " We received the intruder alarm from the entrance area, but it was turned off.", Line_WaitForInput);
+	OutputLine(NULL, "誤報時の手続きによらない解除です。",
+		   NULL, " But whoever turned it off didn't follow the false alarm procedure.", Line_WaitForInput);
+	OutputLine(NULL, "状況の確認を求めていますが無線に応じません。",
+		   NULL, " We've been trying to confirm the situation, but there has been no response as of yet.", Line_WaitForInput);
+	OutputLine(NULL, "現在、研究区画の武装保安隊も含め、全員が沈黙しています。」",
+		   NULL, " All the security unit members in the basement have gone quiet.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora4", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「……………………………。",
+		   NULL, "\"..............", Line_WaitForInput);
+	OutputLine(NULL, "…………へ、",
+		   NULL, "...Heh,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………へっへへへへへへはははっははは…。」",
+		   NULL, " heh heh heh heh, hahahaaaahahahaha...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　小此木は全てを理解した。",
+		   NULL, "Okonogi understood everything.", Line_WaitForInput);
+	OutputLine(NULL, "……完璧にやられたのだ。",
+		   NULL, " He had been fooled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　陽動の可能性ももちろん、多少は考えていた。",
+		   NULL, "He suspected a diversion.", Line_WaitForInput);
+	OutputLine(NULL, "だが、山狗の中でもっとも重武装の研究区画武装保安隊が、奇襲を目論むような小規模別働隊に壊滅されるとは夢にも思わなかった。",
+		   NULL, " But he never even thought that the heavily-armed security unit of the Mountain Dogs could be bested.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　相手が迷彩服を着た兵士の一群だったなら引っ掛からなかった。",
+		   NULL, "If the enemies were soldiers in camouflage, then he wouldn't have been fooled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　心のどこかで、所詮ガキの集まりとの見下しが最後まで抜けなかったのだ。",
+		   NULL, "He underestimated them because he thought they were kids.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今こそ、全てを理解する。",
+		   NULL, "But now he really understood.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この山中の戦闘で、一度も姿を見せていない大人たちの違和感が全てわかる。",
+		   NULL, "He understood the reason why no adults had showed up in this battle on the mountain.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………わかった。",
+		   NULL, "\"...I get it.", Line_WaitForInput);
+	OutputLine(NULL, "そいつは東京の郭公（カッコウ）に伝えたか。」",
+		   NULL, " Did you let Cuckoo in Tokyo know?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まだです。",
+		   NULL, "\"Not yet.", Line_WaitForInput);
+	OutputLine(NULL, "連絡しますか？」",
+		   NULL, " Would you like me to?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………連絡しろ。",
+		   NULL, "\"...Do it now.", Line_WaitForInput);
+	OutputLine(NULL, "…富竹は奪還され脱出。",
+		   NULL, " Tomitake has escaped.", Line_WaitForInput);
+	OutputLine(NULL, "………村境で封鎖線を張らせてるが、…無理だろうな。",
+		   NULL, " We've closed the escape route, but I guess that's no use...", Line_WaitForInput);
+	OutputLine(NULL, "……武装保安隊を秒殺した連中だ。ＲＰＧ１基では難しいだろ。」",
+		   NULL, " They defeated even the armed security unit within seconds. I don't think one RPG could stop them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「封鎖線に応援を送りますか。」",
+		   NULL, "\"Should we send reinforcements to the blockade team?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ばぁか、そんな余剰人員があったらお姫様が突撃させてるぜ！",
+		   NULL, "\"Fool! If we had any extra men, the Princess would have already sent them in!", Line_WaitForInput);
+	OutputLine(NULL, "　今、手が空いてるのはむしろお前くらいだ。",
+		   NULL, " Actually, you're the only one who isn't doing anything!", Line_WaitForInput);
+	OutputLine(NULL, "封鎖線に連絡。",
+		   NULL, " Get in touch with the blockade team.", Line_WaitForInput);
+	OutputLine(NULL, "車両の強行突破に備えろと伝えろ。」",
+		   NULL, " Tell them to be prepared for a vehicle trying to break through the roadblock.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「りょ、了解。」",
+		   NULL, "\"R-Roger.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 0, "semi", 120, 0 );
+	DrawSceneWithMask( "Mura2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「…了解。警戒を厳にする！",
+		   NULL, "\"...Roger, we'll be ready!", Line_WaitForInput);
+	OutputLine(NULL, "　各自、聞け！　診療所が襲撃され捕虜を奪われたとの連絡が入った。",
+		   NULL, " Everyone, listen up! I just found out that the clinic has been attacked and the hostage has escaped.", Line_WaitForInput);
+	OutputLine(NULL, "敵はおそらく車両にて強行突破を試みるものと思われる。",
+		   NULL, " The enemy is expected to break through the blockade.", Line_WaitForInput);
+	OutputLine(NULL, "ＲＰＧを準備。",
+		   NULL, " Get the RPG ready.", Line_WaitForInput);
+	OutputLine(NULL, "他は一斉射撃で蜂の巣にしろ。",
+		   NULL, " We'll fire at them all at once.", Line_WaitForInput);
+	OutputLine(NULL, "射殺許可は出ているぞ。」",
+		   NULL, " We have permission to shoot.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　隊員の１人が頷き、路肩に止めてあるワゴン車の荷台にある細長いケースを開ける。",
+		   NULL, "One of the Mountain Dogs nodded and opened a narrow case in the trunk of the van.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そこには、明らかに戦争に使うものとしか思えない、強力な対戦車榴弾砲、RPG-７が横たわっていた。",
+		   NULL, "...In that case was a powerful anti-tank weapon, designated RPG-7.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　…この武器こそが、近代戦の歴史を変えたとまで言われている。",
+		   NULL, "...This was a weapon that many said changed the history of modern warfare.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何しろ、この恐ろしい武器の射程は数百ｍにも及び、地上に存在するほとんどの戦車を一撃で葬ると言うのだ。",
+		   NULL, "After all, this terrifying weapon had a firing range over several hundred meters, and it was capable of burying most tanks in existence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…つまり、この武器の登場により、１人の歩兵が、１台の戦車を撃破できる火力を持つ時代が訪れたのだ。",
+		   NULL, "...The dawn of this weapon meant that we were now in an age where a lone foot soldier possesed the firepower to destroy a tank.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…戦争の歴史すら塗り替えかねない兵器。",
+		   NULL, "...It was capable of reshaping the history of warfare.", Line_WaitForInput);
+	OutputLine(NULL, "…それが、このRPG-７だった。",
+		   NULL, " ...That was the RPG-7.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　他の４人の隊員たちも、入江の車のタイヤを瞬時に撃ち砕いたあのＭＰ５なる銃を持っている。",
+		   NULL, "Each of the other four members had an MP5, the weapon used to destroy the tire on Irie's car.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……この封鎖線が絶大な火力を持つことは疑いようもない。",
+		   NULL, "...There was no question that the blockade team was well-armed.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "Mura2", 400 );
+
+	OutputLine(NULL, "　彼らはワゴン車の中に待機し、不審車両が来たら車を道路の真ん中に出して封鎖。",
+		   NULL, "They waited in the van until the enemy vehicle showed up. Once they saw a suspicious vehicle, they were planning to stop it by moving into the middle of the road.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　全員の一斉射撃の火力で相手を撃滅しようという魂胆だった。",
+		   NULL, "They were intending on destroying that vehicle by firing all at once.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼らは慎重に後方の、雛見沢方向から不審な車が来ないかを見張っている。",
+		   NULL, "They all watched very carefully for suspicious vehicles coming from Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……雛見沢と町をつなぐ街道はこの一本だけだ。",
+		   NULL, "This was the only road that connected Hinamizawa to Okinomiya.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　他の道を使い別の人里に出るには、半日掛かりの時間を費やすことになる。",
+		   NULL, "It would take more than half a day to get to there if they used a different route.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、…この砂利道と舗装道路の境目であるこの場所は、通称、村境と呼ばれ、村を出ようとするものを阻止できる最後の場所であることを物語っていた。",
+		   NULL, "Their blockade was where the gravel road changed to a paved road. It was what people called the village border, and was their last chance to stop anyone from leaving.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雛見沢の方が高いから、敵は坂を下ってくる形になる。",
+		   NULL, "Hinamizawa was at a higher elevation from that point, so the vehicle would be coming downhill.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……こちらが車でバリケードを作ることは読めているだろうし、充分な阻止火力を持っていることも理解しているはずだ。",
+		   NULL, "...They were probably expecting a barricade, as well as heavy resistance from the Mountain Dogs.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………突破しようと思ったら、強行突破以外にありえない。",
+		   NULL, "If they wanted to pass this point, the only way would be by force.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　さもなければ、この封鎖線を完全に無力化するだけの銃撃戦が必要になるだろうが、それには相当の時間をかけるだろう。",
+		   NULL, "They could start a gunfight, but that would take too much time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　寸秒を惜しむ彼らが取れる戦術ではない。",
+		   NULL, "Since they didn't want to waste any, they should avoid unnecessary conflict.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………ぐるるるる…。",
+		   NULL, "...Grumble...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……誰かのお腹がなったが、誰も茶化さない。",
+		   NULL, "Someone's stomach growled, but nobody made fun of it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　生理現象だから仕方ないし、今は臨戦態勢だったから笑おうとも思わなかった。",
+		   NULL, "That's was understandable. Since all the members were getting ready for a battle, nobody even wanted to laugh.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…時計を見る。",
+		   NULL, "...We looked at the clock.", Line_WaitForInput);
+	OutputLine(NULL, "……もうすぐで正午だ。",
+		   NULL, " ...It was almost noon.", Line_WaitForInput);
+	OutputLine(NULL, "お腹が空くのも当然だった。",
+		   NULL, " Of course we'd be getting hungry.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "G_Tactics", 120, 0 );
+
+	OutputLine(NULL, "　その時、…雛見沢方向から車の爆音が聞こえてくる。",
+		   NULL, "At that time, they heard a noise coming from the direction of Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　エンジンの叫び声からして相当の速度を出しているのは疑いようもない。",
+		   NULL, "Obviously, the car was going very fast.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「来たぞッ！！」",
+		   NULL, "\"Here they come!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　運転手がワゴン車を出し、道路に横向きに停める。",
+		   NULL, "The van moved to the middle of the road and stopped there.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　隊員たちは車の影に隠れたり、道路わきの草むらに伏せたりして銃口を、砂塵を吹き上げながら迫ってくる不審車両に向けた。",
+		   NULL, "Some of them hid behind the van, and some hid in bushes on the side of the road. They pointed their guns at the suspicious vehicle coming towards them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　相当の速度を出しているだろう。",
+		   NULL, "The car must've been going very fast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だが、ここは非常に長く見通しのいい直線だ。",
+		   NULL, "But this was a straight road.", Line_WaitForInput);
+	OutputLine(NULL, "いくら速度を出そうとも、完全に捕捉されている…！",
+		   NULL, " No matter how fast it was going, it couldn't escape!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その車は葛西のものだった。",
+		   NULL, "That car happened to belong to Kasai.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　高級外車の黒いボディが光り、エンジンの高級さもその音から察することができる。",
+		   NULL, "The shining black paint and the sound of the engine made it clear that it was a very nice car.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「ぎりぎりまで引き寄せろ…！",
+		   NULL, "\"Wait until the last possible second!", Line_WaitForInput);
+	OutputLine(NULL, "　撃てるのは１発だぞ！",
+		   NULL, " We can only fire once!", Line_WaitForInput);
+	OutputLine(NULL, "　一撃で仕留めろッ！！」",
+		   NULL, " Make sure to get them in one shot!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　RPG-７は無誘導ロケット弾を放つ。",
+		   NULL, "The RPG-7 fires unguided rockets.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから高速で移動する目標に当てるのは本来、至難だ。",
+		   NULL, "Therefore, hitting a quickly moving target is extremely difficult.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……だが、相手がいくら早かろうと真正面。",
+		   NULL, "...In this case, however, their target was straight ahead.", Line_WaitForInput);
+	OutputLine(NULL, "車の機動上、急激な動作で回避しようとすれば横転は避けられない。",
+		   NULL, " If the car tried to swerve suddenly, it'd flip.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それが誘えるなら、何も直撃させる必要もないのだ。",
+		   NULL, "If that was the case, it wasn't necessary to shoot directly at it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに、葛西の言う通りの威力なら、その威力は例え直撃しなくても車を引っくり返すくらいのものだと言う。",
+		   NULL, "Besides, according to what Kasai said, its power can easily flip a car without a direct hit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　撃てるチャンスが仮に一度だったとしても、先制攻撃の有利はあまりに山狗に大きかった。",
+		   NULL, "Even if there was only one chance to fire, the Mountain Dogs were definitely in an advantageous position.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Kuruma2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……富竹さん。不審なワゴンが路上を封鎖してます。",
+		   NULL, "\"...Tomitake-san, a suspicious van is blocking the road.", Line_WaitForInput);
+	OutputLine(NULL, "伏せてください！」",
+		   NULL, " Please stay low!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「注意して！",
+		   NULL, "\"Careful!", Line_WaitForInput);
+	OutputLine(NULL, "　向こうのワゴンの鼻先に当てるようにするんだ！」",
+		   NULL, " Try to hit the nose of the van!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わかってます！",
+		   NULL, "\"I know!", Line_WaitForInput);
+	OutputLine(NULL, "　一度経験してますのでコツはわかってますよ！」",
+		   NULL, " I've done this before!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 200 );
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+	DrawScene( "Mura2", 400 );
+
+	OutputLine(NULL, "　爆走する車を真正面に捉え、全員の照準がびたりと合わされていた…。",
+		   NULL, "The Mountain Dogs aimed at the vehicle. It was coming right for them...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「まだまだ引き寄せろ…！！",
+		   NULL, "\"Not yet, not yet...!!", Line_WaitForInput);
+	OutputLine(NULL, "　距離１００未満まで引き寄せろ！！」",
+		   NULL, " Wait until it's within a hundred meters!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わかってる！！",
+		   NULL, "\"I know!!", Line_WaitForInput);
+	OutputLine(NULL, "　測距してろッ！！」",
+		   NULL, " Just range me!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　草むらに伏せた男は、もっとも安定する射撃体勢である匍匐姿勢で発砲体制に入る。",
+		   NULL, "The Mountain Dogs in the bushes laid in wait, ready to fire.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　先端の歪なロケット弾が不気味に光り、生涯に一度しか許されない獲物をしゃぶり尽くしてやろうと舌なめずりをしているように見える……！",
+		   NULL, "The rocket on the tip glinted eerily, like it was waiting for its prey.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「距離２００、",
+		   NULL, "\"Two hundred meters...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………１５０………、",
+		   NULL, " ...one fifty...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……攻撃用意ッ！！！」",
+		   NULL, " ...prepare to fire!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　RPG-７の引き金に指が掛る……！！",
+		   NULL, "The soldier put his finger on the trigger of the RPG-7...!!", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 2, "Aks_IkariA1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
+	DrawBustshot( 1, "Tomi_majime#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, FALSE );
+	DrawScene( "Kuruma1", 200 );
+
+	OutputLine(NULL, "「うおおおおおおおおおおおおお！！！」",
+		   NULL, "\"Whhooooooooaaaaaaahhhh!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Ikari#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「赤坂さん、衝撃に備えてください！！！」",
+		   NULL, "\"Akasaka-san, prepare for impact!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「距離１００、",
+		   NULL, "\"One hundred meters...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………撃てッ！！！」",
+		   NULL, " FIRE!!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　……………………。",
+		   NULL, "............", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………？",
+		   NULL, "...?", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "　発射されない。",
+		   NULL, "What happened?", Line_WaitForInput);
+	OutputLine(NULL, "不発？！",
+		   NULL, " Didn't the RPG-7 fire?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その時、脇で双眼鏡で距離を測っていた男はぎょっとする！！",
+		   NULL, "That was when the one measuring the distance next to the shooter noticed something!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ＲＰＧを構えていた男が、肩を撃たれてのたうちまわっていたからだ…！！",
+		   NULL, "The shooter's shoulder had been hit, and he was tumbling to the ground!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora4", 400 );
+
+	OutputLine(NULL, "「ス、スナイパー！！",
+		   NULL, "\"Was there a sniper?", Line_WaitForInput);
+	OutputLine(NULL, "　銃声はなかった、距離４００以上だッ！！」",
+		   NULL, " I didn't hear anything, so it must have been from over four hundred meters away!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そんなのはどうでもいい、撃て撃て撃て撃てッ！！！」",
+		   NULL, "\"Who cares? Fire, fire, fire, fire!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	OutputLine(NULL, "　あとは銃の火力で止めるしかないッ！！",
+		   NULL, "Only their regular guns could stop the car now!!", Line_WaitForInput);
+	OutputLine(NULL, "　他の隊員たちが一斉に銃火の咆哮を浴びせかけた！！！",
+		   NULL, " The other Mountain Dogs fired all at once!!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	OutputLine(NULL, "　だが、彼らはすぐに違和感に気付く！！！",
+		   NULL, "But immediately, they realized something!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この距離で一斉射撃を浴びせれば、普通の車なら穴だらけで炎上するはずだ！！",
+		   NULL, "The car had been hit by a hail of bullets at close range. Any normal car would've been on fire in short order!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なのに、しない！！",
+		   NULL, "But... there was nothing!!", Line_WaitForInput);
+	OutputLine(NULL, "　た、ただの車じゃないッ？！？！",
+		   NULL, " This wasn't a normal car!!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 7, 0, 300 );
+	StopSE( 0 );
+
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshotWithFiltering( 0, "Si_AkuwaraiB1#", "maskleft", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Mo_G4", "maskleft", 7, 0, 300 );
+	PlayBGM( 0, "omake_01", 120, 0 );
+
+	OutputLine(NULL, "「……そりゃあそうです。",
+		   NULL, "\"...Of course it isn't.", Line_WaitForInput);
+	OutputLine(NULL, "園崎家御用達の防弾リムジンですから。",
+		   NULL, " That's the Sonozaki family's specially-made bulletproof limousine.", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Si_IkariA1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "……葛西ッ！",
+		   NULL, " ...Kasai!", Line_WaitForInput);
+	OutputLine(NULL, "　ＲＰＧを観測手が拾った！！",
+		   NULL, " The spotter picked up the RPG!!", Line_WaitForInput);
+	OutputLine(NULL, "　撃たせるなッ！！！」",
+		   NULL, " Don't let him fire!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshotWithFiltering( 1, "Kasa1", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "Mo_G5", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "「……ふ。",
+		   NULL, "\"...Huh.", Line_WaitForInput);
+	OutputLine(NULL, "…この距離で外すとでも？」",
+		   NULL, " Do you think I'm going to miss him at this distance?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "Mo_G1", 400 );
+
+	OutputLine(NULL, "　詩音と葛西の姿は、この直線の道路の、ずっとずっと向こう、",
+		   NULL, "Shion and Kasai were far beyond that straight road.", Line_WaitForInput);
+	OutputLine(NULL, "敵から見ると丘になった向こうの死角にある、捨てられた廃車の屋根の上だった。",
+		   NULL, " They were in the enemy's blind spot on the other side of the hill, on top of an abandoned car.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　詩音は膝立ちで、軍用の高性能双眼鏡で敵の動向を確認している。",
+		   NULL, "Shion was on her knees, checking the Mountain Dogs' movements with a pair of military-grade, high power binoculars.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして葛西は屋根の上に伏せて、銃身とスコープの長さの特徴的な……、狙撃銃を手にしていた！",
+		   NULL, "Kasai was lying on top of the car with a sniper rifle in his hands!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　詩音は土地勘から待ち伏せはこの場所だと断定し、狙撃戦で制圧するしかないと判断したのだ。",
+		   NULL, "Shion figured this would be where the Mountain Dogs would place their ambush, so the only way for them to beat the Dogs was to snipe at them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　二人とも狙撃の訓練は、ダム戦争時代に渡米してまで受けている本格派だ！",
+		   NULL, "Both Shion and Kasai took sniping lessons in the US during the dam conflict!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　葛西のスコープには、撃たれた男が落としたＲＰＧを拾い、大慌てで構えようとする男が完全に捉えられていた。",
+		   NULL, "Kasai was now aiming at the man who picked up the RPG and was trying to take position with it.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「早く撃て、吹き飛ばせよ！！！",
+		   NULL, "\"Hurry up, fire it!!!", Line_WaitForInput);
+	OutputLine(NULL, "　…んな？！」",
+		   NULL, " ...What?!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "　再びＲＰＧは発射されず、それは草むらに転がり、…撃とうと試みた２人が傷口を押さえて呻いていた。",
+		   NULL, "Again, the RPG wasn't fired and was down on the ground. The two who tried to shoot were both groaning and clutching at their wounds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……撃った箇所はいずれも肩。",
+		   NULL, "...They were both shot in the shoulder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　命を奪うほどではないが、戦闘能力を確実に奪っている！",
+		   NULL, "The wounds wouldn't kill them, but they definitely couldn't fire that rocket!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
+	DrawScene( "Mura2", 400 );
+
+	OutputLine(NULL, "　もう車は至近距離に迫っていた！！",
+		   NULL, "The car had arrived!!", Line_WaitForInput);
+	OutputLine(NULL, "　隊員たちは悲鳴をあげて飛び退く！！",
+		   NULL, " The Mountain Dogs screamed and dove out of its way!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, TRUE );
+
+	OutputLine(NULL, "　赤坂の運転も荒事に慣れたものだった。",
+		   NULL, "Akasaka must have been used to driving in this kind of situation.", Line_WaitForInput);
+	OutputLine(NULL, "封鎖するワゴンの鼻先にぶつけて跳ね飛ばし、見事突破したからだ！",
+		   NULL, " He hit the nose of the van just right, and broke through the blockade.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　跳ね飛ばされたワゴン車はぐるんと輪を描くように回った。",
+		   NULL, "The van was hurled away and spun in a circle.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「追撃しろ！！",
+		   NULL, "\"After them!!", Line_WaitForInput);
+	OutputLine(NULL, "　行くぞッ！！！」",
+		   NULL, " Let's go, let's go!!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "Mura2", 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "Mura2", 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "Mura2", 0 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　ワゴン車に乗り込もうとする彼らに容赦なく狙撃弾が浴びせられる…！！",
+		   NULL, "As the Mountain Dogs tried to get back in the van, Shion and Kasai shot at them!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「銃声が完全に着弾より遅れてるぞ、長々距離狙撃だ！！",
+		   NULL, "\"There is a delay between the impact and the sound of the gunshot!! It's an extra-long-distance snipe!!", Line_WaitForInput);
+	OutputLine(NULL, "　狙撃教練を完全に修了してるベテラン狙撃手だぞ！！」",
+		   NULL, " He must be a veteran sniper!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あと、それと同格のベテラン観測手がペアだ！！",
+		   NULL, "\"Also a veteran spotter!!", Line_WaitForInput);
+	OutputLine(NULL, "　こっちの動きが丸見えらしいぞ！！",
+		   NULL, " They must know exactly where we are!!", Line_WaitForInput);
+	OutputLine(NULL, "　狙いが正確すぎる！！」",
+		   NULL, " Their aim is just too precise!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　狙撃銃のスコープは狙撃に特化するあまり、拡大率が高いため視界が極めて狭く、戦況判断に遅れる弱点がある。",
+		   NULL, "The scope on a sniper rifle is one specifically made for sniping. Therefore, its field of vision is so narrow that the sniper is unable to see their surroundings well.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを補うためにペアを組むのが観測手だ。",
+		   NULL, "That's why it's always necessary to pair up with a spotter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　観測手は視野が広く強力な双眼鏡で戦況を見極め、狙撃手にそれを伝達する。",
+		   NULL, "A spotter uses powerful binoculars to probe the situation and communicate information to the sniper.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……狙撃手は１人では活躍できない。",
+		   NULL, "Snipers can't do their job alone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　同格の観測手と組んで始めてその真価が発揮されるのだッ！！",
+		   NULL, "Their potential is unleashed only when paired up with a spotter equally as skilled!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_gun", 128, 64 );
+	DrawScene( "white", 10 );
+	DrawScene( "Mura2", 0 );
+
+	OutputLine(NULL, "　立ち上がり車に乗り込もうとするが、それを牽制するように超高速のライフル弾が撃ち込まれる！！",
+		   NULL, "They tried to stand up and climb into the van, but the ultra velocity rifle bullets pinned them down!!", Line_WaitForInput);
+	OutputLine(NULL, "　その弾丸は空気を切り裂き、何しろ音の速度をも超えるのだ…！",
+		   NULL, " The bullets ripped through the air, traveling faster than the speed of sound...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そんな弾丸があげる唸りは、軽少な銃のものとはレベルが違う。",
+		   NULL, "The noise those bullets created was nothing like the sound from a normal gun.", Line_WaitForInput);
+	OutputLine(NULL, "それはまさに、死神が鎌を振るう音にも似た、文字通り空気を切り裂く恐怖の音、“音を超えた音”だ！！",
+		   NULL, " It almost sounded like the grim reaper himself swinging down his scythe!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その上、向こうにはこっちが手に取るように見えているのに、こっちは向こうが捉えられない！",
+		   NULL, "Furthermore, they could see the Mountain Dogs, but the Dogs couldn't see them!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この恐怖は、狙撃を受けたことのない者には説明できない…！！",
+		   NULL, "Only those who actually had experience being sniped at could understand this fear...!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「だ、駄目だ、車に近付けない！！",
+		   NULL, "\"We can't even go near the van!!", Line_WaitForInput);
+	OutputLine(NULL, "　俺たちはいい、お前たちだけでも追えッ！！」",
+		   NULL, " Forget about us, just go!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わかった、俺たちだけで追撃する！！」",
+		   NULL, "\"Okay, we'll go after them!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ワゴン車には運転手ともう１人しか乗り込んでいなかった。",
+		   NULL, "There was a driver and one Mountain Dog in the van.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、今すぐ追わなければ手遅れになる！！",
+		   NULL, "They had to leave, otherwise it would be too late!!", Line_WaitForInput);
+	OutputLine(NULL, "　運転手は即断し発進した。",
+		   NULL, " The driver made a snap judgment and slammed on the gas pedal.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "Mati", 120, 0 );
+	DrawSceneWithMask( "Kuruma1", "maskright", 7, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Aks_majimeA2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「どうですか、追ってきてますか。」",
+		   NULL, "\"Are they after us?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…………うん。",
+		   NULL, "\"......Yeah,", Line_WaitForInput);
+	OutputLine(NULL, "来てるよ！",
+		   NULL, " they're after us!", Line_WaitForInput);
+	OutputLine(NULL, "　運転がうまいね、あんなワゴン車なのに追い上げてくるよ。」",
+		   NULL, " Boy, he drives well. He's catching up in that van.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Aks_Def", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ははは、それは参りました。",
+		   NULL, "\"Hahaha, that's worrying.", Line_WaitForInput);
+	OutputLine(NULL, "…応戦を頼みます！」",
+		   NULL, " ...Please fend them off!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うん、任せて！」",
+		   NULL, "\"Yeah, I'll leave it to you!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Kuruma6", "maskright", 7, 0, 300 );
+
+	PlayBGM( 3, "semi", 120, 0 );
+
+	OutputLine(NULL, "　富竹は後部座席の窓を開けるとそこから身を乗り出す。",
+		   NULL, "Tomitake opened a window near one of the backseats and leaned out.", Line_WaitForInput);
+	OutputLine(NULL, "…お昼の暑い熱気を伴う風がざぁっと室内に入って来た。",
+		   NULL, " ...Hot air blew into the car.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、悪路にガクンガクンと揺られながらも、平然と銃の機構を確認する。",
+		   NULL, "Though the car was jolting up and down on the bumpy road, he checked the mechanism of his gun calmly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その動作は手馴れているどころか、",
+		   NULL, "He did it naturally,", Line_WaitForInput);
+	OutputLine(NULL, "…富竹の普段と変わらない様子を見ていると、まるでお気に入りのカメラをいじっているようにしか見えないくらいに自然だった。",
+		   NULL, " as though examining his favorite camera.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その銃は地下区画で保安隊員から奪ったものだ。",
+		   NULL, "The gun had been taken from one of the security guards in the basement.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一方、追い上げてくる車両の隊員の手にも同じ銃が握られている。",
+		   NULL, "One of the Dogs in the van held the same gun in his hands.", Line_WaitForInput);
+	OutputLine(NULL, "火力はまったくの互角だ！",
+		   NULL, " Their weapons were evenly matched!", Line_Normal);
+	ClearMessage();
+
+	StartShakingOfWindow( 241, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 3*2, TRUE );
+
+	OutputLine(NULL, "　道路は直線をやめ、のたうつ蛇のようにうねり始める。",
+		   NULL, "The road was no longer straight. It curved like a snake.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは時に激しい段差や急カーブを伴って車内を振り回した。",
+		   NULL, "There were some bumps and sharp curves, which made things in the car fly all over.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…このような状況下での銃撃戦は相当困難を極めるに違いなかった。",
+		   NULL, "A gunfight in this situation would be extremely difficult.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　無駄弾を撃てばすぐに弾切れになるのを富竹は理解していて、迂闊に発砲せず、慎重に距離を計った。",
+		   NULL, "Tomitake realized he'd run empty in no time if he wasted bullets, so instead of firing recklessly, he carefully waited for the right distance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そうすることで相手にまだ射程外だと勘違いさせ、距離を詰めさせようとしているのだ。",
+		   NULL, "...And in doing so, tried to convince his enemy they were still out of range to make them close the gap.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　逆に山狗の方はもう緊張に耐えられなかったらしい。",
+		   NULL, "On the other hand, the Mountain Dog couldn't take it any longer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	OutputLine(NULL, "　こんな振り回されるくらいの悪路で、ほとんど当たりもしない弾を撃ちまくった。",
+		   NULL, "He fired, wasting his bullets on the bumpy road.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	OutputLine(NULL, "　それらの弾は時折、ボディに当たり、不快な金属音を車内に響かせる。",
+		   NULL, "Some of those bullets hit the body of Kasai's car, making a nasty metallic noise.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Aks_majimeA1", "maskleft", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Kuruma1", "maskleft", 7, 0, 300 );
+
+	OutputLine(NULL, "「富竹さん、身を乗り出していては危険です！！」",
+		   NULL, "\"Tomitake-san, it's not safe to lean out like that!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Kuruma6", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「大丈夫。",
+		   NULL, "\"Don't worry.", Line_WaitForInput);
+	OutputLine(NULL, "あんなヘタクソじゃ当たらないよ。",
+		   NULL, " A shooter that clumsy can't hit me.", Line_WaitForInput);
+	OutputLine(NULL, "僕の生徒だったらゼロからやり直しだなぁ。",
+		   NULL, " If he was my student, he would have to start all over...", Line_WaitForInput);
+	OutputLine(NULL, "…このような状況下では動きを読むんだ。",
+		   NULL, " ...In a situation like this, it's safer to wait and see for a moment.", Line_WaitForInput);
+	OutputLine(NULL, "挙動を予測し、弾幕で予測射撃をするんだ。",
+		   NULL, " one of those moments where code flashed on screen before this line was done appearing happened again. can't replicate it...", Line_WaitForInput);
+	OutputLine(NULL, "当てようと思わない。",
+		   NULL, " Don't try to shoot the target.", Line_WaitForInput);
+	OutputLine(NULL, "弾幕に突っ込ませるようにするんだ。",
+		   NULL, " Try to let the bullet find it.", Line_WaitForInput);
+	OutputLine(NULL, "…こういう風にね！！」",
+		   NULL, " Just like this!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 200 );
+	PlaySE( 0, "s_MGun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_MGun", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　富竹が充分な距離と、路上の具合から射撃タイミングを計り、初めて発砲した。",
+		   NULL, "Tomitake fired for the first time, after cautiously waiting for the perfect moment.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その射撃スタイルはわかる者が見れば惚れるものだった。",
+		   NULL, "Those who understood guns would be fascinated with his shooting form.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　がっちりと構えて激しい連射の中でもコントロールを失わない。",
+		   NULL, "His stance was so firm he didn't lose control, even in the violent burst of shots.", Line_WaitForInput);
+	OutputLine(NULL, "それでいて力は入りすぎず、ゆとりも残している。",
+		   NULL, " Yet there was no unecessary tension, and just enough slack.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　車から身を乗り出すという変則的な構えにもかかわらず、",
+		   NULL, "Despite being in such an anomalous position as leaning out from a car,", Line_WaitForInput);
+	OutputLine(NULL, "富竹は実にうまく応用を利かせ、この不利な体勢の中で抜群の命中率を叩き出していた…！！",
+		   NULL, " Tomitake was shooting very precisely.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは先ほどの向こうの、下手な鉄砲、数撃ちゃ当たるなんてのとはまったく違う！",
+		   NULL, "It was nothing like what the Mountain Dogs did earlier!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　当たるべくして当たるところへ刻み込む！！",
+		   NULL, "He shot at just the right time, so his bullet went where it was supposed to go!!", Line_WaitForInput);
+	OutputLine(NULL, "　同じ銃での発砲とはまったく思えなかった！！",
+		   NULL, " It was hard to believe that they were using the same gun!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ワゴン車のボディに正確に刻み込まれるその嫌な音は、彼らに嫌と言うほど富竹の実力を思い知らせていた。",
+		   NULL, "Nasty metallic sounds etched themselves into the body of the van, which made the Mountain Dogs realize just how good Tomitake was.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Kuruma2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……く、……くそ、あいつ滅茶苦茶射撃がうまいぞ！！",
+		   NULL, "\"...Sh-Shit... he's a crazy good shot!!", Line_WaitForInput);
+	OutputLine(NULL, "　ただの東京の事務屋じゃねぇのかよ！！」",
+		   NULL, " He isn't just some office worker in Tokyo!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………………俺、噂に聞いたことあるんだ。",
+		   NULL, "\".........I heard it once before.", Line_WaitForInput);
+	OutputLine(NULL, "富竹二尉って、事故で事務屋に移ったらしいが、教官時代は不正規戦部隊の射撃教官だったと聞いたぞ…。」",
+		   NULL, " First Lieutenant Tomitake was transferred to the offices after an accident, but, during his instructor years, he taught marksmanship for unconventional warfare units...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「な、……何だよそれ…！！",
+		   NULL, "\"Huh? What are you saying...?!", Line_WaitForInput);
+	OutputLine(NULL, "　ってことはあいつ…、うわッ！！」",
+		   NULL, " Are you saying he's... aah!!\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_MGun", 128, 64 );
+
+	StartShakingOfAllObjects( 241, 40, 0, 2, 10*2, TRUE );
+	StopSE( 0 );
+
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　富竹は降伏を迫るように徐々に着弾を運転席近くへ集めて行く。",
+		   NULL, "Tomitake started to aim for the driver's seat to pressure them to give up.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　……彼らにはもう、この圧倒的に不利な状況が理解できていた…。",
+		   NULL, "The Mountain Dogs could tell they were in a predicament...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　富竹は、この悪路の中でもやすやすと的に当てる技量を持っているのだ。",
+		   NULL, "Tomitake was capable of hitting his targets easily even on such a bad road.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その上、向こうは防弾リムジン。",
+		   NULL, "Furthermore, they were in a bulletproof limousine,", Line_WaitForInput);
+	OutputLine(NULL, "こちらは普通車。",
+		   NULL, " while the Mountain Dogs were in a regular van.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…しかも運転席を正面に晒している、もっとも不利な追う側だ。",
+		   NULL, "...The van which, incidentally, was facing the limousine in pursuit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これまでの射撃は所詮、威嚇射撃なのだ。",
+		   NULL, "All his shots had just been warning ones.", Line_WaitForInput);
+	OutputLine(NULL, "これ以上、引き際を見誤ると、…富竹は今度こそ効力射に踏み切るだろう。",
+		   NULL, " Unless the Mountain Dogs called off the chase, Tomitake would start shooting at them soon enough.", Line_WaitForInput);
+	OutputLine(NULL, "…勝ち目などない！",
+		   NULL, " They had no chance of winning!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「………鳳１より追跡車両。",
+		   NULL, "\"...Phoenix 1 to pursuit vehicle.", Line_WaitForInput);
+	OutputLine(NULL, "封鎖線が突破されたなら充分だ。",
+		   NULL, " If the blockade was broken through, that's enough.", Line_WaitForInput);
+	OutputLine(NULL, "深追いするな。",
+		   NULL, " Don't go too far.", Line_WaitForInput);
+	OutputLine(NULL, "富竹は射撃の名手だぞ！",
+		   NULL, " Tomitake is an expert sniper!", Line_WaitForInput);
+	OutputLine(NULL, "　死に急ぐな！」",
+		   NULL, " Don't throw away your lives!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………ど、",
+		   NULL, "\"......What", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………どうする、",
+		   NULL, " do we do?", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…行かせていいのか……。」",
+		   NULL, " Can we let them go...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………く、",
+		   NULL, "\"......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……了解、こちら追跡車両。",
+		   NULL, " Roger, this is the pursuit vehicle.", Line_WaitForInput);
+	OutputLine(NULL, "追跡を断念、帰投する！」",
+		   NULL, " Abandoning pursuit. We're falling back!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Kuruma1", 400 );
+	PlayBGM( 1, "Mati", 120, 0 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「はははは。",
+		   NULL, "\"Hahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "諦めたようだね。",
+		   NULL, " Looks like they finally gave up.", Line_WaitForInput);
+	OutputLine(NULL, "向こうは速度を落としたよ。」",
+		   NULL, " They're slowing down.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Aks_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ひゅう。",
+		   NULL, "\"...Whew.", Line_WaitForInput);
+	OutputLine(NULL, "あれだけの銃撃戦をしたのに、まったく平静なままですね。",
+		   NULL, " Even after such a gunfight, you're still so calm.", Line_WaitForInput);
+	OutputLine(NULL, "…相当の場数をお見受けします。」",
+		   NULL, " I bet you've gone through quite a bit, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あはははは！",
+		   NULL, "\"Ahahahaha!", Line_WaitForInput);
+	OutputLine(NULL, "　訓練の賜物さぁ！」",
+		   NULL, " It's all thanks to my training!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　富竹は車内に戻るとバックミラー越しにガッツポーズを決めて見せた。",
+		   NULL, "Tomitake, having slid back into the car, raised his fist in victory.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　普段の飄々とした雰囲気が、激しい銃撃戦のあとでも変わらない。",
+		   NULL, "He was as easygoing as ever, even after a gunfight.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂は初めて、富竹という男を知るのだった…。",
+		   NULL, "Akasaka felt like he was finally getting to know Tomitake for the first time.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 0, "G_Tactics", 120, 0 );
+
+	OutputLine(NULL, "「……富竹二尉！！",
+		   NULL, "\"First Lieutenant Tomitake!!", Line_WaitForInput);
+	OutputLine(NULL, "　ご無事でしたか、連絡が取れず心配しておりました！！！」",
+		   NULL, " I'm glad you're safe. We were so worried that we couldn't get in touch with you!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Hi9", 1000 );
+
+	OutputLine(NULL, "　富竹の姿は興宮の外れの電話ボックスにあった。",
+		   NULL, "Tomitake was making a call from a telephone booth outside of Okinomiya.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ここの電話線は山狗たちが抑えているのとは別系統。",
+		   NULL, "The phone lines around there were on a different network than the one the Mountain Dogs had sabotaged.", Line_WaitForInput);
+	OutputLine(NULL, "通話が可能だった。",
+		   NULL, " That was why he could make the call.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　富竹は直ちに東京と連絡を取っていた。",
+		   NULL, "Tomitake had called Tokyo immediately.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　東京調査部に山狗のスパイが混じっているらしく、自分の隠れ家が特定されたこと。",
+		   NULL, "He told Tokyo that there were some spies from the Mountain Dogs within Tokyo's research division, which is how they found out where he was.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　つい先ほどまで囚われていて、何とか脱出してきたこと。",
+		   NULL, "He also told them that he was captured, but that he had escaped.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　敵は陽動にかかり今ある山中にいるということ。",
+		   NULL, "He told them that they were fooled by the diversion, and that they were on the mountain as they spoke.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　囚われている時、首謀者である鷹野三佐が自分に、黒幕の存在をほのめかした等々、",
+		   NULL, "While he was captured, Major Takano, the ringleader, had hinted at the existence of masterminds she was working for... etc.", Line_WaitForInput);
+	OutputLine(NULL, "現在知り得る限りのことを全て説明した上で、言った。",
+		   NULL, " He explained everything that he had learned thus far.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「入江機関の早急な鎮圧を。",
+		   NULL, "\"Please take control of the Irie Institute immediately.", Line_WaitForInput);
+	OutputLine(NULL, "彼らはすでに地上での発砲を繰り返しており、このままでは村人に発覚するのも時間の問題です。",
+		   NULL, " They've already fired repeatedly, and it will only be a matter of time before the villagers find something out.", Line_WaitForInput);
+	OutputLine(NULL, "番犬の緊急出動を強く要請します！」",
+		   NULL, " I urge you to give the command for the Bloodhounds to take action!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……もしもし、調査部の岡だ！",
+		   NULL, "\"...Hello, this is Oka from the research division!", Line_WaitForInput);
+	OutputLine(NULL, "　無事で良かった！",
+		   NULL, " I'm glad you're safe!", Line_WaitForInput);
+	OutputLine(NULL, "　番犬はすで雛見沢地区の南方３０ｋｍで空中待機してる！",
+		   NULL, " The Bloodhounds are already standing by in the air, approximately thirty kilometers south of Hinamizawa!", Line_WaitForInput);
+	OutputLine(NULL, "　こちらも上層部に鎮圧命令を求めていたのだが、石頭どもが事なかれ主義で渋りやがってな！",
+		   NULL, " We've been requesting an order to move in, but the higher-ups are stubborn and don't want any problems, so they've been hesitating!", Line_WaitForInput);
+	OutputLine(NULL, "　だが君が無事ならば話が早い！",
+		   NULL, " But if you're safe, then that makes things simple!", Line_WaitForInput);
+	OutputLine(NULL, "　君の話はすぐにトップに説明する。",
+		   NULL, " I'll tell them what you just told me now.", Line_WaitForInput);
+	OutputLine(NULL, "許可はすぐ出るだろう。",
+		   NULL, " I'm sure they'll approve the operation immediately.", Line_WaitForInput);
+	OutputLine(NULL, "２０分以内に番犬は到着する！",
+		   NULL, " The Bloodhounds will arrive within twenty minutes!", Line_WaitForInput);
+	OutputLine(NULL, "　ん、…つい今、鷹野三佐と小此木二尉に逮捕命令が出たぞ！",
+		   NULL, " Mmm... hey, we just got an arrest order for Major Takano and First Lieutenant Okonogi!", Line_WaitForInput);
+	OutputLine(NULL, "　入江機関の即時制圧と山狗への武装解除命令も出た！！",
+		   NULL, " We also got orders to secure the Irie Institute as well as to disarm the Mountain Dogs!!", Line_WaitForInput);
+	OutputLine(NULL, "　君のお陰だぞ、でかした！！」",
+		   NULL, " All thanks to you! Great job!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "Hi9", 400 );
+	PlayBGM( 0, "semi", 120, 0 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Tomi_majime#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　電話ボックスから富竹が出てきた。",
+		   NULL, "Tomitake walked out of the telephone box.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Aks_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「話はつきましたか。」",
+		   NULL, "\"Is everything settled?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Def#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "番犬部隊が鎮圧に緊急出動するそうです。",
+		   NULL, " The Bloodhounds are moving in.", Line_WaitForInput);
+	OutputLine(NULL, "すでに近くに空中待機していて、２０分ほどで急襲するそうです。」",
+		   NULL, " They're already standing by in the air and should arrive within twenty minutes.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Aks_MajimeA2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「どの程度に強いんですか？",
+		   NULL, "\"How powerful are they?", Line_WaitForInput);
+	OutputLine(NULL, "　その番犬という連中は。」",
+		   NULL, " These Bloodhounds, that is.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「山狗が機密保持のための多目的部隊だとしたら、番犬は戦闘のみに特化した精鋭部隊です。",
+		   NULL, "\"The Mountain Dogs are a multipurpose unit, largely deployed to preserve secrecy, but the Bloodhounds are elite units specially trained to do battle.", Line_WaitForInput);
+	OutputLine(NULL, "装備も人材も比べ物になりません。",
+		   NULL, " Both their skills and their equipment are far superior.", Line_WaitForInput);
+	OutputLine(NULL, "おそらく、あっという間でしょうね。」",
+		   NULL, " Things will be taken care of very quickly.\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "Sora5", "maskdown", 1, 0, 300 );
+	PlayBGM( 0, "er_Ver3", 120, 0 );
+
+	OutputLine(NULL, "　赤坂は腕時計を見る。",
+		   NULL, "Akasaka looked at his watch.", Line_WaitForInput);
+	OutputLine(NULL, "………正午を３０分くらい過ぎたところだった。",
+		   NULL, " It was about half past twelve.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あと２０分ほどで番犬がやって来る。",
+		   NULL, "The Bloodhounds would arrive in about twenty minutes.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　空腹感を思い出す。",
+		   NULL, "Akasaka remembered how hungry he was.", Line_WaitForInput);
+	OutputLine(NULL, "…もうお昼なのだ。",
+		   NULL, " It was lunch time already.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もし、それだけの度胸があるならば。",
+		   NULL, "If he was brave enough...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…今からどこかの蕎麦屋にでも入り、冷えた素麺でも平らげる頃には全てが終わっている。",
+		   NULL, "he would head to a noodle shop, and by the time he was done, everything would have ended.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あれだけの戦いぶりを見せ、…その最後の最後まで戦いを続けた山狗の末路としては、あまりに呆気ない時間だった。",
+		   NULL, "For the Mountain Dogs, who fought well until the last possible moment, it was ending rather too soon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ここは田んぼと住宅が入り混じる、文字通り興宮と村の境目だった。",
+		   NULL, "They were in an area where rice fields and a residential area mix. It was the border of Okinomiya.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　さっきまであれほど強く太陽は照り付けていたのに、いつの間にか銀色の雲が薄っすら覆って、涼しい風を吹かせていた。",
+		   NULL, "The sun was covered by a thin layer of silver clouds, and a cool breeze was blowing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…………軽く、にわか雨でも降りそうな、そんな雲行きだった。",
+		   NULL, "......It looked like it might even rain a little.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　二人とも、今日一日、何度死線を潜ったかわからない。",
+		   NULL, "The two of them couldn't even remember how many times their lives were threatened that day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ここでぼんやりとして、降るかもしれないにわか雨に身を晒したい誘惑に駆られもした。",
+		   NULL, "They wanted nothing more than to let the rain soak their bodies.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　少しの間だけ、その誘惑を楽しんだ後、",
+		   NULL, "After a while,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………赤坂はぽつりと言った。",
+		   NULL, " Akasaka spoke.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Aks_Def", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Hi9", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「どうしますか富竹さん。」",
+		   NULL, "\"So what do you think, Tomitake-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ん？",
+		   NULL, "\"...Hmm?", Line_WaitForInput);
+	OutputLine(NULL, "　どうするって、何をだい？」",
+		   NULL, " What do you mean?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Aks_MajimeA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「私、…雛見沢へ戻ろうと思ってます。",
+		   NULL, "\"I think... I'll go back to Hinamizawa.", Line_WaitForInput);
+	OutputLine(NULL, "……まだみんな、戦ってる。」",
+		   NULL, " They're still fighting.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…………そうだね。",
+		   NULL, "\"...Yeah, that's true.", Line_WaitForInput);
+	OutputLine(NULL, "でも、いいのかい？",
+		   NULL, " But are you sure?", Line_WaitForInput);
+	OutputLine(NULL, "　一度は潜り抜けた死線だよ。」",
+		   NULL, " We are safe here.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Aks_Def", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「梨花ちゃんが、…待ってる。",
+		   NULL, "\"Rika-chan... is waiting for me.", Line_WaitForInput);
+	OutputLine(NULL, "まだ約束は果たし終えていません。」",
+		   NULL, " I haven't kept my promise yet.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Def#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………………なら、戻ろう。",
+		   NULL, "\".........Okay, then let's go back.", Line_WaitForInput);
+	OutputLine(NULL, "僕も用事があってね。",
+		   NULL, " I actually have something to take care of too.", Line_WaitForInput);
+	OutputLine(NULL, "ちょうど戻ろうと思ってたんだよ。",
+		   NULL, " I was thinking of going back anyway.", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂さんはヘリの旅の経験はあるかい？",
+		   NULL, " Akasaka-san, have you been on a helicopter before?", Line_WaitForInput);
+	OutputLine(NULL, "　乗せてもらえることになってるんだ。」",
+		   NULL, " I have a permit for one.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora5", 1000 );
+
+	OutputLine(NULL, "　男たちはしばし田んぼの青々とした海が風にそよいで作る波を見詰めた後、再び弾痕の残る車に乗り込むのだった。",
+		   NULL, "They watched the breeze blowing over the rice fields for a while, then returned to the bullet-ridden car.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　車が急発進し、道を逆戻りする。",
+		   NULL, "The car started up quickly, and they drove it back the way it came.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まだ、昼なのだ。",
+		   NULL, "It was only noon.", Line_WaitForInput);
+	OutputLine(NULL, "……綿流しの祭りが始まるまでには、まだまだ時間があるのだ…。",
+		   NULL, " There was still plenty of time before the Watanagashi festival began...", Line_Normal);
+	ClearMessage();
+
+}

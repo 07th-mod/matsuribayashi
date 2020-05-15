@@ -1,0 +1,578 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	DrawScene( "Ka3", 400 );
+
+	OutputLine(NULL, "「でして、ダムの建設事業に伴う地域振興や地域産業の育成などですね…、」",
+		   NULL, "\"So the dam construction will bring in new jobs and revitalize the local industry...\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「そんなことは聞いてねぇっつってんだらぁ！！」",
+		   NULL, "\"That's not what we're saying!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+
+	OutputLine(NULL, "「俺らの誰の断りがあって、ダムなんか作ろうって言い出したかって聞いてんだ！」",
+		   NULL, " \"Who the hell gave you permission to build a dam here?\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_tataku", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 3*2, TRUE );
+
+	OutputLine(NULL, "「おう、わしらから税金絞るだけ絞っといてそれに対する返事がこれっちゅうんか？！",
+		   NULL, " \"You squeeze tax money from us and this is what we get in return?", Line_WaitForInput);
+	OutputLine(NULL, "　おんどりゃあ、誰の税金で給料もらっとんじゃあ！！」",
+		   NULL, " Who do you think pays your salaries, huh?\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「ですから！",
+		   NULL, "\"Look,", Line_WaitForInput);
+	OutputLine(NULL, "　先ほどから申し上げておりますように…！！」",
+		   NULL, " we're trying to explain to you...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「言い訳など聞いちゃならんねぇ、いつ計画を中止するんか聞いとるんじゃい！！」",
+		   NULL, "\"We don't want to hear your excuses!! We want to know when you'll stop the construction!!!\"", Line_ContinueAfterTyping);
+	Wait( 1200 );
+	OutputLine(NULL, "「お前じゃ話にならん、東京の建設大臣を連れて来い！！",
+		   NULL, " \"You're useless! Bring the Minister of Construction here!!", Line_WaitForInput);
+	OutputLine(NULL, "　ここではっきり白黒つけちゃる！！」",
+		   NULL, " He'll get to the bottom of it!!\"", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "「引っ込まんか木っ端役人があぁあぁ！！」",
+		   NULL, " \"Shut up, you yuppie!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 6*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 6*2, TRUE );
+
+	OutputLine(NULL, "「大体おどれら、人さまの税金で仕事しとって、何でわしらより高い段で話をしとるんじゃ。",
+		   NULL, " \"Hey, you're paid with our tax money, so why the hell are you talking down to us from up there?", Line_WaitForInput);
+	OutputLine(NULL, "目線で話さんかい目線で！！」",
+		   NULL, " Come down here and and let's speak face to face!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　体育館の中は怒号に満ちていた。",
+		   NULL, "The auditorium is filled with angry shouting.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雛見沢ダム基本計画地元説明会。",
+		   NULL, "The sign at the entrance says", Line_WaitForInput);
+	OutputLine(NULL, "…表に出ている立て看板にはそう書かれていた。",
+		   NULL, " 'Hinamizawa Dam Construction Explanatory Meeting'.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　壇上で、役人の男が何かを言おうとする度に、満場の住民たちは一斉に怒号を浴びせ掛け、それを塗りつぶす。",
+		   NULL, "Every time the official on the stage tried to say anything, the citizens packed into the room silenced him with their shouts.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それでは進行にならないので、それらを聞こえないかのように振る舞い、ダムの有用性をパネルで説明すればするほど、",
+		   NULL, "Trying to ignore them, the official continued to explain the pros of the dam,", Line_WaitForInput);
+	OutputLine(NULL, "住民の声を聞かない政府の横暴という図式になり、ますますに彼らの怒りを焚きつけた。",
+		   NULL, " but that just further infuriated them.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka4", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　壇上と住民の席の間には空白地帯が設けられ、警官隊がスクラムを組み制止線を作っていた。",
+		   NULL, "Between the stage and the citizens, there was an open area where a police squad is standing by.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…もし、これがなかったら、住民たちはすぐにでも壇上に駆け上がり、取っ組み合いに発展していたに違いない…。",
+		   NULL, "If they weren't there, the citizens would jump onto the stage and start a riot.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 7, "filter_Hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 200, TRUE );
+	DrawBustshotWithFiltering( 2, "Ha_YowakiA1%", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10*2, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　……そんな光景を、僕はみんなの後から見守っていた。",
+		   NULL, "...I'm watching all this from the back of the auditorium.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 64, 0, 1000, TRUE );
+	//DrawBustshot( 8, "mono_ka26_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+
+	OutputLine(NULL, "　彼らが、怒りの感情に飲み込まれているのが、はっきりと色で見える。",
+		   NULL, "It's obvious to anyone that they're being swallowed by their anger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…血の赤に徐々に飲み込まれ、",
+		   NULL, "...They've become filled with a bloody red rage.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ある目的のために芽生えた怒りの感情が、目的そのものに取って代わり、",
+		   NULL, " ...The anger that came from a certain purpose becomes a purpose in itself", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "怒るために怒るという悪循環を生み出そうとしている…。",
+		   NULL, " and it creates a vicious cycle, where anger leads to more anger.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 128, 0, 1000, TRUE );
+	//DrawBustshot( 8, "mono_ka26_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+
+	OutputLine(NULL, "　…怒りは決して不要な感情ではない。",
+		   NULL, "...Anger is a necessary emotion for humans.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人は生きるために様々な障害にぶつかる。",
+		   NULL, "People face many difficulties in their lives.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それと戦い乗り越える力の原動力が怒りなのだ。",
+		   NULL, "Anger gives them the motivation to fight and conquer such difficulties.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…その意味において、怒りは人の生きる力そのものと言える。",
+		   NULL, "Therefore, anger is an essential part of life itself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、怒りそのものを否定したりはしない。",
+		   NULL, "So I will never reject anger itself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、度を越えた怒りは、時に目的を忘れさせる。",
+		   NULL, "However, anger like this, that goes far beyond normal, makes people forget their purpose.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それはすでに、生きるための力ではない。",
+		   NULL, "That is no longer an essential part of life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　頭に血が上り、自分が何をしたかったのかも忘れてしまった、まさに暴走の状態なのだ。",
+		   NULL, "As the blood rushes to their head, a person can't even remember what they've done. They go out of control.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 192, 0, 1000, TRUE );
+	//DrawBustshot( 8, "mono_ka26_3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
+
+	OutputLine(NULL, "　…………このような感情は、僕たちにとって辛く悲しく耐え難いもの。",
+		   NULL, "......Such emotions are very painful, sad, and difficult to endure.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……村人と共にある僕たちが、少しずつ怒りの感情に飲み込まれて、「鬼」に染まっていくのを、私は色を見るようにはっきりと見えているのだった…。",
+		   NULL, "...I can clearly see the villagers who live alongside us turning into demons.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人間の世界のルールはわかる。",
+		   NULL, "I understand the rules of the human world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　国の政策に立ち向かうには、個人の力はあまりに無力だ。",
+		   NULL, "The power of an individual can't be compared to the power of the government.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それに立ち向かうためには、個人の域を超えた力と結束が必要になる。",
+		   NULL, "To be able to fight, an individual needs to become part of a larger, unified power.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、その力を正しい方向に導くのはとても難しいこと。",
+		   NULL, "But to steer that unified power in the right direction is extremely difficult.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…怒りの連鎖は怒りのために怒りを生む。",
+		   NULL, "The cycle of anger leads to more anger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　生きるために怒るのではなく、怒るために怒る。",
+		   NULL, "Not anger that helps you live, but anger that exists only for anger.", Line_WaitForInput);
+	OutputLine(NULL, "……それは、ただの鬼でしかない。",
+		   NULL, " ...It's just like being a demon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、……この感情は、永い間、静かに眠ってきた僕たちを乱暴に起こすものにしかならない…。",
+		   NULL, "And... this emotion is capable of violently rousing us from our long, peaceful slumber.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　みんなが、…怒りに塗りつぶされていく。",
+		   NULL, "Everyone is immersed in their own anger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　僕たちは平和に村人たちと共存することを知り、静かに眠りながら過ごしてきたのだ。",
+		   NULL, "We lived peacefully with the villagers while we slept quietly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それが、起こされ、",
+		   NULL, "...Yet now we've awakened,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……鬼ヶ淵沼から鬼が湧き出したと伝えられたあの時代に戻ってしまいそうになっている…。",
+		   NULL, " and it's like the world is trying to return to that age when demons were said to rise from Onigafuchi Swamp.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　僕はみんなに、どうか落ち着いてと叫ぶ。",
+		   NULL, "I keep shouting at everyone to get them to calm down.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、怒りが怒りを増幅しあうこの悪循環に、私の声無き声など誰にも届きはしない……。",
+		   NULL, "But my voice can't reach them, because of the vicious cycle of anger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでも誰かひとりの耳に届くことを信じて、僕はみんなに、どうか落ち着いてと何度も叫ぶしかないのだ。",
+		   NULL, "Even so, I'll continue shouting, hoping even one of them will hear my voice.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　このままでは、………鬼が目覚めてしまうかもしれない。",
+		   NULL, "Because if I don't do anything... the demons may awaken.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　眠りにつき、二度と蘇ることなどないはずだった鬼たちが、……この騒ぎで目覚めてしまうかもしれない…。",
+		   NULL, "The demons that went into a deep sleep... may reawaken because of this commotion.", Line_Normal);
+	ClearMessage();
+
+	//DrawSprite( 10, "mono_ka26_3", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
+	//DrawBustshot( 7, "filter_Hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 0, FALSE );
+	//DrawBustshotWithFiltering( 2, "Ha_YowakiA1%", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10*2, 0, FALSE );
+	//DrawBustshot( 9, "Ka4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
+	//FadeSprite( 10, 0, FALSE );
+	//FadeBustshot( 8, FALSE, 0, 0, 0, 0, 0, TRUE );
+	DrawSceneWithMask( "Ka3", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　その時、騒ぎの雰囲気が変わった。",
+		   NULL, "Then, all of a sudden, the atmosphere changed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　見れば、壇上と住民の間の対決だったのが、いつの間にか住民と住民の間の対決に移っていた。",
+		   NULL, "Looking up, I saw that the angry exchange between villagers and those on the podium had devolved into confrontation between the villagers themselves.", Line_WaitForInput);
+	OutputLine(NULL, "……一体、何事だろう？",
+		   NULL, " ...What's going on?", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	PlayBGM( 0, "B08_Izyou", 120, 0 );
+
+	OutputLine(NULL, "「じゃかましいわッ！！",
+		   NULL, "\"Shut up!!!", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　そりゃおんどれの都合やんね、勝手に総意にせんといてんなクソババアッ！！」",
+		   NULL, " Those are your reasons, not ours!! Don't pull us into this, you old hag!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あんじょう、すったらんわッ！！",
+		   NULL, "\"Who the hell cares!!", Line_WaitForInput);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "　ようも言ったん、抜かしよってからにこんの輩ぁああぁッ！！！」",
+		   NULL, " The hell you say, you bastard!!!\"", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「おうおうッ！！",
+		   NULL, "\"Hey, hey, hey!!", Line_WaitForInput);
+	OutputLine(NULL, "　てめぇお魎さんと知っててその口聞いとるんかいな、上等きっちゃら、おあああッ？！",
+		   NULL, " Do you know who you're talking to? This is Oryou-san. You've got some nerve, huh?", Line_WaitForInput);
+	OutputLine(NULL, "　名乗らんかいおおぅッ！！」",
+		   NULL, " Who the hell do you think you are?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	OutputLine(NULL, "「やっかましいわぁ！！",
+		   NULL, "\"Shut up!!", Line_WaitForInput);
+	OutputLine(NULL, "　園崎がなんぼのもんじゃい、わしゃあ北条じゃ、腰巾着は引っ込んどらんかいッ！！」",
+		   NULL, " Sonozaki? So what? I'm Houjou. Get your goons away from me!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka4", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「おぉう北条んの！",
+		   NULL, "\"Hey, Houjou!!", Line_WaitForInput);
+	OutputLine(NULL, "　何ば抜かしよったんようも村を沈めちゃる言えるのぉ！！",
+		   NULL, " How dare you say that you want the village to be submerged?", Line_WaitForInput);
+	OutputLine(NULL, "　お前ぇ何ぼで村を売ったんッ？！」",
+		   NULL, " How much are they paying you?\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 244, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 244, 40, 0, 2, 4*2, TRUE );
+
+	OutputLine(NULL, "「黙らんかい死に損ないがぁッ！！",
+		   NULL, "\"Shut up, you old geezer!!", Line_WaitForInput);
+	OutputLine(NULL, "　いいんか、雛見沢には貧乏人も大勢おるん、お前んとこみたいに、山に畑に唸るほど持ってる地主とはわけが違うんッ！！",
+		   NULL, " Listen, there are plenty of poor people in Hinamizawa. Not everyone is rich and has fields all over the mountains like you do!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　わしゃあの、国の補償金で充分満足しとったん、町の公営住宅も手配してくれちょうゆぅし、なぁんも不足はなかったん！！",
+		   NULL, "I'm satisfied with the compensation from the government. They've even offered to provide us with public housing.", Line_WaitForInput);
+	OutputLine(NULL, "　それをおんどれが全部ちゃぶ台引っくり返しよったん、台無しにしよったんじゃボケぇッ！！！",
+		   NULL, " Yet you're ruining everything, you assholes!!!", Line_WaitForInput);
+	OutputLine(NULL, "　おどれら地主の都合で人まで巻き込むなや！",
+		   NULL, " Don't pretend you're the same as us!", Line_WaitForInput);
+	OutputLine(NULL, "　そんなに国と喧嘩せぇんかったらおどれがひとりでやれ！！",
+		   NULL, " If you want to fight with the government, why don't you fight by yourself?", Line_WaitForInput);
+	OutputLine(NULL, "　したらん、ゼニが誰が払うんね、おどれかいな！！",
+		   NULL, " Then who's going to pay? You?", Line_WaitForInput);
+	OutputLine(NULL, "　うちはな、貧乏だし育ち盛りが二人もおるん。",
+		   NULL, " I'm poor and have two kids at home.", Line_WaitForInput);
+	OutputLine(NULL, "おとなしゅう、国からゼニをもろぅて職を斡旋してもろぅて、人生再設計ちゅうとこなんや。",
+		   NULL, " I was planning to start a new life by leaving here in peace after getting compensation from the government and finding a job elsewhere.", Line_WaitForInput);
+	OutputLine(NULL, "それをおどれは何じゃ、いつからお前はわしの代表になったんじゃ！！",
+		   NULL, " But you... since when did you represent me, huh?!", Line_WaitForInput);
+	OutputLine(NULL, "　お前、そんなに偉いんか、おああああッ？！」",
+		   NULL, " Do you think you're that important, or what?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「おうおうおう、北条の！！",
+		   NULL, "\"Hey, hey, hey, Houjou!!", Line_WaitForInput);
+	OutputLine(NULL, "　ようも抜かした、この裏切り者がぁッ！！",
+		   NULL, " How dare you betray us!!", Line_WaitForInput);
+	OutputLine(NULL, "　んなら村から出てけ出てけッ！！」",
+		   NULL, " Then get out! Get out of this village!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おう、出ていったら！",
+		   NULL, "\"Sure, I'll be happy to!!", Line_WaitForInput);
+	OutputLine(NULL, "　もちろん、それに見合うゼニはお前が払うんじゃろうな？！",
+		   NULL, " But you're going to pay what I'm entitled to, right?", Line_WaitForInput);
+	OutputLine(NULL, "　わしが国からもらい損ねたゼニ、きっちり都合つけてくれちゃるんじゃろなぁッ？！",
+		   NULL, " You're going to pay me every yen of the compensation I was going to get from the government!!", Line_WaitForInput);
+	OutputLine(NULL, "　村から出たぅともゼニがないんじゃ。",
+		   NULL, " Even if I wanted to leave the village, I don't have the money.", Line_WaitForInput);
+	OutputLine(NULL, "おどれが払うんならすぐにでも出たっるわ！！」",
+		   NULL, " If you're going to pay me, I'll leave straight away!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka3", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「……北条の言う通りだ！",
+		   NULL, "\"...Houjou is right!", Line_WaitForInput);
+	OutputLine(NULL, "　立ち退いてもいいと思ってる住民もいるんだぞ！",
+		   NULL, " There are plenty of residents who are willing to leave!", Line_WaitForInput);
+	OutputLine(NULL, "　御三家は俺たちを巻き込むな！」",
+		   NULL, " You Three Families shouldn't drag us into this!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「おうおう何じゃい？",
+		   NULL, "\"The hell is this?", Line_WaitForInput);
+	OutputLine(NULL, "　今抜かしたのは誰じゃい？！",
+		   NULL, " Who just spoke?", Line_WaitForInput);
+	OutputLine(NULL, "　名乗らんかいボケッ？！」",
+		   NULL, " Come on, who was it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「残りたいヤツは勝手に残ればいいだろが！！",
+		   NULL, "\"If you want to stay, then stay!!", Line_WaitForInput);
+	OutputLine(NULL, "　立ち退きも権利じゃ、勝手に人様の権利に干渉するなやこんのダラズがッ！！」",
+		   NULL, " We have the right to leave, so don't interfere!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうじゃそうじゃ！！",
+		   NULL, "\"That's right!!", Line_WaitForInput);
+	OutputLine(NULL, "　園崎のクソババアはすっこんどれッ！！」",
+		   NULL, " Back the hell off, you damn Sonozaki hag!!\"", Line_Normal);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	ClearMessage();
+
+	OutputLine(NULL, "「…あーー、",
+		   NULL, "\"...Ahh,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "もちろんダム計画に同意してくださる方には見合う保障を用意いたしております。",
+		   NULL, " of course we'll compensate the people who support the dam construction plan.", Line_WaitForInput);
+	OutputLine(NULL, "決して土地の搾取ではありませんのでぇ…、」",
+		   NULL, " We most certainly will not steal the land from you...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「黙れ役人！！",
+		   NULL, "\"Shut up, government dog!!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 244, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 244, 40, 0, 0, 4*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "　おんどりゃあ、村ン真っ二つに裂こう魂胆かいッ！！」",
+		   NULL, " Are you trying to divide the village?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「死ねや北条！！",
+		   NULL, "\"Die, Houjou!!", Line_WaitForInput);
+	OutputLine(NULL, "　村の空気を吸う資格はねぇ、今すぐ息止めて死ねッ！！」",
+		   NULL, " You don't deserve to breathe the village air. Hold your breath and suffocate to death!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「なめんなボケが！！",
+		   NULL, "\"Screw you, old hag!!!", Line_WaitForInput);
+	OutputLine(NULL, "　ぶッ殺してやるわ、前に出ろクソババア！！！",
+		   NULL, " I'll murder your ass! Step up front, you damn hag!!!", Line_WaitForInput);
+	OutputLine(NULL, "　おおおお、引っ込まんかいデカポリ！！」",
+		   NULL, " Heeeey! Stay out of this, you fat pig!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xff, 0x88, 0x88, 256, 0, 1000, TRUE );
+
+	PlayBGM( 3, "semi", 120, 0 );
+
+	OutputLine(NULL, "「よーーう抜かした。",
+		   NULL, "\"Veeeery good.", Line_WaitForInput);
+	OutputLine(NULL, "…よーぅ抜かしたわ北条の。",
+		   NULL, " That was veeery good, Houjou.", Line_WaitForInput);
+	OutputLine(NULL, "……この園崎お魎、ひっさびさに頭に血ぃ登って来よったんわ。",
+		   NULL, " I haven't been this pissed off in so, so long.", Line_WaitForInput);
+	OutputLine(NULL, "きっちりケジメ取らせてもらうかんの。",
+		   NULL, " You'll get what you deserve!!", Line_WaitForInput);
+	OutputLine(NULL, "あんじょう、楽しみに待っとれやッ…！！！」",
+		   NULL, " Look forward to it!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「北条、やれやれッ！！",
+		   NULL, "\"Get 'em, get 'em, Houjou!!", Line_WaitForInput);
+	OutputLine(NULL, "　国は俺たちに仕事と住処とカネを与えろー！！」",
+		   NULL, " The government has to provide us new jobs, shelter, and compensation.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「こらこら！！",
+		   NULL, "\"Hey, hey!!", Line_WaitForInput);
+	OutputLine(NULL, "　やめなさい暴力は！！",
+		   NULL, " Stop this violence!!", Line_WaitForInput);
+	OutputLine(NULL, "　お互い、やめてやめてッ！！」",
+		   NULL, " All of you, stop it, stop it!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「すったらんたぁ上等じゃああ！！",
+		   NULL, "\"Like hell, bring it on!!", Line_WaitForInput);
+	OutputLine(NULL, "　おんしが出てこんかいなッ！！」",
+		   NULL, " Come and get some!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　みんなが、真っ赤な怒りにどんどんと染まっていく…。",
+		   NULL, "Everyone is being tainted with the bloody red anger...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　僕はそれを、黙って見ているしかできない………。",
+		   NULL, "And I can only watch......", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　せめてできるのは、",
+		   NULL, "The least I can do...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……これから起こるかもしれない惨劇を、",
+		   NULL, " is to apologize for the tragedy", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…今から詫びることだけだった…。",
+		   NULL, " that is about to happen...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　…ごめんなさい、",
+		   NULL, "...I'm sorry,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ごめんなさい。",
+		   NULL, " I'm sorry.", Line_WaitForInput);
+	OutputLine(NULL, "ごめんなさい、",
+		   NULL, " I'm sorry,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ごめんなさい、",
+		   NULL, " I'm sorry,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ごめんなさい…。",
+		   NULL, " I'm sorry...", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　そして………、この日がきっかけなのだ。",
+		   NULL, "This...... is how things started.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……この日を境に北条家と園崎家は決定的に対立し、北条家は村の中で孤立を深めていく。",
+		   NULL, "From this day onward, the Houjou family and the Sonozaki family will wage a feud against each other, and the Houjou family will become ostracized within the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは沙都子と悟史を辛い運命へ突き落としていくということなのだ……。",
+		   NULL, "This marks the beginning of Satoko and Satoshi's lives of tremendous hardship.", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 0, TRUE );
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

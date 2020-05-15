@@ -1,0 +1,1031 @@
+﻿void main()
+{
+
+	DrawScene( "black", 3000 );
+	DrawScene( "si_matsuri_01", 1000 );
+	Wait( 15000 );
+	DrawScene( "Tyuui", 1000 );
+	Wait( 3000 );
+	DrawScene( "black", 3000 );
+
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+	DrawSprite( 1, "Waku_w", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 1000, FALSE );
+	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "Ta1_Tokyo", 0 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　書斎の中は積み上げられた書物と資料でいっぱいだった。",
+		   NULL, "The study was filled with piles of books and papers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それに埋もれた席に座り、一心不乱に書き物をするふくよかな老人と、",
+		   NULL, "In that study, there was a full-figured old man writing something at his desk in utmost concentration.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　絨毯の上にいっぱいに広げられた資料を分類する少女の姿があった。",
+		   NULL, "There was also a little girl sorting out papers on the carpet.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　一見すれば少女のそれは、いたずらかお遊びのように見える。",
+		   NULL, "She almost looked as though she was playing with them...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、その表情はとても真剣で、単なる遊びではないようだった。",
+		   NULL, "But the serious expression she was wearing made it clear that she wasn't.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta3", "maskleft", 1, 0, 1300 );
+
+	OutputLine(NULL, "「おじいちゃん。",
+		   NULL, "\"Grandpa,", Line_WaitForInput);
+	OutputLine(NULL, "資料の分けっこができたよ。」",
+		   NULL, " I'm done sorting them out.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Hmm.", Line_WaitForInput);
+	OutputLine(NULL, "ありがとう。",
+		   NULL, " Thank you.", Line_WaitForInput);
+	OutputLine(NULL, "…さてさて、どういう結果になったかな？」",
+		   NULL, " ...Let's see, what happened?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Look.", Line_WaitForInput);
+	OutputLine(NULL, "同じ症例の人がこれだけ集まった。",
+		   NULL, " There are lots of people with the same symptoms.", Line_WaitForInput);
+	OutputLine(NULL, "全国平均と比べても明らかに異常なくらい。」",
+		   NULL, " It's way higher than the national average.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta2_Tokyo", "maskright", 1, 0, 1300 );
+
+	OutputLine(NULL, "「ふむ…！",
+		   NULL, "\"Hmm...!", Line_WaitForInput);
+	OutputLine(NULL, "　やはりな。",
+		   NULL, " That's exactly what I expected.", Line_WaitForInput);
+	OutputLine(NULL, "こっちも興味深い論文を見つけたところだ。",
+		   NULL, " There's an intriguing treatise over here too.", Line_WaitForInput);
+	OutputLine(NULL, "精神外科と文化についてまとめたものでな。",
+		   NULL, " It discusses psychosurgery and civilization.", Line_WaitForInput);
+	OutputLine(NULL, "前頭葉に寄生する存在を予見したものだ。」",
+		   NULL, " It also predicts the existence of parasites that inhabit the frontal lobe.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「前頭葉は人間が人間らしくあることを司る部分…。」",
+		   NULL, "\"The frontal lobe is what causes emotions...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "人の感情は心が生み出すのではない。",
+		   NULL, " Emotions aren't created by the heart.", Line_WaitForInput);
+	OutputLine(NULL, "脳という名の器官が分泌物を生み出して与える副産物に過ぎん。",
+		   NULL, " They're just side effects of the chemicals secreted by the organ known as the brain.", Line_WaitForInput);
+	OutputLine(NULL, "その器官に特定の干渉をする寄生虫が存在し、ひとつのコロニーに蔓延したならば、そのコロニーの思想はひとつに統一されるだろう。」",
+		   NULL, " If parasites capable of acting on that organ did exist and spread to create a colony, then that colony's thoughts would be unified.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「イデオロギーが広がるのは、寄生虫感染が広がっているから？",
+		   NULL, "\"So are parasites the cause of the spread of ideology?", Line_WaitForInput);
+	OutputLine(NULL, "　イデオロギーが激突するのは、異なる寄生虫同士が自分の生息圏を拡大するためにぶつかりあっている？」",
+		   NULL, " When ideologies clash, is that because different parasites are competiting to expand their habitat?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あるいは、",
+		   NULL, "\"That, or...", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "宗教圏の分布か、",
+		   NULL, " to expand religion,", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "国境の分布か、",
+		   NULL, " to expand national borders,", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "人種の分布か。",
+		   NULL, " or to expand a race.", Line_WaitForInput);
+	OutputLine(NULL, "我々の世界の異なる文化コミュニティの存在とその対立を、人の思想に影響を及ぼす寄生虫的存在に原因があると仮定している。」",
+		   NULL, " It's hypothesized that our differing cultural communities and their conflict are the result of parasites influencing human thoughts.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta1_Tokyo", "maskleft", 1, 0, 1300 );
+
+	OutputLine(NULL, "「おじいちゃんと同じことを考えている人が外国にもいたんだね。」",
+		   NULL, "\"There are people in other countries who think the same thing as you, Grandpa.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「もちろんいるとも。",
+		   NULL, "\"Of course there are.", Line_WaitForInput);
+	OutputLine(NULL, "地球上には無数の寄生生物がいて、宿主と共存し、時には宿主を支配したりすることが広く知られている。",
+		   NULL, " There are countless parasites on this Earth, and it's well known that some coexist with their hosts and some control their hosts.", Line_WaitForInput);
+	OutputLine(NULL, "そして、人体に寄生する存在をたくさん発見してもいる。",
+		   NULL, " We've also discovered plenty of parasites that infect humans.", Line_WaitForInput);
+	OutputLine(NULL, "……にもかかわらず、人体に寄生し、その宿主を支配する存在については頑なに否定してきた。",
+		   NULL, " ...Yet despite that, we adamantly deny the possibility that parasites could infect humans and control their hosts.", Line_WaitForInput);
+	OutputLine(NULL, "仮定すらも含めてな。」",
+		   NULL, " Even the hypothesis of such a thing.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……どうしてだろうね？",
+		   NULL, "\"...Why do you think that is?", Line_WaitForInput);
+	OutputLine(NULL, "　人間だけ特別な存在のわけはないのに。」",
+		   NULL, " Humans aren't special in any way.\"", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「それを仮定することは即ち、イデオロギーの蔓延を、疫学的見地の蔓延と置き換えられるからだ。",
+		   NULL, "\"Because that hypothesis would also mean changing our view to see the spread of ideologies from the perspective of epidemiology.", Line_WaitForInput);
+	OutputLine(NULL, "イデオロギーの対決は議論で行なわれれば平穏だが、",
+		   NULL, " If conflicts in ideology can be resolved through debate, then they're peaceful,", Line_WaitForInput);
+	OutputLine(NULL, "その対決が疫学的に行なわれた場合、恐ろしいことになるからだよ。」",
+		   NULL, " but if those conflicts occur epidemically, they become frightening.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「悪い思想や文化が蔓延するのを食い止めるのを、疫学的に治療する…？」",
+		   NULL, "\"And if one were to treat bad thoughts or the spread of culture as an epidemic...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「中世ヨーロッパのペストなどを想像しなさい。",
+		   NULL, "\"Think about the Black Plague in Europe during the Middle Ages.", Line_WaitForInput);
+	OutputLine(NULL, "悪い伝染病が大流行する。",
+		   NULL, " A vile infectious disease spread.", Line_WaitForInput);
+	OutputLine(NULL, "伝染病患者を強制的に入院させ、完治するまで退院させない。",
+		   NULL, " They forced infected people into hospitals and didn't release them until they completely recovered.", Line_WaitForInput);
+	OutputLine(NULL, "完治できずそのまま病院で死んでしまうこともある。",
+		   NULL, " Some even died in those hospitals.", Line_WaitForInput);
+	OutputLine(NULL, "その死体は焼き捨てる。",
+		   NULL, " They burned their corpses.", Line_WaitForInput);
+	OutputLine(NULL, "患者が触れた物にウィルスが感染しているかもしれないから、それらを全て没収して焼き捨てる。",
+		   NULL, " They confiscated and burned everything those patients touched for fear the plague infected it.", Line_WaitForInput);
+	OutputLine(NULL, "家族にも感染の疑いがあるから強制的に入院させねばならん。」",
+		   NULL, " They even suspected families of infection and forced them into hospitals.\"", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "Ta3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "Ta3", 0 );
+
+	OutputLine(NULL, "「個人の思想を理由に、病気でもないのに入院させるの…？」",
+		   NULL, "\"So they'd hospitalize healthy people over individual ideas...?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta2_Tokyo", "maskright", 1, 0, 1300 );
+
+	OutputLine(NULL, "「思想を病気と置き換えなさい。",
+		   NULL, "\"Replace an idea with a disease.", Line_WaitForInput);
+	OutputLine(NULL, "後はまったく同じだ。",
+		   NULL, " The rest is the same.", Line_WaitForInput);
+	OutputLine(NULL, "完治するまで退院させない、触れた物は感染の疑いがあるから全て焼き捨てる、家族にも感染の疑いがあるから強制入院まで同じだ。」",
+		   NULL, " Patients won't be released until they completely recover. People burn everything that may have been touched by the patient. They force the patient's family to go to the hospital.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「思想なんて個人の自由なんでしょ？",
+		   NULL, "\"People are free to think what they will, right?", Line_WaitForInput);
+	OutputLine(NULL, "　ペストとは違う。」",
+		   NULL, " Thoughts aren't pests.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「人間の思想が、ある種の寄生虫によって生み出されていると仮定した場合、ペストとまったく同じ意味になるのだよ。",
+		   NULL, "\"If an idea was created by parasites, it would be exactly the same as a plague.", Line_WaitForInput);
+	OutputLine(NULL, "つまり、思想は治療不可能な伝染病と置き換えられるわけだ。」",
+		   NULL, " In other words, an idea is like a incurable epidemic.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「つまり……、異なる思想を持った人を、えっと、疫病患者と同じに扱う？」",
+		   NULL, "\"So you mean... anyone with a different idea is treated like they have a disease?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そういうことだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "この考えを延長すると、人種単位、あるいは宗教単位の大量虐殺が起こる。",
+		   NULL, " If we bring this to its logical conclusion, parasites could be responsible for mass murders of people belonging to different races or religions.", Line_WaitForInput);
+	OutputLine(NULL, "……そうすると、再び人類は大量虐殺を肯定してしまう論調になりかねん。",
+		   NULL, " ...But this can be seen as justifying genocide.", Line_WaitForInput);
+	OutputLine(NULL, "だから、脳内寄生虫を語ることは、戦後はタブーになっているのだ。」",
+		   NULL, " Therefore, talking about parasites in brains has been taboo since the war.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta3", "maskleft", 1, 0, 1300 );
+
+	OutputLine(NULL, "「タブーって…？」",
+		   NULL, "\"What does 'taboo' mean...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「触れてはならない、考えてもならないということだな。",
+		   NULL, "\"It means something people shouldn't get involved with.", Line_WaitForInput);
+	OutputLine(NULL, "だから、誰も研究せん。",
+		   NULL, " That's why nobody researches these things.", Line_WaitForInput);
+	OutputLine(NULL, "いや、それどころか、脳内に寄生する存在がいると考えることすら忘れられている。",
+		   NULL, " Nobody even remembers anything about parasites that live in the brain.", Line_WaitForInput);
+	OutputLine(NULL, "…万物の長たる霊長類を支配する寄生虫などいるはずがないと頭から決め付けている。」",
+		   NULL, " They assume that parasites which control humans simply don't exist.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あははは。",
+		   NULL, "\"Ahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "何だかお粗末な話。",
+		   NULL, " That's almost funny.", Line_WaitForInput);
+	OutputLine(NULL, "いないことの証明なんて“悪魔の証明”。",
+		   NULL, " How can they prove something doesn't exist?", Line_WaitForInput);
+	OutputLine(NULL, "絶対に不可能なのに。」",
+		   NULL, " That's just impossible.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「その通り。",
+		   NULL, "\"Exactly.", Line_WaitForInput);
+	OutputLine(NULL, "悪魔がいることを証明することは容易い。",
+		   NULL, " Proving that the devil exists is easy.", Line_WaitForInput);
+	OutputLine(NULL, "悪魔を連れて来ればいいのだからな。",
+		   NULL, " You just have to show him to someone.", Line_WaitForInput);
+	OutputLine(NULL, "だが、いないことを証明することはできん。",
+		   NULL, " But you can't prove he doesn't exist.", Line_WaitForInput);
+	OutputLine(NULL, "“いない”を連れて来ることなどできんのだからな。」",
+		   NULL, " You can't show somebody something that doesn't exist.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あはははは。",
+		   NULL, "\"Ahahahaha.", Line_WaitForInput);
+	OutputLine(NULL, "何だか、脳内寄生虫が、自分たちの存在を秘密にするために、寄生している人間たちを操っているみたい。」",
+		   NULL, " It's almost as if the parasites in the brain are controlling people so that they can keep their own existence a secret.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私と祖父は、愉快に笑い合った。",
+		   NULL, "Me and my grandfather shared a happy laugh together.", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "black", 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "Ta1_Tokyo", 0 );
+
+	OutputLine(NULL, "「人間も自然界の生き物のひとつに過ぎん。",
+		   NULL, "\"Humans are simply another animal in this natural world.", Line_WaitForInput);
+	OutputLine(NULL, "食物連鎖の頂点にいるだけで、それを以って神格化された存在であると思い込むなど愚かしいことなのだ。",
+		   NULL, " We might be at the top of the food chain, but it's foolish to think that we are superior to others.", Line_WaitForInput);
+	OutputLine(NULL, "人とてあらゆる寄生虫に支配されうるのだ。",
+		   NULL, " Humans can be controlled by parasites.", Line_WaitForInput);
+	OutputLine(NULL, "その存在が、今日まで発見されていないからと言って、それを以って存在しないという証拠にはならん。",
+		   NULL, " Just because the existence of such parasites hasn't been proven doesn't mean they don't exist.", Line_WaitForInput);
+	OutputLine(NULL, "……絶対に存在する。",
+		   NULL, " They exist.", Line_WaitForInput);
+	OutputLine(NULL, "必ず存在するのだ。」",
+		   NULL, " I know they do.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「科学の世界にもたくさん、存在が仮定されていて、そのずっと未来にそれが証明されたものがあるんだもんね。」",
+		   NULL, "\"That's happened before in the scientific world, right?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "それらの仮定をした科学者が全て、生きている内に評価を受けられたわけではない。",
+		   NULL, " Not all scientists are recognized for their work while they're alive.", Line_WaitForInput);
+	OutputLine(NULL, "世迷言だと呆れられ、その正しさを証明できなかった科学者も大勢いたのだ。」",
+		   NULL, " There were many who were ridiculed and couldn't prove their theories to be true.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも、",
+		   NULL, "\"But, Grandpa,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…おじいちゃんは生きている内に証明されるといいね。",
+		   NULL, " I hope your theory will be recognized before you die.", Line_WaitForInput);
+	OutputLine(NULL, "じゃなかったら、",
+		   NULL, " Otherwise", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…おじいちゃんが可哀想。」",
+		   NULL, " it would be so sad...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「大丈夫だよ。",
+		   NULL, "\"Don't worry.", Line_WaitForInput);
+	OutputLine(NULL, "神さまは努力する者を見捨てたりはしない。",
+		   NULL, " God doesn't ignore people who work hard.", Line_WaitForInput);
+	OutputLine(NULL, "努力は必ずいつか結実するのだ。」",
+		   NULL, " Hard work always pays off in the end.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「いつかって、それはいつ…？」",
+		   NULL, "\"But when will that happen?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「神がいつ降臨されるのかは誰も知らない。",
+		   NULL, "\"Nobody knows when God is going to descend from Heaven.", Line_WaitForInput);
+	OutputLine(NULL, "それは例えるなら、泥棒がいつ訪れるのかわからないように。",
+		   NULL, " Just like you never know when you'll be robbed.", Line_WaitForInput);
+	OutputLine(NULL, "だから予期せずしてその時を迎えて、不信心であったことに歯軋りすることがないよう、常に目を醒ましていなさい。」",
+		   NULL, " So we always have to be alert and ready, so that we don't miss our chance.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+
+	OutputLine(NULL, "　祖父が好んで口にする言葉だった。",
+		   NULL, "That was something that my grandfather said all the time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　成果がいつ結実するのかは誰も知らない。",
+		   NULL, "Nobody knows when efforts will bear fruit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、いつか必ずその時がやって来る。",
+		   NULL, "But it will happen one day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、その時が訪れて、努力が満たなかったことを悔やまぬよう、常に努力を惜しまないでいなさい。",
+		   NULL, "That's why you must always work hard, so you have no regrets when the time comes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いつかは必ず実るのだから。",
+		   NULL, "Your efforts will bear fruit someday...", Line_WaitForInput);
+	OutputLine(NULL, "………そういう意味らしかった。",
+		   NULL, " That's what he meant.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ta3", 1000 );
+
+	OutputLine(NULL, "「でも、おじいちゃんが生きてる内に絶対に努力が実る…？",
+		   NULL, "\"But is it going to happen before you die?", Line_WaitForInput);
+	OutputLine(NULL, "　生きてる内に認められなかった科学者がたくさんいるのに…？」",
+		   NULL, " Even though there were so many scientists whose work weren't recognized while they were alive?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　幼さゆえの残酷な言葉だったと思う。",
+		   NULL, "That was such a cruel thing to say.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ただ、言った私はそんなつもりはない。",
+		   NULL, "But I didn't mean to be cruel.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　祖父の努力と勤勉を間近で見て知っていたからこそ、短いであろう寿命の中できっと評価されてほしいという願いを言ったつもりだった。",
+		   NULL, "I had seen how hard my grandfather had been working, and I also knew he wouldn't live forever. I just wanted his work to gain recognition before he died.", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "black", 0 );
+	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "Ta1_Tokyo", 0 );
+
+	OutputLine(NULL, "「お前は、イエス様の復活を知っているかな？」",
+		   NULL, "\"Do you know of the resurrection of Jesus Christ?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "磔にされて殺されてから、三日後に復活したという話。",
+		   NULL, " He was crucified and resurrected after three days.", Line_WaitForInput);
+	OutputLine(NULL, "おじいちゃんがよく聞かせてくれた。」",
+		   NULL, " You told me about it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「イエス様は、どういう風に復活したと思うかな。」",
+		   NULL, "\"How do you think Jesus was resurrected?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……朝が来たら目を醒ますように、むっくりと起き上がった…？」",
+		   NULL, "\"Didn't he just get up as if he was waking up in the morning...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「処刑された後に亡骸は埋葬された。",
+		   NULL, "\"He was buried after his execution.", Line_WaitForInput);
+	OutputLine(NULL, "だから体は土の中に埋まっている。」",
+		   NULL, " So his body was in the ground.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………じゃあ、",
+		   NULL, "\"...Did he", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ゾンビみたいに墓石を押しのけて起き上がってきた…？」",
+		   NULL, " break open the tombstone and crawl out like a zombie?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「はははは、違う違う。",
+		   NULL, "\"Hahahaha, no, no.", Line_WaitForInput);
+	OutputLine(NULL, "そんなのを復活とは言わん。",
+		   NULL, " That wouldn't be called a resurrection.", Line_WaitForInput);
+	OutputLine(NULL, "そして、イエス様を殺した罪人たちも、まったく同じことを想像したのだ。」",
+		   NULL, " The sinners who killed Jesus imagined exactly the same thing.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+
+	OutputLine(NULL, "　キリストは処刑される直前に、自身は三日の後に復活すると予言した。",
+		   NULL, "Jesus predicted just before he was executed that he would come back to life after three days.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　罪人たちはキリストを埋葬し、その墓を厳重に封印し、キリストの体が蘇ることがないよう、兵たちに監視させた。",
+		   NULL, "The sinners buried Jesus, sealed his tomb, and posted guards to watch over it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、キリストの言う復活とは、肉体が蘇るという俗的な意味ではなかったのだ。",
+		   NULL, "But what Jesus meant wasn't that he would resurrect physically.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　復活とは、教えが蘇るということ。",
+		   NULL, "He meant his teachings would be resurrected.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　三日の後、キリストの正しい教えは復活し、人々は信仰を取り戻した。",
+		   NULL, "After three days, Jesus' teachings were resurrected, and people regained their belief.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　正しく導かれようとする人々の心に、その教えは蘇ったのだ。",
+		   NULL, "The hearts of those who wanted to be shown the proper way revived his teachings.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それこそがつまり、キリストが復活したということなのだ。",
+		   NULL, "That's what the resurrection of Jesus is all about.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　信仰する人々の心の中にキリストは蘇る。",
+		   NULL, "He came back to life in the hearts of his believers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その時、キリストという存在はすでに地上にはない。",
+		   NULL, "Jesus doesn't exist physically on this Earth.", Line_WaitForInput);
+	OutputLine(NULL, "心の中にある。",
+		   NULL, " But he exists in people's hearts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………つまり、キリストが人間以上の存在となって復活した瞬間なのだ。",
+		   NULL, "...In other words, that's when Jesus became an existence superior to humans.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ta1_Tokyo", 400 );
+
+	OutputLine(NULL, "「例え死後であっても、正当な評価を受けられたなら。",
+		   NULL, "\"Even if it's after the author's death,", Line_WaitForInput);
+	OutputLine(NULL, "その偉業は必ずや蘇る。",
+		   NULL, " as long as his work receives a fair evaluation, it will live again as a great achievement.", Line_WaitForInput);
+	OutputLine(NULL, "その時、私の体が朽ち果ててしまっていても、私の存在は蘇って評価を受けるのだ。」",
+		   NULL, " Even if my body is gone by then, my life will return and recieve recognition.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「それはおじいちゃんが、イエス様と同じように、神さまになったということ…？」",
+		   NULL, "\"Does that mean you'll become a god, just like Jesus did...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうだよ。",
+		   NULL, "\"Indeed.", Line_WaitForInput);
+	OutputLine(NULL, "私の研究はいつか必ず認められる。",
+		   NULL, " My research will be recognized for what it is someday.", Line_WaitForInput);
+	OutputLine(NULL, "その時、おじいちゃんは神さまになれるということなんだよ。",
+		   NULL, " That's when I will become a god.", Line_WaitForInput);
+	OutputLine(NULL, "だから、自分が生きている内に評価されることに焦る必要はないのだ。",
+		   NULL, " That's why I'm not in a rush to achieve that recognition.", Line_WaitForInput);
+	OutputLine(NULL, "その時が訪れるのが、私が生きている内なのか、そうでないのか。",
+		   NULL, " I don't know when that day will come.", Line_WaitForInput);
+	OutputLine(NULL, "それは神さまにもわからない。",
+		   NULL, " God doesn't know that, either.", Line_WaitForInput);
+	OutputLine(NULL, "だが、その日は必ず訪れる。",
+		   NULL, " But the day will come.", Line_WaitForInput);
+	OutputLine(NULL, "だから、その日の訪れを疑うことなく、ひたすらに努力を続けなくてはならないのだよ。」",
+		   NULL, " That's why I need to continue to work as hard as I can.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……………。」",
+		   NULL, "\"......\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　祖父の口から直接、祖父の寿命が長くないことを言われると、",
+		   NULL, "It was very sad", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……悲しい。",
+		   NULL, " to hear my grandfather say that his life would end one day.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　別に特別な病気にかかって余命を宣告されているわけではないが、",
+		   NULL, "He wasn't ill, and he didn't only have a few years left to live.", Line_WaitForInput);
+	OutputLine(NULL, "平均的な寿命を考えれば、祖父の寿命がいつまでも続くことは考えられなかった。",
+		   NULL, " But, set next to the average life span, his remaining years didn't look like much.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私には祖父しかない。",
+		   NULL, "The only person left in my life was my grandfather.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、祖父がいなくなってしまうことを想像したくなかった。",
+		   NULL, "So I didn't even want to consider what it would be like with him gone.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　祖父は、私がそういう話を好まないことを思い出したのだろう。",
+		   NULL, "Grandfather must have remembered that I didn't like to talk about that subject.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　やさしそうに微笑むと、私の頭をそっと撫でてくれた。",
+		   NULL, "With a tender smile, he gently patted my head.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「もちろん、おじいちゃんも、自分が生きている内に研究を認めてもらいたい。",
+		   NULL, "\"Of course, I want my research to be recognized before I die.", Line_WaitForInput);
+	OutputLine(NULL, "だから、精一杯がんばるよ。」",
+		   NULL, " I will do my best.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Yep.", Line_WaitForInput);
+	OutputLine(NULL, "私も、おじいちゃんが世界中の人に褒めてもらえるように、いっぱいいっぱいお手伝いする。」",
+		   NULL, " I'll do my best to help you too.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　おじいちゃんが生きている内に褒めてもらえるように、…というのは省く。",
+		   NULL, "I purposefully didn't mention the \"before you die\" part.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　珍しく、自分の失言を口にする前に気付けた。",
+		   NULL, "I caught myself before I said it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。ありがとう、嬉しいぞ…。」",
+		   NULL, "\"Thank you. That makes me very happy to hear.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　祖父は満足そうに笑ってくれた。",
+		   NULL, "Grandfather smiled in satisfaction.", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 400, FALSE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　宇宙の神秘を解き明かそうなんていう、途方もない研究じゃない。",
+		   NULL, "His research wasn't exactly outrageous. He wasn't trying to uncover the mysteries of the universe.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちが求めるのは、人体寄生虫が人体の行動を支配するかもしれない可能性という、本当にささやかなものなのだ。",
+		   NULL, "He was only searching for the possibility that parasites could be responsible for human behavior. Nothing more than that.", Line_WaitForInput);
+	OutputLine(NULL, "突飛なものでもなんでもない。",
+		   NULL, " Nothing outrageous.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、それは単なる想像ではない。",
+		   NULL, "It really wasn't a wild idea.", Line_WaitForInput);
+	OutputLine(NULL, "その尻尾はすでに掴んでいるのだ。",
+		   NULL, " We even had some leads.", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 400, FALSE );
+	DrawBustshot( 9, "Hi1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawScene( "Hi1", 0 );
+
+	OutputLine(NULL, "　××県鹿骨市、雛見沢。",
+		   NULL, "Hinamizawa Village, Shishibone City, XX Prefecture.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この村の出身者が持つ、偏執的なまでのホームシックと帰巣本能。",
+		   NULL, "The villagers there are possessed by a powerful homesickness.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、それが果たせない時に発現する、祟りに憑かれたと称する一連の異常行動。",
+		   NULL, "When they are unable to return, they allegedly behave abnormally, as if they are cursed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、この村に太古の昔より根付く土着の信仰に見え隠れする異常なルール。",
+		   NULL, "There are also some bizarre rules in place in the village, based on their belief system.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それらを重ね合わせた時、祖父は雛見沢出身者のある共通項に偶然気付き、村を支配する何かの存在を仮定した。",
+		   NULL, "When he was working with the military during the war, my grandfather noticed similiaries between the people in Hinamizawa, and assumed that some kind of existence was responsible for their odd behavior.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、今日まで長い間ずっと研究を続け、その外郭を固めてきたのだ。",
+		   NULL, "He'd been researching it ever since then.", Line_Normal);
+	ClearMessage();
+
+	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "black", 0 );
+	Wait( 800 );
+	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 400, FALSE );
+	DrawBustshot( 9, "Ta2_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawScene( "Ta2_Tokyo", 0 );
+
+	OutputLine(NULL, "　昭和中期。",
+		   NULL, "In the middle of the 20th century...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　日本全国で、大昔から風土病だと思われていた数々の奇病のベールが剥がされていた。",
+		   NULL, "Numerous strange diseases were discovered all over Japan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それらの多くが寄生虫感染症であることがわかり、忌避されがちだった分野が、にわかに脚光を浴び始めているところだった。",
+		   NULL, "Most of them were caused by infectious parasites, and people started to pay attention to this forgotten field of study.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　祖父の研究も、そんな奇病研究の中のひとつに過ぎず、",
+		   NULL, "Grandfather's research was simply one of those investigations into such diseases.", Line_WaitForInput);
+	OutputLine(NULL, "…だからこそ、それらに混じって、当然のように発表され、正当な評価を受けられる日が遠くない内に訪れると確信していた。",
+		   NULL, " Therefore, he believed it would be published amongst other research and attain recognition soon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでも、もし。",
+		   NULL, "But if...", Line_WaitForInput);
+	OutputLine(NULL, "……祖父の研究が、存命の内に実らなかったなら。",
+		   NULL, " If his research didn't bear fruit before his death...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は、",
+		   NULL, "I wanted", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…継ごう。",
+		   NULL, " to continue it.", Line_WaitForInput);
+	OutputLine(NULL, "その研究を。",
+		   NULL, " I wanted to continue his research.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　祖父が教えてくれた。",
+		   NULL, "Grandfather taught me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　復活とは、肉体が蘇ることではない。",
+		   NULL, "Resurrection isn't something that happens physically.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　評価され、偉業が蘇ることなのだ。",
+		   NULL, "It's when your life's work is appreciated. That's what he meant by resurrection.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そしてその時、",
+		   NULL, "...That's when", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "人は神となって復活するのだ。",
+		   NULL, " he'll become a god.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうなれば、祖父が例え寿命を尽きさせてしまっても、常に私と共にいてくれる。",
+		   NULL, "So when my grandfather dies, he'll still be with me forever.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私はもうひとりぼっちにならなくていい。",
+		   NULL, "I wouldn't have to be alone ever again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ずっと、おじいちゃんと一緒なのだ。",
+		   NULL, "I will always be with my grandpa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、祖父と私が二人で成した偉業が認められ、",
+		   NULL, "Our works will gain recognitition", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……祖父と私は神となり、永遠の安寧を得るのだ。",
+		   NULL, " and we will both become gods, gaining eternal peace.", Line_Normal);
+	ClearMessage();
+
+	HideWindow( 0 );
+	DrawSprite( 10, "mono_op_1", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 36, 1000, TRUE );
+	FadeSprite( 1, 0, FALSE );
+	DrawBustshot( 9, "mono_op_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeSprite( 10, 0, FALSE );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　祖父を、",
+		   NULL, "I will", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "神にする。",
+		   NULL, " make my grandfather into a god.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshot( 9, "mono_op_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	OutputLine(NULL, "　私も、",
+		   NULL, "I will", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "神になる。",
+		   NULL, " become a god.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshot( 9, "mono_op_3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	OutputLine(NULL, "　だから、",
+		   NULL, "Therefore,", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "永遠。",
+		   NULL, " we will be granted eternity.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshot( 9, "mono_op_4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	OutputLine(NULL, "　ずっとずっと、",
+		   NULL, "We'll be together", Line_ContinueAfterTyping);
+	Wait( 1000 );
+	OutputLine(NULL, "一緒…。",
+		   NULL, " forever and ever...", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 9, "mono_op_5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawBustshot( 9, "mono_op_6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawBustshot( 9, "mono_op_7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1500 );
+	SetValidityOfInput( TRUE );
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
+	DrawScene( "black", 0 );
+
+	DisplayWindow();
+
+	FadeSprite( 1, 0, TRUE );
+
+	Wait( 3000 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawSprite( 1, "Waku_b", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	DrawScene( "Ko1", 3000 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　…キーホルダーに括り付けられたカギがたったひとつ。",
+		   NULL, "...I was looking at the key on a keychain.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それには鶏小屋と書かれていたが、今、恵理子がカギを刺そうとしている錠前は鶏小屋のものではない。",
+		   NULL, "The key was labelled \"henhouse\", but the lock Eriko was trying to open didn't belong to that door.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　すんなりと開くはずだった。",
+		   NULL, "It should have opened effortlessly.", Line_WaitForInput);
+	OutputLine(NULL, "そういう約束だった。",
+		   NULL, " At least that's what was supposed to happen.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、開かない。",
+		   NULL, "But it didn't open.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　恵理子の額に玉の汗が浮かぶのがわかる。",
+		   NULL, "I noticed beads of sweat forming on Eriko's forehead.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　言い出したのは恵理子だ。",
+		   NULL, "She was the one who came up with this idea.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その恵理子の表情に浮かぶ焦りは、すぐに私たちにも広がった。",
+		   NULL, "Eriko was starting to panic. The rest of us started to panic too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「や、",
+		   NULL, "\"This", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……やっぱり鶏小屋しか開かないカギなんだよ…！",
+		   NULL, " only opens the henhouse...!", Line_WaitForInput);
+	OutputLine(NULL, "　もうやめて戻ろうよ…！」",
+		   NULL, " Let's stop, let's go back...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「静かに！！」",
+		   NULL, "\"Shush!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　本当は私たちは、中庭で鶏小屋の掃除をしなくてはならないのだ。",
+		   NULL, "We were supposed to be cleaning out the henhouse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それがここにいることが知られたなら。",
+		   NULL, "If they found us back here...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そして、私たちが何の目的で、この裏口の錠前を開けようとしているのか、知られたなら。",
+		   NULL, "If they found out why we were here and why we were trying to open up the lock to the back door...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……私たち４人は「手足をもがれた豚の刑」を免れないに違いないのだ………！",
+		   NULL, "...Then all four of us were sure to be sentenced to \"splayed piggy\"...!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ko1", 0 );
+
+	OutputLine(NULL, "「恵理子、焦らないで…！",
+		   NULL, "\"Don't panic, Eriko...!", Line_WaitForInput);
+	OutputLine(NULL, "　だって、そのカギで開くんでしょ？",
+		   NULL, " That key opens this lock, right?", Line_WaitForInput);
+	OutputLine(NULL, "　試したんでしょ？！」",
+		   NULL, " You already tried it, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………だから静かにしてって言ってるでしょ？！",
+		   NULL, "\"...Will you shut up for a minute?!", Line_WaitForInput);
+	OutputLine(NULL, "　カギは合ってるのよ！",
+		   NULL, " This is the right key!", Line_WaitForInput);
+	OutputLine(NULL, "　硬いだけなんだから……！！」",
+		   NULL, " It's just hard to open, that's all...!!\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 2, "semi", 120, 0 );
+
+	OutputLine(NULL, "　それはもはや悲鳴すれすれ。",
+		   NULL, "She was almost shrieking.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……私たちの心臓は、廊下中に響き渡っているのではないかと思うほどに、ばくんばくんと高鳴っているのだった…。",
+		   NULL, "Our hearts were pounding loudly. It was as though the sound of our heartbeats was echoing throughout the hallway...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　その時、明らかに子供のそれとは違う足音が響いてきた。",
+		   NULL, "And at that point, we heard footsteps that didn't belong to a child.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ko1", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「静かに…ッ！！",
+		   NULL, "\"Shush...!!", Line_WaitForInput);
+	OutputLine(NULL, "　誰か来た…！」",
+		   NULL, " Somebody is coming...!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　３人は慌てて息を潜めて気配を殺すが、…恵理子の耳には入っていなかった。",
+		   NULL, "The three of us held our breath, but Eriko didn't hear it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　まるで、この錠前を開けさえすれば、それで全てが決するかのように、",
+		   NULL, "She kept fussing with the lock and the key,", Line_WaitForInput);
+	OutputLine(NULL, "がちゃがちゃと錠前とカギをいじり続けていたのだ。",
+		   NULL, " as if everything would be okay if she could just open the lock.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「恵理子、誰か来るから静かに！！」",
+		   NULL, "\"Eriko, somebody is coming, be quiet!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……このカギで開くんだから…！！",
+		   NULL, "\"I know this is the right key...!!", Line_WaitForInput);
+	OutputLine(NULL, "　夢じゃないの、私は確かに試して、…そして開いたんだからッ！",
+		   NULL, " I'm not dreaming, I already tried and it opened!", Line_WaitForInput);
+	OutputLine(NULL, "　だから開いてよ、何で開かないの？！",
+		   NULL, " Come on, why isn't this working?", Line_WaitForInput);
+	OutputLine(NULL, "　開けば幸せになれる、こんな地獄からおさらばできる！！」",
+		   NULL, " When this lock is open, we can be happy, and we can say goodbye to this hell!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「恵理子ッ、誰か来るんだってばッ！！！」",
+		   NULL, "\"Eriko, someone's coming!!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	DrawScene( "End_3", 0 );
+	FadeSprite( 1, 0, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+
+	DrawScene( "black", 4000 );
+
+	DrawScene( "black", 400 );
+	SetSpeedOfMessage( FALSE, 0 );
+}

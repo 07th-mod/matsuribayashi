@@ -1,0 +1,449 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "Rouka1", 400 );
+
+	PlayBGM( 0, "Iru", 120, 0 );
+
+	OutputLine(NULL, "「それじゃ、俺はそろそろお暇しますわ。",
+		   NULL, "\"Okay, I'll get going.", Line_WaitForInput);
+	OutputLine(NULL, "どうもご馳走様でした。」",
+		   NULL, " Thank you!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇんねえぇんね。",
+		   NULL, "\"Don't mention it.", Line_WaitForInput);
+	OutputLine(NULL, "また来たってぇな。」",
+		   NULL, " Come back anytime, okay?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ただいまー！",
+		   NULL, "\"Hi, I'm home!", Line_WaitForInput);
+	OutputLine(NULL, "　って、あれ、弘叔父さん。",
+		   NULL, " Hey, Uncle Hiroshi.", Line_WaitForInput);
+	OutputLine(NULL, "お久し振りですー！」",
+		   NULL, " Long time no see!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おう、魅音ちゃん。",
+		   NULL, "\"Hey, Mion-chan.", Line_WaitForInput);
+	OutputLine(NULL, "今、帰りかい。",
+		   NULL, " Are you going home?", Line_WaitForInput);
+	OutputLine(NULL, "叔父さんは今から送迎だよ。」",
+		   NULL, " I have to give my clients a ride.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Me_DefA2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「送迎？",
+		   NULL, "\"A ride?", Line_WaitForInput);
+	OutputLine(NULL, "　あぁ、不動産屋さんのお仕事？」",
+		   NULL, " Ah, you're talking about your realtor business, huh?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "So1", 400 );
+
+	OutputLine(NULL, "　園崎家は雛見沢屈指の大地主だ。",
+		   NULL, "The Sonozaki family is one of the largest landowners here in the Hinamizawa area.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もっともこんな田舎の余った土地だから、荒れるに任せているだけで有効利用しているわけじゃない。",
+		   NULL, "However, since all the land is out here in the countryside, it just ends up sitting there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな村内の園崎家地所を、最近は分譲地として売りに出していた。",
+		   NULL, "Recently, the land owned by the Sonozaki family was put on sale in lots.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ご先祖様から受け継いだ土地を余所者に切り売りしていいのかという批判も、一応、親族会議では出たが、婆っちゃが、しゃあらしいわぁ！",
+		   NULL, "At the family meeting, some of our relatives opposed the idea by saying we shouldn't sell off land that was handed down from our ancestors.", Line_WaitForInput);
+	OutputLine(NULL, "　と一喝してそれにて決着。",
+		   NULL, " But Granny snapped and shut them right up.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　休耕地のいくつかが更地にされて、分譲地として解放されることになったのだ。",
+		   NULL, "Some of the unused fields were made into vacant lots and released for public sale.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…これに関しては、私も疑問があった。",
+		   NULL, "Actually, I had some questions about it too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だって、園崎家は大金持ちだ。",
+		   NULL, "The Sonozaki family is very wealthy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　土地も余ってるがお金だって余ってる。",
+		   NULL, "We have plenty of land, as well as money.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　わざわざ土地を切り売りしなければならない理由がない。",
+		   NULL, "So why did we have to sell it off?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いや、それどころか、先祖の土地を余所者に売るなんて話、婆っちゃが言い出すなんて。",
+		   NULL, "What's more surprising to me is that Granny was the one who came up with the idea.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それどころかむしろ、血管を浮かせるほどに怒鳴って反対しそうなのに。",
+		   NULL, "I would have thought she'd get furious if someone even mentioned something like that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "So_G1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「じゃあね、駅前に寄った時はぜひ遊びにおいでよ。",
+		   NULL, "\"Okay, if you're ever near the station, be sure to stop by.", Line_WaitForInput);
+	OutputLine(NULL, "麦茶くらいご馳走するから。」",
+		   NULL, " I'll treat you to cup of barley tea!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はい、ありがとうございます。",
+		   NULL, "\"Sure, thank you very much!", Line_WaitForInput);
+	OutputLine(NULL, "お仕事はどんな感じですか？」",
+		   NULL, " So how is your business going?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「都会の人が案外、興味を持ってくれたからびっくりだわ！",
+		   NULL, "\"I'm surprised there are actually city folks who are interested!", Line_WaitForInput);
+	OutputLine(NULL, "　便利な都会に住みながら、わざわざこんな田舎に別荘が持ちたい小金持ちばっかりだね。」",
+		   NULL, " They must be those nouveau riche types who live in the big city, yet also want a house in the countryside.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「やれやれ、物好きなことで！」",
+		   NULL, "\"Well, I guess some people are curious!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「一軒、別荘じゃなくて、引越しで検討されてるお宅があったね。",
+		   NULL, "\"There's one family seeking to move here, not purchase a villa.", Line_WaitForInput);
+	OutputLine(NULL, "アトリエが持ちたいとか言ってたから、画家さんとかかねぇ？」",
+		   NULL, " He said he wants to build a studio, so he must be an artist of some sort.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「へー！",
+		   NULL, "\"Ho!", Line_WaitForInput);
+	OutputLine(NULL, "　そりゃすごいや！」",
+		   NULL, " That's great!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おっと、いけねぇわ！",
+		   NULL, "\"Oh, gosh!", Line_WaitForInput);
+	OutputLine(NULL, "　じゃ、叔父さんはバスに戻るわ！」",
+		   NULL, " I better go now!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　分譲地の見学ツアーを企画したらしく、それの送迎バスの運転をしてきた、ということらしい。",
+		   NULL, "Supposedly, he planned a tour to show them the lots, and he's the one driving the bus.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そろそろ見学や説明が終わる頃合なのだろう。",
+		   NULL, "It should be about time for the tour and explanations to end.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　叔父さんは松の枝をくぐって、ぱたぱたと駆けて行った。",
+		   NULL, "He left in a hurry.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "Sora5", 400 );
+
+	OutputLine(NULL, "「…ねぇ、聞いていい？",
+		   NULL, "\"Hey, can I ask you something?", Line_WaitForInput);
+	OutputLine(NULL, "　余所者嫌いの婆っちゃがさ、どうしてわざわざ分譲地なんかにしたの？」",
+		   NULL, " Why did you want to sell our land? You don't like newcomers...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「私ゃあ余所者なんか嫌いだし都会者も大嫌いだ。",
+		   NULL, "\"I don't like newcomers and I don't like big city people either.", Line_WaitForInput);
+	OutputLine(NULL, "……だが、村にゃ必要なんよ。",
+		   NULL, " ...But the village needs them.", Line_WaitForInput);
+	OutputLine(NULL, "空気の入れ替えみたいなもんさな。」",
+		   NULL, " It's like ventilating a room.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「外の人が来ることで、…何か村にいい影響があるということ？」",
+		   NULL, "\"Is it good for the village to have new people move in?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ここはいい村だぁね。",
+		   NULL, "\"This is a wonderful village.", Line_WaitForInput);
+	OutputLine(NULL, "……今は忙しい世の中だから、一日たりともそったぁしといとくらんがな。",
+		   NULL, " But the world is changing quickly.", Line_WaitForInput);
+	OutputLine(NULL, "昔だったら、十年二十年住んでてもなぁんにも変わらん、変化のない静かな村だったんよ。」",
+		   NULL, " In the past, a very small change took ten or even twenty years to happen. It was such a quiet and unchanging village.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「まぁ、それが田舎ってもんだしねぇ。",
+		   NULL, "\"Well, that's rural life.", Line_WaitForInput);
+	OutputLine(NULL, "この村じゃ、昨日と今日と明日に、何の違いもない。",
+		   NULL, " In this village, nothing is different from yesterday and today.", Line_WaitForInput);
+	OutputLine(NULL, "……私ゃ退屈だけどねぇ！」",
+		   NULL, " ...It's too boring for me, though!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも、友達ができたろ。",
+		   NULL, "\"But you made a friend, didn't you?", Line_WaitForInput);
+	OutputLine(NULL, "外から竜宮のレナちゃんが引っ越してきて友達になってくれたんだろが。",
+		   NULL, " Rena Ryuugu-chan moved here and you got along great.", Line_WaitForInput);
+	OutputLine(NULL, "近い歳の友達ができて嬉しい、言うとったがな。」",
+		   NULL, " You told me you were happy that you had a friend your age.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うん。",
+		   NULL, "\"Yeah.", Line_WaitForInput);
+	OutputLine(NULL, "予期せぬ友達が突然できるのは楽しいね。」",
+		   NULL, " Making friends unexpectedly is fun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「レナちゃんが来んとな、魅音、学校が退屈だぁ退屈だぁ言うとったんね。",
+		   NULL, "\"I remember you saying that school is boring when Rena-chan is absent.", Line_WaitForInput);
+	OutputLine(NULL, "よぅお、覚えとる。",
+		   NULL, " Do you remember that?", Line_WaitForInput);
+	OutputLine(NULL, "くっくっくっく！」",
+		   NULL, " Heh heh heh heh!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「それが、外から引っ越してくることによる効果だって言いたいわけ？」",
+		   NULL, "\"Are you saying that's the good thing about letting new people move here?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…どんな寒い冬場にかて、たまには換気をせんとな、囲炉裏の悪い空気が溜まって窒息しちまうん。",
+		   NULL, "\"...No matter how cold it gets, you still have to ventilate your living space. Otherwise, it gets filled with bad air and you'll suffocate to death.", Line_WaitForInput);
+	OutputLine(NULL, "寒くてしんどいのは承知で、窓をがらりと開けることもあるんよ。」",
+		   NULL, " You open the window, even knowing the freezing cold air will come in.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskdown", 1, 0, 300 );
+	DrawBustshot( 1, "Me_DefA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "Rouka1", 400 );
+
+	OutputLine(NULL, "「……外から人を迎えることが、村の換気になる？」",
+		   NULL, "\"...Letting outsiders move here is like ventilating the village?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あぁ、なるん。",
+		   NULL, "\"Sure.", Line_WaitForInput);
+	OutputLine(NULL, "そして綺麗な空気を入れて、私らみたいな悪い空気はとっとと追い出されるべきなんよ。」",
+		   NULL, " It lets fresh air in and gets rid of bad air like us.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　北条家のことを一言でも出せば、婆っちゃは烈火のように怒り出してしまうから言えないが。",
+		   NULL, "If I bring up the Houjou family, I know Granny will explode, so I won't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……多分、婆っちゃは北条家に対する、いつまでも消えない村八分の気風とか、そういうのを全部総括して言ってると思う。",
+		   NULL, "But... I think what Granny is trying to say includes things like their ongoing isolation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　北条家と大喧嘩をした説明会の時のことを思い出すと、今でも腸が煮えくりかえるが、",
+		   NULL, "Even now, when she remembers about what happened at that explanatory meeting, she gets really upset.", Line_WaitForInput);
+	OutputLine(NULL, "……それでも、そろそろ鞘に収めた方がいいと思っているのだろう。",
+		   NULL, " But I guess even she feels that needs to come to an end.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もっとも、安易に許すとは言えない難しいお年頃だ。",
+		   NULL, "But, of course, she can't just say she'll forgive them, not when she's at this stubborn age.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　対外的にはもう勘弁してやるとは言えない。",
+		   NULL, "She can't lose face by openly saying they need to be forgiven.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………本当は嫌いじゃないくせに、面と向うと邪険にしてしまう、小学生女子なみの感情表現のような気がする。",
+		   NULL, "......Honestly, I think she's behaving like a little schoolgirl who actually likes a person but treats them rudely when they're around.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…人って、歳を取ると、どうやら一周回ってきて、子供に戻るんじゃないだろうか。",
+		   NULL, "...Maybe people really do go back to being children when they get old enough.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは婆っちゃだけじゃない。",
+		   NULL, "I'm not just talking about Granny.", Line_WaitForInput);
+	OutputLine(NULL, "村のお年寄りたち全体。",
+		   NULL, " The same can be said about all of the old people in the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……いや、村に染み付いた悪弊と言うべきか。",
+		   NULL, "...No, maybe I should say the evil around here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは多分、婆っちゃの例えた、澱んだ悪い空気とそっくりなものだ。",
+		   NULL, "That must be what she meant by bad air.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　締め切った室内でいくらばたばたと扇いだって、何の意味もない。",
+		   NULL, "There's no use circulating the air in a closed room.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　窓を開けて、新鮮な空気をたっぷり入れなきゃ、室内の空気は澄まないのだから。",
+		   NULL, "Unless you open the windows and let fresh air in, the air in the room won't be purified.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora5", 400 );
+
+	OutputLine(NULL, "「実際に引っ越してくる人があるかはわからないけど。",
+		   NULL, "\"We don't know if there's actually going to be people moving here,", Line_WaitForInput);
+	OutputLine(NULL, "その人にそこまでを期待しちゃうのは気の毒じゃない？",
+		   NULL, " but don't you think you're expecting too much from whoever does?", Line_WaitForInput);
+	OutputLine(NULL, "　くっくっく！」",
+		   NULL, " Heh heh heh!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「レナちゃんが１人転校してきても魅音は変わるんね。",
+		   NULL, "\"Just Rena-chan moving here changed you, Mion.", Line_WaitForInput);
+	OutputLine(NULL, "誰が引っ越してきても、きっと村は変わる。",
+		   NULL, " Whoever moves here will change this village.", Line_WaitForInput);
+	OutputLine(NULL, "……願わくば、それが元気な若者で、わしら年寄り連中が安心して村を任せられるくらい、大暴れしてくれよると嬉しいんだが。",
+		   NULL, " If possible, I hope some young and energetic people who have the charisma to lead will appear.", Line_WaitForInput);
+	OutputLine(NULL, "それこそ年寄り連中が、もうやっとられんね、あの世に退散するわー言うくらいにな。」",
+		   NULL, " They need to be the ones to put us old people away into Heaven.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「くっくっく…、何それ。",
+		   NULL, "\"Heh heh heh,", Line_WaitForInput);
+	OutputLine(NULL, "死んだおじいちゃんの話？」",
+		   NULL, " are you thinking about Gramps?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あほんたれ、誰が爺さまの話をしたんよ…！！",
+		   NULL, "\"Damn you, nobody's thinking about him!", Line_WaitForInput);
+	OutputLine(NULL, "　ほれ、お手伝いさん言って、縁側のお茶を片付けさせてくれな。」",
+		   NULL, " Here, have the housekeeper put away the tea set on the veranda.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「へいへい。",
+		   NULL, "\"Okay, okay.", Line_WaitForInput);
+	OutputLine(NULL, "了解了解。」",
+		   NULL, " I will!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Rouka1", 400 );
+
+	OutputLine(NULL, "「……………魅音。」",
+		   NULL, "\"......Mion.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ん？」",
+		   NULL, "\"Hmm?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………北条悟史が消えた日。",
+		   NULL, "\"...The day Houjou Satoshi disappeared, ", Line_WaitForInput);
+	OutputLine(NULL, "…お前、私に詰め寄ったろが。」",
+		   NULL, "you came to me, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…あぁ、そんなこともしたね。",
+		   NULL, "\"Ah, yeah, I guess I did...", Line_WaitForInput);
+	OutputLine(NULL, "…あはは。」",
+		   NULL, " Aha ha ha.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私ゃな。",
+		   NULL, "\"That is...", Line_WaitForInput);
+	OutputLine(NULL, "…あれで目が覚めたんよ。",
+		   NULL, " what woke me up.", Line_WaitForInput);
+	OutputLine(NULL, "……北条家がどうのこうの言う問題は、年寄り連中が死ねば時間が解決してくれるなんてんじゃあかんね。",
+		   NULL, " This problem with the Houjou family, we can't just let time take care of it.", Line_WaitForInput);
+	OutputLine(NULL, "……そんなの待たず、早ぅ解決せんとなあかん。」",
+		   NULL, " We have to take care of it ourselves as soon as possible.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも、自分にはそれができないから。",
+		   NULL, "\"But you can't do it yourself, ", Line_WaitForInput);
+	OutputLine(NULL, "…余所者にそれを託す？」",
+		   NULL, "so you're going to have an outsider take care of it?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………それが、私にできる精一杯だんね。」",
+		   NULL, "\"...That's the best I can do.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「どんな悪い手札だって、次のドローで良い札が入れば、流れが変わるきっかけになることもある。",
+		   NULL, "\"No matter how bad your hand is, the next card can change the flow of the game.", Line_WaitForInput);
+	OutputLine(NULL, "………それに期待して山から札を引くのも、ありかもしれない。」",
+		   NULL, " So maybe it's a good idea to draw cards from the stack.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「新しい風は、魅音、お前らの世代になる。……外の風を迎え入れたれな。",
+		   NULL, "\"Your generation will be a new wind. Let that new wind come from the outside.", Line_WaitForInput);
+	OutputLine(NULL, "…そして、お前は内からの風となって、交じり合いながら村の澱みを吹き飛ばしてくれ。」",
+		   NULL, " And you'll be the wind from the inside. When both winds create a gale, the gust will blow away the stale air from the village.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「他力本願の極みだね。",
+		   NULL, "\"That's the epitome of leaving your problems to others.", Line_WaitForInput);
+	OutputLine(NULL, "自分が火種を作ったくせに、孫にその尻拭いをさせるとは。」",
+		   NULL, " You're the one who started the fire, and you're trying to have your grandchild take care of it?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……そう言うなや。",
+		   NULL, "\"...Oh, don't say that.", Line_WaitForInput);
+	OutputLine(NULL, "新しい風を、",
+		   NULL, " As the new leader of the Sonozaki family,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…新しい園崎家の頭首として、村に招き入れたれ。」",
+		   NULL, " bring the new wind into the village.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…それが、次期頭首の仕事だってんなら。」",
+		   NULL, "\"...If you're say that's my job as your successor...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………頼むわ。",
+		   NULL, "\"Please,", Line_WaitForInput);
+	OutputLine(NULL, "魅音。",
+		   NULL, " Mion.", Line_WaitForInput);
+	OutputLine(NULL, "私ゃあ老いたんね。",
+		   NULL, " I'm too old.", Line_WaitForInput);
+	OutputLine(NULL, "もう憎まれ役しかでけん。」",
+		   NULL, " The only thing I can do now is to be despised by people.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　風鈴がチリンと、弱々しく鳴った。",
+		   NULL, "The wind chime sounded quietly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは涼風がこれから吹くことを知らせる先触れだったに違いない…。",
+		   NULL, "Maybe that's a sign to let us know a cool breeze is on the way...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

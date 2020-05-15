@@ -1,0 +1,380 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "　今年は充分な即応体制を敷いていた。",
+		   NULL, "We were prepared to respond quickly this year.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのため、ただちに現場を確保して捜査を開始することができた。",
+		   NULL, "That was why we were able to start the investigation immediately by securing the crime scene.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　被害者は、例の北条夫妻の弟夫婦の妻。",
+		   NULL, "The victim is the wife of the younger brother of the Houjou couple.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　四年目のオヤシロさまの祟りの相手として、極めて妥当な対象だった。",
+		   NULL, "So she's an extremely suitable target for the fourth year's curse of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　近所での評判は最悪。",
+		   NULL, "She has a horrible reputation among the locals.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　事件後、誰もが祟られて当然だと口にする有様だった。",
+		   NULL, "After the incident, everyone said she deserved to be cursed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……犯人の目星は、大体ついていた。",
+		   NULL, "...I have a general idea of who the culprit must be.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　恐らく、…北条悟史。",
+		   NULL, "It's probably... Satoshi Houjou.", Line_WaitForInput);
+	OutputLine(NULL, "あの純朴そうな少年だ。",
+		   NULL, " That innocent-looking kid.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　動機はある。",
+		   NULL, "There's even a motive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ホトケは彼の妹を執拗に苛めていた。",
+		   NULL, "The deceased abused his sister relentlessly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに対しての報復的犯行に違いない。",
+		   NULL, "So this would be in revenge for that.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　また、現場検証に立ち会わせた際の挙動も、どこか落ち着きがなく、それでいて無関係な人間だったならあり得ないほど、妙なところで落ち着いていて。",
+		   NULL, "Also, when he attended the inspection of the crime scene, he was rather frantic, yet also far too composed, as if he was totally unrelated to the incident.", Line_WaitForInput);
+	OutputLine(NULL, "…私の短くない刑事生活が育んだ直感が、十中八九、こいつに違いないと教えてくれていた。",
+		   NULL, " My intuition from many years of police work tells me that eight or nine times out of ten, someone who acts like that is the perp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼だと断定する決定的証拠はないが、…任意同行を求めて、少し揺さぶってみれば、自分から犯行を認めそうな気がしていた。",
+		   NULL, "I have no concrete proof, but if I question him and shake him up a bit, I have a feeling he'll confess.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ke_Ky1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「これだけホトケを滅多打ちにしていれば、ホシも返り血を少なからず浴びただろうと思います。",
+		   NULL, "\"For the victim to be so beaten up, the culprit must have some blood on him as well.", Line_WaitForInput);
+	OutputLine(NULL, "そいつが見つけられれば決め手になりそうですね。」",
+		   NULL, " If we can find that, then we'll have proof.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まぁ、よっぽどの間抜けでなけりゃあ処分してるでしょうがねぇ。",
+		   NULL, "\"Unless he's a complete fool, I'm sure he's already gotten rid of it by now.", Line_WaitForInput);
+	OutputLine(NULL, "犯行を認めた後に、捨てたと称する場所から発見できれば、検察も納得してくれるでしょう。」",
+		   NULL, " If we can find any in the place he says he disposed it in after he fesses up, then we can convince the prosecutor too.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　単独の事件としては非常に安っぽいものだった。",
+		   NULL, "This was pretty insignificant as a standalone case.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……北条悟史がゲロしてくれればそれで解決。",
+		   NULL, "...A confession from Satoshi Houjou would end it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私以外の連中はそう思っただろう。",
+		   NULL, "Everyone except me must believe that.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……だが、連続怪死事件として見た場合、事件はそれでは終わらない。",
+		   NULL, "But if I look at it as a part of the series of mysterious deaths, it won't be so easy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この事件の背後には村の深部、御三家、",
+		   NULL, "Either the Three Families of the village,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…あるいは園崎家が直接関わっている。",
+		   NULL, " or the Sonozaki family alone, is directly involved in this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　連中が黒幕なら、北条悟史にうまいこと犯行を唆して実行犯に仕立てたに違いないのだ。",
+		   NULL, "If they are the ones pulling the strings, they must have instigated Satoshi Houjou into committing this crime.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………だが、そうならば連中にとって北条悟史は、知り過ぎた人物になる。",
+		   NULL, "......If so, Satoshi Houjou is someone who knows way too much about them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　園崎家はあくまでも黒幕として君臨する。",
+		   NULL, "The Sonozaki family's actions must remain hidden.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこへつながるカギになりかねない、彼を放置したりするだろうか…？",
+		   NULL, "If he could connect them to the crime, would they let him run around freely?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　北条悟史が妹思いな点を突いて叔母殺しを唆し、四年目の祟りを執行させた…。",
+		   NULL, "Satoshi Houjou is a loving brother who cares very much for his sister, and they set him up to kill his aunt as the fourth year's curse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、……黒幕との接点のあった北条悟史も消してしまえば…。",
+		   NULL, "After that... they will eliminate the one person who can connect them to the crime.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………北条悟史は単なる犯人じゃない。",
+		   NULL, "......Satoshi Houjou is not just a simple criminal.", Line_WaitForInput);
+	OutputLine(NULL, "…仕立て上げられた道化なのかもしれない。",
+		   NULL, " He was set up.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ke_S2", 400 );
+
+	OutputLine(NULL, "　そしてその後、…私の予想は的中した。",
+		   NULL, "And after that, my suspicions were confirmed...", Line_WaitForInput);
+	OutputLine(NULL, "……彼は突然、失踪するのである。",
+		   NULL, " For he abruptly vanished.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それもややこしい消え方だ。",
+		   NULL, "He disappeared in such a puzzling way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　事件の発覚を恐れて逃走したのではない。",
+		   NULL, "He didn't run because he was afraid that his crime had come to light.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……事件の犯人は別に現れた。",
+		   NULL, "......Another culprit came into the picture.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　すでに別件で逮捕され、しかも獄中で死んだばかりのイカレた野郎だ。",
+		   NULL, "He was already arrested for a different crime and furthermore, he died while in prison.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　犯人しか知りえないことをすでに告白していた。",
+		   NULL, "He confessed to information only the culprit himself would have known.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ゆえに犯人。",
+		   NULL, "Therefore, he must be the culprit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかもすでに死亡しているため、捜査は終了。",
+		   NULL, "But as he's already dead, the investigation was closed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして北条悟史は、綿流しから数日後に蒸発。",
+		   NULL, "Then Satoshi Houjou disappeared a few days after the festival.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………北条悟史と事件を結び付けたくない何者かが暗躍していることは明白だ。",
+		   NULL, "......It's obvious someone doesn't want Satoshi Houjou to be connected to this incident.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私には上層部から、事件の捜査を終了させるようにと圧力が掛かり、",
+		   NULL, "My boss put pressure on me to close the investigation and to file Satoshi Houjou's disappearance as a separate incident.", Line_WaitForInput);
+	OutputLine(NULL, "北条悟史失踪事件は、単品扱いとなって担当部署までもが変わることになったのだから。",
+		   NULL, " He even handed the case over to a different section.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これほど性急に捜査を決着させる手口は、一昨年の北条夫妻転落事故の時、事件性を強引に否定し、",
+		   NULL, "The way this case is closing so rapidly,", Line_WaitForInput);
+	OutputLine(NULL, "無理やり事故ということで決着させてしまった時とあまりに酷似している。",
+		   NULL, " greatly resembles the same trick used two years ago with the Houjou couple's accident.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………警察上層部に圧力を掛けることができる“何者か”の仕業であることは疑いようもない。",
+		   NULL, "......There's no doubt it's the work of someone who can put pressure on the police.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして皮肉にも、……雛見沢界隈で警察上層部に圧力を掛けることができるのは園崎家しかあり得ないのだ。",
+		   NULL, "As it happens... the Sonozaki family is the only one who can actually exact influence on the police department here in the Hinamizawa area.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…うまく尻尾を隠したつもりで、むしろこれ以上ないくらいの形で正体を現したと言ってもいいだろう。",
+		   NULL, "They may think their trails are covered, but this points towards them more clearly than anything.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　情報屋経由だが、園崎お魎は四年目の祟りについて親族会議にて言及し、自らが黒幕であることを仄めかしたという。",
+		   NULL, "According to my informant, Oryou Sonozaki mentioned the fourth year's curse at the family meeting and hinted that she was the one behind it all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……仄めかすだけでは証拠にはならないが、とにかく、黒幕の一番上に園崎お魎がいることだけは間違いないのだ…。",
+		   NULL, "...Hinting isn't strong enough evidence, but there is no mistaking that Oryou Sonozaki is the one pulling the strings.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　おやっさんの仇はわかってる。",
+		   NULL, "I know they're the ones who did in the old man.", Line_WaitForInput);
+	OutputLine(NULL, "なのに、尻尾がどうしても掴めない…！",
+		   NULL, " But I just can't grab them!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　未だ逃走を続ける主犯格は、どうせ園崎家がどこかに匿っているから見付からないのだ。",
+		   NULL, "The principal offender is still on the loose, but I'm sure he's being sheltered somewhere by the Sonozaki family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そいつをひっ捕らえ、未だ見付からないおやっさんの右腕を見付け出す。",
+		   NULL, "...I have to locate him, and find that missing right arm!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　おやっさんの墓前に右腕を返し、…主犯格と黒幕どもを墓前で土下座させてやるのだ…。",
+		   NULL, "I'll return the arm to his grave, and make the principal offender and the masterminds both bow down before it.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Hi2", 1000 );
+
+	OutputLine(NULL, "　……もっとも、北条悟史が消えたように、その主犯格もすでに消されているだろう。",
+		   NULL, "...However, just like how Satoshi Houjou disappeared, it's possible the principal offender has already been eliminated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　きっととっくに殺されて、永遠に見付からない場所に埋められている。",
+		   NULL, "I bet he's already been killed and buried somewhere nobody can find.", Line_WaitForInput);
+	OutputLine(NULL, "でも、ならばそれでもいい。",
+		   NULL, " If that's the case, then that's fine.", Line_WaitForInput);
+	OutputLine(NULL, "………おやっさんを殺せと指示したババアに、墓前で額を地面に擦り付けさせてやる。",
+		   NULL, " ......I'll make the old bag who ordered someone to kill the old man slam her forehead on the ground before his grave.", Line_WaitForInput);
+	OutputLine(NULL, "絶対に……絶対に……！",
+		   NULL, " ...This, I swear...!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　オヤシロさまの祟りも四年目を数えると、…気の早い話で、来年の五年目にもきっと何かが起こるに違いないという憶測が、すでに流れている。",
+		   NULL, "After the fourth year's curse, people are already saying something will happen again next year.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は充分な準備があったにもかかわらず、この四年目を有効に活かすことができなかった。",
+		   NULL, "Even with all my preparations, I couldn't prevent the incident from happening this time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　やはり、起こってからでは駄目なのだ。",
+		   NULL, "It's too late if something happens.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…起こる前から、村の内部に目を光らせていなくてはならない…。",
+		   NULL, "I must keep my eyes on the core of the village before something takes place.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、……私には是が非でも来年で決着を着けねばならない都合がある。",
+		   NULL, "There's a reason why I have to get to the bottom of this by next year.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私が、…定年を迎えるからだ。",
+		   NULL, "Because... I'm retiring.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　母は故郷の北海道に帰ることを強く希望しており、ずいぶん前から私の退職に合わせて北海道に引っ越したいと言ってきた。",
+		   NULL, "My mother has been wanting to go back to her hometown in Hokkaido, and for a long time, she's been asking me to move there when I retire.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私も、最後にできる親孝行だろうと思い、退職したら共に北海道へ引っ越すことで承知している。",
+		   NULL, "I feel that's the least I can do for her, so I agreed to move to Hokkaido when I retire.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……だから、来年がおやっさんの仇を討てる最後のチャンスなのだ。",
+		   NULL, "...So next year is my last chance to avenge the old man's death.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　すでに四年うまく行っている事件だ。",
+		   NULL, "It happened four years in a row.", Line_WaitForInput);
+	OutputLine(NULL, "…恐らく、来年の五年目も起こる。",
+		   NULL, " So more than likely, there will be fifth curse too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　連続怪死事件によって、ダム戦争以来の村の結束は一層引き締められた。",
+		   NULL, "As a result of the series of mysterious deaths, the village has been tightly knit together since the dam protests.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…裏切り者には祟りという名の制裁があることが、きっちりと示されたからだ。",
+		   NULL, "They were told that betrayers will be punished in the name of the curse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……黒幕たちにとって、連続怪死事件を起こす意味は充分にある。",
+		   NULL, "...To the masterminds, that's enough reason to continue with the series of mysterious deaths.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　噂では、今年のホトケの叔母が祟られたのは、不信心で綿流しの祭りに参加しなかったからだ、というのだ。",
+		   NULL, "According to rumors, this year's victim, the aunt, was cursed because she didn't participate in the Watanagashi festival.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのため、もし来年の祭りに参加しなかったならば、自分が祟られる対象になるかもしれないと考える村人もいるという。",
+		   NULL, "So there are villagers who believe that if they don't participate in next year's Watanagashi, they'll be cursed...", Line_WaitForInput);
+	OutputLine(NULL, "………来年の祭りは盛況になるに違いない。",
+		   NULL, " It'll be a huge festival next year for sure. ", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　必ず、来年も起こる。",
+		   NULL, "Something will happen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢村連続怪死事件。",
+		   NULL, "The series of mysterious deaths in Hinamizawa,", Line_WaitForInput);
+	OutputLine(NULL, "通称オヤシロさまの祟り。",
+		   NULL, " also known as the curse of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そこでこそ必ず。",
+		   NULL, "...I will avenge the old man.", Line_WaitForInput);
+	OutputLine(NULL, "私はおやっさんの仇を討つ……。",
+		   NULL, " I definitely, definitely will...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

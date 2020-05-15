@@ -1,0 +1,593 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "black", "maskc", 1, 0, 1300 );
+
+	PlayBGM( 0, "demo_48khz", 120, 0 );
+
+	DrawScene( "Ka1", 1000 );
+
+	OutputLine(NULL, "　スライドによる説明が終わり、会議室に灯りが着くと、監査スタッフたちは誰からともなく拍手を始め、入江機関の劇的快挙を讃えたのだった。",
+		   NULL, "The lights came on in the meeting room as the slideshow ended, and all the auditors began to applaud, praising the Irie Institution's dramatic accomplishments.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「素晴らしい、実に素晴らしい！",
+		   NULL, "\"Wonderful, absolutely wonderful!!", Line_WaitForInput);
+	OutputLine(NULL, "　本音を言わせてもらえば、私はこの雛見沢症候群の研究はあまり期待していませんでした。",
+		   NULL, " To be honest with you, I wasn't expecting too much from this Hinamizawa Syndrome research.", Line_WaitForInput);
+	OutputLine(NULL, "仮に進むとしても１０年単位で三歩進んで二歩下がるような研究になると思っていました。」",
+		   NULL, " I figured that even if there was progress, it would be three steps forward and two steps back every decade.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「いやいや！",
+		   NULL, "\"Oh my!", Line_WaitForInput);
+	OutputLine(NULL, "　それがこれだけの短期間の間にこれだけの成果を挙げられるとは！",
+		   NULL, " How impressive it is to achieve so much in such a short period of time!", Line_WaitForInput);
+	OutputLine(NULL, "　入江所長の努力と指導の賜物です！」",
+		   NULL, " This is all thanks to you, Director Irie!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Def2+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そんなことはありません。",
+		   NULL, "\"Oh, no.", Line_WaitForInput);
+	OutputLine(NULL, "私を支えてくださる優秀なスタッフと、そこの鷹野さんのお陰です。」",
+		   NULL, " This is all because of the staff that supported me, and Takano-san too.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ta_Warai#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ご謙遜を。",
+		   NULL, "\"Don't be so humble.", Line_WaitForInput);
+	OutputLine(NULL, "くすくすくす。",
+		   NULL, " Hee hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "やはり脳に関しては入江所長は天才ですわ。",
+		   NULL, " Director Irie is a genius in the field of neurology.", Line_WaitForInput);
+	OutputLine(NULL, "何しろ、脳に関しては誰も及ばない実績をお持ちなのですから。」",
+		   NULL, " After all, he's also produced greater achievements than any other doctor when it comes to the brain.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうですなぁ！",
+		   NULL, "\"That's true!", Line_WaitForInput);
+	OutputLine(NULL, "　あなたと同じ歳の医者で、あなたほど大勢の脳みそをご覧になってきた方はおりますまい！」",
+		   NULL, " Not many doctors as young as you have nearly as much experience operating on brains.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Tomi_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ka2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「おめでとうございます、入江二佐。",
+		   NULL, "\"Congratulations, Lieutenant Colonel Irie!", Line_WaitForInput);
+	OutputLine(NULL, "私もこれで東京に胸を張って報告に帰れます。」",
+		   NULL, " Now I can go back to Tokyo with my head held high.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Iri_Def1+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「富竹さんによいお土産が持たせられて光栄です。",
+		   NULL, "\"I'm honored we gave you something good to take back with you, Tomitake-san.", Line_WaitForInput);
+	OutputLine(NULL, "あと、二佐というのはご勘弁を、どうしても馴染めませんので…。",
+		   NULL, " By the way, could you please stop calling me Lieutenant Colonel? I just can't get used to it...", Line_WaitForInput);
+	OutputLine(NULL, "というか、リサさんって聞こえるんですよね。」",
+		   NULL, " I almost prefer 'Risa-san' at this point.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Warai", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あっはっはっは！",
+		   NULL, "\"Ah ha ha ha!", Line_WaitForInput);
+	OutputLine(NULL, "　まるで女性の名前みたいに聞こえますねぇ！」",
+		   NULL, " I bet you do, huh?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "Ta_Def#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "でも、ジロウさんも影の立役者ですわね。",
+		   NULL, " You sure were a huge help.", Line_WaitForInput);
+	OutputLine(NULL, "なかなか成果の出せない私たちの予算を、ジロウさんが懸命に努力して維持してくださったお陰ですわ。」",
+		   NULL, " You're the one who secured funding for our research, even when we couldn't produce feasible results. We couldn't have done this without you.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「いや、…はっはっはっは…！",
+		   NULL, "\"It wasn't any trouble... ha ha ha ha...!", Line_WaitForInput);
+	OutputLine(NULL, "　でも、今回の成果は劇的です。",
+		   NULL, " But really, the results you've presented today are just brilliant!", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢症候群の病原体を特定し、今後の研究計画に具体的道筋をつけることができました。",
+		   NULL, " Not only have you found the cause of the syndrome, you've also provided a clear path towards future research.", Line_WaitForInput);
+	OutputLine(NULL, "以後の進捗監査がとても楽しみになります。",
+		   NULL, " We're looking forward to hearing more progress when we come again next time.", Line_WaitForInput);
+	OutputLine(NULL, "これだけの成果があれば、東京はねちっこく予算を削減しろとは言いますまい。」",
+		   NULL, " I'm sure the Tokyo office will quit bothering us about cutting your budget with these sorts of results.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "何しろ、皆さんにお出ししている缶コーヒーの予算まで削られそうになったんですものねぇ？」",
+		   NULL, " After all, we nearly lost our budget for the canned coffee we provided to you all, didn't we?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ka1", 400 );
+
+	OutputLine(NULL, "「「「どわっはっはっはっはっは！」」」",
+		   NULL, "\"\"\"Bwaaa ha ha ha ha ha!!!\"\"\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「富竹くん、東京にしっかり報告して祝杯が上げられるくらいの予算はつけるよう具申してあげなさい。」",
+		   NULL, "\"Tomitake-kun, make sure you report our progress to Tokyo well enough that they give us enough funding to hold a party!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ムチばっかりではいかんね、アメもないとね！」",
+		   NULL, "\"We've been getting nothing but the stick, it's time for the carrot!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 0, "Iri_Warai+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ははははは、そのアメは予算で還元していただけると一番嬉しいのですが。」",
+		   NULL, "\"Hahahaha, we'll be happiest if that carrot comes back in the shape of funding.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「「「うわっはっはっはっはっは！！！」」」",
+		   NULL, "\"\"\"Waa ha ha ha ha ha!!!\"\"\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "Ka2", 400 );
+
+	OutputLine(NULL, "　そんな和気藹々とした雰囲気の中、定期監査は終了した。",
+		   NULL, "And with that congenial atmosphere, our routine audit was over.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監査スタッフに混じっている国立研究所の人間たちは、入江を取り囲んで質問攻めを続けていた。",
+		   NULL, "Irie was surrounded and being questioned by National Institute of Infectious Diseases workers who had joined the auditors.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Tomi_Def", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「鷹野さん、おめでとう。",
+		   NULL, "\"Takano-san, congratulations!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Warai", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "みんなの前では言えないけれど、今日の成果は全て鷹野さんの積み重ねによるものだよ。」",
+		   NULL, " I can't really say this out loud, but all the progress I've seen tonight is thanks to your hard work.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ta_Warai#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "ありがとう、ジロウさん。」",
+		   NULL, " Thank you, Jirou-san.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今この場にいる人間の中には、入江機関設立を巡って黒幕たちが人事で暗躍していたことを知るのは鷹野と富竹しかいない。",
+		   NULL, "Jirou-san and I are the only ones here who know that strings were pulled in order to create the Irie Institute.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……だから、富竹だけが鷹野の苦労をねぎらってくれた。",
+		   NULL, "...So only Jirou-san can understand what I had to go through.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ta_Def#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「でも、これでようやく研究の舞台に立てたというところね。",
+		   NULL, "\"But I've only just risen to the stage for my research.", Line_WaitForInput);
+	OutputLine(NULL, "私の挑むべき相手がようやく同じ土俵に上がってくれただけ。",
+		   NULL, " My opponent and I are finally in the same arena, that's all.", Line_WaitForInput);
+	OutputLine(NULL, "正念場はこれからよ。",
+		   NULL, " The critical fight comes after this.", Line_WaitForInput);
+	OutputLine(NULL, "そして、ここからがもっとも楽しいところになりそうだけれど。」",
+		   NULL, " And it should be getting even more exciting in the future.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Def", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あはははは。",
+		   NULL, "\"Aha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "それでね、今回の件で中川本部長の方から、ぜひ東京で報告会をしてほしいと伝言を託ってるんだ。",
+		   NULL, " By the way, Manager Nakagawa told me to tell you that he wants you to hold a presentation in Tokyo.", Line_WaitForInput);
+	OutputLine(NULL, "アルファベットの理事会も、ぜひ君と会合を設けたいって言ってたよ。",
+		   NULL, " Even the Alphabet board wants you to come meet with them.", Line_WaitForInput);
+	OutputLine(NULL, "みんな君に直接話を聞いてみたいようだねぇ。」",
+		   NULL, " I guess they all want to hear this directly from you.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あらあら、ジロウさんを経由した報告じゃあ物足りないのかしら？」",
+		   NULL, "\"Oh my, isn't having you explain enough?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Komaru", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いや、あっはっはっは！",
+		   NULL, "\"Nah, ah ha ha ha!", Line_WaitForInput);
+	OutputLine(NULL, "　そ、そういう意味じゃないとは思うけどなぁ…！",
+		   NULL, " I-I don't think that's what they mean...!", Line_WaitForInput);
+	OutputLine(NULL, "　き、きっと噂の美人研究員を直接見てみたいんじゃないかなぁ、なんて、あっはっはっは…！」",
+		   NULL, " I-I bet they want to meet such pretty researcher in person, maybe, ah ha ha ha...!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あらいやだ、ジロウさんったら。",
+		   NULL, "\"My my, aren't you being silly, Jirou-san?", Line_WaitForInput);
+	OutputLine(NULL, "くすくすくす。」",
+		   NULL, " Hee hee hee.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「失礼します。",
+		   NULL, "\"Excuse me.", Line_WaitForInput);
+	OutputLine(NULL, "鷹野三佐、東京からお電話です。」",
+		   NULL, " Major Takano, there's a phone call for you from Tokyo.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Denwa", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「お待たせしました。",
+		   NULL, "\"Thank you for holding,", Line_WaitForInput);
+	OutputLine(NULL, "鷹野です。」",
+		   NULL, " this is Takano.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "er_Ver3", 120, 0 );
+
+	OutputLine(NULL, "「お〜〜〜、元気にやってるかの〜？！」",
+		   NULL, "\"Heeey, how are you doing?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「こ、小泉先生！！",
+		   NULL, "\"K-Koizumi-sensei!!", Line_WaitForInput);
+	OutputLine(NULL, "　わざわざお電話をいただけるなんて、とても恐縮でございます…！」",
+		   NULL, " Thank you for taking time to call me...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「わっはっはっは！",
+		   NULL, "\"Wa ha ha ha!", Line_WaitForInput);
+	OutputLine(NULL, "　いやぁな、三四ちゃんの研究が大金星を挙げたという話が来てなぁ〜。",
+		   NULL, " You know, I heard you made a significant breakthrough, Miyo-chan,", Line_WaitForInput);
+	OutputLine(NULL, "お祝いを言おうと思って電話したんだ。」",
+		   NULL, " so I had to call to congratulate you!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ありがとうございます…！！",
+		   NULL, "\"Thank you very much!!", Line_WaitForInput);
+	OutputLine(NULL, "　はい、お陰様で研究の第一段階であり、最大の目標でもあった雛見沢症候群の病原体特定に成功しました。」",
+		   NULL, " Yes, thanks to your support, we've been able to accomplish the first step of identifying the microbe that causes Hinamizawa Syndrome.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ん〜〜ん〜〜、",
+		   NULL, "\"Mmm-hmm,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "そうかそうか〜！！",
+		   NULL, " I see, I see!!", Line_WaitForInput);
+	OutputLine(NULL, "　ついにやったなぁ、三四ちゃん。",
+		   NULL, " Great job, Miyo-chan!", Line_WaitForInput);
+	OutputLine(NULL, "天国で高野くんもきっと大喜びしているだろうの！」",
+		   NULL, " I'm sure Takano-kun is very happy in Heaven right now!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まだまだですわ。",
+		   NULL, "\"That's a little too early to say.", Line_WaitForInput);
+	OutputLine(NULL, "祖父は、雛見沢症候群の病原体特定などという段階を超えて研究していました。",
+		   NULL, " My grandfather was attempting to go beyond merely identifying the cause of the syndrome.", Line_WaitForInput);
+	OutputLine(NULL, "人の思想や意思が、実は人以外の寄生的存在によって支配されていた可能性。",
+		   NULL, " His work was about showing the possibility of human thoughts actually being controlled by parasitic agents in our bodies.", Line_WaitForInput);
+	OutputLine(NULL, "…それを暴いて初めて祖父の研究は偉業と讃えられるのです。",
+		   NULL, " ...Only when that is proven will his research be recognized for the great achievement it is.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす。",
+		   NULL, " Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "世界中の思想や宗教が、全て寄生虫で説明できたなら、",
+		   NULL, " When we're able to explain all thoughts and religions with parasites,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "くすくす、世界は引っ繰り返るくらいの大騒ぎになるでしょうね。」",
+		   NULL, " heehee, the world is going to be tossed into chaos.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「わっはっはっは。それは愉快だの〜！！",
+		   NULL, "\"Wa ha ha ha ha. How interesting!!", Line_WaitForInput);
+	OutputLine(NULL, "　偉そうに振舞っとる宗教家連中が、単なる寄生虫の親玉に過ぎんと立証されたら、それは本当に愉快だろうの〜！",
+		   NULL, " I can just imagine how those religious big shots will react once they find out that their leaders are parasites!! How interesting!", Line_WaitForInput);
+	OutputLine(NULL, "　ぜひ、そんな愉快なのを見せてくれ。",
+		   NULL, " I would love to see that.", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃんがそれを見せてくれるまで、私ゃ天国のお迎えを断り続けてるからな。」",
+		   NULL, " I won't die until you show that to me, Miyo-chan.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「縁起でもありませんわ。",
+		   NULL, "\"Please don't say that.", Line_WaitForInput);
+	OutputLine(NULL, "でも楽しみにしていてくださいね。",
+		   NULL, " Do look forward to it, though.", Line_WaitForInput);
+	OutputLine(NULL, "きっと、世界中があっと驚く発表をして見せますから。",
+		   NULL, " I'll make sure that this research will spread shock throughout the world.", Line_WaitForInput);
+	OutputLine(NULL, "その時に初めて、世界中が祖父の偉業を知り、祖父が残した資料を奪い合って読み合うことになるでしょう。",
+		   NULL, " Then the whole world will finally realize how great my grandfather was, and they'll be fighting each other to read over the documents he left behind.", Line_WaitForInput);
+	OutputLine(NULL, "……そこまで至って、私はようやく祖父への恩返しを終えるのです。」",
+		   NULL, " Only then can I say that I've repaid my debt to him.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……高野くんが羨ましいの〜。",
+		   NULL, "\"...I'm a little envious of Takano-kun~.", Line_WaitForInput);
+	OutputLine(NULL, "私ゃな、カネなんかこんなにいらんかった。",
+		   NULL, " I don't want money, you know.", Line_WaitForInput);
+	OutputLine(NULL, "この半分は捨ててもいい。",
+		   NULL, " I don't mind getting rid of half of what I have.", Line_WaitForInput);
+	OutputLine(NULL, "あんたみたいな、自分の志を継いでくれる孫がひとりいてくれたらと思うよ。」",
+		   NULL, " I just wish I had a grandchild who would carry on my legacy.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ありがとうございます。",
+		   NULL, "\"Thank you so much.", Line_WaitForInput);
+	OutputLine(NULL, "身に余るお言葉です。」",
+		   NULL, " Those words mean so much to me.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あとな、小泉のおじいちゃんからのプレゼントだ。",
+		   NULL, "\"By the way, I sent you a present.", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃん宛てにな、祝杯用のワインを一本送らせた。",
+		   NULL, " It's a nice bottle of wine for you to celebrate with.", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃんの家の住所がわからんかったから、診療所宛てにしてある。",
+		   NULL, " I didn't know your address, so I sent it to the clinic.", Line_WaitForInput);
+	OutputLine(NULL, "取り寄せに時間が掛かってるらしいからちょっと時間が掛かるかもしれんが、届いたら、三四ちゃんの研究を手伝ってくれた人たちを集めて、それを振舞ってあげなさい。」",
+		   NULL, " However, they told me they're having a difficult time importing it, so it may take a little while. But when it comes, please have a party with the people who helped you.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「祝杯用にワインなんて。",
+		   NULL, "\"Celebratory wine?", Line_WaitForInput);
+	OutputLine(NULL, "はてさて、小泉先生からどんな高級ワインが届くやら！」",
+		   NULL, " Well then, I wonder what expensive sort of drink Koizumi-sensei'll be sending us!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そんな高級酒と違う。",
+		   NULL, "\"Oh, it's not that kind of expensive.", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃんも覚えとらんかね。",
+		   NULL, " Don't you remember, Miyo-chan?", Line_WaitForInput);
+	OutputLine(NULL, "高野くんが、いつも一本のワインを大切にしておったのを。」",
+		   NULL, " Takano-kun used to keep a particular bottle of wine.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……鷹野ははっとする…。",
+		   NULL, "...I remember...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そうだ。祖父は一本の古いワインをとても大事にしていた。",
+		   NULL, "That's right. My grandfather kept a certain bottle of wine.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　買った物なのか、もらった物なのかはわからないけれど、",
+		   NULL, "I don't know if he bought it himself or if someone gave it to him,", Line_WaitForInput);
+	OutputLine(NULL, "とても大事にしていて、自分の研究が認められたらそれを開けようと日頃から言っていた気がする。",
+		   NULL, " but he treasured it, and he always said he'd open it when his research finally gained recognition.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　当時は幼かったから、それが何というワインなのかわからないけれど、…その話を聞いていた小泉氏なら知っているはずだ…。",
+		   NULL, "I was a child then, so I don't even remember what brand it was, but Mr. Koizumi would know.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…その、祖父縁のワインを、この記念すべき節目に贈ってくれるその心遣いに。",
+		   NULL, "He went through all the trouble to find the same bottle of wine for this special occasion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……鷹野は久し振りに、祖父と一緒だった頃に感じていた日溜りのような温かさを感じるのだった。",
+		   NULL, "...For the first time in a while, Takano felt the same sunny warmth she experienced during her time with her grandfather.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ありがとうございます…。",
+		   NULL, "\"Thank you very much...", Line_WaitForInput);
+	OutputLine(NULL, "……小泉のおじいちゃん…。」",
+		   NULL, " ...Uncle Koizumi...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うむうむ。",
+		   NULL, "\"Hmmmm.", Line_WaitForInput);
+	OutputLine(NULL, "やっぱり三四ちゃんにはそう呼ばれた方がしっくりくるの〜！",
+		   NULL, " I like it when you call me that, Miyo-chan!!", Line_WaitForInput);
+	OutputLine(NULL, "　どうも三四ちゃんに先生と言われても自分のことだと思えなくてな！",
+		   NULL, " I don't feel like you're speaking to me when you say 'Koizumi-sensei'.", Line_WaitForInput);
+	OutputLine(NULL, "　わっはっはっは！」",
+		   NULL, " Wa ha ha ha!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分まで一緒に苦笑いしてしまう。",
+		   NULL, "I can't help but smile along with him...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ついさっきも、富竹と入江がそんなやり取りをしていたように思うから。",
+		   NULL, "Because I think Tomitake and Irie were just having a similar exchange.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そう呼ばれる方がお好きでしたら、人前以外ではそう呼んでも結構ですわよ。",
+		   NULL, "\"If you like it that way, then I'll be happy to call you that when there's nobody around.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす。」",
+		   NULL, " Hee hee.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「う〜〜む、できれば人前でもそう呼んでもらえると喜ぶんだがの〜！",
+		   NULL, "\"Hmm, I'll be happier if you'd call me that even in front of people!", Line_WaitForInput);
+	OutputLine(NULL, "　わっはっはっは。」",
+		   NULL, " Wa ha ha ha.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今年でいくつになるんやら。",
+		   NULL, "I don't know exactly how old he is.", Line_WaitForInput);
+	OutputLine(NULL, "未だにこれだけ快活にしゃべって笑うことができるなら、お迎えなんか当分来ないだろう。",
+		   NULL, " But if he can laugh so energetically, he'll live for many more years to come.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…何とかは長生きするというのはどうも本当らしい。",
+		   NULL, "...I guess the saying about living a long life is true after all.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私も高野くんも、三四ちゃんのような子が本当の家族だったらと思うよ。",
+		   NULL, "\"Takano-kun and I both wished you were truly part of our family.", Line_WaitForInput);
+	OutputLine(NULL, "本当になぁ…。」",
+		   NULL, " We really did...\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ta3", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "　……祖父にももちろん、家族はいた。",
+		   NULL, "...My grandfather had his own family, of course.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、研究に打ち込むあまり、別居状態になり、籍だけは残している半離婚状態にあった。",
+		   NULL, "But because he was so into his research, he became estranged from his wife. They were legally married, but they lived separately.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その家族とは私は少女時代に一度も会ったことはない。",
+		   NULL, "I never met his family when I was a child.", Line_WaitForInput);
+	OutputLine(NULL, "…会ったのは、祖父が自殺してからだった。",
+		   NULL, " I only met them... after my grandfather committed suicide.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　晩年の祖父は心が弱っていて、自分の人生について非常に悲観的だった。",
+		   NULL, "During his latter years, my grandfather went into psychological despair, and began to look at his life with cynicism.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　さらに急激に進みだした呆けにショックを受け、自分の意識が次第に薄れていくのを恐れていた。",
+		   NULL, "His condition became worse over time, and he was shocked at his own dementia. He was afraid of living while his consciousness degraded.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして……、病院の屋上から飛び降りて死んだ。",
+		   NULL, "So... he jumped off the rooftop of the hospital.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　遺書にあった名は私だけ。",
+		   NULL, "Only my name was in his suicide note.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこには実の家族の名などなかった。",
+		   NULL, "None of his family members' names were in it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その段階になって初めて家族や親類と称する一団が現れ、祖父の残した全てを奪い去っていった。",
+		   NULL, "That's when all his relatives showed up and took everything my grandfather left behind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　連中は、私に遺産が持っていかれるのを非常に嫌がっていたっけ。",
+		   NULL, "They were afraid I was going to get his estate.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　弁護士やら何やらを立てて嫌らしく争ってきそうな雰囲気だったので、私から辞退したのだ。",
+		   NULL, "They had lawyers and all that, so I backed down.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その代わり、祖父の書斎に残した物だけは全て引き継ぎたいと言った。",
+		   NULL, "I asked for everything in his study in return.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　凡庸な連中は祖父の研究の価値など知りもしない。",
+		   NULL, "Those idiots don't understand the value of my grandfather's research.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　書物の山や気持ち悪い標本瓶を片付けてくれた上に相続権を放棄してくれるならと大喜びで手を打ってくれたっけ。",
+		   NULL, "They were actually happy to strike a deal out of court, and they could also get rid of the piles of papers and jars with human organs in them.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　あれだけの長い間、一度も祖父の前に現れず、その死後にだけ現れるハイエナのような連中に、……祖父の魂である研究を、例えメモ１枚とて許したくなかった。",
+		   NULL, "They never even showed up once when he was alive, yet, like hyenas, they appeared after his death. I'd never let them put their hands all over my grandfather's research.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから祖父の魂は、連中にわずかほども穢されずに済んだのだ……。",
+		   NULL, "Fortunately, I was able to protect my grandfather's soul from their tainted hands.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Hmm.", Line_WaitForInput);
+	OutputLine(NULL, "それでは長くなると悪いからこれで切るな。",
+		   NULL, " Okay, I'll get going here.", Line_WaitForInput);
+	OutputLine(NULL, "困ったことがあったら、いつでもおじいちゃんに頼りなさい。",
+		   NULL, " If there's anything you need, be sure to call Uncle Koizumi, okay?", Line_WaitForInput);
+	OutputLine(NULL, "孫娘のために、いくらでも一肌脱ぐからの〜！」",
+		   NULL, " I'll do anything for my granddaughter!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ありがとう、小泉のおじいちゃん。",
+		   NULL, "\"Thank you, Uncle Koizumi.", Line_WaitForInput);
+	OutputLine(NULL, "三四はもっともっと頑張りますね。」",
+		   NULL, " I'll work even harder!!\"", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

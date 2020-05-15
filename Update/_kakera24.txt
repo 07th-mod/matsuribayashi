@@ -1,0 +1,558 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "Sinryo_sinsatu2", 1000 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "「………………………………。」",
+		   NULL, "\"............\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　言葉など出ない。",
+		   NULL, "I don't know what to say.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…何かを口にしたいのだが、何を口にすればいいか言葉が思いつかず、…私はため息に似たものを吐き出す他ない…。",
+		   NULL, "I want to say something, but I can't think of the right words. I can only sigh.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_M_Door8k", 128, 64 );
+
+	OutputLine(NULL, "「あ、……大石さん！",
+		   NULL, "\"Ah, Ooishi-san!", Line_WaitForInput);
+	OutputLine(NULL, "　探したんすよ！！",
+		   NULL, " I've been looking for you!!", Line_WaitForInput);
+	OutputLine(NULL, "　課長から手配写真の、」",
+		   NULL, " The section manager asked me about the wanted poster...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「静かにせい！",
+		   NULL, "\"Be quiet!", Line_WaitForInput);
+	OutputLine(NULL, "　ここは騒ぐ部屋ではないぞ。」",
+		   NULL, " This is a place of rest.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　騒がしく飛び込んできた熊谷に、鑑識のじいさまがぴしゃりと言った。",
+		   NULL, "As Kumagai barged into the room, the old coroner quickly snapped back at him.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…す、",
+		   NULL, "\"S...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…すみません。",
+		   NULL, " Sorry.", Line_WaitForInput);
+	OutputLine(NULL, "えっとですね、課長が容疑者の手配写真について、」",
+		   NULL, " Umm, the section manager asked me about the wanted poster for the suspect.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……あー、",
+		   NULL, "\"...Ah...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それ、小宮山くんに相談してくれませんかね。",
+		   NULL, " can you talk to Komiyama-kun about that?", Line_WaitForInput);
+	OutputLine(NULL, "ちょいと私、じいさまと話がありまして。",
+		   NULL, " I need to speak to the coroner here.", Line_WaitForInput);
+	OutputLine(NULL, "すぐに上がりますと上に言っといてください。」",
+		   NULL, " Could you tell him I'll be right over?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ぇ、",
+		   NULL, "\"Eh...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ぁ、わかりました！」",
+		   NULL, " o-okay!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　熊谷は来た時と同じように、騒がしく検死室を飛び出していくのだった。",
+		   NULL, "Kumagai ran out of the autopsy room with the same haste he entered in.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「賑やかな男だの。」",
+		   NULL, "\"Lively, isn't he?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「おやっさんだったら、やかましいって言ってゲンコツのひとつも食らわしてるところです。」",
+		   NULL, "\"The old man would've slapped him for making such a fuss.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…お前さんも、少し上に戻った方がいいぞい。",
+		   NULL, "\"You probably should go back too.", Line_WaitForInput);
+	OutputLine(NULL, "ここの空気は慣れんヤツには合わん。」",
+		   NULL, " The air in here isn't for people who aren't used to it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうですねぇ。",
+		   NULL, "\"You're right.", Line_WaitForInput);
+	OutputLine(NULL, "あんまりサボってると、私もゲンコツをもらっちまいそうです。」",
+		   NULL, " If I slack off too long, I might get slapped as well.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……かっかっかっか。",
+		   NULL, "\"...Ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "鹿骨界隈じゃ、チンピラも避けて通るお前さんを、ツモの切り方が悪いとゲンコツ食らわせられたのは、後にも先にもこいつだけだったろうの…。」",
+		   NULL, " Here in Shishibone, all the hoodlums crossed the street when you passed through, yet he's the only one, past or future, who's ever punched you for splitting your tsumo wrong...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「容赦のない人だったなぁ……。",
+		   NULL, "\"He really was a merciless man...", Line_WaitForInput);
+	OutputLine(NULL, "ホントの親父よりゲンコツもらった気がしますよ。」",
+		   NULL, " I think he punched me more than my real father.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ホントもウソもないわい。",
+		   NULL, "\"Doesn't matter if he was your real one or not.", Line_WaitForInput);
+	OutputLine(NULL, "…お前さんがホントの親父だと信じてたなら、こいつもホントの親父だ。」",
+		   NULL, " If you looked up to him in the same way, then he really was a father to you.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………………………。」",
+		   NULL, "\"............\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+
+	PlayBGM( 0, "Soul_scour", 120, 0 );
+
+	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
+	DrawScene( "Sora5", 400 );
+
+	OutputLine(NULL, "　私の本当の親父は、名古屋で死んだ。",
+		   NULL, "My real father passed away in Nagoya.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…運がなかった。",
+		   NULL, "...He was unlucky.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　名古屋の工場への用事なんか仰せつからなければ、空襲に巻き込まれることもなかったのだ。",
+		   NULL, "If he wasn't given the order to move to a plant in Nagoya, he wouldn't have died in an air raid.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……もう半年ものらりくらりとやっていれば、終戦を迎えられたのだから。",
+		   NULL, "...If he could have rode it out another half a year or so, then the war would have been over.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　当時の私は、もうしっかりとした成人だったから、…もちろん悲しかったが、母のように床に伏せて涙を流すほどには落ち込まなかった。",
+		   NULL, "I was sad, of course, but I was grown up enough by then that I didn't cry into the ground like my mother did.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、……悲しさってのは、人によって違う。",
+		   NULL, "But... people feel sadness in different ways.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一気に押し寄せる人もいれば、いつまでもじわじわと苛まれる人もいる。",
+		   NULL, "For some people, it comes all at once as an overwhelming wave, but others feel sadness gradually, over a long period of time.", Line_WaitForInput);
+	OutputLine(NULL, "…多分、私は後者だった。",
+		   NULL, " I think I was the latter.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　生きている頃は、うるさい親父だとしか思わず、どうして徴兵から漏れたんだと心の中で悪態をついたこともあった。",
+		   NULL, "When he was alive, I only thought of him as annoying. In my mind, I even cursed him with questions about why he avoided the draft.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分でも、その程度のものだと思っていた。",
+		   NULL, "And I thought my feelings towards him would always be the same.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　そして終戦。",
+		   NULL, "Then the war ended.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　戦地から引き上げて来た人々が、駅で家族と再会するのをうんざりするほど見せ付けられ、",
+		   NULL, "As I saw families and friends being reunited with joy as they came home from the front,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…その時、初めて知ったのだ。",
+		   NULL, " it finally happened.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あぁ、私は親父を失ったのが、悲しかったんだな、悔しかったんだな、と。",
+		   NULL, "I grieved for my father's death.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日本中に辛い人や悲しい人が溢れていた。",
+		   NULL, "Japan was filled with people who were sad and full of despair.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私ひとりが辛い思いをしたなんて甘えるつもりはない。",
+		   NULL, "I knew I wasn't the only one whose life ended up that way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……でも、とてもとても悲しかったことを覚えている。",
+		   NULL, "But... I remember I was very, very heartbroken.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　終戦を境に、国はがらっと変わり、警官であった自分を取り巻く環境も急激に変化した。",
+		   NULL, "After the war, the nation completely changed. As a policeman, the environment I worked in went through sudden changes too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私にできることは、日々の仕事に没頭して、忙しさで悲しみを忘れることだけだった。",
+		   NULL, "In order to forget my sorrow, the only thing I could do was devote myself to my work.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……当時、私ゃ闇米の取り締まりばかりやらされてましてね。",
+		   NULL, "\"At the time, I was in charge of busting people for buying rice illegally.", Line_WaitForInput);
+	OutputLine(NULL, "鉄道主要駅で、旅客を抜き打ち検査するんですよ。",
+		   NULL, " I conducted spot checks on travelers at major train stations.", Line_WaitForInput);
+	OutputLine(NULL, "そりゃあもうぞろぞろ引っ掛かりましたっけ。",
+		   NULL, " And boy, did I find a lot of them.", Line_WaitForInput);
+	OutputLine(NULL, "穀倉の辺りはこの辺じゃかなりでかい闇市が立ちましたからね。大阪界隈からはるばる買いに来てる連中も大勢いましたよ。」",
+		   NULL, " There was a fairly big black market in Gogura, and a lot of people came from as far as Osaka to buy it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　戦後、日本の食糧事情は致命的に悪化した。",
+		   NULL, "After the war, Japan faced a chronic shortage in food supply.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのため、国は食料の公平な配給を謳い「食料統制法」を制定する。",
+		   NULL, "To those ends, the nation instituted a food rationing program by signing the Food Control Act.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、国の配給する食糧はまったく足りず、人々は日々の糧食を求めるため、非合法の闇市で高額な闇米を買い求める他なかったのである。",
+		   NULL, "But the rations the government provided weren't even close to being enough to feed families. Therefore, people had no choice other than buying food and supplies on the black market.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　国が配給する食糧はまったくないのに、…あるところには唸るほどにあった。",
+		   NULL, "The government hardly had enough food for rations, but there were somehow plenty on the black market.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを法外な金額で売りさばき、一部の黒幕たちが濡れ手に粟のように荒稼ぎする時代でもあった。",
+		   NULL, "The dealers there sold it at outrageous prices, and some of them became quite wealthy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…園崎家が財を成したのもこの闇市でだが、それはここでは割愛する。",
+		   NULL, "...The Sonozaki family made their money through that black market, but that's another story.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　国は、そんな黒幕たちを逮捕しようとはしなかった。",
+		   NULL, "The government didn't bother arresting these dealers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　黒幕たちは警察上層部に充分な鼻薬を嗅がせていたからだ。",
+		   NULL, "For, with their money, they were able to buy off the top members of the police department.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……むしろ逆に、嫁入り道具を質に入れてまで闇米を買い求めた庶民の方を取り締まり、その米を没収していたのである。",
+		   NULL, "...Instead, they decided to go after the people buying the goods, and even confiscated the rice they bought by selling everything they owned.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そんな時代もあったの…。",
+		   NULL, "\"Yeah, I remember that...", Line_WaitForInput);
+	OutputLine(NULL, "どこぞの判事が餓死したなんてこともあったの？」",
+		   NULL, " Wasn't there a prosecutor who starved himself to death?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ありましたねぇ…。",
+		   NULL, "\"Yeah, there was.", Line_WaitForInput);
+	OutputLine(NULL, "闇米は一切食わないと公言した判事が餓死したのが、…昭和２２年でしたっけ？",
+		   NULL, " The prosecutor who vowed not to eat illegal rice starved to death... Wasn't it in 1947?", Line_WaitForInput);
+	OutputLine(NULL, "　………酷い話でした。",
+		   NULL, " That was horrible.", Line_WaitForInput);
+	OutputLine(NULL, "法律に従ってたら生きていけないことを、法の番人である裁判官が自ら示したんですからねぇ…。」",
+		   NULL, " He, a public prosecutor, proved it himself that people couldn't survive by adhering to the law.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　生きるために必死な庶民ばかりを次々に検挙する国に嫌気がさし、",
+		   NULL, "That prosecutor had grown tired of the government charging people with doing whatever they could to survive.", Line_WaitForInput);
+	OutputLine(NULL, "ある判事が、自分は今後一切、闇米を口にしないと宣言。",
+		   NULL, " And he proclaimed that he was never going to buy black market rice again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……昭和２２年に、まだ３０代半ばという若さで飢えて死んだ。",
+		   NULL, "In 1947, he starved to death when he was only in his mid-thirties.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　闇米を買うことは法律で禁じられている。",
+		   NULL, "The law prohibited people from buying black market rice.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、それでも闇米を求めなければ生きていけない。",
+		   NULL, "But that was the only way to survive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　なれば、この食料統制法は悪法ではないのか。",
+		   NULL, "In that case, was the Food Control Act a bad law itself?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは、彼が命を賭して訴えた必死のメッセージだったと伝えられている。",
+		   NULL, "The death of the prosecutor was seen as a desperate message to the government about the unjustness of that law.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora", 1000 );
+
+	OutputLine(NULL, "「……米の袋を抱えた連中を、次々と引っ立てて、駅脇の臨時の検問所に並べましてね。",
+		   NULL, "\"...We rounded up people with bags of rice and lined them up at the temporary inspection point next to the station.", Line_WaitForInput);
+	OutputLine(NULL, "まるで戦時法廷みたいな感じなんですよ。",
+		   NULL, " It was like a military tribunal.", Line_WaitForInput);
+	OutputLine(NULL, "次々ポンポンと没収してひっ捕らえていく感じです。",
+		   NULL, " We inspected their bags and confiscated everything that they bought at the black market.", Line_WaitForInput);
+	OutputLine(NULL, "……ご婦人方はみんな泣かれるんですよ。",
+		   NULL, " The women all cried.", Line_WaitForInput);
+	OutputLine(NULL, "その米を買うために、彼らは家財を売り払ってるんです。",
+		   NULL, " They sold everything they owned to buy the rice.", Line_WaitForInput);
+	OutputLine(NULL, "それを没収されたら何も残らないと。",
+		   NULL, " They pleaded that if we confiscated the rice,", Line_WaitForInput);
+	OutputLine(NULL, "どうやって飢えた子供たちを食わせればいいのかと。」",
+		   NULL, " how would they feed their starving children?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「道理だな。",
+		   NULL, "\"Doesn't make sense, huh?", Line_WaitForInput);
+	OutputLine(NULL, "それで、闇米を売りつけた側は取り締まらんのだから、庶民はたまったもんではないの。」",
+		   NULL, " Yet they forbade you from going after the sellers. So it was absolutely unfair from the view of the people.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「皆さんも敏感でしてね。",
+		   NULL, "\"Everyone was on edge.", Line_WaitForInput);
+	OutputLine(NULL, "駅で検問があるかもしれないと察知すると、途中で列車から飛び降りたりして逃れるんですよ。",
+		   NULL, " If they heard a police inspection was set up at the next station, they'd jump off the train and run.", Line_WaitForInput);
+	OutputLine(NULL, "…そういう連中も逃さんと、私たちは駅近くの、飛び降り名所に重点的に警官を配備してましてね。",
+		   NULL, " We were aware of these people, so we set up several officers near jump-off spots in order to capture them.", Line_WaitForInput);
+	OutputLine(NULL, "……何十キロもある米袋を抱えたご婦人をよく追っ掛けましたっけ。」",
+		   NULL, " I remember chasing after women carrying several kilos of rice on them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……おやっさんとの出会いはそんな中でだったと思う。",
+		   NULL, "That was when I first met the old man.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「いやぁ…驚きましたよ。",
+		   NULL, "\"Man... I was surprised.", Line_WaitForInput);
+	OutputLine(NULL, "…私の親父にね？",
+		   NULL, " ...Remember my father?", Line_WaitForInput);
+	OutputLine(NULL, "　あまりにもそっくりだったんですよ！",
+		   NULL, " He looked exactly like him!", Line_WaitForInput);
+	OutputLine(NULL, "　私ゃね、てっきり、親父は名古屋の空襲を奇跡的に生き延びて、帰ってきてくれたんじゃないかって本気で思いましたよ。」",
+		   NULL, " I really thought that maybe my father had miraculously survived the air raid in Nagoya.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　検問所から逃走した人間を追っていた。",
+		   NULL, "I was chasing a man who was running away from the inspection point.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　重い米を担いで逃げ切れるわけもない。",
+		   NULL, "There was no way for him to run with a heavy bag of rice on him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから彼らは、米を抱いたまま捕まるか、家財を売り払ってようやく得た大切な米を捨てて逃げ延びるかを選ぶしかできなかった。",
+		   NULL, "So either he'd get arrested with the illegal rice, or escape by ditching the rice that he bought by selling all of his belongings.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……つまりどの道、警官に追われたら、家族に米を食わせることなどできないのだ。",
+		   NULL, "...In other words, if a person is being chased by the police, that person can't provide his family any rice to eat.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん私にも負い目はあった。",
+		   NULL, "Of course, I felt guilty about that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　闇米を買うのが生きるためにどうしても仕方がないことだとわかっていた。",
+		   NULL, "I knew people had to buy the rice to survive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だからせめて、米を捨てて逃げる人間は見逃すのが暗黙の了解だったのだ。",
+		   NULL, "...So we had a tacit agreement to let those who ditched the rice and ran get away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、…追いながらいつも思っていた。",
+		   NULL, "So I always thought the same thing as I chased them.", Line_WaitForInput);
+	OutputLine(NULL, "早くそれを捨ててくれと。",
+		   NULL, " Please throw it away.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　捕まえたくない。",
+		   NULL, "I didn't want to catch him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…窮状を訴える泣き声を聞かされたくなかったから。",
+		   NULL, "...Because I didn't want to hear him crying and pleading in distress.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな時、おやっさんが現れたんだ。",
+		   NULL, "It was then that the old man showed up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…死んだと思った親父に瓜二つ。",
+		   NULL, "He looked exactly like my dead father.", Line_WaitForInput);
+	OutputLine(NULL, "私は面食らった。",
+		   NULL, " I was dumbfounded.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そしたら、その親父が突然、私の頭をゲンコツで小突いたのだ。",
+		   NULL, "Then, all of a sudden, he punched me in the head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　親父に叩かれたら、大人しく頭を垂れるのが子供の役割だ。",
+		   NULL, "If a father disciplines you, as a child, you lower your head in apology.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でもとにかく、死んだと思っていた親父が生きていてくれたので、込み上げる嬉しさが抑え切れなかったんだ。",
+		   NULL, "I was so happy to see my father alive that I couldn't hold my joy in.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　おやっさんは言った。",
+		   NULL, "The old man said, ", Line_WaitForInput);
+	OutputLine(NULL, "見逃してやれと。",
+		   NULL, "\"Let him go.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　声を聞いてすぐに、親父ではないと気付き、私は警官への暴行の現行犯でしょっぴいてやろうと思った。",
+		   NULL, "When I heard his voice, I realized he wasn't my father. So I thought I'd arrest him for assaulting a policeman.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、喧嘩慣れしてるおやっさんに、ようやく青二才に毛が生えた程度の私がかなうわけもない。",
+		   NULL, "But a young man, like me, who'd barely grown any hairs yet, was no match for an older man used to fighting.", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 0, TRUE );
+	DrawScene( "Sinryo_sinsatu2", 1000 );
+
+	OutputLine(NULL, "「…いやぁ、たっぷり説教をもらいましたよ。",
+		   NULL, "\"Yeah, he sure taught me a lesson.", Line_WaitForInput);
+	OutputLine(NULL, "大通りの真ん中でぶちのめされた挙句に。",
+		   NULL, " He gave me a good scolding in the middle of the street after I was all beat up.", Line_WaitForInput);
+	OutputLine(NULL, "なっはっは、普通に考えたら、そんなのに耳なんか傾けないですよねぇ？",
+		   NULL, " Na ha ha, who would even listen to him, right?", Line_WaitForInput);
+	OutputLine(NULL, "　でもあの時の私ゃどうかしてたんです。",
+		   NULL, " But something struck me then.", Line_WaitForInput);
+	OutputLine(NULL, "どうしてもおやっさんが親父に見えちゃって。",
+		   NULL, " I kept seeing my father in him.", Line_WaitForInput);
+	OutputLine(NULL, "大人しく言うことに耳を傾けることしかできなかったんです。」",
+		   NULL, " All I could do was listen.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「まぁ、そこで小突いただけじゃなく、男の器量もきっちりと見せられたのが、こいつの大したところだったの。",
+		   NULL, "\"Yeah, he was a ruffian, but he showed his guts, like a real man. That's what made him such a great guy.", Line_WaitForInput);
+	OutputLine(NULL, "今時じゃすっかり珍しくなっちまった、古き良き時代の生き残りじゃった。」",
+		   NULL, " You don't see men like him nowadays. He was a true example of a man from the good old times.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いい年にもなって、私にはまだまだ親父が必要だったのだ。",
+		   NULL, "Despite my age, I still needed a father.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　酒を酌み交わし、男の器量を伝授してくれる目上の存在が、まだまだ必要だったのだ…。",
+		   NULL, "I needed someone to look up to, and to show me what makes a man a man...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから言える。",
+		   NULL, "When I think about it...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………私には親父が二人いた。",
+		   NULL, "I really did have two fathers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　おやっさんは、間違いなく私の親父であり、兄貴であり、",
+		   NULL, "The old man was a father, a brother,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…親友だった。",
+		   NULL, " and my best friend.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……そのおやっさんは今や、頭部、胴体、両手両足をブツ切りにされ、",
+		   NULL, "...But now, here he lies with his head, body, arms, and legs all dismembered...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…右腕が未だに見付からない。",
+		   NULL, " and his right arm hasn't been found.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　男の義理も、酒の飲み方も博打の打ち方も教えてくれて、道を外れたらゲンコツで教えてくれたその右腕が、",
+		   NULL, "He taught me how to be a man, how to enjoy alcohol, how to play mahjong, and with that right arm, he gave me a good beating when I did something wrong...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…未だに見付からない。",
+		   NULL, " But that right arm is still missing.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…ホシの目星は？」",
+		   NULL, "\"Do you have any suspects?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇ、もちろんついてます。",
+		   NULL, "\"Yeah, of course.", Line_WaitForInput);
+	OutputLine(NULL, "…………おやっさんの右腕ももちろん取り返しますし、…この借りもきっちり返します。」",
+		   NULL, " ...I swear, I'll find the old man's right arm and pay them back for what they've done to him.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雛見沢を影から牛耳り、ダム戦争と称する集団犯罪を煽り立てて来た、",
+		   NULL, "They're running Hinamizawa from the shadows, and inciting this collective crime they call the dam protests...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…園崎家。",
+		   NULL, " The Sonozaki family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私は心の中で宣戦布告する。",
+		   NULL, "I declare war within myself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私の敵は、すでにはっきりしていた。",
+		   NULL, "I already know who my enemy is.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

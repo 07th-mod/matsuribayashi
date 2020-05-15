@@ -1,0 +1,78 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "it_move2", 120, 0 );
+
+	DrawScene( "Fure1", 1000 );
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentWeirdShapeSmall", 2000);
+	} else {
+		DrawScene( "Kakera3", 400 );
+	}
+
+	OutputLine(NULL, "　このカケラだけはとても歪。",
+		   NULL, "This piece is the only one that's so distorted.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だって、昭和５８年６月より、もっと前のものだから。",
+		   NULL, "That's because it's from long before June 1983.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だからこのカケラの有無は、私たちのゲーム盤の戦いに何の影響も及ぼさない。",
+		   NULL, "Therefore, the existence of this piece has no affect whatsoever in the game we're playing on this board.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…でも、本当に何の影響も及ぼさない役立たずのカケラなんだろうか。",
+		   NULL, "But is this really a useless piece?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今やルールＹの正体は完全に暴かれている。",
+		   NULL, "The identity of Rule Y has been completely exposed by now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは、とても大きな組織の力で、個人たちのささやかな連帯など丸呑みにしてしまうほどの強大さを持っている。",
+		   NULL, "With the backing of a mighty organization, it is powerful enough to swallow up the small solidarity of individuals.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その理不尽なほどの強さに、私はこのゲームを何度も諦めそうになる。",
+		   NULL, "I almost give up on this game because of its irrational power.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だからこそ、…思うのだ。",
+		   NULL, "That's why I'm thinking...", Line_WaitForInput);
+	OutputLine(NULL, "……このカケラの中に、そんな強敵に立ち向かうことのできる、駒が潜んでいるのではないかと。",
+		   NULL, " that maybe there's a piece hidden somewhere that's strong enough to fight against such a formidable enemy.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂衛は、東京の警視庁に勤めていて、…大きな陰謀に立ち向かえる力を持っている。",
+		   NULL, "Mamoru Akasaka works at the police headquarters in Tokyo, and might have the power to stand up to such a vast conspiracy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その力はきっと、ルールＹが相手であっても、きっと及ぶ。",
+		   NULL, "Can his power withstand even Rule Y?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　前原圭一が、ルールＺを爽快に打ち破ったように、彼もルールＹを爽快に打ち破ってくれるのではないか。",
+		   NULL, "Just like Maebara Keiichi defeated Rule Z, will he be able to defeat Rule Y so easily?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……全ての力がいる。",
+		   NULL, "...We need everyone's strength.", Line_WaitForInput);
+	OutputLine(NULL, "赤坂の力も、必ずいる…。",
+		   NULL, " So Akasaka's strength is needed as well...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyefragment" );
+	DrawScene( "black", 1000 );
+
+}

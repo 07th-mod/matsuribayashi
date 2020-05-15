@@ -1,0 +1,1939 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+
+	DrawScene( "white", 1000 );
+	DrawScene( "Sora3", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "Ji1", "maskup", 1, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+	DrawSceneWithMask( "JT1", "maskright", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　もう、羽入はすっかり俺たちの輪の中に馴染んでいた。",
+		   NULL, "Hanyuu has already grown used to being around us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　梨花ちゃんや沙都子たちに歳が近いせいか、特によく溶け込んでいるようだった。",
+		   NULL, "Since Rika-chan and Satoko are her age, she's become especially close with them.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん、レナだって放置しないし、魅音だって新しい友人を放っておかない。",
+		   NULL, "Of course, Rena and Mion are looking after her too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…以前、レナが俺に話してくれたことを思い出す。",
+		   NULL, "Rena told me something the day Hanyuu joined the class.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　羽入が、実は割りと近くにいて、いつも俺たちに加わりたくてじっと見ていた、という話。",
+		   NULL, "She said that Hanyuu has been close to us for a long time, and that she's been watching us play. That she always wanted to join us.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……俺はやっぱり、どうしても羽入の顔を見かけたことはないのだけど…。",
+		   NULL, "I still can't remember seeing her before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……でも、彼女が俺たちの輪に加わりたかったのかもしれないというのは、不思議と納得できた。",
+		   NULL, "But somehow, I can believe it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺が最初、面食らったはずの様々なことを、羽入は初めから知っていたかのように受け入れるのだ。",
+		   NULL, "Hanyuu has accepted all the things that surprised me at first as if she knew about them all along.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どんな厳しい部活の掟も、日が暮れるのも忘れてしまうような楽しい時間も、全て全てよく知っていて、",
+		   NULL, "She knows everything about us...", Line_WaitForInput);
+	OutputLine(NULL, "…ようやくそれに混じることができた喜びを噛み締めているように見える。",
+		   NULL, " and it seems she's truly excited about finally being able to join in.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Ri_WaraiA1", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……羽入もすっかり、ボクたちの仲間に溶け込みましたのです。」",
+		   NULL, "\"...Hanyuu's definitely part of our group now.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だなぁ。",
+		   NULL, "\"She sure is.", Line_WaitForInput);
+	OutputLine(NULL, "何だか、ずっと前からそうだったように感じるよ。",
+		   NULL, " It almost feels like she's been one of us this whole time.", Line_WaitForInput);
+	OutputLine(NULL, "そんなはずはないのにな。」",
+		   NULL, " That can't be true, though.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ri_NikoA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……そんなことありませんです。",
+		   NULL, "\"......No, it is.", Line_WaitForInput);
+	OutputLine(NULL, "ずっとボクたちの側にいましたですよ。」",
+		   NULL, " She's been by our side all this time.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あれ、梨花ちゃんもそんなこと言うんだな。",
+		   NULL, "\"Huh? Are you saying that now too?", Line_WaitForInput);
+	OutputLine(NULL, "…レナも言ってたよ。",
+		   NULL, " ...Rena told me that a couple days ago.", Line_WaitForInput);
+	OutputLine(NULL, "俺だけが気付いてなかったのかなぁ。」",
+		   NULL, " Is it just that I didn't notice?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ri_WaraiA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……圭一は鈍感だから、きっと気付かなかったに違いないのです。",
+		   NULL, "\"......It's because you're dense, Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "み〜☆」",
+		   NULL, " Meep~☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ちぇ。",
+		   NULL, "\"Tch.", Line_WaitForInput);
+	OutputLine(NULL, "どうせ俺は鈍感ですよーだ。」",
+		   NULL, " Fine, so what if I'm dense!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "JT2", "maskright", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ha_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あぅあぅあぅ。",
+		   NULL, "\"Au au au.", Line_WaitForInput);
+	OutputLine(NULL, "梨花と圭一が座り込んでいますのです。",
+		   NULL, " Why are you two sitting down?", Line_WaitForInput);
+	OutputLine(NULL, "疲れましたですか？」",
+		   NULL, " Are you tired?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_DefA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……羽入が疲れ知らずなだけなのです。",
+		   NULL, "\"...You never feel tired, Hanyuu.", Line_WaitForInput);
+	OutputLine(NULL, "ボクたちは遊びすぎてヘトヘトなのですよ。」",
+		   NULL, " Meanwhile, we're exhausted.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ha_WaraiA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「だって、僕はずっとずっとみんなと一緒に遊びたかったから、これくらいでは遊び足りないのです。",
+		   NULL, "\"It's because I've waited so long to be able to play with you all. This isn't nearly enough.", Line_WaitForInput);
+	OutputLine(NULL, "もっともっと遊びますですよ。",
+		   NULL, " I want to play more and more!", Line_WaitForInput);
+	OutputLine(NULL, "あぅあぅあぅ☆」",
+		   NULL, " Au au au☆.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ははは、元気だなぁ。",
+		   NULL, "\"Ha ha ha, you're full of energy.", Line_WaitForInput);
+	OutputLine(NULL, "……ところで羽入さ、その頭のそれ。",
+		   NULL, " ...By the way, those things on your head,", Line_WaitForInput);
+	OutputLine(NULL, "遊んでて落ちちゃわないのか？」",
+		   NULL, " don't they fall when you play?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ha_AuA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…………あぅ？」",
+		   NULL, "\"......Au?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　羽入が頭の角を押さえる。",
+		   NULL, "Hanyuu has horns on her head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼女なりのアクセサリーみたいなものだと思ってたので、激しく遊んでいて落としたら気の毒だろうと思い、預かってやろうと思ったのだ。",
+		   NULL, "I thought that it was a hair accessory of sorts, so I didn't want her to lose it while playing. I was going to offer to hold it for her while she ran around.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、羽入は角を押さえたまま、申し訳なさそうに表情を曇らせる。",
+		   NULL, "But Hanyuu's face clouded over, and she apologetically held onto the horns.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ri_KomaruA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……圭一。",
+		   NULL, "\"......Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "羽入のは取れませんのです。」",
+		   NULL, " Hanyuu can't take them off.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「え？",
+		   NULL, "\"Eh?", Line_WaitForInput);
+	OutputLine(NULL, "　あ、そうなのか…？",
+		   NULL, " Ah, I see...", Line_WaitForInput);
+	OutputLine(NULL, "　あはは、変なこと言ってごめん。」",
+		   NULL, " Ahaha, sorry about that.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ha_YowakiA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……ぁぅ",
+		   NULL, "\"...Au...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……やっぱり、",
+		   NULL, " Is it", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…角なんかがあると、",
+		   NULL, " strange", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…おかしいでしょうか。」",
+		   NULL, " to have horns?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshotWithFiltering( 2, "Re_waraiA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "JT1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「あはははは、おかしくなんかないよ、キュートで可愛いよぅ。」",
+		   NULL, "\"Ahahahaha, no, not at all. I think it's cute!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_TokuiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そうそう！",
+		   NULL, "\"Yeah!", Line_WaitForInput);
+	OutputLine(NULL, "　圭ちゃんなんか股間に角が生えてるしねぇ？",
+		   NULL, " Kei-chan even has a horn between his legs, don't you?", Line_WaitForInput);
+	OutputLine(NULL, "　硬くて反り返ったのが、",
+		   NULL, " Though it's hard and curves backw--", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "F_a", 0 );
+	StartShakingOfWindow( 244, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 244, 40, 0, 0, 3*2, TRUE );
+	DrawBustshot( 2, "Re_WaraiB1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "JT1", 400 );
+
+	OutputLine(NULL, "ぐえッ？！」",
+		   NULL, " Bwuh?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Re_HauA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「は、はぅ！！",
+		   NULL, "\"H-Hau!!", Line_WaitForInput);
+	OutputLine(NULL, "　股間の角って何だろ、何だろ…！」",
+		   NULL, " What kind of horn is between his legs? What kind?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_AkireruA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……相変わらずレナさんのパンチだけは見切れませんわね。",
+		   NULL, "\"...Rena-san's punch is still the one thing I can't follow.", Line_WaitForInput);
+	OutputLine(NULL, "大丈夫ですの魅音さん。",
+		   NULL, " Are you quite alright, Mion-san?", Line_WaitForInput);
+	OutputLine(NULL, "顔面がへこんでますわよ。」",
+		   NULL, " There's a depression in your face.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　みんなで楽しそうに笑ったが、羽入だけが曖昧な顔で笑い損ねていた。",
+		   NULL, "Everyone laughed except Hanyuu, who didn't seem to get it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…多分、俺が失言してしまったんだと思う。",
+		   NULL, "I shouldn't have said anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女は多分、角のことを言われるのがあまり好きじゃなかったのだ。",
+		   NULL, "I bet she doesn't like to talk about her horns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも多分、変に謝ろうとするとかえってこじらせてしまいそうだし…。",
+		   NULL, "But if I try to apologize, I think things will get even more complicated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何と言えばいいのか窮していたら、レナが続きを遊ぼうと彼女らを誘い、再び鳥居の方へ戻っていった。",
+		   NULL, "As I thought about what to say, Rena took the girls over to the shrine gate.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "JT2", "maskright", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Ri_DefA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……気にしなくていいのですよ圭一。",
+		   NULL, "\"......Don't worry about it, Keiichi.", Line_WaitForInput);
+	OutputLine(NULL, "…羽入も、気にしないようにしているのですが、まだ修行が足りないということなのです。",
+		   NULL, " ...Hanyuu tries not to let it bother her, but she hasn't had enough training.", Line_WaitForInput);
+	OutputLine(NULL, "みー。」",
+		   NULL, " Meep~.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「やっぱ気にしてたんだな。",
+		   NULL, "\"So she doesn't like to talk about them, huh?", Line_WaitForInput);
+	OutputLine(NULL, "すまん、これからは気をつけるぜ。」",
+		   NULL, " Sorry, I'll be more careful.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……羽入は大昔に、この雛見沢にやってきました。」",
+		   NULL, "\"......Hanyuu came to Hinamizawa a very long time ago.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あ、やっぱりそうだったんだ？",
+		   NULL, "\"She did?", Line_WaitForInput);
+	OutputLine(NULL, "　だよな、村の中のこと、転校生にしちゃずいぶん詳しかったしな。」",
+		   NULL, " No wonder she knows so much about the village.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「…………羽入が、雛見沢に住む前、どこに住んでいたのかはよく知りません。」",
+		   NULL, "\"......I don't know where she lived before she came here.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　教えてはもらったけど、…私には理解できないところとしか、言い様がない。",
+		   NULL, "I asked her once, but... all she said was it was a place I wouldn't understand.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	PlayBGM( 0, "as_time_goes_by", 120, 0 );
+
+	OutputLine(NULL, "　そこに、羽入は、",
+		   NULL, "Hanyuu said that she--", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……いや、羽入の一族はそれ以上、住めなくなったのだという。",
+		   NULL, " or rather, Hanyuu's people--couldn't live there anymore.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、自分たちの住める場所を求めて、長い長い時間をかけて旅をして、",
+		   NULL, "They looked for a new place to live for a long time.", Line_WaitForInput);
+	OutputLine(NULL, "……この地にやってきたのだという。",
+		   NULL, " They traveled a very long way before arriving in Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこは美しく澄んだ沼で、羽入たちにとって求めて止まなかった目的の地でもあった。",
+		   NULL, "There was a beautiful swamp in the area, and that was exactly what Hanyuu's people were looking for.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…でも、その地はすでに村になっていて、……先住の村人たちが住んでいた。",
+		   NULL, "But there was a village nearby where people lived.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　先住民を敬うのは羽入たち流浪の民の唯一の掟。",
+		   NULL, "To show respect to the original inhabitants of an area was law among wandering people like Hanyuu's.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　羽入たちの一族は、村人たちと平和に共存することを選んだ。",
+		   NULL, "Her clan decided to live peacefully and coexist with the villagers.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka2", 1000 );
+
+	OutputLine(NULL, "　だが、",
+		   NULL, "However...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……共存はうまく行かなかった。",
+		   NULL, " their attempts to coexist didn't go so well.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　村人たちは、新しい共存者を受け入れるにはまだ未熟で、幼くて。",
+		   NULL, "The villagers were too childish and immature to accept these newcomers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それらを強く強く拒絶したため、",
+		   NULL, "...They strongly, strongly rejected them...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………悲しく、無惨な事態を引き起こしてしまった…。",
+		   NULL, " ...and caused a terrible, tragic disaster.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskm1", 1, 0, 1300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 1300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　羽入は、それを治めるために、彼らの姿を模してこの地に降臨したという。",
+		   NULL, "Hanyuu said she took their form and descended upon this land in order to subdue the disaster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかし、どういうわけか角だけが隠せなくて。",
+		   NULL, "However, she just couldn't hide her horns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今日の羽入の姿で古手神社に降臨したと、禁じられた古文書は伝える。",
+		   NULL, "The forbidden ancient documents say that Hanyuu descended into the Furude Shrine, appearing as she does today. It also states the following:", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　羽入たち流浪の民は、この村以外では生きていけないこと。",
+		   NULL, "Hanyuu's people can't live anywhere other than this village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして村人との共存でしか生きていけないことを訴えた。",
+		   NULL, "They can also only live by coexisting with the villagers.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　古手神社の神主は、流浪の民が血に混じることにより、村人たちが鬼に駆られてしまうならば、それは共存にあらずと、一度はそれを拒否した。",
+		   NULL, "The Furude Shrine's priest once rejected them, claiming that coexistence was impossible if mixing with the wandering people's blood caused the villagers to become demons.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　だが、…古手神社の若き跡取りが羽入を見初め、子宝を授かるに至り、神主は再考を迫られることになる。",
+		   NULL, "But the young heir of the Furude Shrine fell in love with Hanyuu, and when their child was born, the priest had to reconsider.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0xff, 0x99, 0x99, 256, 0, 0, TRUE );
+	DrawSceneWithMask( "Ji2", "maskup", 1, 0, 1300 );
+
+	OutputLine(NULL, "　角を隠せぬ流浪の民たちよ、この地に留まりこの血に留まるのが願いならば、それを叶えることも考えよう。",
+		   NULL, "\"Oh wandering people who cannot hide your horns, if you wish to settle in this land, if you wish to settle with our blood, then I shall consider granting your wish.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、鬼の血に侵された村人たちは、人であるか鬼であるかの見分けも付かず、",
+		   NULL, "However, as the demon's blood mixed with the villagers', it became hard to tell who was human and who was demon.", Line_WaitForInput);
+	OutputLine(NULL, "村人たちは互いに互いを疑い合い、疑心暗鬼に取り憑かれてしまった。",
+		   NULL, " The villagers began to cast suspicion on one another, haunted by that paranoia.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　まずはそれを払ってくれぬことには、共存の道も開かれぬ。",
+		   NULL, "Unless all of that was resolved, coexistence would be impossible.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……私たちとあなたたちが共存するには、いくつか守らなければならない掟を設けなければなりません。",
+		   NULL, "\"...For you and us to coexist, we must lay down several laws for us to follow.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それはとても厳しく、今まで平和に暮らしてきたあなた方に強いるのはとてもとても申し訳なく思います。",
+		   NULL, "They will be very strict, I am very, very sorry for imposing these upon you who have lived in peace until now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ですが、それら掟を守って下されば、村は鬼の災禍から解放されるでしょう。",
+		   NULL, "However, as long as those rules are followed, the village will be free from demonic disaster.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
+	DrawSceneWithMask( "Ji7", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　良かろう、その掟を守ろうぞ。",
+		   NULL, "\"Very well. The rules will be followed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…しかし、村はすでに多くの血を流してしまった。",
+		   NULL, "...But much blood has already been shed in the village.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人々の怒りや罪、穢れが祓えない。",
+		   NULL, "The anger, sins, and corruption people bear cannot be cleansed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　人の世では、罪は命で償うのが唯一の掟なのだ。",
+		   NULL, "The one law of the human world is that sins are atoned for with life.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	DrawFilm( 2, 0xff, 0x99, 0x99, 256, 0, 0, TRUE );
+	DrawSceneWithMask( "Ji2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　なるほど。",
+		   NULL, "\"I see.", Line_WaitForInput);
+	OutputLine(NULL, "あなたたちの世界では、誰かに責任を全て負わせ、その人ごと罪を葬るのが流儀というならば、それに従いましょう。",
+		   NULL, " If you say it's your way to let someone take on all responsibility and bury the sins with him, then we'll do that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかしそれでは、命惜しさに誰もが罪を否定し、永遠に罪の押し付け合いにはなりますまいか…？",
+		   NULL, "However, wouldn't people end up pushing responsibility on each other, because nobody wants to die?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
+	DrawSceneWithMask( "Ji7", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　……左様。",
+		   NULL, "\"...Exactly.", Line_WaitForInput);
+	OutputLine(NULL, "それこそが人の世の醜き鬼なり。",
+		   NULL, " That's the ugly demon in the world of man.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…誰もが自らの罪を認めず、互いに罪を押し付けあう。",
+		   NULL, "...No one will accept their own sins, but only foist them onto each other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自らの命でしか清算できないから、誰もが清算を拒み、罪だけがただただ積もっていく。",
+		   NULL, "Since they can only clear the balance with their lives, everyone refuses to pay, and the sins just keep adding up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　清算されることなく、澱み、いつまでも押し付けあって、人同士が疑りあい、押し付け合い…。",
+		   NULL, "Without cleansing them, they stagnate, and people cast them upon each other forever, doubting each other and passing them around.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 1300 );
+
+	OutputLine(NULL, "　なるほど、それがこの世界の抗えぬ掟であり、あなた方を悩ませる掟でもあるならば、私は共存の引き換えに、人が罪を押し付けあわぬ世界を授けましょう。",
+		   NULL, "\"I see. If that is the unopposable law of this world, and you yourselves are troubled by this law, then in exchange for coexisting with us, I shall grant you a world where people do not blame their sins on each other.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……それはどのような世界なのか。",
+		   NULL, "What kind of world is it?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の世である限り、必ず罪が起こり、穢れが生まれる。",
+		   NULL, "So long as mankind exists, they will commit sins and give rise to corruption.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを誰にも押し付けずに消し去ることができるというのか。",
+		   NULL, "How could that all be erased without foisting it onto someone else?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人より生まれ出でる罪と穢れを、全て私に負わせなさい。",
+		   NULL, "Let me bear all the sins and corruption born from man.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして私の存在を祓いなさい。",
+		   NULL, "And purify my soul.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　全ての罪は人に在らず。",
+		   NULL, "Let all sins rest not with man.", Line_WaitForInput);
+	OutputLine(NULL, "我が身に負わせれば、人同士が罪を押し付けあうことはありません。",
+		   NULL, " If they are borne upon myself, then man will not need to force them on each other.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何と言われるか。",
+		   NULL, "What are you saying?", Line_WaitForInput);
+	OutputLine(NULL, "…それでは、あなたが人柱になられると仰るのか。",
+		   NULL, " ...Are you really going to make yourself into a sacrifice?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　誰かが罪を負わねば清算できない、あなた方の世の掟にも沿うというもの。",
+		   NULL, "\"Someone has to take on the sins, otherwise they won't be cleansed. That's the law of your world, isn't it?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　……別の古文書はこうも伝える。",
+		   NULL, "...A different ancient document also states the following:", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…無論、これも禁書だ。",
+		   NULL, "...Of course, it's a forbidden one too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　御三家は愚か、古手家頭首以外は触れることも許されない。",
+		   NULL, "...Only the head of the Furude family is allowed to read it. Nobody else. Not even the other heads of the Three Families.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "aka1", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "　人心乱れ、村人たちの悪しき心が沼に溜まり、そこより鬼たちが湧き出したと。",
+		   NULL, "It tells that unrest grew in people's minds, that the villagers' evil hearts collected in the swamp and gave rise to demons.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　古手神社神主は、人心を惑わす諸悪の根源は、沼より現れし鬼神（オニガミ）にありと説き、村の若者たちを引き連れて、沼を目指した。",
+		   NULL, "The Furude Shrine's priest explained that the root of all evil is the demon god of the swamp, and led the young villagers there.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　沼の畔には、人心の乱れを嘲笑う鬼神の姿があり、",
+		   NULL, "By the swamp, they found a demon mocking the unrest in people's hearts.", Line_WaitForInput);
+	OutputLine(NULL, "若者たちは勇敢に戦いを挑み、傷つきながらもこれを打ち据え、召し捕らえて古手神社に引き立てた。",
+		   NULL, " The young villagers fought bravely, captured the demon, and dragged it to the Furude Shrine.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　神主は、鬼神を祓い、",
+		   NULL, "The priest cleansed the demon god,", Line_WaitForInput);
+	OutputLine(NULL, "その腹を割いて腸を引き出し、",
+		   NULL, " opened her abdomen, and dragged out her organs.", Line_WaitForInput);
+	OutputLine(NULL, "千切って沢に流し、",
+		   NULL, " He chopped them up and washed them down the stream,", Line_WaitForInput);
+	OutputLine(NULL, "遺骸は沼に沈めて葬ったという。",
+		   NULL, " then threw the body in the swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　するとたちどころに人心の乱れは収まり、",
+		   NULL, "Then people regained their sanity.", Line_WaitForInput);
+	OutputLine(NULL, "互いに疑いあい蔑みあっていた人々は互いに手を取り合って、訪れた平和を喜び合ったという。",
+		   NULL, " Those who had been suspicious of each other became friendly, and they all shared in the joy of peace again.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　………つまり、禁じられた古文書が真実なら。",
+		   NULL, "......If these forbidden ancient documents are real,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私たち村人の信仰の対象であるオヤシロさまは、",
+		   NULL, "then the object of the villagers' worship, Oyashiro-sama...", Line_WaitForInput);
+	OutputLine(NULL, "……私たち村人の手で捕らえられ、全ての罪を負わされ、裂き殺されたのだ。",
+		   NULL, " ...was captured by the villagers, forced to bear all their sins, and torn to death.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　しかも、鬼たちが現れるのは、人心が乱れた後、とはっきり書いてある。",
+		   NULL, "Plus, it's clearly written that the demons appeared after unrest grew in people's hearts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、……鬼たちは、自分たちが現れる前からあった人の不和の罪を、背負わされているのだ。",
+		   NULL, "In other words... the demons were forced to bear the sin of discord that rested with man long before they arrived.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　オヤシロさまとは、人に代わって罪を背負い、人と人の争いを赦す神。",
+		   NULL, "Oyashiro-sama was a god who took on people's sins to mend conflicts between them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それが、やがて敬われるようになり、オヤシロさま信仰の祖となったと伝えている。",
+		   NULL, "People eventually came to honor her, and it's said that became the foundation of faith in Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka2", 400 );
+
+	OutputLine(NULL, "　……私には、それらが何を意味するのかわからないけれど。",
+		   NULL, "I don't understand exactly what that means,", Line_WaitForInput);
+	OutputLine(NULL, "…でもひとつだけわかることがある。",
+		   NULL, " but I know one thing.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは、私たち人間が、誰にも引けぬ貧乏くじを、代わりに引いてくれる存在だったということ。",
+		   NULL, "When none of us humans would draw the losing straw, she offered to draw it in our stead.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その証拠に、…今日の綿流しがそうであるように、私たちは体に染み付いた穢れを、綿に押し付け、それを沢に流すことで禊としている。",
+		   NULL, "To prove it, we cleanse our filth by letting cotton absorb it and drift it down the stream during the Watanagashi festival.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その過程には、醜さも、罪の押し付け合いも何もない。",
+		   NULL, "There's no shame or shifting of responsibility involved.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そのシステムが生まれるまで、私たちは穢れと責任を人間の間で押し付けあう鬼であったということだ。",
+		   NULL, "Until that system was created, we were simply demons who pushed our filth and our responsibility on each other.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　誰かのせいにし、誰かを生贄にし、誰かの腹を裂くことでしか、起こってしまった罪を清算できなかったのだ。",
+		   NULL, "We could only cleanse our own sins by blaming someone else and sacrificing him by cutting open his abdomen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、それを人ではなく、羽入が背負った。",
+		   NULL, "And Hanyuu took on that job.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人の命を用いない、禊。",
+		   NULL, "A purification ceremony without a human life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の罪を、赦せるシステム。",
+		   NULL, "A system that forgives people for their sins.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の罪を人に求めず、祟りに求める、オヤシロさま信仰の原点。",
+		   NULL, "That is the origin of the cult of Oyashiro-sama, which blames not people for their sins, but the curse.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　これらの書物は深く深く封印された。",
+		   NULL, "Those documents were sealed away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でなければ、…私たちが祀るべき対象は、実は自分たちが全ての罪を押し付けて葬っていたのだということが、わかってしまうから。",
+		   NULL, "If they weren't, people would find out that the object of their own faith was falsely blamed and killed by their own ancestors.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……羽入は、謝る。",
+		   NULL, "...Hanyuu apologizes.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人の罪を、常に自分が引き受けて、謝り続ける。",
+		   NULL, "She takes in people's sins and keeps apologizing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　人が、自身の罪に耐えかねた時、その罪を引き受けてくれる。",
+		   NULL, "When people can't deal with their own sins anymore, she accepts them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　羽入が罪を引き受けてくれることで、人の罪は祓われ、人は生きることを赦される。",
+		   NULL, "When Hanyuu takes over, people are cleansed, and they are allowed to keep living.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………鬼が、全ての罪を、自らが綿となって吸い取り、",
+		   NULL, "Demons take on sins by becoming cotton to absorb them.", Line_WaitForInput);
+	OutputLine(NULL, "……退治されて沢に流され、村は許される。",
+		   NULL, " They are exterminated and washed down the stream, and then the village is forgiven.", Line_WaitForInput);
+	OutputLine(NULL, "人自身が生み出した罪から。",
+		   NULL, " They are forgiven for their sins.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それが本当なら、",
+		   NULL, "If that's all true...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…羽入は、",
+		   NULL, " then Hanyuu,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "いや、オヤシロさまとは何という悲しい存在なのか。",
+		   NULL, " or rather, Oyashiro-sama, is such a tragic existence.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そう羽入に言ったことがある。",
+		   NULL, "I've asked Hanyuu about this before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そうしたら、羽入はどこかで聞いたことがあるような、こんな話をしてくれた。",
+		   NULL, "Then she told me the following story.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Heya6", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "　………雪山の小屋に４人が閉じ込められ、小屋の四隅に座って伝言ゲームをしたという、割と有名な話だ。",
+		   NULL, "Four people are stuck in a snowy mountain cabin. They play a game while each sitting in one of the four corners. It's a fairly well-known story.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこは極寒の山小屋だ。",
+		   NULL, "It's in the middle of winter.", Line_WaitForInput);
+	OutputLine(NULL, "彼らはそのままでは眠ってしまう。",
+		   NULL, " They're all getting sleepy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　眠れば死んでしまう。",
+		   NULL, "If they fall asleep, they'll die.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、誰かがこう提案した。",
+		   NULL, "So one of them comes up with an idea.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分たちは四隅に座っているから、まず最初の１人が、時計回りに次の隅へ歩いていき、その隅にいる男を起こす。",
+		   NULL, "They're sitting in the four corners of the room, so someone just has to walk clockwise to the next corner and wake up the person sitting in that corner.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　起こした男はそこに座り、起こされた男は立ち上がって次の隅へ時計回りに歩き、そこの男を起こして交代する。",
+		   NULL, "The one who just walked will sit in that corner and the one who just woke up will get up, walk to the next corner, and wake up the person sitting there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…これをぐるぐると繰り返せば、朝まで誰も眠りこけずに済むはずだ、という話。",
+		   NULL, "If they keep doing that, nobody will fall asleep.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　この話のオチを知っている人には説明は不要だろうが、",
+		   NULL, "People who know this story won't need an explanation,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……この方法は４人では成立しない。",
+		   NULL, " but this doesn't work with four people.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　一番最初に立ち上がって歩いた男の隅は空白になる。",
+		   NULL, "When the first person gets up, their corner becomes empty.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、ぐるっと回って一周したら、４人目の男が次の隅に行った時、そこは空白になってる。",
+		   NULL, "So after everyone takes turns, the fourth person goes to the next corner, which is an empty one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そしてそこで座り込み、眠ってしまうから、そこでこの伝言ゲームは途絶えて、全員は凍死してしまう。",
+		   NULL, "They sit down and fall asleep, so the game is over right there, and everyone freezes to death.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　つまり、４人では足りない。",
+		   NULL, "In other words, to play this game, you need more than four people.", Line_WaitForInput);
+	OutputLine(NULL, "もう１人がいないと、彼らは救われないのだ。",
+		   NULL, " You need one more person in order to be saved.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この話は怪談として語られることが多い。",
+		   NULL, "People usually tell this as a ghost story.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…彼らは実は５人のパーティで、１人がすでに凍死していて、彼の霊がこのゲームに加わってくれたから、",
+		   NULL, "They usually say that this was actually a group of five people, but one was already dead and thanks to that ghost...", Line_WaitForInput);
+	OutputLine(NULL, "彼らは朝まで伝言ゲームを続けられたのだ、というオチになることが多い。",
+		   NULL, " they're able to continue living until the next morning.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Sora3", 400 );
+
+	OutputLine(NULL, "　………羽入は、自分はこの５人目みたいなものです、と私に言ったことがある。",
+		   NULL, "...Hanyuu once told me that she's like that fifth person.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分が１人、人間の輪に加わることで、円滑に全てを回すことができたなら。",
+		   NULL, "If she can make everything run smoothly by joining a circle of people, then...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは、この山小屋の伝言ゲームが、ぐるぐると回って成立するというたとえに、とてもよく合っている気がした。",
+		   NULL, "It's very similar to how the telephone game in the mountain cabin manages to function without breaking.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人間だけでは成立できない輪の隙間に、羽入のような存在が入ることで、人間の輪を成立させる。",
+		   NULL, "Hanyuu can complete a circle that can't be realized by people alone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そうすることで、全ての人は温和に暮らすことが出来る。",
+		   NULL, "...Then those people can live peacefully.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを成立させる、…途切れた輪を埋める存在。",
+		   NULL, "She's an existence that completes a circle.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……彼女が角を気にするのは、自分が鬼と呼ばれ全ての罪を背負い、成敗された時の記憶が蘇るからなのか。",
+		   NULL, "Is she bothered by her horns because it reminds her of the time when she was called a demon and punished for the sins she took in?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　角の生えた存在は迫害すべき存在だという無意識が、未だ彼女をちくちくと苛むのか。",
+		   NULL, "Is her subconcious still tormenting her with thoughts that those who have horns ought to be persecuted?", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "JT1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……あの角は、生まれつきです。",
+		   NULL, "\"......She was born with those horns.", Line_WaitForInput);
+	OutputLine(NULL, "それを忌み嫌われ、苛められたこともありましたのです。」",
+		   NULL, " She was hated and abused because of them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Kei_Komaru", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そ、…そうなのか？！",
+		   NULL, "\"R...Really?!", Line_WaitForInput);
+	OutputLine(NULL, "　…そりゃますます悪いことを言っちまったな…。」",
+		   NULL, " ...I definitely shouldn't have said anything, huh...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そして、……羽入は、その角があるがゆえに、全ての罪を引き受け、",
+		   NULL, "\"And... just because she has those horns, she had to take in everyone's sins", Line_WaitForInput);
+	OutputLine(NULL, "清算するというとてもとても大きなお役目を引き受け、",
+		   NULL, " and cleanse them.", Line_WaitForInput);
+	OutputLine(NULL, "…全うし、………神と崇められたのです。」",
+		   NULL, " She did that, and then she was worshipped as a god.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Kei_Def2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「へ？",
+		   NULL, "\"Huh?", Line_WaitForInput);
+	OutputLine(NULL, "　神？？」",
+		   NULL, " A god?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……ボクの独り言なのです。",
+		   NULL, "\"......I was talking to myself.", Line_WaitForInput);
+	OutputLine(NULL, "忘れて大丈夫なのですよ。」",
+		   NULL, " Forget about it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「？？？」",
+		   NULL, "\"...Huh???\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskdown", 1, 0, 300 );
+	DrawScene( "Sora5", 400 );
+
+	OutputLine(NULL, "　羽入が何者なのか、…私ですらわからない。",
+		   NULL, "Nobody knows who Hanyuu really is.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼女が、人の世よりはるかに高い次元から降臨された神々しい存在なのか。",
+		   NULL, "Is she really a divine existence that descended from a higher place?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それとも、…生まれつき角が生えていただけの理由で、生贄にされてしまった不遇の少女だったのか。",
+		   NULL, "Or is she simply an unlucky girl who became a sacrifice just because she had a pair of horns?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　わからない。",
+		   NULL, "Nobody knows.", Line_WaitForInput);
+	OutputLine(NULL, "でも、その少女の血は、古手家の血に混じり、私にまで代々受け継がれたのだ。",
+		   NULL, " But this girl's blood was blended with the Furude family's blood, and that blood has descended into me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……古手家に、八代続けて第一子に女子が恵まれれば、それはオヤシロさまの生まれ変わりであるという伝説。",
+		   NULL, "Our legends state that if the Furude family has a girl for their first-born child for eight generations in a row, that eighth child will be a reincarnation of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これが何を意味するのか、私にもよくわからない。",
+		   NULL, "I don't know exactly what that means.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私がその八代目に当り、",
+		   NULL, "But I'm that eighth generation.", Line_WaitForInput);
+	OutputLine(NULL, "……そして、私にしか羽入が見えなかったという事実は何を物語るのか。",
+		   NULL, " ...Is that why I was the only person who could see Hanyuu?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　八代以上も経る気の遠くなるような時間。",
+		   NULL, "Eight generations is a very long time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それは多分、羽入が引き受けた罪や穢れが、清められるのに必要な時間だったのではないだろうか。",
+		   NULL, "Maybe that's how long it took for all the sins Hanyuu assumed to be cleared.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　八は末広がり。",
+		   NULL, "Eight represents infinity.", Line_WaitForInput);
+	OutputLine(NULL, "とても縁起のいい数字。",
+		   NULL, " It's a very lucky number.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　呪い文句のひとつに、七代祟ってやるというのがあるが、八代はそれを超える。",
+		   NULL, "Often curses uttered will contain, \"I'll curse you for seven generations!\", but the eighth lies beyond that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……つまり、七代にも及ぶ遠大な罪や呪いをも許す、縁起のいい数字なのだ。",
+		   NULL, "In other words, eight possesses such good fortune that it can forgive great curses and sins that spanned seven generations.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは呪い（まじない）の数字。",
+		   NULL, "It's a number with power.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…羽入が人間に代わって背負ってくれた罪を祓うために、必要な時間。",
+		   NULL, "It's the time Hanyuu needed to cleanse all the sins she took in from the humans.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "Hi2", 400 );
+
+	OutputLine(NULL, "　……羽入たちの願いは、共存だった。",
+		   NULL, "Hanyuu and her people simply wanted to coexist with us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なのに、そのために人柱となり、羽入ひとりだけが、穢れと共に腹を裂かれ沢に流され、沼にて沈（鎮）められた。",
+		   NULL, "But Hanyuu had to become a sacrifice. Her stomach was cut open and its contents washed down the stream. Then she was thrown into the swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、",
+		   NULL, "And so,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………古手家はずっとずっと、待っていたのだ。",
+		   NULL, " the Furude family has been waiting.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　気が遠くなるような時間の中で、羽入が抱いて眠ってくれた罪が祓われて、",
+		   NULL, "They waited for a very long time for her to come back.", Line_WaitForInput);
+	OutputLine(NULL, "……再び帰ってきてくれるのを、伝承に残し、ずっとずっと待っていたのだ。",
+		   NULL, " They kept our traditions alive, waiting forever and ever for her return.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だって、…古手家という名は、伝承が伝えるなら、占い手の「占」の一字に、鬼の角を加えたから「古」という文字になったと言うじゃないか。",
+		   NULL, "According to legend, the name \"Furude\" was made by adding a horn to the character for \"fortune teller\".", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古手家は、羽入の血を混じらせた時に興ったのだ。",
+		   NULL, "The Furude family rose when Hanyuu's bloodline was combined with that of human beings.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　羽入こそが、古手家の祖であり、",
+		   NULL, "Hanyuu is the ancestor of the Furude family,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………私たち全ての母なのだ。",
+		   NULL, " as well as the mother of us all.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　幼い頃、羽入は私に、母が教えてくれるよりも多くを教えてくれた。",
+		   NULL, "When I was little, Hanyuu taught me a lot more things than my mother did.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…それもそのはず。",
+		   NULL, "...It's no wonder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は、だって、…羽入の子孫なのだから。",
+		   NULL, "I'm her descendant.", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　自らを生んだ母を、",
+		   NULL, "The curse on the clan who exorcised", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "忌み、",
+		   NULL, " and buried", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "葬った一族の呪いが、",
+		   NULL, " their very own mother...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…八代かけて贖われ、無限とも思えた時間にかけられた呪いを解く。",
+		   NULL, " ...was finally absolved after eight generations - what seemed like eternity.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、……古手家が絶えようという最後の代になって、その末裔の私と対面したのだ。",
+		   NULL, "And then she met me, her descendant, the final generation of the Furude family.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを考える時、……私に課せられたこの数奇な運命が、何か大切な意味があるのではないかと感じる時がある。",
+		   NULL, "Sometimes when I think about that... I feel like there must be some important meaning to this hapless fate thrust upon me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の運命を閉ざす障害を打ち破る試練は、",
+		   NULL, "But what kind of meaning could the trial I face,", Line_WaitForInput);
+	OutputLine(NULL, "……羽入と古手家の、千年以上にも及ぶかもしれない呪いに、",
+		   NULL, " ...the trial of breaking through the obstacles sealing my fate,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……どんな意味を持つのか。",
+		   NULL, " ...have upon the curse that plagued Hanyuu and the Furude family for over a millennium?", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　…もっとも、その願いや思いを正しく伝えるには、千年の時は長すぎたということだ。",
+		   NULL, "A thousand years is simply too long a period to communicate thoughts and intentions correctly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　羽入の存在はオヤシロさまという祟り神になり、…全てを許す存在は、いつの間にか全てを縛る存在に変えられていた。",
+		   NULL, "Hanyuu has become the curse we call Oyashiro-sama. Though she originally was a means of salvation, she has become a chain that binds people.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　共存のためのルールが、村人を縛るルールに曲解され、明治に至るまでそれに縛られ続けた。",
+		   NULL, "The rules about coexisting were misinterpreted as a law that binds villagers to this place, and that continued until the Meiji era.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、再び、ダム戦争をきっかけに歩み始めた閉鎖と誤解への風向きの中、",
+		   NULL, "And while the village winds once again blow toward the misunderstanding of isolation thanks to the dam conflict,", Line_WaitForInput);
+	OutputLine(NULL, "……羽入と私が出会い、この数奇な運命に閉ざしたことにはどんな意味があるのか。",
+		   NULL, " ...how does that play into my meeting with Hanyuu and this motley fate we're trapped in?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………それを理解するには、私という人生はあまりに短すぎて……。",
+		   NULL, "I haven't lived long enough to be able to understand that...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ひとつ言えるのは、……羽入の血が混じって始まった古手家が、最後の代で、祖と再び廻り合えたということ。",
+		   NULL, "The only thing I can say for sure is that the Furude family originated when Hanyuu's bloodline mixed with that of humans, and the line's final descendent, me, finally met with its ancestor.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古手の血は、母に人の罪すべてを背負わせ葬った呪いの歴史。",
+		   NULL, "The Furude bloodline bears a cursed history of placing all of man's sins onto its mother and killing her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その始まりと、終わりが、出会う…。",
+		   NULL, "Now, the beginning and end of that line have met...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　みんなの輪に、ずっと加わりたかった羽入。",
+		   NULL, "Hanyuu always wanted to join everyone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、どうしても隠せなかった角。",
+		   NULL, "Yet, she couldn't hide her horns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それでも、欠けた輪を補う存在でありたいと願う彼女。",
+		   NULL, "Even so, she still wished to be an existence that completes a circle.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "JY2", 400 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　親を葬るは子の務め。",
+		   NULL, "\"It's a child's job to bury their parents.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかし母上。",
+		   NULL, "\"But Mother...", Line_WaitForInput);
+	OutputLine(NULL, "子が親を殺し葬らなければならぬとは聞いたことがありませぬ。",
+		   NULL, " I've never heard that it's a child's job to kill and bury their parents.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　聞くな、子よ。",
+		   NULL, "\"Don't ask, child.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　我は人にあらず。",
+		   NULL, "I'm not human.", Line_WaitForInput);
+	OutputLine(NULL, "角を持つは鬼の証。鬼の役目は人の世の災厄を背負うことよ。",
+		   NULL, " My horns are proof that I'm a demon. A demon's job is to take on the calamities of the human world.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ならば我は、乱れし世の災厄を引き受け、人心の乱れをその身で祓うのがその使命。",
+		   NULL, "Bearing the calamities of this chaotic world and cleansing the unrest in mankind's hearts is my role.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　なぜ人の世の罪が、母上ひとりに背負わされなければなりませぬか。",
+		   NULL, "\"Then Mother, why do you have to be the one?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の罪は、人の罪。",
+		   NULL, "People's sins are people's sins.", Line_WaitForInput);
+	OutputLine(NULL, "母上の罪ではありませぬ。",
+		   NULL, " They aren't yours.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　聞け、我が子よ。",
+		   NULL, "\"Listen, child.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人は罪に溺れながら生きていく。",
+		   NULL, "People live with their sins.", Line_WaitForInput);
+	OutputLine(NULL, "それを誰かに押し付けねば生きてゆけぬ。",
+		   NULL, " They can't live without making someone else take the blame.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その押し付けられる一人になりたくないから、互いに罪を押し付けあう。",
+		   NULL, "Nobody wants to take the blame, so they shift that responsibility around.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それこそが鬼、人の世を乱す、真の鬼。",
+		   NULL, "That is a demon, the true demon disrupting the world of man.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　我がそれを背負い、人が祓うことで、人は人を疑い争う宿命から解放される。",
+		   NULL, "By bearing it myself, man may be cleansed, and mankind can be freed from their destiny of doubt and conflict.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　全ての罪と穢れを、業と呪いを我が身に。",
+		   NULL, "Let all the sins, the filth, the karma, and the curse come to me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして我を討ち、祓い、沢に流し、沼に沈めなさい。",
+		   NULL, "Then attack me, purify me, wash me down the stream, and throw me in the swamp.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは人の身であってはならぬ。",
+		   NULL, "A human will not do.", Line_WaitForInput);
+	OutputLine(NULL, "人の身でない者が引き受ける宿命。",
+		   NULL, " So it is the fate of one not human to accept that role.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の身に負わせるようなことがあっては、人は疑心の鬼から解放されぬのだ。",
+		   NULL, "If a human were made to bear it, then mankind would not be freed from the demon of doubt.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　わかりませぬ。",
+		   NULL, "\"I don't understand.", Line_WaitForInput);
+	OutputLine(NULL, "わかりませぬ母上。",
+		   NULL, " I don't understand, Mother.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　母上には確かに隠せぬ角が。",
+		   NULL, "Mother, you have horns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかしながら、角があるだけで人ではないと申されますか。",
+		   NULL, "Are you saying that you aren't human just because you have horns?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人であっても、角があればそうではないと申されますか。",
+		   NULL, "That even if you are human, the horns make you non-human?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　母上に角があろうとも、私にとって母は人以外の何者でもありませぬ。",
+		   NULL, "Even if you have horns, you're human to me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　我が子よ、お前だけがそう言ってくれる…。",
+		   NULL, "My child, you're the only one who's ever said that...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　皆が私を＊＊＊＊、＊＊＊＊と罵ろうとも、お前だけが私を人だと言ってくれる…。",
+		   NULL, "Even if everyone else calls me XXXX or XXXX, you'll still call me human...\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　……祭具殿の祭壇に奉納され、他御三家の頭首たちには存在も知られていない、古手家の数々の禁書は、何を伝えるのか。",
+		   NULL, "...What is passed down in the Furude's many forbidden scrolls, the ones unknown to even the heads of the Three Families, sealed in the altar in the shrine storage?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを理解するには、…私が繰り返してきた時間に及ぶほどの遠く長い時間が必要だろう。",
+		   NULL, "Understanding that... would probably require about as much time as I've spent repeating time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………そして、それを理解したならば、…無邪気にみんなに混じって遊ぶ羽入の笑顔が、もっとよく理解できるのかもしれない…。",
+		   NULL, "...Yet once you understand that... perhaps you'll better understand the smile Hanyuu wears as she innocently plays with everyone.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "white", 400 );
+	DrawScene( "Sora3", 0 );
+	PlayBGM( 0, "semi", 120, 0 );
+
+	OutputLine(NULL, "「ああああ！！！",
+		   NULL, "\"Ahhh!!", Line_WaitForInput);
+	OutputLine(NULL, "　だ、大丈夫？！」",
+		   NULL, " A-Are you okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音の素っ頓狂な声が聞こえてきた。",
+		   NULL, "I heard Mion yell with surprise.", Line_WaitForInput);
+	OutputLine(NULL, "何かアクシデントが起こったことが、声色からわかる。",
+		   NULL, " Something must have happened.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ji3", "maskright", 7, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Kei_Majime2", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「な、何だ何だ、どうしたんだ！」",
+		   NULL, "\"What is it? What's going on?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Sa_OdorokiB1", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「羽入さんが、そこでふざけてて転んで、斜面を転げ落ちていったんですわ…！！」",
+		   NULL, "\"Hanyuu-san tripped and tumbled down the hill over there...\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_BikkuriA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ji1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「羽入ちゃーーん！！",
+		   NULL, "\"Hanyuu-chaan!!", Line_WaitForInput);
+	OutputLine(NULL, "　大丈夫〜〜？！」",
+		   NULL, " Are you okaaaaay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Me_OdorokiB1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「綺麗に転がってったけど…、捻挫とかしてないかな！",
+		   NULL, "\"She rolled beautifully, but I hope she didn't sprain her ankle or anything...", Line_WaitForInput);
+	OutputLine(NULL, "　行こう行こう！！」",
+		   NULL, " Let's go look!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　羽入は斜面で遊んでいて、そこを転がり落ちていってしまったらしい。",
+		   NULL, "Hanyuu had been playing on the slope and tumbled down it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　このすぐ下には道路がある。",
+		   NULL, "There's a road just below the slope.", Line_WaitForInput);
+	OutputLine(NULL, "魅音たちがそこへ行く階段を駆け下りていく。",
+		   NULL, " Mion and the others went down the stairs to get to her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　とにかく行ってみよう。",
+		   NULL, "Let's go.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　怪我をしてないといいんだが…！",
+		   NULL, "I hope she isn't injured...", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "JOK1", "maskdown", 1, 0, 300 );
+	PlayBGM( 0, "Iru", 120, 0 );
+	DisableWindow();
+	DrawBustshot( 2, "Tomi_Def#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, FALSE );
+	DrawBustshot( 1, "Ta_Def#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　駆け下りていくと、そこには富竹さんと鷹野さんがいて、羽入を介抱してくれているところだった。",
+		   NULL, "When I got there, I saw Tomitake-san and Takano-san. They were taking care of her.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「これはどういうことなんだい？",
+		   NULL, "\"What happened?", Line_WaitForInput);
+	OutputLine(NULL, "！　急に彼女が転がり落ちてきてね！」",
+		   NULL, " We just saw her roll down the hill!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ずいぶん綺麗に転がってきたわね、くすくす。",
+		   NULL, "\"She did tumble beautifully, though, hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "でも頭をゴチンとやってしまったみたいだから、あとでコブになってしまうかもね。",
+		   NULL, " But I think she hit her head, so I'm sure she'll get a bump later.", Line_WaitForInput);
+	OutputLine(NULL, "よく冷やしておいた方がいいわよ。」",
+		   NULL, " Make sure you put some ice on it, okay?\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "M_Hi9", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……羽入、羽入！」",
+		   NULL, "\"...Hanyuu, Hanyuu!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Sa_OdorokiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「私たちの声が聞こえます？！",
+		   NULL, "\"Can you hear us?", Line_WaitForInput);
+	OutputLine(NULL, "　ほら、指は何本に見えますのー？！」",
+		   NULL, " Look, how many fingers do you see?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ha_YowakiA1", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 1300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………ぁぅ……ぁぅ…。」",
+		   NULL, "\"......Au...au.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ちょっと朦朧とした感じの声だったが、捻挫したとか骨折したとかそういうことはないようだった。",
+		   NULL, "She sounded disoriented, but didn't appear to be injured.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俺たちはほっと胸を撫で下ろす。",
+		   NULL, "What a relief for everyone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　多分、ごろごろとだいぶ転げたので、目が回ってしまっているのだろう。",
+		   NULL, "I bet she's just feeling dizzy from rolling.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Re_DefB1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "JOK1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「はぅ、でもよかったね。",
+		   NULL, "\"Hau, I'm glad.", Line_WaitForInput);
+	OutputLine(NULL, "怪我がなくて。」",
+		   NULL, " I'm glad you're not hurt.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いやはや！",
+		   NULL, "\"Just think, though!", Line_WaitForInput);
+	OutputLine(NULL, "　しかし、転がってった先に看護婦さんがいてくれたなんて、出来すぎだねぇ。」",
+		   NULL, " How lucky of you to have a nurse waiting for you down here! What perfect timing!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Ta_Warai#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あら、非番の時の私は、野鳥撮影家なのよ？",
+		   NULL, "\"Well, when I'm not working, I'm a wild bird photographer.", Line_WaitForInput);
+	OutputLine(NULL, "　ねぇジロウさん。」",
+		   NULL, " Right, Jirou-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ま、まぁねぇ、そういうことさ！",
+		   NULL, "\"W-Well, yeah, I guess!", Line_WaitForInput);
+	OutputLine(NULL, "　わっはっはっはっは！」",
+		   NULL, " Wa ha ha ha ha!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "Kei_Def2", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "M_Hi9", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「まぁ、雛見沢っ子なら、このくらいで怪我はできねぇよな！",
+		   NULL, "\"A Hinamizawa kid would never get hurt from something like that!", Line_WaitForInput);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Kei_Warai", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　羽入も、もう立派な雛見沢の仲間ってことだぜ。」",
+		   NULL, " In other words, you're already one of us, Hanyuu.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshot( 1, "Ta_Def#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「羽入ちゃん、って言うの？",
+		   NULL, "\"Hanyuu-chan? Is that your name?", Line_WaitForInput);
+	OutputLine(NULL, "　見掛けない子ね。",
+		   NULL, " I've never seen you before.", Line_WaitForInput);
+	OutputLine(NULL, "新しいお友達？」",
+		   NULL, " Are you new around here?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Sa_DefA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇ、そうですわよ。",
+		   NULL, "\"Yes, she is.", Line_WaitForInput);
+	OutputLine(NULL, "月曜日に転校してきたばかりなんですのよ。」",
+		   NULL, " She transferred in just last Monday.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "Sa_DefA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "M_Hi9", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「コレ、…何？",
+		   NULL, "\"What... are these?", Line_WaitForInput);
+	OutputLine(NULL, "　変わってるわね。",
+		   NULL, " How peculiar.", Line_WaitForInput);
+	OutputLine(NULL, "玩具？」",
+		   NULL, " Are they some kind of toy?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鷹野さんが、羽入の角をぐいぐいと押すような仕草をする。",
+		   NULL, "Takano-san tried to poke at one of Hanyuu's horns.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……確かに、アクセサリーとしては変わってると思うだろうなぁ。",
+		   NULL, "...They'd be an interesting hair accessory, if they were an accessory.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Re_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あはははは、それは羽入ちゃんのチャームポイントなので、取っちゃ駄目なんです。」",
+		   NULL, "\"Ahahahaha, that's what's cute about Hanyuu-chan. Please don't touch them, though.\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「あらそうなの？",
+		   NULL, "\"Oh, is that so?", Line_WaitForInput);
+	OutputLine(NULL, "　私はあまり可愛くないと思うんだけど。",
+		   NULL, " I don't think they're that cute, though.", Line_WaitForInput);
+	OutputLine(NULL, "…だってほら、",
+		   NULL, " ...After all, they look just like a...", Line_Normal);
+
+	ClearMessage();
+
+	DrawScene( "Maturi_txt13", 0 );
+	Wait( 1000 );
+	DrawScene( "black", 0 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "みたいじゃない？」",
+		   NULL, "...don't they?\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "higurashi", 120, 0 );
+
+	OutputLine(NULL, "「…………………ッ…！」",
+		   NULL, "\".........!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　突然、羽入が息を詰まらせたみたいな感じで呻いた。",
+		   NULL, "Suddenly Hanyuu moaned as if suffocating.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "M_Hi9", "maskup", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Ri_MajimeA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……鷹野。",
+		   NULL, "\"......Takano,", Line_WaitForInput);
+	OutputLine(NULL, "羽入はバケモノじゃありませんです。",
+		   NULL, " Hanyuu isn't a monster.", Line_WaitForInput);
+	OutputLine(NULL, "二度と言ったら許さないのです。」",
+		   NULL, " Don't ever say that again.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Komaru#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そうだよ鷹野さん、人の趣味に、…悪いよ。」",
+		   NULL, "\"That's right, Takano-san, that was mean.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 2, "Ta_Def#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「くす。",
+		   NULL, "\"Hee.", Line_WaitForInput);
+	OutputLine(NULL, "ごめんなさいね、決してそんなつもりはなかったんだけど。」",
+		   NULL, " Sorry, I didn't mean to be rude.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…梨花ちゃんの言い方が少しきつかった。",
+		   NULL, "...Rika-chan said it rather firmly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　多分、羽入にとって、それはとても傷つくキーワードに違いない。",
+		   NULL, "I'm sure Hanyuu doesn't want to hear that word.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鷹野さんはたまに、悪意はなくとも貶すような言い方をする。",
+		   NULL, "Sometimes Takano-san says things in a derogatory way without realizing it herself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、言っていいことと悪いことがある、ってことだろうな。",
+		   NULL, "But I guess there are things you can't or shouldn't say.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　羽入は、何だか複雑そうな顔で鷹野さんを見ていた。",
+		   NULL, "Hanyuu was looking at Takano-san with a complicated look on her face.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, FALSE );
+	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　その表情を見て、傷つけてしまったかもしれないことに気付き、鷹野さんは軽く謝ると、富竹さんと共にその場を去ってくれた。",
+		   NULL, "After seeing that expression, Takano-san realized she might have hurt her feelings. She apologized and left with Tomitake-san.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "JOK1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「……大丈夫？",
+		   NULL, "\"......Are you okay?", Line_WaitForInput);
+	OutputLine(NULL, "　羽入？",
+		   NULL, " Hanyuu?", Line_WaitForInput);
+	OutputLine(NULL, "　綺麗に転げ落ちたから大して怪我はないそうです。」",
+		   NULL, " You landed beautifully too, so you're not injured.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Ha_YowakiA1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
+	DisplayWindow();
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「…",
+		   NULL, "\"...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "梨花、",
+		   NULL, " Rika...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………今の人、",
+		   NULL, " that person...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ぁぅ",
+		   NULL, " ...au...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………ぁぅ。」",
+		   NULL, " au.\"", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "「……今の人？",
+		   NULL, "\"......Her?", Line_WaitForInput);
+	OutputLine(NULL, "　鷹野ですよ。」",
+		   NULL, " That's Takano.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 3, "yabaisemi", 120, 0 );
+
+	DisableWindow();
+	ChangeBustshot( 0, "Ha_AuA1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………鷹野。",
+		   NULL, "\"...Takano.", Line_WaitForInput);
+	OutputLine(NULL, "…………鷹野…。」",
+		   NULL, " ......Takano...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　羽入が鷹野さんの名前をうわ言のように繰り返す。",
+		   NULL, "Hanyuu repeated Takano-san's name.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…頭の妙なところを打ったとかいうことはないだろうか、急に不安になる。",
+		   NULL, "All of a sudden, I grew worried that she hit her head or something.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　突然、羽入はがばっと跳ね上がり、梨花ちゃんの襟首を揺するように掴んだ。",
+		   NULL, "Hanyuu stood straight up and grabbed Rika-chan's collar.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "「り、……梨花…！！",
+		   NULL, "\"R... Rika!!", Line_WaitForInput);
+	OutputLine(NULL, "　あぅあぅあぅ！！！",
+		   NULL, " Au au au!!!", Line_WaitForInput);
+	OutputLine(NULL, "　鷹野です、鷹野！",
+		   NULL, " It's Takano, Takano!!", Line_WaitForInput);
+	OutputLine(NULL, "　鷹野！！！」",
+		   NULL, " Takano!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……そうですよ？　鷹野ですよ？」",
+		   NULL, "\"......That's right. She's Takano.\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "「ち、……違う、梨花！！！",
+		   NULL, "\"N... No, Rika!!!", Line_WaitForInput);
+	OutputLine(NULL, "　鷹野です、鷹野！！！",
+		   NULL, " Takano, Takano!!!", Line_WaitForInput);
+	OutputLine(NULL, "　覚えてないのですかッ？！」",
+		   NULL, " Don't you remember?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……知ってるわよ。",
+		   NULL, "\"......I know.", Line_WaitForInput);
+	OutputLine(NULL, "鷹野三四でしょう？",
+		   NULL, " Miyo Takano, right?", Line_WaitForInput);
+	OutputLine(NULL, "　入江診療所の。」",
+		   NULL, " From the Irie Clinic.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…思い、……出せないのですか…………。」",
+		   NULL, "\"You... can't remember...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_suzu", 128, 64 );
+
+	OutputLine(NULL, "「……ごめん、羽入。",
+		   NULL, "\"...Sorry, Hanyuu.", Line_WaitForInput);
+	OutputLine(NULL, "何の話…？」",
+		   NULL, " What are you talking about?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………り、",
+		   NULL, "\".........R............", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……………梨花…………。",
+		   NULL, " Rika.........", Line_WaitForInput);
+	OutputLine(NULL, "…………そんな………………。」",
+		   NULL, " ......This can't be............\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "Testament", 120, 0 );
+
+	OutputLine(NULL, "　……最後の、……最後なのに……。",
+		   NULL, "This is the last one... the last one...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　生きながら腹を裂かれる苦痛に耐え、ようやく焼き付けた真の敵の名前なのに……ッ！！",
+		   NULL, "She finally imprinted herself with the true enemy's name, while enduring the pain of her stomach being cut open.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……それを……覚えられなかったなんて……………。",
+		   NULL, "And yet she can't... remember...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　古手梨花は、",
+		   NULL, "Rika Furude", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…カケラの記憶の継承に、",
+		   NULL, " has failed to inherit", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "失敗した。",
+		   NULL, " the memory of the Fragments.", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "black", 1000 );
+
+}

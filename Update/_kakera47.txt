@@ -1,0 +1,82 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "it_move2", 120, 0 );
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentCube", 400);
+		DrawScene( "Fure3", 400 );
+	} else {
+		DrawScene( "Kakera4", 1000 );
+	}
+
+	OutputLine(NULL, "　ルールＸに狂う園崎詩音のカケラ。",
+		   NULL, "This is the piece of Shion Sonozaki, who goes mad after being taken in by Rule X.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同情の余地もなく、哀れむ他ない心の痛むカケラだけれど。",
+		   NULL, "With no room for sympathy, this is such a painful piece that one can only have pity.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…ルールＺという錠前の鍵穴をはっきりとさせることができたに違いない。",
+		   NULL, "It distinctly identifies the keyhole of the padlock called Rule Z.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その鍵穴には、やがて前原圭一が自ら鍵となって抉じ開けるのだ。",
+		   NULL, "Keiichi Maebara becomes a key himself to pry open this padlock.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、園崎魅音が望んでいたように、…村に立ち込める澱んだ空気を一掃する。",
+		   NULL, "And as Mion Sonozaki wished for, he becomes a wind that clears out the stagnant air filling the village.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　このカケラもまた、学ぶ上での重要な課程なのだ。",
+		   NULL, "This piece also teaches us an important lesson.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　園崎詩音はこのカケラで学び、以後、北条沙都子の心強い味方となっていく。",
+		   NULL, "Shion Sonozaki learns through this piece, and then becomes a strong ally for Satoko Houjou.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そう言えば、北条沙都子とは、ルールＺの錠前そのものを示す駒なのかもしれない。",
+		   NULL, "In that way, maybe Satoko Houjou is a piece that represents the padlock for Rule Z.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼女を救わなければ、ルールＺは破られない。",
+		   NULL, "Unless she is saved, Rule Z can't be defeated.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女を救うことで、ルールＺが打ち破られたことが示される。",
+		   NULL, "And when she is saved, that means Rule Z is defeated.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　このカケラが示したのは、それだけのこと。",
+		   NULL, "This piece indicates only that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　園崎詩音が命を賭して学んだのは、それだけのこと。",
+		   NULL, "That's the only thing Shion Sonozaki learned by gambling her life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、それはとても重要なことだったんだと、今は思える。",
+		   NULL, "But now, I think that it's very important.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子と詩音が、カボチャで戯れている姿を見る度に、ね。",
+		   NULL, "Every time I see Satoko and Shion argue about pumpkins, I think about that.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyefragment" );
+	DrawScene( "black", 1000 );
+
+}

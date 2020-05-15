@@ -1,0 +1,78 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "it_moves", 120, 0 );
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentGroup", 1000);
+		DrawScene( "Fure2", 1000 );
+	} else {
+		DrawScene( "Kakera2", 1000 );
+	}
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawScene( "So2", 1000 );
+
+	OutputLine(NULL, "　このゲーム盤の上では、何が起ころうとも全て祟りやら、園崎家の暗躍やらで片付けられてしまうことを思い知らせるカケラ。",
+		   NULL, "This game piece reminds us that no matter what happens on this game board, everything is due to the curse or the Sonozaki family pulling someone's strings.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いえ、もう少し私風に言うならば、ルールＺの存在を気付かせてくれるカケラなのかしら。",
+		   NULL, "No, to put it in my words, this is the piece that makes everyone aware of the existence of Rule Z.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "mati_O6", 400 );
+
+	OutputLine(NULL, "　このカケラでは気付きにくいことだけど。",
+		   NULL, "It's hard to notice with just this piece.", Line_WaitForInput);
+	OutputLine(NULL, "…ルールＸに囚われた園崎詩音が、ルールＹに勘違いして翻弄されながら、",
+		   NULL, " But this is a complicated Fragment where Shion Sonozaki, while trapped in Rule X and mistaking it for Rule Y is hurled about,", Line_WaitForInput);
+	OutputLine(NULL, "ルールＺの存在に気付いていくややこしいカケラ。",
+		   NULL, " comes to notice the existence of Rule Z.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、ゲーム盤の法則を全て教えてもくれる重要なカケラでもある。",
+		   NULL, "But this is also the piece that teaches us the rules of the game board.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Si_defA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　…そう言えば、園崎詩音という駒も、ゲーム盤の見地からは、外から来た駒という扱いになるのかもしれない。",
+		   NULL, "By the way, the piece called Shion Sonozaki is a piece coming from the outside, from the game's point of view.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　始めは北条沙都子を毛嫌いしていた彼女も、…このカケラともうひとつのカケラを経て大切な何かを学び取り、",
+		   NULL, "She dislikes Satoko Houjou at first, but through this and another piece, she learns something important,", Line_WaitForInput);
+	OutputLine(NULL, "ルールＸに抗え、ルールＺと戦うための強力な駒に成長する。",
+		   NULL, "  challenges Rule X, and then grows to be a powerful piece to fight Rule Z.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　このカケラがとにかく滑稽なのは、……それがとても狡猾に隠されていて、ぱっと見ただけでは、まるでそう見えないことなのだけれど。",
+		   NULL, "The most ridiculous part of this Fragment... is that it's hidden so cunningly, and doesn't seem that way at all with just a passing glance.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　学べよ学べ、過ちを。",
+		   NULL, "Learn, learn from your mistakes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そしてどうか、強力な駒となって敵に打ち勝つ力を貸しておくれ…。",
+		   NULL, "Please become a powerful piece and lend me your strength to defeat my enemies.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

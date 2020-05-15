@@ -1,0 +1,2022 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "instict2", 120, 0 );
+
+	DrawScene( "Fure1", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Fure2", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Fure3", 400 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　………うん？",
+		   NULL, "...Hmm?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは、",
+		   NULL, "What", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……何？",
+		   NULL, " is this?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　こんな小さなカケラ屑、今まで気付かなかった。",
+		   NULL, "I never noticed this tiny little Fragment...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　カケラも時にはひびも入るし、割れたり欠けたりもする。",
+		   NULL, "Sometimes a Fragment gets cracked and it breaks.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……私たちが絶対だと信じる運命にも、時にひびが入るのと同じにね。",
+		   NULL, "Just like how the fate we believe in cracks sometimes.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　欠けた運命は、もはや別の運命だ。",
+		   NULL, "A damaged fate is no longer the same fate it was.", Line_WaitForInput);
+	OutputLine(NULL, "……ならば、これは本来は何に欠けていた運命なのか。",
+		   NULL, " Then which fate does this piece belong to?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私はそのカケラ屑を拾い、",
+		   NULL, "I picked up the tiny Fragment", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私の持ついくつかのカケラにうまく合わさらないか、色々と試してみた。",
+		   NULL, " and tried to match it with the Fragments I have in my hand.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……そうして、最後に手に取ったカケラが、",
+		   NULL, "And the last Fragment I picked up was", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…暇潰し編のカケラ。",
+		   NULL, " the Himatsubushi Fragment.", Line_Normal);
+	ClearMessage();
+
+	if(GetGlobalFlag(GArtStyle) == 1) {
+		DrawFragment("minacubemap", "FragmentDiamondNarrow", 1300);
+		DrawSceneWithMask( "fure1", "maskleft", 1, 0, 1300 );
+	} else {
+		DrawSceneWithMask( "Kakera3", "maskleft", 1, 0, 1300 );
+	}
+
+	OutputLine(NULL, "　このカケラは元から歪な形をしていた。",
+		   NULL, "This Fragment was distorted from the beginning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…その、歪な部分に",
+		   NULL, "And look", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "、",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ほら…。",
+		   NULL, " see?", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	OutputLine(NULL, "ぴったり合った。",
+		   NULL, " This tiny piece fits perfectly.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……………一体、このカケラ屑がくっつくと、",
+		   NULL, "With this tiny Fragment,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……どう世界が変わるというのか。",
+		   NULL, " how will the world change?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どんな、奇跡が起こるというのか…。",
+		   NULL, "What kind of miracle will occur?", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 3, 255, 255, 255, 256, 0, 3000, TRUE );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawSprite( 0, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 40, 0, TRUE );
+	FadeFilm( 0, TRUE );
+	DrawScene( "black", 0 );
+	FadeSprite( 0, 0, TRUE );
+
+	OutputLine(NULL, "　世界がぐにゃりと歪む。",
+		   NULL, "The whole world warped.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…一度割れたものをくっ付けなおしたのだから、断層で屈折が起こるのだろう。",
+		   NULL, "...Since I put the broken piece back where it belonged, the distortion centered on the crack.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…でも、覗けないわけじゃない…。",
+		   NULL, "But that doesn't mean I can't take a peek inside.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこは、昭和はすでに６０年を過ぎている。",
+		   NULL, "It's already past 1985.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………古手梨花たちの物語が、いつもの通りに昭和５８年６月の袋小路に終わった後のこと。",
+		   NULL, "It's a time long after Rika Furude and her friends' stories tragically ended in June 1983.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "Mati9", 1000 );
+
+	PlayBGM( 1, "Rain", 120, 0 );
+
+	OutputLine(NULL, "　ピー、ザザ！",
+		   NULL, "Beep, zzzk!", Line_WaitForInput);
+	OutputLine(NULL, "　ノイズ交じりの着信音がイヤホンに入る。",
+		   NULL, " With some mild interference, an order crackled through their headsets.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「全班へ。",
+		   NULL, "\"All units,", Line_WaitForInput);
+	OutputLine(NULL, "室長からありがたいお言葉があるぞ、傾注しろ。」",
+		   NULL, " the chief has a message for all of you, so listen up!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ご苦労さん！",
+		   NULL, "\"Good work, everyone!", Line_WaitForInput);
+	OutputLine(NULL, "　所轄署は１５分くれることになってる。秒で制圧しろッ！！",
+		   NULL, " The local police have given us fifteen minutes to wrap this up, but I'm only giving you a few seconds!!", Line_WaitForInput);
+	OutputLine(NULL, "　ひとりたりとも逃がすなッ！",
+		   NULL, " Don't let a single person escape!!", Line_WaitForInput);
+	OutputLine(NULL, "　ターゲットの１人は外交官だ。",
+		   NULL, " The main target is a diplomat.", Line_WaitForInput);
+	OutputLine(NULL, "警察だと悟られるな、有無を言わせず身柄を確保しろ！",
+		   NULL, " Don't let him suspect you're a cop. Just grab him!", Line_WaitForInput);
+	OutputLine(NULL, "　ただし間違っても危害を加えるな！",
+		   NULL, " But make sure you leave no injuries!", Line_WaitForInput);
+	OutputLine(NULL, "　外交問題に発展するぞ！」",
+		   NULL, " It'll lead to problems if you do!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「外交官特権で地元暴力団と癒着している外道どもだ。",
+		   NULL, "\"They're dirtbags who hide under diplomatic immunity to deal with the local gangsters.", Line_WaitForInput);
+	OutputLine(NULL, "ヤクで荒稼ぎし、借金のカタにはめて人身売買にまで手を染めてやがる。",
+		   NULL, " They launder money from drug dealing and force people into the sex trade to pay off high interest debts.", Line_WaitForInput);
+	OutputLine(NULL, "現地大使館の話じゃ被害者には１０代未満の少女まで含まれてる。」",
+		   NULL, " According to the local embassy, some of the victims are younger than teenagers.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……糞どもが。」",
+		   NULL, "\"...Shitbags.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　本当ならただの暴力団絡みの事件だ。",
+		   NULL, "Normally, this would be a simple case, what with the perpetrators being gangsters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だが、某国の大使館員が関わっていたことがわかった時点で、事態は極めてややこしいことになった。",
+		   NULL, "But when the police found out that a foreign diplomat was involved, things got much more complicated all of a sudden.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　外交官には特権があり逮捕できない。",
+		   NULL, "Diplomats have diplomatic immunity, so the police can't arrest them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だが、そいつが黒幕のひとりで、某国犯罪組織と日本の暴力団組織の橋渡しをしている大物なのは間違いない。",
+		   NULL, "But they knew he was an important figure in the whole scheme, and there was no doubt that he was the middleman between the foreign criminal organization and the Japanese gangsters.", Line_WaitForInput);
+	OutputLine(NULL, "見逃すことは到底できないのだ。",
+		   NULL, " They couldn't let him escape.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　国外に追放するのは容易だろうが、それではトカゲの尻尾切りにしかならない。",
+		   NULL, "It'd be easy to deport him, but that wouldn't solve anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　大使館に対し協力依頼をしたが、大使館側はこれを拒否。",
+		   NULL, "The police had asked the embassy for assistance, but they denied the request.", Line_WaitForInput);
+	OutputLine(NULL, "その時点で事態は膠着に陥った。",
+		   NULL, " And the case was put on a standstill at that point.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　そんな中、自衛隊のレーダー技術、ミサイル技術に関する機密が売買されるとの情報が入った。",
+		   NULL, "That's when they found out that the organization was going to be selling the Self Defense Force's classified radar and missile technology secrets.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　海外への機密漏えいの段階に及んで公安部は強硬解決を決意。",
+		   NULL, "The Public Safety Division then had to move on the premise to protect this classified government information.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…そして本日、その作戦の決行が決まったのである…。",
+		   NULL, "And today was the day that operation was set to go...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「正面は階段前に２人。",
+		   NULL, "\"Two men at the front stairs.", Line_WaitForInput);
+	OutputLine(NULL, "地下入口に２人。",
+		   NULL, " Two men at the underground entrance.", Line_WaitForInput);
+	OutputLine(NULL, "裏口に４人。",
+		   NULL, " Four men at the back door.", Line_WaitForInput);
+	OutputLine(NULL, "全員帯銃の可能性大！」",
+		   NULL, " All suspects are believed to be armed.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「普段より２人多いな。」",
+		   NULL, "\"Two more than usual, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あの人にとっちゃ、２秒余計にかかるだけさ。",
+		   NULL, "\"It'll only take two seconds more for him.", Line_WaitForInput);
+	OutputLine(NULL, "…容赦ねぇからな、あの人。」",
+		   NULL, " ...He never shows anyone mercy.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「聞こえるか、赤坂！",
+		   NULL, "\"Can you hear, Akasaka?", Line_WaitForInput);
+	OutputLine(NULL, "　お前が斬り込み隊長だ。",
+		   NULL, " You're on point.", Line_WaitForInput);
+	OutputLine(NULL, "用心してかかれ！",
+		   NULL, " Be careful!", Line_WaitForInput);
+	OutputLine(NULL, "　よし、開始しろ！」",
+		   NULL, " Okay, let's move!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "G_Tactics", 120, 0 );
+
+	OutputLine(NULL, "「……赤坂了解。",
+		   NULL, "\"This is Akasaka. I copy.", Line_WaitForInput);
+	OutputLine(NULL, "作戦を開始する。」",
+		   NULL, " Let's go.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Mati13", 1000 );
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Aks_majimeA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　繁華街の中、ふらりと曲がり角より現れたのは、…赤坂だった。",
+		   NULL, "A man suddenly appeared around the corner downtown. It was Akasaka.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、かつて梨花と出会った頃のような初々しさはまったくない。",
+		   NULL, "He displayed none of the naivete that he did when he first met Rika.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mati15", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　…赤坂が、地下クラブの入口にやって来ると、外国人的なイントネーションで護衛が制止してくる。",
+		   NULL, "When he got to the entrance of the underground club, a bouncer with a heavy foreign accent stopped him.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ココ、",
+		   NULL, "\"This place,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "会員制。",
+		   NULL, " members only.", Line_WaitForInput);
+	OutputLine(NULL, "おニイさん、",
+		   NULL, " Do you", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "会員証ある？」",
+		   NULL, " have membership card?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………………。」",
+		   NULL, "\".........\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂が無言で懐より会員証を取り出す。",
+		   NULL, "Akasaka pulled a card out after being asked.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…偽造の困難なタイプで、１枚しか確保できなかった。",
+		   NULL, "It was a card that was very difficult to forge, so they could only get one.", Line_WaitForInput);
+	OutputLine(NULL, "だから、先陣を切る赤坂に託されたのだ。",
+		   NULL, " As the man on point, he was the one to recieve it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　会員証を持っていることを確認すると、護衛は行って構わないと顎で示した。",
+		   NULL, "The bouncer let Akasaka in after confirming he had a membership card.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "「……赤坂さん、地上護衛突破。",
+		   NULL, "\"Akasaka-san passed the bouncer at the entrance.", Line_WaitForInput);
+	OutputLine(NULL, "地下階段を下りてます…！」",
+		   NULL, " He's going down the stairs.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「頼むぞ…、赤坂…。」",
+		   NULL, "\"Come on, Akasaka...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　地下階段の奥には、高級クラブを思わせる装飾過多な扉があった。",
+		   NULL, "At the bottom of the staircase, there was an overly-decorated door like the ones you'd see at a high-class club.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　毒々しい色のカクテルライトが照らし出し、そこが魔窟の入口であることを無言で物語る。",
+		   NULL, "The venomous glow of the cocktail lights lit it up, silently warning everyone it was an entrance to a den of evil.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…いらっしゃいませ。",
+		   NULL, "\"Welcome.", Line_WaitForInput);
+	OutputLine(NULL, "会員証を拝見いたします。」",
+		   NULL, " May I see your membership card?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………………。」",
+		   NULL, "\"............\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　入口前の護衛が会員証を受け取り、それを壁に付けられたカードリーダーに通す。",
+		   NULL, "The guard at the entrance took the membership card and put it through the card reader on the wall.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……ブー。",
+		   NULL, "Beep!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　エラー音。",
+		   NULL, "An error sound.", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂の額に汗が浮く。",
+		   NULL, " Slight perspiration could be seen on Akasaka's forehead.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…だが護衛は、自分のカードの通し方が悪かったのだと思い、二度三度、カードを通していた。",
+		   NULL, "The guard swiped the card a couple of times more.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ブー。",
+		   NULL, "Beep.", Line_WaitForInput);
+	OutputLine(NULL, "……ブー。",
+		   NULL, " Beep.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………赤坂さん、手間取ってます…。」",
+		   NULL, "\"...Akasaka-san is having a problem...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まさか、カードの認証が変えられたか…？！」",
+		   NULL, "\"Did they change the system...?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……赤坂にトラブルが発生したら作戦変更するぞ。",
+		   NULL, "\"...If Akasaka's encountering trouble, we'll change plans.", Line_WaitForInput);
+	OutputLine(NULL, "赤坂の安全を速攻で確保しろ…。」",
+		   NULL, " Secure his safety pronto...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もう１人の護衛が次第に表情を険しくしていく。",
+		   NULL, "The expression on the guard with him steadily grew dour.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　右手が、ジャケットの内側に差し込まれ、…恐らく、銃に手を伸ばしているに違いない。",
+		   NULL, "His right hand reached inside of his jacket... probably fingering his gun.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……ピンポーン。",
+		   NULL, "...Ding.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　緊張の沈黙に似合わない軽やかな音がして、カードリーダーに緑のランプが点る。",
+		   NULL, "The buzzer suddenly rang with a delightful tone, and the card reader flashed a green light.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに呼応して、ガチャリと扉のロックが外れる音がした。",
+		   NULL, "Immediately after that, the lock on the door opened up.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「お待たせしました。",
+		   NULL, "\"Thank you for waiting.", Line_WaitForInput);
+	OutputLine(NULL, "どうぞお通りください。」",
+		   NULL, " Please head on inside.\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_M_Door8k", 128, 64 );
+	DrawScene( "Ho1_Tokyo", 1000 );
+
+	OutputLine(NULL, "　護衛は懐の手を戻し、重い扉を開いた。",
+		   NULL, "The guard pulled his hand out of his jacket and opened up the heavy door.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　中からは騒がしい音楽と明滅する色とりどりの灯りが溢れ出して来る…。",
+		   NULL, "Loud music and flashing colorful lights spilled out from the inside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　扉の内側から、正装した護衛が姿を現し、うやうやしくお辞儀をして歓迎した。",
+		   NULL, "From within that, a well-dressed guard appeared to welcome Akasaka.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…今この瞬間、赤坂の最初の目的は達せられた。",
+		   NULL, "...At this moment, his first mission was accomplished.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これこそが全班突入の狼煙であり、…同時に、赤坂が単身、敵地に足を踏み入れていて、極めて危険な状態に身を置いていることも示す。",
+		   NULL, "Having acted as the go signal for the remaining units, Akasaka was also in the dangerous position of being in enemy territory all by himself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この扉が、突入時の最大の障害だったのだ。",
+		   NULL, "The door was the biggest obstacle for their ambush.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　オートロックなので、閉まれば自動的に施錠されてしまう。",
+		   NULL, "The door locked automatically, so whenever it was closed, it was also sealed that way.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　堅牢な扉で外から開けるのは困難を極める。",
+		   NULL, "It was a solid door, and nearly impossible to open from the outside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……誰かがこの扉を開き、突入班突入までの十数秒間、この扉を確保していなくてはならないのだ。",
+		   NULL, "Somebody had to not only open that door, but keep it open for several seconds in order for the raid to begin.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、その大任は今や赤坂にしか任せられないと室長は判断したのだ。",
+		   NULL, "Akasaka was the only one who could do that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……赤坂。",
+		   NULL, "\"This is Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "入口確保。」",
+		   NULL, " Entrance secured.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 0 );
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 1, "Rain", 120, 0 );
+
+	OutputLine(NULL, "『作戦開始ッ！！！』",
+		   NULL, "\"GO, GO, GO!!!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mati14", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　赤坂が入ったビルの向かいは、テナントの入れ替わりなのか、作業用のトラックが２台ほど停められていた。",
+		   NULL, "The complex on the other side of the club was getting a new tenant, and there were two trucks parked in front of the building.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だがそれは偽装だった。",
+		   NULL, "But of course, that was just a disguise.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…１台の荷台の扉が開き、中から数十人の私服捜査官が踊り出す！！",
+		   NULL, "The door to one of the trucks opened, and several dozen plainclothes investigators jumped out!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もちろん、裏口でも同じことが起こっていた。",
+		   NULL, "The same thing was happening at the back door, too.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　地上の護衛がすぐに異常事態に気付き拳銃を抜いたが、すぐ近くに一般人のふりをして隠れていた捜査官が背後より襲い掛かり、瞬きする間に制圧してしまう。",
+		   NULL, "The ground level guards noticed this and began to draw their guns, but were taken down immediately by nearby investigators who had been pretending to be innocent bystanders.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　そして数十人が無言のまま、地下階段に一気に押し寄せた。",
+		   NULL, "Several dozen investigators quietly went down the underground stairs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…この狭い地下階段も作戦の障害だったのだ。",
+		   NULL, "These narrow underground stairs were another obstacle to their operation.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そしてこの光景は監視カメラによってセキュリティに見られている。",
+		   NULL, "Everything would end up on the security camera.", Line_WaitForInput);
+	OutputLine(NULL, "数秒を待たずに突入はバレるのだ。",
+		   NULL, " Their raid would become known within a few seconds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　セキュリティがボタンを１つ押せば、ロックは外部から解除不能になる。",
+		   NULL, "For that matter, a push on the security button would make it impossible for the lock to be opened from the outside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だからこそ、突入前に扉を確保する必要があったのだ。",
+		   NULL, "That's why they had to secure the door before the ambush.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　大勢が階段を駆け下りてくる異常な足音に、赤坂の両隣にいる護衛は気付く！",
+		   NULL, "The guards on both sides of Akasaka noticed the loud footsteps coming down the stairs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　出迎えていた正装の護衛も異常事態に気付く…！",
+		   NULL, "The well-dressed guard also realized that something was wrong.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "Ho1_Tokyo", 400 );
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	OutputLine(NULL, "　３人の護衛の意識の注視が、…赤坂を逸れて、後方の階段へ。",
+		   NULL, "The three guards shifted their attention from Akasaka to the stairs behind him.", Line_WaitForInput);
+	OutputLine(NULL, "それを呼吸で感じ取る赤坂……。",
+		   NULL, " And as he sensed that attention shift...", Line_WaitForInput);
+	OutputLine(NULL, "……………赤坂は、少しだけ深く息を吸い込むとそこで呼吸を止めた。",
+		   NULL, " Akasaka took a quick, deep breath, and then stopped breathing entirely.", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 3, 255, 255, 255, 256, 0, 0, TRUE );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　停止した空気の世界で、奇妙な姿勢で両脇の護衛が宙に浮かび上がる…ッ！！",
+		   NULL, "The two guards standing beside him suddenly rose into the air in strange positions.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "samayoi", 120, 0 );
+
+	OutputLine(NULL, "　赤坂は自分と彼らの立ち位置を理解していた。",
+		   NULL, "Akasaka had determined his position relative to the two guards next to him.", Line_WaitForInput);
+	OutputLine(NULL, "だから彼らを目で確認する必要がまったくなかった。",
+		   NULL, " So he didn't need to check with his eyes.", Line_WaitForInput);
+	OutputLine(NULL, "…だから、にもかかわらず！",
+		   NULL, " ...But even so!", Line_WaitForInput);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
+
+	OutputLine(NULL, "　左右の護衛の延髄にミリ単位のズレもなく正確に拳を叩き込んだ。",
+		   NULL, " His fists had been driven into their faces with such precise accuracy.", Line_WaitForInput);
+	OutputLine(NULL, "その拳は鍛え上げられ、悪に対して一片の容赦もない、まさに徹甲弾並の破壊力を備えていたのだ…！！",
+		   NULL, " His moves were well-trained ones, and showed no mercy against evil. They were as destructive as armor-piercing ammunition.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "black", 10 );
+	DrawScene( "Ho1_Tokyo", 0 );
+
+	OutputLine(NULL, "　その両腕を、打ち抜いたのと同じ速度で引き戻す…！！",
+		   NULL, "And furthermore, Akasaka had retracted his arms at the same speed he struck...!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それが明滅するライトに浮かび上がらせられたその様は、…異様の一言…！",
+		   NULL, "Everything looked so strange in the flashing lights...!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その光景を真正面で見ていた男は、何が起こったか理解できなかったに違いない。",
+		   NULL, "The man who witnessed all this probably couldn't figure out what had just happened.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　二人の護衛が歪な姿勢で宙に浮き上がり、目の前に今、立っていたはずの男が瞬時に姿勢を低くしていて……、",
+		   NULL, "The two guards were up in the air in strange positions and the man who had been standing in front of him was now crouching low.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "そこで停止した時間は砕けた！！",
+		   NULL, " Then that frozen moment shattered!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_glass", 128, 64 );
+	FadeFilm( 0, TRUE );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+
+	OutputLine(NULL, "　正装の男は天井に叩きつけられ、凄まじい速度で床に叩きつけられる！",
+		   NULL, "The well-dressed guard was smashed into the ceiling, and shortly afterward came crashing down onto the floor!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼は後に流動食を食べながら必死に思い出そうとするだろう。自分の顎を砕いたのは、拳だっけ膝だっけ？",
+		   NULL, "Later on, while slurping liquid food, he would desperately try to remember whether it was a fist or a leg that broke his jaw.", Line_WaitForInput);
+	OutputLine(NULL, "　それすらも理解できずにッ！！",
+		   NULL, " He would probably never quite recall it!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その男がうまい具合に床に転がり、扉の間に入ってくれたので、赤坂はここで扉を押さえて開けっ放しにしておく必要がなくなった。",
+		   NULL, "Rather luckily, the way his body fell blocked the door, so Akasaka didn't have to hold it open any longer.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……赤坂、突入する。」",
+		   NULL, "\"...This is Akasaka. I'm going in.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ま、待て！！",
+		   NULL, "\"W-Wait!!", Line_WaitForInput);
+	OutputLine(NULL, "　後続と合流しろッ！！",
+		   NULL, " Wait for your backup!!", Line_WaitForInput);
+	OutputLine(NULL, "　赤坂ッ！！！」",
+		   NULL, " Akasaka!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　店内は騒がしい音楽の海の中であったとしても、入口で起こった不穏な気配はすぐに感知されていた。",
+		   NULL, "The room was filled with loud music, but everyone had already noticed the brouhaha at the entrance.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「全員、床に伏せろおおおおぉおッ！！！」",
+		   NULL, "\"Everyone, GET DOWN!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　赤坂の怒号に、すぐに店中から悲鳴が起こる。",
+		   NULL, "As soon as Akasaka bellowed his warning, screams filled the club.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　罪の自覚のない自称小市民たちは、自分が蚊帳の外であることを示そうと床に這いつくばった。",
+		   NULL, "Most people immediately hit the floor as if trying to proclaim their innocence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、店内の護衛たちは一斉に赤坂に向かい対峙する！",
+		   NULL, "But all the guards reacted quickly to Akasaka.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな中、数人の護衛に庇われるように裏手へ逃げる一団がいた。",
+		   NULL, "In the midst of all this, there were a few people who were trying to make their escape through the back alongside several guards.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂はそこで、初めて停止していた呼吸を一度だけ許し、再び息を止め……狼の如く疾駆するッ！！",
+		   NULL, "Akasaka restarted his breathing once and then stopped it again... and then ran after them like a wolf!!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	PlayBGM( 1, "yabaisemi", 120, 0 );
+
+	EnlargeScreen( 288, 216, 64, 48, FALSE, 500, TRUE );
+	DrawScene( "Ho1_Tokyo", 400 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+
+	OutputLine(NULL, "　テーブルの上へ飛び上がり、一本が月収より高い高級酒や万年氷から削りだしたロックの入ったグラスを蹴散らしながら！！",
+		   NULL, "He jumped up onto the table, smashing expensive bottles of alcohol and scattering glasses with ice cubes made from the icebergs of the Arctic.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ボクサー崩れのような外国人用心棒が、無謀にも赤坂の前に立ち塞がる。",
+		   NULL, "A foreign bodyguard, whose previous profession must've been a professional boxer, thoughtlessly stood in front of Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "そして聞き取りづらいスラングで挑発を口にして掛かって来いというような仕草をした。",
+		   NULL, " With a heavy accent, he tried to taunt his opponent.", Line_WaitForInput);
+	OutputLine(NULL, "だが、赤坂はそんなのは見ていなかったし、どうでもいいことだった。",
+		   NULL, " But Akasaka couldn't have cared less about that.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　その男は、赤坂の拳から繰り出される一撃に対し、ガードを間に合わせたことだけが見せ場だったろう。",
+		   NULL, "The only display that man was able to put on for him was that he was able to block Akasaka's attack.", Line_WaitForInput);
+	OutputLine(NULL, "でも、そもそもガードになんかなってない！！",
+		   NULL, " But it wasn't even an effective guard!!", Line_WaitForInput);
+	OutputLine(NULL, "　赤坂の鍛え抜かれた豪拳は、ガードの腕ごと骨ごと打ち抜かれるだけなのだから！！",
+		   NULL, " The power of Akasaka's punches were so incredible that they simply broke the man's bones in his attempt to block them!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　腕が奇妙に歪み、悶絶の表情を浮かべた次の瞬間、赤坂の左腕が顔面にブチ込まれるッ！！",
+		   NULL, "The man's arm warped in a strange way, and the moment after the agony showed on his face, Akasaka's left arm ground into it!!", Line_ContinueAfterTyping);
+
+	DrawScene( "white", 10 );
+	DrawScene( "ryuuketu1", 0 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　赤坂の利き腕は右だ。",
+		   NULL, "Akasaka, you see, is right-handed.", Line_WaitForInput);
+	OutputLine(NULL, "だから男は感謝した方がいい。",
+		   NULL, " That man should consider himself grateful", Line_WaitForInput);
+	OutputLine(NULL, "眼底骨折程度で済むのだから！！",
+		   NULL, " that he was able to get away with a mere orbital fracture!!", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　その背後より組みかかろうとした男は、多分、それでもチャンスだと思ったに違いない。",
+		   NULL, "Thinking that this was his chance, another man attempted to tackle Akasaka-san from behind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どんな腕っ節のある男だって、背後を襲われればイチコロなんだ…！！",
+		   NULL, "He assumed that no matter how strong a man was, he'd go down quickly when attacked from behind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だって、意識を正面に集中させているんだから、背後から襲う自分は想定外のはず……！！！",
+		   NULL, "He also assumed that as Akasaka was concentrating in front of him, he wouldn't be expecting an attack from behind to begin with.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でもそれは赤坂が正面の男に集中しててくれればの話であって。",
+		   NULL, "But that would only be true if Akasaka was just concentrating on his front.", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂が正面の男など眼中になかった場合に限り、正しくはないッ！！！",
+		   NULL, " ...Indeed, the attacker was very wrong, for Akasaka was no longer even thinking about the man before him!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから赤坂は充分に距離も間合いも理解していた。",
+		   NULL, "Akasaka knew exactly when and what was about to happen.", Line_WaitForInput);
+	OutputLine(NULL, "……今日までのいくつもの修羅場が教えてくれていた。",
+		   NULL, " The experience he has built up to this day taught him that.", Line_WaitForInput);
+	OutputLine(NULL, "許しがたい悪人たちが、数に飽かせて襲い来る時、背後を襲ってくるタイミングと間合いを充分に体で覚えていた…！！",
+		   NULL, " His body, more than his mind, remembered the timing for when menaces to society like these would make their move from behind him.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ho2_Tokyo", 400 );
+
+	OutputLine(NULL, "　それは正面のボクサー崩れを左の正拳で打ち抜いた姿勢からの一連の流れ。",
+		   NULL, "Akasaka's attack continued fluidly from the left-arm punch that he struck against the ex-boxer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	ChangeScene( "black", 8, 200 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その左が引き戻される流れから左足が美しいまでの軌道を持って、背後の男を食らう龍となって襲い掛かる！",
+		   NULL, "His left arm retracted, and at the same time, he arced his left leg around beautifully as it crashed into the man approaching him from behind.", Line_WaitForInput);
+
+	DrawFilm( 2, 0xff, 0x00, 0x00, 256, 0, 0, TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	DrawScene( "white", 200 );
+	DrawScene( "black", 10 );
+
+	FadeFilm( 0, TRUE );
+
+	OutputLine(NULL, "　形容し難い鈍い音がして鼻骨をへし折ったことを教えた。",
+		   NULL, " A dull sound signified that his nose had been broken.", Line_WaitForInput);
+	OutputLine(NULL, "……でも、赤坂はそんなことはわかってるッ！",
+		   NULL, " ...But Akasaka already knew that!", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　そのまま、姿勢は流れるように捻れ、右の拳が唸りをあげて側頭部にブチ込まれるッ！！！",
+		   NULL, "Akasaka continued his motion and directed a decisive right blow to the side of his assailant's head.", Line_ContinueAfterTyping);
+
+	DisplayWindow();
+	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, TRUE );
+	DrawBustshot( 20, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	PlaySE( 0, "s_glass", 128, 64 );
+
+	OutputLine(NULL, "　無様な男は壁に叩きつけられ、",
+		   NULL, " The man slammed into the wall", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "反射するように跳ね返って床に転がった。",
+		   NULL, " and bounced off of it, rolling on the floor.", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	DrawScene( "Ho1_Tokyo", 400 );
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　そこで赤坂はもう一度だけ呼吸を許す。",
+		   NULL, "Akasaka took another breath.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その時、明滅するライトの中に浮かび上がった、鬼神のような表情に、全部の護衛たちは思った！",
+		   NULL, "Under the glare of the dazzling club lights, the guards realized they were up against a demon.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　あぁ、こいつの進路だけは遮っちゃだめだ！！",
+		   NULL, "Yes, they realized that there was no way to take him down!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分たちは人間の敵と戦うように言われてる。",
+		   NULL, "The guards were being paid to deal with humans.", Line_WaitForInput);
+	OutputLine(NULL, "人間じゃないヤツと戦うのは給料の範囲外だッ！！！",
+		   NULL, " Fighting demons just wasn't in their job description!!!", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+
+	OutputLine(NULL, "　そこへようやく後続の、赤坂の仲間たちが一斉に店内へ雪崩れ込んだ。",
+		   NULL, "At that moment, backup finally arrived.", Line_ContinueAfterTyping);
+
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	SetSpeedOfMessage( FALSE, 0 );
+	ClearMessage();
+
+	OutputLine(NULL, "　ようやくという表現は彼らのためにも妥当ではない。",
+		   NULL, "Maybe \"finally\" isn't a suitable word.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…第一、ようやくも何も、一瞬なのだ。",
+		   NULL, "Everything that happened did so over a matter of seconds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂が５人を沈黙させた時間は、彼にとっての２呼吸の間でしかなかったッ！！",
+		   NULL, "The time it took for Akasaka to take down those five guards was a span of merely two breaths.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「全員、床に伏せて頭の上で手を組めッ！！",
+		   NULL, "\"Put your hands above your head and get down on the floor!!", Line_WaitForInput);
+	OutputLine(NULL, "　抵抗すると命の保障はしない！！」",
+		   NULL, " If you resist, we will open fire!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　赤坂の獅子奮迅の活躍で、もう完全に流れは出来上がっていた。",
+		   NULL, "Thanks to Akasaka's furious action, the flow of events was already set.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その圧倒的な迫力に、首魁たちは皆、逃げ切れないと知り観念して床に伏せるが、中の一人は開き直るように笑った。",
+		   NULL, "Akasaka's intimidating first strike shattered the gang leaders' will to run. They were all down on the floor but one of them began smiling.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「私に触れる、良くないです！",
+		   NULL, "\"You shouldn't touch me!", Line_WaitForInput);
+	OutputLine(NULL, "　外交問題なりますよ！」",
+		   NULL, " It'll lead to an international incident!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	OutputLine(NULL, "　だが赤坂はその襟首を掴み上げると、コンクリートの壁に乱暴に叩き付けた。",
+		   NULL, "Akasaka grabbed him by the collar and threw him against the concrete wall.", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 3*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「あ、あなた警察ですか。",
+		   NULL, "\"A-Aren't you a policeman?", Line_WaitForInput);
+	OutputLine(NULL, "不逮捕特権あります！！",
+		   NULL, " I have diplomatic immunity!!", Line_WaitForInput);
+	OutputLine(NULL, "　私は外交官です！！」",
+		   NULL, " I am a diplomat!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そりゃよかったな。",
+		   NULL, "\"Good for you.", Line_WaitForInput);
+	OutputLine(NULL, "給料いくらだ。」",
+		   NULL, " So how much did you get paid, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「これ、外交問題になります！",
+		   NULL, "\"This will be an international incident!!", Line_WaitForInput);
+	OutputLine(NULL, "　大使館へ連絡させてくだ」",
+		   NULL, " I will be calling the embas-\"", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+	Wait( 600 );
+	OutputLine(NULL, "「おあああああぁッ！！！！」",
+		   NULL, " \"Ohhahhhhhhhh!!!!\"", Line_ContinueAfterTyping);
+
+	DrawScene( "black", 0 );
+	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 6*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 6*2, TRUE );
+	DrawScene( "Ho2_Tokyo", 400 );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "　龍のような咆哮と共に赤坂の右拳が男の頭部右脇の壁に打ち込まれる！！",
+		   NULL, "With a dragon-like roar, Akasaka's right fist pounded the wall right next to the diplomat's head!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	DisplayWindow();
+	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 200 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 245, 40, 0, 2, 2*2, TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 245, 40, 0, 2, 2*2, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 6*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 6*2, TRUE );
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　間髪いれずに左拳が頭部左脇へ打ち込まれ、瞬きを２つも許さないわずかの瞬間に７発の連撃が頭部左右スレスレに叩き込まれ、亀裂すら浮かべる！！",
+		   NULL, "Immediately after that, his left fist pounded the wall on the other side of that head, and soon enough Akasaka had pounded the wall seven times, each just a sliver away from the diplomat!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それらの破壊力は、たったの一撃でもこの男の頭部を砕きかねないのだ！",
+		   NULL, "His fists were easily powerful enough to crush the man's head!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　失禁しかねないくらいに呆然とした男は、力なくそこへ崩れ落ちる。",
+		   NULL, "The diplomat crumbled to the floor.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "「…は、………はひぃいぃぃぃ…………。」",
+		   NULL, "\"Haa...haahhh...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……赤坂。",
+		   NULL, "\"This is Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "ターゲット確保。」",
+		   NULL, " Target secured.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ho2_Tokyo", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　後の検分で、公安部が確認していなかった隠し通路からの逃走ルートが発見される。",
+		   NULL, "Further investigations discovered a secret getaway route that even Public Safety didn't know about.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこにはソ連製の軍用機関銃もあり、赤坂が店内で制圧していなかったら、取り逃がしていた可能性、もしくは双方が死傷者を出す大規模な銃撃戦に発展していた可能性が高い。",
+		   NULL, "Dozens of Soviet military-grade machine guns were found, and if Akasaka hadn't stopped them there in the club, they would have escaped, or even worse, the operation might have ended with a brutal death toll on both sides.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　誰にも発砲させずに瞬時に制圧できたのは、彼の手柄であることは間違いなかった。",
+		   NULL, "All thanks to how well Akasaka executed his duty, the operation was completed without a single shot fired.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Mati14", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……確保しろ。",
+		   NULL, "\"...Come on,", Line_WaitForInput);
+	OutputLine(NULL, "急げ！",
+		   NULL, " hurry!!", Line_WaitForInput);
+	OutputLine(NULL, "　地元警察が来るぞ。",
+		   NULL, " The local police will be here soon.", Line_WaitForInput);
+	OutputLine(NULL, "全員を荷台に押し込め！！」",
+		   NULL, " Put them on the truck!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　警察が急襲したことにはできない。",
+		   NULL, "Since the foreign diplomat was involved,", Line_WaitForInput);
+	OutputLine(NULL, "外交官が絡んでいるのだ。",
+		   NULL, " they had to make sure it didn't look as though the whole operation was carried out by the police.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　表向きは、ヤクザの抗争に巻き込まれたことを装っている。",
+		   NULL, "Instead, it was made to look like a simple gang war.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　価値のない連中は、適当なところで放り出し、ターゲットだけは一般警察へうまいことやって引き渡す。",
+		   NULL, "They would dump the useless gang members, and hand over the target to the police.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もっともその前に、たっぷりとゲロしてもらいたいことがあるが。",
+		   NULL, "Of course, before handing him over, they'd make sure he spilled everything he knew.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この外交官を名乗るブタは、別室が水面下交渉に使うだろう。",
+		   NULL, "That diplomatic pig would be used as a negotiation device by another part of Public Safety.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ブタが犯罪組織と密接に関わっている証拠はここに充分あるのだから。",
+		   NULL, "They found plenty of evidence that said pig was tied to an underground criminal organization.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　体面上、ノングラータを食らいたくない大使館側はこいつを切り捨てるだろうが、それ以上は別室の仕事だ。",
+		   NULL, "Not wanting a persona non grata on their hands, the embassy would likely cut all ties with him. The rest would be the business of other departments.", Line_WaitForInput);
+	OutputLine(NULL, "俺たちの仕事は一般警察には踏み込めない、社会という家具裏の隙間掃除までなのだから。",
+		   NULL, " Public Safety's job was to take care of the things regular police couldn't deal with.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawSceneWithMask( "Kuruma4", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「赤坂は無事か？！",
+		   NULL, "\"Akasaka, are you okay?", Line_WaitForInput);
+	OutputLine(NULL, "　応答しろ赤坂！！」",
+		   NULL, " Come in, Akasaka!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……こちら赤坂。",
+		   NULL, "\"This is Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "撤収中。」",
+		   NULL, " We're on our way.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 0, "door", 120, 0 );
+
+	OutputLine(NULL, "「また無茶をしやがって…！",
+		   NULL, "\"You've done it again...!", Line_WaitForInput);
+	OutputLine(NULL, "　あとで室長にこってり絞られろ！」",
+		   NULL, " Report to the chief to get reamed out later!\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Mati14", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「やっぱり鬼だな赤坂さんはよ。",
+		   NULL, "\"Akasaka-san, you sure are a demon.", Line_WaitForInput);
+	OutputLine(NULL, "…秒で５人撃墜だぜ？！」",
+		   NULL, " Five men within mere seconds!?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…ありゃあ絶対、空手の域を超えてるぜ！",
+		   NULL, "\"That's not even karate anymore!", Line_WaitForInput);
+	OutputLine(NULL, "　赤坂さんの鉄拳はすでに凶器だね…。」",
+		   NULL, " Your fists should be recategorized as lethal weapons...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「しかし連中、銃を抜かなかったのはラッキーだったよな。",
+		   NULL, "\"It sure was lucky that none of them drew their guns, though.", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂さん、躊躇ねぇからな。",
+		   NULL, " Knowing how brutal Akasaka-san is,", Line_WaitForInput);
+	OutputLine(NULL, "蜂の巣にしてたかもしれないぜ…。」",
+		   NULL, " he could have turned them into honeycombs.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……聞こえてるぞ。",
+		   NULL, "\"Shut up,", Line_WaitForInput);
+	OutputLine(NULL, "人を殺し屋みたいに言うな。",
+		   NULL, " don't make me sound like an assassin.", Line_WaitForInput);
+	OutputLine(NULL, "俺は悪党に容赦しないだけだ。」",
+		   NULL, " I show no mercy against evil, that's all.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ひっ捕らえたブタどもが、単に法を犯した犯罪者なだけでなく、…人間として許しがたい数々の悪行を重ねていることを彼らは充分に理解していた。",
+		   NULL, "The pigs he had just caught were no average criminals. They had committed so many unforgivable sins.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…赤坂の鉄拳の重みは相手の罪の重さに比例する。",
+		   NULL, "The strength behind of Akasaka's fists was proportional to those sins.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　巨悪であればあるほどに、如何なる怯みもなく相手を打ち砕く！",
+		   NULL, "The heavier their sins, the more powerful his blows would be.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ブタどもを荷台に詰め込め！",
+		   NULL, "\"Come on, round them up!!", Line_WaitForInput);
+	OutputLine(NULL, "　赤坂、急がせろ！",
+		   NULL, " Akasaka, make them hurry!!", Line_WaitForInput);
+	OutputLine(NULL, "　所轄署に通報が入ってるぞ！」",
+		   NULL, " The local police will get here quickly!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……赤坂了解。",
+		   NULL, "\"This is Akasaka. Understood.", Line_WaitForInput);
+	OutputLine(NULL, "聞こえたな、撤収を急げ。」",
+		   NULL, " Didn't you guys hear? Hurry up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「りょ、了解！",
+		   NULL, "\"R-Roger!", Line_WaitForInput);
+	OutputLine(NULL, "　あー、主任どうぞ。要治療が５名！",
+		   NULL, " Ah, Command, we have five injured here!", Line_WaitForInput);
+	OutputLine(NULL, "　手配をお願いします！」",
+		   NULL, " Please have meds ready!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今や赤坂は、かつての初々しさなど微塵も感じさせない。",
+		   NULL, "There wasn't any trace left of Akasaka's old naivete.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢を訪れた当時からは想像もつかないくらいに逞しいエースに成長していた…。",
+		   NULL, "He had grown to be the vigilant ace of his department.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+	DrawScene( "Jimu1", 1000 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　汗とカビの臭いが染み付いた薄暗い道場に、道着姿の赤坂の姿があった。",
+		   NULL, "Akasaka was training inside a dark dojo filled with the smell of sweat and mold.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その道場は、雑多な繁華街の朽ちた低層ビルの一室にあり、広くはないし、トレーニング器具が充実しているわけでもない。",
+		   NULL, "The dojo was located in the middle of downtown, in a small building. It wasn't that big, and they weren't that well equipped, either.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ぱっと見た限り、赤坂ほどの者が師事するに足りるほど立派な道場には見えなかった。",
+		   NULL, "It certainly didn't look like a dojo where a person as skilled as Akasaka would train.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 244, 40, 0, 0, 3*2, FALSE );
+	StartShakingOfAllObjects( 244, 40, 0, 0, 3*2, TRUE );
+
+	OutputLine(NULL, "　門下生も少なく、稽古に勤しんでいるのは赤坂を含めて、ほんの３〜４人しかいない。",
+		   NULL, "There were only three or four students there, including Akasaka.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……でも、それでも赤坂が選んだ道場だった。",
+		   NULL, "...But this was the dojo he picked.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂にとっての空手は、敵を打ち砕く武器であることに違いないが、…今の赤坂はさらに別の境地を求めていた。",
+		   NULL, "To Akasaka, karate was certainly a weapon for crushing his enemies... but now he was seeking something further from it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを求めるには、喧嘩っ早い若い門下生が大勢いる実戦形式の道場は肌に合わなかったということだ。",
+		   NULL, "To achieve his goal, a dojo with many young students having actual physical lessons wouldn't work.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いくつかの道場を渡り歩き、最後に至ったのが、このおんぼろ道場だったのである…。",
+		   NULL, "He had gone to so many different dojos and this was the one he finally settled on.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　時折、聞こえるその重い音と鎖がガチャリと鳴る音は、赤坂が打つサンドバッグが軋む音だった。",
+		   NULL, "Every time Akasaka punched a sandbag, the heavy thud of his punch and the clang of the sandbag's chain would echo.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…むやみやたらに打ちつけているのではない。",
+		   NULL, "He wasn't just punching blindly.", Line_WaitForInput);
+	OutputLine(NULL, "深く思案し、練りに練り上げてから、",
+		   NULL, " He thought first, developed those thoughts, and then...", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "打つ！",
+		   NULL, " Punch!", Line_ContinueAfterTyping);
+
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	SetSpeedOfMessage( FALSE, 0 );
+	ClearMessage();
+
+	OutputLine(NULL, "　それは音というよりは、深く低い振動。",
+		   NULL, "It was more of a deep and low vibration than a proper sound.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　汗の粒が飛び散り、埃の浮かぶ空気がぶわっと跳ね上がり、その重みを暗に語る。",
+		   NULL, "Drops of sweat scattered, and the dust welled up in the air.", Line_WaitForInput);
+	OutputLine(NULL, "一撃必殺を体現した見事な正拳だった。",
+		   NULL, " It was a perfect blow embodying the concept of \"one strike, one kill\".", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、赤坂はどこか納得が行かないらしい。",
+		   NULL, "But he wasn't satisfied.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　薄く目を瞑り、……力の込め方や呼吸の深さ浅さを整え、時にはセミの鳴き声を聞く間すら与えるように、",
+		   NULL, "He closed his eyes, controlled his breathing as if trying to hear the cry of cicadas,", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "再び、打つ。",
+		   NULL, " then he punched again.", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
+
+	OutputLine(NULL, "　素人が見れば、それはまるで休み休みやっているように見えるのだろうが。",
+		   NULL, "From a beginner's perspective, it looked like he was taking breaks between each.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それを横目に見ながら自らもトレーニングに励む門下生たちは、その練りこんだ一撃に畏怖を超えた尊敬の念すら感じているのだった…。",
+		   NULL, "...The other students training on their own would glance over and sense a fearsome respect at his focused blows.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Jimu2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「……赤坂さんって、警察に勤めてるって噂だぜ…？」",
+		   NULL, "\"I heard Akasaka-san works at the police department.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「マジかよ…。",
+		   NULL, "\"Really?", Line_WaitForInput);
+	OutputLine(NULL, "あんな人が警官やってるなら、俺は悪いことする気なんかおきねぇぜ…。」",
+		   NULL, " If someone like him is a police officer, I don't want to do anything bad...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「しかし、……赤坂さんも集中力がすげぇよな。",
+		   NULL, "\"Still... his concentration sure is amazing.", Line_WaitForInput);
+	OutputLine(NULL, "あの人、疲れるってことを知らねぇぜ？」",
+		   NULL, " He never gets tired.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂は非番の日は、朝の一番から道場にやって来る。",
+		   NULL, "On his days off, Akasaka came to the dojo in the early morning.", Line_WaitForInput);
+	OutputLine(NULL, "そして、黙々といつまでも稽古に勤しむのだ。",
+		   NULL, " And he silently trained all day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはもはや、肉体のトレーニングというより、精神のトレーニングの領域に違いない。",
+		   NULL, "His training was no longer physical, but mental.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その途切れぬ集中力こそ、赤坂の強さの秘密だと彼らは見抜いていた。",
+		   NULL, "The other students were already aware that his continuous concentration was the secret of his strength.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、それを実践するのは簡単ではない。",
+		   NULL, "However, that was easier said than done.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…人は生きている限り、無数のしがらみや雑念に囚われる。",
+		   NULL, "...As long as a person lives, they are bound by countless ties and idle thoughts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それから全て自分の精神を解き放つのは、武道の次元を超え、悟りの境地にすら踏み込むかもしれない。",
+		   NULL, "For a person to submit all his will into such singular focus is more like trying to attain enlightenment than something in the realm of martial arts.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人はその境地を得るために、様々な道を模索してきた。",
+		   NULL, "Man has tried many different methods to achieve such enlightenment.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…そしてわかったのは、それに至る道は一つではないということ。",
+		   NULL, "...And what we've learned is that there is no one way to reach it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……どんな道であっても、極めれば至れる、",
+		   NULL, "...And a path one takes", Line_WaitForInput);
+	OutputLine(NULL, "ということなのだ。",
+		   NULL, " can reach it, if mastered.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして赤坂が選んだ道が、空手だったということだった…。",
+		   NULL, "Karate is what Akasaka chose.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 400 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	DisableWindow();
+	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+	DisplayWindow();
+
+	OutputLine(NULL, "「噂に聞いたんだけどよ…。",
+		   NULL, "\"The rumors say", Line_WaitForInput);
+	OutputLine(NULL, "あの人、奥さん死んじゃってるらしいんだよ。",
+		   NULL, " that his wife is dead.", Line_WaitForInput);
+	OutputLine(NULL, "それを忘れるために空手を始めたって噂だぜ。」",
+		   NULL, " Supposedly, he does karate to forget about that.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あれ？",
+		   NULL, "\"Really?", Line_WaitForInput);
+	OutputLine(NULL, "　俺が聞いた話は違うぜ。",
+		   NULL, " That's different from what I heard.", Line_WaitForInput);
+	OutputLine(NULL, "…任務中に、女の子を救えなかったとか何とかで、それで自分の無力さを痛感したとか何とか…。」",
+		   NULL, " I heard he couldn't save a girl on the job, leading him to realize his weaknesses, or something like that...\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Jimu1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「………おい、聞こえてるぞ。",
+		   NULL, "\"...Hey, I can hear you.", Line_WaitForInput);
+	OutputLine(NULL, "人の噂話なんかしてないで稽古をしろ。」",
+		   NULL, " Quit talking about other people and train.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「「「お、押忍ッ！！」」」",
+		   NULL, "\"\"\"Yes, sir!!\"\"\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その時、小さな電子音が聞こえた。",
+		   NULL, "There was a small beeping noise.", Line_WaitForInput);
+	OutputLine(NULL, "誰かの時計が昼を伝えたのだ。",
+		   NULL, " Somebody's watch was letting them know it was noon.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あ、赤坂さん。",
+		   NULL, "\"Akasaka-san, we're going to get some lunch.", Line_WaitForInput);
+	OutputLine(NULL, "俺たち、弁当買ってきますけど、赤坂さんのも買って来ましょうか？」",
+		   NULL, " Can we get you something too?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………助かる。",
+		   NULL, "\"......Sure.", Line_WaitForInput);
+	OutputLine(NULL, "何でもいいぞ。",
+		   NULL, " I don't care what you get.", Line_WaitForInput);
+	OutputLine(NULL, "頼む。」",
+		   NULL, " Thanks.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂にとっては、弁当を買ってきてもらえることより、彼らが出掛けて、道場内が静かになることの方が嬉しかったかもしれない。",
+		   NULL, "Akasaka was more pleased to be alone in the dojo than to have anyone bring him lunch.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼らが靴に履き替え、ぱたぱたと出て行くと、道場はシンと静まり返るのだった…。",
+		   NULL, "When they left, silence filled the building.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…クソ。",
+		   NULL, "\"...Shit.", Line_WaitForInput);
+	OutputLine(NULL, "人の話なんかしやがるから、集中が途切れちまったじゃないか。」",
+		   NULL, " My focus dissipated because they were talking about me.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが噂話が聞こえた程度で集中が途切れるのでは、それは稽古が足りないということだ。",
+		   NULL, "But if that happened because of that bit of small talk, that meant he had much more training to do.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……まだまだ稽古を重ねなければ、無我の境地には至れない。",
+		   NULL, "He had to train much harder if he wanted to achieve enlightenment.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Down", 128, 64 );
+
+	OutputLine(NULL, "　気を取り直し、サンドバッグに拳を打ち込むが、その音はさっきまで聞こえていた音に比べると一際軽く、その拳から重みが抜けてしまっていることは明白だった。",
+		   NULL, "He focused again and started to punch the sandbag, but the sound was a lot lighter than before, and obviously the strength in his fists was no longer there.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂は、一度休憩するべきだと悟り、スポーツバッグからタオルを取り出して、床に座り込んだ。",
+		   NULL, "Realizing that he needed to take a break, Akasaka pulled out a towel from his bag and sat down.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 1000 );
+	DrawSceneWithMask( "Mati1", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　セミの声が、体に染み込んで行く。",
+		   NULL, "The sound of cicadas soaked into his body.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　窓は開いているが、この道場は風が抜けない構造らしく、大して風は入ってこなかった。",
+		   NULL, "The windows were open, but there was no breeze coming in.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それでも、今の赤坂にはわずかの涼風を感じることができるのだった。",
+		   NULL, "Still, he could feel the cool air, if just a little.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "er_Ver3", 120, 0 );
+
+	OutputLine(NULL, "　………赤坂が空手を始めた最大の理由は、",
+		   NULL, "Just as they said,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…彼らの言う通り、",
+		   NULL, " the reason Akasaka started karate", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "雪絵の死だった。",
+		   NULL, " was because of Yukie's death.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん、あの誘拐事件の時、犯人との格闘で遅れを取ったことも充分動機だったのだが、それ以上に大きかったのが雪絵の死の痛みだった…。",
+		   NULL, "Of course, losing against the suspect in that kidnapping incident was one reason too, but more than that, the pain from Yukie's death was what made him start.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雪絵は、鹿骨市へ出張している間に、…病院の階段から転落して死んだ。",
+		   NULL, "Yukie fell down the stairs at the hospital and died while he was on a business trip in Shishibone.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その悲しみがどうしても拭えなくて、空手の門を叩いたのだ。",
+		   NULL, "He couldn't get rid of that depression, so he started learning karate.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だが、……昭和５８年６月。",
+		   NULL, "But in June 1983...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雛見沢大災害が起こった時。",
+		   NULL, "When the Great Hinamizawa Disaster occurred,", Line_WaitForInput);
+	OutputLine(NULL, "……私はとても重要なことを忘れていたのに気付いた。",
+		   NULL, " he realized something very important.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは、雪絵の死を、ひとりの少女に予言されていたこと。",
+		   NULL, "A girl had predicted Yukie's death.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、……その予言と引き換えに少女がした、自分を助けてほしいという願いだった。",
+		   NULL, "And, in return, she wanted him to help her.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka2", 1000 );
+
+	OutputLine(NULL, "　…雪絵の死は事故だった。",
+		   NULL, "Yukie's death was an accident.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうしようもないことだったと割り切ることもできたかもしれない。",
+		   NULL, "He could have told himself that there was nothing he could have done.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、あの少女、古手梨花の死は違う。",
+		   NULL, "But, as for the girl... Rika Furude's death was different.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼女は自分が殺される５年も前にそれを知っていたのだ。",
+		   NULL, "She knew about her own death five years prior.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　私は雛見沢大災害の時、当時世話になった大石氏のことを思い出し、",
+		   NULL, "When the Disaster occurred, he remembered Ooishi", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "無事を確認しようと電話をして、",
+		   NULL, " and called him to make sure he was okay", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "全てを知ったのだった。",
+		   NULL, " then found out about everything.", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　それを知った途端に、…私は深い悔悟に苛まれた。",
+		   NULL, "When he was caught up, he fell into despair.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古手梨花という少女は、私の人生の分岐点だったのではないか。",
+		   NULL, "Rika Furude was the turning point in his life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私が、彼女の予言を信じ、何かの行動を起こしていたら、雪絵は階段から転落することなんてなかったんじゃないのか。",
+		   NULL, "If he had believed what she predicted and did something about it, maybe Yukie wouldn't have had to fall down the stairs.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、正義の心を全うするために警官となった自分が、ひとりの少女の助けに気付くこともできず、少女を取り巻く陰謀を、５年もの猶予がありながら見過ごし、殺してしまったのだ。",
+		   NULL, "He took the oath to serve the public as a police officer, yet he didn't even notice the plea for help from a little girl. He shoved aside a conspiracy surrounding her until it was too late. He had five years to do something about it, but he didn't do anything. And she died.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "aka1", 1000 );
+
+	OutputLine(NULL, "　あの、大臣の孫の誘拐事件で訪れた雛見沢には、",
+		   NULL, "Visiting Hinamizawa for the kidnapping case of the Minister's grandson", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………確実に運命の分岐点があったのだ。",
+		   NULL, " was definitely the turning point in his life.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこで私が、……もう少し少女の言葉に深く耳を傾けていたなら…。",
+		   NULL, "If he had only listened to what that girl said.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　雪絵は死んでいなかった。",
+		   NULL, "Yukie would have never died.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、古手梨花を助けに駆けつけることができていた。",
+		   NULL, "And he could have been there to help Rika Furude.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…その二つが、",
+		   NULL, "...Those two things", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……どうしても拭えぬ後悔となって、私を苛むのだ…。",
+		   NULL, " continued to haunt him.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Jimu2", 1000 );
+
+	OutputLine(NULL, "　大石氏から聞かされた、雛見沢村連続怪死事件は、雛見沢大災害によってうやむやにされてしまったが、…明らかに何か巨大な陰謀を感じさせる奇怪な事件だった。",
+		   NULL, "The investigation into the series of mysterious deaths in Hinamizawa that he heard about from Ooishi was put on indefinite hiatus because of the Disaster... but it was apparent to both of them that there was some conspiracy behind it all.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それに挑むには、数々の複雑事件での経験と、どんな巨悪にも単身で挑める研ぎ澄まされた強さがいる。",
+		   NULL, "To challenge such things, he needed all the strength and experience that he could muster.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……私は今、それを手に入れようと仕事と稽古に明け暮れているが…、",
+		   NULL, "He was devoting himself to gain such strength,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "全てはもう遅い。",
+		   NULL, " but it was too late.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　終わってしまったことなのだから…。",
+		   NULL, "Everything had already ended.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを悩んでいた時、この道場の師範に諭されたのだ。",
+		   NULL, "While he was stuck in this dilemma, the dojo instructor admonished him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　終わってしまったことはどうしようもない。",
+		   NULL, "There's nothing one can do about what's already done.", Line_WaitForInput);
+	OutputLine(NULL, "…ならばせめて。",
+		   NULL, " So in that case,", Line_WaitForInput);
+	OutputLine(NULL, "まったく同じことがもう一度起こった時、次こそは必ず救ってやれるよう、自分を鍛え上げるのみだと。",
+		   NULL, " the only thing he can do is train diligently so that if the same thing is to happen again, he will be able to save a person in need.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　全ては遅い。",
+		   NULL, "It's all too late.", Line_WaitForInput);
+	OutputLine(NULL, "もう終わってしまっている。",
+		   NULL, " Everything is already over.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雪絵は事故で死に、",
+		   NULL, "Yukie died in an accident,", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢はガス災害で全滅。",
+		   NULL, " Hinamizawa was destroyed in the gas disaster.", Line_WaitForInput);
+	OutputLine(NULL, "…そして、梨花ちゃんは生きたまま腸を引き摺り出されて殺された……。",
+		   NULL, " And Rika-chan was murdered as her intestines were ripped out while she was alive...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　クソ……！！！!",
+		   NULL, "Shit!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雪絵の死に心を奪われ、救えたかもしれない少女の助けに耳を傾けられなかった…！",
+		   NULL, "I was too obsessed with Yukie's death and couldn't hear the girl's pleas for help...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いや、耳を傾けていたなら、雪絵の事故だって防げていたかもしれない…！",
+		   NULL, "No, if I had listened to her, I could have prevented Yukie's accident too...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…諦められない…、",
+		   NULL, "...Damn it...", Line_WaitForInput);
+	OutputLine(NULL, "諦めきれない…！！",
+		   NULL, " Damn it!!", Line_WaitForInput);
+	OutputLine(NULL, "　くそぉおぉ…ッ！！！",
+		   NULL, " Shiiiit!!", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　後悔に頭を掻き毟る赤坂が見上げた先には、",
+		   NULL, "As Akasaka clutched his hair and looked up,", Line_WaitForInput);
+	OutputLine(NULL, "……道場を見守る神棚があった。",
+		   NULL, " he noticed a small shrine overhead that protected the dojo.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　赤坂に、神仏を敬う気持ちはもちろんあるが、苦しい時に神頼みをしたことはない。",
+		   NULL, "Akasaka respected both Shinto and Buddhism, but he had never thought of praying to gods in times of despair.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……そんな赤坂が初めて神に祈りたいと思った。",
+		   NULL, "But for the first time, he felt like praying for help.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分に出来ることなら祈らない。",
+		   NULL, "If it was something he was capable of doing himself, he would never even consider praying.", Line_WaitForInput);
+	OutputLine(NULL, "…自分に出来ないことだから、祈った。",
+		   NULL, " But as it was something he couldn't resolve on his own, he prayed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それは、…とてもとても都合のいい願い。",
+		   NULL, "It was a very selfish wish.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その願いが許されるなら、世界中の大勢がきっと願うに違いない願い。",
+		   NULL, "If his wish were to come true, everyone in the whole world would wish for the same thing.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「……もう一度…。",
+		   NULL, "\"...Please...", Line_WaitForInput);
+	OutputLine(NULL, "もう一度、あの時に戻らせてくれ…。",
+		   NULL, " Please give me another chance to go back to that time.", Line_WaitForInput);
+	OutputLine(NULL, "そうしたら、",
+		   NULL, " I swear,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……今度こそ俺は、",
+		   NULL, " that this time,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "二人を救う…ッ！！」",
+		   NULL, " I will save the both of them!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…その時、赤坂は、ふっと全身が軽くなって…。",
+		   NULL, "At that moment, Akasaka's body suddenly felt very light.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　いや、平衡感覚を軽く失うような感じになった…。",
+		   NULL, "No, it was more like he was losing balance.", Line_WaitForInput);
+	OutputLine(NULL, "まるで貧血か何かを起こして倒れる時のような感じ。",
+		   NULL, " As if he was fainting.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　激しい稽古の後に、突然大声を出したものだから、頭が酸欠にでもなったのか。",
+		   NULL, "Perhaps it was because he shouted so loudly after training, and his brain was lacking in oxygen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なのに、なぜか神棚から目が離せない…。",
+		   NULL, "But he couldn't take his eyes off of the shrine...", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "as_time_goes_by", 120, 0 );
+	DrawScene( "Fure2", 3000 );
+
+	OutputLine(NULL, "「……ありがとう、赤坂。",
+		   NULL, "\"...Thank you, Akasaka.", Line_WaitForInput);
+	OutputLine(NULL, "…あなたの思いが私たちにはとても必要だった。」",
+		   NULL, " ...We needed your thoughts.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………それは、酸欠の時に見る幻なのか。",
+		   NULL, "...Was this a hallucination?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　赤坂は見たことのない、会ったことのない誰かに話しかけられているような気がした。",
+		   NULL, "Akasaka felt like a stranger was talking to him.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私たちが奇跡を願い、",
+		   NULL, "\"We must wish for a miracle,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……あなたも奇跡を願わなければ、奇跡は起こらない。",
+		   NULL, " and you must wish for a miracle too, otherwise a miracle will never occur.", Line_WaitForInput);
+	OutputLine(NULL, "……だって、奇跡は全員が願わなかったら、起こらない。",
+		   NULL, " Unless everyone wishes for a miracle, it won't occur.", Line_WaitForInput);
+	OutputLine(NULL, "双方が手を伸ばしあわなかったら、届かない。」",
+		   NULL, " Unless both sides reach out, their hands won't meet in the middle.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………彼女が何を言っているのかわからないけれど、",
+		   NULL, "He didn't know what she was trying to say,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…でも、私はそれを聞き漏らしてはならない気がする。",
+		   NULL, " but somehow he felt like he couldn't miss a single word of it.", Line_WaitForInput);
+	OutputLine(NULL, "…とても大切なことを、言っている気がする。",
+		   NULL, " ...He felt like it was something very, very important.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……赤坂。",
+		   NULL, "\"...Akasaka,", Line_WaitForInput);
+	OutputLine(NULL, "もし、あなたも望んでくれるなら、…あなたに奇跡を。",
+		   NULL, " if you wish for it, I'll grant you this miracle.", Line_WaitForInput);
+	OutputLine(NULL, "私たちに奇跡を。",
+		   NULL, " And it'll be a miracle for us too.", Line_WaitForInput);
+	OutputLine(NULL, "……それは欠けたカケラを結び合わせ、より大きな大きなカケラを生み出すきっかけになる。",
+		   NULL, " ...Joining these broken Fragments will give us the chance to create an even greater Fragment.", Line_WaitForInput);
+	OutputLine(NULL, "……あなたのたった一つの決意が、全員の思いや運命に大きな影響を及ぼすこともあるのだから。」",
+		   NULL, " ...Your resolve, on its own, may greatly influence everyone's fates and intentions.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あの時に、",
+		   NULL, "\"Can you", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……もう一度時間を巻き戻してくれるというのか…？」",
+		   NULL, " turn back time to that day?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うぅん。",
+		   NULL, "\"No,", Line_WaitForInput);
+	OutputLine(NULL, "そんなこと、私にはできないのです。",
+		   NULL, " I can't do that.", Line_WaitForInput);
+	OutputLine(NULL, "……私にできるのは、気付かせることだけ。",
+		   NULL, " The only thing I can do is to let you notice.", Line_WaitForInput);
+	OutputLine(NULL, "……１つのカケラだけでは学べないことを、他のカケラで学んだことを、気付かせてあげるだけ。",
+		   NULL, " To let you notice that things you can't learn from one Fragment, you can learn from others.", Line_WaitForInput);
+	OutputLine(NULL, "…だから、この欠けたカケラをあるべきところへ戻すだけ。",
+		   NULL, " So all you have to do is to return this broken Fragment to where it belongs.", Line_WaitForInput);
+	OutputLine(NULL, "……それでもきっと大きな奇跡。",
+		   NULL, " That's a big miracle itself.", Line_WaitForInput);
+	OutputLine(NULL, "…もっとも、その奇跡を、あなたはきっと気付かないだろうけれど。」",
+		   NULL, " Although, you probably won't even notice it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……ありがとう、赤坂。",
+		   NULL, "Thank you, Akasaka.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私のことを覚えていてくれて。",
+		   NULL, "Thank you for remembering me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あなたにどれだけたくさんの時間、助けを求めたのかわからない。",
+		   NULL, "I don't even know how much time I've spent asking you for help.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そしてやっと届いた願い。",
+		   NULL, "But finally, it reached you.", Line_Normal);
+	ClearMessage();
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、もう一度だけ言うわ。",
+		   NULL, "So I'll say it one more time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……私を、",
+		   NULL, "Please help me,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…いえ。",
+		   NULL, " no.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちを、助けて。",
+		   NULL, "Please help us.", Line_Normal);
+	ClearMessage();
+
+	SetLocalFlag(FragmentStatus50, 2);
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

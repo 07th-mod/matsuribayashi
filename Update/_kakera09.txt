@@ -1,0 +1,437 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	PlaySE( 0, "s_door", 128, 64 );
+
+	PlayBGM( 0, "semi", 120, 0 );
+
+	DrawBustshotWithFiltering( 2, "Iri_Def1+", "maskright", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ka2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "「…いやぁ、遅くなって申し訳ございません。",
+		   NULL, "\"...Sorry for being late.", Line_WaitForInput);
+	OutputLine(NULL, "今日はどういうわけか患者さんが多くて多くて。」",
+		   NULL, " I had an unusually large number of patients today.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「お疲れ様です、入江二佐！」",
+		   NULL, "\"Thank you for coming, Lieutenant Colonel Irie!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　くつろいだ様子だった富竹は、入江がやって来るのを見ると立ち上がり背筋を伸ばした。",
+		   NULL, "Tomitake stood up suddenly and saluted when he saw Irie come into the room.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あぁあぁ、その二佐というのはどうか止めてください…！",
+		   NULL, "\"Alright, alright, stop calling me Lieutenant Colonel!", Line_WaitForInput);
+	OutputLine(NULL, "　私は医者です、どうもその軍隊的な階級には馴染めません。",
+		   NULL, " I'm a doctor. I just can't get used to military ranks.", Line_WaitForInput);
+	OutputLine(NULL, "せめて所長でお願いします…。」",
+		   NULL, " Can you call me Director instead?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「了解しました、入江所長。",
+		   NULL, "\"Understood, Director Irie.", Line_WaitForInput);
+	OutputLine(NULL, "あはははは…！」",
+		   NULL, " Ahahahaha!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それはもはや、入江が二佐と呼ばれることをあまり好まないことを知っていての、冗談のようなものとなっていた。",
+		   NULL, "Tomitake, of course, knew that Irie didn't like to be called Lieutenant Colonel, so it was something of a joke.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　富竹たちは気さくに笑い合う。",
+		   NULL, "They laughed casually together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もっとも、鷹野としてはうんざりとした様子。",
+		   NULL, "On the other hand, Takano looked rather fed up with it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同じネタを何度も繰り返すというのがどうも好きになれず、機会があれば富竹に、もうその二佐というのを止めろと言うつもりだった。",
+		   NULL, "She couldn't stand hearing the same joke over and over, and was even thinking about talking to Tomitake about it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……言えば、柄にもなく傷つくだろうなと思うので、言い出し損ねてしまっていたが。",
+		   NULL, "....But she didn't want to hurt his feelings, so she simply never had the chance.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あと、富竹の発音のせいなのか、二佐がどうしても「リサ」と聞こえてしまう。",
+		   NULL, "Maybe it's because of how Tomitake pronounces it, but she keeps hearing \"Risa\". (Lieutenant Colonel in Japanese: Nisa)", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　一度そう聞こえてしまったら、彼が言う度に「入江リサ」「入江リサ」と聞こえてしまうのだ。",
+		   NULL, "Once she heard it that way, she kept hearing\n\"Irie Risa\" every time Tomitake said it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野がこっそりそれを入江に話したら、それは大いに受けたのだった…。",
+		   NULL, "When Takano told Irie about it, he had a good laugh.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　今日は単なる挨拶で、明日がミーティングの日になっていた。",
+		   NULL, "Today was just a simple meet-and-greet, and tomorrow was the actual meeting.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　富竹は今日から来ているが、明日、東京から監査が何人かやって来て合流し、機関の研究進捗状況について説明を受けることになっている。",
+		   NULL, "Tomitake had already arrived, but there would be more inspectors from Tokyo at the meeting, waiting to hear about the progress that had been made.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Tomi_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それはそうと、ダムのことで村中が盛り上がってるみたいですね。」",
+		   NULL, "\"Anyway, I heard the whole village is all up in arms about the dam construction project.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Iri_Majime+", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇ、それはもう…！",
+		   NULL, "\"You can say that again!", Line_WaitForInput);
+	OutputLine(NULL, "　村中、大変な騒ぎですよ。",
+		   NULL, " The village is in such a mess.", Line_WaitForInput);
+	OutputLine(NULL, "私も、役員として自治体の地元説明会に参加してきたのですが、…怒声と罵声のそれはもう賑やかな説明会となりました。」",
+		   NULL, " I participated in the local municipal explanation meeting as an official, but... the whole thing was alive with angry shouts and profanities.\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "　雛見沢ダム基本計画の発表後、当然、雛見沢は大騒ぎとなった。",
+		   NULL, "After the basic Hinamizawa Dam Project was announced, the village was consumed with uproar.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　政府は割りと早期の内に譲歩案を撤回。",
+		   NULL, "The government retracted their plans for concessions rather early on.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　攻撃的姿勢を明白にする。",
+		   NULL, "They made their aggressive stance clear.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　交渉の余地を見せることが、かえって相手を付け上がらせることになるという考えらしかった。",
+		   NULL, "They didn't want the locals to take advantage of them by showing their willingness to compromise.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、その目論見は裏目に出ることになる。",
+		   NULL, "However, that backfired horribly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　地縁による結束が歴史的に強いこの雛見沢の地では、そういう態度に対し逆に団結を招く結果となり、",
+		   NULL, "As they had historical ties to the land, the government's actions only made their bonds stronger.", Line_WaitForInput);
+	OutputLine(NULL, "政府も村も、互いに一歩も引けぬ泥沼の様相を示していたのである。",
+		   NULL, " Neither the government nor the locals wanted to back down.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ka2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「くすくすくす。",
+		   NULL, "\"Hee hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢の人は気性が激しいですものねぇ。",
+		   NULL, " People from Hinamizawa are rather hot-tempered.", Line_WaitForInput);
+	OutputLine(NULL, "やっぱり鬼の血が流れてるからなのかしら。」",
+		   NULL, " Maybe because they're the descendants of demons.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Majime+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「笑い事じゃないですよ…。",
+		   NULL, "\"It's not funny.", Line_WaitForInput);
+	OutputLine(NULL, "あの説明会に、夜中まで付き合わされた方の身にもなってみてください。」",
+		   NULL, " That wild meeting lasted all night!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Warai#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それはお気の毒でしたね。",
+		   NULL, "\"I feel your pain.", Line_WaitForInput);
+	OutputLine(NULL, "はっはっはっは…！」",
+		   NULL, " Ha ha ha ha...!\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いや、…本当に笑い事ではないですよ、富竹さん。",
+		   NULL, "\"Really, it's not funny, Tomitake-san.", Line_WaitForInput);
+	OutputLine(NULL, "ダム計画はどうなってるんですか？",
+		   NULL, " So, what's going on with the dam construction?", Line_WaitForInput);
+	OutputLine(NULL, "　本当にこの村はダム湖に沈められてしまうんですか？」",
+		   NULL, " Are they really going to submerge this village?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Def#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それについては、東京の方でも圧力を掛けています。",
+		   NULL, "\"Tokyo's applying their pressure to the situation too.", Line_WaitForInput);
+	OutputLine(NULL, "表向きは騒ぎになっていますが、実際の裏方ではかなり屋台骨がぐらついているはずです。」",
+		   NULL, " Things might seem clamorous on the surface, but in truth, the supporters behind it are wavering rather hard.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……その圧力が早く効くといいんですがね。",
+		   NULL, "\"...I hope their pressure produces effects soon.", Line_WaitForInput);
+	OutputLine(NULL, "村は朝から晩まで賑やかで、村人の心もこのところ、荒んできたように思います。",
+		   NULL, " The whole village is buzzing with action from dusk to dawn, and I worry the villagers' minds are growing agitated.", Line_WaitForInput);
+	OutputLine(NULL, "診察に来るお年寄りに捕まって、たっぷりと反ダム論争を聞かされる時がありますよ。」",
+		   NULL, " Sometimes I have to listen to my patients go on and on about their opinion on the dam construction plan.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "付き合わなければいいのに。入江所長は人がいいから。」",
+		   NULL, " Why do you even listen to them? You're too nice.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そうも行きません。",
+		   NULL, "\"I have to.", Line_WaitForInput);
+	OutputLine(NULL, "私は研究所長である以前に診療所長でもあります。",
+		   NULL, " I'm a clinic director first, and research center director second.", Line_WaitForInput);
+	OutputLine(NULL, "話を聞くのもケアの一環ですので。」",
+		   NULL, " It's part of my job to listen to them.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それはとても良いことです。",
+		   NULL, "\"That's very nice of you.", Line_WaitForInput);
+	OutputLine(NULL, "感服いたします。」",
+		   NULL, " It's admirable.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawScene( "Sinryo_sinsatu4", 400 );
+
+	OutputLine(NULL, "「私は、東京の皆さんがうまく圧力を掛けてくれて、いずれはダム計画を撤回してくれるものとわかっているからいいですが。",
+		   NULL, "\"I know the people in Tokyo will call off the plan sooner or later, but the villagers won't.", Line_WaitForInput);
+	OutputLine(NULL, "村人にとっては、先祖代々から住んできた土地を追い出されかねないと、本当にすごい騒ぎです。」",
+		   NULL, " So they have to live in fear that they might be forced to leave the land where they've lived for generations.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「立ち退けと言われても、引っ越せるほどのお金もなく若さもなく。",
+		   NULL, "\"Even if they're told to leave, they don't have money, and a lot of them are old.", Line_WaitForInput);
+	OutputLine(NULL, "立ち退き補償金の額の吊り上げが狙いだったのかもしれないけど、…急にお役所の態度が変わっちゃって全面衝突。",
+		   NULL, " Maybe some wanted an increase in the amount of compensation they'd be offered, but the government changed its mind.", Line_WaitForInput);
+	OutputLine(NULL, "……こうなってしまったら、穏便に決着というのは無理かも知れませんわね。」",
+		   NULL, " I don't think it's possible for them to come to a peaceful agreement at this point.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「かつては、補償金に納得して立ち退きに応じようという人たちも少しはいたんですが。",
+		   NULL, "\"There were actually some villagers who were satisfied with that amount and were willing to leave.", Line_WaitForInput);
+	OutputLine(NULL, "御三家の園崎家さんが強硬意見で村人をリードしてましてね。",
+		   NULL, " However, the Sonozaki family didn't want to change their stance against the issue.", Line_WaitForInput);
+	OutputLine(NULL, "国との対決姿勢を煽っているようなんです。",
+		   NULL, " They're actually leading the villagers in the fight against the government.", Line_WaitForInput);
+	OutputLine(NULL, "街宣車みたいなのがよく騒がしくしてますし、ビラやらチラシやら機関紙やらが回覧板と一緒によく回ってきますよ。」",
+		   NULL, " There are blaring announcement vans everywhere, and ads and flyers are attached to the circulation notices.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ka2", 400 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ここに住む人にとっては大変な問題ですからね。",
+		   NULL, "\"It's a serious matter for them.", Line_WaitForInput);
+	OutputLine(NULL, "気持ちはわからなくもありません。」",
+		   NULL, " I guess I can understand.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Def1+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	DisplayWindow();
+
+	OutputLine(NULL, "「……そういう意味では、思惑は多少違うかもしれませんが、そんな皆さんのためにも、このダム計画は早く撤回になるよう交渉を進めてほしいものです。",
+		   NULL, "\"...I hope the construction plan will be called off soon, for their sake.", Line_WaitForInput);
+	OutputLine(NULL, "撤回されれば、この村もすぐに落ち着きのある元の村に戻るのでしょうから。」",
+		   NULL, " Once it's called off, this village will become peaceful once again.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「もちろんわかってます。",
+		   NULL, "\"I know that, of course.", Line_WaitForInput);
+	OutputLine(NULL, "それについては東京の方で交渉を進めておりますので、もうしばらく私どもにお任せください。」",
+		   NULL, " Things are moving right along in Tokyo, so please give us a little more time.\"", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Ta_Def+", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ka1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「…東京の方で噂を聞いたんですけれど、建設省の方になかなかうまく圧力を掛けられるコネクションがなくて苦労してるとか？」",
+		   NULL, "\"...I've heard a rumor from Tokyo that you're having problems finding a way to pressure the Minister of Construction. Is that true?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Tomi_Komaru#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いやぁ…、はっはっは…。",
+		   NULL, "\"Oh... ha ha ha...", Line_WaitForInput);
+	OutputLine(NULL, "私如きでは詳しくは知りませんが、水面下調整がうまく行っていないのではという話も少し聞きます。」",
+		   NULL, " I'm not sure, but I've heard myself that they are having a little problem with some of the details.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鷹野の持つ後ろ盾は非常に強力な勢力ではあるが、だからと言って日本全てを網羅しているわけではない。",
+		   NULL, "Takano had powerful people supporting her, but they didn't control all of Japan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　得意とする方面もあれば、不得手とする方面もある。",
+		   NULL, "There were some things they excelled in, but also other things that they weren't too good at.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……建設省に圧力を掛けられるコネクションについては、あまり得意ではないに違いない。",
+		   NULL, "Finding a way to put pressure onto the Minister of Construction fell into the latter.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 2, "Ta_Akuwarai+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「冗談抜きで。",
+		   NULL, "\"In all seriousness, though...", Line_WaitForInput);
+	OutputLine(NULL, "ダムができますからここを立ち退いてくださいなんて話には、本当にならないんですわよね…？」",
+		   NULL, " We really won't be facing any requests to leave this area because of the dam, right...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「も、もちろんです。",
+		   NULL, "\"Of course not.", Line_WaitForInput);
+	OutputLine(NULL, "それだけは絶対に問題ありません。",
+		   NULL, " I can guarantee that won't happen.", Line_WaitForInput);
+	OutputLine(NULL, "時間が掛かっているだけですので、皆さんはどうかそこは任せて研究を進めてください。",
+		   NULL, " It's just taking longer than we thought, that's all. So please continue your research.", Line_WaitForInput);
+	OutputLine(NULL, "穏便に済ませることが出来ない場合は、最終的な荒療治も辞さないことで意見はまとまっておりますので。」",
+		   NULL, " We were told that if things can't be resolved peacefully, then we may have to use drastic measures.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Iri_Majime+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「荒療治、…とはなんですか、富竹さん。」",
+		   NULL, "\"Drastic measures? What do you mean, Tomitake-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 1, "Tomi_Majime#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そこは我々の領分です。",
+		   NULL, "\"You don't need to worry about that part,", Line_WaitForInput);
+	OutputLine(NULL, "入江所長は気にされなくて結構です。",
+		   NULL, " Director Irie.", Line_WaitForInput);
+	OutputLine(NULL, "どうかお任せください。」",
+		   NULL, " Please let us take care of it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………そうですか。",
+		   NULL, "\"...I see.", Line_WaitForInput);
+	OutputLine(NULL, "…わかりました。",
+		   NULL, " Okay.", Line_WaitForInput);
+	OutputLine(NULL, "よろしくお願いいたします。」",
+		   NULL, " Thank you for your work.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「大丈夫ですわよ、入江所長。",
+		   NULL, "\"It's fine, Director Irie.", Line_WaitForInput);
+	OutputLine(NULL, "ダム計画は絶対に撤回されますわ。",
+		   NULL, " The dam construction plan will be called off.", Line_WaitForInput);
+	OutputLine(NULL, "……だって、そう決まっているんですもの。",
+		   NULL, " ...It's already been decided.", Line_WaitForInput);
+	OutputLine(NULL, "…くすくす。」",
+		   NULL, " ...Hee hee.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鷹野がくすくすと笑うと、富竹もそれに習い薄く笑った。",
+		   NULL, "As Takano giggled, Tomitake laughed too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…入江だけがその笑いについて行けず、わずかの疎外感を味わう…。",
+		   NULL, "However, Irie couldn't understand what was so funny, so he felt left out.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………後に入江は、村で見掛けない１人の少年の診察を求められた時、その荒療治の意味を知ることになった。",
+		   NULL, "......Irie only understood the meaning of those drastic measures when he examined a young boy he had never seen in the village before.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

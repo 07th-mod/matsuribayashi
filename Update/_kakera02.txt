@@ -1,0 +1,449 @@
+﻿void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "File", 1000 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　北条沙都子に対する試薬投与実験は順調に進んでいた。",
+		   NULL, "C103's implementation on Satoko is going well so far.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私としては、実験が早々に失敗してくれても一向に構わなかった。",
+		   NULL, "It wouldn't make any difference to me if the experiment failed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、入江が並外れた集中力で実験に没頭した結果、北条沙都子が実験途中に錯乱、もしくは廃人になるということは回避され、",
+		   NULL, "However, Irie's extraordinary focus and attention to the experiment has avoided Satoko Houjou hallucinating or turning into a vegetable during the experiment", Line_WaitForInput);
+	OutputLine(NULL, "……なんと、Ｌ５に至りながら社会生活に復帰できる目処さえ立ちつつあった。",
+		   NULL, " ...and surprisingly, we see prospects of her returning to normal life despite reaching L5.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　C103にはまだまだ検討課題を多く残しながらも、きめ細かく検体の体調を見ながら投与を調整することで、Ｌ５に至った人間ですら生還できるという快挙を成し遂げたのである。",
+		   NULL, "C103 still has many issues, but this experiment proved that even a person who has reached L5 can be cured.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…これについては、半ば馬鹿にしてはいたが、入江の努力を認めなければならない。",
+		   NULL, "I didn't believe in it at first, but I guess I have to acknowledge Irie's hard work.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　いや、入江ゆえにか。",
+		   NULL, "Only Irie could have done this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　甘えたヒューマニズムに苛まれ、両手を汚すことに未だ抵抗があるからこそ、北条沙都子を死すべき運命から救いたいという使命感に直結したのだろう。",
+		   NULL, "He was tormented by naive humanism and didn't want to make mistakes, and that is why he felt obligated to cure Satoko Houjou.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私が入江を嫌っているのは、非情に徹しきれない甘さであって、その実績や能力についてではない。",
+		   NULL, "The reason why I dislike Irie isn't because of his achievements or abilities, but because of that weakness...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……その意味において、私は彼を初めて讃えなければならなかった。",
+		   NULL, "But this time, I had to praise him for it.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawScene( "Ka1", 400 );
+
+	OutputLine(NULL, "「入江所長のレポートを拝見しましたわ。",
+		   NULL, "\"I saw your report...", Line_WaitForInput);
+	OutputLine(NULL, "…脱帽と言わざるを得ません。」",
+		   NULL, " ...I must tip my hat to you.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 0, "Iri_majime2+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いえ。",
+		   NULL, "\"No,", Line_WaitForInput);
+	OutputLine(NULL, "私の研究者としての職務を果たしたに過ぎません。",
+		   NULL, " I only did my job as a researcher.", Line_WaitForInput);
+	OutputLine(NULL, "…その結果、医者としての職務も果たせたなら、私にとってはそれに勝ることはありません。」",
+		   NULL, " ...If that means fulfilling my duty as a doctor as well, then nothing could please me more.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「今や沙都子ちゃんは、私たちにとってもっとも重要な検体になったと言っても過言ではないでしょう。",
+		   NULL, "\"It's hardly an exaggeration to say that Satoko is now our most valuable specimen.", Line_WaitForInput);
+	OutputLine(NULL, "何しろ、Ｌ５に至りながら生還した初めての人間なのですから。」",
+		   NULL, " After all, she's the first human to reach L5 and live.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…その通りです。",
+		   NULL, "\"...That's true.", Line_WaitForInput);
+	OutputLine(NULL, "彼女を社会生活に復帰させ、経過を見ながら長期観察に切り替えていきます。",
+		   NULL, " We'll let her go back to her life and keep our eyes on her.", Line_WaitForInput);
+	OutputLine(NULL, "彼女には毎週日曜日に、こちらに来てもらって検査を受けてもらえるよう話をするつもりです。」",
+		   NULL, " I'm going to tell her to come here every Sunday for a check up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「しかし、C103を日に３回も注射する義務と、毎週日曜日に検査に訪れる義務を、彼女にどう説明されるおつもりで？",
+		   NULL, "\"But how are you going to explain to her that she has to give herself a C103 shot three times a day, and also that she has to come here every Sunday?", Line_WaitForInput);
+	OutputLine(NULL, "　彼女には何の病気の自覚もないのに。」",
+		   NULL, " She has no subjective symptoms.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_Majime+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…そこは今、うまく納得してもらえる話を考えています。",
+		   NULL, "\"I'm still trying to come up with a good excuse...", Line_WaitForInput);
+	OutputLine(NULL, "……今、考えているのは、私の研究論文に協力してもらう、というものです。",
+		   NULL, " I think I'll tell her that I want her to help me with my research.", Line_WaitForInput);
+	OutputLine(NULL, "栄養剤の注射を毎日してもらい、毎週日曜日にその効果を検査する。",
+		   NULL, " She has to give herself shots daily and to come here every Sunday for a check up.", Line_WaitForInput);
+	OutputLine(NULL, "その代わりに研究協力費としていくらかを支払う、という感じです。」",
+		   NULL, " I'll pay her for helping me. Or something like that.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……どうやら入江は、意地でも北条沙都子を完治させるつもりのようだ。",
+		   NULL, "...I guess Irie is determined to cure Satoko Houjou no matter what.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…意地でも彼女を解剖の食卓に上げるつもりはないらしい。",
+		   NULL, "...He seems determined to keep her off the dissection table.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私と立ち位置は違うが、どんな甘い思想にせよ、それが研究への情熱に直結しているなら文句など何もない。",
+		   NULL, "He and I are in different positions, but I don't have any complaints about his naive ideals so long as they translate directly into passion for our research.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼のプランが実行に移されるなら、解剖とはまた違った成果を出し、雛見沢症候群の全貌解明に役立ってくれるだろう。",
+		   NULL, "If his plans can be put into effect and produce a different result than the dissection would, then they'll still be useful to the overall understanding of the Hinamizawa Syndrome.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は、北条沙都子が憎いわけじゃない。",
+		   NULL, "I have nothing against Satoko Houjou.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　研究のために、食えるものは何でも食うというだけのことだ。",
+		   NULL, "It's only that I see her as a research specimen.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　北条沙都子が解剖以外の方法で充分に役立つなら、私はそれで一向に構わない。",
+		   NULL, "If she can be useful in that capacity without being dissected, that's perfectly fine with me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「日に３回もの注射となれば、これは本人だけでなく保護者の方の同意も不可欠です。",
+		   NULL, "\"We have to get permission from her guardian to give her shots three times a day.", Line_WaitForInput);
+	OutputLine(NULL, "確か、ご両親が亡くなってからは、叔父夫婦に親権が移っていましたね。",
+		   NULL, " After her parents died, her aunt and uncle have been taking care of her, right?", Line_WaitForInput);
+	OutputLine(NULL, "そちらに一度、相談にうかがおうと思います。",
+		   NULL, " Maybe I'll go talk to them.", Line_WaitForInput);
+	OutputLine(NULL, "姪への怪しげな研究協力を承諾してもらえればいいのですが…。」",
+		   NULL, " I hope they agree to her involvement in such suspicious research...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「くす、大丈夫ですわよ。",
+		   NULL, "\"Oh, don't worry.", Line_WaitForInput);
+	OutputLine(NULL, "そのための研究協力費ですもの。月に１０万か２０万も振り込んでやれば大喜びしますわ。」",
+		   NULL, " I'm sure they'll be happy to, once they realize they'll receive 100,000 to 200,000 yen every month for it.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_def2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「それだけの予算はありますか？」",
+		   NULL, "\"Do we have enough money?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「もちろん。",
+		   NULL, "\"Sure.", Line_WaitForInput);
+	OutputLine(NULL, "ジロウさんを納得させる資料を作りさえすれば。」",
+		   NULL, " As long as we can produce documents that'll convince Jirou-san.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_Def1+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「わかりました。それは私が作ります。",
+		   NULL, "\"Okay, then I'll work on that.", Line_WaitForInput);
+	OutputLine(NULL, "あと、沙都子ちゃんに心労を掛けないよう指導しておく必要もあります。",
+		   NULL, " Also, we'll need to take action to prevent stressing Satoko-chan.", Line_WaitForInput);
+	OutputLine(NULL, "Ｌ５をぶり返すことになったら大変ですからね。",
+		   NULL, " We don't want her to return to L5.", Line_WaitForInput);
+	OutputLine(NULL, "……噂では、叔父夫婦はとても現金な方だとか。",
+		   NULL, " ...I hear her aunt and uncle are very mercenary.", Line_WaitForInput);
+	OutputLine(NULL, "金銭で丸め込むのは可能かもしれません。",
+		   NULL, " Perhaps we can handle them with cash.", Line_WaitForInput);
+	OutputLine(NULL, "それらの指導も私の方できっちり行なうつもりです。」",
+		   NULL, " I plan to provide my help with their guidance too.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　沙都子ちゃんの新しい親である叔父夫婦との関係が、あまり良好ではないらしいという噂は聞いていた。",
+		   NULL, "I've heard Satoko-chan isn't getting along with her aunt and uncle.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかし、それは私たちとは関係のないことだと思っていた。",
+		   NULL, "I never thought that'd affect us in any way.", Line_WaitForInput);
+	OutputLine(NULL, "それに入江がこうまで熱心に関わろうとするとは。",
+		   NULL, " But now, Irie has to deal with them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　何かのきっかけで、彼女の保護者であろうという使命感にでも目覚めたのかもしれない。",
+		   NULL, "Maybe he's developed some kind of sense of responsibility or duty as her guardian.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それも一向に構わない。",
+		   NULL, "I don't really care.", Line_WaitForInput);
+	OutputLine(NULL, "使命感に燃えてくれれば研究は一層進む。",
+		   NULL, " The more responsible he feels, the more progress our research makes.", Line_WaitForInput);
+	OutputLine(NULL, "それは私にとっても助かるのだから。",
+		   NULL, " That'll be a plus for me.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshotWithFiltering( 2, "Iri_majime+", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ka2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「……それはそうと。",
+		   NULL, "\"...By the way,", Line_WaitForInput);
+	OutputLine(NULL, "…H170番台についてのレポートを拝見しました。」",
+		   NULL, " I saw the report on H170.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Oh,", Line_WaitForInput);
+	OutputLine(NULL, "入江所長の成果に比べれば足元にも及びませんが、一応の研究成果を出せましたわ。」",
+		   NULL, " compared to your success, it's nothing. But I guess it was some kind of accomplishment.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…本当に皮肉ですね。",
+		   NULL, "\"...It's honestly ironic.", Line_WaitForInput);
+	OutputLine(NULL, "彼女を錯乱から救う治療薬を作っていた研究所で、その傍らでは彼女を直ちに錯乱させる危険な薬が作られていたのですから。」",
+		   NULL, " This same research center that's produced the remedy to save her from derangement has developed a dangerous drug that could instantly induce it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　H170に入江は関わっていない。",
+		   NULL, "Irie wasn't involved in the H170 research.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私が主導で研究した。",
+		   NULL, "That was my work.", Line_WaitForInput);
+	OutputLine(NULL, "…いや、入江に関われと言っても、関わらなかっただろうが。",
+		   NULL, " In fact, even if I asked him, he wouldn't have agreed to be involved.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
+
+	DrawSceneWithMask( "File", "maskc", 1, 0, 300 );
+
+	OutputLine(NULL, "　この危険な試薬は、北条沙都子の脳を支配する病原体が、如何にして宿主を疑心暗鬼や錯乱に駆り立てていくかのメカニズムを解き明かす過程で作られたものだ。",
+		   NULL, "This dangerous reagent was developed during the process of uncovering the mechanisms behind how the pathogens controlling Satoko Houjou's brain could induce derangement or paranoia in their host.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　平たく言うと、H170は雛見沢症候群の感染者に投与することで、末期発症を強制的に引き起こせる。",
+		   NULL, "To put it bluntly, injecting H170 into a patient with Hinamizawa Syndrome forced them to express terminal symptoms.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　擬似的に脳に興奮状態を与え、病原体を意図的に不安定にするのだ。",
+		   NULL, "It threw the brain into a simulated state of agitation, intentionally forcing the pathogen to grow unstable.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この危険な試薬の研究をさらに進めれば、我々は一般感染者を好きな時に末期発症させることが可能になるだろう。",
+		   NULL, "If we continue researching this, it will be possible to drive anyone with Hinamizawa Syndrome violently insane at any time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　末期発症のメカニズムを解明することが、雛見沢症候群を解明することにも繋がるため、",
+		   NULL, "Studying the mechanism behind that will help to solve the syndrome's mysteries.", Line_WaitForInput);
+	OutputLine(NULL, "このH170は今後の研究をスムーズに進める上で非常に心強いものとなるに違いない。",
+		   NULL, " So this study on H170 will be extremely important to future research.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　また、この薬は、クライアントが求める軍事的効能も期待できるかもしれない。",
+		   NULL, "Also, this medicine has military applications, as the client requested.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　現時点ではまだまだ使い道は皆無と言えるだろうが、研究が進めば、無害な状態の病原体を対象とするコロニーに予め蔓延させ、",
+		   NULL, "At this point, there's absolutely no use for it.", Line_WaitForInput);
+	OutputLine(NULL, "意図的なタイミングでH170を散布することである種のアクションを起こすことができるだろう。",
+		   NULL, " But once our research progresses a bit further, this H170 could be spread at the right moment to cause a certain type of reaction.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　殺人ウィルスに比べれば手間のかかる間抜けな病原体だが、",
+		   NULL, "Compared to a killer virus, it seems like a useless pathogen.", Line_WaitForInput);
+	OutputLine(NULL, "死体からの検出は不可能で、しかも自発的に錯乱したように見える点で、おそらく何らかの用途があるに違いない。",
+		   NULL, " But there's no way to detect it in a dead body, and it makes it look as though the person just went insane spontaneously, so it must have some useful applications.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　かつて雛見沢症候群の研究を封印しようとした元凶である、盧溝橋事件。",
+		   NULL, "The Marco Polo Bridge Incident threatened to end research on Hinamizawa Syndrome before.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……あのような、歴史の分岐路となりかねない重要な事件は、殺人ウィルスのような不器用なものでは作れない。",
+		   NULL, "A historically important incident like that couldn't have been created by a killer virus.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…でも、雛見沢症候群になら可能なのだ…。",
+		   NULL, "But it's possible with Hinamizawa Syndrome.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……この辺りはスポンサーであるアルファベットプロジェクトの老人たちが勝手に考えればいい。",
+		   NULL, "The elders of the Alphabet Project, the sponsor for our research, can think whatever they want about that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　使い道なんて、私にはどうでもいいことだ。",
+		   NULL, "I don't care how they use what I've learned.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私にとっての目的は、雛見沢症候群の神秘を解き明かすことで、この研究がどれほど重要なものであったかを知らしめることだ。",
+		   NULL, "My purpose is to solve the mysteries of Hinamizawa Syndrome and to make people realize how important this research is.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、祖父の成果を偉業と認めさせること。",
+		   NULL, "Also, to make people acknowledge my grandfather's accomplishments and achievements.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…軍事的転用はその途中の副産物に過ぎず、どうでもいいことなのだから。",
+		   NULL, "...Any military applications were just byproducts of the process that I didn't care about.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawBustshotWithFiltering( 0, "Iri_majime+", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Ka2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「クライアントにとっては、鷹野さんの成果の方が喜ばれるでしょう。",
+		   NULL, "\"The clients will appreciate your accomplishment.", Line_WaitForInput);
+	OutputLine(NULL, "来期の予算取りが楽になるかもしれませんね。」",
+		   NULL, " Maybe our budget will increase for next term.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「くすくす。",
+		   NULL, "\"Hee hee.", Line_WaitForInput);
+	OutputLine(NULL, "情熱だけでは研究は続けられませんものね。",
+		   NULL, " Passion alone can't keep research going.", Line_WaitForInput);
+	OutputLine(NULL, "先立つものがなければ。」",
+		   NULL, " We need money.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ChangeBustshot( 0, "Iri_majime2+", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……これだけの潤沢な資金を提供してくださるスポンサーさんには頭が上がりません。",
+		   NULL, "\"...We must thank the sponsor for giving us so much funding...", Line_WaitForInput);
+	OutputLine(NULL, "……これだけのお金が公費から出ているのですから…。",
+		   NULL, " ...For this much money to come from public expenses,", Line_WaitForInput);
+	OutputLine(NULL, "日本という国は、私が想像しているよりずっと豊かなのかもしれませんね。」",
+		   NULL, " maybe Japan is richer than I thought.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「公費は公費でも、表に出せない黒い公費でしょうけれどね。",
+		   NULL, "\"They're public expenses, but they're expenses that can't be made public.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす…。」",
+		   NULL, " Hee hee...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのカネを得るために、私がどれだけの苦労をしてきたかなど、…入江にはわかるまい。",
+		   NULL, "Irie has no idea what I had to go through to get that money.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora4", 1000 );
+
+	OutputLine(NULL, "　……とにかく、研究は極めて順調。",
+		   NULL, "Anyway, our research is going extremely well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　雛見沢症候群は私たち人類に何を示すのか。",
+		   NULL, "We don't know what we'll find out about Hinamizawa Syndrome,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　まだ見ぬ神秘が教えてくれるに違いない、知的快感に胸が躍る。",
+		   NULL, "but I'm sure every mystery will eventually be solved. I can hardly wait.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　人間は単なる空っぽの器に過ぎず、私たちが自らの意思だと信じているものは、前頭葉に住まう特殊な寄生虫たちによるものかもしれない可能性を、雛見沢症候群は示してくれるのだ。",
+		   NULL, "What the syndrome indicates is that humans are simply empty containers, and what we believe to be our will is simply the actions of parasites that live in our brains.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを解き明かせたなら、………人類はこれまでに解き明かしてきたどんな神秘にも勝る衝撃を得ることになるだろう。",
+		   NULL, "If that mystery was solved... it would have a greater impact than anything else in history.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　誰もが、そんな馬鹿なと言いたくなるような、真実。",
+		   NULL, "That is a truth which nobody wants to believe.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それをあの時代にすでに予見していた祖父の、偉業。",
+		   NULL, "This is an achievement my grandfather predicted back during his time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　あぁ、今ならはっきりわかる。",
+		   NULL, "Ah, I know now.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この研究が、なぜ祖父をあれほどまでに魅了していたのかを。",
+		   NULL, "I know the reason why my grandfather was so fascinated by his work.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

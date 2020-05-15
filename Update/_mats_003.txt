@@ -1,0 +1,2099 @@
+﻿void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Iru", 120, 0 );
+
+	OutputLine(NULL, "「…ハイ、バンケットより後方〜！",
+		   NULL, "\"...Banquet to back end, over!", Line_WaitForInput);
+	OutputLine(NULL, "　スピーチあと１人で乾杯に入ります。",
+		   NULL, " One more speaker, then the toast starts.", Line_WaitForInput);
+	OutputLine(NULL, "準備できてるねー？！」",
+		   NULL, " Are you ready?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「後方ＯＫですー。",
+		   NULL, "\"This is the back end, we're ready!", Line_WaitForInput);
+	OutputLine(NULL, "内部、全然聞こえないんでスピーチが終わるタイミングでコールをお願いしますー！」",
+		   NULL, " We can't hear anything from inside, so please give us a cue when the speech is wrapping up.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いいかい、各卓にビールは１０本ずつだよ！",
+		   NULL, "\"Listen up, ten bottles of beer per table!", Line_WaitForInput);
+	OutputLine(NULL, "　ちゃんと自分の縄張りにスムーズに運んでね！」",
+		   NULL, " Make sure to deliver them to your areas smoothly!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　蝶ネクタイをすっきりと着こなした若いホテル従業員たちが、ビールケースから次々とビール瓶を抜き出し、乾杯の準備に備えていた。",
+		   NULL, "Young hotel workers dressed smartly in bowties pulled bottle after bottle out of the beer cases, preparing for the toast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　時折、インカムから内部の進行状況が伝えられ、彼らは宴会場にビールを運び込むタイミングを今か今かと待ちかまえている。",
+		   NULL, "They waited for their cue to serve the drinks while listening through the intercom.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　通常の宴会ならば、ビールは先に並べておけるのだが、宴会に先立ち講演などがある場合はそういうわけにはいかない。",
+		   NULL, "At a normal party, they could put bottles of beer on the table ahead of time, but if there was a lecture before the party, then they couldn't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　客人たちは長引く講演で、ラップをかけた寿司がどんどん干からびていくのには耐えられても、",
+		   NULL, "Guests don't mind sushi going dry due to a long speech,", Line_WaitForInput);
+	OutputLine(NULL, "ビール瓶が汗をかいてテーブルを濡らすことを嫌うし、",
+		   NULL, " but they don't like seeing their tables get wet with condensation from the bottles of beer.", Line_WaitForInput);
+	OutputLine(NULL, "それ以上にぬるくなったビールを飲ませられることに耐えられなかった。",
+		   NULL, " And more than anything, they certainly don't want to drink warm beer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、乾杯に入る直前に配膳しなければならないのである。",
+		   NULL, "That's why beer has to be served right before a toast.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、乾杯の前にはスピーチが入る。",
+		   NULL, "However, there's always a speech before a toast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　決まってそれは冗長だ。",
+		   NULL, "And usually a long one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　しかも、このような規模の大きい宴会ではスピーチの来賓も多く、乾杯のタイミングは非常に分かり辛かった。",
+		   NULL, "Especially at a big party like this, there are lots of guests that give speeches, so it's extremely difficult to know when to serve.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その為、冷蔵庫から出されたビールケースはこうしてバンケットルームの外で野ざらしにされ、",
+		   NULL, "For that reason, the bottles end up sitting outside by the banquet room,", Line_WaitForInput);
+	OutputLine(NULL, "結局、彼らはぬるいビールを飲ませられるわけである…。",
+		   NULL, " and people end up drinking warm beer anyway.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ho1_Tokyo", 1000 );
+
+	OutputLine(NULL, "　とても広い会場内には、純白のテーブルクロスをかけられた白いテーブルが何十と並んでいた。",
+		   NULL, "There were several dozen tables with white tablecloths on them in the banquet room.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それらのテーブルには８人近くが座っているのだから、この空間に数百人にも及ぶ人間がひしめいていることになる。",
+		   NULL, "Approximately eight people were sitting at each table, so there were at least a few hundred people in the room.", Line_WaitForInput);
+	OutputLine(NULL, "それは大変な熱気だった。",
+		   NULL, " The banquet room was filled with excitement.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　テーブルの上にはラップをかけた色とりどりの料理皿が並ぶ。",
+		   NULL, "There were many plates with many different kinds of food on each table.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　寿司や刺身舟、美しい果物皿。",
+		   NULL, "A sushi platter, a sashimi platter, a fruits platter...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　また、壁際には料理人たちがまな板を並べ、新鮮な刺身を振る舞う準備をしていた。",
+		   NULL, "Also along the wall, there were cooks ready to serve fresh sashimi.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんなテーブルにつく客人たちは、いずれも身なりの良い老紳士たちで、にじみ出す雰囲気から、それぞれが各界で知られた名士であろうことをうかがわせる。",
+		   NULL, "All the guests appeared to be well-mannered gentlemen, and clearly were notable people in various different fields.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、天井にぶら下がる巨大で美しいシャンデリアの迫力は、そんな賓客たちを迎えるに充分な格がこのホテルに備わっていることを無言で物語っていた。",
+		   NULL, "The huge and beautiful chandelier above them clearly indicated that this hotel held a status good enough for these famous people.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　壇上では、乾杯前のスピーチにしてはあまりに長い大演説を、威厳ある老紳士がまくし立てていた。",
+		   NULL, "An elderly gentleman was giving a lengthy speech on the stage before making a toast.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　普通、この手の大演説は嫌われる。",
+		   NULL, "Usually people don't like such long speeches.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　乾杯の直前ならなおさらだ。",
+		   NULL, "Especially if it's before a toast.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、客人たちは、時にそうだそうだと叫び、時には大きな拍手がわき、熱気で盛り上がっていた。",
+		   NULL, "But the guests occasionally shouted, \"Yes, yes!\" and sometimes gave him loud applause, filling the room with their fervor.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　熱気、というのは好意的な言い方かもしれない。",
+		   NULL, "Well, maybe \"fervor\" was a pleasant way to put it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　異様な盛り上がり方、と言う方が恐らく言い得ているだろう。",
+		   NULL, "It was probably more accurate to say their excitement was bizarre.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「大体ですね、自分の国の国旗に敬意を示すなという教育をしている国が、世界中のどこにあるというんですか！！",
+		   NULL, "\"Which country would actually teach people not to show respect towards their own flag?", Line_WaitForInput);
+	OutputLine(NULL, "　ないよ、そんな国はどこにもない！",
+		   NULL, " There are no others!!", Line_WaitForInput);
+	OutputLine(NULL, "　日本だけなんです、そんなおかしい教育をしているのは！！」",
+		   NULL, " It's happening only in Japan!!\"", Line_Normal);
+	ClearMessage();
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "「「「そうだそうだッ！！」」」",
+		   NULL, "\"\"\"That's right, that's right!!!\"\"\"", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
+
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+
+	OutputLine(NULL, "「国旗や国歌を強制されることは心の自由への強制？",
+		   NULL, "\"Is forcing people to respect their national flag and anthem an obstruction of their freedom? ", Line_WaitForInput);
+	OutputLine(NULL, "　馬鹿言っちゃいけない！",
+		   NULL, "That's a foolish idea!", Line_WaitForInput);
+	OutputLine(NULL, "　いいですか、国旗や国歌を愛するというのはですね、自然に沸いてくるもんなんです。",
+		   NULL, " Listen, love for one's national flag and anthem comes naturally to all.", Line_WaitForInput);
+	OutputLine(NULL, "自分を知り、郷土を知り、歴史や国家を学ぶ。",
+		   NULL, " To know ourselves, to know our culture, to understand our history and our country itself.", Line_WaitForInput);
+	OutputLine(NULL, "そうしていく中で自然に自らが日本人であることを自覚していき、日本社会の一員を担う国民としての役割を理解していく。",
+		   NULL, " Those are the things that make you realize that you are a Japanese citizen, that make you understand the part you play as a citizen of this country.", Line_WaitForInput);
+	OutputLine(NULL, "その結果、自然と沸いてくるのが国を愛するという心なんです！！",
+		   NULL, " And the feeling you get from that is love towards your own country!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ところが反日教師どもは、それを軍国主義の洗脳だと、こう言っている。",
+		   NULL, "However, those anti-Japan teachers are proclaiming that it's militaristic brainwashing!", Line_WaitForInput);
+	OutputLine(NULL, "馬鹿言っちゃいけない！！",
+		   NULL, " Those stupid claims are wrong!!", Line_WaitForInput);
+	OutputLine(NULL, "　そう言ってる連中がやってることはなんですか？！",
+		   NULL, " What are those people doing, anyway?", Line_WaitForInput);
+	OutputLine(NULL, "　これから日本を背負っていく子供たちに反日妄想をすり込み、自虐教育で洗脳している！",
+		   NULL, " They're teaching our children to hate being Japanese! They're the ones brainwashing them with this self-destructive education!", Line_WaitForInput);
+	OutputLine(NULL, "　日本は恥ずべき国で、貴様らはその国に生まれた恥ずべき人間であるとッ！",
+		   NULL, " They are teaching our children that Japan should be ashamed of itself, and that they should be ashamed of being Japanese!", Line_WaitForInput);
+	OutputLine(NULL, "　国家を蔑ろにし自分の生まれた国を否定せよと！！",
+		   NULL, " Forget who you are, and deny your country,", Line_WaitForInput);
+	OutputLine(NULL, "　そんなことを吹き込んでいるわけです！",
+		   NULL, " That's what they're teaching them!!", Line_WaitForInput);
+	ClearMessage();
+	OutputLine(NULL, "　無垢な子供たちはそれをそのまま鵜呑みにし、何の裏付けもなく信じてしまう。",
+		   NULL, "These innocent children listen and believe such nonsense!", Line_WaitForInput);
+	OutputLine(NULL, "そりゃ当り前です！",
+		   NULL, " Of course they do!", Line_WaitForInput);
+	OutputLine(NULL, "　学校は学ぶところなんですよ？",
+		   NULL, " They go to school to learn things, right?", Line_WaitForInput);
+	OutputLine(NULL, "　そこで教師がそうだと教えれば、子供たちは何の疑いもなく信じるんです。",
+		   NULL, " If their teachers teach them that, of course the children believe it.", Line_WaitForInput);
+	OutputLine(NULL, "こんな卑劣な話がありますかッ？！",
+		   NULL, " Can you believe such corruption exists?!", Line_WaitForInput);
+	OutputLine(NULL, "　今こそ、日本の教育を私たちは体を張って守らなければならない時なのですッ！！」",
+		   NULL, " We must do something about this country's education now, no matter what it takes!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　万雷の拍手が会場に溢れ出した。",
+		   NULL, "The sound of applause filled the banquet room.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　会場の老紳士たちは口々に肯定を連呼し、自らが同じ思いであることをアピールし合っていた。",
+		   NULL, "All the gentlemen agreed, and expressed that they felt the same way by cheering him on.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その壇上へ、たすきを掛けた１人の男が招かれる。",
+		   NULL, "After that, a gentleman wearing a cloth sash approached the stage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　会場から再び万雷の拍手が沸き起こり、彼の登壇を歓迎した。",
+		   NULL, "The hall welcomed him onto the stage with another round of thunderous applause.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　流行のドラマの勇ましいＢＧＭがその登壇を演出していたが、その圧倒的な拍手の前には、まったく不要なものだったに違いない。",
+		   NULL, "A rousing theme from a popular drama series played as he took the stage, but it was entirely unecessary before the overwhelming applause.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　登壇した男のたすきには本人の名前が大きく筆書きされていて、××県知事選挙立候補予定と添えられているのがよく見えた。",
+		   NULL, "The man's sash carried his name written in large letters, along with the name of the prefecture he was running for office in.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ho1_Tokyo", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「憂国の同志、○○○○君を皆さんにご紹介いたします！！",
+		   NULL, "\"Let me introduce to you a patriot, XXXX-kun!!", Line_WaitForInput);
+	OutputLine(NULL, "　彼、○○君は、長年、前知事の下で知事室長を勤め、その懐刀として長いこと××県政を支えて参りました。",
+		   NULL, " This man has served the former governor as his right-hand man as director of the office of the governor for many years, supporting the prefecture's government for a long time.", Line_WaitForInput);
+	OutputLine(NULL, "この度、前知事が高齢により勇退を決意され、その後任として指名されたのが、ここにいる○○君なのであります！！」",
+		   NULL, " Since the previous governor has decided to retire, he was appointed as the next governor.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私の県にも、実に悔しいことに反日教師が何人もおります！",
+		   NULL, "\"Unfortunately, we have those anti-Japan teachers in our prefecture.", Line_WaitForInput);
+	OutputLine(NULL, "　教育の自由、心の自由などと宣いながら、子供たちに反日教育をしゃあしゃあと強いている！！",
+		   NULL, " While they proclaim freedom of education and freedom of thought, they're shamelessly forcing an anti-Japan education down on our children!!", Line_WaitForInput);
+	OutputLine(NULL, "　正しい歴史を伝えず、連中お得意の捏造と歪曲で、日本は悪かったの一点張り！",
+		   NULL, " They don't teach real history, they teach our children that everything was Japan's fault!", Line_WaitForInput);
+	OutputLine(NULL, "　大東亜共栄圏の真の意味や、アジアを白人支配から解放しようとアジア各国のために血を流してくださった勇士たちのことは伝えようともしない！",
+		   NULL, " They don't even mention the true purpose of the Greater East Asia Co-Prosperity Sphere, or all those who fought to save Asian peoples from Western control!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　戦前、どれだけのアジアの国が白人植民地であったか、そして日本がアジア開放に立ち上がり、戦後、どれだけの国が自治を回復したか、その意味すらも伝えようともしない！！",
+		   NULL, "They don't even talk about how many Asian countries were actually Western colonies before Japan stood up for our freedom during the war. Our county has recovered amazingly since then, yet our children don't know any of that, because those teachers don't teach them!", Line_WaitForInput);
+	OutputLine(NULL, "　情けない！！",
+		   NULL, " How truly, truly sad!", Line_WaitForInput);
+	OutputLine(NULL, "　そんな連中が、真剣に教育を考える教師たちの中に混じり込み、神聖な学舎を汚し続けていることには、もう我慢がなりませんッ！！",
+		   NULL, " I can't stand the fact that those anti-Japan teachers are actually teaching our children alongside those teachers who take teaching seriously. They are insulting our educational institutions!", Line_WaitForInput);
+	OutputLine(NULL, "　私、○○○○は××県知事に就任し、そういった屑どもを全て追放しッ！",
+		   NULL, " I will become a governor and get rid of those teachers.", Line_WaitForInput);
+	OutputLine(NULL, "　××県の教育を正しッ！",
+		   NULL, " I will straighten out our education system", Line_WaitForInput);
+	OutputLine(NULL, "　日本の将来を担うことができる健全な若者たちを育てることができる環境を取り戻すことで、日本再生百年の計の礎を築いていく覚悟でおりますッ！」",
+		   NULL, " and make sure our children will grow up to be decent young people who can carry on Japan's future!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「彼、○○○○君は、来年の××県知事選挙に立候補いたします！",
+		   NULL, "\"He, XXXX-kun, announces his candidacy for the next year's prefectural governorship.", Line_WaitForInput);
+	OutputLine(NULL, "　どうか皆さん、温かい応援とみなぎるお力で、彼、○○○○君をどうか男にしてやってくださいッ！！」",
+		   NULL, " We appreciate your support for him!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「○○○○ッ、日本の教育を正して参ります！！",
+		   NULL, "\"I promise, I will straighten out Japan's education system!!", Line_WaitForInput);
+	OutputLine(NULL, "　どうかよろしくお願いいたします！！」",
+		   NULL, " Thank you for your support!!!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　会場は三度、万雷の拍手が満たされる。",
+		   NULL, "Again, the banquet room filled with applause.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　誰もが立ち上がって拍手を送り、同志の決意にエールを送るのだった。",
+		   NULL, "The man was receiving a standing ovation.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　誤解がないように、先にこの会合を説明しなくてはならない。",
+		   NULL, "I need to explain a bit about this banquet before you misunderstand.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この会合は決して、政治結社の集会でなければ、立候補者講演会でもない。",
+		   NULL, "It wasn't the conference of a political association, or a lecture by a political candidate.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　信じ難いだろうが、大学の「同窓会組織」の会合に過ぎないのである。",
+		   NULL, "It was hard to believe, but this was nothing more than a meeting of a college's alumni association.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　学校の同窓会組織は、誰にとっても馴染み深いもののはずだ。",
+		   NULL, "Everyone should be familiar with what those are.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　小学校から中学校、高校、大学。",
+		   NULL, "Whether it's elementary school, junior high school, high school, or college,", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それらを卒業すれば、ほとんどの場合は自動的に同窓会組織に組み込まれる。",
+		   NULL, "once you graduate from one of those, you normally belong to an organization of alumni.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして数十年を経て同窓会の招待状が届き、旧交を温めて当時を懐かしむ、乙な経験をさせてくれるに違いない。",
+		   NULL, "You receive invitations for reunions where you enjoy talking about the good old days.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、同窓会組織にも様々なものがある。",
+		   NULL, "However, there are many different types of such organizations.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　前述の、単なる同窓会の幹事を務める程度のものから、より結束した「勢力」と呼ぶに値するものまで様々だ。",
+		   NULL, "Some are simple, and some are united with much tighter bonds.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　同窓会組織の結束が特に強くなったものは、同窓会とは呼ばない。",
+		   NULL, "And once an organization becomes united with those tight bonds, it's no longer a simple organization of alumni.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは「学閥」と呼ばれる立派な勢力になるのだ。",
+		   NULL, "Rather, it becomes a significant faction known as an alma mater clique.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日本社会では、同門の出身者が所属する組織を超えて結束する習慣がある。",
+		   NULL, "In Japanese society, it's traditional for graduates to form tighter bonds that go beyond the level of an organization.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　また、出身校が優秀であればあるほど、その傾向は強くなるのが知られている。",
+		   NULL, "Also, the more superior the alma mater, the stronger that tendency holds true.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　中でも、大学の最高峰である「旧帝大」出身者の結束が特に強固であることは戦前から有名だ。",
+		   NULL, "The Imperial University, one of the best universities in the country, is famous for the deep bonds its graduates form.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　なぜ、優秀な人間ほど結束したがるのか。",
+		   NULL, "Why do superior people like to bond?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　自分たちが高い倍率を潜り抜けてきたというプライドによるものとも、もちろん言えるかもしれないが、",
+		   NULL, "It may be because they take pride in being superior,", Line_WaitForInput);
+	OutputLine(NULL, "やはり最大の理由はコネクションによるところが大きいだろう。",
+		   NULL, " but more than that, maintaining connections is the most significant reason.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　旧帝大出身者はエリートとして各界に散っていく。",
+		   NULL, "All Imperial University graduates are elites in their respective fields.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、高い確率で将来、要人に成長していくだろう。",
+		   NULL, "They are likely to succeed and become important people.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その際、同窓会の結束は計り知れない意味を持っていくことになるのだ。",
+		   NULL, "When they do, the unity of their alumni association gains immeasurable meaning.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　実際、平成の今日にあっても、旧帝大の出身者たちは強力な学閥・同窓会を有しており、",
+		   NULL, "In fact, even today, the Imperial University graduates maintain their tight academic clique,", Line_WaitForInput);
+	OutputLine(NULL, "各界に軽んじることのできない影響力を維持している。",
+		   NULL, " and they hold great influence throughout many different fields.", Line_WaitForInput);
+	OutputLine(NULL, "帝大間での交流も盛んで、その卒業生たちの結束は今日でも非常に固いのである…。",
+		   NULL, " They interact with other universities as well, so the graduates' bonds are extremely tight, even today.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　さて、旧帝国大学と言えば、普通は東京大学のことを指すが、",
+		   NULL, "Additionally, while \"Imperial University\" usually refers to the University of Tokyo,", Line_WaitForInput);
+	OutputLine(NULL, "単に帝大といった場合、それは特定の大学のことではなく、帝大の名を冠した７つの大学のことを指す。",
+		   NULL, " sometimes it's used to mean all seven major universities in Japan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その内訳は、東京、京都、東北、九州、北海道、大阪、名古屋の７つ。",
+		   NULL, "They are located in Tokyo, Kyoto, Tohoku, Kyushu, Hokkaido, Osaka, and Nagoya.", Line_WaitForInput);
+	OutputLine(NULL, "……いずれも劣らぬ最高学府である。",
+		   NULL, " They are all great schools.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　これら七帝大の出身者たちが集う、言わば学校の枠を超えた同窓会組織は、実際に存在している。",
+		   NULL, "There happens to be an organization of alumni that includes all of those seven universities.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Ho1_Tokyo", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　……この会場にひしめく老紳士たちも、そんな七帝大の同窓会組織の中のひとつの団体なのである。",
+		   NULL, "The elderly gentlemen in this banquet room were each from one of those organizations.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ただし、この会合の団体は単に帝大卒業生であれば自動的に入会が許されるものではなかった。",
+		   NULL, "However, not every graduate would get an invitation here automatically.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　入会に当たっては、会員の推薦や社会に対する貢献度、品格など様々な条件を満たして初めて入会が許される「選ばれた紳士の同窓会」なのである。",
+		   NULL, "It is a society of \"select gentlemen\", and in order to become a member, one must first fulfill several conditions, such as reccomendation from an existing member, contribution to the society, possession of status, and so forth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ゆえに、会員たちは各界の要人たちがひしめき、明らかに単なる同窓会組織を超えた政治力を持っていることが容易にうかがえた…。",
+		   NULL, "Therefore, all the members are important people from different fields, and obviously the power of this organization is of a political nature.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だが、この会にはもうひとつ、重要な入会資格があった。",
+		   NULL, "But there's one more very important criterion one has to meet to join.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは、国家への貢献と日本再生、国を憂う心や強い愛国心。",
+		   NULL, "Strong patriotism. A heart that longs to contribute to Japan and its rebirth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その結果、非常に右傾化した国粋主義の団体となっていた。",
+		   NULL, "As a result, this organization has become extremely nationalistic.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　壇上では依然、××県知事選に打って出るという男が熱弁を奮っており、戦後日本がいかに憂うべきものに落ちぶれたかを説き続けていた。",
+		   NULL, "Up on the stage, the candidate for the prefectural governorship was still talking passionately.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その熱弁に熱心な相槌を打つ老紳士たちに混じり、鷹野の姿があった…。",
+		   NULL, "And among those elderly gentlemen in the crowd, Takano can be found...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鷹野はこの会合に慣れているようで、今日のこの会合も、普段に比べて特別、異常だという感じでもなさそうだった。",
+		   NULL, "Takano seemed used to this kind of conference, and seemed unsurprised at anything that was said.", Line_WaitForInput);
+	OutputLine(NULL, "ではあるが、相変わらずの過剰な熱気に、ややうんざりした表情を浮かべているのだった。",
+		   NULL, " But at the same time, she looked rather fed up with it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鷹野がこの会合に席を与えられている以上、彼女がこの「同窓会」の会員であることは明白だった。",
+		   NULL, "As she was in attendance, she must have been one of their members.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ということはつまり、彼女は非常に優秀な学歴を持ち、",
+		   NULL, "Which meant she possessed not only an extremely excellent academic background,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "のみならず同席する老紳士たちに負けない社会貢献が認められていて、",
+		   NULL, " but that the older gentlemen here had acknowledged her equivalent contributions to society,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "かつ、偏った愛国心があること。",
+		   NULL, " and that she possessed strong patriotism.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、鷹野が満たしてる入会資格は学歴のみで、その他の諸資格は実は満たしていなかった。",
+		   NULL, "However, her academic background was the only qualification she had met to join.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　様々なコネクションから推薦を受け、特別に入会を許されたのだ。",
+		   NULL, "She was only able to join as a special case because of her connections.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…つまり彼女は、この会の人間たちほど偏った思想を持ってはいなかったのである。",
+		   NULL, "She didn't even hold prejudiced ideas like the other members did.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　にもかかわらず、なぜ鷹野はわざわざ好んで、このような会合に席を持ち出席しているのか。",
+		   NULL, "So, why was she here today?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その理由は恐らく、今、壇上で熱弁を奮っている知事選候補予定者の男と同じに違いない。",
+		   NULL, "Probably because of the same reason as the man giving a speech up on stage.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Ho2_Tokyo", 400 );
+
+	OutputLine(NULL, "　同じように、壇上の男も鷹野と同じく、本来はそれほど偏った思想を持つわけでもない。",
+		   NULL, "The man on the stage didn't actually have prejudiced ideas, much like Takano.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今日の会合に合わせ、彼らが好みそうなスピーチを用意してきただけのことである。",
+		   NULL, "He only prepared a speech that he knew the guests would like.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　政治家が一番欲しいのは票だ。",
+		   NULL, "Politicians only want votes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　票は個人が投じるものだが、１人１人に支持を訴えていたら時間がいくらあっても足りない。",
+		   NULL, "Each and every person has a vote, but appealing to each one of them takes too long.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……となると、統一した意見や意思を持つ集団に対して支持を訴えていく方がずっと効率がいい。",
+		   NULL, "So the most efficent way is to appeal to organizations with a unified idea and a unified will.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　つまり、壇上の男は、この会の趣旨に賛同する内容のスピーチをすることで、自分を同志だと認めさせ、彼らの有する強力な支援を受けたがっているということなのだ。",
+		   NULL, "In other words, this man was giving this speech so he can garner support from those powerful people.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　会場の老紳士たちは、自分と志を同じにする同志を最大限に応援するだろう。",
+		   NULL, "The elderly gentlemen in the banquet room will then do their best to support him, since he appears to share their ideals.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　様々な便宜や応援、そして援助。",
+		   NULL, "They can offer many different kinds of expediency, support, and assistance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それも計り知れない規模で。",
+		   NULL, "To an outrageous degree, I might add.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今日の議事がそのまま進めば、会は彼を応援することを正式に承認し、",
+		   NULL, "If the day's event continued in the same way, the organization would likely decide to officially support him.", Line_WaitForInput);
+	OutputLine(NULL, "政治資金団体を通じて多額の資金を援助することになろう。",
+		   NULL, " They will probably give him a great deal of financial aid.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もちろん、資金以外の形でも何かの協力をするに違いない。",
+		   NULL, "They'll assist him in different ways as well.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　もちろん、壇上の男だけが利するわけではない。",
+		   NULL, "Of course, the man on the stage won't be the only one gaining something.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　壇上の男は、この圧倒的な応援を受けて、恐らくきっと、来年の××知事選に勝利を収めるだろう。",
+		   NULL, "When he wins the election and becomes a governor next year,", Line_WaitForInput);
+
+	OutputLine(NULL, "　同窓会は会員に現職知事を迎え、ますますに政治的発言力を強めていく。",
+		   NULL, " the organization will welcome the governor as a new member and gain even more political influence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、無視することのできない強力な勢力へと成長を続けていくのだ…。",
+		   NULL, "And eventually, the organization will become so powerful that nobody can ignore it.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　今、ここをお読みになられている読者諸兄は恐らく、こんなものはもはや「同窓会組織」ではないとお感じだろう。",
+		   NULL, "Those of you reading this right now probably get the sense that they're no mere alumni association.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それは間違っていない。",
+		   NULL, "You'd be absolutely right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この段階にまで至れば、これは立派な「結社」だからだ。",
+		   NULL, "After reaching this level, they were a fine syndicate.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いや、その団体や活動をオープンにしていなかったなら、それは「秘密結社」とさえ呼ぶことができるのだ。",
+		   NULL, "No, they would be a secret society if the group wasn't so open about its activities.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　一部の諸兄は恐らく、こんな怪しげな団体が日本に存在するわけがないとタカを括られているに違いない。",
+		   NULL, "Now, I'm sure some of you readers are brushing this off, thinking there's no way such a suspicious organization could exist in Japan.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、この説明に関してだけは一切のフィクションはない。",
+		   NULL, "But everything I've explained is entirely true.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私たちの社会にも、こういった勢力や組織がいくつもあり、強力な政治力を発揮して、国家の施策に影響を与えていることを理解する必要がある。",
+		   NULL, "There are several such influential groups and organizations within our society, and you need to understand that they hold powerful political clout and influence our national policies.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それらは、前述してきたような学閥であったり、",
+		   NULL, "Some are alma mater cliques like the one I've described above,", Line_WaitForInput);
+	OutputLine(NULL, "あるいは各界各党の勉強会、",
+		   NULL, " others are scientific societies serving different parties,", Line_ContinueAfterTyping);
+	Wait( 700 );
+	OutputLine(NULL, "業界団体、",
+		   NULL, " industrial groups,", Line_ContinueAfterTyping);
+	Wait( 700 );
+	OutputLine(NULL, "諮問機関、",
+		   NULL, " advisory committees,", Line_ContinueAfterTyping);
+	Wait( 700 );
+	OutputLine(NULL, "宗教団体、",
+		   NULL, " religious organizations,", Line_ContinueAfterTyping);
+	Wait( 700 );
+	OutputLine(NULL, "奉仕団体、",
+		   NULL, " community service groups,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "様々だ。",
+		   NULL, " and so forth.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　また、そのスタンスも右派左派、タカ派ハト派と様々である。",
+		   NULL, "Also, there are right wings and left wings, the hawk and the dove.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それらの具体的な団体名は、ここでは挙げない。",
+		   NULL, "...I won't go listing their specific names here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかし、丹念に新聞を読んでいるならば、時には目にすることもあるはずだ…。",
+		   NULL, "Yet you've probably read them every now and then in your average newspaper.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日本では、こういった勢力を示す単語があまり一般的ではない。",
+		   NULL, "In Japan, the terms for such forces aren't very common.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　秘密結社などという単語を耳にすれば、恐らく諸兄の中には、白い三角頭巾を被った怪しげな組織を連想してしまい、失笑してしまう方もおられるだろう。",
+		   NULL, "Most of you readers probably think of suspicious organization wearing white hoods when you hear the phrase 'secret society', and laugh it off.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、それは残念ながら大きな間違いだ。",
+		   NULL, "But unfortunately, that's a huge mistake.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日本よりもはるかに巨大な国土と国民を有するアメリカでは、もちろんこういう団体もずっと多く、",
+		   NULL, "In America, where there's far more territory and citizens, there's way more groups like that,", Line_WaitForInput);
+	OutputLine(NULL, "また絶大な影響力を持つ無視できない勢力となっている。",
+		   NULL, " and they possess such vast influence that ignoring them is impossible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのため、こういった勢力を示す単語も、結社などという規模では示さない。",
+		   NULL, "So the terms they use for such forces doesn't apply to those on the scale of this syndicate.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　時にはホワイトハウスよりも力があると囁かれ、シャドーガバメント（影の政府）と呼称されることも少なくないのである…。",
+		   NULL, "Sometimes, people say that such groups have more power than the White House, and they are referred to as the \"shadow government\".", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　我らの日本にも、戦前は「財閥」という名のシャドーガバメントが存在していた。",
+		   NULL, "Even here in Japan, we had a shadow government before the war--our zaibatsu.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　敗戦により、ＧＨＱによって解体されたが、戦後すでに４０年が経過している。",
+		   NULL, "After we lost the war, the GHQ dismantled those blocs, but 40 years have passed since then.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　馴れ合いと根回し、寝技が得意な我が国に、再びシャドーガバメントが生まれていない保証などないのである…。",
+		   NULL, "There's no guarantee our country hasn't given birth to another shadow government, given how good we are at collusion, groundwork, and backroom deals.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな、シャドーガバメントの内のひとつの会合に、鷹野三四の姿はあった…。",
+		   NULL, "Miyo Takano was, in fact, attending a conference of such a shadow government.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "white", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 1, "Suzume", 120, 0 );
+
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 1300 );
+
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　その景色を漠然と見たなら、広大なゴルフコースとゲストハウスのように見えたかもしれない。",
+		   NULL, "It might appear to be a guest house at a huge golf course.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ホールを回るゴルファーの姿こそ見えないが、きっとそう思うに違いない。",
+		   NULL, "There were no golfers in sight, but by appearances, that must be it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、それは間違っている。",
+		   NULL, "But appearances can be deceiving.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　なぜなら、これはゴルフコースではなく、広大な芝生の庭だったからだ。",
+		   NULL, "This wasn't a golf course, but a huge back yard.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そしてゲストハウスに見えるものは、とてもお洒落な豪邸なのだ。",
+		   NULL, "The guest house was, in fact, a very stylish mansion.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……これが個人の敷地と家であることに気付いた時、一般的な市民は驚きを隠せないだろう。",
+		   NULL, "Normal people would be surprised to learn that this was a private residence.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	DrawSceneWithMask( "Yo2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　もちろん、内装も外観に劣ることはない。",
+		   NULL, "The interior of the building was as lavish as the exterior.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　贅沢な絨毯。",
+		   NULL, "There were beautiful carpets on every floor,", Line_WaitForInput);
+	OutputLine(NULL, "壁には様々な動物の剥製が飾られ、棚には値段を聞きたくもない高級酒がずらりと並ぶ。",
+		   NULL, " expensive-looking decorations on the wall, and expensive-looking bottles of alcohol on the shelves.", Line_WaitForInput);
+	OutputLine(NULL, "…そんな客間に鷹野はいた。",
+		   NULL, " That's the kind of room Takano could be seen in.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ノックがあり、車椅子に座った老人と、それを押す若い女が入って来た。",
+		   NULL, "There was a knock at the door, and an old man in a wheelchair and a young woman pushing it entered.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野が立ち上がって会釈をしようとすると、老人は、立たなくていいとそれを右手で制した。",
+		   NULL, "As Takano stood up to bow, the old man stopped her by raising his right hand.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Yo1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「いい、いい、立たんでも。",
+		   NULL, "\"No, no, you don't need to stand up.", Line_WaitForInput);
+	OutputLine(NULL, "久し振りだの〜〜。",
+		   NULL, " Long time no see!", Line_WaitForInput);
+	OutputLine(NULL, "いつでも遊びに来なさいと言っとるのに。」",
+		   NULL, " I've been telling you to come see me anytime, but you never do.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そのお言葉だけで光栄ですわ、小泉先生。」",
+		   NULL, "\"It's great to see you, Koizumi-sensei.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　小泉と呼ばれた老人は、杖と女の手を借りながら、ソファーに腰掛ける。",
+		   NULL, "The old man sat down on the sofa with assistance from the woman.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　深いしわが刻まれ、自分ひとりの力では満足に腰掛けることもできないほどに老衰している。",
+		   NULL, "He was very old... His face was covered in wrinkles and he could hardly do anything on his own.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だが、そこまで老いてなお、彼は絶大な影響力を持ち続けているのであった。",
+		   NULL, "...Even so, he still held a great deal of power and influence.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「相変わらずお盛んですわね。",
+		   NULL, "\"Oh my, you haven't changed a bit, have you?", Line_WaitForInput);
+	OutputLine(NULL, "首筋、口紅がついておりますわよ。",
+		   NULL, " I can see lipstick on your neck.", Line_WaitForInput);
+	OutputLine(NULL, "くすくす…。」",
+		   NULL, " Hee hee.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ほっ？",
+		   NULL, "\"Hoh?", Line_WaitForInput);
+	OutputLine(NULL, "　そりゃ本当かね、はっはっはっは。",
+		   NULL, " Is that right? Ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "やれやれ、こりゃお恥ずかしいの〜〜。」",
+		   NULL, " Good grief, how embarrassing~~.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　老人の首に口紅の跡など付いていない。",
+		   NULL, "There was no lipstick on his neck.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　車椅子を押してきた女が、ヘルパーというには美人過ぎ、仕草が妙に艶かしかったから、はったりを掛けてみたのだ。",
+		   NULL, "The woman who was helping him with his wheelchair was too beautiful to be a mere helper, so Takano had suspected something.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そしてどうやら、鷹野の想像通りらしかった。",
+		   NULL, "As it turned out, her guess was correct.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　明日にもお迎えが来てもおかしくないような老いぼれなのに、下半身だけは棺に入る直前まで現役のつもりらしい。",
+		   NULL, "Although he was so old that he could die the next day, he wanted to stay sexually active until the very end.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これでは死神も呆れて、もうしばらくは迎えに来そうもなかった。",
+		   NULL, "Even the grim reaper would think that's just absurd.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「三四ちゃんも、いつの間にかすっかり美人さんに成長したの〜。",
+		   NULL, "\"Miyo-chan, you've become quite beautiful yourself~", Line_WaitForInput);
+	OutputLine(NULL, "いつまでも小さいと思っとったらいつの間にの〜〜。」",
+		   NULL, " You're not a little girl anymore, eh~~.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ご冗談を。",
+		   NULL, "\"Oh, stop.", Line_WaitForInput);
+	OutputLine(NULL, "本当にそう思われていたら、私のおしりを撫でようなんてなさいませんわ。」",
+		   NULL, " If you really think that way, why did you try to touch my bottom, hmm?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はっはっはっはっは！",
+		   NULL, "\"Ha ha ha ha ha!", Line_WaitForInput);
+	OutputLine(NULL, "　老い先短い年寄りに触らせても、減るもんではないに〜。」",
+		   NULL, " What have you got to lose from having an old guy like me touch your butt?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「私よりももっと柔らかいおしりをさんざん撫でておいでのくせに。",
+		   NULL, "\"I'm sure you have plenty of chances to touch a softer butt, don't you?", Line_WaitForInput);
+	OutputLine(NULL, "くすくすくすくす。」",
+		   NULL, " Hee hee hee hee.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "Sora3", 400 );
+
+	OutputLine(NULL, "　鷹野と老人は、しばらくの間、品のない話で盛り上がった。",
+		   NULL, "Takano and the old man enjoyed a tasteless conversation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その様子から、二人の関係が短くなく、気の置けない仲であることがうかがえた…。",
+		   NULL, "They had clearly known each other a long time, and were very close.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　やがて、先ほどの女がお茶の用意に戻ってきた。",
+		   NULL, "The young woman came back in to serve tea.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを済ませて退室すると、その足音が遠のいたのを聞き届けて、老人は言った。",
+		   NULL, "After she left, the old man started to speak.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Yo3", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「………しかし。",
+		   NULL, "\"......Anyway,", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃんは本当に立派な子だの〜。",
+		   NULL, " I'm so proud of you, Miyo-chan.", Line_WaitForInput);
+	OutputLine(NULL, "…高野くんも、これほど立派に育ってくれて、きっとあの世で鼻高々だろうなぁ。」",
+		   NULL, " I'm sure your grandfather in Heaven is proud of you, too.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうであればいいのですが。",
+		   NULL, "\"I hope so.", Line_WaitForInput);
+	OutputLine(NULL, "…祖父の偉業には、私など足元にも及びません。」",
+		   NULL, " ...But I'm not even close to approaching the level of my grandfather's great work.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「高野くんも、色々と運がなかった。",
+		   NULL, "\"Takano-kun was unlucky in many different ways.", Line_WaitForInput);
+	OutputLine(NULL, "時代にも恵まれんかった…。",
+		   NULL, " The era he lived in...", Line_WaitForInput);
+	OutputLine(NULL, "もし、何もない時代に研究をしておったなら、あんたに引き継がせることもなく、見事、研究を完成させておっただろうの〜…。」",
+		   NULL, " If he lived in a different era, I'm sure he would have finished his research...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ですが、そういう時代だったからこそ、皮肉にも祖父は雛見沢症候群の存在に気付くことができました。」",
+		   NULL, "\"But he lived in that era, and ironically, that was why he noticed the existence of the Hinamizawa Syndrome.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………世界は、もう核の時代だ。",
+		   NULL, "\"......The world today is in the nuclear era.", Line_WaitForInput);
+	OutputLine(NULL, "アメリカとソ連が山ほどの核で睨み合い、列強が核を以って発言権を得る。",
+		   NULL, " With America and the Soviet Union glaring at each other over mounds of nuclear stockpiles, it takes nukes to have authority as a major power.", Line_WaitForInput);
+	OutputLine(NULL, "……しかし日本は、非核三原則で核を永遠に放棄しちまった。",
+		   NULL, " ......Yet we've forever abandoned our nukes thanks to our three antinuclear principles.", Line_WaitForInput);
+	OutputLine(NULL, "核なくして国もない時代なんだ。",
+		   NULL, " In this age, we are now a nation without nukes.", Line_WaitForInput);
+	OutputLine(NULL, "…悲しいこったの。」",
+		   NULL, " ...How deplorable.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　昭和中期。",
+		   NULL, "In the middle of the 20th century,", Line_WaitForInput);
+	OutputLine(NULL, "東西の緊張は高まりつつも、核を突きつけあった均衡は冷戦と言う名の仮の平和を与えていた。",
+		   NULL, " despite rising tensions between East and West, there was a temporary peace known as the Cold War brought by a balance of nukes pointed at one another.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　国連常任理事国は核武装する大国で占められた。",
+		   NULL, "Permanent memberships in the United Nations were monopolized by nations with nuclear arms.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼らは核による優位を不動にするため、核不拡散の条約で世界を縛り、日本を含む非核国の台頭を永遠に封じた…。",
+		   NULL, "They secured their predominance with nukes, bound the world with nuclear nonproliferation treaties, eternally banning non-nuclear nations from the world stage.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　日本が再び、世界と対等に渡り合える国家になるためには、核武装、もしくはそれに匹敵するカードが必要になる…。",
+		   NULL, "For Japan to become a nation that can compete with the world, it must develop nuclear arms, or something as powerful.", Line_WaitForInput);
+	OutputLine(NULL, "そう考える人々もいた。",
+		   NULL, " That's what some people believed, at least.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「現実的に考えて、我が国の核武装は永久にありえないでしょうね。」",
+		   NULL, "\"Realistically, Japan will never arm itself with nuclear weapons.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だろうの〜。",
+		   NULL, "\"I know.", Line_WaitForInput);
+	OutputLine(NULL, "国民の理解を容易には得られんな。",
+		   NULL, " The citizens wouldn't accept it.", Line_WaitForInput);
+	OutputLine(NULL, "それを無視して核武装したとしても、外交カードにはなりえん。」",
+		   NULL, " Even if the government ignored their opinions and armed itself with nuclear weapons, it wouldn't work.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日本は核武装を放棄する代わりに、アメリカの核の傘に入ることで抑止力を得ている。",
+		   NULL, "By abandoning nuclear weaponry, Japan gained the deterrent power of the United States.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そのアメリカと対等な関係になりたいと願う人々にとって、その鍵は核武装をおいて他にないと考える者も少なくなかった。",
+		   NULL, "Though some people thought the only way for Japan to become equal to the United States would be to get nuclear arms of their own.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、現実問題として日本が核武装することはあり得ない。",
+		   NULL, "But realistically, that was impossible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに、核武装すれば直ちに日本が列強に加われるかと言ったら、それもまた微妙な問題だった。",
+		   NULL, "Even if Japan armed itself with nuclear weapons, that wouldn't automatically let Japan join the great powers.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鷹野と老人は、しばしの間、核を巡る世界の均衡について、思い思いの持論を述べ合うのだった。",
+		   NULL, "Takano and the old man discussed the balance of nuclear power in the world.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　鳩時計の音で、話が大きく脱線していたことに気付き、二人は笑いながら本題に戻ることにした。",
+		   NULL, "Eventually, the sound of the cuckoo clock reminded them to return to the main subject at hand.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　老人は、鷹野がこの部屋に通される前から置いてあった、机上のアタッシュケースを指差す。",
+		   NULL, "The old man pointed to the attache case that had been sitting next to Takano.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野は、小さく頷くと、それを開けて中身を晒した。",
+		   NULL, "Takano nodded once, opened it up, and removed the contents.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskup", 7, 0, 300 );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　……中身はぎっしり詰められた新札の壱万円札だった。",
+		   NULL, "There were brand new bills packed in it.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "　この大きなアタッシュケースをいっぱいに満たすには、一体、どれだけの金額が必要になるのだろう。",
+		   NULL, "How much was actually in there?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　新札の百万円の束がちょうど厚さが１ｃｍになるというのだから…、",
+		   NULL, "A bundle of brand new million-yen bills is one centimeter", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……下手をすれば、金額は８桁を超えかねなかった。",
+		   NULL, " so there must have been at least enough to make up eight digits.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかも、鷹野が今、開けているアタッシュケースと同じものが、見ればあと２つ、脇に置かれているのだ。",
+		   NULL, "There were also two more attache cases by her side.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　だが、鷹野も老人も、その凄まじい中身に特別驚いたりはしない。",
+		   NULL, "However, neither Takano nor the old man were surprised at all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野はアタッシュケースを閉じると、頭を下げた。",
+		   NULL, "Takano closed the attache case and bowed.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Yo2", "maskdown", 7, 0, 300 );
+
+	OutputLine(NULL, "「ありがとうございます、先生。",
+		   NULL, "\"Thank you very much, Koizumi-sensei.", Line_WaitForInput);
+	OutputLine(NULL, "このご恩は忘れません。」",
+		   NULL, " I'll never forget about this.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「はっはっはっは。",
+		   NULL, "\"Ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "金は人生の長い若者が持つべきだの。",
+		   NULL, " Money should be handled by younger people.", Line_WaitForInput);
+	OutputLine(NULL, "年寄りがあの世まで持っていくもんじゃない。",
+		   NULL, " I can't take it to Heaven with me.", Line_WaitForInput);
+	OutputLine(NULL, "金はあるだけ物を言うが、現金はさらに物を言う。",
+		   NULL, " I just hope this will be of assistance to you.", Line_WaitForInput);
+	OutputLine(NULL, "大事に使いなさい。」",
+		   NULL, " Use it wisely.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「もちろんですわ。",
+		   NULL, "\"Of course I will.", Line_WaitForInput);
+	OutputLine(NULL, "祖父の夢を実現するためだけに使います。」",
+		   NULL, " I'll use this money only to make my grandfather's dream come true.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「高野くんが羨ましいの。",
+		   NULL, "\"I envy Takano-kun.", Line_WaitForInput);
+	OutputLine(NULL, "よいお孫さんを持たれた。",
+		   NULL, " What a wonderful grandchild he has.", Line_WaitForInput);
+	OutputLine(NULL, "きっとあの世で、あんたを自慢しているだろうの〜。」",
+		   NULL, " I'm sure he's bragging about you up there.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「まだ自慢されるようなことは何もしていません。",
+		   NULL, "\"I haven't done anything yet.", Line_WaitForInput);
+	OutputLine(NULL, "祖父の研究を完成させたとき初めて、私は祖父に褒めてもらえる資格が得られるのだと思います。」",
+		   NULL, " I'll have earned this praise when I complete my grandfather's work.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………本当に羨ましい。",
+		   NULL, "\"......I'm so jealous.", Line_WaitForInput);
+	OutputLine(NULL, "ウチのせがれたちは全然ダメだ。",
+		   NULL, " My boys are no good.", Line_WaitForInput);
+	OutputLine(NULL, "金儲けのことしか頭にない。",
+		   NULL, " They're only interested in making money.", Line_WaitForInput);
+	OutputLine(NULL, "…金は儲けてからが大切なんだ。",
+		   NULL, " ...What really matters is how the money is spent.", Line_WaitForInput);
+	OutputLine(NULL, "その儲けた金で、御国のために何を貢献できるかが大切なんだ。",
+		   NULL, " How you contribute to the country is what's most important.", Line_WaitForInput);
+	OutputLine(NULL, "それこそが、今日まで自分を育んでくれた御国へのご恩返しっちゅうもんなんだがの…。」",
+		   NULL, " That's how you repay your debt to it, you know...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あら、たくさんの愛人たちに気前良くおごるのも御国へのご恩返しなんですの？」",
+		   NULL, "\"Oh, so are you saying that treating all those lovers so lavishly is also a way of repaying your country?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「もちろんだとも。",
+		   NULL, "\"Of course.", Line_WaitForInput);
+	OutputLine(NULL, "あいつらが買い物をすれば、金は巡って御国に戻る。",
+		   NULL, " When they shop, the country makes money.", Line_WaitForInput);
+	OutputLine(NULL, "金は天下の回り物だ。」",
+		   NULL, " Money goes around, you see?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、その気前良くおごられた愛人たちは、おそらく海外ブランドを買い漁るだろう。",
+		   NULL, "However, those lovers would probably end up buying some foreign goods.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…老人の思惑通りになるかどうかは怪しい。",
+		   NULL, "...Things probably don't work quite the way this old man thinks they do.", Line_WaitForInput);
+	OutputLine(NULL, "鷹野は、それも含めてくすくすと笑った。",
+		   NULL, " Takano chuckled to herself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だが、女どもにバラ蒔く金と、三四ちゃんに託す金は意味がまったく違う。」",
+		   NULL, "\"But the money I give to those women and the money I give you are completely different.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「えぇ。存じております。」",
+		   NULL, "\"I know that very well.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「三四ちゃんは今日までよくがんばってきた。",
+		   NULL, "\"You've worked very hard.", Line_WaitForInput);
+	OutputLine(NULL, "礼を尽くし、大勢の人たちの信用と支持を取り付けた。",
+		   NULL, " You've retained trust and support from so many people.", Line_WaitForInput);
+	OutputLine(NULL, "今だから話すが、晴山くんも望月くんも、最初は君のことを若過ぎると批判的だったんだがね。",
+		   NULL, " This is the first time I've mentioned it, but Haruyama-kun and Mochizuki-kun both weren't sure about you because of your age, at first.", Line_WaitForInput);
+	OutputLine(NULL, "はっはっはっは。",
+		   NULL, " Ha ha ha ha.", Line_WaitForInput);
+	OutputLine(NULL, "だから私も、三四ちゃんのその努力を認めて、その金を託すんだ。」",
+		   NULL, " That's why I'm acknowledging your efforts, and that's why I'm giving you this money.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「はい。」",
+		   NULL, "\"I understand.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…そしてな。",
+		   NULL, "\"...Also,", Line_WaitForInput);
+	OutputLine(NULL, "その金を私が託す、つーことはの。",
+		   NULL, " for me to give you this money", Line_WaitForInput);
+	OutputLine(NULL, "私が三四ちゃんを、高野くんの研究の正式な後継者だと認めたということなんだ。」",
+		   NULL, " means that I recognize you as the official successor of Takano-kun's research.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ありがとうございます。",
+		   NULL, "\"Thank you very much.", Line_WaitForInput);
+	OutputLine(NULL, "私ごとき若輩に委ねてくださったことに、深く感謝いたします。」",
+		   NULL, " Thank you for believing in me. I truly appreciate it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いやいや！",
+		   NULL, "\"No, don't mention it!", Line_WaitForInput);
+	OutputLine(NULL, "　これは高野くんと君の研究だ。",
+		   NULL, " This research is Takano-kun's, and yours too.", Line_WaitForInput);
+	OutputLine(NULL, "彼も三四ちゃん以外が引き継ぐことを望まなかっただろうの〜。",
+		   NULL, " He wouldn't want anyone else to take over.", Line_WaitForInput);
+	OutputLine(NULL, "だから、三四ちゃんがここまで上り詰めたお陰で、他の年寄りたちをより説得しやすかったわけだ。」",
+		   NULL, " So, thanks to all of your effort, I didn't have to spend too much time convincing the other old folks.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……祖父の完成できなかった研究を、私が完成させることだけが、私ができる祖父への唯一の恩返しですから。",
+		   NULL, "\"...Completing my grandfather's research is the least I can do for him.", Line_WaitForInput);
+	OutputLine(NULL, "そのために求められる努力ならば厭いません。」",
+		   NULL, " I won't begrudge any efforts toward that aim.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
+
+	OutputLine(NULL, "　鷹野は、積み重ねてきた苦労を思い出すように、ほんの少し自虐的に笑った。",
+		   NULL, "Takano smiled as she remembered everything she had to go through to get to this point.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　言うまでもなく、鷹野は目の前の老人から見れば孫世代、いや、それ以下かもしれない。",
+		   NULL, "It went without saying, but the old men around Takano saw her as someone from their grandchildren's generation, or maybe even younger.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それだけ年齢の離れた世代の人間たちから信用を得るために、鷹野がどれだけの苦労をしてきたか。",
+		   NULL, "Just how much trouble did Takano have to endure in order to gain the trust of those with such a large generation gap?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　その苦労を想像することのできない者に説明するのは難しかろう…。",
+		   NULL, "It was hard to describe to those who couldn't even imagine her trouble.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そして、鷹野は勝ったのだ。",
+		   NULL, "But Takano earned it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　味方を増やし、",
+		   NULL, "She gathered allies,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "敵を退け、",
+		   NULL, " drove away enemies,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "支持を増やし、",
+		   NULL, " garnered support,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "自分の存在を認めさせた。",
+		   NULL, " and forced them to recognize her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　長い時間を掛けて己が信用を築き上げ、長老たちと歓談できる格にまで成り上がったのだ。",
+		   NULL, "She spent a long time establishing trust and rising to a status that the old men would welcome.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だからこそ、今日の場こそが、鷹野の短くない苦労の日々の集大成なのである。",
+		   NULL, "Which was all the more reason this meeting was a reward for her many days of hardship.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　彼女は今や、強力な勢力の後ろ盾を正式に得、祖父の果たせなかった研究を完成させるために羽ばたこうとしていたのだ……。",
+		   NULL, "Now that she officially had a powerful influence backing her, she could spread her wings and see the completion of her grandfather's unfinished research...", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	DrawScene( "Yo1", 400 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "「さて。",
+		   NULL, "\"Well......", Line_WaitForInput);
+	OutputLine(NULL, "………高野くんの研究を正式に引き継ぐことになったなら。",
+		   NULL, " now that you're officially continuing Takano-kun's research...", Line_WaitForInput);
+	OutputLine(NULL, "…三四ちゃんにも話しておかなきゃならんことがある。」",
+		   NULL, " there's something I need to tell you, Miyo-chan.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「何でしょう。",
+		   NULL, "\"What is it?", Line_WaitForInput);
+	OutputLine(NULL, "うかがいます。」",
+		   NULL, " I'm listening.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そこで老人は一度言葉を切り、卓上の煙草入れから高級煙草を一本、抜き取った。",
+		   NULL, "The old man paused and pulled an expensive cigarette from the cigarette holder on the table.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　鷹野は、慣れた仕草で老人の煙草にライターの火を貸す。",
+		   NULL, "Takano lit it up for him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鷹野には喫煙の嗜好はない。",
+		   NULL, "She didn't smoke herself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……老人が煙草を嗜むことを知っていて、ライターを懐に忍ばせているのだ。",
+		   NULL, "But knowing that the old man did, she kept a lighter in her pocket.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　こんなささやかなこともいくつも積み重なって、今日の彼女の信用を築き上げている…。",
+		   NULL, "The constant build up of little gestures like that were how she gained the trust she held today...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+
+	OutputLine(NULL, "「……高野くんが雛見沢症候群の存在に気付いたのは、日本ではなく、満州だった。」",
+		   NULL, "\"...Takano-kun noticed the Hinamizawa syndrome in Manchuria, not Japan.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "祖父の手記によるならば、昭和１５年頃から、当時、主に関東軍に多く送られていた雛見沢出身兵士による末期症状事件の存在を知り、",
+		   NULL, " According to my grandfather's journal, around Shouwa 15, he learned that many soldiers sent from Hinamizawa to the Kwantung Army expressed terminal symptoms,", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢に存在する未知の寄生虫症の存在を予想した、とあります。」",
+		   NULL, " which led him to surmise that an unknown, infectious parasite dwelled in Hinamizawa.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　戦争と言う過酷な状況下にあっては、時に人は精神を壊す。",
+		   NULL, "Under the harsh conditions of war, people sometimes lost their minds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな中、雛見沢から遠く離れた戦地に送られ、緊張した毎日を強いられていた雛見沢出身者たちは、時に末期症状を発症し、錯乱して歪な事件を引き起こした。",
+		   NULL, "In those conditions, those who were sent to a far off battlefield from Hinamizawa spent their days under duress, and occasionally they exhibited terminal symptoms, hallucinated, and caused twisted incidents.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ただ、広大で混乱を極めた戦地でのこと。",
+		   NULL, "Yet that all occurred in the extensive chaos of the battlefield.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　個々の事件は個別に扱われ、その裏に潜む何かに気付く者はいなかった…。",
+		   NULL, "Every incident was handled seperately, and no one suspected there was an underlying cause...", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "File", "maskc", 1, 0, 1300 );
+
+	OutputLine(NULL, "「当時、高野くんは軍医少佐として関東軍に行っており、現地の防疫研究所で各種伝染病の予防対策について研究していた。",
+		   NULL, "\"At the time, Takano-kun was working as a military physician in the Kwantung Army. He was researching the prevention of different infectious diseases.", Line_WaitForInput);
+	OutputLine(NULL, "そんな中で偶然、いくつかの錯乱事件が全て同じ出身地の兵士によって起されていることを知った。",
+		   NULL, " And one day, he noticed that several incidents of deranged behavior were occurring among soldiers from the same hometown.", Line_WaitForInput);
+	OutputLine(NULL, "高野くんは、雛見沢出身者に特有の症状ではないかと仮定し、個人的にこの研究を始めたのだ。",
+		   NULL, " He hypothesized that these symptoms were unique to those from Hinamizawa and began his own personal research.", Line_WaitForInput);
+	OutputLine(NULL, "……そして、雛見沢出身の兵士を研究所勤務にして集め、色々と調査した。",
+		   NULL, " He hired soldiers from Hinamizawa as workers in his research center and studied them there.", Line_WaitForInput);
+	OutputLine(NULL, "そして雛見沢独特のオヤシロさま信仰の存在を知り、特異な性質を持つ寄生虫症の存在を確信したのだ。」",
+		   NULL, " ...Then he learned of the unique Hinamizawa faith in Oyashiro-sama, and he was convinced that he found an infectious parasite with unique properties.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それだけのことで寄生虫症と断言することは、今日の諸兄には短絡に過ぎるように思われる方もおられるだろう。",
+		   NULL, "Some may wonder how he could be so certain that these symptoms were caused by unusual parasites.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、２０世紀初頭。",
+		   NULL, "At the beginning of the twentieth century,", Line_WaitForInput);
+	OutputLine(NULL, "当時の最先端医学であるドイツ医学によって、未知の病気の数々が細菌や寄生虫の仕業であると解明されている時期でもあった。",
+		   NULL, " German doctors proved that some unknown diseases were caused by bacteria and parasites.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　未知の病気の裏にはきっと、未知の病原体がいるに違いないというのは、決して短絡的思考ではなかったのである。",
+		   NULL, "At the time, it wasn't too far of a jump to assume that unknown pathogens could be behind unknown diseases.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　例えば、今日ではビタミンＢ１の欠乏が原因であると解明されている脚気も、",
+		   NULL, "For instance, in modern times it's been revealed that beriberi is caused by Vitamin B-1 deficiency,", Line_WaitForInput);
+	OutputLine(NULL, "２０世紀初頭においては声高に未知の病原体の仕業であると叫ばれていた事実がある…。",
+		   NULL, " but at the start of the 20th century many loudly proclaimed that it was the work of an unidentified pathogen.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、予算を求めましたが一笑に伏されたとか。」",
+		   NULL, " My grandfather predicted that his research would be valuable to the army, so he asked for a budget, but they just laughed at him.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　祖父は研究者としてはとても熱心で優秀だったが、それをアピールし理解を得る政治力については生涯、皆無だった。",
+		   NULL, "As a researcher, her grandfather was very talented and passionate, but when it came to gaining the aid of political powers, he simply struck out.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　雛見沢症候群。",
+		   NULL, "Hinamizawa Syndrome.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…いや、人の脳に寄生し感情をコントロールできる可能性の存在。",
+		   NULL, "...No, the possible existence of a parasite that infected the human brain and controlled emotions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…誰も解き明かしたことのない謎に初めて気付いた快挙を成し遂げながらも、",
+		   NULL, "...Even though he made the remarkable achievement of discovering a mystery no one had explained before him,", Line_WaitForInput);
+	OutputLine(NULL, "祖父はその快挙を他人にアピールすることについに成功できず、支援者を得られないまま、快挙に対する正当な評価を得られないまま、孤独の内に人生を終えた…。",
+		   NULL, " he was unable to convince others of that achievement, and spent his life alone, unable to garner support and unable to achieve proper recognition for his achievement.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　研究は、個人の力では限界がある。",
+		   NULL, "Independent research has its limit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人材、資金、バックアップ。",
+		   NULL, "Talented people, funding, and backup.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それらがそろって初めて成し遂げられるのだ。",
+		   NULL, "A research project can be successful only if all those things are present.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は祖父の失敗がそこにあったと思い、そこを蔑ろにすることがないよう、今日まで積み重ねを続けていたのだ…。",
+		   NULL, "Takano had noticed her grandfather's mistakes, and that was why she did everything she could to obtain all of that.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Yo3", 400 );
+
+	OutputLine(NULL, "「………当時の軍部は、低予算で且つ即効性のある兵器を期待していた。",
+		   NULL, "\"......The military at the time was hoping for a low-cost, immediate acting weapon.", Line_WaitForInput);
+	OutputLine(NULL, "高野くんの研究は、非常に興味深いものではあっても、当時の軍には期待されなかったということだの…。」",
+		   NULL, " While Takano-kun's research was extremely intriguing, it didn't meet the military's expectations.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ですが、先生は唯一、祖父の研究に理解を示してくれたと聞いています。",
+		   NULL, "\"But I heard you were the only one who understood my grandfather's research, weren't you?", Line_WaitForInput);
+	OutputLine(NULL, "祖父は先生のことを無二の親友と記していました。」",
+		   NULL, " In his journal, he calls you his best friend.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「高野くんとは同郷だった。",
+		   NULL, "\"We came from the same hometown.", Line_WaitForInput);
+	OutputLine(NULL, "同じ蕎麦屋を知る人間と、遠方の戦地で会えるというのは奇跡的なことだったの〜。",
+		   NULL, " It was a miracle to run into someone from the same town on such a distant battlefield.", Line_WaitForInput);
+	OutputLine(NULL, "彼とは年は離れていたが、私たちは固い友情で結ばれていたのだ。",
+		   NULL, " Although we weren't close in age, we became very good friends.", Line_WaitForInput);
+	OutputLine(NULL, "だから、高野くんからはよく話をされたの。",
+		   NULL, " So we talked a lot.", Line_WaitForInput);
+	OutputLine(NULL, "画期的な研究になるに違いない、本格的な研究のために予算を付けられるよう根回ししてほしいと何度も相談を受けた。」",
+		   NULL, " Many times he told me his research would be revolutionary, and asked me to lay the groundwork to secure funding for full-scale research.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「祖父の手記にも、先生が色々と各方面に掛け合ってくださったことが記されています。",
+		   NULL, "\"I read in his journal that you talked to many different people about his research.", Line_WaitForInput);
+	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
+		   NULL, " Unfortunately, its value was never recognized, but I'm sure your support meant a lot to him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「だが、結局は何の力にもなれんかった。",
+		   NULL, "\"But I was never able to really do anything for him.", Line_WaitForInput);
+	OutputLine(NULL, "……だから、高野くんにしてやれなかった協力を、三四ちゃんにするんだ。",
+		   NULL, " That's why I want to help you, Miyo-chan.", Line_WaitForInput);
+	OutputLine(NULL, "三四ちゃんに協力するのは、高野くんに対する私の罪滅ぼしでもある…。」",
+		   NULL, " Helping you is like atoning for my mistakes...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…ありがとうございます。",
+		   NULL, "\"Thank you very much.", Line_WaitForInput);
+	OutputLine(NULL, "祖父は、良い親友に恵まれたと思っています。",
+		   NULL, " He was lucky to have you as his best friend.", Line_WaitForInput);
+	OutputLine(NULL, "……軍上層部に、先生のように理解を示してくれる方が少しでもいてくれたなら。",
+		   NULL, " ...If only there were more understanding people like you in the military's upper echelon.", Line_WaitForInput);
+	OutputLine(NULL, "祖父の人生はもっと違ったものになっていたかもしれないと思うと、とても悔しく思います…。」",
+		   NULL, " It's very regretable to think that my grandfather's life might have been different...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこで老人は、目を閉じて少し考え込むような仕草をする。",
+		   NULL, "The old man closed his eyes and paused for a moment.", Line_WaitForInput);
+	OutputLine(NULL, "……そして、ほんの少し遠くを見るような目をしながら言った。",
+		   NULL, " ...Shortly after that, he looked into the distance and spoke.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「………………実はな。",
+		   NULL, "\"............Actually.", Line_WaitForInput);
+	OutputLine(NULL, "真実はそうではない。",
+		   NULL, " That isn't true at all,", Line_WaitForInput);
+	OutputLine(NULL, "上層部は高野くんの発見に少なからず関心を持っていたのだ。」",
+		   NULL, " The higher-ups were interested in Takano-kun's discovery.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……え？",
+		   NULL, "\"...What?", Line_WaitForInput);
+	OutputLine(NULL, "　それは初耳です。",
+		   NULL, " I've never heard that before.", Line_WaitForInput);
+	OutputLine(NULL, "でもそれならなぜ祖父の研究を認めなかったのですか…？」",
+		   NULL, " Then why didn't they support his research?\"", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "suzu", 120, 0 );
+
+	OutputLine(NULL, "「ある事情により、高野くんに雛見沢症候群を研究させたくない都合ができたのだ。",
+		   NULL, "\"Something came up, and they couldn't let him look into Hinamizawa Syndrome.", Line_WaitForInput);
+	OutputLine(NULL, "その理由は、私と一部の高級将校しか知らん。",
+		   NULL, " Only a few of the top brass and myself knew the reason.", Line_WaitForInput);
+	OutputLine(NULL, "私を除き、全員が他界した今、",
+		   NULL, " Now that all but myself have passed,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…高野くんの後を継ぐ三四ちゃんには話しておこうと思う。」",
+		   NULL, " ...I think I should tell you, Miyo-chan, since you're carrying on his work.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………研究させたくない都合とは、…何ですか。」",
+		   NULL, "\"......What came up? ...What was it?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は今日まで長いこと、祖父の研究は、みんなが馬鹿にして無視しているから日の目を見ないのだと信じてきた。",
+		   NULL, "Takano had believed until this day that her grandfather's research was ridiculed by everyone, which was the reason why it had never gained any recognition.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　戦時中に雛見沢症候群の秘密を暴こうと思った祖父は、自分の所属する組織である軍に研究予算を求めた。",
+		   NULL, "Her grandfather had asked the military for funding so he could uncover the secret of Hinamizawa Syndrome during the war.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、さっき老人が言ったとおり、軍は即効性のある兵器を期待したため、祖父の研究に関心を示さなかったと、",
+		   NULL, "But just like the old man had said earlier, the military wanted an instant-acting weapon. That was why they weren't interested in his research.", Line_WaitForInput);
+	OutputLine(NULL, "…そうだと信じてきた。",
+		   NULL, " That's what she had believed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それが実は、軍は関心を示していたなんて、本当に初耳だった。",
+		   NULL, "But as it turned out, the military had actually shown an interest after all.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	OutputLine(NULL, "「それを話すには、当時の満州における関東軍のことを話しておかなければならん。",
+		   NULL, "\"Before I go on, I need to explain about the Kwantung Army in Manchuria at the time.", Line_WaitForInput);
+	OutputLine(NULL, "当時、関東軍は満州にあったが、北進するか南進するかで意見が分かれ、対立しておった。」",
+		   NULL, " While the Kwantung Army was stationed in Manchuria, opinions were divided on whether to advance our forces north or south.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	OutputLine(NULL, "　当時、日本は満州に軍隊を構え、北に進みソ連を牽制するか、南に進み領土を拡張して資源地帯を確保するかで意見を二つに分けていた。",
+		   NULL, "At the time, Japan had troops in Manchuria, but opinions were divided on advancing north to deter the Soviet Union, or advancing south to expand our territory and secure resources.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ソ連とその前身であるロシアは厳寒の国土の都合上、冬場に凍結しない不凍港を常に求めており、",
+		   NULL, "With the Soviet Union and its predecessor, Russia, being a landlocked, frozen nation, they had long yearned for an ice-free port that wouldn't freeze over in winter.", Line_WaitForInput);
+	OutputLine(NULL, "領土を南に拡張しようとする南下政策を採り続けていた。",
+		   NULL, " They had made numerous attempts to expand their territory southward too.", Line_WaitForInput);
+	OutputLine(NULL, "その南下政策との激突が日露戦争だったと言われている。",
+		   NULL, " Those expansionist policies were said to be a cause of the Russo-Japanese war.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日露戦争は、歴史的評価では日本の勝利ということになっているが、実際はポーツマス条約で講和した痛み分けの戦争であり、",
+		   NULL, "In the history books, it's said that Japan won the Russo-Japanese War, but it was actually a draw ending in peace signed at the Treaty of Portsmouth.", Line_WaitForInput);
+	OutputLine(NULL, "疲弊した双方が矛を収めあっただけに過ぎない。",
+		   NULL, " Both sides had simply set aside their spears after mutually exhausting their forces.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ロシアが降参し、全面的に降伏したわけでは決してないのである。",
+		   NULL, "It wasn't like Russia capitulated and offered a complete surrender.", Line_WaitForInput);
+	OutputLine(NULL, "その為、ロシア脅威論は燻り続けることになる。",
+		   NULL, " As a result, the perception of the Russian threat continued to smoulder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その後、帝政ロシアは革命で倒れるが、日本としては新生ソ連の南下に対する脅威が払拭できていない状況にあった。",
+		   NULL, "Later the Russian Empire was overthrown by a revolution, but Japan was unable to shake the threat that the new Soviet Union would advance south.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「歴史的には南進しますね。",
+		   NULL, "\"According to the history books, Japan went south.", Line_WaitForInput);
+	OutputLine(NULL, "日ソ不可侵条約を結んで北進を放棄。",
+		   NULL, " They signed the Soviet-Japanese Neutrality Pact and abandoned the northern advance.", Line_WaitForInput);
+	OutputLine(NULL, "その結果、独ソ戦開始後、押されていたソ連軍は極東の戦力を対独戦線に集中。",
+		   NULL, " As a result, when the Great Patriotic War began, the Soviet Union was able to respond to pressure on their German front by pouring in their eastern forces.", Line_WaitForInput);
+	OutputLine(NULL, "一時はモスクワ直前にまで迫っていたドイツ軍に対し猛反攻を開始し、戦局を逆転させます。」",
+		   NULL, " Though the Germans had managed to lay siege to Moscow, the Soviets launched a massive counter-offensive that reversed the tides of war.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　日ソ不可侵条約は結んでいても、いつ日本が攻め込んでくるかわからない。",
+		   NULL, "Even with the Soviet-Japanese Neutrality Pact, the Soviets couldn't tell if Japan would attack them at some point.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そう思うからこそ、ソ連は極東に戦力を割かざるを得ず、対独戦線に充分な戦力を集中できずにいた。",
+		   NULL, "Because of that threat, the Soviets had to leave some forces in the far east, and they weren't able to devote enough troops to the German front.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そもそも、ドイツとソ連も独ソ不可侵条約を結んでいた。",
+		   NULL, "For starters, the Soviets had forged the Germany-Soviet Non-Aggression Pact too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ドイツはそれを破棄してソ連へ攻め込んでいる。",
+		   NULL, "Yet Germany broke the treaty and attacked the Soviet Union.", Line_WaitForInput);
+	OutputLine(NULL, "しかも日本とドイツは軍事同盟を締結している。",
+		   NULL, " To make matters worse, Japan and Germany had forged a military alliance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを思えば、ソ連がたとえ日本と不可侵条約を結んでいても安心できなかったのは当然に違いない。",
+		   NULL, "With all those factors in play, the Soviets naturally couldn't trust Japan to uphold their neutrality pact.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　（皮肉にも、そのソ連側から日ソ不可侵条約は破られるのだが、その歴史的評価はここでは割愛する）",
+		   NULL, "(Ironically, the Soviet Union was the one who broke the pact, but I won't go into that now.)", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Yo1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「その通り。ヒトラーが三国同盟を結んだのも、日本がソ連の反対側を牽制することを期待したものだ。",
+		   NULL, "\"Exactly. Hitler signed the Tripartite Pact because he expected Japan to keep the Soviet's other front in check.", Line_WaitForInput);
+	OutputLine(NULL, "だが日本は結局、北進を放棄する。",
+		   NULL, " But ultimately Japan abandoned the north.", Line_WaitForInput);
+	OutputLine(NULL, "ドイツの攻勢が優勢だったため、経緯を見守ろうという意見が支配的だった。",
+		   NULL, " With the superior German offensive, many supported the idea of waiting and watching it play out.", Line_WaitForInput);
+	OutputLine(NULL, "仮に北進するとしても、ドイツがモスクワを陥落させるのが最前提だと考えられとった。",
+		   NULL, " They believed that even if we did advance north, it would be after Germany conquered Moscow.", Line_WaitForInput);
+	OutputLine(NULL, "…それをゾルゲにすっぱ抜かれ、ソ連は極東国境の重戦車を全て独ソ戦線に送ったのだ。",
+		   NULL, " ...However, that plan was exposed to Sorge, and the Soviets transfered their heavy tanks from their far east border to the German front.", Line_WaitForInput);
+	OutputLine(NULL, "そしてモスクワ戦は敗北が確定し、クルスクの戦い以降、ドイツは大敗走を迎えることになる。」",
+		   NULL, " That secured Germany's defeat at Moscow, and the Germans began seeing a string of defeats starting with the Battle of Kursk.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…歴史のターニングポイントですわね。」",
+		   NULL, "\"It was a turning point in history, huh?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　冷戦時代になればこそソ連は世界を二分する強国という認識だが、少なくとも昭和１５年の直前までは関東軍にそういう認識はなかった。",
+		   NULL, "During the Cold War, the Soviet Union was recognized as a global power, but at least in Shouwa 15, the Kwantung Army didn't think it was a particular threat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　日露戦争で一度勝利を収めていたし、帝政ロシアが革命で倒れて誕生した新生ソ連政府がまだまだ磐石ではないとタカを括っていたのだ。",
+		   NULL, "Japan had earned a victory with the Russo-Japanese war, and they took the new Soviet Union government lightly, assuming it wouldn't be stable after overthrowing the Russian Empire.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　結局、その過小評価は昭和１６年のノモンハン事件で改められることになる。",
+		   NULL, "That underestimation was corrected after the Nomonhan Incident in Shouwa 16.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　高度に機械化されたソ連軍と短期間とはいえ激戦を繰り広げ、大きな損害を受けた関東軍は、ソ連とは戦うべきではないと知り、日本は日ソ不可侵条約へと傾いていく…。",
+		   NULL, "After several fierce, short-term battles with the Soviet Union's advanced, mechanized corps that led to great losses, the Kwantung Army realized they shouldn't fight the Soviets, and that inclined Japan toward the Soviet-Japanese Neutrality Pact...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だが、少なくともノモンハン事件の直前までは、関東軍はソ連を強く意識しており、北進と南進で意見は真っ二つに分かれていた。",
+		   NULL, "\"But at the very least, up until the Nomonhan Incident, the Kwantung Army was strongly concious of the Soviets and divided on advancing north or south.", Line_WaitForInput);
+	OutputLine(NULL, "そのため、対ソ戦への軍備増強の見地から中国との全面衝突は避けるべきであるという慎重意見もあったのだ。」",
+		   NULL, " Thanks to that, there were also voices advising caution, suggesting we avoid all-out war with China in order to shore up our forces against the Soviets.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも確か、盧溝橋事件を境に、日中戦争へと展開していきますね。」",
+		   NULL, "\"But the Sino-Japanese War broke out after the Marco Polo Bridge Incident, right?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　昭和１２年７月。",
+		   NULL, "July, Shouwa 12.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　北京の盧溝橋にて日本軍と中国軍が睨み合っていた。",
+		   NULL, "The Japanese and Chinese armies were staring at each other across the Lugou Bridge in Beijing.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Moon", 400 );
+
+	OutputLine(NULL, "　７月７日の深夜。",
+		   NULL, "It was the middle of the night on July 7th.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　訓練中の日本軍に対し銃撃があり、両軍は戦闘状態に突入。",
+		   NULL, "The Chinese army fired on the Japanese army-in-training, and they engaged in combat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この事件が切っ掛けとなり、長い日中戦争が始まることとなる…。",
+		   NULL, "This triggered the long Sino-Japanese War.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "歴史的には、あの事件が日中戦争の幕開けのように言われとる。",
+		   NULL, " According to historical records, that incident triggered the Sino-Japanese War, but...", Line_WaitForInput);
+	OutputLine(NULL, "……だが、当時、北進と南進で意見の分かれた軍部では、中国と全面衝突するべきか否かでも意見が分かれておったのだ。",
+		   NULL, " ...with opinions divided over advancing north or south, the army was equally divided over a full-scale confrontation with China.", Line_WaitForInput);
+	OutputLine(NULL, "いや、それどころか事件がこれ以上大きくならんよう、参謀本部が穏便な解決を指示したほどだった。」",
+		   NULL, " No, in fact, we even recieved orders from General Staff Headquarters to resolve the matter quietly before the incident grew much bigger.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　北進派は、対ソ戦略の見地から日中の激突は無意味であると主張し、盧溝橋事件を穏便に終わらせることを望んでいたという。",
+		   NULL, "So those supporting the northern advance wanted to settle the Battle of Lugou Bridge quietly, insisting that conflict with China was pointless in light of their anti-Soviet strategy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、内地の南進派は、この事件を切っ掛けに中国へのさらなる派兵を決定。",
+		   NULL, "However, those on the mainland supporting the southern advance used this incident as cause to dispatch more troops to China.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　中国に対する強硬政策を打ち出し、かくして日本と中国は盧溝橋事件を切っ掛けに全面戦争へと突入していくこととなるのである。",
+		   NULL, "They enacted hard policies against China, and thus the Marco Polo Bridge Incident became the trigger for Japan and China to enter all-out war.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その後、ノモンハン事件で辛酸を舐めた日本は対ソ戦略を大きく転換。",
+		   NULL, "After that and their bitter struggles in the Nomonhan Incident, Japan greatly revised their Soviet strategy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　日ソ不可侵条約を締結して、南進へ路線を確定。",
+		   NULL, "They signed the Soviet-Japanese Neutrality Pact and secured the route for their southern advance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ますます日中戦争は泥沼の様相となっていく……。",
+		   NULL, "The Sino-Japanese war got worse and worse...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "Yo1", 1000 );
+
+	OutputLine(NULL, "「……もし、盧溝橋事件がなかったなら。",
+		   NULL, "\"...If the Marco Polo Bridge Incident hadn't happened,", Line_WaitForInput);
+	OutputLine(NULL, "その後の歴史は今日と大きく変わっていた可能性もあるの。",
+		   NULL, " it's possible that history would have gone very differently.", Line_WaitForInput);
+	OutputLine(NULL, "……結局、いつか戦争になり、同じ歴史を辿ったかもしれん。",
+		   NULL, " ...Maybe we would have ended up in a war with them anyway.", Line_WaitForInput);
+	OutputLine(NULL, "だが、南進派にイベントを与えなければ、軍部は慎重論を維持してソ連を牽制し続け、ソ連は東西双方に軍備を割かねばならず、",
+		   NULL, " However, if the South Faction didn't get that chance, the military authorities would have kept restraining the Soviet Union, and the Soviets would have had to divide their forces between east and west,", Line_WaitForInput);
+	OutputLine(NULL, "…………ひょっとしたら、",
+		   NULL, " .........and maybe", Line_ContinueAfterTyping);
+	Wait( 800 );
+	OutputLine(NULL, "ドイツはモスクワを陥落できていたかもしれん。",
+		   NULL, " Germany could have invaded Moscow.", Line_WaitForInput);
+	OutputLine(NULL, "そうなれば日本もシベリアへ雪崩れ込んだかもしれない。",
+		   NULL, " Then Japan could have gone to Siberia.", Line_WaitForInput);
+	OutputLine(NULL, "……今の世界地図は今日とはまったく異なったものになったかもしれんの…。」",
+		   NULL, " The map could have been very different today.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　仮にモスクワを占領できただけでドイツが大戦の覇者となれたかは怪しい。",
+		   NULL, "Germany wouldn't necessarily have won the war if it had succeeded in taking Moscow.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ドーバー海峡を隔ててイギリスは依然、健在だったし、アメリカは虎視眈々と開戦の機会をうかがっていた。",
+		   NULL, "England was keeping its strength on the other side of Dover Strait, after all, and the United States was poised to enter the conflict.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それに、あのナポレオンも一度はモスクワを占領している。",
+		   NULL, "Besides, Napoleon once occupied Moscow.", Line_WaitForInput);
+	OutputLine(NULL, "でも結局、冬将軍には勝てず撤退していったのだから。",
+		   NULL, " But in the end, he couldn't beat their winter and had to withdraw.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…あの戦争が、枢軸国の勝利で終わったかもしれない、ＩＦの世界ですわね。」",
+		   NULL, "\"...It is one of those 'ifs', huh? The Axis might have won the war.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うむ。盧溝橋事件での一発の弾丸が、世界の歴史を変えてしまったかもしれん可能性もあるということだの。」",
+		   NULL, "\"Yes. It's possible that the gunshot from the Marco Polo Bridge Incident changed the tide of history.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……確か、その弾丸を、どちらが発砲したかで、歴史解釈が日中で異なっていましたわね。」",
+		   NULL, "\"...Both sides had different opinions of who fired the shot, right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「日本側の主張では、中国軍陣地に近付きすぎた日本兵に対して中国軍の一兵士が、恐怖心から発砲してしまったのではないかと言われとる。",
+		   NULL, "\"According to the Japanese side, a Chinese soldier fired a shot at a Japanese soldier who got too close to the Chinese camp.", Line_WaitForInput);
+	OutputLine(NULL, "だが中国側は、発砲は日本軍の陰謀であると主張しとる。」",
+		   NULL, " However, the Chinese side claimed the shot was a conspiracy invented by the Japanese military.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「でも、銃撃はあった。",
+		   NULL, "\"But the shot was fired.", Line_WaitForInput);
+	OutputLine(NULL, "誰が撃ったかはわからずとも、それが日中戦争の引き金になった。」",
+		   NULL, " Even though nobody knew who actually pulled the trigger, it sparked the Sino-Japanese war.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うむ。",
+		   NULL, "\"Yes,", Line_WaitForInput);
+	OutputLine(NULL, "それだけが、歴史の真実だの。」",
+		   NULL, " that's what the history books say.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………しかし先生。",
+		   NULL, "\".........But, Koizumi-sensei...", Line_WaitForInput);
+	OutputLine(NULL, "その話と祖父にどんな関係が？」",
+		   NULL, " what does that have to do with my grandfather?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "「盧溝橋事件の時。",
+		   NULL, "\"In the Marco Polo Bridge Incident,", Line_WaitForInput);
+	OutputLine(NULL, "深夜、訓練中の中隊に対して銃撃が行なわれ、ただちに全員が集合し点呼を取った。",
+		   NULL, " a shot was fired at a unit that was training in the middle of the night. Everyone was summoned for a roll call.", Line_WaitForInput);
+	OutputLine(NULL, "その時、１人だけ兵士がいなかった。",
+		   NULL, " They were missing one soldier.", Line_WaitForInput);
+	OutputLine(NULL, "この兵士はその後、戻って来るのだが、彼が伝令に出て中国軍陣地に近付きすぎたことが原因ではないかと囁かれた。",
+		   NULL, " This soldier came back later, and it was said that he was sent as a messenger and got too close to the Chinese camp.", Line_WaitForInput);
+	OutputLine(NULL, "…………ところで。",
+		   NULL, " ......By the way,", Line_WaitForInput);
+	OutputLine(NULL, "…この兵士が雛見沢出身の兵士だったことは知っているかね…？」",
+		   NULL, " ...did you know that soldier was from Hinamizawa?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……え…。",
+		   NULL, "\"...Eh?", Line_WaitForInput);
+	OutputLine(NULL, "そうなのですか…？！」",
+		   NULL, " Really?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「高野くんから雛見沢症候群の話が出て、雛見沢出身者には突如として錯乱する可能性があることが出た時。",
+		   NULL, "\"When Takano-kun was talking about Hinamizawa Syndrome, he said that soldiers from Hinamizawa could suddenly fall into a deranged state.", Line_WaitForInput);
+	OutputLine(NULL, "…私たちは関東軍に配属されている雛見沢出身兵士のリストの中に、盧溝橋事件のその兵士が含まれているのを知った。」",
+		   NULL, " And we realized that the soldier from the Marco Polo Bridge Incident was in fact from Hinamizawa.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「では、……盧溝橋事件の発砲とは…、」",
+		   NULL, "\"Then what about the first shot fired?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「真相はわからん！",
+		   NULL, "\"I don't know the truth!", Line_WaitForInput);
+	OutputLine(NULL, "　だが、雛見沢症候群を末期発症させた錯乱兵士による発砲の可能性が否定できなかった。",
+		   NULL, " But I think it's a possible that a soldier with in the terminal stage of Hinamizawa Syndrome fired the shot.", Line_WaitForInput);
+	OutputLine(NULL, "その兵士は事件の際、戦死している。",
+		   NULL, " That soldier was killed in the incident.", Line_WaitForInput);
+	OutputLine(NULL, "当時の資料がなく、どういう状態で死に至ったのかは記録がない。」",
+		   NULL, " Since there was no record of it, nobody knows exactly how he died.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………………。」",
+		   NULL, "\"............\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その後の日本軍側の主張と交渉は、中国軍側からの発砲を前提に進められた。",
+		   NULL, "The Japanese side claimed that the Chinese army had fired at them, and negotiated with that in mind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　事件のわずか数日後には、中国側からの謝罪を求めて、示威行為としての三個師団の増派が決定。",
+		   NULL, "Just a scant few days after the incident, Japan demanded an apology from the Chinese, and as a show of force dispatched three divisions of reinforcements.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　中国側はもちろんこれに反発。",
+		   NULL, "The Chinese side was, of course, opposed to that.", Line_WaitForInput);
+	OutputLine(NULL, "一気に情勢を悪化させていったのである。",
+		   NULL, " The situation escalated at once.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	DrawSceneWithMask( "Yo2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「そんな中で雛見沢症候群の研究がなされれば、日本側の主張に悪影響を与えかねないとの懸念が起こったのだ。",
+		   NULL, "\"If research into Hinamizawa syndrome continued, the higher-ups thought it would negatively influence the Japanese army's claims.", Line_WaitForInput);
+	OutputLine(NULL, "政治的グレーゾーンに踏み込む危険性を配慮し、高野くんの研究は却下されたのだよ…。」",
+		   NULL, " So, in order to avoid the risk of traversing that political grey zone, they rejected Takano-kun's research...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………そのため、…戦争が終わった後も、祖父の研究が顧みられることがなかったと…？」",
+		   NULL, "\"......So, because of that... they refused to even consider my grandfather's research long after the war ended too?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"Yes, that's exactly it.", Line_WaitForInput);
+	OutputLine(NULL, "……戦争は終わったが、歴史認識の溝を巡っての対立は続いとる。",
+		   NULL, " The war is over now, but there are still some conflicts there regarding historical recognition.", Line_WaitForInput);
+	OutputLine(NULL, "高野くんにその気はなくとも、雛見沢症候群の研究が公になれば、終った戦争の諍いを蒸し返すことになりかねん。",
+		   NULL, " Even if Takano-kun didn't mean for it to happen, if his research into Hinamizawa Syndrome became public, it might cause a resurgence of quarrels over the long-ended war.", Line_WaitForInput);
+	OutputLine(NULL, "……そう危惧した重鎮たちが、戦後も高野くんの研究を黙殺するよう、根回しをしておったのは今だから言える話だ。",
+		   NULL, " Certain authorities were afraid of that, so they made sure his research was ignored even after the war.", Line_WaitForInput);
+	OutputLine(NULL, "…私にも、高野くんに協力しないよう、長く釘を刺されておった…。」",
+		   NULL, " ...I was long warned not to aid him any way myself...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………………………。」",
+		   NULL, "\".........\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　鷹野は努めて冷静を装ったが、…口の端が苦々しく歪むのを隠しきることはできなかった。",
+		   NULL, "Takano tried to remain calm, but she couldn't stop herself from grimacing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　祖父の研究に誰も関心を示さなかったのは、それを良しとしない黒幕たちの暗躍があったからだというのだから。",
+		   NULL, "She had just found out the real reason why her grandfather's research had been ignored. It was because of secret maneuvers by political masterminds.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……黒幕たちがそれだけ危惧するということは、",
+		   NULL, "...If those masterminds feared it so much,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…皮肉にも、祖父の研究の重要性を認めていたということ。",
+		   NULL, " ironically, that meant they acknowledged the importance of his research.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………祖父の孤独な生涯が悔しくて悲しくてたまらなかった。",
+		   NULL, "...Takano was saddened and frustrated to no end by her grandfather's lonely life.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「だが、そういう連中は他界し。",
+		   NULL, "\"However, they are all dead now.", Line_WaitForInput);
+	OutputLine(NULL, "もう当時を知る者は私しかおらん。",
+		   NULL, " I'm the only one who knows about this.", Line_WaitForInput);
+	OutputLine(NULL, "もし今、まだ高野くんが生きていたなら、私はそれを謝って全面的な協力を申し出るつもりだった。",
+		   NULL, " If Takano-kun was still alive, I was going to apologize to him and give him my unconditional support.", Line_WaitForInput);
+	OutputLine(NULL, "だが、彼はもういない。",
+		   NULL, " But he's no longer around.", Line_WaitForInput);
+	OutputLine(NULL, "だから、私は三四ちゃんに謝り、高野くんにするはずだった協力を、君にしようと思ってるのだ。」",
+		   NULL, " That's why I'm apologizing to you and offering to give you my full support instead.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………よろしいのですか？",
+		   NULL, "\"......Are you sure?", Line_WaitForInput);
+	OutputLine(NULL, "　私が雛見沢症候群の研究をすることで、蒸し返しになるということはありませんか…？」",
+		   NULL, " Wouldn't research into the Hinamizawa Syndrome dredge up those same subjects again...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「もう当時とは時代が違う。",
+		   NULL, "\"It's different now.", Line_WaitForInput);
+	OutputLine(NULL, "それに、……雛見沢症候群の研究には、単なる風土病では済ませないものが潜んでおる。",
+		   NULL, " Besides... research into the Hinamizawa Syndrome may produce more than a mere local disease.", Line_WaitForInput);
+	OutputLine(NULL, "研究によっては、戦後日本を再び列強の末席に返り咲かせる切り札になるやもしれん。」",
+		   NULL, " Depending on your research, post-war Japan may gain a trump card that makes it a world power once more.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「当時とはもう風向きが変わった、ということですわね。」",
+		   NULL, "\"So the tides and times have changed then.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうだ。",
+		   NULL, "\"That's right.", Line_WaitForInput);
+	OutputLine(NULL, "不幸にも、高野くんは風向きが変わるまで存命することができなかった。",
+		   NULL, " Unfortunately, Takano-kun didn't live long enough to see that tide change.", Line_WaitForInput);
+	OutputLine(NULL, "……だが幸い、三四ちゃんという後継者に研究を託せた。",
+		   NULL, " But he has you to continue his research.", Line_WaitForInput);
+	OutputLine(NULL, "だから私は、この命ある限り、三四ちゃんの研究を最大限応援する。",
+		   NULL, " So, as long as I'm alive, I'll give you my full support.", Line_WaitForInput);
+	OutputLine(NULL, "私は高野くんに協力を約束したのに、様々なしがらみから力になれず、彼を失望させた。",
+		   NULL, " I promised to help Takano-kun, but because of various things, I couldn't do anything.", Line_WaitForInput);
+	OutputLine(NULL, "その償いを命ある限りしていこうと思ってる。",
+		   NULL, " So I want to make up for that as long as I'm alive.", Line_WaitForInput);
+	OutputLine(NULL, "それが、高野くんが無二の親友と呼んでくれた私の、この世に残された最後の仕事だと思っとる…！」",
+		   NULL, " I think that's the least I can do for the man who called me his best friend.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「先生……。",
+		   NULL, "\"Koizumi-sensei...", Line_WaitForInput);
+	OutputLine(NULL, "本当にありがとうございます…。」",
+		   NULL, " Thank you so much...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いや、いい。",
+		   NULL, "\"Oh, don't mention it.", Line_WaitForInput);
+	OutputLine(NULL, "私も死ぬ前に洗いざらいを話せてすっきりした。",
+		   NULL, " I'm glad I was able to tell you everything before I died.", Line_WaitForInput);
+	OutputLine(NULL, "とにかく、私の目が黒い内は三四ちゃんの研究に一切の不自由はさせん！",
+		   NULL, " Anyway, until I'm gone, I'll make sure you get everything you need, okay?", Line_WaitForInput);
+	OutputLine(NULL, "　何かあったらいつでも頼りなさい。",
+		   NULL, " So if anything comes up, be sure to let me know.", Line_WaitForInput);
+	OutputLine(NULL, "助力は惜しまないからの〜！」",
+		   NULL, " I'll do anything for you!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　祖父と、かつての上司で親友でもあるこの老人に、どんな絆があったのか、鷹野には想像することしかできない。",
+		   NULL, "Takano couldn't even imagine what kind of bond this old man and her grandfather had between them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……でも、その絆のお陰で、鷹野は強力な後ろ盾を得られたことは間違いない。",
+		   NULL, "...But thanks to that bond, Takano was able to gain a powerful supporter.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　涙さえ薄っすらと浮かべ、感傷的な表情を浮かべる鷹野は内心、老人の全面協力の約束に躍り上がりたい気分だった。",
+		   NULL, "Tears welled up in Takano's eyes as she gave him an emotional look, but in her mind she was practically dancing at the promise of the old man's full support.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Yo3", 1000 );
+
+	OutputLine(NULL, "　老人と鷹野はしばらくの間、互いに相手の感謝を否定しては頭を下げ合っていた。",
+		   NULL, "The old man and Takano both bowed at the same time to show each other their appreciation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そんな頭の下げ合いが一段落したところで、老人はほんの少しだけ表情を真剣にし、",
+		   NULL, "Once that was done, the old man became a little more serious.", Line_WaitForInput);
+	OutputLine(NULL, "あまりに長かった前置きの果ての、本当に言いたかったことを口にした。",
+		   NULL, " After that far too lengthy preamble, he finally said what he really wanted to tell her.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そういうことだ。私が言いたいのはつまり。",
+		   NULL, "\"So there you have it. This is what I wanted to say.", Line_WaitForInput);
+	OutputLine(NULL, "……雛見沢症候群には、歴史すらも作りかねない魔力が宿っているということだ。",
+		   NULL, " ...The Hinamizawa Syndrome has the potential power to make history.", Line_WaitForInput);
+	OutputLine(NULL, "それは国の運命すらも捻じ曲げかねない。",
+		   NULL, " It may even twist the fate of our country.", Line_WaitForInput);
+	OutputLine(NULL, "……そこのところをよく肝に銘じて、慎重に研究をしなさい。」",
+		   NULL, " ...So keep that in mind, and be careful with your research.\"", Line_Normal);
+	ClearMessage();
+
+}
