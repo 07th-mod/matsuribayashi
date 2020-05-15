@@ -8,71 +8,69 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Scripts progress
 
->Bold lines means "in progress"
-
-- [ ] _kakera01.txt
-- [ ] _kakera02.txt
-- [ ] _kakera03.txt
-- [ ] _kakera04.txt
-- [ ] _kakera05.txt
-- [ ] _kakera06.txt
-- [ ] _kakera07.txt
-- [ ] _kakera08.txt
-- [ ] _kakera09.txt
-- [ ] _kakera10.txt
-- [ ] _kakera11.txt
-- [ ] _kakera12.txt
-- [ ] _kakera13.txt
-- [ ] _kakera14.txt
-- [ ] _kakera15.txt
-- [ ] _kakera16.txt
-- [ ] _kakera17.txt
-- [ ] _kakera18.txt
-- [ ] _kakera19.txt
-- [ ] _kakera20.txt
-- [ ] _kakera21.txt
-- [ ] _kakera22.txt
-- [ ] _kakera23.txt
-- [ ] _kakera24.txt
-- [ ] _kakera25.txt
-- [ ] _kakera26.txt
-- [ ] _kakera27.txt
-- [ ] _kakera28.txt
-- [ ] _kakera29.txt
-- [ ] _kakera30.txt
-- [ ] _kakera31.txt
-- [ ] _kakera32.txt
-- [ ] _kakera33.txt
-- [ ] _kakera34.txt
-- [ ] _kakera35.txt
-- [ ] _kakera36.txt
-- [ ] _kakera37.txt
-- [ ] _kakera38.txt
-- [ ] _kakera39.txt
-- [ ] _kakera40.txt
-- [ ] _kakera41.txt
-- [ ] _kakera42.txt
-- [ ] _kakera43.txt
-- [ ] _kakera44.txt
-- [ ] _kakera45.txt
-- [ ] _kakera46.txt
-- [ ] _kakera47.txt
-- [ ] _kakera48.txt
-- [ ] _kakera49.txt
-- [ ] _kakera50.txt
-- [ ] _kakera50_02.txt
-- [ ] _kakera51.txt
-- [ ] _kakera52.txt
-- [ ] _mats_001.txt
-- [ ] _mats_002.txt
-- [ ] _mats_003.txt
-- [ ] _mats_004.txt
-- [ ] _mats_005.txt
-- [ ] _mats_006.txt
-- [ ] _mats_007.txt
-- [ ] _mats_008.txt
-- [ ] _mats_009.txt
-- [ ] _mats_010.txt
+- [x] _kakera01.txt
+- [x] _kakera02.txt
+- [x] _kakera03.txt
+- [x] _kakera04.txt
+- [x] _kakera05.txt
+- [x] _kakera06.txt
+- [x] _kakera07.txt
+- [x] _kakera08.txt
+- [x] _kakera09.txt
+- [x] _kakera10.txt
+- [x] _kakera11.txt
+- [x] _kakera12.txt
+- [x] _kakera13.txt
+- [x] _kakera14.txt
+- [x] _kakera15.txt
+- [x] _kakera16.txt
+- [x] _kakera17.txt
+- [x] _kakera18.txt
+- [x] _kakera19.txt
+- [x] _kakera20.txt
+- [x] _kakera21.txt
+- [x] _kakera22.txt
+- [x] _kakera23.txt
+- [x] _kakera24.txt
+- [x] _kakera25.txt
+- [x] _kakera26.txt
+- [x] _kakera27.txt
+- [x] _kakera28.txt
+- [x] _kakera29.txt
+- [x] _kakera30.txt
+- [x] _kakera31.txt
+- [x] _kakera32.txt
+- [x] _kakera33.txt
+- [x] _kakera34.txt
+- [x] _kakera35.txt
+- [x] _kakera36.txt
+- [x] _kakera37.txt
+- [x] _kakera38.txt
+- [x] _kakera39.txt
+- [x] _kakera40.txt
+- [x] _kakera41.txt
+- [x] _kakera42.txt
+- [x] _kakera43.txt
+- [x] _kakera44.txt
+- [x] _kakera45.txt
+- [x] _kakera46.txt
+- [x] _kakera47.txt
+- [x] _kakera48.txt
+- [x] _kakera49.txt
+- [x] _kakera50.txt
+- [x] _kakera50_02.txt
+- [x] _kakera51.txt
+- [x] _kakera52.txt
+- [x] _mats_001.txt
+- [x] _mats_002.txt
+- [x] _mats_003.txt
+- [x] _mats_004.txt
+- [x] _mats_005.txt
+- [x] _mats_006.txt
+- [x] _mats_007.txt
+- [x] _mats_008.txt
+- [x] _mats_009.txt
+- [x] _mats_010.txt
 - [ ] _mats_011.txt
 - [ ] _mats_012.txt
 - [ ] _mats_013.txt
@@ -90,9 +88,18 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] _mats_025.txt
 - [ ] _mats_op.txt
 - [ ] _mats_tips_01.txt
-- [ ] kakera_miss.txt
-- [ ] list.txt
-- [ ] staffroom.txt
 - [ ] test.txt
 
-# Known issues (for fixing)
+# Known issues
+
+- in ``_kakera13.txt``, lines 709 and 711 were changed in the console release
+- in ``_kakera13.txt``, line 736 was changed in the console release
+- in ``_kakera18.txt``, line 506 was changed in the console release
+- in ``_kakera21.txt``, lines 602 to 611 were cut from the console release (all the religion talk)
+- in ``_kakera24.txt``, pretty much everything around lines 303 to 383 was cut from the console release
+- in ``_kakera30.txt``, lines 220 + 226 (joint dialog) were changed in the console release
+- in ``_kakera30.txt``, lines 235 to 245 were changed and removed in the console release
+- in ``_kakera33.txt``, several lines thorough the script are missing in the console script for no clear reason
+- in ``_kakera36.txt``, lines 30, 32, 120~128, 194 and 196 for some reason do not have voices
+- in ``_kakera38.txt``, lines 9, 11 and 61 for some reason do not have voices
+- in ``_kakera51.txt``, lines 215 and 217 were changed in the console release
