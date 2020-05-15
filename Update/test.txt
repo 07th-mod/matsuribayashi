@@ -122,6 +122,7 @@ void _mina_020_test()
 	DrawSceneWithMask( "JD3", "maskup", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "ps3/s12/11/280700001", 128, 64);
 	OutputLine(NULL, "「おや皆さん、さっそくはしゃぎ回っているようですねぇ。」",
 		   NULL, "\"My, hello. You all seem to be enjoying yourselves.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -143,10 +144,13 @@ void _mina_008_test()
 
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "ps3/s12/11/180700048", 128, 64);
 	OutputLine(NULL, "「まず、こうですね………？",
 		   NULL, "\"First of all...", Line_WaitForInput);
+	PlaySE(4, "ps3/s12/11/180700049", 128, 64);
 	OutputLine(NULL, "　ここまではわかります。",
 		   NULL, " Okay, I got that one...", Line_WaitForInput);
+	PlaySE(4, "ps3/s12/11/180700050", 128, 64);
 	OutputLine(NULL, "……それからそれから…？」",
 		   NULL, " then what do I do...?\"", Line_Normal);
 
@@ -161,6 +165,7 @@ void _mina_008_test()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "ps3/s12/11/180700051", 128, 64);
 	OutputLine(NULL, "「そこで、こう。いえいえ違います、持ち上げなくていいんです。",
 		   NULL, "\"Then you do it like this. No, don't lift it up.", Line_WaitForInput);
 	ClearMessage();
@@ -179,6 +184,7 @@ void _mina_002_1_test()
 	DrawBustshotWithFiltering( 2, "Ha_DefA2%", "mask00", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10*2, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "ps3/s12/12/181100049", 128, 64);
 	OutputLine(NULL, "「………………頑張りましょうなのです。」",
 		   NULL, "\"........Let's do our best.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -266,8 +272,10 @@ void _mina_002_1_test()
 	DisplayWindow();
 
 	SetSpeedOfMessage( FALSE, 0 );
+	PlaySE(4, "ps3/s19/03/990300061", 128, 64);
 	OutputLine(NULL, "「そっかぁ！",
 		   NULL, "\"I see...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　おじさんの店の手伝いってんじゃ仕方ねえなぁ…！」",
 		   NULL, " We can't hold you here if you have to go help your uncle...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
