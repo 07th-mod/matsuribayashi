@@ -71,13 +71,14 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _mats_008.txt
 - [x] _mats_009.txt
 - [x] _mats_010.txt
-- [ ] _mats_011.txt
-- [ ] _mats_012.txt
-- [ ] _mats_013.txt
-- [ ] _mats_014.txt
-- [ ] _mats_015.txt
-- [ ] _mats_016.txt
-- [ ] _mats_017.txt
+- [x] _mats_011.txt
+- [x] _mats_012.txt
+- [x] _mats_013.txt
+- [x] _mats_014.txt
+- [x] _mats_015.txt
+- [x] _mats_016.txt
+- [x] _mats_017.txt
+      - needs a ton of reviewing!
 - [ ] _mats_018.txt
 - [ ] _mats_019.txt
 - [ ] _mats_020.txt
