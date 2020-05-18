@@ -79,17 +79,16 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _mats_016.txt
 - [x] _mats_017.txt
       - needs a ton of reviewing!
-- [ ] _mats_018.txt
-- [ ] _mats_019.txt
-- [ ] _mats_020.txt
-- [ ] _mats_021.txt
+- [x] _mats_018.txt
+- [x] _mats_019.txt
+- [x] _mats_020.txt
+- [x] _mats_021.txt
 - [ ] _mats_022.txt
 - [ ] _mats_023.txt
 - [ ] _mats_024.txt
 - [ ] _mats_025.txt
-- [ ] _mats_op.txt
-- [ ] _mats_tips_01.txt
-- [ ] test.txt
+- [x] _mats_op.txt
+- [x] _mats_tips_01.txt
 
 # Known issues
 
