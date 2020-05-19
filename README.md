@@ -8,6 +8,8 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Scripts progress
 
+> **Bold lines** need lots of additional fixing
+
 - [x] _kakera01.txt
 - [x] _kakera02.txt
 - [x] _kakera03.txt
@@ -77,16 +79,15 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _mats_014.txt
 - [x] _mats_015.txt
 - [x] _mats_016.txt
-- [x] _mats_017.txt
-      - needs a ton of reviewing!
+- [x] **_mats_017.txt**
 - [x] _mats_018.txt
 - [x] _mats_019.txt
 - [x] _mats_020.txt
 - [x] _mats_021.txt
-- [ ] _mats_022.txt
-- [ ] _mats_023.txt
-- [ ] _mats_024.txt
-- [ ] _mats_025.txt
+- [x] **_mats_022.txt**
+- [x] _mats_023.txt
+- [x] _mats_024.txt
+- [x] _mats_025.txt
 - [x] _mats_op.txt
 - [x] _mats_tips_01.txt
 
