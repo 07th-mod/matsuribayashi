@@ -1,4 +1,4 @@
-﻿
+
 void main()
 {
 	SetValidityOfSaving( FALSE );
@@ -46,7 +46,7 @@ void Title()
 	Wait(1500);
 	//MoveSprite( 10, 0, -100, 0, 0, 0, 5, 0, 1500, TRUE );
 
-	DrawScene("white", 1000);	
+	DrawScene("white", 1000);
 
 	PlayBGM( 2, "higurashi", 128, 0 );
 
@@ -110,7 +110,7 @@ void ChapterPreview()
 	FadeOutBGM( 2, 1000, FALSE );
 
 	DrawScene("black", 1000);
-	
+
 	CallSection("Title");
 }
 
@@ -190,7 +190,7 @@ void FragmentChapterDisplay()
 
 	if(GetLocalFlag( TipsMode ) == 0)
 		FragmentViewChapterScreen();
-		
+
 	if(GetLocalFlag( TipsMode ) == 1)
 	{
 		if(GetLocalFlag( LFragmentRead ) >= 50) { DrawScene("kakera_back_06", 500); PlayBGM(1, "It_move2", 128, 0 ); }
@@ -199,7 +199,7 @@ void FragmentChapterDisplay()
 		else if(GetLocalFlag( LFragmentRead ) >= 20) { DrawScene("kakera_back_03", 500); PlayBGM(1, "INSTICT", 128, 0 ); }
 		else if(GetLocalFlag( LFragmentRead ) >= 10) { DrawScene("kakera_back_02", 500); PlayBGM(1, "it_moves", 128, 0 ); }
 		else if(GetLocalFlag( LFragmentRead ) >= 0) { DrawScene("kakera_back_01", 500); PlayBGM(1, "It_move2", 128, 0 ); }
-		
+
 		FragmentListScreen();
 		DrawScene("black", 500);
 	}
