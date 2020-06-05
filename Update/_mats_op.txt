@@ -1036,7 +1036,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
+	DrawScene( "background/chika_shisetsu", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…キーホルダーに括り付けられたカギがたったひとつ。",
@@ -1104,6 +1105,7 @@ void main()
 		   NULL, "\"Shush!!\"", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当は私たちは、中庭で鶏小屋の掃除をしなくてはならないのだ。",
@@ -1131,6 +1133,7 @@ void main()
 		   NULL, "...Then all four of us were sure to be sentenced to \"splayed piggy\"...!", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "background/chika_shisetsu", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「恵理子、焦らないで…！",
@@ -1155,7 +1158,7 @@ void main()
 		   NULL, " It's just hard to open, that's all...!!\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "semi", 120, 0 );
+	PlayBGM( 2, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはもはや悲鳴すれすれ。",
@@ -1167,12 +1170,14 @@ void main()
 		   NULL, "Our hearts were pounding loudly. It was as though the sound of our heartbeats was echoing throughout the hallway...", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、明らかに子供のそれとは違う足音が響いてきた。",
 		   NULL, "And at that point, we heard footsteps that didn't belong to a child.", Line_Normal);
 	ClearMessage();
 
+	DrawSceneWithMask( "background/chika_shisetsu", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「静かに…ッ！！",

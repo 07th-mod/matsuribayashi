@@ -5,7 +5,6 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -18,7 +17,7 @@ void main()
 		   NULL, "\"...Banquet to back end, over!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/vt4a_halll1002", 128);
 	OutputLine(NULL, "　スピーチあと１人で乾杯に入ります。",
-		   NULL, " One more speaker, then the toast starts.", Line_WaitForInput);
+		   NULL, " One more speaker, then the toast starts.", Line_Continue);
 	OutputLine(NULL, "準備できてるねー？！」",
 		   NULL, " Are you ready?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -104,7 +103,6 @@ void main()
 		   NULL, " and people end up drinking warm beer anyway.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ho1_Tokyo", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とても広い会場内には、純白のテーブルクロスをかけられた白いテーブルが何十と並んでいた。",
@@ -172,11 +170,7 @@ void main()
 		   NULL, "But the guests occasionally shouted, \"Yes, yes!\" and sometimes gave him loud applause, filling the room with their fervor.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　熱気、というのは好意的な言い方かもしれない。",
@@ -190,10 +184,8 @@ void main()
 
 	PlayBGM( 0, "Nazo", 120, 0 );
 
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「大体ですね、自分の国の国旗に敬意を示すなという教育をしている国が、世界中のどこにあるというんですか！！",
 		   NULL, "\"Which country would actually teach people not to show respect towards their own flag?", Line_WaitForInput);
 	OutputLine(NULL, "　ないよ、そんな国はどこにもない！",
@@ -202,15 +194,13 @@ void main()
 		   NULL, " It's happening only in Japan!!\"", Line_Normal);
 	ClearMessage();
 
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, FALSE );
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「「そうだそうだッ！！」」」",
 		   NULL, "\"\"\"That's right, that's right!!!\"\"\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
-
-	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
-	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
-
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -228,33 +218,33 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "自分を知り、郷土を知り、歴史や国家を学ぶ。",
 		   NULL, "To know ourselves, to know our culture, to understand our history and our country itself. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そうしていく中で自然に自らが日本人であることを自覚していき、日本社会の一員を担う国民としての役割を理解していく。",
 		   NULL, "Those are the things that make you realize that you are a Japanese citizen, that make you understand the part you play as a citizen of this country. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その結果、自然と沸いてくるのが国を愛するという心なんです！！",
 		   NULL, "And the feeling you get from that is love towards your own country!!", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ところが反日教師どもは、それを軍国主義の洗脳だと、こう言っている。",
 		   NULL, "However, those anti-Japan teachers are proclaiming that it's militaristic brainwashing!", Line_WaitForInput);
 	OutputLine(NULL, "馬鹿言っちゃいけない！！",
 		   NULL, " Those stupid claims are wrong!!", Line_WaitForInput);
 	OutputLine(NULL, "　そう言ってる連中がやってることはなんですか？！",
 		   NULL, " What are those people doing, anyway? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これから日本を背負っていく子供たちに反日妄想をすり込み、自虐教育で洗脳している！",
 		   NULL, "They're teaching our children to hate being Japanese! They're the ones brainwashing them with this self-destructive education! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　日本は恥ずべき国で、貴様らはその国に生まれた恥ずべき人間であるとッ！",
 		   NULL, "They are teaching our children that Japan should be ashamed of itself, and that they should be ashamed of being Japanese!", Line_WaitForInput);
 	OutputLine(NULL, "　国家を蔑ろにし自分の生まれた国を否定せよと！！",
-		   NULL, " Forget who you are, and deny your country,", Line_WaitForInput);
+		   NULL, " Forget who you are, and deny your country!", Line_WaitForInput);
 	OutputLine(NULL, "　そんなことを吹き込んでいるわけです！",
 		   NULL, " That's what they're teaching them!!", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　無垢な子供たちはそれをそのまま鵜呑みにし、何の裏付けもなく信じてしまう。",
 		   NULL, "These innocent children listen and believe such nonsense!", Line_WaitForInput);
 	OutputLine(NULL, "そりゃ当り前です！",
@@ -263,7 +253,7 @@ void main()
 		   NULL, " They go to school to learn things, right?", Line_WaitForInput);
 	OutputLine(NULL, "　そこで教師がそうだと教えれば、子供たちは何の疑いもなく信じるんです。",
 		   NULL, " If their teachers teach them that, of course the children believe it. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "こんな卑劣な話がありますかッ？！",
 		   NULL, "Can you believe such corruption exists?!", Line_WaitForInput);
 	OutputLine(NULL, "　今こそ、日本の教育を私たちは体を張って守らなければならない時なのですッ！！」",
@@ -306,15 +296,14 @@ void main()
 		   NULL, "The man's sash carried his name written in large letters, along with the name of the prefecture he was running for office in.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho1_Tokyo", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「憂国の同志、○○○○君を皆さんにご紹介いたします！！",
 		   NULL, "\"Let me introduce to you a patriot, XXXX-kun!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼、○○君は、長年、前知事の下で知事室長を勤め、その懐刀として長いこと××県政を支えて参りました。",
 		   NULL, "This man has served the former governor as his right-hand man as director of the office of the governor for many years, supporting the prefecture's government for a long time. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "この度、前知事が高齢により勇退を決意され、その後任として指名されたのが、ここにいる○○君なのであります！！」",
 		   NULL, "Since the previous governor has decided to retire, he was appointed as the next governor.\"", Line_Normal);
 	ClearMessage();
@@ -333,9 +322,9 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
 	OutputLine(NULL, "　戦前、どれだけのアジアの国が白人植民地であったか、そして日本がアジア開放に立ち上がり、戦後、どれだけの国が自治を回復したか、その意味すらも伝えようともしない！！",
-		   NULL, "They don't even talk about how many Asian countries were actually Western colonies before Japan stood up for our freedom during the war. Our county has recovered amazingly since then, yet our children don't know any of that, because those teachers don't teach them! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "They don't even talk about how many Asian countries were actually Western colonies before Japan stood up for our freedom during the war. Our country has recovered amazingly since then, yet our children don't know any of that, because those teachers don't teach them! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　情けない！！",
 		   NULL, "How truly, truly sad!", Line_WaitForInput);
@@ -350,7 +339,7 @@ void main()
 		   NULL, " and make sure our children will grow up to be decent young people who can carry on Japan's future!!\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「彼、○○○○君は、来年の××県知事選挙に立候補いたします！",
 		   NULL, "\"He, XXXX-kun, announces his candidacy for the next year's prefectural governorship.", Line_WaitForInput);
 	OutputLine(NULL, "　どうか皆さん、温かい応援とみなぎるお力で、彼、○○○○君をどうか男にしてやってくださいッ！！」",
@@ -374,7 +363,6 @@ void main()
 		   NULL, "The man was receiving a standing ovation.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誤解がないように、先にこの会合を説明しなくてはならない。",
@@ -532,7 +520,6 @@ void main()
 		   NULL, "There happens to be an organization of alumni that includes all of those seven universities.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho1_Tokyo", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……この会場にひしめく老紳士たちも、そんな七帝大の同窓会組織の中のひとつの団体なのである。",
@@ -561,7 +548,6 @@ void main()
 		   NULL, "Therefore, all the members are important people from different fields, and obviously the power of this organization is of a political nature.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、この会にはもうひとつ、重要な入会資格があった。",
@@ -652,7 +638,6 @@ void main()
 		   NULL, "Probably because of the same reason as the man giving a speech up on stage.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ho2_Tokyo", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同じように、壇上の男も鷹野と同じく、本来はそれほど偏った思想を持つわけでもない。",
@@ -738,7 +723,6 @@ void main()
 		   NULL, "And eventually, the organization will become so powerful that nobody can ignore it.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今、ここをお読みになられている読者諸兄は恐らく、こんなものはもはや「同窓会組織」ではないとお感じだろう。",
@@ -899,12 +883,8 @@ void main()
 		   NULL, "Miyo Takano was, in fact, attending a conference of such a shadow government.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
+	DisableWindow();
+	FadeOutBGM( 0, 3000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
@@ -914,7 +894,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "Suzume", 120, 0 );
 
-	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/sora5", "maskm1", 1, 0, 1300 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -951,17 +931,12 @@ void main()
 		   NULL, "Normal people would be surprised to learn that this was a private residence.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	DrawSceneWithMask( "Yo2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_yo1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、内装も外観に劣ることはない。",
@@ -980,6 +955,8 @@ void main()
 		   NULL, " That's the kind of room Takano was in.", Line_Normal);
 	ClearMessage();
 
+	PlaySE( 0, "s_knock", 128, 64 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ノックがあり、車椅子に座った老人と、それを押す若い女が入って来た。",
 		   NULL, "There was a knock at the door, and an old man in a wheelchair and a young woman pushing it entered.", GetGlobalFlag(GLinemodeSp));
@@ -990,7 +967,6 @@ void main()
 		   NULL, "As Takano stood up to bow, the old man stopped her by raising his right hand.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Yo1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300001", 128);
@@ -1031,7 +1007,7 @@ void main()
 		   NULL, "\"Oh my, you haven't changed a bit, have you?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/09/550500014", 128);
 	OutputLine(NULL, "首筋、口紅がついておりますわよ。",
-		   NULL, " I can see lipstick on your neck.", Line_WaitForInput);
+		   NULL, " I can see lipstick on your neck.", Line_Continue);
 	OutputLine(NULL, "くすくす…。」",
 		   NULL, " Hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1082,7 +1058,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300007", 128);
 	OutputLine(NULL, "「三四ちゃんも、いつの間にかすっかり美人さんに成長したの〜。",
-		   NULL, "\"Miyo-chan, you've become quite beautiful yourself~", Line_WaitForInput);
+		   NULL, "\"Miyo-chan, you've become quite beautiful yourself~.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300008", 128);
 	OutputLine(NULL, "いつまでも小さいと思っとったらいつの間にの〜〜。」",
 		   NULL, " You're not a little girl anymore, eh~~.\"", GetGlobalFlag(GLinemodeSp));
@@ -1116,7 +1092,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野と老人は、しばらくの間、品のない話で盛り上がった。",
@@ -1139,7 +1115,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Yo3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_yo1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300011", 128);
@@ -1186,12 +1162,12 @@ void main()
 		   NULL, " that was why he noticed the existence of the Hinamizawa Syndrome.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………世界は、もう核の時代だ。",
 		   NULL, "\"......The world today is in the nuclear era.", Line_WaitForInput);
 	OutputLine(NULL, "アメリカとソ連が山ほどの核で睨み合い、列強が核を以って発言権を得る。",
 		   NULL, " With America and the Soviet Union glaring at each other over mounds of nuclear stockpiles, it takes nukes to have authority as a major power. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……しかし日本は、非核三原則で核を永遠に放棄しちまった。",
 		   NULL, "......Yet we've forever abandoned our nukes thanks to our three antinuclear principles.", Line_WaitForInput);
 	OutputLine(NULL, "核なくして国もない時代なんだ。",
@@ -1227,12 +1203,12 @@ void main()
 		   NULL, " That's what some people believed, at least.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「現実的に考えて、我が国の核武装は永久にありえないでしょうね。」",
 		   NULL, "\"Realistically, Japan will never arm itself with nuclear weapons.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「だろうの〜。",
 		   NULL, "\"I know.", Line_WaitForInput);
 	OutputLine(NULL, "国民の理解を容易には得られんな。",
@@ -1284,13 +1260,8 @@ void main()
 		   NULL, "Takano nodded once, opened it up, and removed the contents.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask( "black", "maskup", 7, 0, 300 );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……中身はぎっしり詰められた新札の壱万円札だった。",
@@ -1332,7 +1303,7 @@ void main()
 		   NULL, "Takano closed the attache case and bowed.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Yo2", "maskdown", 7, 0, 300 );
+	DrawSceneWithMask( "background/tk_yo1", "maskdown", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500023", 128);
@@ -1507,7 +1478,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300043", 128);
 	OutputLine(NULL, "「いやいや！",
-		   NULL, "\"No, don't mention it!", Line_WaitForInput);
+		   NULL, "\"No, don't mention it!", Line_Continue);
 	OutputLine(NULL, "　これは高野くんと君の研究だ。",
 		   NULL, " This research is Takano-kun's, and yours too.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300044", 128);
@@ -1599,20 +1570,17 @@ void main()
 		   NULL, "Now that she officially had a powerful influence backing her, she could spread her wings and see the completion of her grandfather's unfinished research...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 400, FALSE );
 
-	DrawScene( "Yo1", 400 );
+	DrawScene( "background/tk_yo1", 400 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300046", 128);
 	OutputLine(NULL, "「さて。",
-		   NULL, "\"Well......", Line_WaitForInput);
+		   NULL, "\"Well......", Line_Continue);
+	Wait( 1600 );
 	OutputLine(NULL, "………高野くんの研究を正式に引き継ぐことになったなら。",
 		   NULL, " now that you're officially continuing Takano-kun's research...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300047", 128);
@@ -1623,10 +1591,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500036", 128);
 	OutputLine(NULL, "「何でしょう。",
-		   NULL, "\"What is it?", Line_WaitForInput);
+		   NULL, "\"What is it?", Line_Continue);
+	Wait( 1300 );
 	OutputLine(NULL, "うかがいます。」",
 		   NULL, " I'm listening.\"", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこで老人は一度言葉を切り、卓上の煙草入れから高級煙草を一本、抜き取った。",
@@ -1656,26 +1627,25 @@ void main()
 		   NULL, "The constant build up of little gestures like that were how she gained the trust she held today...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……高野くんが雛見沢症候群の存在に気付いたのは、日本ではなく、満州だった。」",
 		   NULL, "\"...Takano-kun noticed the Hinamizawa syndrome in Manchuria, not Japan.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	OutputLine(NULL, "祖父の手記によるならば、昭和１５年頃から、当時、主に関東軍に多く送られていた雛見沢出身兵士による末期症状事件の存在を知り、",
 		   NULL, " According to my grandfather's journal, around Shouwa 15, he learned that many soldiers sent from Hinamizawa to the Kwantung Army expressed terminal symptoms, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "雛見沢に存在する未知の寄生虫症の存在を予想した、とあります。」",
 		   NULL, "which led him to surmise that an unknown, infectious parasite dwelled in Hinamizawa.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　戦争と言う過酷な状況下にあっては、時に人は精神を壊す。",
-		   NULL, "Under the harsh conditions of war, people sometimes lost their minds.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Under the harsh conditions of war, people sometimes lost their mind.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1696,7 +1666,7 @@ void main()
 		   NULL, "Every incident was handled seperately, and no one suspected there was an underlying cause...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "File", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/file", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300048", 128);
@@ -1729,7 +1699,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、２０世紀初頭。",
-		   NULL, "At the beginning of the twentieth century,", Line_WaitForInput);
+		   NULL, "At the beginning of the 20th century,", Line_WaitForInput);
 	OutputLine(NULL, "当時の最先端医学であるドイツ医学によって、未知の病気の数々が細菌や寄生虫の仕業であると解明されている時期でもあった。",
 		   NULL, " German doctors proved that some unknown diseases were caused by bacteria and parasites.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1748,10 +1718,11 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500037", 128);
-	OutputLine(NULL, "「はい。",
-		   NULL, "\"Yes.", Line_WaitForInput);
-	OutputLine(NULL, "祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、予算を求めましたが一笑に伏されたとか。」",
-		   NULL, " My grandfather predicted that his research would be valuable to the army, so he asked for a budget, but they just laughed at him.\"", Line_Normal);
+	OutputLine(NULL, "「はい。祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、",
+		   NULL, "\"Yes. My grandfather predicted that his research would be valuable to the army,", Line_WaitForInput);
+	PlayVoice(4, "ps3/s13/09/550500038", 128);
+	OutputLine(NULL, "予算を求めましたが一笑に伏されたとか。」",
+		   NULL, " so he asked for a budget, but they just laughed at him.\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -1802,7 +1773,7 @@ void main()
 		   NULL, "Takano had noticed her grandfather's mistakes, and that was why she did everything she could to obtain all of that.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Yo3", 400 );
+	DrawScene( "background/tk_yo1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300053", 128);
@@ -1810,7 +1781,7 @@ void main()
 		   NULL, "\"......The military at the time was hoping for a low-cost, immediate acting weapon.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300054", 128);
 	OutputLine(NULL, "高野くんの研究は、非常に興味深いものではあっても、",
-		   NULL, " While Takano-kun's research was extremely intriguing,", Line_Normal);
+		   NULL, " While Takano-kun's research was extremely intriguing,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300055", 128);
 	OutputLine(NULL, "当時の軍には期待されなかったということだの…。」",
 		   NULL, " it didn't meet the military's expectations.\"", Line_Normal);
@@ -1849,8 +1820,11 @@ void main()
 	OutputLine(NULL, "「祖父の手記にも、先生が色々と各方面に掛け合ってくださったことが記されています。",
 		   NULL, "\"I read in his journal that you talked to many different people about his research.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/09/550500042", 128);
-	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
-		   NULL, " Unfortunately, its value was never recognized, but I'm sure your support meant a lot to him.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、",
+		   NULL, " Unfortunately, its value was never recognized,", Line_WaitForInput);
+	PlayVoice(4, "ps3/s13/09/550500043", 128);
+	OutputLine(NULL, "先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
+		   NULL, " but I'm sure your support meant a lot to him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1878,7 +1852,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500047", 128);
 	OutputLine(NULL, "祖父の人生はもっと違ったものになっていたかもしれないと思うと、とても悔しく思います…。」",
-		   NULL, "It's very regretable to think that my grandfather's life might have been different...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "It's very regrettable to think that my grandfather's life might have been different...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1891,18 +1865,15 @@ void main()
 		   NULL, " ...Shortly after that, he looked into the distance and spoke.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300064", 128);
 	OutputLine(NULL, "「………………実はな。",
-		   NULL, "\"............Actually.", Line_WaitForInput);
+		   NULL, "\"............Actually.", Line_Continue);
+	Wait( 2600 );
 	OutputLine(NULL, "真実はそうではない。",
-		   NULL, " That isn't true at all,", Line_WaitForInput);
+		   NULL, " That isn't true at all.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300065", 128);
 	OutputLine(NULL, "上層部は高野くんの発見に少なからず関心を持っていたのだ。」",
 		   NULL, " The higher-ups were interested in Takano-kun's discovery.\"", Line_Normal);
@@ -1911,7 +1882,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500048", 128);
 	OutputLine(NULL, "「……え？",
-		   NULL, "\"...What?", Line_WaitForInput);
+		   NULL, "\"...What?", Line_Continue);
+	Wait( 1300 );
 	OutputLine(NULL, "　それは初耳です。",
 		   NULL, " I've never heard that before.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/09/550500049", 128);
@@ -1927,13 +1899,11 @@ void main()
 		   NULL, "\"Something came up, and they couldn't let him look into Hinamizawa Syndrome.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550300067", 128);
 	OutputLine(NULL, "その理由は、私と一部の高級将校しか知らん。",
-		   NULL, " Only a few of the top brass and myself knew the reason.", Line_WaitForInput);
+		   NULL, " Only a few of the top brass and myself knew the reason. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300068", 128);
 	OutputLine(NULL, "私を除き、全員が他界した今、",
-		   NULL, " Now that all but myself have passed,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "Now that all but myself have passed,", Line_Continue);
 	OutputLine(NULL, "…高野くんの後を継ぐ三四ちゃんには話しておこうと思う。」",
 		   NULL, " ...I think I should tell you, Miyo-chan, since you're carrying on his work.\"", Line_Normal);
 	ClearMessage();
@@ -1972,14 +1942,10 @@ void main()
 		   NULL, "But as it turned out, the military had actually shown an interest after all.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それを話すには、当時の満州における関東軍のことを話しておかなければならん。",
 		   NULL, "\"Before I go on, I need to explain about the Kwantung Army in Manchuria at the time.", Line_WaitForInput);
 	OutputLine(NULL, "当時、関東軍は満州にあったが、北進するか南進するかで意見が分かれ、対立しておった。」",
@@ -2026,15 +1992,15 @@ void main()
 		   NULL, "Later the Russian Empire was overthrown by a revolution, but Japan was unable to shake the threat that the new Soviet Union would advance south.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「歴史的には南進しますね。",
 		   NULL, "\"According to the history books, Japan went south.", Line_WaitForInput);
 	OutputLine(NULL, "日ソ不可侵条約を結んで北進を放棄。",
 		   NULL, " They signed the Soviet-Japanese Neutrality Pact and abandoned the northern advance. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その結果、独ソ戦開始後、押されていたソ連軍は極東の戦力を対独戦線に集中。",
 		   NULL, "As a result, when the Great Patriotic War began, the Soviet Union was able to respond to pressure on their German front by pouring in their eastern forces. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "一時はモスクワ直前にまで迫っていたドイツ軍に対し猛反攻を開始し、戦局を逆転させます。」",
 		   NULL, "Though the Germans had managed to lay siege to Moscow, the Soviets launched a massive counter-offensive that reversed the tides of war.\"", Line_Normal);
 	ClearMessage();
@@ -2074,27 +2040,27 @@ void main()
 		   NULL, "(Ironically, the Soviet Union was the one who broke the pact, but I won't go into that now.)", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Yo1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_yo1", "maskup", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「その通り。ヒトラーが三国同盟を結んだのも、日本がソ連の反対側を牽制することを期待したものだ。",
 		   NULL, "\"Exactly. Hitler signed the Tripartite Pact because he expected Japan to keep the Soviet's other front in check.", Line_WaitForInput);
 	OutputLine(NULL, "だが日本は結局、北進を放棄する。",
 		   NULL, " But ultimately Japan abandoned the north. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ドイツの攻勢が優勢だったため、経緯を見守ろうという意見が支配的だった。",
 		   NULL, "With the superior German offensive, many supported the idea of waiting and watching it play out.", Line_WaitForInput);
 	OutputLine(NULL, "仮に北進するとしても、ドイツがモスクワを陥落させるのが最前提だと考えられとった。",
 		   NULL, " They believed that even if we did advance north, it would be after Germany conquered Moscow. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…それをゾルゲにすっぱ抜かれ、ソ連は極東国境の重戦車を全て独ソ戦線に送ったのだ。",
 		   NULL, "...However, that plan was exposed to Sorge, and the Soviets transfered their heavy tanks from their far east border to the German front. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そしてモスクワ戦は敗北が確定し、クルスクの戦い以降、ドイツは大敗走を迎えることになる。」",
 		   NULL, "That secured Germany's defeat at Moscow, and the Germans began seeing a string of defeats starting with the Battle of Kursk.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…歴史のターニングポイントですわね。」",
 		   NULL, "\"It was a turning point in history, huh?\"", Line_Normal);
 	ClearMessage();
@@ -2120,15 +2086,15 @@ void main()
 		   NULL, "After several fierce, short-term battles with the Soviet Union's advanced, mechanized corps that led to great losses, the Kwantung Army realized they shouldn't fight the Soviets, and that inclined Japan toward the Soviet-Japanese Neutrality Pact...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「だが、少なくともノモンハン事件の直前までは、関東軍はソ連を強く意識しており、北進と南進で意見は真っ二つに分かれていた。",
 		   NULL, "\"But at the very least, up until the Nomonhan Incident, the Kwantung Army was strongly conscious of the Soviets and divided on advancing north or south.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そのため、対ソ戦への軍備増強の見地から中国との全面衝突は避けるべきであるという慎重意見もあったのだ。」",
 		   NULL, "Thanks to that, there were also voices advising caution, suggesting we avoid all-out war with China in order to shore up our forces against the Soviets.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でも確か、盧溝橋事件を境に、日中戦争へと展開していきますね。」",
 		   NULL, "\"But the Sino-Japanese War broke out after the Marco Polo Bridge Incident, right?\"", Line_Normal);
 	ClearMessage();
@@ -2148,7 +2114,7 @@ void main()
 		   NULL, "The Japanese and Chinese armies were staring at each other across the Lugou Bridge in Beijing.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　７月７日の深夜。",
@@ -2168,17 +2134,17 @@ void main()
 		   NULL, "This triggered the long Sino-Japanese War.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	OutputLine(NULL, "歴史的には、あの事件が日中戦争の幕開けのように言われとる。",
 		   NULL, " According to historical records, that incident triggered the Sino-Japanese War, but... ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……だが、当時、北進と南進で意見の分かれた軍部では、中国と全面衝突するべきか否かでも意見が分かれておったのだ。",
 		   NULL, "...with opinions divided over advancing north or south, the army was equally divided over a full-scale confrontation with China. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いや、それどころか事件がこれ以上大きくならんよう、参謀本部が穏便な解決を指示したほどだった。」",
-		   NULL, "No, in fact, we even recieved orders from General Staff Headquarters to resolve the matter quietly before the incident grew much bigger.\"", Line_Normal);
+		   NULL, "No, in fact, we even received orders from General Staff Headquarters to resolve the matter quietly before the incident grew much bigger.\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );
@@ -2222,19 +2188,19 @@ void main()
 		   NULL, "The Sino-Japanese war got worse and worse...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Yo1", 1000 );
+	DrawScene( "background/tk_yo1", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……もし、盧溝橋事件がなかったなら。",
 		   NULL, "\"...If the Marco Polo Bridge Incident hadn't happened,", Line_WaitForInput);
 	OutputLine(NULL, "その後の歴史は今日と大きく変わっていた可能性もあるの。",
 		   NULL, " it's possible that history would have gone very differently.", Line_WaitForInput);
 	OutputLine(NULL, "……結局、いつか戦争になり、同じ歴史を辿ったかもしれん。",
 		   NULL, " ...Maybe we would have ended up in a war with them anyway. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だが、南進派にイベントを与えなければ、軍部は慎重論を維持してソ連を牽制し続け、ソ連は東西双方に軍備を割かねばならず、",
 		   NULL, "However, if the South Faction didn't get that chance, the military authorities would have kept restraining the Soviet Union, and the Soviets would have had to divide their forces between east and west, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………ひょっとしたら、",
 		   NULL, ".........and maybe", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -2266,44 +2232,44 @@ void main()
 		   NULL, " But in the end, he couldn't beat their winter and had to withdraw.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…あの戦争が、枢軸国の勝利で終わったかもしれない、ＩＦの世界ですわね。」",
 		   NULL, "\"...It is one of those 'ifs', huh? The Axis might have won the war.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ。盧溝橋事件での一発の弾丸が、世界の歴史を変えてしまったかもしれん可能性もあるということだの。」",
 		   NULL, "\"Yes. It's possible that the gunshot from the Marco Polo Bridge Incident changed the tide of history.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……確か、その弾丸を、どちらが発砲したかで、歴史解釈が日中で異なっていましたわね。」",
 		   NULL, "\"...Both sides had different opinions of who fired the shot, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「日本側の主張では、中国軍陣地に近付きすぎた日本兵に対して中国軍の一兵士が、恐怖心から発砲してしまったのではないかと言われとる。",
 		   NULL, "\"According to the Japanese side, a Chinese soldier fired a shot at a Japanese soldier who got too close to the Chinese camp. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "だが中国側は、発砲は日本軍の陰謀であると主張しとる。」",
 		   NULL, "However, the Chinese side claimed the shot was a conspiracy invented by the Japanese military.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でも、銃撃はあった。",
 		   NULL, "\"But the shot was fired.", Line_WaitForInput);
 	OutputLine(NULL, "誰が撃ったかはわからずとも、それが日中戦争の引き金になった。」",
 		   NULL, " Even though nobody knew who actually pulled the trigger, it sparked the Sino-Japanese war.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うむ。",
 		   NULL, "\"Yes,", Line_WaitForInput);
 	OutputLine(NULL, "それだけが、歴史の真実だの。」",
 		   NULL, " that's what the history books say.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………しかし先生。",
 		   NULL, "\".........But, Koizumi-sensei...", Line_WaitForInput);
 	OutputLine(NULL, "その話と祖父にどんな関係が？」",
@@ -2312,14 +2278,14 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「盧溝橋事件の時。",
 		   NULL, "\"In the Marco Polo Bridge Incident,", Line_WaitForInput);
 	OutputLine(NULL, "深夜、訓練中の中隊に対して銃撃が行なわれ、ただちに全員が集合し点呼を取った。",
 		   NULL, " a shot was fired at a unit that was training in the middle of the night. Everyone was summoned for a roll call.", Line_WaitForInput);
 	OutputLine(NULL, "その時、１人だけ兵士がいなかった。",
 		   NULL, " They were missing one soldier. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "この兵士はその後、戻って来るのだが、彼が伝令に出て中国軍陣地に近付きすぎたことが原因ではないかと囁かれた。",
 		   NULL, "This soldier came back later, and it was said that he was sent as a messenger and got too close to the Chinese camp.", Line_WaitForInput);
 	OutputLine(NULL, "…………ところで。",
@@ -2328,39 +2294,39 @@ void main()
 		   NULL, " ...did you know that soldier was from Hinamizawa?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……え…。",
 		   NULL, "\"...Eh?", Line_WaitForInput);
 	OutputLine(NULL, "そうなのですか…？！」",
 		   NULL, " Really?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「高野くんから雛見沢症候群の話が出て、雛見沢出身者には突如として錯乱する可能性があることが出た時。",
 		   NULL, "\"When Takano-kun was talking about Hinamizawa Syndrome, he said that soldiers from Hinamizawa could suddenly fall into a deranged state. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…私たちは関東軍に配属されている雛見沢出身兵士のリストの中に、盧溝橋事件のその兵士が含まれているのを知った。」",
 		   NULL, "And we realized that the soldier from the Marco Polo Bridge Incident was in fact from Hinamizawa.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「では、……盧溝橋事件の発砲とは…、」",
 		   NULL, "\"Then what about the first shot fired?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「真相はわからん！",
 		   NULL, "\"I don't know the truth!", Line_WaitForInput);
 	OutputLine(NULL, "　だが、雛見沢症候群を末期発症させた錯乱兵士による発砲の可能性が否定できなかった。",
-		   NULL, " But I think it's a possible that a soldier with in the terminal stage of Hinamizawa Syndrome fired the shot.", Line_WaitForInput);
+		   NULL, " But I think it's possible that a soldier within the terminal stage of Hinamizawa Syndrome fired the shot.", Line_WaitForInput);
 	OutputLine(NULL, "その兵士は事件の際、戦死している。",
 		   NULL, " That soldier was killed in the incident. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "当時の資料がなく、どういう状態で死に至ったのかは記録がない。」",
 		   NULL, "Since there was no record of it, nobody knows exactly how he died.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -2386,13 +2352,13 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	DrawSceneWithMask( "background/tk_yo1", "maskup", 1, 0, 300 );
 
-	DrawSceneWithMask( "Yo2", "maskup", 1, 0, 300 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そんな中で雛見沢症候群の研究がなされれば、日本側の主張に悪影響を与えかねないとの懸念が起こったのだ。",
 		   NULL, "\"If research into Hinamizawa syndrome continued, the higher-ups thought it would negatively influence the Japanese army's claims. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "政治的グレーゾーンに踏み込む危険性を配慮し、高野くんの研究は却下されたのだよ…。」",
 		   NULL, "So, in order to avoid the risk of traversing that political grey zone, they rejected Takano-kun's research...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2428,9 +2394,6 @@ void main()
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野は努めて冷静を装ったが、…口の端が苦々しく歪むのを隠しきることはできなかった。",
@@ -2583,10 +2546,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
-	DrawScene( "Yo3", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　老人と鷹野はしばらくの間、互いに相手の感謝を否定しては頭を下げ合っていた。",
@@ -2602,6 +2561,8 @@ void main()
 	OutputLine(NULL, "あまりに長かった前置きの果ての、本当に言いたかったことを口にした。",
 		   NULL, " After that far too lengthy preamble, he finally said what he really wanted to tell her.", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "background/tk_yo1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550300094", 128);
