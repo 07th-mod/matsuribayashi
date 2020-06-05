@@ -3,10 +3,8 @@ void main()
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	DrawFilm( 2, 0xbb, 0xbb, 0xbb, 256, 0, 0, TRUE );
-	DrawSceneWithMask( "Sora6", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/sora6", "maskc", 1, 0, 1300 );
 
 	PlayBGM( 0, "Testament", 120, 0 );
 
@@ -78,13 +76,12 @@ void main()
 		   NULL, "My mother died instantly.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sinryo_sinsatu4", 1000 );
-	DrawSprite( 1, "Waku_b", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
+	DrawScene( "background/flashback/sinryou_sinsatu4", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100040", 128);
 	OutputLine(NULL, "「……お、…お父さん、",
-		   NULL, "\"...Daddy, Daddy ", Line_Normal);
+		   NULL, "\"...Daddy, Daddy ", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100041", 128);
 	OutputLine(NULL, "お父さんお父さんお父さん…！！」",
 			NULL, "...Daddy, Daddy, Daddy, Daddy!!\"", Line_Normal);
@@ -100,9 +97,6 @@ void main()
 		   NULL, "As I called out to him, I hoped that it was someone else instead.", Line_Normal);
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	SetValidityOfInput( TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、",
@@ -140,7 +134,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550400001", 128);
 	OutputLine(NULL, "「………うぅうぅ………。",
-		   NULL, "\"Oooh...", Line_WaitForInput);
+		   NULL, "\"Oooh...", Line_Continue);
 	OutputLine(NULL, "ぅぅぅ………。」",
 		   NULL, " Oooh...\"", Line_Normal);
 	ClearMessage();
@@ -149,20 +143,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100042", 128);
 	OutputLine(NULL, "「お父さん、",
-		   NULL, "\"Daddy,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"Daddy,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100043", 128);
 	OutputLine(NULL, "お父さん",
 		   NULL, " Daddy,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お父さん",
 		   NULL, " Daddy,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お父さん！！」",
 		   NULL, " Daddy!!\"", Line_Continue);
@@ -281,7 +272,7 @@ void main()
 		   NULL, " he might be gone forever...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sinryo_sinsatu4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/flashback/sinryou_sinsatu4", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100044", 128);
@@ -310,7 +301,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100047", 128);
 	OutputLine(NULL, "「嫌だ嫌だ！",
-		   NULL, "\"No, no!!", Line_WaitForInput);
+		   NULL, "\"No, no!!", Line_Continue);
 	OutputLine(NULL, "　お父さんは元気になるよ！",
 		   NULL, " You'll get better!!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100048", 128);
@@ -385,29 +376,23 @@ void main()
 	OutputLine(NULL, "「よ……、",
 		   NULL, "\"L...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "よく聞きなさい。",
 		   NULL, " Listen well.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550400006", 128);
 	OutputLine(NULL, "……お父さんもお母さんもな、",
 		   NULL, " Your mother and I both", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "戦争で親類をみんな失ってしまった。",
 		   NULL, " lost all of our family in the war.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550400007", 128);
 	OutputLine(NULL, "だから…、",
 		   NULL, " So...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お父さんが死んだら、",
 		   NULL, " after I'm dead,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お前の世話をしてくれる人は誰もいない…。」",
 		   NULL, " there won't be anyone left to take care of you...\"", Line_Normal);
 	ClearMessage();
@@ -437,13 +422,10 @@ void main()
 	OutputLine(NULL, "「もしもな、",
 		   NULL, "\"If, if", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お父さんが死んだら、",
-		   NULL, " I die", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " I die", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550400009", 128);
 	OutputLine(NULL, "高野先生を頼りなさい。",
 		   NULL, " you can count on Dr. Takano.", Line_WaitForInput);
@@ -460,30 +442,19 @@ void main()
 	PlayVoice(4, "ps3/s13/48/550100050", 128);
 	OutputLine(NULL, "「高野、",
 		   NULL, "\"Hi", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ひ",
 		   NULL, " fu", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ふ",
 		   NULL, " mi", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "み…。」",
-		   NULL, " Takano...\"", Line_Continue);
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, " Takano...\"", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550400012", 128);
 	OutputLine(NULL, "「そうだ。",
-		   NULL, "\"That's right.", Line_WaitForInput);
+		   NULL, "\"That's right.", Line_Continue);
 	OutputLine(NULL, "高野一二三先生だよ。",
 		   NULL, " Doctor Hifumi Takano.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550400013", 128);
@@ -494,39 +465,31 @@ void main()
 	OutputLine(NULL, "きっと、",
 		   NULL, " He will", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お前を助け、",
-		   NULL, " help you...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " help you...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550400015", 128);
 	OutputLine(NULL, "けっ、",
 		   NULL, " cough", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 300 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "げほッ！！",
 		   NULL, " cough!!", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　げへがはッ！！」",
-		   NULL, " Cough!!\"", Line_Continue);
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, " Cough!!\"", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s13/48/550100051", 128);
+	OutputLine(NULL, "「お父さん、",
+		   NULL, "\"Daddy,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100052", 128);
-	OutputLine(NULL, "「お父さん、お父さんお父さんお父さん！！！」",
-		   NULL, "\"Daddy, Daddy, Daddy, Daddy!!!\"", Line_Normal);
+	OutputLine(NULL, "お父さんお父さんお父さん！！！」",
+		   NULL, " Daddy, Daddy, Daddy!!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_door", 128, 64 );
-	DrawSceneWithMask( "Sinryo_sinsatu4", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/flashback/sinryou_sinsatu4", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お医者様たちが大慌てでなだれ込んで来る。",
@@ -542,7 +505,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ke4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/flashback/ke2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は弾き飛ばされて病室を追い出される。",
@@ -572,18 +535,11 @@ void main()
 		   NULL, " that was going to be the last conversation I ever had with my father.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	Wait( 2000 );
-
 	PlayBGM( 0, "T1_Requiem", 120, 0 );
-
-	DrawScene( "Sora3", 1000 );
+	DrawScene( "background/flashback/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……父さんの言い残した「高野先生」の名前を、お役所の人とか色々な人に言ったと思う。",
@@ -743,7 +699,6 @@ void main()
 		   NULL, "Spending time individually with the children could have solved their problems.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ko3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、…少なくとも私のいた施設では、そこまでの時間を職員が割いて、理解しようとする努力はしていなかった。",
@@ -763,7 +718,6 @@ void main()
 		   NULL, "Therefore, they could only see the children's emotional pleas for help... as problems.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　見返りを求めない愛など、この世に存在しない。",
@@ -788,7 +742,7 @@ void main()
 		   NULL, "He wanted the children to appreciate him.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/flashback/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、そんな淡い夢は現実にあっさりと引き裂かれた。",
@@ -858,8 +812,7 @@ void main()
 		   NULL, "Such a dream didn't exist at the orphanage.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
-	DrawSceneWithMask( "Ke6", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/ke5", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　規律はたくさんあり、もっともらしいことをいくつも定めていたが、",
@@ -910,7 +863,6 @@ void main()
 		   NULL, "We were not allowed to walk around inside of the orphanage freely, so we never knew who it was that was crying.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ko3", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　泣き声と怒声に混じって聞こえる、ガンガンと叩きつける金属音。",
@@ -986,7 +938,6 @@ void main()
 	ClearMessage();
 
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
-	DrawScene( "black", 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ガチャリと私たちのグループ室の扉が開き、不機嫌そうな形相をした職員が姿を現す。",
@@ -1001,7 +952,6 @@ void main()
 		   NULL, "Then he looked around to make sure none of us were falling asleep.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ko3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　例え、本当に真面目に勉強していたとしても、職員が居眠りをしていると感じたら駄目だ。",
@@ -1081,4 +1031,7 @@ void main()
 		   NULL, "As the metal sounds and the screams went on forever.", Line_Normal);
 	ClearMessage();
 
+	
+	FadeOutBGM( 0, 2000, FALSE );
+	DrawScene( "black", 2000 );
 }

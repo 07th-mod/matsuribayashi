@@ -2,16 +2,14 @@ void main()
 {
 
 	DrawScene( "black", 3000 );
-	DrawScene( "si_matsuri_01", 1000 );
+	DrawScene( "text/si_matsuri_01", 1000 );
 	Wait( 15000 );
-	DrawScene( "Tyuui", 1000 );
+	DrawScene( "text/tyuui", 1000 );
 	Wait( 3000 );
+	PlayBGM( 0, "sora_no_mukou", 120, 0 );
 	DrawScene( "black", 3000 );
 
-	PlayBGM( 0, "sora_no_mukou", 120, 0 );
-	DrawSprite( 1, "Waku_w", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 1000, FALSE );
-	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "Ta1_Tokyo", 0 );
+	DrawScene( "background/xta1", 1000 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -52,12 +50,12 @@ void main()
 		   NULL, "But the serious expression she was wearing made it clear that she wasn't.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta3", "maskleft", 1, 0, 1300 );
+	DrawSceneWithMask( "background/xta3", "maskleft", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100001", 128);
 	OutputLine(NULL, "「おじいちゃん。",
-		   NULL, "\"Grandpa,", Line_WaitForInput);
+		   NULL, "\"Grandpa,", Line_Continue);
 	OutputLine(NULL, "資料の分けっこができたよ。」",
 		   NULL, " I'm done sorting them out.\"", Line_Normal);
 	ClearMessage();
@@ -65,7 +63,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200001", 128);
 	OutputLine(NULL, "「うむ。",
-		   NULL, "\"Hmm.", Line_WaitForInput);
+		   NULL, "\"Hmm.", Line_Continue);
 	OutputLine(NULL, "ありがとう。",
 		   NULL, " Thank you.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200002", 128);
@@ -76,7 +74,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100002", 128);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Look.", Line_WaitForInput);
+		   NULL, "\"Look.", Line_Continue);
 	OutputLine(NULL, "同じ症例の人がこれだけ集まった。",
 		   NULL, " There are lots of people with the same symptoms.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100003", 128);
@@ -84,12 +82,13 @@ void main()
 		   NULL, " It's way higher than the national average.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta2_Tokyo", "maskright", 1, 0, 1300 );
+	DrawSceneWithMask( "background/xta2", "maskright", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200003", 128);
 	OutputLine(NULL, "「ふむ…！",
-		   NULL, "\"Hmm...!", Line_WaitForInput);
+		   NULL, "\"Hmm...!", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "　やはりな。",
 		   NULL, " That's exactly what I expected.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200004", 128);
@@ -126,34 +125,34 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「イデオロギーが広がるのは、寄生虫感染が広がっているから？",
 		   NULL, "\"So are parasites the cause of the spread of ideology?", Line_WaitForInput);
 
 	OutputLine(NULL, "　イデオロギーが激突するのは、異なる寄生虫同士が自分の生息圏を拡大するためにぶつかりあっている？」",
-		   NULL, " When ideologies clash, is that because different parasites are competiting to expand their habitat?\"", Line_Normal);
+		   NULL, " When ideologies clash, is that because different parasites are competing to expand their habitat?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200012", 128);
 	OutputLine(NULL, "「あるいは、",
 		   NULL, "\"That, or...", Line_Continue);
-	Wait( 1000 );
+	Wait( 2000 );
 	OutputLine(NULL, "宗教圏の分布か、",
 		   NULL, " to expand religion,", Line_Continue);
-	Wait( 800 );
+	Wait( 1800 );
 	OutputLine(NULL, "国境の分布か、",
 		   NULL, " to expand national borders,", Line_Continue);
-	Wait( 800 );
+	Wait( 1800 );
 	OutputLine(NULL, "人種の分布か。",
 		   NULL, " or to expand a race. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200013", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "我々の世界の異なる文化コミュニティの存在とその対立を、人の思想に影響を及ぼす寄生虫的存在に原因があると仮定している。」",
 		   NULL, "It's hypothesized that our differing cultural communities and their conflict are the result of parasites influencing human thoughts.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta1_Tokyo", "maskleft", 1, 0, 1300 );
+	DrawSceneWithMask( "background/xta1", "maskleft", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100007", 128);
@@ -189,10 +188,6 @@ void main()
 		   NULL, " Humans aren't special in any way.\"", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "black", 0 );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200019", 128);
 	OutputLine(NULL, "「それを仮定することは即ち、イデオロギーの蔓延を、疫学的見地の蔓延と置き換えられるからだ。",
@@ -201,16 +196,18 @@ void main()
 	OutputLine(NULL, "イデオロギーの対決は議論で行なわれれば平穏だが、",
 		   NULL, " If conflicts in ideology can be resolved through debate, then they're peaceful, ", GetGlobalFlag(GLinemodeSp));
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その対決が疫学的に行なわれた場合、恐ろしいことになるからだよ。」",
 		   NULL, "but if those conflicts occur epidemically, they become frightening.\"", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「悪い思想や文化が蔓延するのを食い止めるのを、疫学的に治療する…？」",
 		   NULL, "\"And if one were to treat bad thoughts or the spread of culture as an epidemic...?\"", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200021", 128);
@@ -238,17 +235,14 @@ void main()
 		   NULL, "They even suspected families of infection and forced them into hospitals.\"", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "Ta3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "Ta3", 0 );
+	DrawScene( "background/xta3", 1000 );
 
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「個人の思想を理由に、病気でもないのに入院させるの…？」",
 		   NULL, "\"So they'd hospitalize healthy people over individual ideas...?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta2_Tokyo", "maskright", 1, 0, 1300 );
+	DrawSceneWithMask( "background/xta2", "maskright", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200028", 128);
@@ -272,16 +266,16 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「人間の思想が、ある種の寄生虫によって生み出されていると仮定した場合、ペストとまったく同じ意味になるのだよ。",
 		   NULL, "\"If an idea was created by parasites, it would be exactly the same as a plague.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200034", 128);
 	OutputLine(NULL, "つまり、思想は治療不可能な伝染病と置き換えられるわけだ。」",
-		   NULL, " In other words, an idea is like a incurable epidemic.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " In other words, an idea is like an incurable epidemic.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「つまり……、異なる思想を持った人を、えっと、疫病患者と同じに扱う？」",
 		   NULL, "\"So you mean... anyone with a different idea is treated like they have a disease?\"", Line_Normal);
 	ClearMessage();
@@ -302,7 +296,7 @@ void main()
 		   NULL, "Therefore, talking about parasites in brains has been taboo since the war.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta3", "maskleft", 1, 0, 1300 );
+	DrawSceneWithMask( "background/xta3", "maskleft", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100017", 128);
@@ -329,7 +323,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100018", 128);
 	OutputLine(NULL, "「あははは。",
-		   NULL, "\"Ahahaha.", Line_WaitForInput);
+		   NULL, "\"Ahahaha.", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "何だかお粗末な話。",
 		   NULL, " That's almost funny.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/48/550100019", 128);
@@ -375,15 +370,11 @@ void main()
 		   NULL, "Me and my grandfather shared a happy laugh together.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "black", 0 );
+	DrawScene( "black", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "Ta1_Tokyo", 0 );
+	DrawScene( "background/xta1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200048", 128);
@@ -401,7 +392,8 @@ void main()
 		   NULL, "Just because the existence of such parasites hasn't been proven doesn't mean they don't exist.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200052", 128);
 	OutputLine(NULL, "……絶対に存在する。",
-		   NULL, " They exist.", Line_WaitForInput);
+		   NULL, " They exist.", Line_Continue);
+	Wait( 3000 );
 	OutputLine(NULL, "必ず存在するのだ。」",
 		   NULL, " I know they do.\"", Line_Normal);
 	ClearMessage();
@@ -437,7 +429,7 @@ void main()
 	OutputLine(NULL, "じゃなかったら、",
 		   NULL, " Otherwise", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…おじいちゃんが可哀想。」",
 		   NULL, " it would be so sad...\"", Line_Normal);
@@ -470,7 +462,8 @@ void main()
 		   NULL, " Just like you never know when you'll be robbed.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200061", 128);
 	OutputLine(NULL, "だから予期せずしてその時を迎えて、",
-		   NULL, " So we always have to be alert and ready, so that we don't miss our chance.\"", Line_Normal);
+		   NULL, " So we always have to be alert and ready,", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550200062", 128);
 	OutputLine(NULL, "不信心であったことに歯軋りすることがないよう、常に目を醒ましていなさい。」",
 		   NULL, " so that we don't miss our chance.\"", Line_Normal);
@@ -511,7 +504,7 @@ void main()
 		   NULL, " That's what he meant.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ta3", 1000 );
+	DrawScene( "background/xta3", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/48/550100028", 128);
@@ -543,21 +536,17 @@ void main()
 		   NULL, "I had seen how hard my grandfather had been working, and I also knew he wouldn't live forever. I just wanted his work to gain recognition before he died.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "black", 0 );
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "Ta1_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "Ta1_Tokyo", 0 );
+	DrawScene( "black", 1000 );
+	DrawScene( "background/xta1", 1000 );
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お前は、イエス様の復活を知っているかな？」",
 		   NULL, "\"Do you know of the resurrection of Jesus Christ?\"", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 
@@ -569,19 +558,19 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「イエス様は、どういう風に復活したと思うかな。」",
 		   NULL, "\"How do you think Jesus was resurrected?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……朝が来たら目を醒ますように、むっくりと起き上がった…？」",
 		   NULL, "\"Didn't he just get up as if he was waking up in the morning...?\"", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「処刑された後に亡骸は埋葬された。",
 		   NULL, "\"He was buried after his execution.", Line_WaitForInput);
 
@@ -590,19 +579,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……………じゃあ、",
 		   NULL, "\"...Did he", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "ゾンビみたいに墓石を押しのけて起き上がってきた…？」",
 		   NULL, " break open the tombstone and crawl out like a zombie?\"", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はははは、違う違う。",
 		   NULL, "\"Hahahaha, no, no.", Line_WaitForInput);
 
@@ -686,10 +674,10 @@ void main()
 		   NULL, "...In other words, that's when Jesus became an existence superior to humans.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ta1_Tokyo", 400 );
+	DrawScene( "background/xta1", 400 );
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「例え死後であっても、正当な評価を受けられたなら。",
 		   NULL, "\"Even if it's after the author's death,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/550200072", 128);
@@ -822,9 +810,7 @@ void main()
 		   NULL, "Grandfather smiled in satisfaction.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 400, FALSE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DrawScene( "black", 0 );
+	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宇宙の神秘を解き明かそうなんていう、途方もない研究じゃない。",
@@ -851,9 +837,7 @@ void main()
 		   NULL, " We even had some leads.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 400, FALSE );
-	DrawBustshot( 9, "Hi1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DrawScene( "Hi1", 0 );
+	DrawScene( "background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　××県鹿骨市、雛見沢。",
@@ -883,7 +867,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それらを重ね合わせた時、祖父は雛見沢出身者のある共通項に偶然気付き、村を支配する何かの存在を仮定した。",
-		   NULL, "When he was working with the military during the war, my grandfather noticed similiaries between the people in Hinamizawa, and assumed that some kind of existence was responsible for their odd behavior.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "When he was working with the military during the war, my grandfather noticed similarities between the people in Hinamizawa, and assumed that some kind of existence was responsible for their odd behavior.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -894,13 +878,9 @@ void main()
 		   NULL, "He'd been researching it ever since then.", Line_Normal);
 	ClearMessage();
 
-	MoveSprite( 1, -320, -240, 0, 0, 256, 0, 0, 1000, FALSE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "black", 0 );
+	DrawScene( "black", 1000 );
 	Wait( 800 );
-	MoveSprite( 1, -320, -240, 0, 0, 0, 0, 0, 400, FALSE );
-	DrawBustshot( 9, "Ta2_Tokyo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DrawScene( "Ta2_Tokyo", 0 );
+	DrawScene( "background/xta2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和中期。",
@@ -1003,7 +983,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、祖父と私が二人で成した偉業が認められ、",
-		   NULL, "Our works will gain recognitition", Line_ContinueAfterTyping);
+		   NULL, "Our works will gain recognition", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -1011,11 +991,7 @@ void main()
 		   NULL, " and we will both become gods, gaining eternal peace.", Line_Normal);
 	ClearMessage();
 
-	HideWindow( 0 );
-	DrawSprite( 10, "mono_op_1", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 36, 1000, TRUE );
-	FadeSprite( 1, 0, FALSE );
-	DrawBustshot( 9, "mono_op_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	FadeSprite( 10, 0, FALSE );
+	DrawScene( "background/flashback/xta2", 1000 );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1027,7 +1003,6 @@ void main()
 		   NULL, " make my grandfather into a god.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 9, "mono_op_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私も、",
@@ -1037,7 +1012,6 @@ void main()
 		   NULL, " become a god.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 9, "mono_op_3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、",
@@ -1047,7 +1021,6 @@ void main()
 		   NULL, " we will be granted eternity.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 9, "mono_op_4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ずっとずっと、",
@@ -1057,45 +1030,13 @@ void main()
 		   NULL, " forever and ever...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 9, "mono_op_5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	DrawBustshot( 9, "mono_op_6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	DrawBustshot( 9, "mono_op_7", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	SetValidityOfInput( TRUE );
-	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, TRUE );
-	DrawScene( "black", 0 );
-
-	DisplayWindow();
-
-	FadeSprite( 1, 0, TRUE );
-
+	DrawScene( "black", 4000 );
 	Wait( 3000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawSprite( 1, "Waku_b", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 0, TRUE );
-
+	FadeOutBGM( 0, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-
 	PlayBGM( 1, "yabaisemi", 120, 0 );
-
-	DrawScene( "Ko1", 3000 );
-	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…キーホルダーに括り付けられたカギがたったひとつ。",
@@ -1143,7 +1084,7 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「や、",
 		   NULL, "\"This", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -1158,12 +1099,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>絵里子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「静かに！！」",
 		   NULL, "\"Shush!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本当は私たちは、中庭で鶏小屋の掃除をしなくてはならないのだ。",
@@ -1191,10 +1131,8 @@ void main()
 		   NULL, "...Then all four of us were sure to be sentenced to \"splayed piggy\"...!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ko1", 0 );
 
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「恵理子、焦らないで…！",
 		   NULL, "\"Don't panic, Eriko...!", Line_WaitForInput);
 
@@ -1206,7 +1144,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>絵里子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………だから静かにしてって言ってるでしょ？！",
 		   NULL, "\"...Will you shut up for a minute?!", Line_WaitForInput);
 
@@ -1229,17 +1167,14 @@ void main()
 		   NULL, "Our hearts were pounding loudly. It was as though the sound of our heartbeats was echoing throughout the hallway...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、明らかに子供のそれとは違う足音が響いてきた。",
 		   NULL, "And at that point, we heard footsteps that didn't belong to a child.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ko1", "maskright", 7, 0, 300 );
 
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「静かに…ッ！！",
 		   NULL, "\"Shush...!!", Line_WaitForInput);
 
@@ -1263,13 +1198,13 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「恵理子、誰か来るから静かに！！」",
 		   NULL, "\"Eriko, somebody is coming, be quiet!!\"", Line_Normal);
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>絵里子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……このカギで開くんだから…！！",
 		   NULL, "\"I know this is the right key...!!", Line_WaitForInput);
 
@@ -1284,27 +1219,20 @@ void main()
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「恵理子ッ、誰か来るんだってばッ！！！」",
 		   NULL, "\"Eriko, someone's coming!!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	DrawScene( "black", 1000 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
-
-	DrawScene( "End_3", 0 );
-	FadeSprite( 1, 0, TRUE );
-
+	DrawScene( "white", 800 );
+	DrawScene( "end_3", 1200 );
 	SetValidityOfInput( FALSE );
-	Wait( 3000 );
+	Wait( 4000 );
 	SetValidityOfInput( TRUE );
-
-	DrawScene( "black", 4000 );
-
-	DrawScene( "black", 400 );
+	DrawScene( "black", 2000 );
 	SetSpeedOfMessage( FALSE, 0 );
 }

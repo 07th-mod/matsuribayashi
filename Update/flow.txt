@@ -38,9 +38,9 @@ void Title()
 
 	Wait(100);
 
-	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
+	//DrawSprite( 10, "logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
 
-	DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+	DrawSprite( 10, "logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
 
 	DrawSceneWithMask("black", "maskc", 0, 0, 1000);
 
@@ -52,13 +52,13 @@ void Title()
 	PlayBGM( 2, "higurashi", 128, 0 );
 
 	if(GetGlobalFlag(GFlag_GameClear) == 0)
-		DrawScene("moon", 1500);
+		DrawScene("background/moon", 1500);
 	else
-		DrawScene("hi6", 1500);
+		DrawScene("background/jt1", 1500);
 
 	Wait(1000);
 
-	DrawSpriteWithFiltering( 10, "SGTitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
+	DrawSpriteWithFiltering( 10, "sgtitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
 
 	DrawSprite( 12, "titlelogo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 12, 1000, TRUE );
 
@@ -84,23 +84,36 @@ void Title()
 
 void ChapterPreview()
 {
-	PlayBGM( 2, "lsys13", 128, 0 );
+	// SetValidityOfInput( FALSE );
 
-	DrawSceneWithMask( "black", "mask2", 0, 0, 1000 );
+	Wait( 200 );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
+	DisableWindow();
 
-	Wait(1000);
+	PlayBGM( 0, "lsys13", 56, 0 );
+	DrawSceneWithMask("black", "mask2", 1, 0, 1200 );
+	Wait( 1500 );
 
-	DrawScene("scenario_a", 1000);
+	DrawScene("scenario/background", 1200 );
+	DrawBustshot(5, "scenario/background", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, TRUE );
+	DrawBustshot(6, "scenario/title", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 0, TRUE );
+	DrawBustshot(7, "scenario/logo", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot(8, "scenario/stripes", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, TRUE );
+	Wait( 100 );
+	FadeBustshotWithFiltering(5, "mask6", 1, FALSE, 0, 0, 1000, TRUE );
+	Wait( 200 );
 
-	DrawSceneWithMask( "scenario_b", "mask6", 0, 0, 1000 );
+	DrawBustshotWithFiltering(9, "scenario/description", "mask5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 1000, TRUE );
+	Wait( 200 );
 
-	DrawSceneWithMask( "scenario_c", "mask5", 0, 0, 1000 );
+	// SetValidityOfInput( TRUE );
 
 	ShowChapterPreview();
 
 	if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 1)
 	{
-		StopBGM( 2 );
+		StopBGM( 0 );
 		PlaySE( 1, "wa_037", 128, 64 );
 
 		DrawScene( "black", 1000 );
@@ -108,7 +121,7 @@ void ChapterPreview()
 		JumpSection("Game");
 	}
 
-	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 
 	DrawScene("black", 1000);
 
