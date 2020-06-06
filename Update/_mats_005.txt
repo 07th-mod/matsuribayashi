@@ -5,17 +5,17 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
+	DrawScene( "black", 400 );
 	PlayBGM( 1, "Mati", 120, 0 );
 
-	DrawScene( "Ka3", 1000 );
+	DrawScene( "background/ka1_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200031", 128);
 	OutputLine(NULL, "「ご紹介します。",
-		   NULL, "\"Allow me to introduce you.", Line_WaitForInput);
+		   NULL, "\"Allow me to introduce you.", Line_Continue);
 	OutputLine(NULL, "鷹野三佐です。",
 		   NULL, " This is Major Takano.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551200032", 128);
@@ -24,8 +24,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Iri_Def1+", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/iri2_def1_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000001", 128);
@@ -34,7 +33,7 @@ void main()
 	Wait( 800 );
 	OutputLine(NULL, "どうも、",
 		   NULL, " Hello,", Line_Continue);
-	Wait( 700 );
+	Wait( 1100 );
 	OutputLine(NULL, "入江と申します。」",
 		   NULL, " I'm Irie.\"", Line_Normal);
 	ClearMessage();
@@ -52,7 +51,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500091", 128);
 	OutputLine(NULL, "「くすくす。",
-		   NULL, "\"Hee hee.", Line_WaitForInput);
+		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "畏縮しなくて結構ですわ。",
 		   NULL, " Please relax.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/09/550500092", 128);
@@ -61,8 +60,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def2+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_def2_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000002", 128);
@@ -79,8 +77,8 @@ void main()
 		   NULL, "\"Please have a seat.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Yo2", 400 );
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 400 );
+	DrawScene( "background/tk_yo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江京介という男の雰囲気を言い表すならば、典型的な小市民と言えただろう。",
@@ -202,11 +200,7 @@ void main()
 		   NULL, "Irie laughed.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
@@ -220,8 +214,7 @@ void main()
 	PlayBGM( 0, "B_Dive", 120, 0 );
 
 	DisableWindow();
-	DrawBustshot( 0, "Iri_majime2+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/iri2_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼は脳外科の権威の下で稀有な才能を発揮し、将来を期待されていたという。",
@@ -236,7 +229,7 @@ void main()
 		   NULL, "But he was kicked out due to an ethical controversy.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 1000 );
+	DrawScene( "background/aka2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江の持論は、人の反社会行為の多くは、脳の疾患で説明できる、",
@@ -269,7 +262,7 @@ void main()
 		   NULL, "Therefore, what those evil people need isn't punishment, it is treatment, and if their diseases are treated, they will become good citizens again.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　儒教の考え方のひとつである、人間性善説に則った考え方だろう。",
@@ -366,10 +359,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その手軽さもまた、画期的だったのだろう。",
-		   NULL, "Indeed, it was revolutionary in its simplicitly.", Line_Normal);
+		   NULL, "Indeed, it was revolutionary in its simplicity.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati12", 400 );
+	DrawScene( "background/mati12", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ほぼ治療が不可能だった数々の精神病患者に奇跡的な成果を示し、戦前に発見されたこの手法は瞬く間に世界に広がった。",
@@ -442,7 +435,7 @@ void main()
 		   NULL, "...There were quite a few cases where that cut caused drastic, irreversible changes in the patient.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悩まなくなるゆえの、根拠なき幸福感。",
@@ -497,7 +490,7 @@ void main()
 		   NULL, "They wanted people to recognize the value of the technique once again.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、手術は患者に同意なく行なわれることもあった。",
@@ -590,27 +583,15 @@ void main()
 		   NULL, "So the existence of Hinamizawa Syndrome, caused by parasites living in the brain that control human emotions, actually affirms his theory.", Line_Normal);
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "Mati", 120, 0 );
-
-	DrawBustshotWithFiltering( 2, "Iri_Def2+", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ka5", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "sprite/iri2_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/ka1_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000009", 128);
 	OutputLine(NULL, "「私如きでよろしければ、",
-		   NULL, "\"If it's alright with you,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"If it's alright with you,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/10/551000010", 128);
 	OutputLine(NULL, "……この度の話、ぜひお引き受けさせていただきたいと思います。」",
 		   NULL, " I would love to accept this position.\"", Line_Normal);
@@ -628,7 +609,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼は温和そうな表向きとは異なり、胸の内には若さ相応の野心がある。",
-		   NULL, "Despite his mild-mannered appearance, Irie was possessed of a mighty ambition.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Despite his mild-mannered appearance, Irie was possessed by a mighty ambition.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -657,8 +638,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/iri2_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000011", 128);
@@ -669,7 +649,7 @@ void main()
 		   NULL, " Wouldn't it be better for you to hold that position, Takano-san?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/10/551000013", 128);
 	OutputLine(NULL, "私は単なる医者に過ぎません。",
-		   NULL, " I'm just a simple doctor.", Line_WaitForInput);
+		   NULL, " I'm just a simple doctor.", Line_Continue);
 	OutputLine(NULL, "人の上に立ったことなど…。」",
 		   NULL, " Being in charge of other people is...\"", Line_Normal);
 	ClearMessage();
@@ -695,8 +675,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/iri2_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000014", 128);
@@ -725,16 +704,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/iri2_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000016", 128);
 	OutputLine(NULL, "「い、一国一城の主とは……、",
-		   NULL, "\"L-Lord of my own castle...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "\"L-Lord of my own castle...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/10/551000017", 128);
 	OutputLine(NULL, "も、勿体無い話です。」",
 		   NULL, " Th-That's more than I deserve.\"", Line_Normal);
@@ -753,8 +728,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/iri2_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000018", 128);
@@ -820,7 +794,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Yo2", 400 );
+	DrawScene( "background/tk_yo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野はそれを見届け、ようやく緊張が解けるのを感じた。",
@@ -883,7 +857,7 @@ void main()
 		   NULL, "I've put so much effort into making sure things went smoothly up to this point.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ka3", 0 );
+	DrawScene( "background/ka1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200033", 128);
@@ -910,8 +884,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Iri_Warai+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/iri2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/10/551000023", 128);
@@ -937,42 +910,23 @@ void main()
 		   NULL, " Let's both give our best.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これで所長のポストは埋まり、全ての問題をクリアした。",
 		   NULL, "Now the position of Director has been filled. Everything is set.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 1000 );
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	DrawScene( "Moon", 1000 );
+	PlayBGM( 1, "yorumushi", 120, 0 );
+	DrawScene( "background/moon", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
 	DrawScene( "black", 1000 );
-
+	FadeOutBGM( 1, 1300, FALSE );
 	PlayBGM( 0, "G_Tactics", 120, 0 );
-
-	DrawSceneWithMask( "Ryoutei1", "maskup", 1, 0, 1300 );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551400018", 128);
@@ -1043,8 +997,6 @@ void main()
 		   NULL, " Let's have a toast to congratulate Takano-san and the Irie Institute!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>永田</color>", NULL, "<color=#f5e6d3>Nagata</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/550900001", 128);
@@ -1085,7 +1037,6 @@ void main()
 		   NULL, " Pleased to meet you.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ryou1", 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500021", 128);
@@ -1103,13 +1054,12 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Tomi_Warai", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/tomi2_warai_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/08/550800001", 128);
 	OutputLine(NULL, "「初めまして。",
-		   NULL, "\"Nice to meet you.", Line_WaitForInput);
+		   NULL, "\"Nice to meet you.", Line_Continue);
 	OutputLine(NULL, "富竹と申します。",
 		   NULL, " I'm Tomitake.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/08/550800002", 128);
@@ -1154,8 +1104,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Tomi_Def", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/tomi2_def_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/08/550800004", 128);
@@ -1179,8 +1128,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Tomi_Warai", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/tomi2_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/08/550800006", 128);
@@ -1209,8 +1157,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Oko_Def", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 1, "sprite/oko_def_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/14/550700001", 128);
@@ -1252,8 +1199,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 2, "Tomi_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 2, "sprite/tomi2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹という男が、軍人にしては表裏のなさそうなタイプだとすると、この小此木という男は正反対のタイプに見えた。",
@@ -1298,12 +1244,11 @@ void main()
 		   NULL, " I should maintain a good relationship with him, too.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200042", 128);
 	OutputLine(NULL, "「さぁさぁさぁ！",
-		   NULL, "\"Okay!", Line_WaitForInput);
+		   NULL, "\"Okay!", Line_Continue);
 	OutputLine(NULL, "　挨拶はこれくらいにして早く乾杯に移りましょう！",
 		   NULL, " Enough introductions!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551200043", 128);
@@ -1385,8 +1330,7 @@ void main()
 		   NULL, "\"Let's have a toast to wish the best of luck to Miyo Takano-kun, and also to the new Irie Institute!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551200046", 128);
 	OutputLine(NULL, "先生！",
-		   NULL, " Arai-sensei", Line_WaitForInput);
-
+		   NULL, " Arai-sensei", Line_Continue);
 	OutputLine(NULL, "　音頭をお願いいたします！」",
 		   NULL, " please lead the toast!!\"", Line_Normal);
 	ClearMessage();
@@ -1461,26 +1405,16 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	SetValidityOfInput( FALSE );
-	Wait( 2500 );
-	SetValidityOfInput( TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawScene( "Ryou1", 400 );
+	FadeOutBGM( 0, 1000, TRUE );
+	DrawScene( "background/tk_ryou1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　化粧直しに行ってくるといい、鷹野は席を外した。",
 		   NULL, "I ended up leaving to fix my makeup.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "Rain", 120, 0 );
-
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	PlayBGM( 1, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　幸せな気持ちで胸がいっぱいで。",
@@ -1494,7 +1428,7 @@ void main()
 		   NULL, " My heart is about to explode because I'm so happy.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ryou3", 400 );
+	DrawScene( "background/tk_ryou3_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宴席は母屋から離れた離れで行なわれていた。",
@@ -1509,8 +1443,6 @@ void main()
 		   NULL, "The restroom is in the main building, so I need to walk across the hallway.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 1300 );
-	DrawSceneWithMask( "Ryou4", "maskleft", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　渡り廊下からは、手入れの行き届いた素晴らしい日本庭園が目を楽しませてくれた。",
@@ -1614,12 +1546,7 @@ void main()
 		   NULL, " So I took them into the garden.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 1, "Rain", 120, 0 );
+	PlayBGM( 2, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宴席から聞こえてくる品のない笑い声が少し遠のいた気がした。",
@@ -1644,4 +1571,8 @@ void main()
 		   NULL, "And gazed up at the sky for a while, forgetting all about my hair getting wet.", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "white", 1000 );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 2000, FALSE );
+	DrawScene( "black", 2000 );
 }
