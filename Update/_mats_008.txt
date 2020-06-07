@@ -5,12 +5,12 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
-	DrawScene( "Fure1", 1000 );
-
+	DrawScene( "white", 1000 );
 	PlayBGM( 0, "Liberating", 120, 0 );
+	DrawScene( "background/fure1", 1000 );
+
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようこそ。",
@@ -237,7 +237,7 @@ void main()
 		   NULL, "Even if you don't live in the world where they live, if you believe in them...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure2", 1000 );
+	DrawScene( "background/fure2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようこそ。",
@@ -292,15 +292,13 @@ void main()
 		   NULL, "And you are one of them.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "suzu", 120, 0 );
+	DrawScene( "white", 200 );
 
-	DrawScene( "Fure1", 1000 );
+	DrawScene( "background/fure1", 1000 );
 
-	PlayBGM( 0, "it_move2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……覚悟は出来た？",
@@ -318,6 +316,8 @@ void main()
 		   NULL, " I'll work while drinking my usual wine.", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "background/fure2", 1000 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　では、始めましょう？",
 		   NULL, "Shall we begin?", GetGlobalFlag(GLinemodeSp));
@@ -329,7 +329,8 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
-	DrawSceneWithMask( "GetKAKERA", "mask1900", 7, 0, 400 );
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawSceneWithMask( "tips/getkakera", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
 	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
 

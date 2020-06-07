@@ -8,7 +8,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Benti1", 1000 );
+	DrawScene( "background/mob1_01", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -23,7 +23,7 @@ void main()
 		   NULL, "We decided to wait at an abandoned bus stop for the rain clouds to clear.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Benti2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800001", 128);
@@ -31,16 +31,13 @@ void main()
 		   NULL, "\"... I'm sorry, Takano-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ta_Warai#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900001", 128);
 	OutputLine(NULL, "「あら、いいのよ気にしないで、ジロウさん。",
-		   NULL, "\"Oh, don't be, Jirou-san.", Line_WaitForInput);
+		   NULL, "\"Oh, don't be, Jirou-san.", Line_Continue);
 	OutputLine(NULL, "私も、土砂降りになるかもしれないことを覚悟の上で出掛けたんだから。",
-		   NULL, " I knew it would pour, so don't worry about it.", Line_WaitForInput);
+		   NULL, " I knew it would pour, so don't worry about it.", Line_Continue);
 	OutputLine(NULL, "くすくすくす。」",
 		   NULL, " Hee hee hee.\"", Line_Normal);
 	ClearMessage();
@@ -76,7 +73,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800002", 128);
 	OutputLine(NULL, "「いや、………ははは…。",
-		   NULL, "\"It's just... hahaha...", Line_WaitForInput);
+		   NULL, "\"It's just... hahaha...", Line_Continue);
 	OutputLine(NULL, "本当に申し訳ない。」",
 		   NULL, " I'm really sorry.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -102,7 +99,6 @@ void main()
 		   NULL, "That's just her way of communicating, and I find it very charming.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…僕は多分、…いつの頃からか彼女の虜なんだと思う。",
@@ -153,7 +149,7 @@ void main()
 		   NULL, "...So I want to believe she's out here because she might be even a little bit attracted to me.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Benti2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/mob1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800003", 128);
@@ -179,14 +175,11 @@ void main()
 		   NULL, "I felt myself starting to go red after that.", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900003", 128);
 	OutputLine(NULL, "「ジロウさんも不思議な人ね。",
-		   NULL, "\"You're a mysterious person, Jirou-san.", Line_WaitForInput);
+		   NULL, "\"You're a mysterious person, Jirou-san.", Line_Continue);
 	OutputLine(NULL, "東京ではさぞや女性にもてるでしょうに、なぜわざわざ私みたいなおかしな女に付き合ってくださるのかしら…？」",
 		   NULL, " I bet women don't leave you alone, huh? So why are you hanging out with a weirdo like me?\"", Line_Normal);
 	ClearMessage();
@@ -194,9 +187,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800004", 128);
 	OutputLine(NULL, "「お、おかしななんてことはないよ…。",
-		   NULL, "\"A weirdo? No way!", Line_WaitForInput);
+		   NULL, "\"A weirdo? No way!", Line_Continue);
 	OutputLine(NULL, "鷹野さんは充分、魅力的だよ…！",
-		   NULL, " You're fascinating, Takano-san!", Line_WaitForInput);
+		   NULL, " You're fascinating, Takano-san!", Line_Continue);
 	OutputLine(NULL, "　むしろ、僕みたいな男のために貴重な休日を割いてもらったのが、申し訳ないくらいだよ。」",
 		   NULL, " Actually, I feel bad making you spend a day with someone like me!\"", Line_Normal);
 	ClearMessage();
@@ -204,14 +197,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900004", 128);
 	OutputLine(NULL, "「確かに私は、とても大切な研究のために生涯を捧げたつもりだけど。",
-		   NULL, "\"Of course, I've decided to devote my life to my work, but...", Line_WaitForInput);
+		   NULL, "\"Of course, I've decided to devote my life to my work, but...", Line_Continue);
 	OutputLine(NULL, "それだけじゃ人生は潤いがないもの。",
 		   NULL, " Life is too dry with only that.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/09/440900005", 128);
 	OutputLine(NULL, "たまには、頭を切り替えて遊ぶことも大事だし。",
-		   NULL, " I need to switch gears once in awhile.", Line_WaitForInput);
+		   NULL, " I need to switch gears once in awhile.", Line_Continue);
 	OutputLine(NULL, "……それに、異性とのコミュニケーションは脳の活性にもとてもいいんだから。",
-		   NULL, " Besides, communicating with the opposite sex is good for the brain.", Line_WaitForInput);
+		   NULL, " Besides, communicating with the opposite sex is good for the brain.", Line_Continue);
 	OutputLine(NULL, "くすくす。」",
 		   NULL, " Hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -224,9 +217,6 @@ void main()
 		   NULL, " It's all good if I managed to help you clear your head...\"", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900006", 128);
@@ -247,27 +237,27 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800006", 128);
 	OutputLine(NULL, "「そんなことないよ…！",
-		   NULL, "\"Of course...!", Line_WaitForInput);
+		   NULL, "\"Of course...!", Line_Continue);
 	OutputLine(NULL, "　僕も鷹野さんと一緒に過ごせると、こう、…その、色々と気分転換になるよ！",
-		   NULL, " When I'm with you, ah... you know, I do feel refreshed, yeah!", Line_WaitForInput);
+		   NULL, " When I'm with you, ah... you know, I do feel refreshed, yeah!", Line_Continue);
 	OutputLine(NULL, "　それにほら、鷹野さんに野鳥撮影のことを布教すれば、僕も撮影の同志を得られるわけだしね…！",
-		   NULL, " Besides, if you learn about avian photography, I'll gain a buddy to share my hobby with.", Line_WaitForInput);
+		   NULL, " Besides, if you learn about avian photography, I'll gain a buddy to share my hobby with. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800007", 128);
 	OutputLine(NULL, "　も、もしよかったら、次に来る時は僕の古いカメラを持ってくるよ。",
-		   NULL, " S-So, next time, I'll bring my old camera. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "S-So, next time, I'll bring my old camera.", Line_WaitForInput);
 	OutputLine(NULL, "買うと高いからね、はははは…。」",
-		   NULL, "It's really expensive to buy a new one, you know? Ha ha ha.\"", Line_Normal);
+		   NULL, " It's really expensive to buy a new one, you know? Ha ha ha.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900007", 128);
 	OutputLine(NULL, "「ありがとう。",
-		   NULL, "\"Thank you.", Line_WaitForInput);
+		   NULL, "\"Thank you.", Line_Continue);
 	OutputLine(NULL, "あなたを虜にする野鳥撮影が、どれくらい楽しいのか、くす、ぜひ教えていただけると嬉しいわ。",
-		   NULL, " I would love to learn about the avian photography that you're so intrigued by.", Line_WaitForInput);
+		   NULL, " I would love to learn about the avian photography that you're so intrigued by.", Line_Continue);
 	OutputLine(NULL, "ぜひ、次の機会には野鳥撮影の散策にご一緒したいわね。",
-		   NULL, " I'm looking forward to joining you on a stroll next time you go.", Line_WaitForInput);
+		   NULL, " I'm looking forward to joining you on a stroll next time you go.", Line_Continue);
 	OutputLine(NULL, "じゃあ私、自分では買わなくていいのかしら？」",
 		   NULL, " So I don't need to buy a camera, do I?\"", Line_Normal);
 	ClearMessage();
@@ -275,22 +265,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800008", 128);
 	OutputLine(NULL, "「あ、あ、うん！",
-		   NULL, "\"N-N-No!", Line_WaitForInput);
+		   NULL, "\"N-N-No!", Line_Continue);
 	OutputLine(NULL, "　僕のお古で少し挑戦してみて、馴染めそうだったら新しいカメラを買う方がいいんじゃないかな！",
-		   NULL, " Try with my old camera first, and if you enjoy it, then you can buy one for yourself.", Line_WaitForInput);
+		   NULL, " Try with my old camera first, and if you enjoy it, then you can buy one for yourself.", Line_Continue);
 	OutputLine(NULL, "　と、東京に戻ったら送るよ！」",
 		   NULL, " I'll send it to you when I get back to Tokyo!\"", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900008", 128);
 	OutputLine(NULL, "「ありがとう。",
-		   NULL, "\"Thank you.", Line_WaitForInput);
+		   NULL, "\"Thank you.", Line_Continue);
 	OutputLine(NULL, "次に来て下さる時は、ぜひ私の写真の批評をお願いするわね。」",
 		   NULL, " Then I'll have you critique my photos when you come next time.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -298,21 +284,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800009", 128);
 	OutputLine(NULL, "「う、うん…！",
-		   NULL, "\"S-Sure!", Line_WaitForInput);
+		   NULL, "\"S-Sure!", Line_Continue);
 	OutputLine(NULL, "　ははは、どんな写真か、楽しみだなぁ！」",
 		   NULL, " Hahaha, I can hardly wait to see them!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900009", 128);
 	OutputLine(NULL, "「くすくす。",
-		   NULL, "\"Hee hee.", Line_WaitForInput);
+		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "きっとジロウさんみたいにはいかないわ。",
-		   NULL, " They'd be nothing compared to yours.", Line_WaitForInput);
+		   NULL, " They'd be nothing compared to yours.", Line_Continue);
 	OutputLine(NULL, "本当に初めてですもの。」",
 		   NULL, " It'd be my very first time doing it, you know.\"", Line_Normal);
 	ClearMessage();
@@ -361,9 +344,6 @@ void main()
 		   NULL, "I shouldn't assume that she's attracted to me.", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900010", 128);
@@ -374,7 +354,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800010", 128);
 	OutputLine(NULL, "「そ、そうだね。",
-		   NULL, "\"Ah, yeah, you're right.", Line_WaitForInput);
+		   NULL, "\"Ah, yeah, you're right.", Line_Continue);
 	OutputLine(NULL, "いつも、所長とか他の研究員の人とかがいたりするからね。」",
 		   NULL, " Usually, the director or some other research staff is around.\"", Line_Normal);
 	ClearMessage();
@@ -382,9 +362,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900011", 128);
 	OutputLine(NULL, "「私、あなたのことを全然知らないの。",
-		   NULL, "\"I don't know anything about you.", Line_WaitForInput);
+		   NULL, "\"I don't know anything about you.", Line_Continue);
 	OutputLine(NULL, "あなたが東京でどんな仕事をしているかとか、今までどんなことをしてきたのかとか。",
-		   NULL, " I don't know exactly what you do in Tokyo, or what you've done in the past.", Line_WaitForInput);
+		   NULL, " I don't know exactly what you do in Tokyo, or what you've done in the past.", Line_Continue);
 	OutputLine(NULL, "自衛隊ではどんな活躍をされているのかしら…？」",
 		   NULL, " I wonder what you do in the Self Defense Force?\"", Line_Normal);
 	ClearMessage();
@@ -392,21 +372,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800011", 128);
 	OutputLine(NULL, "「あは、あはははは…。",
-		   NULL, "\"Aha, ahahahaha...", Line_WaitForInput);
+		   NULL, "\"Aha, ahahahaha...", Line_Continue);
 	OutputLine(NULL, "昔ちょっとだけ教官の真似事をしてたけどね。",
 		   NULL, " I was an instructor for a while.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/08/440800012", 128);
 	OutputLine(NULL, "怪我をした時に目をやっちゃってね。",
-		   NULL, " But I hurt my eye when I was injured.", Line_WaitForInput);
+		   NULL, " But I was injured, and hurt my eye.", Line_Continue);
 	OutputLine(NULL, "普段の生活には支障はないんだけど、大事に受け取られちゃって、それ以来は事務屋の仕事ばかりやらされてるんだよ。",
-		   NULL, " I can live life normally, but they made a big deal out of it, and ever since, all I do is desk work.", Line_WaitForInput);
+		   NULL, " I can live life normally, but they made a big deal out of it, and ever since, all I do is desk work.", Line_Continue);
 	OutputLine(NULL, "あははは…。」",
 		   NULL, " Ahahaha...\"", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんは、きっとドジを踏んで怪我をしてしまったのでしょう、みっともないとくすくす笑う。",
@@ -416,15 +393,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800013", 128);
 	OutputLine(NULL, "「それでね、隊内の広報誌を作る仕事を手伝った時に、イベントの写真撮影で初めてカメラの魅力を知ったんだよ！",
-		   NULL, "\"And when I helped PR with their magazine, I became fascinated by photography!", Line_WaitForInput);
+		   NULL, "\"And when I helped PR with their magazine, I became fascinated by photography! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800014", 128);
 	OutputLine(NULL, "　カメラには人を幸せにする力があるのさ。",
-		   NULL, " Cameras have the power to make people happy.", Line_WaitForInput);
+		   NULL, "Cameras have the power to make people happy.", Line_Continue);
 	OutputLine(NULL, "あはははは、何を言ってるんだろうって思ってるだろうけど、これは本当なのさ。",
-		   NULL, " Ahahahaha, I bet you don't know what I'm talking about, but it's true! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " Ahahahaha, I bet you don't know what I'm talking about, but it's true!", Line_Continue);
 	OutputLine(NULL, "僕はカメラに触れるようになってから、日々に幸せを感じるようになったと思ってるよ。」",
-		   NULL, "Since I started to take pictures, my life has been a lot happier.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Since I started to take pictures, my life has been a lot happier.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -436,9 +413,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800015", 128);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Well,", Line_WaitForInput);
+		   NULL, "\"Well,", Line_Continue);
 	OutputLine(NULL, "カメラというのは、日々の生活を切り取って写真にして残すものなんだ。",
-		   NULL, " a camera takes a snapshot of a moment of life.", Line_WaitForInput);
+		   NULL, " a camera takes a snapshot of a moment of life.", Line_Continue);
 	OutputLine(NULL, "残すくらいなんだから、幸せなものを写したいというのは当然だろう？",
 		   NULL, " Of course, you want to capture a moment that's filled with happiness, right?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/08/440800016", 128);
@@ -460,7 +437,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800020", 128);
 	OutputLine(NULL, "それを写真に収め、アルバムに残す。",
-		   NULL, "You capture it and put it in an album", Line_WaitForInput);
+		   NULL, "You capture it and put it in an album", Line_Continue);
 	OutputLine(NULL, "…そしてアルバムを再び開く度に、その時の幸せな気持ちが蘇ってくるんだ。」",
 		   NULL, " and every time you open the album you remember the happy feeling you had when you took the picture.\"", Line_Normal);
 	ClearMessage();
@@ -474,22 +451,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800021", 128);
 	OutputLine(NULL, "「うん。",
-		   NULL, "\"Sure.", Line_WaitForInput);
+		   NULL, "\"Sure.", Line_Continue);
 	OutputLine(NULL, "その写真が芸術的かどうかとか、賞を取れるような劇的瞬間かどうかなんていう野心的なことは、僕にとってあまり重要じゃないんだよ。",
-		   NULL, " I don't have ambitions of taking artistic photos or capturing a dramatic, prize-winning moment. That's not important to me.", Line_WaitForInput);
+		   NULL, " I don't have ambitions of taking artistic photos or capturing a dramatic, prize-winning moment. That's not important to me. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800022", 128);
 	OutputLine(NULL, "僕たちが気付かない、",
-		   NULL, " I want those moments we don't notice, ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "I want those moments we don't notice,", Line_Continue);
 	OutputLine(NULL, "小さな幸せに気付かせてくれる、そこにこそカメラの魅力があるんだと思っているんだ。",
-		   NULL, "and helping us recognize those little moments of happiness is the greatest thing about cameras to me.", Line_WaitForInput);
+		   NULL, " and helping us recognize those little moments of happiness is the greatest thing about cameras to me.", Line_WaitForInput);
 	OutputLine(NULL, "だから、そんな気持ちでこの雛見沢をファインダーで覗けることはとても楽しくて幸せなことなんだよ。」",
 		   NULL, " So I'm really glad to be able to see Hinamizawa through my viewfinder.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900014", 128);
@@ -510,7 +484,7 @@ void main()
 		   NULL, "So it's very unusual for her to listen to me like this.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Benti1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんは、ちょこんと僕の脇に座ると、…僕が手に持っているカメラをいじる仕草をする。",
@@ -536,9 +510,6 @@ void main()
 		   NULL, "\"Do you want to try?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Warai#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900015", 128);
@@ -549,30 +520,22 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/08/440800024", 128);
 	OutputLine(NULL, "「簡単だよ！",
-		   NULL, "\"It's easy!!", Line_WaitForInput);
+		   NULL, "\"It's easy!!", Line_Continue);
 	OutputLine(NULL, "　最初は、ピントの合わせ方とシャッターの押し方だけ覚えれば充分さ。",
-		   NULL, " First, you just need to learn how to focus and press the shutter.", Line_WaitForInput);
+		   NULL, " First, you just need to learn how to focus and press the shutter.", Line_Continue);
 	OutputLine(NULL, "持ってごらん？",
-		   NULL, " Why don't you hold it?", Line_WaitForInput);
+		   NULL, " Why don't you hold it?", Line_Continue);
 	OutputLine(NULL, "　あぁ、レンズには絶対に触れちゃ駄目だよ…！」",
 		   NULL, " Oh, don't ever touch the lens though.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DisableWindow();
-	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/440900016", 128);
 	OutputLine(NULL, "「ぶう。",
-		   NULL, "\"Whew,", Line_WaitForInput);
+		   NULL, "\"Whew,", Line_Continue);
 	OutputLine(NULL, "簡単じゃないじゃない。",
-		   NULL, " this isn't easy.", Line_WaitForInput);
-
-	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
-	DisplayWindow();
-
+		   NULL, " this isn't easy.", Line_Continue);
 	OutputLine(NULL, "……くすくす。」",
 		   NULL, " ...Hee hee.\"", Line_Normal);
 	ClearMessage();
@@ -590,9 +553,7 @@ void main()
 		   NULL, "But unfortunately, the rain doesn't seem to want to stop.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも彼女はとても面白がってくれて、この雨の中の小屋の中で、色々と目に留めてはフィルムに収めていた。",
@@ -615,6 +576,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

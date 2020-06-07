@@ -2,9 +2,9 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	PlayBGM( 0, "Feel", 120, 0 );
+	PlayBGM( 0, "amber", 120, 0 );
 
-	DrawScene( "Sinryo_soto1", 1000 );
+	DrawScene( "background/sinryou_soto1", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -23,7 +23,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Sinryo_sinsatu2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、色々な根回しから、村人の遺体を独占的に検死解剖することもできた。",
@@ -49,10 +49,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Sinryo_sinsatu1", "maskright", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_def+", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshot( 2, "sprite/ta2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1263", 128);
@@ -88,8 +86,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ta2_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1266", 128);
@@ -105,7 +102,7 @@ void main()
 		   NULL, "Takano-san is my assistant, who was sent from the Self-Defense Force.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Ta_Def+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshot( 0, "sprite/ta2_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -158,7 +155,7 @@ void main()
 		   NULL, "The more I think about it, the more I feel this should have been the Takano Institute rather than the Irie Institute, and she should have been the director.", Line_Normal);
 	ClearMessage();
 
-	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
+	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、そもそも、私が声を掛けられた時に説明されている。",
@@ -209,8 +206,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawBustshot( 2, "Ta_Def+", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Sinryo_sinsatu1", 400 );
+	DrawBustshot( 2, "sprite/ta2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/sinryou_sinsatu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1375", 128);
@@ -301,8 +298,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ta2_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1271", 128);
@@ -319,11 +315,7 @@ void main()
 		   NULL, " Just like you won't find a living human in a post-apocalyptic world.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1272", 128);
@@ -386,10 +378,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　かつて、私が人類の幸福のためにと、精神外科の道を突き進んでいたことを思い出す。",
-		   NULL, "Thre was a time when I was studying lobotomies for the betterment of mankind.", Line_Normal);
+		   NULL, "There was a time when I was studying lobotomies for the betterment of mankind.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……過ちだったとは思わない。",
@@ -418,11 +410,7 @@ void main()
 		   NULL, " I have to accept it.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は遠い目をしながら、そんな過去のことを思い返していると、",
@@ -434,8 +422,8 @@ void main()
 		   NULL, " I heard a voice.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Ta_Warai+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Sinryo_sinsatu1", 400 );
+	DrawBustshot( 0, "sprite/ta2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/sinryou_sinsatu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは鷹野さんの声。",
@@ -458,9 +446,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
-	DisplayWindow();
-
+	ChangeBustshot( 0, "sprite/ta2_akuwarai_2", 200, TRUE );
 	PlayBGM( 0, "B10_Giwaku2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -497,10 +483,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ta2_warai_2", 200, TRUE );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1276", 128);
@@ -563,8 +548,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Akuwarai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ta2_akuwarai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1283", 128);
@@ -586,12 +570,11 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1392b", 128);
-	OutputLine(NULL, "「は、……はははははは…。」",
-		   NULL, "\"Ha... hahahahahaha...\"", Line_Normal);
+	OutputLine(NULL, "「わ、…わかりました…」",
+		   NULL, "\"U-Understood...\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野三四さんが、私の実質的パートナーであることは疑わない。",
@@ -673,7 +656,7 @@ void main()
 		   NULL, "However, when I look at her, I start to feel unease.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ke6", 400 );
+	DrawScene( "background/ke5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんが、所長席の内線電話で小此木さんに連絡をしている。",
@@ -715,6 +698,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

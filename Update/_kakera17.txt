@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "Sora", 1000 );
+	DrawScene( "background/sora", 1000 );
 
 	PlayBGM( 0, "er_Ver3", 120, 0 );
 
@@ -63,7 +63,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
 	OutputLine(NULL, "　だから、借りた一冊を一日で斜め読みし、翌日に両親がそれを「以前に借りた本と重複してしまったので、本を変更したい」なんて言って、タダで二冊目を借りて来てもらったりしたっけ。",
 		   NULL, "So I would speed-read one book in a day and the next day, my parents would go back to the store to exchange it for a different book, saying they accidentally borrowed a book they already borrowed before. By doing so, my parents borrowed two books for the price of one.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -76,7 +76,7 @@ void main()
 		   NULL, "Of course, now I know those books were rather useless, but they were highly motivational just the same.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Juku1", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/juku1_01", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　近所ではお医者の京介くんと呼ばれたし、クラスでも必ず保険委員に推薦された。",
@@ -129,7 +129,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	DrawScene( "Sora4", 1000 );
+	DrawScene( "background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…懸命に勉強した。",
@@ -236,7 +236,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Ke6", 1000 );
+	DrawScene( "background/ke5", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それからは永く険しい勉強の日々だった。",
@@ -266,13 +266,9 @@ void main()
 		   NULL, "I never even dreamed of getting involved with brains.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	PlayBGM( 0, "higurashi", 120, 0 );
+	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ある日、私をいつも励ましてくれる田舎からの手紙の雰囲気が、少し変わった。",
@@ -367,13 +363,9 @@ void main()
 		   NULL, "But the situation was a lot more serious than I thought.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
-	DrawSceneWithMask( "Si_G2", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/si_mansion", "maskup", 1, 0, 1300 );
 
 	PlayBGM( 0, "Gray_2", 120, 0 );
 
@@ -439,7 +431,7 @@ void main()
 		   NULL, "...I asked her if she could talk to him one more time, but the bruises on her body told me it was no use.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 400 );
+	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後のことは、……思い出すのも辛いから掻い摘む。",
@@ -473,7 +465,6 @@ void main()
 		   NULL, " At the end, he picked a fight with some young punks and ended up being beaten to death.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…葬儀の喪主は親類が務めてくれたが、母は参列しなかった。",
@@ -548,7 +539,7 @@ void main()
 		   NULL, "I sensed the connection between the accident and my father's changes, so I talked to my professor after I went back to Tokyo.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta2_Tokyo", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/xta2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>教授</color>", NULL, "<color=#f5e6d3>Professor</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_prof1001", 128);
@@ -670,7 +661,7 @@ void main()
 		   NULL, "......That was my mother.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sinryo_sinsatu4", 400 );
+	DrawScene( "background/sinryou_sinsatu4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母は老衰が進むと、心も少し狭くなり、",
@@ -754,13 +745,8 @@ void main()
 		   NULL, "But her final words were \"please don't bury me next to that man\".", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora4", 1000 );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………父に罪は無かった。",
@@ -865,6 +851,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

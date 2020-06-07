@@ -6,7 +6,7 @@ void main()
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora5", "maskup", 1, 0, 300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -35,7 +35,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Mo1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、裏山は未開の山なので、うっかりすれば迷い込んでしまいかねない危険な場所だ。",
@@ -60,7 +60,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Mo2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/mo2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1139", 128);
@@ -104,8 +104,9 @@ void main()
 		   NULL, "...Considering that, I should have noticed the traps on the mountain before one got me.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	ChangeScene( "black", 6, 100 );
+	DrawScene( "black", 50 );
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -125,7 +126,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 100 );
+	Wait( 150 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -151,8 +152,8 @@ void main()
 		   NULL, "If I wasn't so lucky, I'm sure the ball would have hit my head.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Sa_Akuwaraib1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Mo3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "sprite/sa2b_akuwarai_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/mo3", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1002", 128);
@@ -176,21 +177,21 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sa_YareyareB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sa2b_yareyare_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1005", 128);
 	OutputLine(NULL, "「この先は危険だから入ってはいけないって、営林署の看板がちゃんとあったはずでございましてよ？",
-		   NULL, "\"Did you not see the sign put up by the forestry service? It clearly states it's dangerous to come into these woods.", Line_WaitForInput);
+		   NULL, "\"Did you not see the sign put up by the forestry service? It clearly states it's dangerous to come into these woods.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sa_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sa2a_warai_a1_0", 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1006", 128);
 	OutputLine(NULL, "　それを無視する方には素敵なトラップの大歓迎がお待ちしておりましてよ？",
-		   NULL, " My wonderful traps will welcome anyone who ignores that warning.", Line_WaitForInput);
+		   NULL, "My wonderful traps will welcome anyone who ignores that warning.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1007", 128);
 	OutputLine(NULL, "　をっほっほっほ！」",
 		   NULL, " Oh ho ho ho!!\"", GetGlobalFlag(GLinemodeSp));
@@ -213,8 +214,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sa_AkireruB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sa2b_akireru_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1008", 128);
@@ -228,11 +228,7 @@ void main()
 		   NULL, " If you want to, you can go with them, Nii-nii.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1146", 128);
@@ -241,11 +237,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sa_MuhyouA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sa2a_muhyou_a1_0", 200, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………",
 		   NULL, "\".........", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -256,7 +251,7 @@ void main()
 		   NULL, " He threw an ashtray at me.\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "Cradle_song", 120, 0 );
+	PlayBGM( 0, "bellflower", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1147", 128);
@@ -268,7 +263,7 @@ void main()
 		   NULL, " Our current one hasn't done that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…私をベランダに追い出して鍵をしましたわ。",
 		   NULL, "\"He locked me out on the veranda.", Line_WaitForInput);
 	OutputLine(NULL, "お昼ご飯を抜きにされましたわ。",
@@ -393,8 +388,8 @@ void main()
 		   NULL, " if we continue to communicate, even in a small way... we may be able to become a real family someday.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Sa_MuhyouA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Mo4", "maskup", 1, 0, 300 );
+	DrawBustshot( 0, "sprite/sa2a_muhyou_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/mo4", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1150", 128);
@@ -409,8 +404,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_MuhyouB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2b_muhyou_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1015", 128);
@@ -431,8 +425,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_HannbesoA3#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2a_hannbeso_a3_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1016", 128);
@@ -467,8 +460,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_OdorokiB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2b_odoroki_b1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1018", 128);
@@ -517,20 +509,16 @@ void main()
 	OutputLine(NULL, "……………それに、",
 		   NULL, " ......Besides,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………沙都子に案内してもらわないと僕、",
 		   NULL, " without your help, ", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…家に帰れない。」",
 		   NULL, "I can't find my way down the mountain.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_AkireruB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2b_akireru_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1020", 128);
@@ -538,15 +526,16 @@ void main()
 		   NULL, "\"...Nii-nii...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1021", 128);
 	OutputLine(NULL, "あれだけ何度も一緒に連れてってあげましたのに、まぁだここが覚えられませんの？",
-		   NULL, " I've brought you here so many times already, and yet you still haven't learned?", Line_WaitForInput);
+		   NULL, " I've brought you here so many times already, and yet you still haven't learned?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_HauA2#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2a_hau_a2_2", 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk1_satoko1022", 128);
 	OutputLine(NULL, "　まったく、しょうがないにーにーですわねぇ？」",
-		   NULL, " What am I going to do with you, Nii-nii?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "What am I going to do with you, Nii-nii?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -575,7 +564,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Sora6", 1000 );
+	DrawScene( "background/sora6", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1163", 128);
@@ -590,6 +579,8 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora", "maskm1", 1, 0, 300 );
 
 	PlayBGM( 0, "er_Ver3", 120, 0 );
 
@@ -40,21 +40,22 @@ void main()
 		   NULL, "We're having Salisbury steak.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Sa_WaraiB1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "M_Hi4", 400 );
+	DrawBustshot( 0, "sprite/sa2b_warai_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/m_hi4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2001", 128);
 	OutputLine(NULL, "「あら、ハンバーグとは羨ましいですわね…！",
-		   NULL, "\"My, that sounds so very good!", Line_WaitForInput);
+		   NULL, "\"My, that sounds so very good!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_AkireruA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2a_akireru_a1_0", 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2002", 128);
 	OutputLine(NULL, "　私、魚はともかく、煮物というのがちょっと怖いんですのよ？",
-		   NULL, " I don't mind the grilled fish, but it's the vegetables I'm less fond of.", Line_WaitForInput);
+		   NULL, "I don't mind the grilled fish, but it's the vegetables I'm less fond of.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2003", 128);
 	OutputLine(NULL, "　先日買ったカボチャがまだ、だいぶ残ってるみたいなんですもの。」",
 		   NULL, " I'm certain there's still plenty of pumpkin left from the other day.\"", GetGlobalFlag(GLinemodeSp));
@@ -70,8 +71,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_YareyareB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2b_yareyare_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2004", 128);
@@ -92,8 +92,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_OdorokiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2a_odoroki_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2006", 128);
@@ -120,8 +119,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_AkireruA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sa2a_akireru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2008", 128);
@@ -145,7 +143,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Sora2", 400 );
+	DrawScene( "background/sora2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スーパーの近くは他にもお惣菜屋さんとかが並び、雛見沢のちょっとした商店街になっていた。",
@@ -405,7 +403,7 @@ void main()
 		   NULL, "...But that only played right into the village's evil plan.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　町会を敵に回すというのは、陰湿ないじめが行なわれることを意味する。",
@@ -446,7 +444,7 @@ void main()
 		   NULL, "Furthermore, all the bags were torn.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、北条家のすぐ近くにある垣根道に看板が立った。",
@@ -529,7 +527,7 @@ void main()
 		   NULL, " ...As her best friend, it's very sad for me.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta2_Mura", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ta3_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こうして見てみれば、沙都子の買い物はボクの和気藹々としたものとは全然違う。",
@@ -574,8 +572,8 @@ void main()
 		   NULL, "It was far too painful for her to endure...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "white", 0 );
-	DrawScene( "black", 10 );
+	DrawScene( "white", 50 );
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、沙都子が小銭を地面にばらまいてしまった。",
@@ -655,9 +653,6 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "だ、",
 		   NULL, " I'm", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "大丈夫ですわよ梨花…。」",
 		   NULL, " okay, Rika...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -702,10 +697,8 @@ void main()
 		   NULL, " ...I'd rather spit at them than do that.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ta2_Mura", "maskup", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Sa_MuhyouA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshot(0, "sprite/sunset/sa2a_muhyou_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ta3_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2010", 128);
@@ -754,8 +747,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sa_HannbesoB1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sunset/sa2b_hannbeso_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2013", 128);
@@ -772,7 +764,7 @@ void main()
 
 	PlayBGM( 1, "higurashi", 120, 0 );
 
-	DrawSceneWithMask( "M_Hi9", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_hi4_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…悔しい、",
@@ -830,8 +822,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sa_OdorokiA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/sunset/sa2a_odoroki_a1_2", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2014", 128);
@@ -863,9 +854,8 @@ void main()
 		   NULL, "But... Satoko refused to take it.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 200 );
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	DrawScene( "black", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/04/vtk2_satoko2015", 128);
@@ -905,7 +895,7 @@ void main()
 		   NULL, "...Satoko turned her back on me and kept walking...", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora2", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora2", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　別れの挨拶すらなく、……沙都子は買い物袋を持ってとぼとぼと去っていく。",
@@ -939,6 +929,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }
