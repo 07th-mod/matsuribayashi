@@ -2,9 +2,9 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "54", 1000 );
+	DrawScene( "text/54", 1000 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
@@ -17,7 +17,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -25,7 +25,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -41,7 +41,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -49,7 +49,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -60,7 +60,7 @@ void main()
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_chisibuki", 128, 64 );
-	DrawScene( "Toketu1c", 0 );
+	DrawScene( "toketu1c", 100 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -104,8 +104,9 @@ void main()
 		   NULL, " He's dead already.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_Down", 100, 64 );
-	DrawScene( "Moon", 0 );
+	DisableWindow();
+	PlaySE( 0, "wa_003", 100, 64 );
+	DrawScene( "background/moon", 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　がらん。",
@@ -141,12 +142,12 @@ void main()
 	OutputLine(NULL, "「…監督ぅ……、",
 		   NULL, "\"...Manager...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 2600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……監督ぅ……、",
 		   NULL, " ...Manager...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 2700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "うううぅ…！」",
 		   NULL, " oooh...!\"", GetGlobalFlag(GLinemodeSp));
@@ -209,9 +210,9 @@ void main()
 		   NULL, " And the others went along.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "kaze", 120, 0 );
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　辛いばかりの工事で面白いことなど何もない。",
@@ -249,7 +250,7 @@ void main()
 		   NULL, "So he was under just as much pressure... or maybe even more.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、…それでも常軌を逸していた。",
@@ -366,20 +367,20 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……縦に振り下ろされるシャベルを腕で防げるわけがない。",
-		   NULL, "...But there was no way that could have blocked a shovel swung with such force.", Line_WaitForInput);
+		   NULL, "...But there was no way that could have blocked a shovel swung with such force.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	PlaySE( 0, "s_chisibuki", 128, 64 );
-	DrawScene( "Ryuuketu1", 0 );
+	DrawScene( "background/ryuuketu1", 100 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "鮮血がほとばしり、苦痛のうめき声が漏れ出した。",
-		   NULL, " Blood spurted out, and the man groaned in pain.", Line_Normal);
+		   NULL, "Blood spurted out, and the man groaned in pain.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 3, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "B08_Izyou", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -391,7 +392,7 @@ void main()
 		   NULL, " This manager would try to bash in their brains without hesitation.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　シャベルを持つ相手に対抗するには、…いや、シャベルの攻撃を防ぐにはこちらも何か持たなくてはならない。",
@@ -417,7 +418,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "ryuuketu1", 400 );
+	DrawScene( "background/ryuuketu1", 400 );
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
@@ -511,31 +512,33 @@ void main()
 	OutputLine(NULL, "　俺たちゃな、もう殺人犯なんだよ！！",
 		   NULL, " We're all murderers now!!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1018", 128);
-	OutputLine(NULL, "　覚悟を決めるんだよ！",
-		   NULL, " Buck up!", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　覚悟を決めるんだよ！」",
+		   NULL, " Buck up!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyouc1004", 128);
-	OutputLine(NULL, "　まさかおめぇら、自首して懲役食らいてぇなんて思ってんじゃねぇだろな？！",
-		   NULL, "You ain't thinking about turning yourself in and doing time, are you?!", Line_WaitForInput);
+	OutputLine(NULL, "「まさかおめぇら、自首して懲役食らいてぇなんて思ってんじゃねぇだろな？！",
+		   NULL, "\"You ain't thinking about turning yourself in and doing time, are you?!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyouc1005", 128);
 	OutputLine(NULL, "　冗談じゃねぇよ！！",
 		   NULL, " Fuck you!!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyouc1006", 128);
-	OutputLine(NULL, "　ムショなんかこの年で行ってられっかよ！！",
-		   NULL, " I can't go to the slammer at my age!!", Line_WaitForInput);
+	OutputLine(NULL, "　ムショなんかこの年で行ってられっかよ！！」",
+		   NULL, " I can't go to the slammer at my age!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1019", 128);
-	OutputLine(NULL, "　隠すんだよ！",
-		   NULL, " We're hiding it!", Line_WaitForInput);
+	OutputLine(NULL, "「隠すんだよ！",
+		   NULL, "\"We're hiding it!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1020", 128);
 	OutputLine(NULL, "　こいつの死体を隠してスッとぼけるしかねぇんだッ！！」",
 		   NULL, " We're hiding this corpse and pretending nothing happened!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
-
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 400, FALSE );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……その男が、実は過去に暴行事件で執行猶予判決を受けていることを、何人かは知っていた。",
@@ -583,7 +586,7 @@ void main()
 		   NULL, "If even one of them turned himself in out of guilt, he'd be in big trouble...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Y_Damu2", 400 );
+	DrawScene( "background/y_damu2", 400 );
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
@@ -592,13 +595,10 @@ void main()
 	OutputLine(NULL, "「で、……でも、",
 		   NULL, "\"B... But...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…死体なんか隠したって、",
 		   NULL, " even if we hide the body...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…バレるよ、いずれ…。」",
 		   NULL, " they'll find out sooner or later...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -607,10 +607,6 @@ void main()
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoub1004", 128);
 	OutputLine(NULL, "「それより…、正当防衛ってことでちゃんと主張して…、",
 		   NULL, "\"Instead... we should plead justifiable self-defense", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "その、過剰防衛くらいで勘弁してもらぇねぇかな……。」",
 		   NULL, " and they might end up pardoning us...\"", Line_Normal);
 	ClearMessage();
@@ -652,9 +648,9 @@ void main()
 		   NULL, " ...The leader had such an evil look in his eyes.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1026", 128);
@@ -749,14 +745,12 @@ void main()
 		   NULL, "he'd probably smash their head in with it.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
 	DrawScene( "black", 400 );
 
-	PlayBGM( 0, "B08_Izyou", 120, 0 );
+	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1034", 128);
@@ -782,7 +776,7 @@ void main()
 		   NULL, "\"Wh...... What is it?\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1039", 128);
@@ -819,7 +813,7 @@ void main()
 		   NULL, "So no one said anything.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Laborer</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「全員でバラすんだ。",
 		   NULL, "\"We'll all cut him up together.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_sagyoua1043", 128);
@@ -866,6 +860,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

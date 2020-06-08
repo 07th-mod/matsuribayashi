@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawSceneWithMask( "Sinryo_sinsatu3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu3", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "Nazo", 120, 0 );
 
@@ -81,7 +81,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢症候群の錯乱誘導を抑えつつ、錯乱直前までに凝り固まった心の疑心暗鬼を少しずつ解きほぐしていく…。",
-		   NULL, "We have to slowly unravel her mind's solidified paranoia while also supressing the syndrome's induction of derangement.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "We have to slowly unravel her mind's solidified paranoia while also suppressing the syndrome's induction of derangement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -109,17 +109,13 @@ void main()
 		   NULL, "We were going to begin the experiment once she regains her emotional stability and physical strength, but...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	DrawScene( "Sinryo_soto1", 1000 );
+	DrawScene( "background/sinryou_soto1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな中、そんな彼女の心の安定を乱そうという輩が、連日のように私のところへ押し掛けていた。",
@@ -143,7 +139,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Sinryo_matiai1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_matiai1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1116", 128);
@@ -158,8 +154,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi4", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/oisi1_4_1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1001", 128);
@@ -184,8 +179,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1005", 128);
@@ -206,8 +200,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_2_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1007", 128);
@@ -234,14 +227,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -285,18 +273,14 @@ void main()
 		   NULL, "\"Where is the lie, exactly?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1124", 128);
 	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、",
-		   NULL, " You aren't saying Satoko-chan wasn't really asleep and she went over to the viewing platform with her parents,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " You aren't saying Satoko-chan wasn't really asleep and she went over to the viewing platform with her parents,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1083", 128);
 	OutputLine(NULL, "そういう意味ですか？」",
 		   NULL, " are you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1015", 128);
@@ -329,14 +313,13 @@ void main()
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1125", 128);
 	OutputLine(NULL, "「な、何を根拠にそう仰られているのかわかりません。",
 		   NULL, "\"Why are you saying such a thing?", Line_WaitForInput);
-
+	PlayVoice(4, "ps3/s20/10/vtk1_irie1126", 128);
 	OutputLine(NULL, "それに、なぜ沙都子ちゃんに嘘をつく必要があるのです？」",
 		   NULL, " Besides, why would Satoko-chan lie?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1018", 128);
@@ -348,10 +331,6 @@ void main()
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1020", 128);
 	OutputLine(NULL, "それの本当のところを教えていただけないと、",
 		   NULL, " That's why I need to talk to her.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-
 	OutputLine(NULL, "…こいつぁただの転落事故ってことでは済ませられないんです。」",
 		   NULL, " ...Otherwise, this won't end as just a simple accident.\"", Line_Normal);
 	ClearMessage();
@@ -363,8 +342,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_2_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1021", 128);
@@ -382,8 +360,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1023", 128);
@@ -450,11 +427,7 @@ void main()
 		   NULL, "That's why I think it's worth taking that time to talk to her.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 400, FALSE );
 
 	DrawScene( "black", 400 );
 
@@ -483,7 +456,7 @@ void main()
 		   NULL, "Satoko-chan had already gone terminal, and just before the accident, her heart was filled with paranoia that drove her mad.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 1000 );
+	DrawScene( "background/aka2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女は血のつながらない義父と不仲で、相当のストレスを持っていたという。",
@@ -503,7 +476,7 @@ void main()
 		   NULL, "...If that made her paranoid, made her think her parents considered her to be a bother and were going to kill her...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、彼女は展望台に連れて行ってもらった時、自分を事故に見せかけて突き落とすに違いないと思ったのだ。",
@@ -563,7 +536,7 @@ void main()
 		   NULL, "He told me even though Satoko-chan refused to open up to her stepfather, he had tried to communicate with her.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho1_Houjouke", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/ho1", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　確かに最初はうまく行かない関係だったという。",
@@ -580,7 +553,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この段階で児童相談所から指導を受け、義父と娘の交流不足が問題であるとの指摘を受けたという。",
-		   NULL, "At that point, they recieved guidance from the child consultation center, and they pointed out that the problem lay in lack of communication between daughter and stepfather.", Line_Normal);
+		   NULL, "At that point, they received guidance from the child consultation center, and they pointed out that the problem lay in lack of communication between daughter and stepfather.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -596,7 +569,7 @@ void main()
 		   NULL, "Satoshi-kun noticed his efforts, so he tried to talk to Satoko-chan about it.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なのに、沙都子ちゃんはそんな努力に気付くことはできなかった。",
@@ -646,7 +619,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "white", 400 );
-	DrawScene( "black", 0 );
+	DrawScene( "black", 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………なんて悲しすぎるすれ違いだろう……。",
@@ -729,7 +702,7 @@ void main()
 		   NULL, "And no one has that understanding. Except for me, because I know about Hinamizawa Syndrome.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sinryo_sinsatu1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は、入江機関の長だが、そう振舞ったり、権限を行使したりすることはこれまでにない。",
@@ -764,8 +737,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ta_Def+", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/ta2_def_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1098", 128);
@@ -812,7 +784,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Sinryo_sinsatu4", 400 );
+	DrawScene( "background/sinryou_sinsatu4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事故ということで、確定。",
@@ -834,7 +806,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そして、起こってしまった悲しい悲劇も。",
-		   NULL, "Nor can it erase the tragedy that already taken place.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nor can it erase the tragedy that had already taken place.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -851,6 +823,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

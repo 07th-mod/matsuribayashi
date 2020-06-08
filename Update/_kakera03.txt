@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawSceneWithMask( "Sinryo_sinsatu2", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu2", "maskc", 1, 0, 1300 );
 
 	PlayBGM( 0, "B10_Giwaku2", 120, 0 );
 
@@ -164,7 +164,7 @@ void main()
 		   NULL, "...Since the day I realized that, I've been pretending to take the medicine, but throwing it away instead.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -279,7 +279,7 @@ void main()
 		   NULL, "That overflowing animosity is aimed not only my mother, but also the man she had an affair with.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……浮気相手の男。",
@@ -428,7 +428,7 @@ void main()
 		   NULL, "If I had a strong enough will to protect my happiness, I could have noticed that.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 1000 );
+	DrawScene( "background/aka2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの日のお父さんを忘れられない。",
@@ -474,9 +474,9 @@ void main()
 		   NULL, "how stupid I was for being taken in by him.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうだそうさ…、私のせいなのだ。",
@@ -530,7 +530,7 @@ void main()
 		   NULL, "If my mother ever came back to this house, I would rip her apart with my hands!!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも母が再び戻ってくることはなかった。",
@@ -576,7 +576,7 @@ void main()
 		   NULL, " ...So my nails aim at my own body.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、今や私の体自身がもっとも呪わしくて穢らわしかった。",
@@ -661,7 +661,7 @@ void main()
 		   NULL, "The blood flowed out.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤黒い気持ちの悪いウジ虫が溢れ出てきた。",
@@ -811,14 +811,12 @@ void main()
 		   NULL, "...I want to find something that lets me forgive myself.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 0, "Soul_scour", 120, 0 );
+	FadeOutBGM( 0, 3000, FALSE );
+	FadeOutBGM( 1, 3000, FALSE );
+	FadeOutBGM( 3, 3000, FALSE );
 
 	DrawSceneWithMask( "white", "maskm1", 1, 0, 3000 );
+	PlayBGM( 0, "Soul_scour", 120, 0 );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -939,7 +937,7 @@ void main()
 		   NULL, "She apologized everytime I wanted to blame myself, constantly, constantly whispering that it wasn't my fault.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sinryo_sinsatu2", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu2", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまは、居る。",
@@ -1186,9 +1184,10 @@ void main()
 	OutputLine(NULL, "　お父さんには聞こえないの？見えないの？",
 		   NULL, "Can't you hear, Father? Don't you see?", Line_WaitForInput);
 	OutputLine(NULL, "　今もそこで謝ってるよ謝ってる、ごめんなさいごめんなさい！！",
-		   NULL, " Oyashiro-sama's right there apologizing, saying \"I'm sorry, I'm sorry, I'm sorry!!\"", Line_WaitForInput);
+		   NULL, " Oyashiro-sama's right there apologizing, saying \"I'm sorry, I'm sorry, I'm sorry!!\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私も謝る、",
-		   NULL, " I'm sorry too,", Line_ContinueAfterTyping);
+		   NULL, "I'm sorry too,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -1235,9 +1234,8 @@ void main()
 		   NULL, " It hurts, it hurts it hurts it hurts!!!", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 2, 0x99, 0x99, 0x99, 256, 0, 1000, TRUE );
-
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
+	DrawScene( "background/greyscale/sinryou_sinsatu2", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………世界が灰色に落ち込んでいく。",
@@ -1262,19 +1260,13 @@ void main()
 		   NULL, "Again, I'm given the capsule, and even my memory from a minute ago is gone.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
 	DrawScene( "black", 3000 );
+	FadeOutBGM( 0, 3000, FALSE );
+	FadeOutBGM( 1, 3000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-
-	FadeFilm( 0, TRUE );
-	DrawScene( "Si_H2", 400 );
+	DrawScene( "background/si_h6", 400 );
 
 	PlayBGM( 1, "higurashi", 120, 0 );
 
@@ -1380,6 +1372,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "Ryou1", 400 );
+	DrawScene( "background/tk_ryou1", 400 );
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
@@ -61,7 +61,6 @@ void main()
 		   NULL, " Thank you for taking time to meet with me today. I truly appreciate it.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1008", 128);
@@ -151,7 +150,6 @@ void main()
 		   NULL, "I'm on my own from this point on, and I will open up a path.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、今日とて私の独り舞台ではない。",
@@ -242,17 +240,13 @@ void main()
 		   NULL, " ...I have to be patient right now.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
 
 	DrawScene( "black", 1000 );
 
 	PlayBGM( 0, "Nazo", 120, 0 );
 
-	DrawSceneWithMask( "Heya6", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/heya6", "maskup", 1, 0, 1300 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
@@ -263,12 +257,14 @@ void main()
 	OutputLine(NULL, "正直ねぇ、これまでのアルファベットはあまりよくないと思うのです。",
 		   NULL, " To be frank, I thought the Alphabet Project we've seen wasn't that good.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1015", 128);
-	OutputLine(NULL, "結局こいつは、未だ頭ん中が大東亜戦争な年寄りどものね、お砂場みたいなもんだったんですな。",
-		   NULL, " In the end, it's been nothing but a sandbox for the old men with their heads still stuck in the Pacific War. ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "結局こいつは、未だ頭ん中が大東亜戦争な年寄りどものね、お砂場みたいなもんだったんですな。」",
+		   NULL, " In the end, it's been nothing but a sandbox for the old men with their heads still stuck in the Pacific War.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_daigib1001", 128);
-	OutputLine(NULL, "年寄りどもが自分のじゃないカネで、大日本帝国復興の夢を描くお砂場です。",
-		   NULL, " Nothing but a sandbox for those old men to craft their dreams of Imperial Japan's revival with money that isn't theirs.", Line_WaitForInput);
+	OutputLine(NULL, "「年寄りどもが自分のじゃないカネで、大日本帝国復興の夢を描くお砂場です。",
+		   NULL, "\"Nothing but a sandbox for those old men to craft their dreams of Imperial Japan's revival with money that isn't theirs.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_daigib1002", 128);
 	OutputLine(NULL, "そんな年寄りどもの妄想のために、一体どれだけの公金が垂れ流されたやら！」",
 		   NULL, " Do you know how much public funding was wasted on those delusions?\"", Line_Normal);
@@ -356,22 +352,26 @@ void main()
 	OutputLine(NULL, "入江機関さんは旧理事会でも評判が悪かったみたいですなぁ。",
 		   NULL, " The Irie Institute had a bad reputation even among the old board of directors.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_daigic1005", 128);
-	OutputLine(NULL, "何しろ莫大な予算をほとんど無審査で吸い取ってましたからねぇ。",
-		   NULL, " After all, it sucked up huge funds with barely any inspections. ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "何しろ莫大な予算をほとんど無審査で吸い取ってましたからねぇ。」",
+		   NULL, " After all, it sucked up huge funds with barely any inspections.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1022", 128);
-	OutputLine(NULL, "某大先生がどういうわけかこのプロジェクトをやたら後押しされてたみたいでしてね。",
-		   NULL, "I don't know why, but someone high up kept pushing for it for some reason.", Line_WaitForInput);
+	OutputLine(NULL, "「某大先生がどういうわけかこのプロジェクトをやたら後押しされてたみたいでしてね。",
+		   NULL, "\"I don't know why, but someone high up kept pushing for it for some reason.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1023", 128);
-	OutputLine(NULL, "その絡みもあって、結局、誰も文句が言えず放置されてきたってのが実際のようです。",
-		   NULL, " Because of that, nobody could really say anything about it and it was left alone.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_daigib1006", 128);
-	OutputLine(NULL, "……まぁでもなぁ！",
-		   NULL, " But you know, ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "その絡みもあって、結局、誰も文句が言えず放置されてきたってのが実際のようです。」",
+		   NULL, " Because of that, nobody could really say anything about it and it was left alone.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s20/00/vtk1_daigib1006", 128);
+	OutputLine(NULL, "「……まぁでもなぁ！",
+		   NULL, "\"But you know,", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_daigib1007", 128);
 	OutputLine(NULL, "　某大先生は女癖が悪かったから、それもあったのかもしれませんなぁ、わっははははははは！」",
-		   NULL, "that guy loved to flirt around with women, so maybe that had something to do with it, wahahahahhahahaha!!\"", Line_Normal);
+		   NULL, " that guy loved to flirt around with women, so maybe that had something to do with it, wahahahahhahahaha!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -394,7 +394,7 @@ void main()
 		   NULL, " I can't let myself be bothered by something like this.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1056", 128);
@@ -449,17 +449,11 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 2000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawSceneWithMask( "Ryou2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_ryou1", "maskleft", 1, 0, 300 );
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
@@ -518,15 +512,8 @@ void main()
 		   NULL, " ...I shouldn't have done it, but I tried to listen in through the sliding door.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1029", 128);
@@ -552,9 +539,6 @@ void main()
 	PlayVoice(4, "ps3/s20/00/vtk1_daigib1009", 128);
 	OutputLine(NULL, "「小泉先生には、××製薬の初代顧問に就任された時に一度お会いし、とても聡明な方だなぁという印象を強く持っていたのですが、",
 		   NULL, "\"I met him once before, when he became founding director of XX Pharmaceuticals. He seemed like a very intelligent person to me...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ん〜。」",
 		   NULL, " Hmmm...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -662,9 +646,6 @@ void main()
 	PlayVoice(4, "ps3/s20/00/vtk1_daigib1016", 128);
 	OutputLine(NULL, "雛見沢症候群という病気の存在自体は疑わないが、",
 		   NULL, " I don't doubt the existence of the syndrome,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……この、高野という第一発見者は、少々この病気を脚色し過ぎですな！」",
 		   NULL, " but Dr. Takano, who discovered the disease, is exaggerating more than a little!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -681,15 +662,15 @@ void main()
 		   NULL, " It's just too much.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「宗教もそれで説明できるなら、お釈迦様もキリストもみんなその、何でしたっけ、女王感染者ということになってしまう。",
 		   NULL, "\"If we tried to explain religions with this, then Buddha, Christ, all those people would be--what was it again? 'Queen carriers'? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そんなこと世界に発表したら、世界中からとんでもないバッシングに曝される。」",
 		   NULL, "If we tried exposing something like this, we'd be attacked by every nation on the planet!!\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「今時の宗教は怖いですからなぁ。",
 		   NULL, "\"Religion is pretty scary nowadays...", Line_WaitForInput);
 	OutputLine(NULL, "わっはっはっは。」",
@@ -756,8 +737,7 @@ void main()
 		   NULL, "The room is filled with the smell of dust mixed with the smell of some evaporated medicine, but it's very soothing to me just the same.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 10, "Waku_w", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ta1_Tokyo", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/flashback/xta1", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこには、…………本当に懐かしい祖父の姿が。",
@@ -817,8 +797,7 @@ void main()
 		   NULL, "I can only blankly peek through the sliding door at this strange world where reality and illusion overlap.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 10, "Waku_w", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Ta2_Tokyo", 1000 );
+	DrawScene( "background/flashback/xta2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Congressman</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_daigia1036", 128);
@@ -939,11 +918,7 @@ void main()
 		   NULL, " I need to use the bathroom.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "suzu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -988,13 +963,7 @@ void main()
 		   NULL, "...Yet, it seemed distorted to me. I could see the walls of my grandfather's study crumpling and twisting behind him.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	FadeSprite( 1, 0, TRUE );
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	PlayBGM( 0, "Typewriter", 120, 0 );
@@ -1070,7 +1039,7 @@ void main()
 	OutputLine(NULL, "「踏まないでぇ……、",
 		   NULL, "\"Don't step on them...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "踏まないでぇえぇ……。",
 		   NULL, " don't step on them...", Line_WaitForInput);
@@ -1083,7 +1052,7 @@ void main()
 	OutputLine(NULL, "ふ、",
 		   NULL, " don't", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…踏まないでぇえぇぇぇ…ぇ………。」",
 		   NULL, " ...don't step on them...\"", GetGlobalFlag(GLinemodeSp));
@@ -1099,10 +1068,12 @@ void main()
 		   NULL, " Just like it did back then...", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 }

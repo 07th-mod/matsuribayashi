@@ -55,11 +55,11 @@ void main()
 		   NULL, "At first, however, it looked so natural that I didn't think anything of it.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "JE3", 400 );
+	DrawScene( "background/je2", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -167,7 +167,7 @@ void main()
 		   NULL, " Dr. Irieee!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1237", 128);
@@ -257,10 +257,9 @@ void main()
 		   NULL, " ...Hee hee.\"", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "black", 400 );
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうして、神主と奥さんは入江先生たちと一緒に診療所へ向っていった。",
@@ -292,7 +291,7 @@ void main()
 		   NULL, " I headed to the Irie Clinic just in case.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Kuruma5", 400 );
+	DrawScene( "background/kuruma5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -338,7 +337,7 @@ void main()
 		   NULL, "Because between the time the priest left the festival and the time I arrived at the clinic, during those twenty minutes, this year's curse had taken place.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 7, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神主は、診療所に運び込まれた直後に容態が急変。",
@@ -415,7 +414,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "Y_Oni1", 1000 );
+	DrawScene( "background/y_oni1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……鬼ヶ淵の沼のほとりで、揃えた草履と遺書が見付かった。",
@@ -441,7 +440,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　過去の２つの怪死事件は、警察の上層部が押し付けがましく言うように、個別の事件ですでに解決しているようにも見える。",
@@ -553,11 +552,7 @@ void main()
 		   NULL, "...Is someone committing these murders as a ritual to restore that god's dignity?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その黒幕は、",
@@ -569,7 +564,7 @@ void main()
 		   NULL, " must be the Sonozaki family.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Heya1", 1000 );
+	DrawScene( "background/heya1_04", 1000 );
 
 	PlayBGM( 1, "higurashi", 120, 0 );
 
@@ -613,6 +608,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

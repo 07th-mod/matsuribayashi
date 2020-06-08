@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 0, "B10_Giwaku2", 120, 0 );
 
-	DrawSceneWithMask( "File", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskc", 1, 0, 300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -167,7 +167,7 @@ void main()
 		   NULL, "There's no way I could have come up with a plan on my own to execute two thousand villagers.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　陸自は、雛見沢の上流にある谷河内地区にて、ダミー会社を経由して閉鎖された採石場を取得。",
@@ -221,7 +221,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "Ka3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/ka4", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoua1001", 128);
@@ -253,7 +253,6 @@ void main()
 		   NULL, " We have to remember that we only have 48 hours to respond once it happens.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ka4", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoub1001", 128);
@@ -303,22 +302,23 @@ void main()
 		   NULL, " Precisely as you say.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryouc1004", 128);
 	OutputLine(NULL, "運用規定については決裁区分の強化などまだ検討したいところはありますが、最悪の事態に対応する準備が必要だということは理解できました。」",
-		   NULL, " I'd still like to look into strengthing the rules of approval authority behind applying the plan, but I understand the necessity to prepare our response for a worst-case scenario.\"", Line_Normal);
+		   NULL, " I'd still like to look into strengthening the rules of approval authority behind applying the plan, but I understand the necessity to prepare our response for a worst-case scenario.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ka3", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoub1004", 128);
 	OutputLine(NULL, "「都市沈黙戦の研究班に、雛見沢地区沈黙戦のシミュレーションをさせましょう。",
-		   NULL, "\"Let's have the ubran suppression research team run a simulation of the Hinamizawa suppression operation in the region.", Line_WaitForInput);
+		   NULL, "\"Let's have the urban suppression research team run a simulation of the Hinamizawa suppression operation in the region.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoub1005", 128);
-	OutputLine(NULL, "これは至急行なわれる必要があると思います。",
-		   NULL, " I think we should get it going as soon as possible. ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "これは至急行なわれる必要があると思います。」",
+		   NULL, " I think we should get it going as soon as possible.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoua1004", 128);
-	OutputLine(NULL, "…こうしている間にも、女王感染者の少女が車にはねられて死んでしまう可能性だってあるのですから。",
-		   NULL, "It's possible that the queen carrier girl may be hit by a car and be killed at any moment.", Line_WaitForInput);
+	OutputLine(NULL, "「…こうしている間にも、女王感染者の少女が車にはねられて死んでしまう可能性だってあるのですから。",
+		   NULL, "\"It's possible that the queen carrier girl may be hit by a car and be killed at any moment.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk1_kanryoua1005", 128);
 	OutputLine(NULL, "鷹野三佐、ありがとう。",
 		   NULL, " Thank you, Major Takano.", Line_WaitForInput);
@@ -394,6 +394,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

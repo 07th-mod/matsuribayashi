@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
-	DrawScene( "JYS2", 400 );
+	DrawScene( "background/jys1", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -21,7 +21,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "JS4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/js4_02", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事務所内には、死守同盟の幹部たちが３０人以上、ぎっしりと座っており、今後の方針などについて熱心な意見交換をしていた。",
@@ -66,8 +66,6 @@ void main()
 		   NULL, "Since it's idle chatter, the topics are slightly emotional, and because of that, there was a good deal of badmouthing the Houjous.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "JS5", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_farmma1001", 128);
@@ -153,8 +151,6 @@ void main()
 		   NULL, " Hahahahahaha!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
-	DrawScene( "JS6", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつの間にか、北条家は村の敵、裏切り者という図式が出来上がってしまい、",
@@ -261,13 +257,7 @@ void main()
 		   NULL, "All of that was immediately obvious by listening to the foul talk here and there at the gathering place.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawScene( "JS4", 400 );
+	FadeOutBGM( 1, 300, FALSE );
 
 	PlayBGM( 0, "livescene", 120, 0 );
 
@@ -311,7 +301,7 @@ void main()
 		   NULL, "As the caretaker of this shrine, I must do something before it goes too far.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "JS6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/js4_02", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は、唾を散らしながら口汚く北条家批判をしているお魎さんの脇に座った。",
@@ -439,8 +429,6 @@ void main()
 		   NULL, "Oryou-san and the others became furious and refused to listen to me.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
-	DrawScene( "JS4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、私は話の中で、ダム計画などその内なくなってしまうから、もう少し落ち着いたらどうか、ということを口にしてしまった。",
@@ -496,8 +484,8 @@ void main()
 		   NULL, "Then I felt a little hand on my back.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Ri_KomaruA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "JS5", "maskright", 1, 0, 300 );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "sprite/ri2_komaru_a1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1124", 128);
@@ -520,8 +508,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_FumanA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_fuman_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1065", 128);
@@ -548,6 +535,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	DrawScene( "Sinryo_sinsatu4", 1000 );
+	DrawScene( "background/sinryou_sinsatu4", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -30,8 +30,8 @@ void main()
 		   NULL, "I'm still struggling with how much I have to sacrifice for the sake of research.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 2, "Ri_DefA1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Sinryo_sinsatu1", 400 );
+	DrawBustshot( 2, "sprite/ri1_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/sinryou_sinsatu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1001", 128);
@@ -52,8 +52,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_KomaruA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri1_komaru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1002", 128);
@@ -100,11 +99,7 @@ void main()
 		   NULL, "Actually, I probably shouldn't keep anything from her.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Gray_2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -122,8 +117,8 @@ void main()
 		   NULL, " ...Maybe that was what triggered it.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Ri_MajimeA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_sinsatu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskright", 1, 0, 200 );
+	DrawBustshotWithFiltering( 0, "sprite/ri1_majime_a1_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1006", 128);
@@ -144,8 +139,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_komaru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1007", 128);
@@ -187,8 +181,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_def_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1011", 128);
@@ -227,8 +220,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_komaru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1013", 128);
@@ -263,8 +255,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_MajimeA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_majime_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1015", 128);
@@ -286,8 +277,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_FumanA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_fuman_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1016", 128);
@@ -366,7 +356,7 @@ void main()
 		   NULL, " let her gently fall asleep, and after that, dissect her while she dreams.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 200 );
+	DrawScene( "background/aka1", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悔しいが、鷹野さんの言う通りなのだ。",
@@ -409,8 +399,8 @@ void main()
 		   NULL, "Surprised, I raised my head up to look at her... and found her giving me a reassuring look I never would've imagined someone her age capable of.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Ri_FumanA1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_sinsatu1", "maskup", 1, 0, 300 );
+	DrawBustshot(0, "sprite/ri1_fuman_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1022", 128);
@@ -438,8 +428,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_MajimeA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_majime_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1025", 128);
@@ -469,8 +458,8 @@ void main()
 		   NULL, " I'm being criticized again.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Ri_NikoA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_sinsatu1", "maskright", 1, 0, 300 );
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/ri1_niko_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1028", 128);
@@ -488,8 +477,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_MajimeA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_majime_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1030", 128);
@@ -500,11 +488,11 @@ void main()
 		   NULL, " You understand that very well, and that's why you do what you do.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1032", 128);
 	OutputLine(NULL, "………そんな心がなくして、どうして人を病気から救えるというの？",
-		   NULL, " ......Without knowing that, how could you heal people? ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ......Without knowing that, how could you heal people?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_NiyariA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_niyari_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1033", 128);
@@ -532,8 +520,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_FumanA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_fuman_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1035", 128);
@@ -589,7 +576,7 @@ void main()
 	OutputLine(NULL, "「…………これは、",
 		   NULL, "\"......This will be", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…賭けになります。",
 		   NULL, " a gamble.", Line_WaitForInput);
@@ -633,8 +620,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_NikoA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_niko_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1044a", 128);
@@ -659,32 +645,31 @@ void main()
 	OutputLine(NULL, "「……大丈夫なのです。",
 		   NULL, "\"...I know it'll work.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1044d", 128);
-	OutputLine(NULL, "もう決まってることなのですから。」",
-		   NULL, " It's already decided.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "もう決まってることなのですから。",
+		   NULL, " It's already decided.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1044e", 128);
-	OutputLine(NULL, "「これは、…古手神社の巫女さまの心強いお告げです。」",
-		   NULL, "\"That's... a very reassuring prophecy from the Furude Shrine's shrine maiden.\"", Line_Normal);
+	OutputLine(NULL, "これは、…古手神社の巫女さまの心強いお告げです。",
+		   NULL, "That's... a very reassuring prophecy from the Furude Shrine's shrine maiden.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_WaraiA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri1_warai_a1_2", 200, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1044f", 128);
-	OutputLine(NULL, "「……ファイト、",
-		   NULL, "\"......Go for it,", Line_Continue);
+	OutputLine(NULL, "……ファイト、",
+		   NULL, "......Go for it,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お〜、",
 		   NULL, " yay", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "なのですよ☆」",
 		   NULL, " ☆\"", Line_Continue);
@@ -694,6 +679,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }
