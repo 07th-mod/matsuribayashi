@@ -4,11 +4,11 @@ void main()
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Ho_1", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/ho_r1", "maskup", 1, 0, 1300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -51,14 +51,15 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "Sa_SakebuB1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ho_2", "maskright", 1, 0, 300 );
+	DrawBustshot(0, "sprite/sa1b_sakebu_b1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ho_2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…沙都子が僕の姿を見つけ、しがみ付いて来る。",
 		   NULL, "When Satoko sees me, she grabs on to me.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskleft" , 7, FALSE, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -137,9 +138,9 @@ void main()
 		   NULL, "a different emotion came to me.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
-	DrawSceneWithMask( "aka2", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/aka2", "maskc", 1, 0, 1300 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -185,9 +186,9 @@ void main()
 		   NULL, "That someone is trying to eat me up from the inside and switch places with me.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
-	PlayBGM( 3, "semi", 120, 0 );
+	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子が泣きながら僕に何かを訴える時、",
@@ -230,7 +231,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Sora5", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、追い出しただけでは終わりにならなかった。",
@@ -356,13 +357,11 @@ void main()
 		   NULL, "But it's because of the villagers too...", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
+	DrawScene( "background/aka2", 400 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もうすぐ綿流し。",
@@ -421,16 +420,12 @@ void main()
 		   NULL, "The footsteps came up right behind me, and the hand touched me on the shoulder...!!!", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "white", 10 );
+	DrawScene( "white", 100 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 400, FALSE );
 
-	DrawBustshot( 0, "Re_BikkuriB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "G2", 400 );
+	DrawBustshot( 0, "sprite/re1b_bikkuri_b1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/g2", 400 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
@@ -444,8 +439,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_NandeA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1a_nande_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1001", 128);
@@ -494,8 +488,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_DefA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1a_def_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1003", 128);
@@ -522,8 +515,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruB1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1b_komaru_b1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1006", 128);
@@ -537,16 +529,12 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1b_def_b1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1007", 128);
 	OutputLine(NULL, "「…………沙都子ちゃんのことで、",
 		   NULL, "\"......Is it about Satoko-chan?", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…心配事？」",
 		   NULL, " ...Are you worried?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -571,8 +559,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiA1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1a_warai_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1008", 128);
@@ -612,8 +599,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruA2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/re1a_komaru_a2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1011", 128);
@@ -649,14 +635,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Re_BikkuriB1", 200, TRUE );
-	DisplayWindow();
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	ChangeBustshot( 0, "sprite/re1b_bikkuri_b1_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/02/vtk1_rena1014", 128);
@@ -682,12 +662,12 @@ void main()
 	OutputLine(NULL, "「…………私、",
 		   NULL, "\"...I...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……その足音、",
 		   NULL, " I know those.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "知ってる。」",
 		   NULL, " I know those footsteps.\"", Line_Normal);

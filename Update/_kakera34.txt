@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "Rouka1", 400 );
+	DrawScene( "background/rouka1", 400 );
 
 	PlayBGM( 0, "Iru", 120, 0 );
 
@@ -26,8 +26,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/me1a_wink_a1_1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2001", 128);
@@ -54,8 +53,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Me_DefA2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/me1a_def_a1_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2004", 128);
@@ -67,7 +65,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "So1", 400 );
+	DrawScene( "background/so1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家は雛見沢屈指の大地主だ。",
@@ -136,7 +134,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "So_G1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/so_g1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_hudou2010", 128);
@@ -217,7 +215,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawScene( "Sora5", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2011", 128);
@@ -320,8 +318,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskdown", 1, 0, 300 );
-	DrawBustshot( 1, "Me_DefA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "Rouka1", 400 );
+	DrawBustshot( 1, "sprite/me1a_def_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/rouka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2020", 128);
@@ -411,7 +409,7 @@ void main()
 		   NULL, "Unless you open the windows and let fresh air in, the air in the room won't be purified.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora5", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2021", 128);
@@ -469,7 +467,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Rouka1", 400 );
+	DrawScene( "background/rouka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/17/vtk2_oryou2025", 128);
@@ -565,9 +563,6 @@ void main()
 	PlayVoice(4, "ps3/s20/17/vtk2_oryou2038", 128);
 	OutputLine(NULL, "新しい風を、",
 		   NULL, " As the new leader of the Sonozaki family,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…新しい園崎家の頭首として、村に招き入れたれ。」",
 		   NULL, " bring the new wind into the village.\"", Line_Normal);
 	ClearMessage();
@@ -607,6 +602,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

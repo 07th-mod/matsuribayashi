@@ -4,10 +4,10 @@ void main()
 
 	PlayBGM( 0, "Instict", 120, 0 );
 
-	DrawScene( "Fure2", 1000 );
+	DrawScene( "background/fure2", 1000 );
 	DrawScene( "white", 1000 );
-	DrawBustshotWithFiltering( 0, "Kei_Def2", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "GK2", "maskc", 1, 0, 300 );
+	DrawBustshot(0, "sprite/kei1_def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/gk3", "maskc", 1, 0, 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -68,7 +68,7 @@ void main()
 		   NULL, " and dies.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Fure2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/fure2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは辛く悲しいことだけど、",
@@ -80,7 +80,7 @@ void main()
 		   NULL, " it also puts him through the process of learning something very important.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure1", 1000 );
+	DrawScene( "background/fure1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ねぇ、羽入。",
@@ -121,6 +121,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

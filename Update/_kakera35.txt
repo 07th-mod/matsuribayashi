@@ -3,9 +3,7 @@ void main()
 	DrawScene( "black", 400 );
 
 	DrawScene( "white", 1000 );
-	DrawScene( "G1", 1000 );
-	PlaySE( 0, "s_chaim", 128, 64 );
-	Wait( 300 );
+	DrawScene( "background/g1", 1000 );
 	PlaySE( 0, "s_chaim", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
@@ -14,7 +12,7 @@ void main()
 
 	PlayBGM( 0, "er_Ver3", 120, 0 );
 
-	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk3", "maskleft", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -69,7 +67,7 @@ void main()
 		   NULL, " as the representative for the children here, I vow that I will never let any irrational rules come into our world.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　学校の中では、北条兄妹に対するどんな苛めも許さない。",
@@ -127,7 +125,7 @@ void main()
 		   NULL, " but when I realized something, I stopped doing that.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk3", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分は園崎の人間なのだ。",
@@ -163,7 +161,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Hi2", 400 );
+	DrawScene( "background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子に限らず、",
@@ -331,10 +329,8 @@ void main()
 		   NULL, "So the only thing I can do is to watch over her and make sure that she's safe when she's at school.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK1", "maskup", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshot( 0, "Sato_Def2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/sato1_def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/gk1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1057", 128);
@@ -355,8 +351,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1059", 128);
@@ -378,8 +373,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_def2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1061", 128);
@@ -396,7 +390,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk1_mion1004", 128);
 	OutputLine(NULL, "「あははははは…。",
-		   NULL, "\"Ahahahahaha...", Line_WaitForInput);
+		   NULL, "\"Ahahahahaha...", Line_Continue);
 	OutputLine(NULL, "……おじさんに気を遣えるのは、せいぜいこの程度だしね。」",
 		   NULL, " That's basically the only thing this ol' man can do for her...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -423,8 +417,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1066", 128);
@@ -486,7 +479,7 @@ void main()
 	OutputLine(NULL, "「…………………私、",
 		   NULL, "\"............Maybe...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1500 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……沙都子の気持ちを全然理解していないのかなぁ。」",
 		   NULL, " I just don't understand Satoko's feelings.\"", GetGlobalFlag(GLinemodeSp));
@@ -505,16 +498,12 @@ void main()
 	PlayVoice(4, "ps3/s20/03/vtk1_mion1010", 128);
 	OutputLine(NULL, "……そこの娘の私が、沙都子の周りをうろちょろすることは、その、",
 		   NULL, " So for me, a member of that family, to hang around her...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……空気の読めていないことなのかなぁって。」",
 		   NULL, " Is that the right thing to do?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_warai_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1069", 128);
@@ -535,8 +524,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1071", 128);
@@ -560,8 +548,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1074", 128);
@@ -600,8 +587,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1078", 128);
@@ -678,8 +664,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1080", 128);
@@ -706,8 +691,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1084", 128);
@@ -730,12 +714,8 @@ void main()
 		   NULL, "\"But if we get home too late, she'll ask us what we were doing...\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 0, "sora_no_mukou", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "sora_no_mukou", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk1_mion1025", 128);
@@ -747,8 +727,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1086", 128);
@@ -773,8 +752,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Tukare", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_tukare_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1087", 128);
@@ -792,8 +770,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1088", 128);
@@ -804,7 +781,7 @@ void main()
 		   NULL, " But wouldn't Chie-sensei say something?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/gk3", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk1_mion1033", 128);
@@ -826,8 +803,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_Def2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/sato1_def2_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1090", 128);
@@ -863,8 +839,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sato1_komaru2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1091", 128);
@@ -884,12 +859,8 @@ void main()
 		   NULL, " This ol' man is all ears!\"", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "black", 400 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1093", 128);

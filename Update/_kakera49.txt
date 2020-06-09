@@ -4,12 +4,13 @@ void main()
 
 	PlayBGM( 0, "instict2", 120, 0 );
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentDiamond", 400);
-		DrawScene( "Fure3", 400 );
-	} else {
-		DrawScene( "Kakera6", 400 );
-	}
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentDiamond", 1000);
+	DrawScene( "background/kakera", 400 );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawBustshot( 1, "sprite/night/ta3_akuwarai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/ymo3", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -35,7 +36,6 @@ void main()
 		   NULL, "While Rika Furude lamented Rule Z as impossible to defeat, it was hardly a match for Keiichi Maebara and the others once they learned everything they needed to.", Line_Normal);
 	ClearMessage();
 
-	StopFragment(400);
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -67,7 +67,7 @@ void main()
 		   NULL, " So what he says is correct.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure2", 400 );
+	DrawScene( "background/fure2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　信じる力に打ち勝つには、負けないくらいの信じる力がいる。",
@@ -193,6 +193,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

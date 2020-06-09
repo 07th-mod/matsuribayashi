@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
 
-	DrawScene( "Fure1", 1000 );
+	DrawScene( "background/fure1", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -59,7 +59,7 @@ void main()
 		   NULL, "She did two things.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sinryo_soto2", 400 );
+	DrawScene( "background/sinryou_soto1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１つは、自分の身に降りかかる災厄から一番身を守ってくれるに違いない入江機関への接触。",
@@ -88,7 +88,7 @@ void main()
 		   NULL, "It actually wasn't certain that the Maebara family would move here.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawSceneWithMask( "kusa", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/susuki", "maskc", 1, 0, 1300 );
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -140,7 +140,7 @@ void main()
 		   NULL, "...But I wasn't the only one who wanted him here.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hi2", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "background/hi1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村の悪弊を払拭したかった園崎家の人間たちも望んでいたこと。",
@@ -161,7 +161,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "So1", 1000 );
+	DrawScene( "background/so1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その思いは、…園崎お魎に伝わる。",
@@ -194,7 +194,6 @@ void main()
 		   NULL, "That was why the lots went on sale, so the Maebara family could move in.", Line_Normal);
 	ClearMessage();
 
-	StopFragment(400);
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -203,8 +202,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Re_DefA1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/re1a_def_a1_2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、前原圭一に重要なきっかけをいくつも与える竜宮レナは、",
@@ -222,20 +220,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Re_WaraiB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/re1b_warai_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなレナだから、…圭一のことを理解できたのではないかと思う。",
 		   NULL, "Maybe that's why Rena was able to understand Keiichi.", Line_Normal);
 	ClearMessage();
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentDiamondNarrow", 400);
-		DrawScene( "Fure1", 400 );
-	} else {
-		DrawScene( "Kakera3", 400 );
-	}
+	DrawScene( "background/fure1", 400 );
+//	DrawFragment("minacubemap", "FragmentDiamondNarrow", 400);
+	DrawScene( "background/kakera", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは、あるカケラにおいて、…別のカケラのことを認識させるという奇跡を生み出す。",
@@ -257,7 +251,7 @@ void main()
 
 	StopFragment(400);
 	DrawScene( "black", 400 );
-	DrawScene( "Fure2", 400 );
+	DrawScene( "background/fure2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり竜宮レナは自覚せずして、このゲーム盤の駒の中で重要な働きをするのだ。",
@@ -269,7 +263,7 @@ void main()
 		   NULL, "The mighty Rule Z that surrounded the Houjou siblings was eventually smashed by their actions.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Sa_HannbesoA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshot( 0, "sprite/sa1a_hannbeso_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -285,9 +279,9 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	DrawBustshot( 2, "Re_WaraiA1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 1, "Kei_Warai", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "Fure1", 400 );
+	DrawBustshot( 2, "sprite/re1a_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sprite/kei1_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてそれを教えてくれたのは圭一とレナ。",
@@ -299,18 +293,18 @@ void main()
 		   NULL, "Mion is the one who made it possible for them to move here, and she also helped them to become familiar with the village.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Fure2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/fure2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけじゃない。",
-		   NULL, "That's not all.", Line_WaitForInput);
+		   NULL, "That's not all.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 0, "Iri_Def2+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/iri2_def2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	OutputLine(NULL, "入江だって大きな思いと働きのある重要な駒だ。",
-		   NULL, " Irie is also an important piece with significant functions of his own.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Irie is also an important piece with significant functions of his own.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -356,7 +350,7 @@ void main()
 		   NULL, "So if we gather all this power... can we win against Takano's will?", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure2", 1000 );
+	DrawScene( "background/fure2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……鷹野の思いも見てきた。",
@@ -381,7 +375,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が募らせてきた思いなど、足元にも及ばないほど、たくさんの思いを持っていたのだから。",
-		   NULL, "The sentiments I've been turning towards it pale in comparision to how many she's brought into it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The sentiments I've been turning towards it pale in comparison to how many she's brought into it.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -435,7 +429,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	DrawScene( "Hi1", 1000 );
+	DrawScene( "background/hi1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年の呪いは、雛見沢の呪いにも通じる。",
@@ -475,7 +469,7 @@ void main()
 		   NULL, "But if I keep throwing the die, will Akasaka's game piece eventually appear?", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後のルールＹは、鷹野を駒とする悪しき黒幕たち。",
@@ -520,6 +514,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }
