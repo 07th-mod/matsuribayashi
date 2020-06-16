@@ -2,9 +2,9 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	PlayBGM( 0, "Liberating", 120, 0 );
+	PlayBGM( 1, "semi", 120, 0 );
 	DrawScene( "white", 1000 );
-	DrawSceneWithMask( "Si_G2", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/hu_ima", "maskm1", 1, 0, 1300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
@@ -40,12 +40,13 @@ void main()
 		   NULL, " we're thinking about going to the mall.\"", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "black", 400 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その声は、原っぱに新しい秘密基地を作り、早くみんなとそこで遊びたいと胸をいっぱいにする少女には、届いていない。",
 		   NULL, "Her father's voice didn't reach the girl, because all she was thinking about was making a new secret base with her friends in the field.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　父は、少女が家族とデパートへ行くのを楽しみにしていて、両親だけで出掛けてしまうとヘソを曲げるのを知っていたから声をかけたのだ。",
@@ -59,6 +60,8 @@ void main()
 	OutputLine(NULL, "　…そして、少女にお子様ランチの旗を集める趣味があって、あと１本で２０本が揃うらしい、ということも。",
 		   NULL, "He also knew that the girl liked collecting flags from the kid's meals at the restaurant there, and one more would bring her collection to twenty flags.", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女は、お子様ランチの旗に、幸せの願掛けをしていた。",
@@ -98,7 +101,9 @@ void main()
 		   NULL, " If he asked a waitress, she'd bring one for him.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "black", 400 );
+	PlayBGM( 0, "Liberating", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その日、……鉄道のダイヤはちょっとした信号事故で、乱れていた。",
@@ -126,14 +131,13 @@ void main()
 		   NULL, " They always used a train to go to the mall.", Line_Normal);
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawScene( "Mati16", 1000 );
+	DrawBustshot(0, "sprite/miyo1_komari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/koudou", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　スキップしながら友人の家を目指す少女を、",
 		   NULL, "As the girl skipped her way to her friend's house,", Line_ContinueAfterTyping);
+	DrawBustshotWithFiltering(3, "scene/o_ri", "maskright", 0, -220, 0, FALSE, 0, 0, 0, 0, 0, 20, 1500, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -168,7 +172,6 @@ void main()
 		   NULL, "The woman said to the girl:", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2082", 128);
@@ -179,7 +182,6 @@ void main()
 		   NULL, " Or do you want to die?\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati16", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけを聞いたなら、普通の人なら、おかしな人だと訝しがるだろう。",
@@ -199,6 +201,9 @@ void main()
 		   NULL, "She answered immediately.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_warai_0", 200, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2002", 128);
 	OutputLine(NULL, "「生きたい！」",
@@ -217,6 +222,9 @@ void main()
 		   NULL, " Your friend isn't home, but go on.\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_komari_0", 200, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2003", 128);
 	OutputLine(NULL, "「……………留守なの？」",
@@ -225,13 +233,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女は、この不思議な女がどうしてそんなことを知っているのか、不思議に思った。",
 		   NULL, "The girl couldn't figure out why this woman would know that.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　女が立ち去ろうとするのを呼び止める。",
@@ -245,6 +254,10 @@ void main()
 		   NULL, " although it was a little scary, as to what response she'd get if she answered differently.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_majime_0", 0, TRUE );
+	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2004", 128);
 	OutputLine(NULL, "「なら、死にたいだとどうなるの？」",
@@ -257,13 +270,22 @@ void main()
 		   NULL, "\"You'll get another flag from a kid's meal.\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_def_0", 200, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2005", 128);
 	OutputLine(NULL, "「……え！！",
-		   NULL, "\"...Eh?!", Line_WaitForInput);
+		   NULL, "\"...Eh?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_komari_0", 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2006", 128);
 	OutputLine(NULL, "　あ、ずるい、私に内緒でデパートに行く気だ！！",
-		   NULL, " Hey, that's not fair, they're going without me!!", Line_WaitForInput);
+		   NULL, "Hey, that's not fair, they're going without me!!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2007", 128);
 	OutputLine(NULL, "　ずるいずるい！」",
 		   NULL, " That's not fair!!\"", GetGlobalFlag(GLinemodeSp));
@@ -276,7 +298,6 @@ void main()
 		   NULL, " and tried to run back home.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2088", 128);
@@ -297,6 +318,9 @@ void main()
 		   NULL, "The mysterious woman tried to confirm this.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_def_0", 200, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2008", 128);
 	OutputLine(NULL, "「何で後悔するの？」",
@@ -311,6 +335,9 @@ void main()
 	OutputLine(NULL, "…意地悪だから。」",
 		   NULL, " I'm mean.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_majime_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2009", 128);
@@ -336,7 +363,8 @@ void main()
 		   NULL, "Then she clapped her hands as if she came to a conclusion.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati16", 400 );
+	DisableWindow();
+	ChangeBustshot( 0, "sprite/miyo1_warai_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2010", 128);
@@ -364,23 +392,25 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	MoveBustshot( 3, NULL, -300, 0, 0, 20, 500, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを聞き、女は道をあける。",
 		   NULL, "The woman stepped aside.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 300, TRUE );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女はぺこりと会釈をして家へ駆け戻った。",
 		   NULL, "The girl bowed to her and ran home.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskright", 1, 0, 1300 );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawScene( "white", 1000 );
-	DrawSceneWithMask( "Si_G2", "maskm1", 1, 0, 1300 );
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "maskright", 0, FALSE, 0, 0, 2000, TRUE );
+	DrawScene( "black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこには施錠をして、まさにこれから出掛けようとする両親の姿があった。",
@@ -395,14 +425,15 @@ void main()
 		   NULL, "The girl jumped on them and nagged them that she wanted to go too.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……少女は、家族と一緒にデパートへ行けることになった。",
 		   NULL, "The girl was going to the mall with her family.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Eki2", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "background/basu_soukou", 1000 );
+	PlayBGM( 1, "mati", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、家族３人で駅へ行って、",
@@ -422,8 +453,6 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　運転手は取り返せない時刻表の遅れに焦りを持っていて、",
 		   NULL, "The driver was feeling the pressure to make up for the delay", Line_ContinueAfterTyping);
@@ -434,13 +463,22 @@ void main()
 		   NULL, " and the passengers could tell that from the way he was driving.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Kuruma6", 1000 );
+	DisableWindow();
+	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
+	DrawBustshot(0, "portrait/miyo1_komari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日は揺れるね。",
-		   NULL, "The girl noticed the unusual swaying of the train.", Line_WaitForInput);
+		   NULL, "The girl noticed the unusual swaying of the train.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	FadeBustshot( 0, FALSE, 0, 0, 0, 0, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そう少女は、座席の上に膝立ちして外を見ながら言う。",
-		   NULL, " She stood on her knees and looked out the window.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "She stood on her knees and looked out the window.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -556,26 +594,25 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
+	DrawScene( "white", 3000 );
+	FadeOutBGM( 1, 3000, FALSE );
 	DrawScene( "black", 3000 );
-	SetValidityOfInput( FALSE );
-	Wait( 5000 );
-	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	PlayBGM( 0, "T1", 120, 0 );
-	DrawScene( "Moon", 1000 );
+	DrawScene( "background/moon", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女と両親は、両手一杯に買い物のペーパーバッグを抱えながら、満天の星空の下を、帰宅した。",
 		   NULL, "The girl and her parents came home under the sky full of stars with shopping bags in their hands.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Re_G1", 400 );
+	DisableWindow();
+	PlaySE( 0, "s_door", 128, 64 );
+	DrawSceneWithMask( "white", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "background/re_g1", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鍵を開け、真っ暗な家の中に灯りを点し、",
@@ -584,8 +621,7 @@ void main()
 		   NULL, " and then the girl put her bags by the front door and ran into her room.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_door", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、……学習机の引き出しを開け、",
@@ -678,7 +714,7 @@ void main()
 		   NULL, "Therefore, something wonderful must be waiting to happen.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女はわくわくしながら待つが、…魔法のランプじゃあるまいし、ドロンと魔神が現われて何かをかなえてくれるわけもない。",
@@ -725,15 +761,13 @@ void main()
 		   NULL, "As she heard her mother tell her to brush her teeth and go to bed, she ran to the bathroom.", Line_Normal);
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
+	DrawSceneWithMask("white", "maskc", 0, 0, 3000 );
 
 	PlayBGM( 0, "utage_sample", 120, 0 );
+	DrawScene( "background/kakera", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -828,7 +862,7 @@ void main()
 		   NULL, " What kind of world are you going to make?", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
+	DrawScene( "black", 3000 );
 
 	CallScript( "&endroll_staff9" );
 
@@ -836,9 +870,9 @@ void main()
 	StoreValueToLocalWork(NewTipsCount , 0);
 	StoreValueToLocalWork(TipsCount , 0);
 
-	FadeOutBGM( 0, 1000, TRUE );
-	FadeOutBGM( 1, 1000, TRUE );
-	FadeOutBGM( 2, 1000, TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
 	FadeOutBGM( 3, 1000, TRUE );
 
 	GetAchievement("HIGURASHI_STORY_EP08_TRUE");
