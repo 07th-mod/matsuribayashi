@@ -13,21 +13,21 @@ void main()
 	DrawScene( "background/ka1_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200031", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200031", 128, TRUE);
 	OutputLine(NULL, "「ご紹介します。",
 		   NULL, "\"Allow me to introduce you.", Line_Continue);
 	OutputLine(NULL, "鷹野三佐です。",
 		   NULL, " This is Major Takano.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200032", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200032", 128, TRUE);
 	OutputLine(NULL, "……三佐、こちらは入江京介先生です。」",
 		   NULL, " Major, this is Dr. Kyousuke Irie.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/iri2_def1_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacterWithFiltering(0, 10, "sprite/normal/iri2_def1_", "0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000001", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000001", 128, TRUE);
 	OutputLine(NULL, "「ど、",
 		   NULL, "\"H,", Line_Continue);
 	Wait( 800 );
@@ -49,30 +49,30 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500091", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500091", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "畏縮しなくて結構ですわ。",
 		   NULL, " Please relax.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500092", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500092", 128, TRUE);
 	OutputLine(NULL, "鷹野とお呼びください。」",
 		   NULL, " Call me Takano.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_def2_2", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_def2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000002", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000002", 128, TRUE);
 	OutputLine(NULL, "「恐縮です。",
 		   NULL, "\"Thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000003", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000003", 128, TRUE);
 	OutputLine(NULL, "この度はお引き立ていただき、深く感謝いたします。」",
 		   NULL, " Thank you for having me here, I really appreciate it.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500093", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500093", 128, TRUE);
 	OutputLine(NULL, "「どうぞ、お掛けになってください。」",
 		   NULL, "\"Please have a seat.\"", Line_Normal);
 	ClearMessage();
@@ -117,26 +117,26 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000004", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000004", 128, TRUE);
 	OutputLine(NULL, "「……雛見沢症候群の資料を読ませていただきました。」",
 		   NULL, "\"I've read the data concerning this Hinamizawa Syndrome.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500094", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500094", 128, TRUE);
 	OutputLine(NULL, "「いかがでしたか？」",
 		   NULL, "\"What did you think?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000005", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000005", 128, TRUE);
 	OutputLine(NULL, "「その、",
 		   NULL, "\"Well......", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000006", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000006", 128, TRUE);
 	OutputLine(NULL, "「………非常に驚くことばかりでした。",
 		   NULL, " it's really quite the shock. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000007", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000007", 128, TRUE);
 	OutputLine(NULL, "…確かに今日の医学の暗部に踏み込みかねない内容ではありますが、未だ世界で誰も解明していない神秘という点で、知的興奮を抑え切れません。」",
 		   NULL, "It's very possible that this is something that steps onto the dark side of today's medicine, but I can hardly control my intellectual excitement in knowing it's a mystery that has yet to be solved.\"", Line_Normal);
 	ClearMessage();
@@ -177,20 +177,20 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500095", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500095", 128, TRUE);
 	OutputLine(NULL, "「私こそ驚いております。",
 		   NULL, "\"I was shocked too.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500096", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500096", 128, TRUE);
 	OutputLine(NULL, "入江先生ほどの博識かつ経験豊富な方が、責任ある地位も仕事も与えられず、医局の片隅で飼い殺されているなど。",
 		   NULL, " To imagine a man of your experience and knowledge was just wasting away in the medical office without any responsibilities or work to accomplish. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500097", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500097", 128, TRUE);
 	OutputLine(NULL, "これは医学界の重大な損失と言わざるを得ませんわ。」",
 		   NULL, "I have to say that was a grave loss to the medical field.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000008", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000008", 128, TRUE);
 	OutputLine(NULL, "「……ははは。」",
 		   NULL, "\"......Ha ha ha.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -214,7 +214,7 @@ void main()
 	PlayBGM( 0, "B_Dive", 120, 0 );
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/iri2_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼は脳外科の権威の下で稀有な才能を発揮し、将来を期待されていたという。",
@@ -585,14 +585,14 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "Mati", 120, 0 );
-	DrawBustshot( 2, "sprite/iri2_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/ka1_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000009", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000009", 128, TRUE);
 	OutputLine(NULL, "「私如きでよろしければ、",
 		   NULL, "\"If it's alright with you,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000010", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000010", 128, TRUE);
 	OutputLine(NULL, "……この度の話、ぜひお引き受けさせていただきたいと思います。」",
 		   NULL, " I would love to accept this position.\"", Line_Normal);
 	ClearMessage();
@@ -626,28 +626,28 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500098", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500098", 128, TRUE);
 	OutputLine(NULL, "「ありがとうございます。",
 		   NULL, "\"Thank you very much.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500099", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500099", 128, TRUE);
 	OutputLine(NULL, "入江先生ならば、きっと良いお返事をいただけると信じておりました。",
 		   NULL, " I knew you'd accept!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500100", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500100", 128, TRUE);
 	OutputLine(NULL, "当方も、あなたのような専門家を迎えられ、とても助かります。」",
 		   NULL, " We are very lucky to have an expert like you. You'll be a great help.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_def1_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000011", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000011", 128, TRUE);
 	OutputLine(NULL, "「し、しかし、私などが所長などでいいのでしょうか…。",
 		   NULL, "\"B-But are you okay with me being the Director...?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000012", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000012", 128, TRUE);
 	OutputLine(NULL, "それは鷹野さんがやられた方がよろしいでしょう。",
 		   NULL, " Wouldn't it be better for you to hold that position, Takano-san?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000013", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000013", 128, TRUE);
 	OutputLine(NULL, "私は単なる医者に過ぎません。",
 		   NULL, " I'm just a simple doctor.", Line_Continue);
 	OutputLine(NULL, "人の上に立ったことなど…。」",
@@ -655,33 +655,33 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500101", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500101", 128, TRUE);
 	OutputLine(NULL, "「ご安心ください。",
 		   NULL, "\"Don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500102", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500102", 128, TRUE);
 	OutputLine(NULL, "それにつきましては私も全面的にサポートいたします。",
 		   NULL, " I'll give you my full support.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500103", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500103", 128, TRUE);
 	OutputLine(NULL, "トップは制服ではなく背広からというのが上の希望でもあります。",
 		   NULL, " Our sponsor wanted to pick a civilian.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500104", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500104", 128, TRUE);
 	OutputLine(NULL, "お気に召しませんか？",
 		   NULL, " Besides, wouldn't you like to be called...", Line_WaitForInput);
 	OutputLine(NULL, "　入江所長という呼び名は。",
 		   NULL, " Director Irie?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500105", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500105", 128, TRUE);
 	OutputLine(NULL, "くすくす。」",
 		   NULL, " Hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000014", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000014", 128, TRUE);
 	OutputLine(NULL, "「い、いえいえ…！",
 		   NULL, "\"Ah, well...!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000015", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000015", 128, TRUE);
 	OutputLine(NULL, "　いやしかし…、あはははは…。」",
 		   NULL, " But... ahahahaha...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -692,58 +692,58 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500106", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500106", 128, TRUE);
 	OutputLine(NULL, "「現在、雛見沢に研究施設を建設中です。",
 		   NULL, "\"We're building a research center in Hinamizawa.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500107", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500107", 128, TRUE);
 	OutputLine(NULL, "表向きは診療所ということになっています。",
 		   NULL, " Publicly, it will be a clinic.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500108", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500108", 128, TRUE);
 	OutputLine(NULL, "入江先生にご快諾をいただけましたので、入江診療所という名前にいたしましょう。」",
 		   NULL, " So with your consent, Dr. Irie, we'd like to call it the Irie Clinic.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_def1_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000016", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000016", 128, TRUE);
 	OutputLine(NULL, "「い、一国一城の主とは……、",
 		   NULL, "\"L-Lord of my own castle...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000017", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000017", 128, TRUE);
 	OutputLine(NULL, "も、勿体無い話です。」",
 		   NULL, " Th-That's more than I deserve.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500109", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500109", 128, TRUE);
 	OutputLine(NULL, "「あと、身分を陸自で預かることになりますので、先生の籍は陸自の医官という扱いになります。",
 		   NULL, "\"You'll also be placed under the SDF, so you'll be registered as a medical officer with them.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500110", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500110", 128, TRUE);
 	OutputLine(NULL, "私の上司ですので、二佐の階級になりますわね。",
 		   NULL, " Since you'll be my superior, you'll be a Lieutenant Colonel.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500111", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500111", 128, TRUE);
 	OutputLine(NULL, "入江二佐という呼び名はいかがでしょう？」",
 		   NULL, " Lt. Colonel Irie. How does that sound to you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000018", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000018", 128, TRUE);
 	OutputLine(NULL, "「あ、あはははは！",
 		   NULL, "\"Ah, ahahahaha!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000019", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000019", 128, TRUE);
 	OutputLine(NULL, "　私は軍人じゃありません。",
 		   NULL, " I'm not a military man.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000020", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000020", 128, TRUE);
 	OutputLine(NULL, "二佐という呼び名はご遠慮させていただきたいものです…。",
 		   NULL, " I'd rather refrain from being called Lt. Colonel...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000021", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000021", 128, TRUE);
 	OutputLine(NULL, "所長だって恐れ多いくらいです。",
 		   NULL, " Director is already a frightening title as is.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000022", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000022", 128, TRUE);
 	OutputLine(NULL, "いやいや……あははは…。」",
 		   NULL, " Oh my, ahahaha...\"", Line_Normal);
 	ClearMessage();
@@ -860,52 +860,52 @@ void main()
 	DrawScene( "background/ka1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200033", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200033", 128, TRUE);
 	OutputLine(NULL, "「以上です。",
 		   NULL, "\"Okay, that's it.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200034", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200034", 128, TRUE);
 	OutputLine(NULL, "就任おめでとうございます、入江所長殿。",
 		   NULL, " Congratulations, Director Irie!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200035", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200035", 128, TRUE);
 	OutputLine(NULL, "三佐、宣誓書へのサインを終わりました。」",
 		   NULL, " Major, the contract has been signed.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500112", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500112", 128, TRUE);
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "\"Thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500113", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500113", 128, TRUE);
 	OutputLine(NULL, "これからよろしくお願いいたしますわ。",
 		   NULL, " I look forward to working with you,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500114", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500114", 128, TRUE);
 	OutputLine(NULL, "入江所長。」",
 		   NULL, " Director Irie.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/iri2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/10/551000023", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000023", 128, TRUE);
 	OutputLine(NULL, "「こちらこそ、よろしくお願いします。",
 		   NULL, "\"I look forward to working with you too,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s14/08/210800033", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s14/08/210800033", 128, TRUE);
 	OutputLine(NULL, "鷹野さん。",
 		   NULL, " Takano-san.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000024", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000024", 128, TRUE);
 	OutputLine(NULL, "仲良くやりましょう。",
 		   NULL, " I hope we can get along.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/10/551000025", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/551000025", 128, TRUE);
 	OutputLine(NULL, "私も全身全霊をかけてがんばります！」",
 		   NULL, " I'll be devoting my best efforts to this!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500115", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500115", 128, TRUE);
 	OutputLine(NULL, "「こちらこそ。",
 		   NULL, "\"No, thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500116", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500116", 128, TRUE);
 	OutputLine(NULL, "お互い、最善を尽くしましょう。」",
 		   NULL, " Let's both give our best.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -929,143 +929,143 @@ void main()
 	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551400018", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400018", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっはっは！",
 		   NULL, "\"Wa ha ha ha!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551400019", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400019", 128, TRUE);
 	OutputLine(NULL, "　それはよかったよかった。",
 		   NULL, " That's great, just great.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551400020", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400020", 128, TRUE);
 	OutputLine(NULL, "おめでとう、鷹野さん。",
 		   NULL, " Congratulations, Takano-san.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551400021", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400021", 128, TRUE);
 	OutputLine(NULL, "いえ、鷹野三佐でしたかな？",
 		   NULL, " No, Major Takano, isn't it?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551400022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400022", 128, TRUE);
 	OutputLine(NULL, "　わっはっはっはっは！」",
 		   NULL, " Wa ha ha ha!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500117", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500117", 128, TRUE);
 	OutputLine(NULL, "「これも全て先生方のお力添えがあったからこそです。",
 		   NULL, "\"This was all possible thanks to your assistance.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500118", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500118", 128, TRUE);
 	OutputLine(NULL, "鷹野三四、皆様に心より感謝させていただきます。」",
 		   NULL, " I must give my thanks to all of you.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200036", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200036", 128, TRUE);
 	OutputLine(NULL, "「まぁまぁ！",
 		   NULL, "\"Oh, don't mention it!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200037", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200037", 128, TRUE);
 	OutputLine(NULL, "　鷹野さんに本当の意味でおめでとうが言えるのは、研究が成功に終わった時ですな。",
 		   NULL, " But we should save our congratulations until you finish your research, huh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200038", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200038", 128, TRUE);
 	OutputLine(NULL, "ようやく入口に辿り着いたに過ぎませんよ。」",
 		   NULL, " You're only at the starting line, aren't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500119", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500119", 128, TRUE);
 	OutputLine(NULL, "「仰る通りです。",
 		   NULL, "\"Exactly.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500120", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500120", 128, TRUE);
 	OutputLine(NULL, "寝る間を惜しんで研究に身を投じていく覚悟です。」",
 		   NULL, " I'll be devoting my every waking moment to this research.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551400023", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400023", 128, TRUE);
 	OutputLine(NULL, "「高野先生が成し遂げられなかった、さらにその先へ至られることを私ども一同、楽しみにいたしておりますぞ！",
 		   NULL, "\"We can hardly wait to see the result of what Dr. Takano couldn't finish!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551400024", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551400024", 128, TRUE);
 	OutputLine(NULL, "　わっはっはっは！」",
 		   NULL, " Wa ha ha ha!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551300022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300022", 128, TRUE);
 	OutputLine(NULL, "「まぁまぁ先生！",
 		   NULL, "\"Well now, Sensei!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551300023", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300023", 128, TRUE);
 	OutputLine(NULL, "　今日はそういう堅苦しい話は抜きにしましょう！",
 		   NULL, " Let's not talk about business today!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551300024", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551300024", 128, TRUE);
 	OutputLine(NULL, "　今日は鷹野さんのこれからと入江機関の設立を祝って、乾杯と参りましょう！」",
 		   NULL, " Let's have a toast to congratulate Takano-san and the Irie Institute!\"", Line_Normal);
 	ClearMessage();
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>永田</color>", NULL, "<color=#f5e6d3>Nagata</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550900001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550900001", 128, TRUE);
 	OutputLine(NULL, "「乾杯の前にご挨拶申し上げます。",
 		   NULL, "\"Hello, everyone.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550900002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550900002", 128, TRUE);
 	OutputLine(NULL, "厚生省の永田と申します。",
 		   NULL, " I'm Nagata from the Ministry of Health and Welfare.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550900003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550900003", 128, TRUE);
 	OutputLine(NULL, "どうぞよろしくお願いいたします。」",
 		   NULL, " I would like to say few things before the toast.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200039", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200039", 128, TRUE);
 	OutputLine(NULL, "「あぁ、鷹野さん、彼をバシバシこき使ってやってください！",
 		   NULL, "\"Ah, Takano-san, make sure he works hard, okay?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200040", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200040", 128, TRUE);
 	OutputLine(NULL, "　彼のところの研究所は入江機関のバックアップをしてくれます。",
 		   NULL, " His research center will be supporting the Institute.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200041", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200041", 128, TRUE);
 	OutputLine(NULL, "技術的に困ったことがあったらいつでも頼ってやってください。」",
 		   NULL, " If you need any technical support, just call him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500121", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500121", 128, TRUE);
 	OutputLine(NULL, "「こき使うだなんてそんな…！",
 		   NULL, "\"Make him work hard...?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500122", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500122", 128, TRUE);
 	OutputLine(NULL, "　こちらこそお世話になります。",
 		   NULL, " No, no, I have to thank you for your support.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500123", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500123", 128, TRUE);
 	OutputLine(NULL, "鷹野と申します。",
 		   NULL, " I'm Takano.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500124", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500124", 128, TRUE);
 	OutputLine(NULL, "どうかよろしくお願いします。」",
 		   NULL, " Pleased to meet you.\"", Line_Normal);
 	ClearMessage();
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551500021", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500021", 128, TRUE);
 	OutputLine(NULL, "「鷹野さん、こちらも紹介しましょう。",
 		   NULL, "\"Takano-san, let me introduce you to these gentlemen.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551500022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500022", 128, TRUE);
 	OutputLine(NULL, "陸自から出向の富竹くんと小此木くんです。",
 		   NULL, " Meet Tomitake-kun and Okonogi-kun from the Self-Defense Force.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551500023", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500023", 128, TRUE);
 	OutputLine(NULL, "陸自側からのバックアップをします。",
 		   NULL, " They're your backup from the SDF.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551500024", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500024", 128, TRUE);
 	OutputLine(NULL, "ぜひご挨拶させてください。」",
 		   NULL, " I'll let them introduce themselves.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/tomi2_warai_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacterWithFiltering(0, 8, "sprite/normal/tomi2_warai_", "2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/08/550800001", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800001", 128, TRUE);
 	OutputLine(NULL, "「初めまして。",
 		   NULL, "\"Nice to meet you.", Line_Continue);
 	OutputLine(NULL, "富竹と申します。",
 		   NULL, " I'm Tomitake.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/08/550800002", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800002", 128, TRUE);
 	OutputLine(NULL, "この度のプロジェクトの監査役を仰せつかりました。",
 		   NULL, " I've been commanded to serve as auditor of this project.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/08/550800003", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800003", 128, TRUE);
 	OutputLine(NULL, "どうかよろしくお願いいたします。」",
 		   NULL, " I look forward to working with you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1104,40 +1104,40 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/tomi2_def_0", 200, TRUE );
+	ModDrawCharacter(0, 8, "sprite/normal/tomi2_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/08/550800004", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800004", 128, TRUE);
 	OutputLine(NULL, "「私は直接は雛見沢に赴きませんが、定期的にお伺いして、",
 		   NULL, "\"I won't be staying in Hinamizawa.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/08/550800005", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800005", 128, TRUE);
 	OutputLine(NULL, "定期的にお伺いして、研究の進捗管理等をさせていただくことになります。」",
 		   NULL, " I'll only come by routinely to check on the progress of the research.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500125", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500125", 128, TRUE);
 	OutputLine(NULL, "「あら、それは残念ですわね。",
 		   NULL, "\"Oh, that's too bad.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500126", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500126", 128, TRUE);
 	OutputLine(NULL, "雛見沢は空気もよくて自然も素晴らしいところですのよ。",
 		   NULL, " Hinamizawa's a beautiful place with clean air.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500127", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500127", 128, TRUE);
 	OutputLine(NULL, "ぜひ仕事以外でも気軽に遊びにいらしてくださいね。」",
 		   NULL, " Please come visit us any time. Outside of work too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/tomi2_warai_2", 200, TRUE );
+	ModDrawCharacter(0, 8, "sprite/normal/tomi2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/08/550800006", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800006", 128, TRUE);
 	OutputLine(NULL, "「あはははは…。",
 		   NULL, "\"Ahahahaha...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/08/550800007", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800007", 128, TRUE);
 	OutputLine(NULL, "ありがとうございます。",
 		   NULL, " Thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/08/550800008", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s13/08/550800008", 128, TRUE);
 	OutputLine(NULL, "そうさせていただきます。」",
 		   NULL, " I guess I will.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1157,49 +1157,49 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "sprite/oko_def_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 14, "sprite/normal/oko_def_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/14/550700001", 128);
+	ModPlayVoiceLS(4, 14, "ps3/s13/14/550700001", 128, TRUE);
 	OutputLine(NULL, "「…小此木と申します。",
 		   NULL, "\"I'm Okonogi.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/14/550700002", 128);
+	ModPlayVoiceLS(4, 14, "ps3/s13/14/550700002", 128, TRUE);
 	OutputLine(NULL, "よろしくお願いいたします。」",
 		   NULL, " Nice to meet you.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551500025", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500025", 128, TRUE);
 	OutputLine(NULL, "「彼は不正規戦部隊のひとつ、山狗の隊長です。",
 		   NULL, "\"He's the commanding officer of the Mountain Dogs, one of our unconventional warfare units.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551500026", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500026", 128, TRUE);
 	OutputLine(NULL, "雛見沢に常駐し、三佐を直接サポートします。」",
 		   NULL, " They'll be stationed in Hinamizawa to provide you direct support, Major.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500128", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500128", 128, TRUE);
 	OutputLine(NULL, "「ボディガードみたいなものと思っていいのかしら…？」",
 		   NULL, "\"Should I consider you my bodyguard then...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551500027", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500027", 128, TRUE);
 	OutputLine(NULL, "「要人護衛、機密保持が主な任務です。",
 		   NULL, "\"Their principal duty is guarding VIPs and preserving secrets.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551500028", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551500028", 128, TRUE);
 	OutputLine(NULL, "三佐の直接の手足となりますので、どうかこき使ってやってください。」",
 		   NULL, " Think of them as your hands and feet, and work them hard.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/14/550700003", 128);
+	ModPlayVoiceLS(4, 14, "ps3/s13/14/550700003", 128, TRUE);
 	OutputLine(NULL, "「…よろしくお願いします。」",
 		   NULL, "\"...Thank you.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 2, "sprite/tomi2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 8, "sprite/normal/tomi2_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　富竹という男が、軍人にしては表裏のなさそうなタイプだとすると、この小此木という男は正反対のタイプに見えた。",
@@ -1246,15 +1246,15 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200042", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200042", 128, TRUE);
 	OutputLine(NULL, "「さぁさぁさぁ！",
 		   NULL, "\"Okay!", Line_Continue);
 	OutputLine(NULL, "　挨拶はこれくらいにして早く乾杯に移りましょう！",
 		   NULL, " Enough introductions!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200043", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200043", 128, TRUE);
 	OutputLine(NULL, "　ささ、富竹くんも足を崩して！",
 		   NULL, " Come on, Tomitake-kun, you can relax too!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200044", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200044", 128, TRUE);
 	OutputLine(NULL, "　今日は入江機関の前途を祝して無礼講に参りましょう！！」",
 		   NULL, " Let's put aside our ranks today and have a toast!\"", Line_Normal);
 	ClearMessage();
@@ -1325,10 +1325,10 @@ void main()
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/551200045", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200045", 128, TRUE);
 	OutputLine(NULL, "「それでは入江機関の設立と、鷹野三四くんの今後ますますの発展を祈願して乾杯に移りたいと思います。",
 		   NULL, "\"Let's have a toast to wish the best of luck to Miyo Takano-kun, and also to the new Irie Institute!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/551200046", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/551200046", 128, TRUE);
 	OutputLine(NULL, "先生！",
 		   NULL, " Arai-sensei", Line_Continue);
 	OutputLine(NULL, "　音頭をお願いいたします！」",

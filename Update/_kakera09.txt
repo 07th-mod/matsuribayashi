@@ -6,24 +6,24 @@ void main()
 
 	PlayBGM( 0, "semi", 120, 0 );
 
-	DrawBustshot( 2, "sprite/iri2_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/ka1_01", "maskright", 7, 0, 300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1247", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1247", 128, TRUE);
 	OutputLine(NULL, "「…いやぁ、遅くなって申し訳ございません。",
 		   NULL, "\"...Sorry for being late.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1248", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1248", 128, TRUE);
 	OutputLine(NULL, "今日はどういうわけか患者さんが多くて多くて。」",
 		   NULL, " I had an unusually large number of patients today.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/tomi1_def_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 8, "sprite/normal/tomi1_def_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1019", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1019", 128, TRUE);
 	OutputLine(NULL, "「お疲れ様です、入江二佐！」",
 		   NULL, "\"Thank you for coming, Lieutenant Colonel Irie!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -34,28 +34,28 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_def2_2", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1249", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1249", 128, TRUE);
 	OutputLine(NULL, "「あぁあぁ、その二佐というのはどうか止めてください…！",
 		   NULL, "\"Alright, alright, stop calling me Lieutenant Colonel!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1250", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1250", 128, TRUE);
 	OutputLine(NULL, "　私は医者です、どうもその軍隊的な階級には馴染めません。",
 		   NULL, " I'm a doctor. I just can't get used to military ranks.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1251", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1251", 128, TRUE);
 	OutputLine(NULL, "せめて所長でお願いします…。」",
 		   NULL, " Can you call me Director instead?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/tomi1_warai_2", 200, TRUE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1020", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1020", 128, TRUE);
 	OutputLine(NULL, "「了解しました、入江所長。",
 		   NULL, "\"Understood, Director Irie.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1021", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1021", 128, TRUE);
 	OutputLine(NULL, "あはははは…！」",
 		   NULL, " Ahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -125,25 +125,25 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/tomi1_def_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 8, "sprite/normal/tomi1_def_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1022", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1022", 128, TRUE);
 	OutputLine(NULL, "「それはそうと、ダムのことで村中が盛り上がってるみたいですね。」",
 		   NULL, "\"Anyway, I heard the whole village is all up in arms about the dam construction project.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/iri2_majime_2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 10, "sprite/normal/iri2_majime_", "2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1252", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1252", 128, TRUE);
 	OutputLine(NULL, "「えぇ、それはもう…！",
 		   NULL, "\"You can say that again!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1253", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1253", 128, TRUE);
 	OutputLine(NULL, "　村中、大変な騒ぎですよ。",
 		   NULL, " The village is in such a mess.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1254", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1254", 128, TRUE);
 	OutputLine(NULL, "私も、役員として自治体の地元説明会に参加してきたのですが、…怒声と罵声のそれはもう賑やかな説明会となりました。」",
 		   NULL, " I participated in the local municipal explanation meeting as an official, but... the whole thing was alive with angry shouts and profanities.\"", Line_Normal);
 	ClearMessage();
@@ -198,116 +198,116 @@ void main()
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1212", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1212", 128, TRUE);
 	OutputLine(NULL, "「くすくすくす。",
 		   NULL, "\"Hee hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1213", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1213", 128, TRUE);
 	OutputLine(NULL, "雛見沢の人は気性が激しいですものねぇ。",
 		   NULL, " People from Hinamizawa are rather hot-tempered.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1214", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1214", 128, TRUE);
 	OutputLine(NULL, "やっぱり鬼の血が流れてるからなのかしら。」",
 		   NULL, " Maybe because they're the descendants of demons.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/iri2_majime_2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri2_majime_", "2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1255", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1255", 128, TRUE);
 	OutputLine(NULL, "「笑い事じゃないですよ…。",
 		   NULL, "\"It's not funny.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1256", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1256", 128, TRUE);
 	OutputLine(NULL, "あの説明会に、夜中まで付き合わされた方の身にもなってみてください。」",
 		   NULL, " That wild meeting lasted all night!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/tomi1_warai_2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 8, "sprite/normal/tomi1_warai_", "2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1023", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1023", 128, TRUE);
 	OutputLine(NULL, "「それはお気の毒でしたね。",
 		   NULL, "\"I feel your pain.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1024", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1024", 128, TRUE);
 	OutputLine(NULL, "はっはっはっは…！」",
 		   NULL, " Ha ha ha ha...!\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_majime2_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1257", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1257", 128, TRUE);
 	OutputLine(NULL, "「いや、…本当に笑い事ではないですよ、富竹さん。",
 		   NULL, "\"Really, it's not funny, Tomitake-san.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1258", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1258", 128, TRUE);
 	OutputLine(NULL, "ダム計画はどうなってるんですか？",
 		   NULL, " So, what's going on with the dam construction?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1259", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1259", 128, TRUE);
 	OutputLine(NULL, "　本当にこの村はダム湖に沈められてしまうんですか？」",
 		   NULL, " Are they really going to submerge this village?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/tomi1_def_0", 200, TRUE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1025", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1025", 128, TRUE);
 	OutputLine(NULL, "「それについては、東京の方でも圧力を掛けています。",
 		   NULL, "\"Tokyo's applying their pressure to the situation too.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1026", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1026", 128, TRUE);
 	OutputLine(NULL, "表向きは騒ぎになっていますが、実際の裏方ではかなり屋台骨がぐらついているはずです。」",
 		   NULL, " Things might seem clamorous on the surface, but in truth, the supporters behind it are wavering rather hard.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_majime_2", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1260", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1260", 128, TRUE);
 	OutputLine(NULL, "「……その圧力が早く効くといいんですがね。",
 		   NULL, "\"...I hope their pressure produces effects soon.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1261", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1261", 128, TRUE);
 	OutputLine(NULL, "村は朝から晩まで賑やかで、村人の心もこのところ、荒んできたように思います。",
 		   NULL, " The whole village is buzzing with action from dusk to dawn, and I worry the villagers' minds are growing agitated. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1262", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1262", 128, TRUE);
 	OutputLine(NULL, "診察に来るお年寄りに捕まって、たっぷりと反ダム論争を聞かされる時がありますよ。」",
 		   NULL, "Sometimes I have to listen to my patients go on and on about their opinion on the dam construction plan.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1215", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1215", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1216", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216", 128, TRUE);
 	OutputLine(NULL, "付き合わなければいいのに。入江所長は人がいいから。」",
 		   NULL, " Why do you even listen to them? You're too nice.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_def1_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1263", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1263", 128, TRUE);
 	OutputLine(NULL, "「そうも行きません。",
 		   NULL, "\"I have to.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1264", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1264", 128, TRUE);
 	OutputLine(NULL, "私は研究所長である以前に診療所長でもあります。",
 		   NULL, " I'm a clinic director first, and research center director second.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1265", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1265", 128, TRUE);
 	OutputLine(NULL, "話を聞くのもケアの一環ですので。」",
 		   NULL, " It's part of my job to listen to them.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/tomi1_warai_2", 200, TRUE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1027", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1027", 128, TRUE);
 	OutputLine(NULL, "「それはとても良いことです。",
 		   NULL, "\"That's very nice of you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1028", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1028", 128, TRUE);
 	OutputLine(NULL, "感服いたします。」",
 		   NULL, " It's admirable.\"", Line_Normal);
 	ClearMessage();
@@ -316,93 +316,93 @@ void main()
 	DrawScene( "background/sinryou_sinsatu4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1266", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1266", 128, TRUE);
 	OutputLine(NULL, "「私は、東京の皆さんがうまく圧力を掛けてくれて、いずれはダム計画を撤回してくれるものとわかっているからいいですが。",
 		   NULL, "\"I know the people in Tokyo will call off the plan sooner or later, but the villagers won't.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1267", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1267", 128, TRUE);
 	OutputLine(NULL, "村人にとっては、先祖代々から住んできた土地を追い出されかねないと、本当にすごい騒ぎです。」",
 		   NULL, " So they have to live in fear that they might be forced to leave the land where they've lived for generations.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1216a", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216a", 128, TRUE);
 	OutputLine(NULL, "「立ち退けと言われても、引っ越せるほどのお金もなく若さもなく。",
 		   NULL, "\"Even if they're told to leave, they don't have money, and a lot of them are old.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1216b", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1216b", 128, TRUE);
 	OutputLine(NULL, "立ち退き補償金の額の吊り上げが狙いだったのかもしれないけど、…急にお役所の態度が変わっちゃって全面衝突。",
 		   NULL, " Maybe some wanted an increase in the amount of compensation they'd be offered, but the government changed its mind. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1217", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1217", 128, TRUE);
 	OutputLine(NULL, "……こうなってしまったら、穏便に決着というのは無理かも知れませんわね。」",
 		   NULL, "I don't think it's possible for them to come to a peaceful agreement at this point.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1270", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1270", 128, TRUE);
 	OutputLine(NULL, "「かつては、補償金に納得して立ち退きに応じようという人たちも少しはいたんですが。",
 		   NULL, "\"There were actually some villagers who were satisfied with that amount and were willing to leave.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1271", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1271", 128, TRUE);
 	OutputLine(NULL, "御三家の園崎家さんが強硬意見で村人をリードしてましてね。",
 		   NULL, " However, the Sonozaki family didn't want to change their stance against the issue. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1272", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1272", 128, TRUE);
 	OutputLine(NULL, "国との対決姿勢を煽っているようなんです。",
 		   NULL, "They're actually leading the villagers in the fight against the government.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1273", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1273", 128, TRUE);
 	OutputLine(NULL, "街宣車みたいなのがよく騒がしくしてますし、ビラやらチラシやら機関紙やらが回覧板と一緒によく回ってきますよ。」",
 		   NULL, " There are blaring announcement vans everywhere, and ads and flyers are attached to the circulation notices.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprite/tomi1_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawScene( "background/ka1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1029", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1029", 128, TRUE);
 	OutputLine(NULL, "「ここに住む人にとっては大変な問題ですからね。",
 		   NULL, "\"It's a serious matter for them.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1030", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1030", 128, TRUE);
 	OutputLine(NULL, "気持ちはわからなくもありません。」",
 		   NULL, " I guess I can understand.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/iri2_def1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri2_def1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1274", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1274", 128, TRUE);
 	OutputLine(NULL, "「……そういう意味では、思惑は多少違うかもしれませんが、そんな皆さんのためにも、このダム計画は早く撤回になるよう交渉を進めてほしいものです。",
 		   NULL, "\"...I hope the construction plan will be called off soon, for their sake.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1275", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1275", 128, TRUE);
 	OutputLine(NULL, "撤回されれば、この村もすぐに落ち着きのある元の村に戻るのでしょうから。」",
 		   NULL, " Once it's called off, this village will become peaceful once again.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1031", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1031", 128, TRUE);
 	OutputLine(NULL, "「もちろんわかってます。",
 		   NULL, "\"I know that, of course.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1032", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1032", 128, TRUE);
 	OutputLine(NULL, "それについては東京の方で交渉を進めておりますので、もうしばらく私どもにお任せください。」",
 		   NULL, " Things are moving right along in Tokyo, so please give us a little more time.\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/ka1_01", 200 );
-	DrawBustshotWithFiltering( 2, "sprite/ta2_def_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacterWithFiltering(2, 9, "sprite/normal/ta2_def_", "0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1218", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1218", 128, TRUE);
 	OutputLine(NULL, "「…東京の方で噂を聞いたんですけれど、建設省の方になかなかうまく圧力を掛けられるコネクションがなくて苦労してるとか？」",
 		   NULL, "\"...I've heard a rumor from Tokyo that you're having problems finding a way to pressure the Minister of Construction. Is that true?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/tomi1_komaru_2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 8, "sprite/normal/tomi1_komaru_", "2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1033", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1033", 128, TRUE);
 	OutputLine(NULL, "「いやぁ…、はっはっは…。",
 		   NULL, "\"Oh... ha ha ha...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1034", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1034", 128, TRUE);
 	OutputLine(NULL, "私如きでは詳しくは知りませんが、水面下調整がうまく行っていないのではという話も少し聞きます。」",
 		   NULL, " I'm not sure, but I've heard myself that they are having a little problem with some of the details.\"", Line_Normal);
 	ClearMessage();
@@ -426,72 +426,72 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_akuwarai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1219", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1219", 128, TRUE);
 	OutputLine(NULL, "「冗談抜きで。",
 		   NULL, "\"In all seriousness, though...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1220", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1220", 128, TRUE);
 	OutputLine(NULL, "ダムができますからここを立ち退いてくださいなんて話には、本当にならないんですわよね…？」",
 		   NULL, " We really won't be facing any requests to leave this area because of the dam, right...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/tomi1_warai_2", 200, TRUE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1035", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1035", 128, TRUE);
 	OutputLine(NULL, "「も、もちろんです。",
 		   NULL, "\"Of course not.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1036", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1036", 128, TRUE);
 	OutputLine(NULL, "それだけは絶対に問題ありません。",
 		   NULL, " I can guarantee that won't happen.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1037", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1037", 128, TRUE);
 	OutputLine(NULL, "時間が掛かっているだけですので、皆さんはどうかそこは任せて研究を進めてください。",
 		   NULL, " It's just taking longer than we thought, that's all. So please continue your research. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1038", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1038", 128, TRUE);
 	OutputLine(NULL, "穏便に済ませることが出来ない場合は、最終的な荒療治も辞さないことで意見はまとまっておりますので。」",
 		   NULL, "We were told that if things can't be resolved peacefully, then we may have to use drastic measures.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "sprite/iri2_majime_2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri2_majime_", "2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1276", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1276", 128, TRUE);
 	OutputLine(NULL, "「荒療治、…とはなんですか、富竹さん。」",
 		   NULL, "\"Drastic measures? What do you mean, Tomitake-san?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/tomi1_shinken_0", 200, TRUE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1039", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1039", 128, TRUE);
 	OutputLine(NULL, "「そこは我々の領分です。",
 		   NULL, "\"You don't need to worry about that part,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1040", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1040", 128, TRUE);
 	OutputLine(NULL, "入江所長は気にされなくて結構です。",
 		   NULL, " Director Irie.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/vtk1_tomitake1041", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1041", 128, TRUE);
 	OutputLine(NULL, "どうかお任せください。」",
 		   NULL, " Please let us take care of it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_majime2_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1277", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1277", 128, TRUE);
 	OutputLine(NULL, "「………そうですか。",
 		   NULL, "\"...I see.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1278", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1278", 128, TRUE);
 	OutputLine(NULL, "…わかりました。",
 		   NULL, " Okay.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1279", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1279", 128, TRUE);
 	OutputLine(NULL, "よろしくお願いいたします。」",
 		   NULL, " Thank you for your work.\"", Line_Normal);
 	ClearMessage();
@@ -499,16 +499,16 @@ void main()
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1221", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1221", 128, TRUE);
 	OutputLine(NULL, "「大丈夫ですわよ、入江所長。",
 		   NULL, "\"It's fine, Director Irie.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1222", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1222", 128, TRUE);
 	OutputLine(NULL, "ダム計画は絶対に撤回されますわ。",
 		   NULL, " The dam construction plan will be called off.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1223", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1223", 128, TRUE);
 	OutputLine(NULL, "……だって、そう決まっているんですもの。",
 		   NULL, " ...It's already been decided.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1224", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1224", 128, TRUE);
 	OutputLine(NULL, "…くすくす。」",
 		   NULL, " ...Hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

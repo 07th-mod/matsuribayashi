@@ -16,31 +16,31 @@ void main()
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1302", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1302", 128, TRUE);
 	OutputLine(NULL, "「……そうですか。",
 		   NULL, "\"...I see.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1303", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1303", 128, TRUE);
 	OutputLine(NULL, "…いえいえ届けなんていりません。",
 		   NULL, " No, you don't need to do that.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1304", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1304", 128, TRUE);
 	OutputLine(NULL, "悟史くんは我が雛見沢ファイターズの頼もしい選手なんですからね。",
 		   NULL, " You're a promising member of the Hinamizawa Fighters.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1305", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1305", 128, TRUE);
 	OutputLine(NULL, "席はちゃんと開けてあります。",
 		   NULL, " We'll save your spot.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1306", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1306", 128, TRUE);
 	OutputLine(NULL, "いつでも戻ってきていいんですからね。」",
 		   NULL, " So you can come back anytime, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/sato1_komaru_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 7, "sprite/normal/sato1_komaru_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1032", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1032", 128, TRUE);
 	OutputLine(NULL, "「わかりません……。",
 		   NULL, "\"Ahh... I don't know about that though...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1033", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1033", 128, TRUE);
 	OutputLine(NULL, "当分は戻って来れないと思うので、一度、退部にしてもらった方がいいと思いまして…。」",
 		   NULL, " I have no idea when I can come back, so I thought I should resign at least for now...\"", Line_Normal);
 	ClearMessage();
@@ -140,39 +140,39 @@ void main()
 
 	FadeOutBGM( 1, 300, FALSE );
 
-	DrawBustshot(0, "sprite/sato1_tukare_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 7, "sprite/normal/sato1_tukare_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/oki_g3", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1034", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1034", 128, TRUE);
 	OutputLine(NULL, "「実は僕、アルバイトを始めるんです。",
 		   NULL, "\"Actually, I'm starting a part-time job.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1035", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1035", 128, TRUE);
 	OutputLine(NULL, "それで、あまり野球に出られなくて…。」",
 		   NULL, " That's why I can't come to practice...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1307", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1307", 128, TRUE);
 	OutputLine(NULL, "「…アルバイト、",
 		   NULL, "\"...A part-time", Line_Continue);
 	OutputLine(NULL, "ですか。",
 		   NULL, " job?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1308", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1308", 128, TRUE);
 	OutputLine(NULL, "何か買いたいものでもあるんですか…？」",
 		   NULL, " Is there something you want to buy?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1036", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1036", 128, TRUE);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1037", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1037", 128, TRUE);
 	OutputLine(NULL, "…もうすぐ沙都子の誕生日なんです。",
 		   NULL, " It's almost Satoko's birthday.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1038", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1038", 128, TRUE);
 	OutputLine(NULL, "沙都子が欲しがっているぬいぐるみがあるので、それをプレゼントしてやりたいと思いまして。」",
 		   NULL, " There's a teddy bear Satoko has been looking at, and I want to get it for her.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -195,22 +195,22 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1309", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1309", 128, TRUE);
 	OutputLine(NULL, "「そうですか。",
 		   NULL, "\"I see...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1310", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1310", 128, TRUE);
 	OutputLine(NULL, "……悟史くんは本当に妹思いのお兄さんですね。",
 		   NULL, " ...You're such a good brother.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1311", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1311", 128, TRUE);
 	OutputLine(NULL, "それはきっと沙都子ちゃんも喜んでくれるでしょう。」",
 		   NULL, " I'm sure Satoko-chan will be thrilled!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
+	ModDrawCharacter(0, 7, "sprite/normal/sato1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1039", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1039", 128, TRUE);
 	OutputLine(NULL, "「……喜んでくれると、うれしいです。」",
 		   NULL, "\"......I hope so.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -300,15 +300,15 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sato1_komaru_0", 200, TRUE );
+	ModDrawCharacter(0, 7, "sprite/normal/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1040", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1040", 128, TRUE);
 	OutputLine(NULL, "「……そうだ、監督。",
 		   NULL, "\"...Oh, Coach.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1041", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1041", 128, TRUE);
 	OutputLine(NULL, "…バット、一本借りて行ってもいいですか？」",
 		   NULL, " ...Can I maybe borrow a bat?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -362,10 +362,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1312", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1312", 128, TRUE);
 	OutputLine(NULL, "「バットですか？",
 		   NULL, "\"A bat?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1313", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1313", 128, TRUE);
 	OutputLine(NULL, "　はて、何に使うんですか？」",
 		   NULL, " What do you need a bat for?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -389,13 +389,13 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sato1_tukare_0", 200, TRUE );
+	ModDrawCharacter(0, 7, "sprite/normal/sato1_tukare_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1042", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1042", 128, TRUE);
 	OutputLine(NULL, "「……いえ、その。",
 		   NULL, "\"Well...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1043", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1043", 128, TRUE);
 	OutputLine(NULL, "……野球にはそんなに来れなくなりますけど、",
 		   NULL, " although I can't come to practice...", Line_Continue);
 	OutputLine(NULL, "……でもきっと、一人で素振りの練習をするくらいの時間は取れると思うので。」",
@@ -403,16 +403,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1314", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1314", 128, TRUE);
 	OutputLine(NULL, "「それはいいですねぇ！",
 		   NULL, "\"That's great!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1315", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1315", 128, TRUE);
 	OutputLine(NULL, "　そういうことならぜひ持って行ってください。",
 		   NULL, " Sure, please take it with you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1316", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1316", 128, TRUE);
 	OutputLine(NULL, "素振りをする時は、充分周りを確認して危険がないよう注意してからやってくださいね。",
 		   NULL, " But make sure you do it in an open space, okay?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1317", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1317", 128, TRUE);
 	OutputLine(NULL, "ご近所迷惑でなければ、タイヤを吊るしてそれを打つのも良い練習になるでしょう。」",
 		   NULL, " If it won't bother your neighbors, it's good practice to hit a hanging tire.\"", Line_Normal);
 	ClearMessage();

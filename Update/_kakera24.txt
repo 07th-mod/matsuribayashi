@@ -8,7 +8,7 @@ void main()
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1039", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1039", 128, TRUE);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -26,22 +26,22 @@ void main()
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1001", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1001", 128, TRUE);
 	OutputLine(NULL, "「あ、……大石さん！",
 		   NULL, "\"Ah, Ooishi-san!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1002", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1002", 128, TRUE);
 	OutputLine(NULL, "　探したんすよ！！",
 		   NULL, " I've been looking for you!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1003", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1003", 128, TRUE);
 	OutputLine(NULL, "　課長から手配写真の、」",
 		   NULL, " The section manager asked me about the wanted poster...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1001", 128, TRUE);
 	OutputLine(NULL, "「静かにせい！",
 		   NULL, "\"Be quiet!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1002", 128, TRUE);
 	OutputLine(NULL, "　ここは騒ぐ部屋ではないぞ。」",
 		   NULL, " This is a place of rest.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -52,7 +52,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1004", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1004", 128, TRUE);
 	OutputLine(NULL, "「…す、",
 		   NULL, "\"S...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -60,13 +60,13 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…すみません。",
 		   NULL, " Sorry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1005", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1005", 128, TRUE);
 	OutputLine(NULL, "えっとですね、課長が容疑者の手配写真について、」",
 		   NULL, " Umm, the section manager asked me about the wanted poster for the suspect.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1040", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1040", 128, TRUE);
 	OutputLine(NULL, "「……あー、",
 		   NULL, "\"...Ah...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -74,16 +74,16 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…それ、小宮山くんに相談してくれませんかね。",
 		   NULL, " can you talk to Komiyama-kun about that?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1041", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1041", 128, TRUE);
 	OutputLine(NULL, "ちょいと私、じいさまと話がありまして。",
 		   NULL, " I need to speak to the coroner here.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1042", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1042", 128, TRUE);
 	OutputLine(NULL, "すぐに上がりますと上に言っといてください。」",
 		   NULL, " Could you tell him I'll be right over?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1006", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1006", 128, TRUE);
 	OutputLine(NULL, "「ぇ、",
 		   NULL, "\"Eh...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -99,64 +99,64 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1003", 128, TRUE);
 	OutputLine(NULL, "「賑やかな男だの。」",
 		   NULL, "\"Lively, isn't he?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1043", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1043", 128, TRUE);
 	OutputLine(NULL, "「おやっさんだったら、やかましいって言ってゲンコツのひとつも食らわしてるところです。」",
 		   NULL, "\"The old man would've slapped him for making such a fuss.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1004", 128, TRUE);
 	OutputLine(NULL, "「…お前さんも、少し上に戻った方がいいぞい。",
 		   NULL, "\"You probably should go back too.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1005", 128, TRUE);
 	OutputLine(NULL, "ここの空気は慣れんヤツには合わん。」",
 		   NULL, " The air in here isn't for people who aren't used to it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1044", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1044", 128, TRUE);
 	OutputLine(NULL, "「そうですねぇ。",
 		   NULL, "\"You're right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1045", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1045", 128, TRUE);
 	OutputLine(NULL, "あんまりサボってると、私もゲンコツをもらっちまいそうです。」",
 		   NULL, " If I slack off too long, I might get slapped as well.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1006", 128, TRUE);
 	OutputLine(NULL, "「……かっかっかっか。",
 		   NULL, "\"...Ha ha ha ha.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1007", 128, TRUE);
 	OutputLine(NULL, "鹿骨界隈じゃ、チンピラも避けて通るお前さんを、ツモの切り方が悪いとゲンコツ食らわせられたのは、後にも先にもこいつだけだったろうの…。」",
 		   NULL, " Here in Shishibone, all the hoodlums crossed the street when you passed through, yet he's the only one, past or future, who's ever punched you for splitting your tsumo wrong...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1046", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1046", 128, TRUE);
 	OutputLine(NULL, "「容赦のない人だったなぁ……。",
 		   NULL, "\"He really was a merciless man...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1047", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1047", 128, TRUE);
 	OutputLine(NULL, "ホントの親父よりゲンコツもらった気がしますよ。」",
 		   NULL, " I think he punched me more than my real father.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1008", 128, TRUE);
 	OutputLine(NULL, "「ホントもウソもないわい。",
 		   NULL, "\"Doesn't matter if he was your real one or not.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1009", 128, TRUE);
 	OutputLine(NULL, "…お前さんがホントの親父だと信じてたなら、こいつもホントの親父だ。」",
 		   NULL, " If you looked up to him in the same way, then he really was a father to you.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1048", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1048", 128, TRUE);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -273,17 +273,17 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1049", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1049", 128, TRUE);
 	OutputLine(NULL, "「……当時、私ゃ闇米の取り締まりばかりやらされてましてね。",
 		   NULL, "\"At the time, I was in charge of busting people for buying rice illegally.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1050", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1050", 128, TRUE);
 	OutputLine(NULL, "鉄道主要駅で、旅客を抜き打ち検査するんですよ。",
 		   NULL, " I conducted spot checks on travelers at major train stations.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1051", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1051", 128, TRUE);
 	OutputLine(NULL, "そりゃあもうぞろぞろ引っ掛かりましたっけ。",
 		   NULL, " And boy, did I find a lot of them. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1052", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1052", 128, TRUE);
 	OutputLine(NULL, "穀倉の辺りはこの辺じゃかなりでかい闇市が立ちましたからね。大阪界隈からはるばる買いに来てる連中も大勢いましたよ。」",
 		   NULL, "There was a fairly big black market in Gogura, and a lot of people came from as far as Osaka to buy it.\"", Line_Normal);
 	ClearMessage();
@@ -406,7 +406,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "次々ポンポンと没収してひっ捕らえていく感じです。",
 		   NULL, "We inspected their bags and confiscated everything that they bought at the black market.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1059", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1059", 128, TRUE);
 	OutputLine(NULL, "……ご婦人方はみんな泣かれるんですよ。",
 		   NULL, " The women all cried.", Line_WaitForInput);
 	OutputLine(NULL, "その米を買うために、彼らは家財を売り払ってるんです。",
@@ -419,7 +419,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1015", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1015", 128, TRUE);
 	OutputLine(NULL, "「道理だな。",
 		   NULL, "\"Doesn't make sense, huh?", Line_WaitForInput);
 
@@ -445,16 +445,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1067", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1067", 128, TRUE);
 	OutputLine(NULL, "「いやぁ…驚きましたよ。",
 		   NULL, "\"Man... I was surprised.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1068", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1068", 128, TRUE);
 	OutputLine(NULL, "…私の親父にね？",
 		   NULL, " ...Remember my father?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1069", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1069", 128, TRUE);
 	OutputLine(NULL, "　あまりにもそっくりだったんですよ！",
 		   NULL, " He looked exactly like him!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1070", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1070", 128, TRUE);
 	OutputLine(NULL, "　私ゃね、てっきり、親父は名古屋の空襲を奇跡的に生き延びて、帰ってきてくれたんじゃないかって本気で思いましたよ。」",
 		   NULL, " I really thought that maybe my father had miraculously survived the air raid in Nagoya.\"", Line_Normal);
 	ClearMessage();
@@ -569,32 +569,32 @@ void main()
 	DrawScene( "background/sinryou_sinsatu2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1071", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1071", 128, TRUE);
 	OutputLine(NULL, "「…いやぁ、たっぷり説教をもらいましたよ。",
 		   NULL, "\"Yeah, he sure taught me a lesson.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1072", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1072", 128, TRUE);
 	OutputLine(NULL, "大通りの真ん中でぶちのめされた挙句に。",
 		   NULL, " He gave me a good scolding in the middle of the street after I was all beat up.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1073", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1073", 128, TRUE);
 	OutputLine(NULL, "なっはっは、普通に考えたら、そんなのに耳なんか傾けないですよねぇ？",
 		   NULL, " Na ha ha, who would even listen to him, right?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1074", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1074", 128, TRUE);
 	OutputLine(NULL, "　でもあの時の私ゃどうかしてたんです。",
 		   NULL, " But something struck me then. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1075", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1075", 128, TRUE);
 	OutputLine(NULL, "どうしてもおやっさんが親父に見えちゃって。",
 		   NULL, "I kept seeing my father in him.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1076", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1076", 128, TRUE);
 	OutputLine(NULL, "大人しく言うことに耳を傾けることしかできなかったんです。」",
 		   NULL, " All I could do was listen.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1017", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1017", 128, TRUE);
 	OutputLine(NULL, "「まぁ、そこで小突いただけじゃなく、男の器量もきっちりと見せられたのが、こいつの大したところだったの。",
 		   NULL, "\"Yeah, he was a ruffian, but he showed his guts, like a real man. That's what made him such a great guy.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1018", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1018", 128, TRUE);
 	OutputLine(NULL, "今時じゃすっかり珍しくなっちまった、古き良き時代の生き残りじゃった。」",
 		   NULL, " You don't see men like him nowadays. He was a true example of a man from the good old times.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -653,16 +653,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_kanshiki1019", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_kanshiki1019", 128, TRUE);
 	OutputLine(NULL, "「…ホシの目星は？」",
 		   NULL, "\"Do you have any suspects?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1077", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1077", 128, TRUE);
 	OutputLine(NULL, "「えぇ、もちろんついてます。",
 		   NULL, "\"Yeah, of course.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1078", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1078", 128, TRUE);
 	OutputLine(NULL, "…………おやっさんの右腕ももちろん取り返しますし、…この借りもきっちり返します。」",
 		   NULL, " ...I swear, I'll find the old man's right arm and pay them back for what they've done to him.\"", Line_Normal);
 	ClearMessage();

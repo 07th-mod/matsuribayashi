@@ -1223,7 +1223,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/eriko55001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/eriko55001", 128, TRUE);
 	OutputLine(NULL, "「………よし、",
 		   NULL, "\"......Okay...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1253,7 +1253,7 @@ void main()
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/syokuin55001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/syokuin55001", 128, TRUE);
 	OutputLine(NULL, "「お前たちッ、そこで何をしているッ！！！」",
 		   NULL, "\"What are you kids doing there?!!\"", Line_Normal);
 	ClearMessage();
@@ -1317,10 +1317,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>恵理子</color>", NULL, "<color=#f5e6d3>Eriko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/eriko55002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/eriko55002", 128, TRUE);
 	OutputLine(NULL, "「きッ、決めた通りに……",
 		   NULL, "\"O-Okay, everyone go in different directions! ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/eriko55003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/eriko55003", 128, TRUE);
 	OutputLine(NULL, "　バラバラの方向にッ！！　散って！！！」",
 		   NULL, " Come on, scatter!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1368,10 +1368,10 @@ void main()
 	DrawSceneWithMask( "background/ymo2_01", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/syokuin55002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/syokuin55002", 128, TRUE);
 	OutputLine(NULL, "「待ちなさい、",
 		   NULL, "\"Hold it! ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/syokuin55003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/syokuin55003", 128, TRUE);
 	OutputLine(NULL, "待ちなさい待ちなさいッ！！！」",
 		   NULL, "Wait, hold it right there!!!\"", Line_Normal);
 	ClearMessage();
@@ -1521,7 +1521,7 @@ void main()
 	DrawSceneWithMask( "white", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/syokuin55005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/syokuin55005", 128, TRUE);
 	OutputLine(NULL, "「ぐおのやろおおおぉ、ブッ殺してやるぅううッ！！！！」",
 		   NULL, "\"You little shit! Damn you! I'll kill you!!!\"", Line_Normal);
 	ClearMessage();
@@ -1679,7 +1679,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/syokuin55006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/syokuin55006", 128, TRUE);
 	OutputLine(NULL, "「この野郎ぉおおおぉ、よくも俺の指を、指を指をぉおおおぉッ！！！！」",
 		   NULL, "\"Damn you!! My finger, my fingeeeer!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1689,7 +1689,7 @@ void main()
 	StartShakingOfAllObjects( 245, 40, 0, 2, 4*2, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/48/550100055", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100055", 128, TRUE);
 	OutputLine(NULL, "「うわああああああぁああああぁあッ！！！」",
 		   NULL, "\"Waaaaaaaaaaaaahhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -1704,7 +1704,7 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500001", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500001", 128, TRUE);
 	OutputLine(NULL, "「あああぁあぁ…、",
 		   NULL, "\"Aaahhh...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1712,7 +1712,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ぁ…。",
 		   NULL, " ahh...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500002", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500002", 128, TRUE);
 	OutputLine(NULL, "………はぁ…、",
 		   NULL, " ...Hahh!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1796,7 +1796,7 @@ void main()
 	DrawSceneWithMask( "background/kuruma4", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/yamaa55001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/yamaa55001", 128, TRUE);
 	OutputLine(NULL, "「三佐。",
 		   NULL, "\"Major,", Line_Continue);
 	Wait( 1300 );
@@ -1805,7 +1805,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500003", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500003", 128, TRUE);
 	OutputLine(NULL, "「ぁ、",
 		   NULL, "\"Ah", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1895,7 +1895,7 @@ void main()
 	DrawSceneWithMask( "background/torakku1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500004", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500004", 128, TRUE);
 	OutputLine(NULL, "「……………………はぁ、",
 		   NULL, "\"..................Hahh.........", Line_Continue);
 	Wait( 3000 );
@@ -1929,7 +1929,7 @@ void main()
 	DrawSceneWithMask( "background/torakku2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500005", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500005", 128, TRUE);
 	OutputLine(NULL, "「どう？",
 		   NULL, "\"So?", Line_Continue);
 	Wait( 800 );
@@ -1938,31 +1938,31 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/yamaa55002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/yamaa55002", 128, TRUE);
 	OutputLine(NULL, "「いえ。",
 		   NULL, "\"No,", Line_Continue);
 	Wait( 400 );
 	OutputLine(NULL, "何も。",
 		   NULL, " not yet.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/yamaa55003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/yamaa55003", 128, TRUE);
 	OutputLine(NULL, "先ほど岐阜から定期連絡が。",
 		   NULL, " We just got Gifu's scheduled check-in. ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/yamaa55004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/yamaa55004", 128, TRUE);
 	OutputLine(NULL, "問題なしとのことです。」",
 		   NULL, "Everything is okay over there.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500006", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500006", 128, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"I see.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500007", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500007", 128, TRUE);
 	OutputLine(NULL, "……ねぇ、どなたかコーヒーを淹れてくださらない？」",
 		   NULL, " Hey, could someone make me a cup of coffee?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/yamaa55005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/yamaa55005", 128, TRUE);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Sure.", Line_Continue);
 	Wait( 1100 );
@@ -1971,10 +1971,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500008", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500008", 128, TRUE);
 	OutputLine(NULL, "「ミルクだけ。",
 		   NULL, "\"Just cream, please.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500009", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500009", 128, TRUE);
 	OutputLine(NULL, "…あ、やっぱり砂糖も入れてくださる？」",
 		   NULL, " Ah, no, please put in some sugar, too.\"", Line_Normal);
 	ClearMessage();

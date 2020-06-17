@@ -88,23 +88,23 @@ void main()
 		   NULL, "I have no concrete proof, but if I question him and shake him up a bit, I have a feeling he'll confess.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(2, "sprite/kuma_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 19, "sprite/normal/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/ke_ky1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1007", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1007", 128, TRUE);
 	OutputLine(NULL, "「これだけホトケを滅多打ちにしていれば、ホシも返り血を少なからず浴びただろうと思います。",
 		   NULL, "\"For the victim to be so beaten up, the culprit must have some blood on him as well.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1008", 128);
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/vtk1_kumagai1008", 128, TRUE);
 	OutputLine(NULL, "そいつが見つけられれば決め手になりそうですね。」",
 		   NULL, " If we can find that, then we'll have proof.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1081", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1081", 128, TRUE);
 	OutputLine(NULL, "「まぁ、よっぽどの間抜けでなけりゃあ処分してるでしょうがねぇ。",
 		   NULL, "\"Unless he's a complete fool, I'm sure he's already gotten rid of it by now.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1082", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1082", 128, TRUE);
 	OutputLine(NULL, "犯行を認めた後に、捨てたと称する場所から発見できれば、検察も納得してくれるでしょう。」",
 		   NULL, " If we can find any in the place he says he disposed it in after he fesses up, then we can convince the prosecutor too.\"", Line_Normal);
 	ClearMessage();

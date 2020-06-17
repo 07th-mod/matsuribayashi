@@ -40,89 +40,89 @@ void main()
 		   NULL, "We're having Salisbury steak.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "sprite/sa2b_warai_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2b_warai_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/m_hi4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2001", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2001", 128, TRUE);
 	OutputLine(NULL, "「あら、ハンバーグとは羨ましいですわね…！",
 		   NULL, "\"My, that sounds so very good!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sa2a_akireru_a1_0", 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2a_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2002", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2002", 128, TRUE);
 	OutputLine(NULL, "　私、魚はともかく、煮物というのがちょっと怖いんですのよ？",
 		   NULL, "I don't mind the grilled fish, but it's the vegetables I'm less fond of.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2003", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2003", 128, TRUE);
 	OutputLine(NULL, "　先日買ったカボチャがまだ、だいぶ残ってるみたいなんですもの。」",
 		   NULL, " I'm certain there's still plenty of pumpkin left from the other day.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2065", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2065", 128, TRUE);
 	OutputLine(NULL, "「……きっと今夜もカボチャの煮物三昧なのです。",
 		   NULL, "\"......Then I bet you'll be getting a lot tonight.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2066", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2066", 128, TRUE);
 	OutputLine(NULL, "かわいそかわいそなのです☆」",
 		   NULL, " Poor, poor Satoko☆.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sa2b_yareyare_b1_0", 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2b_yareyare_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2004", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2004", 128, TRUE);
 	OutputLine(NULL, "「予めカボチャが出て来るとわかってるのも憂鬱でございますわね。",
 		   NULL, "\"I don't appreciate knowing that pumpkin is going to show up on the dinner table...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2005", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2005", 128, TRUE);
 	OutputLine(NULL, "はぁ。」",
 		   NULL, " Haahh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2067", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2067", 128, TRUE);
 	OutputLine(NULL, "「……み〜☆",
 		   NULL, "\"......Meep~☆.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2068", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2068", 128, TRUE);
 	OutputLine(NULL, "　突然カボチャを出されても怒るくせに贅沢な沙都子なのです。」",
 		   NULL, " You don't like pumpkin, no matter how it shows up.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sa2a_odoroki_a1_2", 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2a_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2006", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2006", 128, TRUE);
 	OutputLine(NULL, "「り、梨花にだって少しは嫌いな食べ物があるはずですわよ？！",
 		   NULL, "\"R-Rika, you have some food you're not fond of, don't you?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2007", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2007", 128, TRUE);
 	OutputLine(NULL, "　そういえば梨花、大福とかシュークリームとか、甘い物が嫌いだったんではございませんこと？！」",
 		   NULL, " That's right, you don't like daifuku, cream puffs, or anything sweet, don't you!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2069", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2069", 128, TRUE);
 	OutputLine(NULL, "「……別に嫌いではないのです。",
 		   NULL, "\"......It's not that I don't like those things.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2070", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2070", 128, TRUE);
 	OutputLine(NULL, "意地悪で食べないだけなのですよ。",
 		   NULL, " I just choose not to eat them.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2071", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2071", 128, TRUE);
 	OutputLine(NULL, "食べる気なら何個でも食べられちゃいますのです。",
 		   NULL, " If I wanted to, I could eat sweets forever.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2072", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2072", 128, TRUE);
 	OutputLine(NULL, "パンプキンパイだっておいしくいただけますのですよ、にぱ〜☆」",
 		   NULL, " I could even eat pumpkin pie too. Nipah~☆.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sa2a_akireru_a1_0", 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2a_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2008", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2008", 128, TRUE);
 	OutputLine(NULL, "「ぅうぅぅ、梨花だけ好き嫌いがないなんてずるいですわー！！」",
 		   NULL, "\"Oooh, it's not fair that you aren't a picky eater!!\"", Line_Normal);
 	ClearMessage();
@@ -169,34 +169,34 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>惣菜屋</color>", NULL, "<color=#f5e6d3>Vendor</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2001", 128, TRUE);
 	OutputLine(NULL, "「ぇい、いらっしゃいいらっしゃい！！",
 		   NULL, "\"Welcome, welcome!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2002", 128, TRUE);
 	OutputLine(NULL, "　おや、梨花ちゃま、いらっしゃい！",
 		   NULL, " Oh, Rika-chama!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2003", 128, TRUE);
 	OutputLine(NULL, "　お買い物かい？",
 		   NULL, " Are you shopping for your mother?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2004", 128, TRUE);
 	OutputLine(NULL, "　偉いねぇ！」",
 		   NULL, " What a good girl!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2073", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2073", 128, TRUE);
 	OutputLine(NULL, "「……にぱ〜☆",
 		   NULL, "\"......Nipah~☆.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2074", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2074", 128, TRUE);
 	OutputLine(NULL, "　ボクはお買い物ができる偉い子なのです。」",
 		   NULL, " I'm a good girl who can go shopping by herself.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>惣菜屋</color>", NULL, "<color=#f5e6d3>Vendor</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2005", 128, TRUE);
 	OutputLine(NULL, "「そうかそうか、梨花ちゃまは偉いなぁ！",
 		   NULL, "\"Wow, you really are a good girl!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_souzai2006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_souzai2006", 128, TRUE);
 	OutputLine(NULL, "　ほら偉い子のご褒美にこれをあげよう。」",
 		   NULL, " Here, I'll give you this.\"", Line_Normal);
 	ClearMessage();
@@ -246,25 +246,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>肉屋</color>", NULL, "<color=#f5e6d3>Butcher</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_nikuya2001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nikuya2001", 128, TRUE);
 	OutputLine(NULL, "「おや、梨花ちゃまのところは今日は何だい。",
 		   NULL, "\"What are you having for dinner tonight, Rika-chama?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_nikuya2002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nikuya2002", 128, TRUE);
 	OutputLine(NULL, "豚の挽き肉だと、う〜ん、」",
 		   NULL, " Ground pork... hmmm...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2075", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2075", 128, TRUE);
 	OutputLine(NULL, "「……ハンバーグなのですよ。",
 		   NULL, "\"...We're making Salisbury steak.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2076", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2076", 128, TRUE);
 	OutputLine(NULL, "お花の形の目玉焼きを乗っけて、ケチャップでお絵描きをするのです。」",
 		   NULL, " We're going to put flower-shaped fried eggs on top and draw pictures on them with ketchup.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>肉屋</color>", NULL, "<color=#f5e6d3>Butcher</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_nikuya2003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nikuya2003", 128, TRUE);
 	OutputLine(NULL, "「おっほっほっほ！　それはいいねぇ！」",
 		   NULL, "\"Oh ho ho ho! That sounds like fun!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -634,13 +634,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2077", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2077", 128, TRUE);
 	OutputLine(NULL, "「……沙都子、ボクも拾いますですよ。」",
 		   NULL, "\"......Satoko, I'll help you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2009", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2009", 128, TRUE);
 	OutputLine(NULL, "「あ、",
 		   NULL, "\"Ah...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -697,17 +697,17 @@ void main()
 		   NULL, " ...I'd rather spit at them than do that.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(0, "sprite/sunset/sa2a_muhyou_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 4, "sprite/sunset/sa2a_muhyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/ta3_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2010", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2010", 128, TRUE);
 	OutputLine(NULL, "「ぁ、……ぁりがとうございますわ。",
 		   NULL, "\"Th... Thank you very much.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2011", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2011", 128, TRUE);
 	OutputLine(NULL, "梨花。",
 		   NULL, " Rika.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2012", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2012", 128, TRUE);
 	OutputLine(NULL, "皆さん。」",
 		   NULL, " Everyone.\"", Line_Normal);
 	ClearMessage();
@@ -741,16 +741,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2078", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2078", 128, TRUE);
 	OutputLine(NULL, "「……お買い物が終わりましたら行きましょうです、沙都子。」",
 		   NULL, "\"...If we're done, let's go, Satoko.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sunset/sa2b_hannbeso_b1_0", 200, TRUE );
+	ModDrawCharacter(0, 4, "sprite/sunset/sa2b_hannbeso_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2013", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2013", 128, TRUE);
 	OutputLine(NULL, "「え、……えぇ…。」",
 		   NULL, "\"S-Sure...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -816,25 +816,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2079", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2079", 128, TRUE);
 	OutputLine(NULL, "「……沙都子。」",
 		   NULL, "\"......Satoko.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/sunset/sa2a_odoroki_a1_2", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 4, "sprite/sunset/sa2a_odoroki_a1_", "2", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2014", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2014", 128, TRUE);
 	OutputLine(NULL, "「…な、……なんですの、梨花。」",
 		   NULL, "\"...Wh... What is it, Rika?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2080", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2080", 128, TRUE);
 	OutputLine(NULL, "「……小銭をばらまいてしまって、かわいそかわいそなのです。",
 		   NULL, "\"......I feel bad that you dropped your coins.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2081", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2081", 128, TRUE);
 	OutputLine(NULL, "…なので、これは沙都子への残念賞なのですよ。」",
 		   NULL, " So here's something that'll make you happy.\"", Line_Normal);
 	ClearMessage();
@@ -858,7 +858,7 @@ void main()
 	DrawScene( "black", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2015", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2015", 128, TRUE);
 	OutputLine(NULL, "「……その飴は、梨花がもらったものではありませんの。」",
 		   NULL, "\"That candy was given to you.\"", Line_Normal);
 	ClearMessage();
@@ -882,10 +882,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2016", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2016", 128, TRUE);
 	OutputLine(NULL, "「…渡した人だって、梨花に食べてほしいと思って渡したんですわ。",
 		   NULL, "\"...That person wanted you to eat it.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/04/vtk2_satoko2017", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk2_satoko2017", 128, TRUE);
 	OutputLine(NULL, "………だから、私が食べたら失礼ですわよ……。」",
 		   NULL, " ...So if I did, it'd be rude...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

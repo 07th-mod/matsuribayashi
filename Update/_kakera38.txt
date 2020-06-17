@@ -55,10 +55,10 @@ void main()
 	DrawSceneWithMask( "background/rouka1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2036", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2036", 128, TRUE);
 	OutputLine(NULL, "「あー、はいはい、ありがとうございます。",
 		   NULL, "\"Okay, thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2037", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2037", 128, TRUE);
 	OutputLine(NULL, "どなたです？」",
 		   NULL, " Who is it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -69,16 +69,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2038", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2038", 128, TRUE);
 	OutputLine(NULL, "「あー来たね来たね。",
 		   NULL, "\"Oh, finally.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2039", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2039", 128, TRUE);
 	OutputLine(NULL, "婆っちゃに、梨花ちゃまが来たって伝えてもらえます？",
 		   NULL, " Can you tell Granny that Rika-chama is here?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2040", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2040", 128, TRUE);
 	OutputLine(NULL, "　多分、あっちの縁側にいると思います。",
 		   NULL, " I think she's on the porch.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2041", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2041", 128, TRUE);
 	OutputLine(NULL, "私ゃスイカを引き上げてきますね。」",
 		   NULL, " I'll get the watermelon.\"", Line_Normal);
 	ClearMessage();
@@ -122,26 +122,26 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "sprite/ri2_def_a1_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacterWithFiltering(0, 5, "sprite/normal/ri2_def_a1_", "0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/so_g1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2038", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2038", 128, TRUE);
 	OutputLine(NULL, "「……みー？",
 		   NULL, "\"......Meep?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2039", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2039", 128, TRUE);
 	OutputLine(NULL, "　お持ち帰りだったのですか。",
 		   NULL, " Am I supposed to take it home?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2040", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2040", 128, TRUE);
 	OutputLine(NULL, "ボクはてっきり…。」",
 		   NULL, " I thought...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2042", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2042", 128, TRUE);
 	OutputLine(NULL, "「あれぇ？",
 		   NULL, "\"What?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2043", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2043", 128, TRUE);
 	OutputLine(NULL, "　おじさん、そう言わなかったっけー？！」",
 		   NULL, " Didn't your dad tell you?!\"", Line_Normal);
 	ClearMessage();
@@ -171,43 +171,43 @@ void main()
 	DrawSceneWithMask( "background/rouka1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk2_oryou2043", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2043", 128, TRUE);
 	OutputLine(NULL, "「魅音、お前、梨花ちゃまん家までちょぉ持ってったらぁな。",
 		   NULL, "\"Mion, why don't you help Rika-chama take the watermelon?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk2_oryou2044", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2044", 128, TRUE);
 	OutputLine(NULL, "スイカ片手んなぁ、自転車なん漕がれんて。」",
 		   NULL, " There's no way she can ride her bicycle while carrying it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/ri2_komaru_a1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 5, "sprite/normal/ri2_komaru_a1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2041", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2041", 128, TRUE);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"......Meep.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2042", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2042", 128, TRUE);
 	OutputLine(NULL, "ボクだってスイカくらい持てますのですよ？」",
 		   NULL, " I can hold the watermelon.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk2_oryou2045", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2045", 128, TRUE);
 	OutputLine(NULL, "「危なぁ危なぁ危なぁ！",
 		   NULL, "\"No, no, that's too dangerous!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk2_oryou2046", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2046", 128, TRUE);
 	OutputLine(NULL, "　梨花ちゃまに何かあったら、オヤシロさまに申し訳たたんね。",
 		   NULL, " If something happened to you, I wouldn't know what to say to Oyashiro-sama.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk2_oryou2047", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2047", 128, TRUE);
 	OutputLine(NULL, "うちの魅音が運ぶんね、任せったったらぁ。」",
 		   NULL, " Mion will help you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2044", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2044", 128, TRUE);
 	OutputLine(NULL, "「あいあい、任せられったったらぁ。",
 		   NULL, "\"Okay, okay, I will.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2045", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2045", 128, TRUE);
 	OutputLine(NULL, "じゃあついでに神主さんにご挨拶でもしてこようかねぇ。」",
 		   NULL, " I'll go say hello to the priest too.\"", Line_Normal);
 	ClearMessage();
@@ -296,58 +296,58 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2043", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2043", 128, TRUE);
 	OutputLine(NULL, "「……ボクだけ、こんなに色々お駄賃をもらうと、他の人に悪い気がしますです。」",
 		   NULL, "\"......I feel bad getting all this candy.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2046", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2046", 128, TRUE);
 	OutputLine(NULL, "「別に気にすることないんじゃない？",
 		   NULL, "\"Don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2047", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2047", 128, TRUE);
 	OutputLine(NULL, "　お駄賃は好意みたいなもんだもん。",
 		   NULL, " Granny loves you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2048", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2048", 128, TRUE);
 	OutputLine(NULL, "変に断るよりは、子供らしく、ありがとうと言って笑顔を見せる方がよっぽどいいと思うけどねー。」",
 		   NULL, " You should just thank her and put a big smile on your face, that's all.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2044", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2044", 128, TRUE);
 	OutputLine(NULL, "「……魅ぃはお駄賃をよくもらいますですか？」",
 		   NULL, "\"...Do you get lots of treats?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2049", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2049", 128, TRUE);
 	OutputLine(NULL, "「んーー、昔はね！",
 		   NULL, "\"Hmm, I used to!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2050", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2050", 128, TRUE);
 	OutputLine(NULL, "　でもさすがにこの歳になったらもらわなくなったなぁ。",
 		   NULL, " But at this age, they don't give me any.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2051", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2051", 128, TRUE);
 	OutputLine(NULL, "今もらうと、何だか子供扱いされてるみたいで、かえってカチンと来るかな、なんてね！」",
 		   NULL, " If they did though, I would probably feel I was being treated like a little kid.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2045", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2045", 128, TRUE);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"......Meep.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2046", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2046", 128, TRUE);
 	OutputLine(NULL, "ボクは子供扱いなのです。」",
 		   NULL, " I'm being treated like a child then.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2052", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2052", 128, TRUE);
 	OutputLine(NULL, "「あははははは、いいじゃんいいじゃん！",
 		   NULL, "\"Ahahahahaha, that's okay!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2053", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2053", 128, TRUE);
 	OutputLine(NULL, "　もらえる内にもらっとけばいい。",
 		   NULL, " Enjoy it while you can.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2054", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2054", 128, TRUE);
 	OutputLine(NULL, "私くらいになれば欲しくてももらえなくなるんだからさ。」",
 		   NULL, " When you become as old as me, you won't get any even if you wanted some.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -364,7 +364,7 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2055", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2055", 128, TRUE);
 	OutputLine(NULL, "「どうしたの？」",
 		   NULL, "\"What's wrong?\"", Line_Normal);
 	ClearMessage();
@@ -373,18 +373,18 @@ void main()
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2047", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2047", 128, TRUE);
 	OutputLine(NULL, "「……………ボクはお買い物に行っても、",
 		   NULL, "\"............Whenever I run errands, ", Line_Continue);
 	OutputLine(NULL, "…よくお駄賃に飴をもらいますが。",
 		   NULL, "I get candy as a treat.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2048", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2048", 128, TRUE);
 	OutputLine(NULL, "……沙都子は一緒に行ってももらえませんです。」",
 		   NULL, " But Satoko doesn't get any even if she comes with me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2056", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2056", 128, TRUE);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -517,19 +517,19 @@ void main()
 	DrawSceneWithMask( "background/m_hi6_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2057", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2057", 128, TRUE);
 	OutputLine(NULL, "「…せめて学校には、そんな苛めを持ち込ませたくない。",
 		   NULL, "\"I don't want any of that at school.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2058", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2058", 128, TRUE);
 	OutputLine(NULL, "だから私は、そういう風に振舞っているつもりだよ。」",
 		   NULL, " That's why I try to be their friend while we're there.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "sprite/sunset/ri2_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 5, "sprite/sunset/ri2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2049", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2049", 128, TRUE);
 	OutputLine(NULL, "「……それを、学校の中だけでなく、外にも広げるには、どうしたらいいのですか…？」",
 		   NULL, "\"...How can we get that to extend outside too, instead of staying in the school?\"", Line_Normal);
 	ClearMessage();
@@ -578,22 +578,22 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/sunset/ri2_komaru_a1_0", 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/sunset/ri2_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2050", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2050", 128, TRUE);
 	OutputLine(NULL, "「……では、沙都子たちはいつまで耐え忍べばいいのですか…？」",
 		   NULL, "\"......So how long do they have to wait?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2059", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2059", 128, TRUE);
 	OutputLine(NULL, "「……………わかんない。",
 		   NULL, "\"I don't know.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2060", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2060", 128, TRUE);
 	OutputLine(NULL, "ダム戦争は数年に及んだ。",
 		   NULL, " The dam conflict lasted for several years.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2061", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2061", 128, TRUE);
 	OutputLine(NULL, "その時に押された烙印を払拭するんだから、",
 		   NULL, " They were branded back then, ", Line_Continue);
 	OutputLine(NULL, "……それと同じ年数はかかるかもしれないね。」",
@@ -601,19 +601,19 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2051", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2051", 128, TRUE);
 	OutputLine(NULL, "「……それはつまり。",
 		   NULL, "\"......Do you mean", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2052", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2052", 128, TRUE);
 	OutputLine(NULL, "沙都子たちが大人になるまで、誰にも許してもらえないということですか。",
 		   NULL, " they won't be forgiven until they become adults?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2053", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2053", 128, TRUE);
 	OutputLine(NULL, "沙都子が子供のうちは、ずっとずっと村中から冷たい目で見られていろということですか。」",
 		   NULL, " Will Satoko have to live out her childhood going through that?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2062", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2062", 128, TRUE);
 	OutputLine(NULL, "「それは、",
 		   NULL, "\"That's", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -625,40 +625,40 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshotWithFiltering( 0, "sprite/sunset/ri2_majime_a1_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacterWithFiltering(0, 5, "sprite/sunset/ri2_majime_a1_", "2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2054", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2054", 128, TRUE);
 	OutputLine(NULL, "「……魅ぃ。",
 		   NULL, "\"......Mii,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2055", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2055", 128, TRUE);
 	OutputLine(NULL, "ボクたちは沙都子や悟史の仲間なのですよね？」",
 		   NULL, " we are their friends, aren't we?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2063", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2063", 128, TRUE);
 	OutputLine(NULL, "「そうだよ。",
 		   NULL, "\"Sure,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2064", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2064", 128, TRUE);
 	OutputLine(NULL, "私にとってだって、二人は友達だよ。",
 		   NULL, " they're my friends.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2065", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2065", 128, TRUE);
 	OutputLine(NULL, "仲間だよ。」",
 		   NULL, " We're all buddies.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sunset/ri2_komaru_a2_0", 200, TRUE );
+	ModDrawCharacter(0, 5, "sprite/sunset/ri2_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2056", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2056", 128, TRUE);
 	OutputLine(NULL, "「……なら、ボクたちの仲間を救うために、ボクたちに何かできることはないのでしょうか…？」",
 		   NULL, "\"......Then isn't there something we can do to help our friends?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2066", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2066", 128, TRUE);
 	OutputLine(NULL, "「…………私たちに、",
 		   NULL, "\"......What", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -728,41 +728,41 @@ void main()
 		   NULL, "Now that the Houjou family are outcasts, not even the Sonozaki family can overturn the situation.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "sprite/sunset/ri2_komaru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 5, "sprite/sunset/ri2_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/m_hi6_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2057", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2057", 128, TRUE);
 	OutputLine(NULL, "「……雛見沢のことは、…雛見沢の人間にはどうしようもないということなのでしょうか。」",
 		   NULL, "\"......So even if it's an issue of Hinamizawa, we can't do anything about it as Hinamizawa residents?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2067", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2067", 128, TRUE);
 	OutputLine(NULL, "「……………悲しいけど、…そういうこともあるかもしれない。",
 		   NULL, "\".........Unfortunately... that's probably so, yeah.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2068", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2068", 128, TRUE);
 	OutputLine(NULL, "…もし、沙都子を救う人が現れてくれるとしたら。",
 		   NULL, " If there's someone who can help Satoko, ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2069", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2069", 128, TRUE);
 	OutputLine(NULL, "…それは村のしがらみに囚われない、そういう人なんだろうね。",
 		   NULL, "that person must be someone who has nothing to do with the village.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2070", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2070", 128, TRUE);
 	OutputLine(NULL, "…でも、そんな人、村にはいない。」",
 		   NULL, " But there's no one like that here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sunset/ri2_majime_a1_2", 200, TRUE );
+	ModDrawCharacter(0, 5, "sprite/sunset/ri2_majime_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2058", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2058", 128, TRUE);
 	OutputLine(NULL, "「……村の外から、…誰かが助けに来なければ救われない、ということですか…？」",
 		   NULL, "\"...Are you saying someone from the outside has to come help her?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2071", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2071", 128, TRUE);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -812,58 +812,58 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2059", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2059", 128, TRUE);
 	OutputLine(NULL, "「……きっと。」",
 		   NULL, "\"......I know.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2072", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2072", 128, TRUE);
 	OutputLine(NULL, "「え…？」",
 		   NULL, "\"Eh?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2060", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2060", 128, TRUE);
 	OutputLine(NULL, "「……きっと、…村の外から、しがらみに囚われない人がやって来ます。」",
 		   NULL, "\"......I know someone who has absolutely nothing to do with the village will come here from the outside.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2073", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2073", 128, TRUE);
 	OutputLine(NULL, "「そうだね。",
 		   NULL, "\"That's right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2074", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2074", 128, TRUE);
 	OutputLine(NULL, "ダム戦争も終わったんだから、また分譲地に外から人が引っ越してきてくれるといいね。",
 		   NULL, " The dam conflict is over, so it'd be great if more people moved into those lots that are for sale.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2075", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2075", 128, TRUE);
 	OutputLine(NULL, "近い歳の転校生とかくれば楽しいだろうに。」",
 		   NULL, " Wouldn't it be fun if a family with a kid our age moved in?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2061", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2061", 128, TRUE);
 	OutputLine(NULL, "「……来ます。",
 		   NULL, "\"......He will come.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2062", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2062", 128, TRUE);
 	OutputLine(NULL, "きっと。",
 		   NULL, " I know.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2063", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2063", 128, TRUE);
 	OutputLine(NULL, "そして、彼と力を合わせて、私たちは村の悪弊を打ち破るのです。",
 		   NULL, " And we'll break this evil practice alongside him.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2064", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2064", 128, TRUE);
 	OutputLine(NULL, "……それが、私たちの未来を閉ざす３つの錠前に対する、最初の鍵。」",
 		   NULL, " That will be the first key to one of the three locks that have us trapped in the past.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2076", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2076", 128, TRUE);
 	OutputLine(NULL, "「…………え？",
 		   NULL, "\"......Eh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2077", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2077", 128, TRUE);
 	OutputLine(NULL, "　何それ。",
 		   NULL, " What's this?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/03/vtk2_mion2078", 128);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2078", 128, TRUE);
 	OutputLine(NULL, "何かの小説？？」",
 		   NULL, " Are you talking about a novel or something?\"", Line_Normal);
 	ClearMessage();

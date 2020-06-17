@@ -12,10 +12,10 @@ void main()
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ホテル従業員</color>", NULL, "<color=#f5e6d3>Hotel Employee</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/vt4a_halll1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_halll1001", 128, TRUE);
 	OutputLine(NULL, "「…ハイ、バンケットより後方〜！",
 		   NULL, "\"...Banquet to back end, over!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/vt4a_halll1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_halll1002", 128, TRUE);
 	OutputLine(NULL, "　スピーチあと１人で乾杯に入ります。",
 		   NULL, " One more speaker, then the toast starts.", Line_Continue);
 	OutputLine(NULL, "準備できてるねー？！」",
@@ -23,19 +23,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>スタッフ</color>", NULL, "<color=#f5e6d3>Staff</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/vt4a_waitma1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_waitma1001", 128, TRUE);
 	OutputLine(NULL, "「後方ＯＫですー。",
 		   NULL, "\"This is the back end, we're ready!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/vt4a_waitma1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_waitma1002", 128, TRUE);
 	OutputLine(NULL, "内部、全然聞こえないんでスピーチが終わるタイミングでコールをお願いしますー！」",
 		   NULL, " We can't hear anything from inside, so please give us a cue when the speech is wrapping up.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ホテル従業員</color>", NULL, "<color=#f5e6d3>Hotel Employee</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/vt4a_halll1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_halll1003", 128, TRUE);
 	OutputLine(NULL, "「いいかい、各卓にビールは１０本ずつだよ！",
 		   NULL, "\"Listen up, ten bottles of beer per table!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/vt4a_halll1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_halll1004", 128, TRUE);
 	OutputLine(NULL, "　ちゃんと自分の縄張りにスムーズに運んでね！」",
 		   NULL, " Make sure to deliver them to your areas smoothly!\"", Line_Normal);
 	ClearMessage();
@@ -206,13 +206,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/vt4a_gmema1005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1005", 128, TRUE);
 	OutputLine(NULL, "「国旗や国歌を強制されることは心の自由への強制？",
 		   NULL, "\"Is forcing people to respect their national flag and anthem an obstruction of their freedom? ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/vt4a_gmema1006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1006", 128, TRUE);
 	OutputLine(NULL, "　馬鹿言っちゃいけない！",
 		   NULL, "That's a foolish idea!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/vt4a_gmema1007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_gmema1007", 128, TRUE);
 	OutputLine(NULL, "　いいですか、国旗や国歌を愛するというのはですね、自然に沸いてくるもんなんです。",
 		   NULL, " Listen, love for one's national flag and anthem comes naturally to all. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老会員</color>", NULL, "<color=#f5e6d3>Old Member</color>", NULL, Line_ContinueAfterTyping); }
@@ -969,19 +969,19 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300001", 128, TRUE);
 	OutputLine(NULL, "「いい、いい、立たんでも。",
 		   NULL, "\"No, no, you don't need to stand up.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300002", 128, TRUE);
 	OutputLine(NULL, "久し振りだの〜〜。",
 		   NULL, " Long time no see!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300003", 128, TRUE);
 	OutputLine(NULL, "いつでも遊びに来なさいと言っとるのに。」",
 		   NULL, " I've been telling you to come see me anytime, but you never do.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500012", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500012", 128, TRUE);
 	OutputLine(NULL, "「そのお言葉だけで光栄ですわ、小泉先生。」",
 		   NULL, "\"It's great to see you, Koizumi-sensei.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1002,10 +1002,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500013", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500013", 128, TRUE);
 	OutputLine(NULL, "「相変わらずお盛んですわね。",
 		   NULL, "\"Oh my, you haven't changed a bit, have you?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500014", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500014", 128, TRUE);
 	OutputLine(NULL, "首筋、口紅がついておりますわよ。",
 		   NULL, " I can see lipstick on your neck.", Line_Continue);
 	OutputLine(NULL, "くすくす…。」",
@@ -1013,13 +1013,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300004", 128, TRUE);
 	OutputLine(NULL, "「ほっ？",
 		   NULL, "\"Hoh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300005", 128, TRUE);
 	OutputLine(NULL, "　そりゃ本当かね、はっはっはっは。",
 		   NULL, " Is that right? Ha ha ha ha.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300006", 128, TRUE);
 	OutputLine(NULL, "やれやれ、こりゃお恥ずかしいの〜〜。」",
 		   NULL, " Good grief, how embarrassing~~.\"", Line_Normal);
 	ClearMessage();
@@ -1056,37 +1056,37 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300007", 128, TRUE);
 	OutputLine(NULL, "「三四ちゃんも、いつの間にかすっかり美人さんに成長したの〜。",
 		   NULL, "\"Miyo-chan, you've become quite beautiful yourself~.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300008", 128, TRUE);
 	OutputLine(NULL, "いつまでも小さいと思っとったらいつの間にの〜〜。」",
 		   NULL, " You're not a little girl anymore, eh~~.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500015", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500015", 128, TRUE);
 	OutputLine(NULL, "「ご冗談を。",
 		   NULL, "\"Oh, stop.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500016", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500016", 128, TRUE);
 	OutputLine(NULL, "本当にそう思われていたら、私のおしりを撫でようなんてなさいませんわ。」",
 		   NULL, " If you really think that way, why did you try to touch my bottom, hmm?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300009", 128, TRUE);
 	OutputLine(NULL, "「はっはっはっはっは！",
 		   NULL, "\"Ha ha ha ha ha!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300010", 128, TRUE);
 	OutputLine(NULL, "　老い先短い年寄りに触らせても、減るもんではないに〜。」",
 		   NULL, " What have you got to lose from having an old guy like me touch your butt?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500017", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500017", 128, TRUE);
 	OutputLine(NULL, "「私よりももっと柔らかいおしりをさんざん撫でておいでのくせに。",
 		   NULL, "\"I'm sure you have plenty of chances to touch a softer butt, don't you?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500018", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500018", 128, TRUE);
 	OutputLine(NULL, "くすくすくすくす。」",
 		   NULL, " Hee hee hee hee.\"", Line_Normal);
 	ClearMessage();
@@ -1118,46 +1118,46 @@ void main()
 	DrawSceneWithMask( "background/tk_yo1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300011", 128, TRUE);
 	OutputLine(NULL, "「………しかし。",
 		   NULL, "\"......Anyway,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300012", 128, TRUE);
 	OutputLine(NULL, "三四ちゃんは本当に立派な子だの〜。",
 		   NULL, " I'm so proud of you, Miyo-chan.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300013", 128, TRUE);
 	OutputLine(NULL, "…高野くんも、これほど立派に育ってくれて、きっとあの世で鼻高々だろうなぁ。」",
 		   NULL, " I'm sure your grandfather in Heaven is proud of you, too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500019", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500019", 128, TRUE);
 	OutputLine(NULL, "「そうであればいいのですが。",
 		   NULL, "\"I hope so.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500020", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500020", 128, TRUE);
 	OutputLine(NULL, "…祖父の偉業には、私など足元にも及びません。」",
 		   NULL, " ...But I'm not even close to approaching the level of my grandfather's great work.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300014", 128, TRUE);
 	OutputLine(NULL, "「高野くんも、色々と運がなかった。",
 		   NULL, "\"Takano-kun was unlucky in many different ways.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300015", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300015", 128, TRUE);
 	OutputLine(NULL, "時代にも恵まれんかった…。",
 		   NULL, " The era he lived in...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300016", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300016", 128, TRUE);
 	OutputLine(NULL, "もし、何もない時代に研究をしておったなら、",
 		   NULL, " If he lived in a different era, ", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300017", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300017", 128, TRUE);
 	OutputLine(NULL, "あんたに引き継がせることもなく、見事、研究を完成させておっただろうの〜…。」",
 		   NULL, "I'm sure he would have finished his research...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500021", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500021", 128, TRUE);
 	OutputLine(NULL, "「ですが、そういう時代だったからこそ、",
 		   NULL, "\"But he lived in that era, and ironically,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500022", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500022", 128, TRUE);
 	OutputLine(NULL, "「皮肉にも祖父は雛見沢症候群の存在に気付くことができました。」",
 		   NULL, " that was why he noticed the existence of the Hinamizawa Syndrome.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1306,98 +1306,98 @@ void main()
 	DrawSceneWithMask( "background/tk_yo1", "maskdown", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500023", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500023", 128, TRUE);
 	OutputLine(NULL, "「ありがとうございます、先生。",
 		   NULL, "\"Thank you very much, Koizumi-sensei.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500024", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500024", 128, TRUE);
 	OutputLine(NULL, "このご恩は忘れません。」",
 		   NULL, " I'll never forget about this.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300018", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300018", 128, TRUE);
 	OutputLine(NULL, "「はっはっはっは。",
 		   NULL, "\"Ha ha ha ha.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300019", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300019", 128, TRUE);
 	OutputLine(NULL, "金は人生の長い若者が持つべきだの。",
 		   NULL, " Money should be handled by younger people.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300020", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300020", 128, TRUE);
 	OutputLine(NULL, "年寄りがあの世まで持っていくもんじゃない。",
 		   NULL, " I can't take it to Heaven with me.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300021", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300021", 128, TRUE);
 	OutputLine(NULL, "金はあるだけ物を言うが、現金はさらに物を言う。",
 		   NULL, " I just hope this will be of assistance to you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300022", 128, TRUE);
 	OutputLine(NULL, "大事に使いなさい。」",
 		   NULL, " Use it wisely.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500025", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500025", 128, TRUE);
 	OutputLine(NULL, "「もちろんですわ。",
 		   NULL, "\"Of course I will.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500026", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500026", 128, TRUE);
 	OutputLine(NULL, "祖父の夢を実現するためだけに使います。」",
 		   NULL, " I'll use this money only to make my grandfather's dream come true.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300023", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300023", 128, TRUE);
 	OutputLine(NULL, "「高野くんが羨ましいの。",
 		   NULL, "\"I envy Takano-kun.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300024", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300024", 128, TRUE);
 	OutputLine(NULL, "よいお孫さんを持たれた。",
 		   NULL, " What a wonderful grandchild he has.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300025", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300025", 128, TRUE);
 	OutputLine(NULL, "きっとあの世で、あんたを自慢しているだろうの〜。」",
 		   NULL, " I'm sure he's bragging about you up there.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500027", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500027", 128, TRUE);
 	OutputLine(NULL, "「まだ自慢されるようなことは何もしていません。",
 		   NULL, "\"I haven't done anything yet.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500028", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500028", 128, TRUE);
 	OutputLine(NULL, "祖父の研究を完成させたとき初めて、私は祖父に褒めてもらえる資格が得られるのだと思います。」",
 		   NULL, " I'll have earned this praise when I complete my grandfather's work.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300026", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300026", 128, TRUE);
 	OutputLine(NULL, "「………本当に羨ましい。",
 		   NULL, "\"......I'm so jealous.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300027", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300027", 128, TRUE);
 	OutputLine(NULL, "ウチのせがれたちは全然ダメだ。",
 		   NULL, " My boys are no good.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300028", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300028", 128, TRUE);
 	OutputLine(NULL, "金儲けのことしか頭にない。",
 		   NULL, " They're only interested in making money.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300029", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300029", 128, TRUE);
 	OutputLine(NULL, "…金は儲けてからが大切なんだ。",
 		   NULL, " ...What really matters is how the money is spent.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300030", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300030", 128, TRUE);
 	OutputLine(NULL, "その儲けた金で、御国のために何を貢献できるかが大切なんだ。",
 		   NULL, " How you contribute to the country is what's most important. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300031", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300031", 128, TRUE);
 	OutputLine(NULL, "それこそが、今日まで自分を育んでくれた御国へのご恩返しっちゅうもんなんだがの…。」",
 		   NULL, "That's how you repay your debt to it, you know...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500029", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500029", 128, TRUE);
 	OutputLine(NULL, "「あら、たくさんの愛人たちに気前良くおごるのも御国へのご恩返しなんですの？」",
 		   NULL, "\"Oh, so are you saying that treating all those lovers so lavishly is also a way of repaying your country?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300032", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300032", 128, TRUE);
 	OutputLine(NULL, "「もちろんだとも。",
 		   NULL, "\"Of course.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300033", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300033", 128, TRUE);
 	OutputLine(NULL, "あいつらが買い物をすれば、金は巡って御国に戻る。",
 		   NULL, " When they shop, the country makes money.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300034", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300034", 128, TRUE);
 	OutputLine(NULL, "金は天下の回り物だ。」",
 		   NULL, " Money goes around, you see?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1418,83 +1418,83 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300035", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300035", 128, TRUE);
 	OutputLine(NULL, "「だが、女どもにバラ蒔く金と、三四ちゃんに託す金は意味がまったく違う。」",
 		   NULL, "\"But the money I give to those women and the money I give you are completely different.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500030", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500030", 128, TRUE);
 	OutputLine(NULL, "「えぇ。存じております。」",
 		   NULL, "\"I know that very well.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300036", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300036", 128, TRUE);
 	OutputLine(NULL, "「三四ちゃんは今日までよくがんばってきた。",
 		   NULL, "\"You've worked very hard.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300037", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300037", 128, TRUE);
 	OutputLine(NULL, "礼を尽くし、大勢の人たちの信用と支持を取り付けた。",
 		   NULL, " You've retained trust and support from so many people. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300038", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300038", 128, TRUE);
 	OutputLine(NULL, "今だから話すが、晴山くんも望月くんも、最初は君のことを若過ぎると批判的だったんだがね。",
 		   NULL, "This is the first time I've mentioned it, but Haruyama-kun and Mochizuki-kun both weren't sure about you because of your age, at first.", Line_WaitForInput);
 	OutputLine(NULL, "はっはっはっは。",
 		   NULL, " Ha ha ha ha. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300039", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300039", 128, TRUE);
 	OutputLine(NULL, "だから私も、三四ちゃんのその努力を認めて、その金を託すんだ。」",
 		   NULL, "That's why I'm acknowledging your efforts, and that's why I'm giving you this money.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500031", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500031", 128, TRUE);
 	OutputLine(NULL, "「はい。」",
 		   NULL, "\"I understand.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300040", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300040", 128, TRUE);
 	OutputLine(NULL, "「…そしてな。",
 		   NULL, "\"...Also,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300041", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300041", 128, TRUE);
 	OutputLine(NULL, "その金を私が託す、つーことはの。",
 		   NULL, " for me to give you this money", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300042", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300042", 128, TRUE);
 	OutputLine(NULL, "私が三四ちゃんを、高野くんの研究の正式な後継者だと認めたということなんだ。」",
 		   NULL, " means that I recognize you as the official successor of Takano-kun's research.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500032", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500032", 128, TRUE);
 	OutputLine(NULL, "「ありがとうございます。",
 		   NULL, "\"Thank you very much.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500033", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500033", 128, TRUE);
 	OutputLine(NULL, "私ごとき若輩に委ねてくださったことに、深く感謝いたします。」",
 		   NULL, " Thank you for believing in me. I truly appreciate it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300043", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300043", 128, TRUE);
 	OutputLine(NULL, "「いやいや！",
 		   NULL, "\"No, don't mention it!", Line_Continue);
 	OutputLine(NULL, "　これは高野くんと君の研究だ。",
 		   NULL, " This research is Takano-kun's, and yours too.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300044", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300044", 128, TRUE);
 	OutputLine(NULL, "彼も三四ちゃん以外が引き継ぐことを望まなかっただろうの〜。",
 		   NULL, " He wouldn't want anyone else to take over. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300045", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300045", 128, TRUE);
 	OutputLine(NULL, "だから、三四ちゃんがここまで上り詰めたお陰で、他の年寄りたちをより説得しやすかったわけだ。」",
 		   NULL, "So, thanks to all of your effort, I didn't have to spend too much time convincing the other old folks.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500034", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500034", 128, TRUE);
 	OutputLine(NULL, "「……祖父の完成できなかった研究を、私が完成させることだけが、私ができる祖父への唯一の恩返しですから。",
 		   NULL, "\"...Completing my grandfather's research is the least I can do for him.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500035", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500035", 128, TRUE);
 	OutputLine(NULL, "そのために求められる努力ならば厭いません。」",
 		   NULL, " I won't begrudge any efforts toward that aim.\"", Line_Normal);
 	ClearMessage();
@@ -1577,19 +1577,19 @@ void main()
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300046", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300046", 128, TRUE);
 	OutputLine(NULL, "「さて。",
 		   NULL, "\"Well......", Line_Continue);
 	Wait( 1600 );
 	OutputLine(NULL, "………高野くんの研究を正式に引き継ぐことになったなら。",
 		   NULL, " now that you're officially continuing Takano-kun's research...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300047", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300047", 128, TRUE);
 	OutputLine(NULL, "…三四ちゃんにも話しておかなきゃならんことがある。」",
 		   NULL, " there's something I need to tell you, Miyo-chan.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500036", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500036", 128, TRUE);
 	OutputLine(NULL, "「何でしょう。",
 		   NULL, "\"What is it?", Line_Continue);
 	Wait( 1300 );
@@ -1669,22 +1669,22 @@ void main()
 	DrawSceneWithMask( "background/file", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300048", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300048", 128, TRUE);
 	OutputLine(NULL, "「当時、高野くんは軍医少佐として関東軍に行っており、現地の防疫研究所で各種伝染病の予防対策について研究していた。",
 		   NULL, "\"At the time, Takano-kun was working as a military physician in the Kwantung Army. He was researching the prevention of different infectious diseases. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300049", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300049", 128, TRUE);
 	OutputLine(NULL, "そんな中で偶然、いくつかの錯乱事件が全て同じ出身地の兵士によって起されていることを知った。",
 		   NULL, "And one day, he noticed that several incidents of deranged behavior were occurring among soldiers from the same hometown. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300050", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300050", 128, TRUE);
 	OutputLine(NULL, "高野くんは、雛見沢出身者に特有の症状ではないかと仮定し、個人的にこの研究を始めたのだ。",
 		   NULL, "He hypothesized that these symptoms were unique to those from Hinamizawa and began his own personal research.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300051", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300051", 128, TRUE);
 	OutputLine(NULL, "……そして、雛見沢出身の兵士を研究所勤務にして集め、色々と調査した。",
 		   NULL, " He hired soldiers from Hinamizawa as workers in his research center and studied them there. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300052", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300052", 128, TRUE);
 	OutputLine(NULL, "そして雛見沢独特のオヤシロさま信仰の存在を知り、特異な性質を持つ寄生虫症の存在を確信したのだ。」",
 		   NULL, "...Then he learned of the unique Hinamizawa faith in Oyashiro-sama, and he was convinced that he found an infectious parasite with unique properties.\"", Line_Normal);
 	ClearMessage();
@@ -1717,10 +1717,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500037", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500037", 128, TRUE);
 	OutputLine(NULL, "「はい。祖父はその研究が軍にとって価値のあるものになるのではないかと予想し、",
 		   NULL, "\"Yes. My grandfather predicted that his research would be valuable to the army,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500038", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500038", 128, TRUE);
 	OutputLine(NULL, "予算を求めましたが一笑に伏されたとか。」",
 		   NULL, " so he asked for a budget, but they just laughed at him.\"", Line_Normal);
 	ClearMessage();
@@ -1776,81 +1776,81 @@ void main()
 	DrawScene( "background/tk_yo1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300053", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300053", 128, TRUE);
 	OutputLine(NULL, "「………当時の軍部は、低予算で且つ即効性のある兵器を期待していた。",
 		   NULL, "\"......The military at the time was hoping for a low-cost, immediate acting weapon.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300054", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300054", 128, TRUE);
 	OutputLine(NULL, "高野くんの研究は、非常に興味深いものではあっても、",
 		   NULL, " While Takano-kun's research was extremely intriguing,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300055", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300055", 128, TRUE);
 	OutputLine(NULL, "当時の軍には期待されなかったということだの…。」",
 		   NULL, " it didn't meet the military's expectations.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500039", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500039", 128, TRUE);
 	OutputLine(NULL, "「ですが、先生は唯一、祖父の研究に理解を示してくれたと聞いています。",
 		   NULL, "\"But I heard you were the only one who understood my grandfather's research, weren't you?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500040", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500040", 128, TRUE);
 	OutputLine(NULL, "祖父は先生のことを無二の親友と記していました。」",
 		   NULL, " In his journal, he calls you his best friend.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300056", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300056", 128, TRUE);
 	OutputLine(NULL, "「高野くんとは同郷だった。",
 		   NULL, "\"We came from the same hometown.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300057", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300057", 128, TRUE);
 	OutputLine(NULL, "同じ蕎麦屋を知る人間と、遠方の戦地で会えるというのは奇跡的なことだったの〜。",
 		   NULL, " It was a miracle to run into someone from the same town on such a distant battlefield.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300058", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300058", 128, TRUE);
 	OutputLine(NULL, "彼とは年は離れていたが、私たちは固い友情で結ばれていたのだ。",
 		   NULL, " Although we weren't close in age, we became very good friends.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300059", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300059", 128, TRUE);
 	OutputLine(NULL, "だから、高野くんからはよく話をされたの。",
 		   NULL, " So we talked a lot. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300060", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300060", 128, TRUE);
 	OutputLine(NULL, "画期的な研究になるに違いない、本格的な研究のために予算を付けられるよう根回ししてほしいと何度も相談を受けた。」",
 		   NULL, "Many times he told me his research would be revolutionary, and asked me to lay the groundwork to secure funding for full-scale research.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500041", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500041", 128, TRUE);
 	OutputLine(NULL, "「祖父の手記にも、先生が色々と各方面に掛け合ってくださったことが記されています。",
 		   NULL, "\"I read in his journal that you talked to many different people about his research.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500042", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500042", 128, TRUE);
 	OutputLine(NULL, "……結局、祖父の研究が認められることはありませんでしたが、",
 		   NULL, " Unfortunately, its value was never recognized,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500043", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500043", 128, TRUE);
 	OutputLine(NULL, "先生だけが理解者でいてくれたことは、きっと存命中、大きな心の支えになっていたものと思います。」",
 		   NULL, " but I'm sure your support meant a lot to him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300061", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300061", 128, TRUE);
 	OutputLine(NULL, "「だが、結局は何の力にもなれんかった。",
 		   NULL, "\"But I was never able to really do anything for him.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300062", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300062", 128, TRUE);
 	OutputLine(NULL, "……だから、高野くんにしてやれなかった協力を、三四ちゃんにするんだ。",
 		   NULL, " That's why I want to help you, Miyo-chan.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300063", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300063", 128, TRUE);
 	OutputLine(NULL, "三四ちゃんに協力するのは、高野くんに対する私の罪滅ぼしでもある…。」",
 		   NULL, " Helping you is like atoning for my mistakes...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500044", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500044", 128, TRUE);
 	OutputLine(NULL, "「…ありがとうございます。",
 		   NULL, "\"Thank you very much.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500045", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500045", 128, TRUE);
 	OutputLine(NULL, "祖父は、良い親友に恵まれたと思っています。",
 		   NULL, " He was lucky to have you as his best friend.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500046", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500046", 128, TRUE);
 	OutputLine(NULL, "……軍上層部に、先生のように理解を示してくれる方が少しでもいてくれたなら。",
 		   NULL, " ...If only there were more understanding people like you in the military's upper echelon. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500047", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500047", 128, TRUE);
 	OutputLine(NULL, "祖父の人生はもっと違ったものになっていたかもしれないと思うと、とても悔しく思います…。」",
 		   NULL, "It's very regrettable to think that my grandfather's life might have been different...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1868,25 +1868,25 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300064", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300064", 128, TRUE);
 	OutputLine(NULL, "「………………実はな。",
 		   NULL, "\"............Actually.", Line_Continue);
 	Wait( 2600 );
 	OutputLine(NULL, "真実はそうではない。",
 		   NULL, " That isn't true at all.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300065", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300065", 128, TRUE);
 	OutputLine(NULL, "上層部は高野くんの発見に少なからず関心を持っていたのだ。」",
 		   NULL, " The higher-ups were interested in Takano-kun's discovery.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500048", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500048", 128, TRUE);
 	OutputLine(NULL, "「……え？",
 		   NULL, "\"...What?", Line_Continue);
 	Wait( 1300 );
 	OutputLine(NULL, "　それは初耳です。",
 		   NULL, " I've never heard that before.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500049", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500049", 128, TRUE);
 	OutputLine(NULL, "でもそれならなぜ祖父の研究を認めなかったのですか…？」",
 		   NULL, " Then why didn't they support his research?\"", Line_Normal);
 	ClearMessage();
@@ -1894,14 +1894,14 @@ void main()
 	PlayBGM( 1, "suzu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300066", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300066", 128, TRUE);
 	OutputLine(NULL, "「ある事情により、高野くんに雛見沢症候群を研究させたくない都合ができたのだ。",
 		   NULL, "\"Something came up, and they couldn't let him look into Hinamizawa Syndrome.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300067", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300067", 128, TRUE);
 	OutputLine(NULL, "その理由は、私と一部の高級将校しか知らん。",
 		   NULL, " Only a few of the top brass and myself knew the reason. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300068", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300068", 128, TRUE);
 	OutputLine(NULL, "私を除き、全員が他界した今、",
 		   NULL, "Now that all but myself have passed,", Line_Continue);
 	OutputLine(NULL, "…高野くんの後を継ぐ三四ちゃんには話しておこうと思う。」",
@@ -1909,7 +1909,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500050", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500050", 128, TRUE);
 	OutputLine(NULL, "「…………研究させたくない都合とは、…何ですか。」",
 		   NULL, "\"......What came up? ...What was it?\"", Line_Normal);
 	ClearMessage();
@@ -2364,32 +2364,32 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500051", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500051", 128, TRUE);
 	OutputLine(NULL, "「………………そのため、…戦争が終わった後も、祖父の研究が顧みられることがなかったと…？」",
 		   NULL, "\"......So, because of that... they refused to even consider my grandfather's research long after the war ended too?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300070", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300070", 128, TRUE);
 	OutputLine(NULL, "「そうだ。",
 		   NULL, "\"Yes, that's exactly it.", Line_WaitForInput);
 	OutputLine(NULL, "……戦争は終わったが、歴史認識の溝を巡っての対立は続いとる。",
 		   NULL, " The war is over now, but there are still some conflicts there regarding historical recognition. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300071", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300071", 128, TRUE);
 	OutputLine(NULL, "高野くんにその気はなくとも、雛見沢症候群の研究が公になれば、終った戦争の諍いを蒸し返すことになりかねん。",
 		   NULL, "Even if Takano-kun didn't mean for it to happen, if his research into Hinamizawa Syndrome became public, it might cause a resurgence of quarrels over the long-ended war. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300072", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300072", 128, TRUE);
 	OutputLine(NULL, "……そう危惧した重鎮たちが、戦後も高野くんの研究を黙殺するよう、根回しをしておったのは今だから言える話だ。",
 		   NULL, "Certain authorities were afraid of that, so they made sure his research was ignored even after the war.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300073", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300073", 128, TRUE);
 	OutputLine(NULL, "…私にも、高野くんに協力しないよう、長く釘を刺されておった…。」",
 		   NULL, " ...I was long warned not to aid him any way myself...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500052", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500052", 128, TRUE);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
@@ -2427,102 +2427,102 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300074", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300074", 128, TRUE);
 	OutputLine(NULL, "「だが、そういう連中は他界し。",
 		   NULL, "\"However, they are all dead now.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300075", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300075", 128, TRUE);
 	OutputLine(NULL, "もう当時を知る者は私しかおらん。",
 		   NULL, " I'm the only one who knows about this.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300076", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300076", 128, TRUE);
 	OutputLine(NULL, "もし今、まだ高野くんが生きていたなら、私はそれを謝って全面的な協力を申し出るつもりだった。",
 		   NULL, " If Takano-kun was still alive, I was going to apologize to him and give him my unconditional support.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300077", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300077", 128, TRUE);
 	OutputLine(NULL, "だが、彼はもういない。",
 		   NULL, " But he's no longer around. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300078", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300078", 128, TRUE);
 	OutputLine(NULL, "だから、私は三四ちゃんに謝り、高野くんにするはずだった協力を、君にしようと思ってるのだ。」",
 		   NULL, "That's why I'm apologizing to you and offering to give you my full support instead.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500053", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500053", 128, TRUE);
 	OutputLine(NULL, "「………よろしいのですか？",
 		   NULL, "\"......Are you sure?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500054", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500054", 128, TRUE);
 	OutputLine(NULL, "　私が雛見沢症候群の研究をすることで、蒸し返しになるということはありませんか…？」",
 		   NULL, " Wouldn't research into the Hinamizawa Syndrome dredge up those same subjects again...?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300079", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300079", 128, TRUE);
 	OutputLine(NULL, "「もう当時とは時代が違う。",
 		   NULL, "\"It's different now.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300080", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300080", 128, TRUE);
 	OutputLine(NULL, "それに、……雛見沢症候群の研究には、単なる風土病では済ませないものが潜んでおる。",
 		   NULL, " Besides... research into the Hinamizawa Syndrome may produce more than a mere local disease. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300081", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300081", 128, TRUE);
 	OutputLine(NULL, "研究によっては、戦後日本を再び列強の末席に返り咲かせる切り札になるやもしれん。」",
 		   NULL, "Depending on your research, post-war Japan may gain a trump card that makes it a world power once more.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500055", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500055", 128, TRUE);
 	OutputLine(NULL, "「当時とはもう風向きが変わった、ということですわね。」",
 		   NULL, "\"So the tides and times have changed then.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300082", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300082", 128, TRUE);
 	OutputLine(NULL, "「そうだ。",
 		   NULL, "\"That's right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300083", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300083", 128, TRUE);
 	OutputLine(NULL, "不幸にも、高野くんは風向きが変わるまで存命することができなかった。",
 		   NULL, " Unfortunately, Takano-kun didn't live long enough to see that tide change.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300084", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300084", 128, TRUE);
 	OutputLine(NULL, "……だが幸い、三四ちゃんという後継者に研究を託せた。",
 		   NULL, " But he has you to continue his research.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300085", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300085", 128, TRUE);
 	OutputLine(NULL, "だから私は、この命ある限り、三四ちゃんの研究を最大限応援する。",
 		   NULL, " So, as long as I'm alive, I'll give you my full support. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300086", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300086", 128, TRUE);
 	OutputLine(NULL, "私は高野くんに協力を約束したのに、様々なしがらみから力になれず、彼を失望させた。",
 		   NULL, "I promised to help Takano-kun, but because of various things, I couldn't do anything.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300087", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300087", 128, TRUE);
 	OutputLine(NULL, "その償いを命ある限りしていこうと思ってる。",
 		   NULL, " So I want to make up for that as long as I'm alive. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300088", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300088", 128, TRUE);
 	OutputLine(NULL, "それが、高野くんが無二の親友と呼んでくれた私の、この世に残された最後の仕事だと思っとる…！」",
 		   NULL, "I think that's the least I can do for the man who called me his best friend.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/09/550500056", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500056", 128, TRUE);
 	OutputLine(NULL, "「先生……。",
 		   NULL, "\"Koizumi-sensei...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/09/550500057", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s13/09/550500057", 128, TRUE);
 	OutputLine(NULL, "本当にありがとうございます…。」",
 		   NULL, " Thank you so much...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300089", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300089", 128, TRUE);
 	OutputLine(NULL, "「いや、いい。",
 		   NULL, "\"Oh, don't mention it.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300090", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300090", 128, TRUE);
 	OutputLine(NULL, "私も死ぬ前に洗いざらいを話せてすっきりした。",
 		   NULL, " I'm glad I was able to tell you everything before I died.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300091", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300091", 128, TRUE);
 	OutputLine(NULL, "とにかく、私の目が黒い内は三四ちゃんの研究に一切の不自由はさせん！",
 		   NULL, " Anyway, until I'm gone, I'll make sure you get everything you need, okay?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300092", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300092", 128, TRUE);
 	OutputLine(NULL, "　何かあったらいつでも頼りなさい。",
 		   NULL, " So if anything comes up, be sure to let me know. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300093", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300093", 128, TRUE);
 	OutputLine(NULL, "助力は惜しまないからの〜！」",
 		   NULL, "I'll do anything for you!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2565,20 +2565,20 @@ void main()
 	DrawScene( "background/tk_yo1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300094", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300094", 128, TRUE);
 	OutputLine(NULL, "「そういうことだ。",
 		   NULL, "\"So there you have it.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300095", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300095", 128, TRUE);
 	OutputLine(NULL, "私が言いたいのはつまり。",
 		   NULL, " This is what I wanted to say.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300096", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300096", 128, TRUE);
 	OutputLine(NULL, "……雛見沢症候群には、歴史すらも作りかねない魔力が宿っているということだ。",
 		   NULL, " ...The Hinamizawa Syndrome has the potential power to make history.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s13/00/550300097", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300097", 128, TRUE);
 	OutputLine(NULL, "それは国の運命すらも捻じ曲げかねない。",
 		   NULL, " It may even twist the fate of our country. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s13/00/550300098", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s13/00/550300098", 128, TRUE);
 	OutputLine(NULL, "……そこのところをよく肝に銘じて、慎重に研究をしなさい。」",
 		   NULL, "...So keep that in mind, and be careful with your research.\"", Line_Normal);
 	ClearMessage();

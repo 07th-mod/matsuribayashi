@@ -21,10 +21,10 @@ void main()
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2001", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2001", 128, TRUE);
 	OutputLine(NULL, "「……こ、…これが学校なのかよ。",
 		   NULL, "\"Th... This is the school?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2002", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2002", 128, TRUE);
 	OutputLine(NULL, "すげぇな、さすが田舎だな。」",
 		   NULL, " Yeesh, this really is the sticks!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -54,13 +54,13 @@ void main()
 	DrawSceneWithMask( "background/gr1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>校長</color>", NULL, "<color=#f5e6d3>Principal</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_koucho2001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_koucho2001", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっはっは！",
 		   NULL, "\"Wa ha ha ha ha!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_koucho2002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_koucho2002", 128, TRUE);
 	OutputLine(NULL, "　まぁ確かに！",
 		   NULL, " You're right!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_koucho2003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_koucho2003", 128, TRUE);
 	OutputLine(NULL, "　我が校は営林署さんの敷地をお借りしておりますからのぅ！」",
 		   NULL, " We're borrowing the building from the forestry service!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -71,19 +71,19 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/tie_1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 22, "sprite/normal/tie_1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2001", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2001", 128, TRUE);
 	OutputLine(NULL, "「学び舎は違っても、学校であることは同じです。",
 		   NULL, "\"Although it doesn't look like it, it is in fact, a school.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2002", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2002", 128, TRUE);
 	OutputLine(NULL, "前原くんがこれまで通われていた学校とは、色々ルールが違うと思いますが、大丈夫ですか？」",
 		   NULL, " The rules may be a little different from the one you went to previously, though. Are you okay with that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2003", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2003", 128, TRUE);
 	OutputLine(NULL, "「あ、…はい！」",
 		   NULL, "\"Ah...yes!\"", Line_Normal);
 	ClearMessage();
@@ -107,26 +107,26 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2003", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2003", 128, TRUE);
 	OutputLine(NULL, "「前原くんが転校してきたら、男子の中では最年長になると思います。",
 		   NULL, "\"If you transfer here, you will be the oldest boy in the class.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2004", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2004", 128, TRUE);
 	OutputLine(NULL, "ですので、自分の勉強だけでなく、下級生たちの模範になるよう示さなければなりません。",
 		   NULL, " So you'll have to be a good role model for the younger students.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2005", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2005", 128, TRUE);
 	OutputLine(NULL, "下級生は、上級生の悪いクセをすぐに真似ます。",
 		   NULL, " The younger students have the tendency to copy bad habits from the older ones. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2006", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2006", 128, TRUE);
 	OutputLine(NULL, "先生もそこは厳しく注意していますから、前原くんも下級生に悪い影響を与えないよう、常に襟を正していてくださいね。」",
 		   NULL, "I'll be keeping my eyes on you too, so make sure you're aware of that, okay?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2004", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2004", 128, TRUE);
 	OutputLine(NULL, "「わ、わかりました。",
 		   NULL, "\"I-I understand.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2005", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2005", 128, TRUE);
 	OutputLine(NULL, "努力します。」",
 		   NULL, " I'll do my best.\"", Line_Normal);
 	ClearMessage();
@@ -205,13 +205,13 @@ void main()
 	DrawSceneWithMask( "background/g2", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2007", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2007", 128, TRUE);
 	OutputLine(NULL, "「父さん。",
 		   NULL, "\"Dad,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2008", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2008", 128, TRUE);
 	OutputLine(NULL, "俺、気に入ったよ。",
 		   NULL, " I like it here.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2009", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2009", 128, TRUE);
 	OutputLine(NULL, "やっぱり町の学校よりこっちの学校の方がいいや。」",
 		   NULL, " I like this school better than the other one in the town.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -224,13 +224,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/tie_1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 22, "sprite/normal/tie_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2007", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2007", 128, TRUE);
 	OutputLine(NULL, "「そうですか。",
 		   NULL, "\"I see.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/22/vtk2_chie2008", 128);
+	ModPlayVoiceLS(4, 22, "ps3/s20/22/vtk2_chie2008", 128, TRUE);
 	OutputLine(NULL, "…興宮の学校の方が設備もちゃんとしていますし、立派な先生方もたくさんおられますのに。」",
 		   NULL, " The school in Okinomiya has more resources and better teachers, though...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -411,7 +411,7 @@ void main()
 	DrawSceneWithMask( "background/gk1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2010", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2010", 128, TRUE);
 	OutputLine(NULL, "「……………………？」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
@@ -443,80 +443,80 @@ void main()
 		   NULL, "Should I say hello and let them know that I'm starting school next Monday?", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(2, "sprite/ri1_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/gr3", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2021", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2021", 128, TRUE);
 	OutputLine(NULL, "「……ようやく引っ越してきたのです。",
 		   NULL, "\"......Finally.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2022", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2022", 128, TRUE);
 	OutputLine(NULL, "ボクは待ち疲れたのですよ。」",
 		   NULL, " We've been waiting for so long.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/ha1_def_0", "maskleft", 1, -200, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 12, "sprite/normal/ha1_def_", "0", "maskleft", 1, -200, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2012", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2012", 128, TRUE);
 	OutputLine(NULL, "「あぅあぅあぅ。",
 		   NULL, "\"Au au au.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2013", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2013", 128, TRUE);
 	OutputLine(NULL, "でも、これでまた変わってくるのです。",
 		   NULL, " This will change things.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2014", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2014", 128, TRUE);
 	OutputLine(NULL, "……だって、圭一は、サイコロの６なのですから。」",
 		   NULL, " Because Keiichi is the six on the die.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ri1_fuman_a1_0", 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_fuman_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2023", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2023", 128, TRUE);
 	OutputLine(NULL, "「……６ではありますですが、圭一の振るサイコロは１がよく出やがりますです。」",
 		   NULL, "\"......Yes, he is, but his die rolls a one far too often.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ha1_yowaki_0", 200, TRUE );
+	ModDrawCharacter(1, 12, "sprite/normal/ha1_yowaki_", "0", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2015", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2015", 128, TRUE);
 	OutputLine(NULL, "「あぅあぅあぅあぅ…、圭一が悪いわけではありませんのです。」",
 		   NULL, "\"Au au au... that's not Keiichi's fault though.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ri1_niyari_a1_0", 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_niyari_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2024", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2024", 128, TRUE);
 	OutputLine(NULL, "「……全部、羽入が悪いのです。",
 		   NULL, "\"......It's all your fault, Hanyuu.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2025", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2025", 128, TRUE);
 	OutputLine(NULL, "お前のせいなのです。",
 		   NULL, " It's because of you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2026", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2026", 128, TRUE);
 	OutputLine(NULL, "圭一に謝れなのです。」",
 		   NULL, " Apologize to Keiichi.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ha1_au_2", 200, TRUE );
+	ModDrawCharacter(1, 12, "sprite/normal/ha1_au_", "2", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2016", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2016", 128, TRUE);
 	OutputLine(NULL, "「あぅあぅあぅあぅあぅあぅあぅ…。」",
 		   NULL, "\"Au au au au au...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2011", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2011", 128, TRUE);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Eh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2012", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2012", 128, TRUE);
 	OutputLine(NULL, "　…お、俺の名前を知ってるのか？」",
 		   NULL, " Do you know my name?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -531,107 +531,107 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ri1_warai_a1_2", 300, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2027", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2027", 128, TRUE);
 	OutputLine(NULL, "「……にぱ〜☆",
 		   NULL, "\"Nipah~☆.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2028", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2028", 128, TRUE);
 	OutputLine(NULL, "　転校生なのですか？」",
 		   NULL, " Are you a new student?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2013", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2013", 128, TRUE);
 	OutputLine(NULL, "「ぇ？",
 		   NULL, "\"Eh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2014", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2014", 128, TRUE);
 	OutputLine(NULL, "　あ、…あぁ！",
 		   NULL, " Ah... ah!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2015", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2015", 128, TRUE);
 	OutputLine(NULL, "　よろしくな！",
 		   NULL, " Nice to meet you!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2016", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2016", 128, TRUE);
 	OutputLine(NULL, "　前原圭一ってんだ。",
 		   NULL, " I'm Keiichi Maebara.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2017", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2017", 128, TRUE);
 	OutputLine(NULL, "今度の月曜から来ることになると思うぜ。",
 		   NULL, " I'm starting next Monday.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2018", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2018", 128, TRUE);
 	OutputLine(NULL, "仲良くしてくれよな！」",
 		   NULL, " Take care of me, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ha1_warai_2", 200, TRUE );
+	ModDrawCharacter(1, 12, "sprite/normal/ha1_warai_", "2", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2017", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2017", 128, TRUE);
 	OutputLine(NULL, "「あぅあぅあぅ☆",
 		   NULL, "\"Au au au☆.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2018", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2018", 128, TRUE);
 	OutputLine(NULL, "　仲良くしましょうなのです。」",
 		   NULL, " Sure thing!\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ri1_niko_a1_2", 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_niko_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2029", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2029", 128, TRUE);
 	OutputLine(NULL, "「……圭一に、古手神社の巫女さんがありがたいお告げなのです。",
 		   NULL, "\"......Here is a message for you, Keiichi, from the shrine maiden of the Furude Shrine.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2030", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2030", 128, TRUE);
 	OutputLine(NULL, "転校初日は教室の扉が鬼門なので入る時は注意なのです。",
 		   NULL, " On your first day, be careful when you come through the door to the classroom. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2031", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2031", 128, TRUE);
 	OutputLine(NULL, "あと、椅子の背中に画鋲、机の中にはカエルの玩具まで入ってます。」",
 		   NULL, "Also, there'll be a thumbtack on the back of your chair. There'll be a toy frog in your desk too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ha1_au_2", 200, TRUE );
+	ModDrawCharacter(1, 12, "sprite/normal/ha1_au_", "2", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2019", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2019", 128, TRUE);
 	OutputLine(NULL, "「……でも、何度警告しても、圭一は何度でも引っ掛かるのです。",
 		   NULL, "\"...But even with this warning, you fall for it again and again.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2020", 128);
+	ModPlayVoiceLS(4, 12, "ps3/s20/12/vtk2_hanyu2020", 128, TRUE);
 	OutputLine(NULL, "月曜日はかわいそかわいそなのです…。」",
 		   NULL, " Your Monday is going to be disastrous... poor Keiichi.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ri1_niyari_a1_0", 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri1_niyari_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2032", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2032", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2033", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2033", 128, TRUE);
 	OutputLine(NULL, "だから面白いのだけれど。",
 		   NULL, " That's why it's fun.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2034", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2034", 128, TRUE);
 	OutputLine(NULL, "たまにはそんな運命も打ち破ってみて？",
 		   NULL, " Why don't you try overcoming that fate sometime?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2035", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2035", 128, TRUE);
 	OutputLine(NULL, "　くすくすくす。",
 		   NULL, " Hee hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2036", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2036", 128, TRUE);
 	OutputLine(NULL, "あなたがそれを教えてくれるのよ？",
 		   NULL, " You'll be the one to teach us that.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2037", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2037", 128, TRUE);
 	OutputLine(NULL, "　数多の世界のひとつで、ね。」",
 		   NULL, " In one of the many worlds, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2019", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2019", 128, TRUE);
 	OutputLine(NULL, "「は？",
 		   NULL, "\"Huh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/01/vtk2_keiichi2020", 128);
+	ModPlayVoiceLS(4, 1, "ps3/s20/01/vtk2_keiichi2020", 128, TRUE);
 	OutputLine(NULL, "　………？？？？？？」",
 		   NULL, " ......Huh?????\"", Line_Normal);
 	ClearMessage();

@@ -142,104 +142,104 @@ void main()
 	DrawSceneWithMask( "background/sinryou_matiai1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1116", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1116", 128, TRUE);
 	OutputLine(NULL, "「…何度いらっしゃられても、沙都子ちゃんへの面会を許可することはできません。",
 		   NULL, "\"No matter how many times you come, I won't let you see her.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1117", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1117", 128, TRUE);
 	OutputLine(NULL, "彼女は両親を亡くしたショックで打ちのめされているんですよ？",
 		   NULL, " She's still crippled by the shock of her parents' deaths.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1118", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1118", 128, TRUE);
 	OutputLine(NULL, "　それを汲み取ることはできませんか。」",
 		   NULL, " Can't you understand what she's been going through?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/oisi1_4_1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 11, "sprite/normal/oisi1_4_", "1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1001", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1001", 128, TRUE);
 	OutputLine(NULL, "「いやいや、本当にちょっとだけお話が聞ければいいんです。",
 		   NULL, "\"I understand. I only need a few minutes with her, really.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1002", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1002", 128, TRUE);
 	OutputLine(NULL, "そうお時間を取らせるつもりはないんですがねぇ。",
 		   NULL, " It won't take long at all.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1003", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1003", 128, TRUE);
 	OutputLine(NULL, "……令状が必要だってんなら申請しないことはありませんが、そうなるとかなり本格的なことになってしまいますよ？",
 		   NULL, " If you want me to get a warrant, I will. But that's pretty serious, you know? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1004", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1004", 128, TRUE);
 	OutputLine(NULL, "　私も北条さんの容態を気遣ってるからこそ、令状を取るなんて無粋を避けてるんじゃあありませんか。」",
 		   NULL, "I'm being considerate of Houjou-san, and that's why I haven't gotten a warrant.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1119", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1119", 128, TRUE);
 	OutputLine(NULL, "「令状を取ってまで、一体、何を沙都子ちゃんに聞こうとしているのか、私にはさっぱりわかりません。」",
 		   NULL, "\"What are you trying to ask her anyway? I don't really understand.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_1_0", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1005", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1005", 128, TRUE);
 	OutputLine(NULL, "「………ん〜〜、実はですねぇ。",
 		   NULL, "\"...Hmm, well, actually...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1006", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1006", 128, TRUE);
 	OutputLine(NULL, "今回の転落、事故ではなく事件の可能性もありまして。」",
 		   NULL, " It's possible that the fall was not an accident.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1120", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1120", 128, TRUE);
 	OutputLine(NULL, "「北条夫妻がダム戦争以来、村中から嫌われているという話は知っています。",
 		   NULL, "\"I know the Houjou couple were hated by the whole village after the business with the dam.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1121", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1121", 128, TRUE);
 	OutputLine(NULL, "ですが、わざわざ旅行先まで追いかけて突き落とすというのは、少々、突飛過ぎはしませんか？」",
 		   NULL, " But who would actually follow them on their trip and push them off? Don't you think that's absurd?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_2_2", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1007", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1007", 128, TRUE);
 	OutputLine(NULL, "「ん〜〜〜。",
 		   NULL, "\"Hmmmmm.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1008", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1008", 128, TRUE);
 	OutputLine(NULL, "まぁ、事故でもいいんですがね？",
 		   NULL, " Well, we could call it an accident.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1009", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1009", 128, TRUE);
 	OutputLine(NULL, "　ならば、どうしてもよくわからない嘘があるんです。",
 		   NULL, " But if that was the case, there are some things which just don't make sense.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1010", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1010", 128, TRUE);
 	OutputLine(NULL, "どうして嘘が必要なのか、って考えるとですね。",
 		   NULL, " Why lie?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1011", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1011", 128, TRUE);
 	OutputLine(NULL, "こりゃあ事故ってことはありえないんじゃないかなぁって思うんです。」",
 		   NULL, " With those lies, I don't think it was an accident.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1122", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1122", 128, TRUE);
 	OutputLine(NULL, "「…嘘、とは何のことですか？」",
 		   NULL, "\"What lies?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1012", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1012", 128, TRUE);
 	OutputLine(NULL, "「いえね。",
 		   NULL, "\"Well,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1013", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1013", 128, TRUE);
 	OutputLine(NULL, "北条沙都子さんの言う、事故当時は車で眠っていたっていう話。",
 		   NULL, " Satoko Houjou-san said she was asleep in the car at the time of the accident.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1014", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1014", 128, TRUE);
 	OutputLine(NULL, "…ちょいと話がおかしいんじゃないかなぁって、そう思うんです。」",
 		   NULL, " ...I think that story sounds a little off, doesn't it?\"", Line_Normal);
 	ClearMessage();
@@ -268,28 +268,28 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1123", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1123", 128, TRUE);
 	OutputLine(NULL, "「それのどこに嘘があるというんです？",
 		   NULL, "\"Where is the lie, exactly?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1124", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1124", 128, TRUE);
 	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、",
 		   NULL, " You aren't saying Satoko-chan wasn't really asleep and she went over to the viewing platform with her parents,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1083", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1083", 128, TRUE);
 	OutputLine(NULL, "そういう意味ですか？」",
 		   NULL, " are you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_1_0", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1015", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1015", 128, TRUE);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1016", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1016", 128, TRUE);
 	OutputLine(NULL, "北条沙都子さんは眠ってなんかいなかった。",
 		   NULL, " Satoko Houjou-san was never asleep.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1017", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1017", 128, TRUE);
 	OutputLine(NULL, "両親と一緒に車を降りて展望台へ行ったんです。」",
 		   NULL, " She got out of the car with her parents and went to the viewing platform.\"", Line_Normal);
 	ClearMessage();
@@ -310,25 +310,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1125", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1125", 128, TRUE);
 	OutputLine(NULL, "「な、何を根拠にそう仰られているのかわかりません。",
 		   NULL, "\"Why are you saying such a thing?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1126", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1126", 128, TRUE);
 	OutputLine(NULL, "それに、なぜ沙都子ちゃんに嘘をつく必要があるのです？」",
 		   NULL, " Besides, why would Satoko-chan lie?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1018", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1018", 128, TRUE);
 	OutputLine(NULL, "「それなんですよ。",
 		   NULL, "\"That's just it.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1019", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1019", 128, TRUE);
 	OutputLine(NULL, "なぜ北条沙都子さんは嘘をつかなければならないのか。",
 		   NULL, " Why would Satoko Houjou-san lie?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1020", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1020", 128, TRUE);
 	OutputLine(NULL, "それの本当のところを教えていただけないと、",
 		   NULL, " That's why I need to talk to her.", Line_Continue);
 	OutputLine(NULL, "…こいつぁただの転落事故ってことでは済ませられないんです。」",
@@ -336,93 +336,93 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1127", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1127", 128, TRUE);
 	OutputLine(NULL, "「どうして沙都子ちゃんが嘘をついているとお思いなんです？」",
 		   NULL, "\"Why are you convinced that Satoko-chan is lying?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_2_2", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1021", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1021", 128, TRUE);
 	OutputLine(NULL, "「……今回の事故は所轄が違いますので、白川署さんが関係者から事情聴取をしているんですがね？",
 		   NULL, "\"This accident took place in a different jurisdiction. The guys from the Shirakawa station conducted the interviews with the parties involved.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1022", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1022", 128, TRUE);
 	OutputLine(NULL, "　その調書を読んでみると、どうにも引っかかるところがある。」",
 		   NULL, " There are things that bother me in their report.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1128", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1128", 128, TRUE);
 	OutputLine(NULL, "「引っかかるところ、…とは何ですか。」",
 		   NULL, "\"Bother you... Like what?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/oisi1_4_1", 200, TRUE );
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1023", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1023", 128, TRUE);
 	OutputLine(NULL, "「北条沙都子さんの主張によるならば、",
 		   NULL, "\"According to Satoko Houjou-san's statement,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1024", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1024", 128, TRUE);
 	OutputLine(NULL, "彼女は両親に展望台へ行こうと誘われたが、眠かったのでそれを断り車を降りなかったという。",
 		   NULL, " her parents asked her to come with them to the viewing platform, but she was sleepy, so she didn't get out of the car.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1025", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1025", 128, TRUE);
 	OutputLine(NULL, "そして彼女はそのまま熟睡してしまい、相当の時間が経ってから目を覚ました。",
 		   NULL, " Then she fell asleep and woke up after a while. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1026", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1026", 128, TRUE);
 	OutputLine(NULL, "そして、いつまでも戻ってこない両親に不安感を募らせ、泣き出した。",
 		   NULL, "She became concerned because her parents hadn't come back, and started to cry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1027", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1027", 128, TRUE);
 	OutputLine(NULL, "その声を聞いて巡回中の公園作業員が話し掛けて事故が発覚したことになっています。",
 		   NULL, " One of the park workers on patrol noticed her crying and talked to her, and that's how the accident was discovered.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1028", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1028", 128, TRUE);
 	OutputLine(NULL, "　この時ですね？",
 		   NULL, "And at that time, guess what?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1029", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1029", 128, TRUE);
 	OutputLine(NULL, "　公園作業員の証言では、両親が崖下に転落したと彼女が先に言ったというんですよ。",
 		   NULL, " According to the park worker's testimony, she was the one who first said her parents had fallen off the cliff. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1030", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1030", 128, TRUE);
 	OutputLine(NULL, "ところがこの時、北条夫妻が停めた車の位置からは問題の事故現場ははっきりと見えたわけじゃないはずなんです。",
 		   NULL, "But, you see, it's hard to see the accident site in question from where the car was parked.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1031", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1031", 128, TRUE);
 	OutputLine(NULL, "いや、注意深く見れば柵が破損していたのを気付けたかもしれない。",
 		   NULL, " If you look very carefully, you might be able to notice the broken fence.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1032", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1032", 128, TRUE);
 	OutputLine(NULL, "　でもですよ？",
 		   NULL, "But still, you know...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1033", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1033", 128, TRUE);
 	OutputLine(NULL, "　目が覚めたら両親がいないのを知って、真っ先に崖下へ転落したと言うのは尋常ではないと思うんです。",
 		   NULL, " I think it's odd to say your parents had fallen off a cliff just because you didn't see them when you woke up. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1034", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1034", 128, TRUE);
 	OutputLine(NULL, "普通は、両親は自分を置いてどこかへ散歩に行ってしまい戻ってこないと言うはずなんです。",
 		   NULL, "Normally, most people would say something like their parents went for a walk and didn't come back. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1035", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1035", 128, TRUE);
 	OutputLine(NULL, "転落する直接の現場を見てもいないのに、両親が転落したと第三者にいきなり言うのがね、私ゃどうしても腑に落ちないんですなぁ！",
 		   NULL, "It just doesn't make sense to me that she told a stranger that her parents had fallen off a cliff without even being at the site of the accident!", GetGlobalFlag(GLinemodeSp));
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1036", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1036", 128, TRUE);
 	OutputLine(NULL, "　…この辺り、どうして彼女は両親が転落したと確信したのか、その経緯を教えてもらいたいと思いまして、通い詰めているところだったんですよ。",
 		   NULL, "I want to ask her why she was so certain that her parents had fallen off a cliff. That's why I keep coming back here. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1037", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1037", 128, TRUE);
 	OutputLine(NULL, "入院前に私も何度かお尋ねはしているんですが、記憶にない、当時は混乱していたとまぁ、まるでどこかの政治家みたいな答弁でしてね。",
 		   NULL, "I asked her many times before she was admitted here, but all she said was that she doesn't remember or that she was confused at the time. Sounds like a politician, huh? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/11/vtk1_oishi1038", 128);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/vtk1_oishi1038", 128, TRUE);
 	OutputLine(NULL, "私ゃ、じっくり話をしてみる価値があるかなぁと思っていたんですよ。」",
 		   NULL, "That's why I think it's worth taking that time to talk to her.\"", Line_Normal);
 	ClearMessage();
@@ -728,57 +728,57 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1129", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1129", 128, TRUE);
 	OutputLine(NULL, "「白川自然公園の、沙都子ちゃんの両親の転落事故ですが。",
 		   NULL, "\"It's about the Houjou family's accident at the Shirakawa Nature Park...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1130", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1130", 128, TRUE);
 	OutputLine(NULL, "……この件、事故で決着するように、山狗の小此木さんにお願いしてもらうことはできますか？」",
 		   NULL, " Do you think you can ask Okonogi-san from the Mountain Dogs to make it out to be an accident?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/ta2_def_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 9, "sprite/normal/ta2_def_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1098", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1098", 128, TRUE);
 	OutputLine(NULL, "「えぇ、そんなこと、お安い御用ですわよ。",
 		   NULL, "\"Sure, of course. That's no problem.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1099", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1099", 128, TRUE);
 	OutputLine(NULL, "山狗はそういうものの隠蔽や捏造にもっとも特化した部隊ですもの。",
 		   NULL, " The Mountain Dogs are a unit specialized in concealment and manipulation, after all. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1100", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1100", 128, TRUE);
 	OutputLine(NULL, "…確かに、早くあの転落事故が事故ということに決着しないと、警察がウチの実験体に近付いて邪魔ですものねぇ。」",
 		   NULL, "We have to put an end to it quickly, otherwise the police will end up getting closer to finding out about our research.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1131", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1131", 128, TRUE);
 	OutputLine(NULL, "「……そういうことです。",
 		   NULL, "\"...That's right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1132", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1132", 128, TRUE);
 	OutputLine(NULL, "特に、大石さんがこの件から早く引き上げるよう、よろしくお願いします。",
 		   NULL, " Please make especially sure Ooishi-san is drawn away from this case.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1133", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1133", 128, TRUE);
 	OutputLine(NULL, "……試薬投与実験のデリケートな時期です。",
 		   NULL, " We're at a delicate stage of the drug administration test.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1134", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1134", 128, TRUE);
 	OutputLine(NULL, "不要な心労をかけるのは適当ではありませんので。」",
 		   NULL, " She doesn't need any more unnecessary stress.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1101", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1101", 128, TRUE);
 	OutputLine(NULL, "「まったくですわね。",
 		   NULL, "\"You're absolutely right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1102", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1102", 128, TRUE);
 	OutputLine(NULL, "山狗にそのように伝えますわ。",
 		   NULL, " I'll let the Mountain Dogs know.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1103", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1103", 128, TRUE);
 	OutputLine(NULL, "警察にもすでにコネクションがあるとのことなので、圧力をかけるよう指示しましょう。",
 		   NULL, " I've heard they even have connections within the police, so I'll give the order to put pressure on them, too. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1104", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1104", 128, TRUE);
 	OutputLine(NULL, "近日中に、白川転落事故は事故として確定することになると思いますわ。」",
 		   NULL, "I'm sure the accident in Shirakawa will be concluded as exactly that within a few days.\"", Line_Normal);
 	ClearMessage();

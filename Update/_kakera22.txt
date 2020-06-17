@@ -38,7 +38,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot(2, "sprite/ta1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -73,13 +73,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800025", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800025", 128, TRUE);
 	OutputLine(NULL, "「鷹野さんはそういうのを調べるのが好きだねぇ…！」",
 		   NULL, "\"You sure like looking into that stuff, don't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900017", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900017", 128, TRUE);
 	OutputLine(NULL, "「あら、だって楽しいわよ？",
 		   NULL, "\"Sure, it's fun!", Line_Continue);
 	OutputLine(NULL, "　封印された過去の暗黒史を紐解くなんて、とてもわくわくすることだとは思わない？」",
@@ -105,22 +105,22 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_def_0", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900018", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900018", 128, TRUE);
 	OutputLine(NULL, "「それに、雛見沢症候群を調べる上でもとても役立つことなのよ？",
 		   NULL, "\"Besides, they help me in researching Hinamizawa Syndrome.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900019", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900019", 128, TRUE);
 	OutputLine(NULL, "　何も顕微鏡を覗くことだけが調べることになるとは限らない。この寄生虫と、長い時間を過ごしてきたこの村の伝承の方が、よっぽど重要な何かを教えてくれることもあるんだから。」",
 		   NULL, "You don't have to always look through microscopes to research things. Sometimes, the traditions of this village that have spent so long with the parasite can teach us things that are far more valuable.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800026", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800026", 128, TRUE);
 	OutputLine(NULL, "「それもそうだね。",
 		   NULL, "\"That's true.", Line_Continue);
 	OutputLine(NULL, "…うん、鷹野さんは本当に研究熱心だよなぁ。」",
@@ -128,10 +128,10 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900020", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900020", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "だって、研究こそ私のライフワークだもの。",
@@ -141,15 +141,15 @@ void main()
 	OutputLine(NULL, "　知的好奇心をうずうずさせてくれる。",
 		   NULL, " It tickles my intellectual curiosity. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900021", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900021", 128, TRUE);
 	OutputLine(NULL, "それは多分、考えることに悦を感じることができる、人間だけに許された最高の娯楽だと思うの。",
 		   NULL, "That's probably the greatest entertainment available to humans, who can feel joy just from thinking. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900022", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900022", 128, TRUE);
 	OutputLine(NULL, "この研究の第一人者だった高野先生も、雛見沢症候群の研究に生涯を捧げるだけの何かを見出し、その魅力に取り憑かれていたに違いないでしょうね。",
 		   NULL, "The first person to work on this, Dr. Takano, must have discovered something fascinating enough to make him devote his entire life to the researching of the syndrome too. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900023", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900023", 128, TRUE);
 	OutputLine(NULL, "……多分、私だけが、そんな高野先生の気持ちを理解してると思うの。",
 		   NULL, "...I think I'm probably the only one who could understand his feelings.", Line_Continue);
 	OutputLine(NULL, "……研究者でないジロウさんには難しいかしら。",
@@ -204,7 +204,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800027", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800027", 128, TRUE);
 	OutputLine(NULL, "「なるほど。",
 		   NULL, "\"I see...", Line_Continue);
 	OutputLine(NULL, "……ひょっとして鷹野さんは、だから三四という名前なのかい？」",
@@ -212,20 +212,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_def_0", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900024", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900024", 128, TRUE);
 	OutputLine(NULL, "「……え？」",
 		   NULL, "\"...What?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800028", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800028", 128, TRUE);
 	OutputLine(NULL, "「いや、鷹野さんが尊敬しているその先生の名前が確か、高野一二三。",
 		   NULL, "\"Well, the name of the researcher you look up to is 'Hifumi Takano', right? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800029", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800029", 128, TRUE);
 	OutputLine(NULL, "そして、鷹野さんの名前が三四。",
 		   NULL, "And your name is Miyo.", Line_Continue);
 	OutputLine(NULL, "…１２３の後を引き継いで、３４。",
@@ -235,13 +235,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900025", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900025", 128, TRUE);
 	OutputLine(NULL, "「……………………それを誰かに聞いたの？」",
 		   NULL, "\".........Who told you that?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800030", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800030", 128, TRUE);
 	OutputLine(NULL, "「…え？",
 		   NULL, "\"Eh?", Line_Continue);
 	OutputLine(NULL, "　いや、あはははは、今、僕が適当に考えただけなんだよ…。",
@@ -251,10 +251,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900026", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900026", 128, TRUE);
 	OutputLine(NULL, "「くす。",
 		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "……正解よ。",
@@ -264,25 +264,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800031", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800031", 128, TRUE);
 	OutputLine(NULL, "「いや、鷹野さんが、その高野先生をとても尊敬しているのは知ってたし、",
 		   NULL, "\"I know you admire Dr. Takano", Line_Continue);
 	OutputLine(NULL, "まるで自分が実の娘か孫で、研究の正当な後継者だというような感じで言っていることがあったからね。",
 		   NULL, " and sometimes you've spoken as if you were his daughter or a granddaughter, who inherited his research legitimately.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/440800032", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800032", 128, TRUE);
 	OutputLine(NULL, "何となくそんな気がしただけなんだよ。",
 		   NULL, " That's why I said that. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800033", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800033", 128, TRUE);
 	OutputLine(NULL, "……作家のペンネームだって、ほら、江戸川乱歩みたいに、尊敬する作家のオマージュで名前を付けることもあるし。",
 		   NULL, "Even authors, like Ranpo Edogawa, used their pen names as homages towards authors they admired as well.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/440800034", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800034", 128, TRUE);
 	OutputLine(NULL, "なら、鷹野三四って名前もペンネームみたいなものなのかなぁって思って。」",
 		   NULL, " So I thought maybe the name you use is like your pen name, you know.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900027", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900027", 128, TRUE);
 	OutputLine(NULL, "「そんなことはないわよ。",
 		   NULL, "\"No, that's not so.", Line_Continue);
 	OutputLine(NULL, "鷹野三四は本名よ。",
@@ -292,7 +292,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800035", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800035", 128, TRUE);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Eh?", Line_Continue);
 	OutputLine(NULL, "　じゃあ、高野先生とは本当は同じ苗字なのかい？",
@@ -308,7 +308,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900028", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900028", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_Continue);
 	OutputLine(NULL, "ジロウさんったら、運命的だなんて大袈裟な。",
@@ -320,7 +320,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800036", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800036", 128, TRUE);
 	OutputLine(NULL, "「…………え？！」",
 		   NULL, "\"......What?!\"", Line_Normal);
 	ClearMessage();
@@ -344,16 +344,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_def_0", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900029", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900029", 128, TRUE);
 	OutputLine(NULL, "「祖父の研究を引き継ぐために予算を、",
 		   NULL, "\"Someone told me it'd leave a bad impression if I asked for money to continue my grandfather's research; that people may think I'm trying to pull funds for a family matter.", Line_Continue);
 	OutputLine(NULL, "というと、まるで身内贔屓のために予算を引っ張ろうとしているように見えて、印象がよくないという風に助言をしてくれる人がいたので、タカの一文字を変えたからなの。",
 		   NULL, " That's why I changed one of the characters in my last name. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900030", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900030", 128, TRUE);
 	OutputLine(NULL, "だから人前で高野先生が私の祖父だと話したのは、",
 		   NULL, "So other than Uncle Koizumi,", Line_Continue);
 	OutputLine(NULL, "……小泉のおじいちゃんを除いたら、ジロウさんが初めてになるわね。」",
@@ -361,7 +361,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800037", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800037", 128, TRUE);
 	OutputLine(NULL, "「…………そ、……そうだったのかい。",
 		   NULL, "\"......I... I see.", Line_Continue);
 	OutputLine(NULL, "………なるほどね。",
@@ -384,18 +384,18 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900031", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900031", 128, TRUE);
 	OutputLine(NULL, "「祖父も、医学的見地からだけでなく、古文書などの文献からも雛見沢症候群を探っていたの。",
 		   NULL, "\"My grandfather researched Hinamizawa Syndrome not only from a medical point of view, but through old documents and literature as well. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900032", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900032", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "……雛見沢症候群と何百年にもわたって共にあった村の文献を調べることは、何百倍もの倍率を持つ顕微鏡を覗くより価値がありえるというのは、祖父が私に教えてくれたことなの。」",
 		   NULL, "Looking through the old stories of a village that has been living with the syndrome for hundreds of years can be far more valuable than looking through microscopes that magnify things hundreds of times. My grandfather taught me that.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800038", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800038", 128, TRUE);
 	OutputLine(NULL, "「……なるほどね。",
 		   NULL, "\"...I see.", Line_Continue);
 	OutputLine(NULL, "だとしたら、自分の完成できなかった研究をこれだけ立派に引き継いでくれたお祖父さんは、きっと喜んでいるだろうね。",
@@ -405,10 +405,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta1_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900033", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900033", 128, TRUE);
 	OutputLine(NULL, "「くすくすくすくす。",
 		   NULL, "\"Hee hee hee hee.", Line_Continue);
 	OutputLine(NULL, "そうだといいわね。」",
@@ -434,13 +434,13 @@ void main()
 	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900034", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900034", 128, TRUE);
 	OutputLine(NULL, "「祖父が一二三で１２３。",
 		   NULL, "\"My grandfather is Hifumi, which means 1, 2, 3.", Line_Continue);
 	OutputLine(NULL, "私は三四で３４。",
 		   NULL, " And I'm Miyo which means 3, 4. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900035", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900035", 128, TRUE);
 	OutputLine(NULL, "……私は祖父を継ぎ、ようやく３を共に数えたに過ぎない。",
 		   NULL, "Following after my grandfather, we have only counted the 3 together.", Line_Continue);
 	OutputLine(NULL, "そして、祖父の次の４を数え、",
@@ -452,7 +452,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800039", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800039", 128, TRUE);
 	OutputLine(NULL, "「それで三四という名前なんだね。",
 		   NULL, "\"So that's why your name is Miyo, huh?", Line_Continue);
 	OutputLine(NULL, "素敵な名前だと思うよ。」",
@@ -460,7 +460,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900036", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900036", 128, TRUE);
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "\"Thank you.", Line_Continue);
 	OutputLine(NULL, "私が孫だという話は内緒にしてほしいの。",
@@ -470,7 +470,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800040", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800040", 128, TRUE);
 	OutputLine(NULL, "「あはははは、うん。",
 		   NULL, "\"Ahahahaha, sure.", Line_Continue);
 	OutputLine(NULL, "わかったよ。",
@@ -485,7 +485,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900037", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900037", 128, TRUE);
 	OutputLine(NULL, "「…………私はようやく３を数えただけ。",
 		   NULL, "\"......I've only counted to 3.", Line_Continue);
 	OutputLine(NULL, "まだ４にすら至っていない。",
@@ -497,7 +497,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800041", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800041", 128, TRUE);
 	OutputLine(NULL, "「僕もそれを応援するよ。",
 		   NULL, "\"I'll support you...", Line_Continue);
 	OutputLine(NULL, "………あはは、元々、それが僕の役割だしね。」",
@@ -505,7 +505,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900038", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900038", 128, TRUE);
 	OutputLine(NULL, "「もう。",
 		   NULL, "\"Geez.", Line_Continue);
 	OutputLine(NULL, "そういう余計なことを言わなければ充分かっこいいのに。",
@@ -515,7 +515,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800042", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800042", 128, TRUE);
 	OutputLine(NULL, "「あ、あははははは…！",
 		   NULL, "\"Ah, ahahahahaha...!", Line_Continue);
 	OutputLine(NULL, "　するよ、君を応援する。」",
@@ -523,7 +523,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900039", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900039", 128, TRUE);
 	OutputLine(NULL, "「二度言い直しても駄目ね。",
 		   NULL, "\"It's too late.", Line_Continue);
 	OutputLine(NULL, "一回で言えなくちゃかっこよくはならないわね。",
@@ -544,13 +544,13 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 
-	DrawBustshot(2, "sprite/ta1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/tosyo2", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900040", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900040", 128, TRUE);
 	OutputLine(NULL, "「だからジロウさん。",
 		   NULL, "\"So remember, Jirou-san.", Line_Continue);
 	OutputLine(NULL, "……くれぐれも私が孫だって、言わないようにね？」",
@@ -558,7 +558,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800043", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800043", 128, TRUE);
 	OutputLine(NULL, "「言わないよ。",
 		   NULL, "\"Okay,", Line_Continue);
 	OutputLine(NULL, "約束する。」",
@@ -566,7 +566,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900041", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900041", 128, TRUE);
 	OutputLine(NULL, "「孫だからいけないということはないけれど。",
 		   NULL, "\"It's not a bad thing,", Line_Continue);
 	OutputLine(NULL, "……クライアントがそれを知って不快に思ったら、予算を切られるようなことがあるかもしれない。」",
@@ -574,7 +574,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800044", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800044", 128, TRUE);
 	OutputLine(NULL, "「そんなことはないと思うよ。",
 		   NULL, "\"I don't think they will.", Line_Continue);
 	OutputLine(NULL, "第一、僕はしゃべらないしね…！」",
@@ -585,41 +585,41 @@ void main()
 	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900042", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900042", 128, TRUE);
 	OutputLine(NULL, "「絶対よ？",
 		   NULL, "\"Are you sure?", Line_Continue);
 	OutputLine(NULL, "　本当の本当に絶対よ…？",
 		   NULL, " Are you really, really sure...?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/440900043", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900043", 128, TRUE);
 	OutputLine(NULL, "　私はこの研究のために命をもらったの。",
 		   NULL, " This research is the entire purpose of my life.", Line_Continue);
 	OutputLine(NULL, "祖父の研究を完成させることだけが私の使命。",
 		   NULL, " My mission is to complete my grandfather's work. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-4>", Line_Continue); }
-	PlayVoice(4, "ps3/s20/09/440900044", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900044", 128, TRUE);
 	OutputLine(NULL, "踏みにじられた研究が、世界を驚かす偉大なものであったことを証明し、土の下で朽ちる祖父を讃えさせ、…神に昇華させること。それだけが私の生きる理由であり目的なの。…………ジロウさん。",
 		   NULL, "To prove that his trampled research is actually something amazing that will shock the world and to make everyone praise my grandfather who is perishing away under the earth, eventually having him ascend as a god. That's the meaning and purpose of my life. ......Jirou-san, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900045", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900045", 128, TRUE);
 	OutputLine(NULL, "…もし、それを邪魔するような不用意な言葉をあなたがうっかり漏らして、研究に支障が出たならば…！！」",
 		   NULL, "if you say something that creates problems for my research...!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800045", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800045", 128, TRUE);
 	OutputLine(NULL, "「………だッ、大丈夫だよ、ここで聞いた話は忘れるよ。」",
 		   NULL, "\"...D-Don't worry. I'll forget everything you told me here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900046", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900046", 128, TRUE);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800046", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800046", 128, TRUE);
 	OutputLine(NULL, "「…本当さ。",
 		   NULL, "\"Really, I mean it.", Line_Continue);
 	OutputLine(NULL, "…いや、絶対に口外しない。」",
@@ -627,22 +627,22 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900047", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900047", 128, TRUE);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800047", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800047", 128, TRUE);
 	OutputLine(NULL, "「僕は約束は守るよ。",
 		   NULL, "\"I promise.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/440800048", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800048", 128, TRUE);
 	OutputLine(NULL, "……絶対に言わない。」",
 		   NULL, " ...I won't say anything!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900048", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900048", 128, TRUE);
 	OutputLine(NULL, "「…絶対よ、ジロウさん……？」",
 		   NULL, "\"...Are you sure, Jirou-san?\"", Line_Normal);
 	ClearMessage();

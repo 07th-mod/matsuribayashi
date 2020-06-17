@@ -138,7 +138,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900049", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900049", 128, TRUE);
 	OutputLine(NULL, "「…おじいちゃん……。",
 		   NULL, "\"...Uncle...", Line_Continue);
 	OutputLine(NULL, "今までありがとう……。",
@@ -236,7 +236,7 @@ void main()
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900050", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900050", 128, TRUE);
 	OutputLine(NULL, "「………え？",
 		   NULL, "\"......What?", Line_Continue);
 	OutputLine(NULL, "　どういうことなの、ジロウさん。」",
@@ -244,16 +244,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/tomi1_def_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 8, "sprite/normal/tomi1_def_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800049", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800049", 128, TRUE);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "\"...Well,", Line_Continue);
 	OutputLine(NULL, "小泉先生が入江機関設立の立役者だったのは、鷹野さんも知ってるよね。……関係機関でなかなか承認の取れなかったのを、小泉先生が強力に押さえ込んで無理やり通させたって話なんだよ。",
 		   NULL, " you know that Koizumi-sensei was the main political sponsor for the Irie Insitute, right? ...He had trouble getting approval from the related agencies, but Koizumi-sensei used his political weight to force it through. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800050", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800050", 128, TRUE);
 	OutputLine(NULL, "……何しろ、医薬品業界で絶大な功績を挙げられた戦後日本復興の重鎮だからね。",
 		   NULL, "...After all, he was one of the key figures in the post-war restoration, accomplishing tremendous deeds in the medical industry.", Line_Continue);
 	OutputLine(NULL, "政財界に絶大な影響力を持たれていたし。」",
@@ -261,16 +261,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900051", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900051", 128, TRUE);
 	OutputLine(NULL, "「…その小泉先生が亡くなって、小泉先生が通した無理やりが通らなくなったということ…？」",
 		   NULL, "\"So now that Koizumi-sensei is gone, the way he did things won't work any longer?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/tomi1_komaru_2", 200, TRUE );
+	ModDrawCharacter(2, 8, "sprite/normal/tomi1_komaru_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800051", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800051", 128, TRUE);
 	OutputLine(NULL, "「あくまでも噂なんで本当のところは僕にもわからないんだけど…。",
 		   NULL, "\"So far, it's only a rumor, so I don't know for sure.", Line_Continue);
 	OutputLine(NULL, "……一部の予算配当やプロジェクトの見直しが行なわれるらしいというのを聞いたんだよ。」",
@@ -278,7 +278,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/440900052", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900052", 128, TRUE);
 	OutputLine(NULL, "「……入江機関が廃止されるということ？！」",
 		   NULL, "\"...Are you saying the Irie Institute will be closed down?\"", Line_Normal);
 	ClearMessage();
@@ -286,18 +286,18 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
-	PlayVoice(4, "ps3/s20/08/440800052", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800052", 128, TRUE);
 	OutputLine(NULL, "「いや、入江機関を見直すというのは聞いたことないけど…。ただ、小泉先生の死後、長老たちの派閥や勢力、後継者争いがややこしくなっているってもっぱらの噂なんだ。",
 		   NULL, "\"No, I haven't heard anything about them reconsidering the Institute. ...But since Koizumi-sensei's death, the rumors say that there's a great deal of confusion among the old guard and their factions as well as the civil strife within the party around finding his successor. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800053", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800053", 128, TRUE);
 	OutputLine(NULL, "すでにクライアントの人事にかなりの影響を与え始めてるらしいんだ。",
 		   NULL, "It seems the opposing factions are gaining influence in the human resources of our client.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/08/440800054", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800054", 128, TRUE);
 	OutputLine(NULL, "それで、小泉派が主導していたプロジェクトや聖域予算に対し、締め付けが行なわれるんじゃないかって、憶測が飛び交ってるらしいんだよ…。",
 		   NULL, " So they may begin to dig deep into the holy treasure chest that the Koizumi faction held to fund their project. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/08/440800055", 128);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800055", 128, TRUE);
 	OutputLine(NULL, "もちろん、それらは全て僕にとって、雲の上の話だからね。",
 		   NULL, "Of course, this is all too complicated for me to explain that well", Line_Continue);
 	OutputLine(NULL, "伝え聞いた噂話でしかないんだけれど…。」",
@@ -346,16 +346,16 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 
-	DrawBustshot(0, "sprite/tomi2_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 8, "sprite/normal/tomi2_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "Cradle_song", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44000", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44000", 128, TRUE);
 	OutputLine(NULL, "「ご存知のとおり、アルファベットプロジェクトは戦後日本の国際的地位向上を抑止兵器の観点から探るものです。",
 		   NULL, "\"As you know, the Alphabet Project was created to strengthen post-war Japan's presence in the world with the view of developing deterrent weaponry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/kanryoa44001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44001", 128, TRUE);
 	OutputLine(NULL, "ですが、すでに昭和も５０年代に至り、西暦は２１世紀を間近にしております。",
 		   NULL, " However, the 21st century is now just around the corner.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
@@ -379,14 +379,14 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44002", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
 	OutputLine(NULL, "「戦後４０年間、我が国は世界への平和的貢献を模索し、アメリカの最大の同盟国として充分な国際的地位を確立するに至りました。",
 		   NULL, "\"It's been forty years since the end of the war, and we've contributed to the world in various peaceful ways. We have a strong alliance with the United States, and our nation has established its position in world affairs well enough.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44003", 128, TRUE);
 	OutputLine(NULL, "日本は世界に先駆けて核と軍隊を放棄した平和国家として成熟し、来世紀にはますますにその存在感を強めることでしょう。」",
 		   NULL, "We have kept our promise to forever renounce war and nuclear weapons, and we are known as a nation of peace. In this coming century, our presence and influence will grow even larger.\"", Line_Normal);
 	ClearMessage();
@@ -429,11 +429,11 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44004", 128, TRUE);
 	OutputLine(NULL, "「よって、現在、時代に即した形になるよう、アルファベットプロジェクトの見直しを進めています。新生アルファベットプロジェクトは、国際的にも世論的にも理解の得られない軍事的見地からではなく、",
 		   NULL, "\"Therefore, we are going to restructure the Alphabet Project to one that's more suitable for the day and age. This new Alphabet Project will be tasked with figuring out the best way for this country to achieve a larger presence in world affairs, not through militaristic means, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44005", 128, TRUE);
 	OutputLine(NULL, "国際交流と経済発展の２軸からなる平和外交の見地から日本の地位向上を模索していくことになるでしょう。」",
 		   NULL, "but through peaceful measures like international trade and economic development.\"", Line_Normal);
 	ClearMessage();
@@ -502,14 +502,14 @@ void main()
 		   NULL, " have taken over from the old.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(1, "sprite/tomi2_shinken_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/normal/tomi2_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44006", 128, TRUE);
 	OutputLine(NULL, "「よって、アルファベットに関わる全てのプロジェクトで今後、大幅な予算の見直しが図られていくことになります。",
 		   NULL, "\"Therefore, everything the Alphabet Project was sponsoring will have to be re-reviewed.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/kanryoa44007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44007", 128, TRUE);
 	OutputLine(NULL, "これはもちろん、入江機関も例外ではありません。",
 		   NULL, " Of course, the Irie Institute is one of those subsidiaries.", Line_Continue);
 	OutputLine(NULL, "どうかご了解をいただけますよう、よろしくお願いいたします。」",
@@ -517,10 +517,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/iri2_majime_2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri2_majime_", "2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000058", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000058", 128, TRUE);
 	OutputLine(NULL, "「…………わかりました。",
 		   NULL, "\"I understand...", Line_Continue);
 	OutputLine(NULL, "私たちもスポンサーあっての研究です。",
@@ -597,7 +597,7 @@ void main()
 	DrawSceneWithMask( "background/ka1_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44008", 128, TRUE);
 	OutputLine(NULL, "「…でありまして、この４月に新体制の理事会が発足し、全プロジェクトに対する新方針が示されました。",
 		   NULL, "\"Anyway, the new board of directors was inaugurated back in April, and they've outlined their new policies for all projects.", Line_Continue);
 	OutputLine(NULL, "これにつきましてはお配りします資料をご覧ください。」",
@@ -618,20 +618,20 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44009", 128, TRUE);
 	OutputLine(NULL, "「入江機関はこれまで、先進的な研究において数々の目覚しい成果を挙げられ、未知の奇病であった雛見沢症候群の全貌解明、そして治療薬の開発を成し遂げました。",
 		   NULL, "\"The Irie Institute has made great headway in uncovering the mystery of the Hinamizawa Syndrome, as well as creating a cure for the disease. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44010", 128, TRUE);
 	OutputLine(NULL, "理事会でもこの成果は大変に高く評価しています。これも全て、入江所長以下、入江機関全職員の弛みない努力によるものと思っております。」",
 		   NULL, "The board of directors is extremely pleased. We recognize this is due to the unceasing efforts of Director Irie and all the staff of the Irie Institute.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/iri2_majime2_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri2_majime2_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000059", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000059", 128, TRUE);
 	OutputLine(NULL, "「いえ、…恐縮です。」",
 		   NULL, "\"Thank you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -657,7 +657,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44011", 128, TRUE);
 	OutputLine(NULL, "「入江機関の研究目的は２つありました。",
 		   NULL, "\"The Irie Institute had two main intentions.", Line_Continue);
 	OutputLine(NULL, "奇病研究と治療法の確立。",
@@ -665,23 +665,23 @@ void main()
 	OutputLine(NULL, "そして軍事的運用の模索です。",
 		   NULL, " The other was to research the possibility of utilizing the disease for military applications. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44012", 128, TRUE);
 	OutputLine(NULL, "新生理事会はこの後者の、軍事的運用の模索については即時の中止を決定しました。",
 		   NULL, "The new board of directors has decided to put a stop to the latter immediately.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/kanryoa44013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44013", 128, TRUE);
 	OutputLine(NULL, "生物兵器の研究開発が日本国内で行なわれていた事実と痕跡は、今後の日本にとってむしろアキレス腱になりかねません。",
 		   NULL, " In this day and age, researching biological weapons is an Achilles' heel for Japan. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44014", 128, TRUE);
 	OutputLine(NULL, "入江機関は直ちに、これに関わる全ての研究を中止し、一切を破棄してください。」",
 		   NULL, "The Irie Institution must cease all related research and destroy any results.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_majime_2", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000060", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000060", 128, TRUE);
 	OutputLine(NULL, "「わかりました。",
 		   NULL, "\"I understand.", Line_Continue);
 	OutputLine(NULL, "ご指示に従います。」",
@@ -728,7 +728,7 @@ void main()
 	DrawScene( "background/ke5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44015", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44015", 128, TRUE);
 	OutputLine(NULL, "「また、入江機関につきましては、最長３年以内を目処に、研究の収束を図ってまいります。",
 		   NULL, "\"Also, regarding the Irie Institution, we have decided to have you wrap up your work within the next three years.", Line_Continue);
 	OutputLine(NULL, "予算もそれに合わせ、段階的に縮小する方針です。」",
@@ -736,32 +736,32 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000061", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000061", 128, TRUE);
 	OutputLine(NULL, "「ちょ、ちょっと待ってください…！",
 		   NULL, "\"W-Wait, please...!", Line_Continue);
 	OutputLine(NULL, "　近年ようやく雛見沢症候群の全貌がわかり、今まさに治療法の研究を進めているところです。",
 		   NULL, " We've only recently figured out anything about the syndrome, and there's more we have to learn in order to create a better cure. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000062", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000062", 128, TRUE);
 	OutputLine(NULL, "確かに研究は日々、進んでおりますが、３年という短い期間で確実に完成させられることをお約束はできません…！」",
 		   NULL, "We're making progress, but I can't guarantee we'll come up with a complete cure within three years.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44016", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44016", 128, TRUE);
 	OutputLine(NULL, "「理事会では、入江機関はすでに治療薬について充分な研究を完成させているという認識です。すでに入江機関は治療薬C117を完成させ、その臨床データを多数、」",
 		   NULL, "\"It's the understanding of the board that the Irie Institute has already completed enough research to develop a cure. The Irie Institute has already completed the C117 vaccine, and has a great deal of clinical data--\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000063", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000063", 128, TRUE);
 	OutputLine(NULL, "「いえ、完成なんてとんでもない…！",
 		   NULL, "\"No, it's not even close to being completed!!", Line_Continue);
 	OutputLine(NULL, "　まだまだ試薬の域を出ず、村人全員を治療できる目処はまったく立っていません！",
 		   NULL, " It's still only a prototype, and we we're far from being able to see a cure for all the villagers! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000064", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000064", 128, TRUE);
 	OutputLine(NULL, "　このような段階で、研究終了ありきでの議論はまったくにもって無謀としか言い様がありません…！」",
 		   NULL, "Debating the end of our research at this stage can only be described as absolutely, positively reckless!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -785,23 +785,23 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44017", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44017", 128, TRUE);
 	OutputLine(NULL, "「それでは、入江機関には現時点では、感染者全員を治療し、雛見沢症候群を撲滅することは不可能だということですね？」",
 		   NULL, "\"In other words, the Irie Institute is not yet capable of curing all the people who are infected or to fully eradicate the syndrome, is that correct?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000065", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000065", 128, TRUE);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "もちろん村人全員の治療と雛見沢症候群の撲滅は将来的には不可能なことではありませんし、私もそれを最大の目標としています。",
 		   NULL, " Of course, curing all the villagers and eradicating the syndrome will be possible in the future, and that's our ultimate goal.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/441000066", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000066", 128, TRUE);
 	OutputLine(NULL, "ただ、それには充分な時間が必要で、そのためには無論、予算も必要です。",
 		   NULL, " But I need more time, and of course, funding to do that. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
-	PlayVoice(4, "ps3/s20/10/441000067", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000067", 128, TRUE);
 	OutputLine(NULL, "私たちは調べ、実践し、確立する仕事をしています。設計図に従って物を作り、期間があれば必ず決まった成果が出せる仕事とは事情が違います。どうかそこを誤解なさらないようにしていただきたいです。」",
 		   NULL, "Our job is to investigate, find a practice that works, and establish it as a product. This isn't a job where you can follow a blueprint to create something with certainty in a set time frame. So we hope that you'll avoid following that misconception.\"", Line_Normal);
 	ClearMessage();
@@ -848,17 +848,17 @@ void main()
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44018", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44018", 128, TRUE);
 	OutputLine(NULL, "「なるほど、入江所長の仰ることもごもっともと思います。",
 		   NULL, "\"I see. I think I see your point.", Line_Continue);
 	OutputLine(NULL, "私どもにとっての最大の目的は、軍事目的の研究が行なわれていたことの完全な破棄です。",
 		   NULL, " Our main purpose here is to dispose of the fact that this research was conducted for military purposes. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44019", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44019", 128, TRUE);
 	OutputLine(NULL, "よって、雛見沢症候群という奇病が研究されていた痕跡と、そもそも存在していた事実についても隠蔽すべきであると考えます。",
 		   NULL, "So we must forever hide the fact that research was conducted on the strange disease called Hinamizawa Syndrome, as well as hide its existence. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44020", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44020", 128, TRUE);
 	OutputLine(NULL, "最終的に、雛見沢症候群が世間に知られることなく、撲滅されるならば、そのための期間と予算は必要不可欠なものでしょう。",
 		   NULL, "If you can eradicate the disease without anyone ever learning about it, then we will give you the time and funding you require.", Line_Continue);
 	OutputLine(NULL, "…それについては、今後、協議を重ねていくということでよろしいでしょうか？」",
@@ -866,10 +866,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/iri2_majime_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000068", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000068", 128, TRUE);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_Continue);
 	OutputLine(NULL, "異存ありません。」",
@@ -877,7 +877,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44021", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44021", 128, TRUE);
 	OutputLine(NULL, "「では入江機関は、できるだけ早急に、雛見沢症候群撲滅を秘密裏に行なえるプランと予算案を作成、提出してください。",
 		   NULL, "\"Then, please submit a plan and a budget proposal for eradicating the syndrome in secrecy.", Line_Continue);
 	OutputLine(NULL, "極力、ご趣旨を汲み取れるよう努力します。」",
@@ -885,7 +885,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000069", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000069", 128, TRUE);
 	OutputLine(NULL, "「わかりました。",
 		   NULL, "\"Thank you.", Line_Continue);
 	OutputLine(NULL, "早急に提出いたします。」",
@@ -893,7 +893,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/kanryoa44022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoa44022", 128, TRUE);
 	OutputLine(NULL, "「誤解ないようにしていただきたいのは、私どもはあくまでも研究を直ちに中断させようというのではなく、円満な形で研究を終了させようということです。",
 		   NULL, "\"Please don't misunderstand that it's our intention to halt that research immediately. We want to see the best possible outcome for your work.", Line_Continue);
 	OutputLine(NULL, "この違いをご理解ください。」",
@@ -901,7 +901,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/441000070", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000070", 128, TRUE);
 	OutputLine(NULL, "「えぇ、もちろん理解しております。」",
 		   NULL, "\"Yes, of course, I understand.\"", Line_Normal);
 	ClearMessage();

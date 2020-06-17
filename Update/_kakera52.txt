@@ -8,7 +8,7 @@ void main()
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2001", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2001", 128, TRUE);
 	OutputLine(NULL, "「遊びに行ってくるねーーー！！！」",
 		   NULL, "\"I'm going to play outside!!!\"", Line_Normal);
 	ClearMessage();
@@ -32,10 +32,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子の父</color>", NULL, "<color=#f5e6d3>Miyoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk2_miyokof2001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_miyokof2001", 128, TRUE);
 	OutputLine(NULL, "「美代子。",
 		   NULL, "\"Miyoko,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk2_miyokof2002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_miyokof2002", 128, TRUE);
 	OutputLine(NULL, "お父さんたちデパートへ行こうと思うんだが…、」",
 		   NULL, " we're thinking about going to the mall.\"", Line_Normal);
 	ClearMessage();
@@ -131,7 +131,7 @@ void main()
 		   NULL, " They always used a train to go to the mall.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(0, "sprite/miyo1_komari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/koudou", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -174,10 +174,10 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2082", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2082", 128, TRUE);
 	OutputLine(NULL, "「……生きたい？",
 		   NULL, "\"Do you want to live?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2083", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2083", 128, TRUE);
 	OutputLine(NULL, "　………死にたい？」",
 		   NULL, " Or do you want to die?\"", Line_Normal);
 	ClearMessage();
@@ -202,31 +202,31 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_warai_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2002", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2002", 128, TRUE);
 	OutputLine(NULL, "「生きたい！」",
 		   NULL, "\"I want to live!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2084", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2084", 128, TRUE);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"Okay.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2085", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2085", 128, TRUE);
 	OutputLine(NULL, "ならお行きなさい。",
 		   NULL, " Then go.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2086", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2086", 128, TRUE);
 	OutputLine(NULL, "どうせ行っても友達は留守だけど、それでもお行きなさい。」",
 		   NULL, " Your friend isn't home, but go on.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_komari_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2003", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2003", 128, TRUE);
 	OutputLine(NULL, "「……………留守なの？」",
 		   NULL, "\"......She isn't home?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -255,38 +255,38 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_majime_0", 0, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, TRUE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2004", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2004", 128, TRUE);
 	OutputLine(NULL, "「なら、死にたいだとどうなるの？」",
 		   NULL, "\"If I want to die, then what?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2087", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2087", 128, TRUE);
 	OutputLine(NULL, "「お子様ランチの旗が、もう１本手に入るわ。」",
 		   NULL, "\"You'll get another flag from a kid's meal.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_def_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2005", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2005", 128, TRUE);
 	OutputLine(NULL, "「……え！！",
 		   NULL, "\"...Eh?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_komari_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2006", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2006", 128, TRUE);
 	OutputLine(NULL, "　あ、ずるい、私に内緒でデパートに行く気だ！！",
 		   NULL, "Hey, that's not fair, they're going without me!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2007", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2007", 128, TRUE);
 	OutputLine(NULL, "　ずるいずるい！」",
 		   NULL, " That's not fair!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -300,10 +300,10 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2088", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2088", 128, TRUE);
 	OutputLine(NULL, "「いいのね……？",
 		   NULL, "\"Are you sure?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2089", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2089", 128, TRUE);
 	OutputLine(NULL, "　………後悔は、",
 		   NULL, " ...You", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -319,28 +319,28 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_def_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2008", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2008", 128, TRUE);
 	OutputLine(NULL, "「何で後悔するの？」",
 		   NULL, "\"Why would I regret it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2090", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2090", 128, TRUE);
 	OutputLine(NULL, "「…………教えないわ。",
 		   NULL, "\"......I won't tell you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2091", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2091", 128, TRUE);
 	OutputLine(NULL, "…意地悪だから。」",
 		   NULL, " I'm mean.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_majime_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2009", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2009", 128, TRUE);
 	OutputLine(NULL, "「……ふーん…。」",
 		   NULL, "\"Hmm...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -364,28 +364,28 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/miyo1_warai_0", 200, TRUE );
+	ModDrawCharacter(0, 48, "sprite/normal/miyo1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2010", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2010", 128, TRUE);
 	OutputLine(NULL, "「大丈夫だよ、お姉ちゃん。」",
 		   NULL, "\"That's okay, then.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2092", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2092", 128, TRUE);
 	OutputLine(NULL, "「どうして大丈夫なの？」",
 		   NULL, "\"Why is it okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>美代子</color>", NULL, "<color=#f5e6d3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/48/vtk2_miyoko2011", 128);
+	ModPlayVoiceLS(4, 48, "ps3/s20/48/vtk2_miyoko2011", 128, TRUE);
 	OutputLine(NULL, "「何があっても、お父さんとお母さんが一緒だもん。」",
 		   NULL, "\"Because my parents will be with me.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/05/vtk2_rika2093", 128);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2093", 128, TRUE);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -466,7 +466,7 @@ void main()
 	DisableWindow();
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
-	DrawBustshot(0, "portrait/miyo1_komari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(0, 48, "portrait/normal/miyo1_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日は揺れるね。",

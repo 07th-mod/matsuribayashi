@@ -73,77 +73,77 @@ void main()
 	DrawScene( "background/ka1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1066", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1066", 128, TRUE);
 	OutputLine(NULL, "「入江所長のレポートを拝見しましたわ。",
 		   NULL, "\"I saw your report...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1067", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1067", 128, TRUE);
 	OutputLine(NULL, "…脱帽と言わざるを得ません。」",
 		   NULL, " ...I must tip my hat to you.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/iri2_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1048", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1048", 128, TRUE);
 	OutputLine(NULL, "「いえ。",
 		   NULL, "\"No,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1049", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1049", 128, TRUE);
 	OutputLine(NULL, "私の研究者としての職務を果たしたに過ぎません。",
 		   NULL, " I only did my job as a researcher.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1050", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1050", 128, TRUE);
 	OutputLine(NULL, "…その結果、医者としての職務も果たせたなら、私にとってはそれに勝ることはありません。」",
 		   NULL, " ...If that means fulfilling my duty as a doctor as well, then nothing could please me more.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1068", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1068", 128, TRUE);
 	OutputLine(NULL, "「今や沙都子ちゃんは、私たちにとってもっとも重要な検体になったと言っても過言ではないでしょう。",
 		   NULL, "\"It's hardly an exaggeration to say that Satoko is now our most valuable specimen.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1069", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1069", 128, TRUE);
 	OutputLine(NULL, "何しろ、Ｌ５に至りながら生還した初めての人間なのですから。」",
 		   NULL, " After all, she's the first human to reach L5 and live.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_def1_0", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1051", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1051", 128, TRUE);
 	OutputLine(NULL, "「…その通りです。",
 		   NULL, "\"...That's true.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1052", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1052", 128, TRUE);
 	OutputLine(NULL, "彼女を社会生活に復帰させ、経過を見ながら長期観察に切り替えていきます。",
 		   NULL, " We'll let her go back to her life and keep our eyes on her.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1053", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1053", 128, TRUE);
 	OutputLine(NULL, "彼女には毎週日曜日に、こちらに来てもらって検査を受けてもらえるよう話をするつもりです。」",
 		   NULL, " I'm going to tell her to come here every Sunday for a check up.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1070", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1070", 128, TRUE);
 	OutputLine(NULL, "「しかし、C103を日に３回も注射する義務と、毎週日曜日に検査に訪れる義務を、彼女にどう説明されるおつもりで？",
 		   NULL, "\"But how are you going to explain to her that she has to give herself a C103 shot three times a day, and also that she has to come here every Sunday?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1071", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1071", 128, TRUE);
 	OutputLine(NULL, "　彼女には何の病気の自覚もないのに。」",
 		   NULL, " She has no subjective symptoms.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_majime_2", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1054", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1054", 128, TRUE);
 	OutputLine(NULL, "「…そこは今、うまく納得してもらえる話を考えています。",
 		   NULL, "\"I'm still trying to come up with a good excuse...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1055", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1055", 128, TRUE);
 	OutputLine(NULL, "……今、考えているのは、私の研究論文に協力してもらう、というものです。",
 		   NULL, " I think I'll tell her that I want her to help me with my research.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1056", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1056", 128, TRUE);
 	OutputLine(NULL, "栄養剤の注射を毎日してもらい、毎週日曜日にその効果を検査する。",
 		   NULL, " She has to give herself shots daily and to come here every Sunday for a check up. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1057", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1057", 128, TRUE);
 	OutputLine(NULL, "その代わりに研究協力費としていくらかを支払う、という感じです。」",
 		   NULL, "I'll pay her for helping me. Or something like that.\"", Line_Normal);
 	ClearMessage();
@@ -187,69 +187,69 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1058", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1058", 128, TRUE);
 	OutputLine(NULL, "「日に３回もの注射となれば、これは本人だけでなく保護者の方の同意も不可欠です。",
 		   NULL, "\"We have to get permission from her guardian to give her shots three times a day.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1059", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1059", 128, TRUE);
 	OutputLine(NULL, "確か、ご両親が亡くなってからは、叔父夫婦に親権が移っていましたね。",
 		   NULL, " After her parents died, her aunt and uncle have been taking care of her, right?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1060", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1060", 128, TRUE);
 	OutputLine(NULL, "そちらに一度、相談にうかがおうと思います。",
 		   NULL, " Maybe I'll go talk to them. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1061", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1061", 128, TRUE);
 	OutputLine(NULL, "姪への怪しげな研究協力を承諾してもらえればいいのですが…。」",
 		   NULL, "I hope they agree to her involvement in such suspicious research...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1072", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1072", 128, TRUE);
 	OutputLine(NULL, "「くす、大丈夫ですわよ。",
 		   NULL, "\"Oh, don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1073", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1073", 128, TRUE);
 	OutputLine(NULL, "そのための研究協力費ですもの。月に１０万か２０万も振り込んでやれば大喜びしますわ。」",
 		   NULL, " I'm sure they'll be happy to, once they realize they'll receive 100,000 to 200,000 yen every month for it.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_def2_2", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_def2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1062", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1062", 128, TRUE);
 	OutputLine(NULL, "「それだけの予算はありますか？」",
 		   NULL, "\"Do we have enough money?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1074", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1074", 128, TRUE);
 	OutputLine(NULL, "「もちろん。",
 		   NULL, "\"Sure.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1075", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1075", 128, TRUE);
 	OutputLine(NULL, "ジロウさんを納得させる資料を作りさえすれば。」",
 		   NULL, " As long as we can produce documents that'll convince Jirou-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_def1_0", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1063", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1063", 128, TRUE);
 	OutputLine(NULL, "「わかりました。それは私が作ります。",
 		   NULL, "\"Okay, then I'll work on that.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1064", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1064", 128, TRUE);
 	OutputLine(NULL, "あと、沙都子ちゃんに心労を掛けないよう指導しておく必要もあります。",
 		   NULL, " Also, we'll need to take action to prevent stressing Satoko-chan.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1065", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1065", 128, TRUE);
 	OutputLine(NULL, "Ｌ５をぶり返すことになったら大変ですからね。",
 		   NULL, " We don't want her to return to L5.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1066", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1066", 128, TRUE);
 	OutputLine(NULL, "……噂では、叔父夫婦はとても現金な方だとか。",
 		   NULL, " ...I hear her aunt and uncle are very mercenary. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1067", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1067", 128, TRUE);
 	OutputLine(NULL, "金銭で丸め込むのは可能かもしれません。",
 		   NULL, "Perhaps we can handle them with cash.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1068", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1068", 128, TRUE);
 	OutputLine(NULL, "それらの指導も私の方できっちり行なうつもりです。」",
 		   NULL, " I plan to provide my help with their guidance too.\"", Line_Normal);
 	ClearMessage();
@@ -285,35 +285,35 @@ void main()
 		   NULL, " That'll be a plus for me.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(2, "sprite/iri2_majime_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1069", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1069", 128, TRUE);
 	OutputLine(NULL, "「……それはそうと。",
 		   NULL, "\"...By the way,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1070", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1070", 128, TRUE);
 	OutputLine(NULL, "…H170番台についてのレポートを拝見しました。」",
 		   NULL, " I saw the report on H170.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1076", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1076", 128, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Oh,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1077", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1077", 128, TRUE);
 	OutputLine(NULL, "入江所長の成果に比べれば足元にも及びませんが、一応の研究成果を出せましたわ。」",
 		   NULL, " compared to your success, it's nothing. But I guess it was some kind of accomplishment.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/iri2_majime2_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri2_majime2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1071", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1071", 128, TRUE);
 	OutputLine(NULL, "「…本当に皮肉ですね。",
 		   NULL, "\"...It's honestly ironic.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1072", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1072", 128, TRUE);
 	OutputLine(NULL, "彼女を錯乱から救う治療薬を作っていた研究所で、その傍らでは彼女を直ちに錯乱させる危険な薬が作られていたのですから。」",
 		   NULL, " This same research center that's produced the remedy to save her from derangement has developed a dangerous drug that could instantly induce it.\"", Line_Normal);
 	ClearMessage();
@@ -438,50 +438,50 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawBustshot(0, "sprite/iri2_majime_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1073", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1073", 128, TRUE);
 	OutputLine(NULL, "「クライアントにとっては、鷹野さんの成果の方が喜ばれるでしょう。",
 		   NULL, "\"The clients will appreciate your accomplishment.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1074", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1074", 128, TRUE);
 	OutputLine(NULL, "来期の予算取りが楽になるかもしれませんね。」",
 		   NULL, " Maybe our budget will increase for next term.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1078", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1078", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1079", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1079", 128, TRUE);
 	OutputLine(NULL, "情熱だけでは研究は続けられませんものね。",
 		   NULL, " Passion alone can't keep research going.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1080", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1080", 128, TRUE);
 	OutputLine(NULL, "先立つものがなければ。」",
 		   NULL, " We need money.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/iri2_majime2_0", 200, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1075", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1075", 128, TRUE);
 	OutputLine(NULL, "「……これだけの潤沢な資金を提供してくださるスポンサーさんには頭が上がりません。",
 		   NULL, "\"...We must thank the sponsor for giving us so much funding...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1076", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1076", 128, TRUE);
 	OutputLine(NULL, "……これだけのお金が公費から出ているのですから…。」",
 		   NULL, " ...For this much money to come from public expenses...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1081", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1081", 128, TRUE);
 	OutputLine(NULL, "「日本という国は、私が想像しているよりずっと豊かなのかもしれませんね。",
 		   NULL, "\"Maybe Japan is richer than I thought.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1082", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1082", 128, TRUE);
 	OutputLine(NULL, "公費は公費でも、表に出せない黒い公費でしょうけれどね。",
 		   NULL, " They're public expenses, but they're expenses that can't be made public.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1083", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1083", 128, TRUE);
 	OutputLine(NULL, "くすくす…。」",
 		   NULL, " Hee hee...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

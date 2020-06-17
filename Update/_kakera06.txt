@@ -99,7 +99,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/ta2_def_0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 9, "sprite/normal/ta2_def_", "0", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…鷹野さんだった。",
@@ -127,67 +127,67 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1084", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1084", 128, TRUE);
 	OutputLine(NULL, "「入江先生、ちょっとよろしいですか？」",
 		   NULL, "\"Dr. Irie, may I talk to you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1105", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1105", 128, TRUE);
 	OutputLine(NULL, "「あぁ、はい。",
 		   NULL, "\"Oh, yes.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1106", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1106", 128, TRUE);
 	OutputLine(NULL, "それでは悟史くん、私は失礼します。」",
 		   NULL, " Well, Satoshi-kun, if you'll excuse me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/sato1_def1_0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 7, "sprite/normal/sato1_def1_", "0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1030", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1030", 128, TRUE);
 	OutputLine(NULL, "「あ、はい。」",
 		   NULL, "\"Ah, sure.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_warai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1085", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1085", 128, TRUE);
 	OutputLine(NULL, "「悟史くん、こんにちは。",
 		   NULL, "\"Hello, Satoshi-kun.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1086", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1086", 128, TRUE);
 	OutputLine(NULL, "沙都子ちゃんと遊んであげててね。",
 		   NULL, " Please keep Satoko-chan company.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1087", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1087", 128, TRUE);
 	OutputLine(NULL, "ずっとひとりでいるから、きっと寂しいと思うの。",
 		   NULL, " She's always alone, so I bet she's lonely.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1088", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1088", 128, TRUE);
 	OutputLine(NULL, "…ね？」",
 		   NULL, " Okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/sa2b_odoroki_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa2b_odoroki_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/04/vtk1_satoko1001", 128);
+	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1001", 128, TRUE);
 	OutputLine(NULL, "「そ、そんなことございませんわよ…。」",
 		   NULL, "\"O-Oh no, that's not true.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/sato1_komaru2_0", 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/normal/sato1_komaru2_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1031", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1031", 128, TRUE);
 	OutputLine(NULL, "「むぅ。」",
 		   NULL, "\"Mmph.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1107", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1107", 128, TRUE);
 	OutputLine(NULL, "「では悟史くん、よろしくお願いします。」",
 		   NULL, "\"Okay Satoshi-kun, you're in charge.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -200,7 +200,7 @@ void main()
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1108", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1108", 128, TRUE);
 	OutputLine(NULL, "「ところで、何かありましたか…？」",
 		   NULL, "\"Did something happen?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -208,10 +208,10 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1089", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1089", 128, TRUE);
 	OutputLine(NULL, "「ここでは何ですので、所長室で。",
 		   NULL, "\"Not right here, let's go to your office.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1090", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1090", 128, TRUE);
 	OutputLine(NULL, "……くすくす。」",
 		   NULL, " Hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -237,33 +237,33 @@ void main()
 	DrawSceneWithMask( "background/sinryou_sinsatu1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1109", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1109", 128, TRUE);
 	OutputLine(NULL, "「…それは本当ですか。」",
 		   NULL, "\"...Are you sure?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/ta2_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 9, "sprite/normal/ta2_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	PlayBGM( 0, "hitoe_2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1091", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1091", 128, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yes.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1092", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1092", 128, TRUE);
 	OutputLine(NULL, "簡易検査の結果、Ｌ３以上と思われる高い発症レベルの可能性が指摘されました。",
 		   NULL, " The initial test results show there's a possibility she's at L3 or above.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1093", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1093", 128, TRUE);
 	OutputLine(NULL, "彼女をさらに入院させ、より精度の高い検査を行う必要があります。",
 		   NULL, " We need to keep her here and run some more tests.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/ta2_akuwarai_2", 200, TRUE );
+	ModDrawCharacter(0, 9, "sprite/normal/ta2_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1094", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1094", 128, TRUE);
 	OutputLine(NULL, "……結果待ちですが、私の見たところ、Ｌ４の可能性すらありえるかと。」",
 		   NULL, "The results aren't in yet, but from what I can see, it's very possible that she's at L4.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -404,16 +404,16 @@ void main()
 	DrawSceneWithMask( "background/sinryou_sinsatu4", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>看護師</color>", NULL, "<color=#f5e6d3>Nurse</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/nursed44010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursed44010", 128, TRUE);
 	OutputLine(NULL, "「……わかりました。」",
 		   NULL, "\"...Okay.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1111", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1111", 128, TRUE);
 	OutputLine(NULL, "「経過観察のため入院ということにしましょう。",
 		   NULL, "\"Let's admit her for observation.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1112", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1112", 128, TRUE);
 	OutputLine(NULL, "スタッフの皆さんへの手配をお願いいたします。」",
 		   NULL, " Please let the staff know to get things ready.\"", Line_Normal);
 	ClearMessage();
@@ -455,13 +455,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1095", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1095", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1096", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1096", 128, TRUE);
 	OutputLine(NULL, "ご安心を。",
 		   NULL, " Don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1097", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1097", 128, TRUE);
 	OutputLine(NULL, "万事すでに手配させておりますわ。」",
 		   NULL, " Everything is already taken care of.\"", Line_Normal);
 	ClearMessage();

@@ -51,7 +51,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawBustshot(0, "sprite/sa1b_sakebu_b1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 4, "sprite/normal/sa1b_sakebu_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/ho_2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -424,28 +424,28 @@ void main()
 
 	FadeOutBGM( 0, 400, FALSE );
 
-	DrawBustshot( 0, "sprite/re1b_bikkuri_b1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/g2", 400 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1044", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1044", 128, TRUE);
 	OutputLine(NULL, "「ぅわッ！",
 		   NULL, "\"Aaaah!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1045", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1045", 128, TRUE);
 	OutputLine(NULL, "　…………ぁ、……レナか……。」",
 		   NULL, " ......Oh, Rena...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1a_nande_a1_2", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1a_nande_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1001", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1001", 128, TRUE);
 	OutputLine(NULL, "「だ、…………大丈夫かな？",
 		   NULL, "\"A...... Are you okay?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1002", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1002", 128, TRUE);
 	OutputLine(NULL, "　……かな？」",
 		   NULL, " Are you?\"", Line_Normal);
 	ClearMessage();
@@ -488,37 +488,37 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1a_def_a1_2", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1003", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1003", 128, TRUE);
 	OutputLine(NULL, "「具合悪いの…？",
 		   NULL, "\"Are you feeling okay?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1004", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1004", 128, TRUE);
 	OutputLine(NULL, "　保健室で休んだ方がいいんじゃないかな。",
 		   NULL, " Do you want me to take you to the nurse's office?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1005", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1005", 128, TRUE);
 	OutputLine(NULL, "…かな。」",
 		   NULL, " ...Do you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1046", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1046", 128, TRUE);
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "\"Thank you.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1047", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1047", 128, TRUE);
 	OutputLine(NULL, "大丈夫だよ。",
 		   NULL, " I'm okay.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1048", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1048", 128, TRUE);
 	OutputLine(NULL, "……僕、そんなにも具合が悪そうだったかい？」",
 		   NULL, " Do I look sick or something?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1b_komaru_b1_0", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1006", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1006", 128, TRUE);
 	OutputLine(NULL, "「うん。」",
 		   NULL, "\"Yep.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -529,10 +529,10 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1b_def_b1_2", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1007", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1007", 128, TRUE);
 	OutputLine(NULL, "「…………沙都子ちゃんのことで、",
 		   NULL, "\"......Is it about Satoko-chan?", Line_Continue);
 	OutputLine(NULL, "…心配事？」",
@@ -540,7 +540,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1049", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1049", 128, TRUE);
 	OutputLine(NULL, "「いや、…そういうわけじゃないんだよ。」",
 		   NULL, "\"No... that isn't it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -559,16 +559,16 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1a_warai_a1_2", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1008", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1008", 128, TRUE);
 	OutputLine(NULL, "「……レナは、転校してきたばかりだから、頼りないかもしれないけど…。",
 		   NULL, "\"...Since I just transferred here recently, I may not be able to help much...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1009", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1009", 128, TRUE);
 	OutputLine(NULL, "話を聞くことはできるからね。",
 		   NULL, " But I can at least listen.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1010", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1010", 128, TRUE);
 	OutputLine(NULL, "……きっと聞いてあげるだけでも、少しは心が軽くなると思うから。」",
 		   NULL, " Sometimes talking can help.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -599,56 +599,56 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/re1a_komaru_a2_0", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1011", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1011", 128, TRUE);
 	OutputLine(NULL, "「さっき、声を掛けたらすごく驚いたでしょ？",
 		   NULL, "\"You were so surprised just now.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1012", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1012", 128, TRUE);
 	OutputLine(NULL, "　そんなにも考え事をしてるなら、…きっと辛い悩みなんだろうなって思って…。",
 		   NULL, " That's why I thought something really serious was bothering you...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1013", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1013", 128, TRUE);
 	OutputLine(NULL, "はぅ…。」",
 		   NULL, " Hauu...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1050", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1050", 128, TRUE);
 	OutputLine(NULL, "「それは、………あははは。",
 		   NULL, "\"Oh, that...... ahahaha.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1051", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1051", 128, TRUE);
 	OutputLine(NULL, "なぜか最近、…誰かにずっと後を付けられているような錯覚がしてね。",
 		   NULL, " Lately, I feel like someone is following me all the time.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1052", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1052", 128, TRUE);
 	OutputLine(NULL, "……ひたひた、ぺたぺた。",
 		   NULL, " ......Pit, pit, pat, pat.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1053", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1053", 128, TRUE);
 	OutputLine(NULL, "…だからそれかと思って……。",
 		   NULL, " I thought that was you...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1054", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1054", 128, TRUE);
 	OutputLine(NULL, "…って、あははははは、ごめん。",
 		   NULL, " Ahahahahaha, sorry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1055", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1055", 128, TRUE);
 	OutputLine(NULL, "僕は一体何を言っているんだか。」",
 		   NULL, " I don't even know what I'm talking about anymore.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
 	FadeOutBGM( 1, 300, FALSE );
-	ChangeBustshot( 0, "sprite/re1b_bikkuri_b1_1", 200, TRUE );
+	ModDrawCharacter(0, 2, "sprite/normal/re1b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1014", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1014", 128, TRUE);
 	OutputLine(NULL, "「……………足音？",
 		   NULL, "\"......Footsteps?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1015", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1015", 128, TRUE);
 	OutputLine(NULL, "　……ついてくるの…？」",
 		   NULL, " ...Following you...?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1056", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1056", 128, TRUE);
 	OutputLine(NULL, "「……え？」",
 		   NULL, "\"...Eh?\"", Line_Normal);
 	ClearMessage();
@@ -658,7 +658,7 @@ void main()
 	PlaySE( 0, "s_suzu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/02/vtk1_rena1016", 128);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1016", 128, TRUE);
 	OutputLine(NULL, "「…………私、",
 		   NULL, "\"...I...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );

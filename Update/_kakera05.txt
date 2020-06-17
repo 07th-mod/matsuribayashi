@@ -27,13 +27,13 @@ void main()
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1280", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1280", 128, TRUE);
 	OutputLine(NULL, "「………もしもし、入江です。」",
 		   NULL, "\"......Hello, this is Irie.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1225", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1225", 128, TRUE);
 	OutputLine(NULL, "「お休みのところ申し訳ございませんわ、入江所長。」",
 		   NULL, "\"I'm sorry to bother you, Dr. Irie.\"", Line_Normal);
 	ClearMessage();
@@ -76,25 +76,25 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1281", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1281", 128, TRUE);
 	OutputLine(NULL, "「……遅くなりました。",
 		   NULL, "\"......Sorry it took me so long.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1282", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1282", 128, TRUE);
 	OutputLine(NULL, "末期患者が出たというのは本当ですか。」",
 		   NULL, " Is it true that we have another terminal patient?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/ta2_akuwarai_2", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacterWithFiltering(0, 9, "sprite/normal/ta2_akuwarai_", "2", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1226", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1226", 128, TRUE);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yes.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1227", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1227", 128, TRUE);
 	OutputLine(NULL, "生きた検体がほしいと思っていたら、本当に運良く。",
 		   NULL, " I was hoping to find a living specimen, so this is perfect.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1228", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1228", 128, TRUE);
 	OutputLine(NULL, "くすくすくすくす。」",
 		   NULL, " Hee hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -156,19 +156,19 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1283", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1283", 128, TRUE);
 	OutputLine(NULL, "「…とにかく、麻酔で眠らせましょう。",
 		   NULL, "\"...Anyway, let's put him under anesthesia.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1284", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1284", 128, TRUE);
 	OutputLine(NULL, "このままでは自分の舌を飲み込んで窒息しかねません。」",
 		   NULL, " He might kill himself otherwise.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/ta2_akuwarai_2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 9, "sprite/normal/ta2_akuwarai_", "2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1229", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1229", 128, TRUE);
 	OutputLine(NULL, "「もう少し状態を観察したかったのですけれど、仕方ありませんわね。」",
 		   NULL, "\"I wanted to observe him a little longer, but I guess I have no other choice.\"", Line_Normal);
 	ClearMessage();
@@ -223,22 +223,22 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1285", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1285", 128, TRUE);
 	OutputLine(NULL, "「一体、この男は何者です…？」",
 		   NULL, "\"Who is this man anyway?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 0, "sprite/ta2_akuwarai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	ModDrawCharacter(0, 9, "sprite/normal/ta2_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1230", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1230", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1231", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1231", 128, TRUE);
 	OutputLine(NULL, "あの男が持っていた新聞の包み。",
 		   NULL, " He had something wrapped in newspaper.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1232", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1232", 128, TRUE);
 	OutputLine(NULL, "…中に何が入っていたと思います？」",
 		   NULL, " What do you think was in it?\"", Line_Normal);
 	ClearMessage();
@@ -248,7 +248,7 @@ void main()
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 0, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1286", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1286", 128, TRUE);
 	OutputLine(NULL, "「………う…、…これは何です……？」",
 		   NULL, "\"......Ugh... what is this?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -275,7 +275,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1287", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1287", 128, TRUE);
 	OutputLine(NULL, "「う………、これは、…ひどい……。」",
 		   NULL, "\"Oh...... god, this is awful...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -323,20 +323,20 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawBustshot(1, "sprite/ta2_def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta2_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "background/sinryou_sinsatu2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1233", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1233", 128, TRUE);
 	OutputLine(NULL, "「状況から考えて、この男が切り取った物と考えていいでしょうねぇ。",
 		   NULL, "\"Judging by the situation, we can assume this man cut off this arm.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1234", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1234", 128, TRUE);
 	OutputLine(NULL, "くすくすくす。」",
 		   NULL, " Hee hee hee.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1288", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1288", 128, TRUE);
 	OutputLine(NULL, "「……つまり、彼は近隣で起こった何らかの死体遺棄事件の犯人、ということですね。」",
 		   NULL, "\"...So he's the culprit behind the body dumping that's been occurring in the neighborhood?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -357,47 +357,47 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ta2_akuwarai_2", 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta2_akuwarai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1235", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1235", 128, TRUE);
 	OutputLine(NULL, "「この男、前科者だそうで、しかもその上、執行猶予期間中だとか。",
 		   NULL, "\"This man has a criminal record and he's on probation.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1236", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1236", 128, TRUE);
 	OutputLine(NULL, "…にもかかわらず、また罪を犯してしまうなんて。",
 		   NULL, " Yet he committed another crime.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1237", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1237", 128, TRUE);
 	OutputLine(NULL, "それで殺人の発覚を恐れて遺体を隠そうと思ったのでしょうね。」",
 		   NULL, " I bet he dismantled the body in order to hide it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1289", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1289", 128, TRUE);
 	OutputLine(NULL, "「…状況にもよるでしょうが、懲役数年で済むというものではなさそうですね。」",
 		   NULL, "\"I'm sure it depends on the circumstances, but he'll get more than just a few years in prison.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/ta2_def_0", 200, TRUE );
+	ModDrawCharacter(1, 9, "sprite/normal/ta2_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1238", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1238", 128, TRUE);
 	OutputLine(NULL, "「くすくす。",
 		   NULL, "\"Hee hee.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1239", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1239", 128, TRUE);
 	OutputLine(NULL, "入江所長も、こんな社会の屑が相手なら、解剖に躊躇はないのでは？」",
 		   NULL, " So you won't hesitate to dissect a scumbag like him, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1289a", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1289a", 128, TRUE);
 	OutputLine(NULL, "「………社会の屑がさらに犯罪を重ね、さらにその上、雛見沢症候群で凶暴化したのか。",
 		   NULL, "\"......Who knows. Maybe he was a scumbag before and became violent due to the syndrome,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1289b", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1289b", 128, TRUE);
 	OutputLine(NULL, "それとも、前科を悔いる善良な小市民が雛見沢症候群で凶暴化して罪を犯したのか、どちらかはわかりません。",
 		   NULL, " or maybe he had gone straight, but became violent again due to the syndrome. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1290", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1290", 128, TRUE);
 	OutputLine(NULL, "…前者ならともかく、…後者ならば彼には何の罪もありませんよ。」",
 		   NULL, "The former is one thing, but if it's the latter case, it's not his fault.\"", Line_Normal);
 	ClearMessage();
@@ -605,21 +605,21 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 400, FALSE );
-	DrawBustshot( 2, "sprite/ta2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/sinryou_sinsatu2", 400 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1242", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1242", 128, TRUE);
 	OutputLine(NULL, "「入江所長？",
 		   NULL, "\"Director Irie?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1243", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1243", 128, TRUE);
 	OutputLine(NULL, "　聞いてらっしゃいます？」",
 		   NULL, " Are you listening?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1291", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1291", 128, TRUE);
 	OutputLine(NULL, "「…ぇ、",
 		   NULL, "\"Eh,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -629,71 +629,71 @@ void main()
 		   NULL, " ahh,", Line_Continue);
 	OutputLine(NULL, "すみません。",
 		   NULL, " sorry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1292", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1292", 128, TRUE);
 	OutputLine(NULL, "もう一度お願いします。」",
 		   NULL, " Could you repeat that?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_akuwarai_2", 300, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1244", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1244", 128, TRUE);
 	OutputLine(NULL, "「解剖計画書を提出し、東京に応援を要請した方がよいかと思います。",
 		   NULL, "\"I believe it best that we submit the dissection proposal to Tokyo and request their assistance.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1245", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1245", 128, TRUE);
 	OutputLine(NULL, "何しろ、単に生きてるだけでなく、末期症状を起こしている大変貴重な検体ですもの。",
 		   NULL, " He's not only alive, he's also in the terminal stage, so he's an extremely important specimen. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1246", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1246", 128, TRUE);
 	OutputLine(NULL, "慎重な解剖が求められますわね。」",
 		   NULL, "We must conduct the dissection very carefully.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1293", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1293", 128, TRUE);
 	OutputLine(NULL, "「…そうですね。",
 		   NULL, "\"...That's true.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1294", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1294", 128, TRUE);
 	OutputLine(NULL, "仰る通りです。",
 		   NULL, " You're right.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1295", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1295", 128, TRUE);
 	OutputLine(NULL, "そのようにしましょう。」",
 		   NULL, " Let's do as you say.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_def_0", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1247", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1247", 128, TRUE);
 	OutputLine(NULL, "「それまでに数日の猶予があると思います。",
 		   NULL, "\"I think we'll have a few days before the dissection.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1248", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1248", 128, TRUE);
 	OutputLine(NULL, "そこで、麻酔を解いていくつかの反応実験をしてみたいのですが。」",
 		   NULL, " So I want to run some reaction tests once he's off the anesthetic.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1296", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1296", 128, TRUE);
 	OutputLine(NULL, "「……危険ではありませんか？",
 		   NULL, "\"...Do you think that's safe?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1297", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1297", 128, TRUE);
 	OutputLine(NULL, "　たとえ拘束を解かなくても、何が起こるかわかりませんよ？」",
 		   NULL, " Even if he's restrained, we don't know what will happen.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_akuwarai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1249", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1249", 128, TRUE);
 	OutputLine(NULL, "「ようやく手に入った活きのいい検体なんですもの。",
 		   NULL, "\"We finally have the opportunity to test a live specimen.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1250", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1250", 128, TRUE);
 	OutputLine(NULL, "ただ脳を覗くだけじゃ勿体無いですわ。",
 		   NULL, " We can't only look into his brain.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1251", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1251", 128, TRUE);
 	OutputLine(NULL, "くすくすくすくす…。」",
 		   NULL, " Hee hee hee hee...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -789,16 +789,16 @@ void main()
 
 	DisableWindow();
 	FadeFilm( 300, TRUE );
-	ChangeBustshot( 2, "sprite/ta2_warai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1252", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1252", 128, TRUE);
 	OutputLine(NULL, "「…あら。",
 		   NULL, "\"...Hey,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1253", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1253", 128, TRUE);
 	OutputLine(NULL, "どうなさいましたの、所長。",
 		   NULL, " what's the matter, Director?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1254", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1254", 128, TRUE);
 	OutputLine(NULL, "お休みのところを無理に起こしてしまったので、ご気分が優れませんのかしら…？」",
 		   NULL, " Are you feeling okay?\"", Line_Normal);
 	ClearMessage();
@@ -857,31 +857,31 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1298", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1298", 128, TRUE);
 	OutputLine(NULL, "「いえ。",
 		   NULL, "\"No,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1299", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1299", 128, TRUE);
 	OutputLine(NULL, "考え事をしていただけです。",
 		   NULL, " I was just thinking.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1300", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1300", 128, TRUE);
 	OutputLine(NULL, "…鷹野さんは東京との調整をお願いいたします。",
 		   NULL, " Takano-san, please make some arrangement with Tokyo,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1301", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1301", 128, TRUE);
 	OutputLine(NULL, "日程が決まりましたら教えてください。」",
 		   NULL, " and let me know when it's done.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprite/ta2_akuwarai_2", 200, TRUE );
+	ModDrawCharacter(2, 9, "sprite/normal/ta2_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1255", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1255", 128, TRUE);
 	OutputLine(NULL, "「えぇ、了解いたしましたわ。",
 		   NULL, "\"Okay, understood.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1256", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1256", 128, TRUE);
 	OutputLine(NULL, "……くすくすくす！",
 		   NULL, " ...Hee hee hee!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1257", 128);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1257", 128, TRUE);
 	OutputLine(NULL, "　眠気も吹っ飛んでしまいますわね。」",
 		   NULL, " This is really exciting.\"", Line_Normal);
 	ClearMessage();

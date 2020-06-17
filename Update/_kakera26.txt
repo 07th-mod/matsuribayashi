@@ -8,7 +8,7 @@ void main()
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1001", 128, TRUE);
 	OutputLine(NULL, "「でして、ダムの建設事業に伴う地域振興や地域産業の育成などですね…、」",
 		   NULL, "\"So the dam construction will bring in new jobs and revitalize the local industry...\"", Line_Normal);
 	ClearMessage();
@@ -19,7 +19,7 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1008", 128, TRUE);
 	OutputLine(NULL, "「そんなことは聞いてねぇっつってんだらぁ！！」",
 		   NULL, "\"That's not what we're saying!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -29,7 +29,7 @@ void main()
 	StartShakingOfAllObjects( 241, 40, 0, 0, 3*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1009", 128, TRUE);
 	OutputLine(NULL, "「俺らの誰の断りがあって、ダムなんか作ろうって言い出したかって聞いてんだ！」",
 		   NULL, "\"Who the hell gave you permission to build a dam here?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -39,34 +39,34 @@ void main()
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1009", 128, TRUE);
 	OutputLine(NULL, "「おう、わしらから税金絞るだけ絞っといてそれに対する返事がこれっちゅうんか？！",
 		   NULL, " \"You squeeze tax money from us and this is what we get in return?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1010", 128, TRUE);
 	OutputLine(NULL, "　おんどりゃあ、誰の税金で給料もらっとんじゃあ！！」",
 		   NULL, " Who do you think pays your salaries, huh?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1002", 128, TRUE);
 	OutputLine(NULL, "「ですから！",
 		   NULL, "\"Look,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1003", 128, TRUE);
 	OutputLine(NULL, "　先ほどから申し上げておりますように…！！」",
 		   NULL, " we're trying to explain to you...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1009", 128, TRUE);
 	OutputLine(NULL, "「言い訳など聞いちゃならんねぇ、いつ計画を中止するんか聞いとるんじゃい！！」",
 		   NULL, "\"We don't want to hear your excuses!! We want to know when you'll stop the construction!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1010", 128, TRUE);
 	OutputLine(NULL, "「お前じゃ話にならん、東京の建設大臣を連れて来い！！",
 		   NULL, "\"You're useless! Bring the Minister of Construction here!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1011", 128, TRUE);
 	OutputLine(NULL, "　ここではっきり白黒つけちゃる！！」",
 		   NULL, " He'll get to the bottom of it!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -76,16 +76,16 @@ void main()
 	StartShakingOfAllObjects( 241, 40, 0, 2, 6*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1011", 128, TRUE);
 	OutputLine(NULL, "「引っ込まんか木っ端役人があぁあぁ！！」",
 		   NULL, "\"Shut up, you yuppie!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1010", 128, TRUE);
 	OutputLine(NULL, "「大体おどれら、人さまの税金で仕事しとって、何でわしらより高い段で話をしとるんじゃ。",
 		   NULL, "\"Hey, you're paid with our tax money, so why the hell are you talking down to us from up there?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1011", 128, TRUE);
 	OutputLine(NULL, "目線で話さんかい目線で！！」",
 		   NULL, " Come down here and and let's speak face to face!!\"", Line_Normal);
 	ClearMessage();
@@ -133,7 +133,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/transparent/ha1_yowaki_0", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 12, "sprite/transparent/ha1_yowaki_", "0", "maskc", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そんな光景を、僕はみんなの後から見守っていた。",
@@ -348,16 +348,16 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1001", 128, TRUE);
 	OutputLine(NULL, "「じゃかましいわッ！！",
 		   NULL, "\"Shut up!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1002", 128, TRUE);
 	OutputLine(NULL, "　そりゃおんどれの都合やんね、勝手に総意にせんといてんなクソババアッ！！」",
 		   NULL, " Those are your reasons, not ours!! Don't pull us into this, you old hag!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1010", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1010", 128, TRUE);
 	OutputLine(NULL, "「あんじょう、すったらんわッ！！",
 		   NULL, "\"Who the hell cares!!", Line_WaitForInput);
 
@@ -365,19 +365,19 @@ void main()
 	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, FALSE );
 
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1011", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1011", 128, TRUE);
 	OutputLine(NULL, "　ようも言ったん、抜かしよってからにこんの輩ぁああぁッ！！！」",
 		   NULL, " The hell you say, you bastard!!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1012", 128, TRUE);
 	OutputLine(NULL, "「おうおうッ！！",
 		   NULL, "\"Hey, hey, hey!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1013", 128, TRUE);
 	OutputLine(NULL, "　てめぇお魎さんと知っててその口聞いとるんかいな、上等きっちゃら、おあああッ？！",
 		   NULL, " Do you know who you're talking to? This is Oryou-san. You've got some nerve, huh?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmma1014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmma1014", 128, TRUE);
 	OutputLine(NULL, "　名乗らんかいおおぅッ！！」",
 		   NULL, " Who the hell do you think you are?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -385,10 +385,10 @@ void main()
 	PlaySE( 0, "s_tataku", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1003", 128, TRUE);
 	OutputLine(NULL, "「やっかましいわぁ！！",
 		   NULL, "\"Shut up!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1004", 128, TRUE);
 	OutputLine(NULL, "　園崎がなんぼのもんじゃい、わしゃあ北条じゃ、腰巾着は引っ込んどらんかいッ！！」",
 		   NULL, " Sonozaki? So what? I'm Houjou. Get your goons away from me!!\"", Line_Normal);
 	ClearMessage();
@@ -396,13 +396,13 @@ void main()
 	DrawSceneWithMask( "background/ka4", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1012", 128, TRUE);
 	OutputLine(NULL, "「おぉう北条んの！",
 		   NULL, "\"Hey, Houjou!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1013", 128, TRUE);
 	OutputLine(NULL, "　何ば抜かしよったんようも村を沈めちゃる言えるのぉ！！",
 		   NULL, " How dare you say that you want the village to be submerged?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmb1014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmb1014", 128, TRUE);
 	OutputLine(NULL, "　お前ぇ何ぼで村を売ったんッ？！」",
 		   NULL, " How much are they paying you?\"", Line_Normal);
 	ClearMessage();
@@ -413,74 +413,74 @@ void main()
 	StartShakingOfAllObjects( 244, 40, 0, 2, 4*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1005", 128, TRUE);
 	OutputLine(NULL, "「黙らんかい死に損ないがぁッ！！",
 		   NULL, "\"Shut up, you old geezer!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1006", 128, TRUE);
 	OutputLine(NULL, "　いいんか、雛見沢には貧乏人も大勢おるん、お前んとこみたいに、山に畑に唸るほど持ってる地主とはわけが違うんッ！！",
 		   NULL, " Listen, there are plenty of poor people in Hinamizawa. Not everyone is rich and has fields all over the mountains like you do!!", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1007", 128, TRUE);
 	OutputLine(NULL, "　わしゃあの、国の補償金で充分満足しとったん、町の公営住宅も手配してくれちょうゆぅし、なぁんも不足はなかったん！！",
 		   NULL, "I'm satisfied with the compensation from the government. They've even offered to provide us with public housing.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1008", 128, TRUE);
 	OutputLine(NULL, "　それをおんどれが全部ちゃぶ台引っくり返しよったん、台無しにしよったんじゃボケぇッ！！！",
 		   NULL, " Yet you're ruining everything, you assholes!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1009", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1009", 128, TRUE);
 	OutputLine(NULL, "　おどれら地主の都合で人まで巻き込むなや！",
 		   NULL, " Don't pretend you're the same as us! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1010", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1010", 128, TRUE);
 	OutputLine(NULL, "　そんなに国と喧嘩せぇんかったらおどれがひとりでやれ！！",
 		   NULL, "If you want to fight with the government, why don't you fight by yourself?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1011", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1011", 128, TRUE);
 	OutputLine(NULL, "　したらん、ゼニが誰が払うんね、おどれかいな！！",
 		   NULL, " Then who's going to pay? You?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1012", 128, TRUE);
 	OutputLine(NULL, "　うちはな、貧乏だし育ち盛りが二人もおるん。",
 		   NULL, " I'm poor and have two kids at home. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1013", 128, TRUE);
 	OutputLine(NULL, "おとなしゅう、国からゼニをもろぅて職を斡旋してもろぅて、人生再設計ちゅうとこなんや。",
 		   NULL, "I was planning to start a new life by leaving here in peace after getting compensation from the government and finding a job elsewhere.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1014", 128, TRUE);
 	OutputLine(NULL, "それをおどれは何じゃ、いつからお前はわしの代表になったんじゃ！！",
 		   NULL, " But you... since when did you represent me, huh?! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1015", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1015", 128, TRUE);
 	OutputLine(NULL, "　お前、そんなに偉いんか、おああああッ？！」",
 		   NULL, "Do you think you're that important, or what?!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1012", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1012", 128, TRUE);
 	OutputLine(NULL, "「おうおうおう、北条の！！",
 		   NULL, "\"Hey, hey, hey, Houjou!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1013", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1013", 128, TRUE);
 	OutputLine(NULL, "　ようも抜かした、この裏切り者がぁッ！！",
 		   NULL, " How dare you betray us!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmc1014", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmc1014", 128, TRUE);
 	OutputLine(NULL, "　んなら村から出てけ出てけッ！！」",
 		   NULL, " Then get out! Get out of this village!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1016", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1016", 128, TRUE);
 	OutputLine(NULL, "「おう、出ていったら！",
 		   NULL, "\"Sure, I'll be happy to!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1017", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1017", 128, TRUE);
 	OutputLine(NULL, "　もちろん、それに見合うゼニはお前が払うんじゃろうな？！",
 		   NULL, " But you're going to pay what I'm entitled to, right?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1018", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1018", 128, TRUE);
 	OutputLine(NULL, "　わしが国からもらい損ねたゼニ、きっちり都合つけてくれちゃるんじゃろなぁッ？！",
 		   NULL, " You're going to pay me every yen of the compensation I was going to get from the government!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1019", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1019", 128, TRUE);
 	OutputLine(NULL, "　村から出たぅともゼニがないんじゃ。",
 		   NULL, "Even if I wanted to leave the village, I don't have the money.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1020", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1020", 128, TRUE);
 	OutputLine(NULL, "おどれが払うんならすぐにでも出たっるわ！！」",
 		   NULL, " If you're going to pay me, I'll leave straight away!!\"", Line_Normal);
 	ClearMessage();
@@ -488,43 +488,43 @@ void main()
 	DrawSceneWithMask( "background/ka1_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmd1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmd1001", 128, TRUE);
 	OutputLine(NULL, "「……北条の言う通りだ！",
 		   NULL, "\"...Houjou is right!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmd1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmd1002", 128, TRUE);
 	OutputLine(NULL, "　立ち退いてもいいと思ってる住民もいるんだぞ！",
 		   NULL, " There are plenty of residents who are willing to leave!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmd1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmd1003", 128, TRUE);
 	OutputLine(NULL, "　御三家は俺たちを巻き込むな！」",
 		   NULL, " You Three Families shouldn't drag us into this!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1012", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1012", 128, TRUE);
 	OutputLine(NULL, "「おうおう何じゃい？",
 		   NULL, "\"The hell is this?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1013", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1013", 128, TRUE);
 	OutputLine(NULL, "　今抜かしたのは誰じゃい？！",
 		   NULL, " Who just spoke?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1014", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1014", 128, TRUE);
 	OutputLine(NULL, "　名乗らんかいボケッ？！」",
 		   NULL, " Come on, who was it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmd1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmd1004", 128, TRUE);
 	OutputLine(NULL, "「残りたいヤツは勝手に残ればいいだろが！！",
 		   NULL, "\"If you want to stay, then stay!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmmd1005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmmd1005", 128, TRUE);
 	OutputLine(NULL, "　立ち退きも権利じゃ、勝手に人様の権利に干渉するなやこんのダラズがッ！！」",
 		   NULL, " We have the right to leave, so don't interfere!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmme1001", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmme1001", 128, TRUE);
 	OutputLine(NULL, "「そうじゃそうじゃ！！",
 		   NULL, "\"That's right!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmme1002", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmme1002", 128, TRUE);
 	OutputLine(NULL, "　園崎のクソババアはすっこんどれッ！！」",
 		   NULL, " Back the hell off, you damn Sonozaki hag!!\"", Line_Normal);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -532,7 +532,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1004", 128, TRUE);
 	OutputLine(NULL, "「…あーー、",
 		   NULL, "\"...Ahh,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -540,7 +540,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "もちろんダム計画に同意してくださる方には見合う保障を用意いたしております。",
 		   NULL, " of course we'll compensate the people who support the dam construction plan.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1005", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1005", 128, TRUE);
 	OutputLine(NULL, "決して土地の搾取ではありませんのでぇ…、」",
 		   NULL, " We most certainly will not steal the land from you...\"", Line_Normal);
 	ClearMessage();
@@ -550,31 +550,31 @@ void main()
 	StartShakingOfAllObjects( 244, 40, 0, 0, 4*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1015", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1015", 128, TRUE);
 	OutputLine(NULL, "「黙れ役人！！",
 		   NULL, "\"Shut up, government dog!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1016", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1016", 128, TRUE);
 	OutputLine(NULL, "　おんどりゃあ、村ン真っ二つに裂こう魂胆かいッ！！",
 		   NULL, " Are you trying to divide the village?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1017", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1017", 128, TRUE);
 	OutputLine(NULL, "死ねや北条！！",
 		   NULL, "Die, Houjou!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1018", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1018", 128, TRUE);
 	OutputLine(NULL, "　村の空気を吸う資格はねぇ、今すぐ息止めて死ねッ！！」",
 		   NULL, " You don't deserve to breathe the village air. Hold your breath and suffocate to death!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沙都子父</color>", NULL, "<color=#f5e6d3>Satoko's dad</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1021", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1021", 128, TRUE);
 	OutputLine(NULL, "「なめんなボケが！！",
 		   NULL, "\"Screw you, old hag!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1022", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1022", 128, TRUE);
 	OutputLine(NULL, "　ぶッ殺してやるわ、前に出ろクソババア！！！",
 		   NULL, " I'll murder your ass! Step up front, you damn hag!!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_satokof1023", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_satokof1023", 128, TRUE);
 	OutputLine(NULL, "　おおおお、引っ込まんかいデカポリ！！」",
 		   NULL, " Heeeey! Stay out of this, you fat pig!!\"", Line_Normal);
 	ClearMessage();
@@ -584,49 +584,49 @@ void main()
 	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1019", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1019", 128, TRUE);
 	OutputLine(NULL, "「よーーう抜かした。",
 		   NULL, "\"Veeeery good.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1020", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1020", 128, TRUE);
 	OutputLine(NULL, "…よーぅ抜かしたわ北条の。",
 		   NULL, " That was veeery good, Houjou.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1021", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1021", 128, TRUE);
 	OutputLine(NULL, "……この園崎お魎、ひっさびさに頭に血ぃ登って来よったんわ。",
 		   NULL, " I haven't been this pissed off in so, so long.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1022", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1022", 128, TRUE);
 	OutputLine(NULL, "きっちりケジメ取らせてもらうかんの。",
 		   NULL, " You'll get what you deserve!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1023", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1023", 128, TRUE);
 	OutputLine(NULL, "あんじょう、楽しみに待っとれやッ…！！！」",
 		   NULL, " Look forward to it!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_farmme1003", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmme1003", 128, TRUE);
 	OutputLine(NULL, "「北条、やれやれッ！！",
 		   NULL, "\"Get 'em, get 'em, Houjou!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_farmme1004", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_farmme1004", 128, TRUE);
 	OutputLine(NULL, "　国は俺たちに仕事と住処とカネを与えろー！！」",
 		   NULL, " The government has to provide us new jobs, shelter, and compensation.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Government Official</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1006", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1006", 128, TRUE);
 	OutputLine(NULL, "「こらこら！！",
 		   NULL, "\"Hey, hey!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1007", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1007", 128, TRUE);
 	OutputLine(NULL, "　やめなさい暴力は！！",
 		   NULL, " Stop this violence!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/00/vtk1_yakua1008", 128);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_yakua1008", 128, TRUE);
 	OutputLine(NULL, "　お互い、やめてやめてッ！！」",
 		   NULL, " All of you, stop it, stop it!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1024", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1024", 128, TRUE);
 	OutputLine(NULL, "「すったらんたぁ上等じゃああ！！",
 		   NULL, "\"Like hell, bring it on!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/17/vtk1_oryou1025", 128);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk1_oryou1025", 128, TRUE);
 	OutputLine(NULL, "　おんしが出てこんかいなッ！！」",
 		   NULL, " Come and get some!!\"", Line_Normal);
 	ClearMessage();

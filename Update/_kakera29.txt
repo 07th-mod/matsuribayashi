@@ -63,7 +63,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "sprite/sato1_komaru_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
+	ModDrawCharacterWithFiltering(0, 7, "sprite/normal/sato1_komaru_", "0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条兄妹との縁は、沙都子ちゃんより悟史くんの方が先だった。",
@@ -395,61 +395,61 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	DrawBustshot( 2, "sprite/sato1_ikari_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 7, "sprite/normal/sato1_ikari_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/sinryou_matiai1", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1027", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1027", 128, TRUE);
 	OutputLine(NULL, "「……監督、沙都子は大丈夫ですか…！」",
 		   NULL, "\"...Coach, is Satoko okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1097", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1097", 128, TRUE);
 	OutputLine(NULL, "「えぇ、安心してください。",
 		   NULL, "\"Yes, don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1098", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1098", 128, TRUE);
 	OutputLine(NULL, "一時的に混乱してしまっただけですよ。」",
 		   NULL, " She's a bit confused, but only temporarily. That's all.\"", Line_Normal);
 	ClearMessage();
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshotWithFiltering( 0, "sprite/sato1_def1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacterWithFiltering(0, 7, "sprite/normal/sato1_def1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1028", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1028", 128, TRUE);
 	OutputLine(NULL, "「会っても大丈夫ですか？」",
 		   NULL, "\"May I see her?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1099", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1099", 128, TRUE);
 	OutputLine(NULL, "「やっと薬でぐっすり眠れたところです。",
 		   NULL, "\"She finally fell asleep...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1100", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1100", 128, TRUE);
 	OutputLine(NULL, "できれば起こさないであげたいところです。",
 		   NULL, " so I'd rather not wake her up just yet.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1101", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1101", 128, TRUE);
 	OutputLine(NULL, "しばらくゆっくり休ませてあげましょう。",
 		   NULL, " Let's just let her rest for awhile.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1102", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1102", 128, TRUE);
 	OutputLine(NULL, "様子を見て、数日入院させてあげるのもいいかもしれません。",
 		   NULL, " Maybe it's a good idea to have her stay here for a few days too.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1103", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1103", 128, TRUE);
 	OutputLine(NULL, "…大丈夫。",
 		   NULL, " ...Don't worry.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/10/vtk1_irie1104", 128);
+	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1104", 128, TRUE);
 	OutputLine(NULL, "私に任せてください。」",
 		   NULL, " I'll take good care of her.\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "sprite/sato1_warai_1", 200, TRUE );
+	ModDrawCharacter(0, 7, "sprite/normal/sato1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1029", 128);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1029", 128, TRUE);
 	OutputLine(NULL, "「…あ、ありがとうございます。」",
 		   NULL, "\"Th-Thank you.\"", Line_Normal);
 	ClearMessage();
