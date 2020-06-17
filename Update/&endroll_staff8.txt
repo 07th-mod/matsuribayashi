@@ -6,23 +6,21 @@ void main()
 	DisableWindow();
 
 	PlayBGM( 0, "Liberating", 120, 0 );
-	DrawBustshotWithFiltering( 8, "white", "mask00", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	ChangeBustshot( 8, "End_1", 3000, TRUE );
-	ChangeBustshot( 8, "End_2", 2000, TRUE );
-	ChangeBustshot( 8, "End_3", 4000, TRUE );
+	DrawScene( "end_1" , 3000 );
+	DrawScene( "end_2" , 2000 );
+	DrawScene( "end_3" , 4000 );
 	Wait( 2200 );
 	DrawScene( "black" , 5000 );
-
 	Wait( 1000 );
 	PreloadBitmap("Matu_staff_01");
 	PreloadBitmap("Matu_staff_02");
 
-	DrawScene( "si_matsuri_01" , 2000 );
+	DrawScene( "text/si_matsuri_01" , 2000 );
 	Wait( 8000 );
-	DrawScene( "si_matsuri_02" , 2000 );
+	DrawScene( "text/si_matsuri_02" , 2000 );
 	Wait( 6000 );
-	FadeOutBGM(0, 4000, FALSE);
 	DrawScene( "black" , 4000 );
+	FadeOutBGM(0, 4000, TRUE);
 
 
 	SetValidityOfInput(FALSE);

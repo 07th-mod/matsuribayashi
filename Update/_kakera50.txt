@@ -13,7 +13,7 @@ void main()
 
 	PlayBGM( 0, "maturi_01_Ver2", 120, 0 );
 
-	DrawScene( "Fure2", 400 );
+	DrawScene( "background/fure2", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -189,6 +189,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -4,17 +4,14 @@ void main()
 
 	PlayBGM( 0, "Instict", 120, 0 );
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentGroup", 1000);
-		DrawScene( "Fure1", 1000 );
-	} else {
-		DrawScene( "Kakera2", 1000 );
-	}
+	DrawScene( "background/fure1", 1000 );
+//	DrawFragment("minacubemap", "FragmentGroup", 1000);
+	DrawScene( "background/kakera", 400 );
 	StopFragment(1000);
 	DrawScene( "white", 1000 );
-	DrawBustshot( 2, "Sa_MuhyouB2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 1, "Tetu3", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "Ho1_Houjouke", 400 );
+	DrawBustshot( 2, "sprite/sa1b_muhyou_b2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sprite/tetu_3_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/ho1", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -41,7 +38,7 @@ void main()
 		   NULL, " All are gathered and revealed here in this Fragment.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点ではルールＹの存在には至れない。",
@@ -53,7 +50,7 @@ void main()
 		   NULL, "...Fighting against Rule Z's effect on Satoko is the best that can be done.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、このカケラでは戦い方を誤る。",
@@ -92,7 +89,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawScene( "Fure1", 400 );
+	DrawScene( "background/fure1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、……鷹野たちはあまりに強大。",
@@ -110,6 +107,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

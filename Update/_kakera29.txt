@@ -2,9 +2,9 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "Ho1_Houjouke", 1000 );
+	DrawScene( "background/ho1", 1000 );
 
-	PlayBGM( 0, "Feel", 120, 0 );
+	PlayBGM( 0, "hgrs03", 120, 0 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -50,7 +50,7 @@ void main()
 		   NULL, "In addition to that, Satoko-chan and her stepfather didn't get along, so their stress levels must have reached their limit.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sinryo_sinsatu1", 1000 );
+	DrawScene( "background/sinryou_sinsatu1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は診療所の所長という、厚かましく言えば、村の名士的立場だったため、色々な人から話を聞けた。",
@@ -63,8 +63,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Sato_Komaru", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/sato1_komaru_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　北条兄妹との縁は、沙都子ちゃんより悟史くんの方が先だった。",
@@ -118,7 +117,7 @@ void main()
 		   NULL, "The only way to truly cure him would be to change his living environment.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sinryo_sinsatu4", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_sinsatu4", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、口で言うのは容易い。",
@@ -169,7 +168,7 @@ void main()
 		   NULL, "So I asked him to join the junior baseball team that I coach.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Oki_G1", 400 );
+	DrawScene( "background/oki_g3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、私は若い研究の徒であり、時間の限りを雛見沢症候群の研究に捧げていたわけだが、それだけでは気が滅入る。",
@@ -232,7 +231,7 @@ void main()
 		   NULL, "I just wanted him to experience it himself, to realize how great it feels to play sports.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 400 );
+	DrawScene( "background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼もそれを次第に実感していったに違いない。",
@@ -284,7 +283,7 @@ void main()
 		   NULL, "Also around that time, there was an incident bad enough to make Satoko-chan collapse.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは、両親の事故だった。",
@@ -327,7 +326,7 @@ void main()
 		   NULL, "And people labeled the Houjou family as one that was cursed by Oyashiro-sama.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村中から後ろ指を指されているのは両親だった。",
@@ -395,16 +394,9 @@ void main()
 		   NULL, "It broke my heart just to imagine what she had to go through.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawSceneWithMask( "Sinryo_matiai1", "maskup", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshot( 2, "Sato_Ikari", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
+	FadeOutBGM( 0, 300, FALSE );
+	DrawBustshot( 2, "sprite/sato1_ikari_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_matiai1", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
@@ -423,8 +415,8 @@ void main()
 		   NULL, " She's a bit confused, but only temporarily. That's all.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Sato_Def1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_matiai1", "maskright", 1, 0, 300 );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/sato1_def1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1028", 128);
@@ -454,8 +446,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_warai_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1029", 128);
@@ -506,7 +497,7 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………しかし何ということ。",
@@ -524,6 +515,8 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

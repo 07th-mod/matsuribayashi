@@ -12,7 +12,7 @@ void main()
 
 	PlayBGM( 0, "Cafe", 120, 0 );
 
-	DrawSceneWithMask( "Oki_G1", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/oki_g3", "maskm1", 1, 0, 1300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -39,7 +39,6 @@ void main()
 		   NULL, "But the boys don't actually like such routine activities. What they look forward to the most is the free game after practice.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Oki_G2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢の学校は、本来は営林署で、その敷地を間借りしているに過ぎない。",
@@ -64,7 +63,6 @@ void main()
 		   NULL, "Kids from Hinamizawa really don't care if the ground is made of gravel or not.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Oki_G1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　子供たちの試合の方は、他の指導者の人が見てくれているので、入江はその間に、子供たち用のジュースを買いに行くことにした。",
@@ -72,8 +70,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_Def1!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/sato2_def1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1001", 128);
@@ -91,8 +88,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Warai!", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sato2_warai_1", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1002", 128);
@@ -110,10 +106,9 @@ void main()
 
 	DrawScene( "white", 400 );
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 400, FALSE );
 
-	DrawScene( "Sora5", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大人の感性でジュースを選ぶと不評なことがあるので、付き合ってくれるのはとても助かる。",
@@ -127,14 +122,10 @@ void main()
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "Mati", 120, 0 );
 
-	DrawSceneWithMask( "Kuruma1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1004", 128);
@@ -258,7 +249,7 @@ void main()
 		   NULL, "The tiny bit of conscience that remains in me hurts.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Kuruma2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1006", 128);
@@ -307,7 +298,7 @@ void main()
 		   NULL, "\"......Satoko doesn't open up to grown-ups.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんから、沙都子ちゃんの恵まれない生い立ちについては聞かされたことがある。",
@@ -352,7 +343,7 @@ void main()
 		   NULL, "...I guess Satoko-chan's not capable of that.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Kuruma1", 400 );
+	DrawScene( "background/kuruma1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1012", 128);
@@ -439,12 +430,8 @@ void main()
 		   NULL, "He doesn't say it, but it seems Satoshi-kun has grown tired of having to cover for Satoko-chan every time she and her aunt fight.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 0, "Cradle_song", 120, 0 );
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "bellflower", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼は良い人間で良い兄だ。",
@@ -514,14 +501,14 @@ void main()
 		   NULL, "Takano-san is working on her dissection plan as we speak.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Kuruma2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1017", 128);
 	OutputLine(NULL, "「………お願いできると、",
 		   NULL, "\"...If that's possible...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……僕も少しだけ助かります。」",
 		   NULL, " that'll help me too.\"", GetGlobalFlag(GLinemodeSp));
@@ -539,7 +526,7 @@ void main()
 	OutputLine(NULL, "「…いえ、",
 		   NULL, "\"I mean......", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……………沙都子がもうしばらく入院しててくれたら、",
 		   NULL, " if Satoko stays in the clinic a little while longer, ", Line_Continue);
@@ -574,31 +561,19 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1020", 128);
 	OutputLine(NULL, "「………沙都子が帰ってきたら、",
 		   NULL, "\"...As soon as Satoko comes back,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…どうせまた叔母と喧嘩をするだろうと思います。",
 		   NULL, " I know she'll get into fights with my aunt again.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1021", 128);
 	OutputLine(NULL, "…そうしたら、また喧嘩や怒鳴り声ばかりの日になって、",
 		   NULL, " ...Then it's back to those days of constant fighting and screaming again...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……僕もそれに巻き込まれるのかなって思うと。",
 		   NULL, " and I'll probably get dragged into it too. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1022", 128);
 	OutputLine(NULL, "…………沙都子はずっと入院しててくれるのが、",
 		   NULL, "......So if Satoko were hospitalized for a very long time,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "一番僕にとって気楽なことなんじゃないかって、",
 		   NULL, " that would be the easiest on me...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……そう思ってしまう自分がいて…。",
 		   NULL, " But when I think like that...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1023", 128);
@@ -625,10 +600,10 @@ void main()
 		   NULL, "\"To think things like that... what a terrible big brother I am.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1025", 128);
 	OutputLine(NULL, "……そうだと思えば思うほど、…自分が嫌になって。",
-		   NULL, " The more I think that way...", Line_WaitForInput);
+		   NULL, " The more I think that way... the more I hate myself", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1026", 128);
 	OutputLine(NULL, "…………………………。」",
-		   NULL, " the more I hate myself...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -660,6 +635,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -4,15 +4,12 @@ void main()
 
 	PlayBGM( 0, "it_moves", 120, 0 );
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentGroup", 1000);
-		DrawScene( "Fure2", 1000 );
-	} else {
-		DrawScene( "Kakera2", 1000 );
-	}
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentGroup", 1000);
+	DrawScene( "background/kakera", 400 );
 	StopFragment(1000);
 	DrawScene( "white", 1000 );
-	DrawScene( "So2", 1000 );
+	DrawScene( "background/so2", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -26,7 +23,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawScene( "mati_O6", 400 );
+	DrawScene( "background/mati_o6", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラでは気付きにくいことだけど。",
@@ -46,9 +43,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Si_defA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/si1a_def_a1_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そう言えば、園崎詩音という駒も、ゲーム盤の見地からは、外から来た駒という扱いになるのかもしれない。",
@@ -59,7 +54,7 @@ void main()
 	OutputLine(NULL, "　始めは北条沙都子を毛嫌いしていた彼女も、…このカケラともうひとつのカケラを経て大切な何かを学び取り、",
 		   NULL, "She dislikes Satoko Houjou at first, but through this and another piece, she learns something important,", Line_WaitForInput);
 	OutputLine(NULL, "ルールＸに抗え、ルールＺと戦うための強力な駒に成長する。",
-		   NULL, "  challenges Rule X, and then grows to be a powerful piece to fight Rule Z.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " challenges Rule X, and then grows to be a powerful piece to fight Rule Z.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -83,6 +78,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

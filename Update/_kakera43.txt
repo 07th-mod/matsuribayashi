@@ -4,12 +4,9 @@ void main()
 
 	PlayBGM( 0, "it_move2", 120, 0 );
 
-	DrawScene( "Fure1", 1000 );
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentWeirdShapeSmall", 2000);
-	} else {
-		DrawScene( "Kakera3", 400 );
-	}
+	DrawScene( "background/fure1", 1000 );
+//	DrawFragment("minacubemap", "FragmentWeirdShapeSmall", 1000);
+	DrawScene( "background/kakera", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -86,6 +83,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyefragment" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

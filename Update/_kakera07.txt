@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	PlayBGM( 0, "B08_Izyou", 120, 0 );
+	PlayBGM( 0, "higurashi_utu", 120, 0 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -40,7 +40,7 @@ void main()
 		   NULL, " and that we finish our research within three months at most, which was completely unrealistic.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…研究に刻限が切られるなど論外だ。",
@@ -86,7 +86,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花本人は研究への協力を申し出てくれているが、保護者の同意を失うことは研究の頓挫につながりかねない。",
-		   NULL, "Rika is providing her cooperation with our research, but the withdrawal her guardian's consent could be a setback.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rika is providing her cooperation with our research, but the withdrawal of her guardian's consent could be a setback.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -119,7 +119,7 @@ void main()
 		   NULL, "......And it's not only them. The same is happening between Irie and me.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの男は、古手夫妻の非協力を理由に研究が頓挫するのも止むを得ないと考えているようだった。",
@@ -189,12 +189,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……貴様に祖父の研究を破棄する資格などありはしないのに…。",
-		   NULL, "...That man doesn't have any right to discard to my grandfather's research...", Line_WaitForInput);
+		   NULL, "...That man doesn't have any right to discard my grandfather's research...", Line_WaitForInput);
 	OutputLine(NULL, "ぐつぐつと腸が煮えくり返ってくるのがわかる…。",
 		   NULL, " I can feel my guts boiling.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いやいやいや、入江が一番悪いわけじゃない。",
@@ -242,7 +242,7 @@ void main()
 		   NULL, "But now, the mother has influenced the father and changed his decision.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 400 );
+	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…なんたる油断！",
@@ -291,9 +291,9 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	PlayBGM( 1, "semi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
-	DrawScene( "Sinryo_sinsatu4", 400 );
+	DrawScene( "background/sinryou_sinsatu4", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が本件を預かり、……こうして迷っていられる内だけが猶予なのだ。",
@@ -345,7 +345,7 @@ void main()
 		   NULL, "...So I will never let that woman get in the way!", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………心を落ち着けろ。",
@@ -399,10 +399,8 @@ void main()
 		   NULL, "Even Koizumi-sensei would be disgusted if he finds out I can't solve such a simple matter by myself.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 3, 300, FALSE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -510,14 +508,10 @@ void main()
 		   NULL, " Why didn't I think of talking to him before?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	DrawBustshotWithFiltering( 0, "Oko_warai#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_sinsatu3", "maskright", 1, 0, 300 );
+	DrawBustshot(0, "sprite/oko_niyari_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_sinsatu3", "maskright", 1, 0, 300 );
 
 	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
 
@@ -565,8 +559,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Oko_Def#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/oko_def_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/14/vtk1_okonogi1003", 128);
@@ -577,8 +570,8 @@ void main()
 		   NULL, " The Mountain Dogs will take care of it. Just give us a little time, and we'll do a clean job.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1199", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……処分？」",
 		   NULL, "\"...'Take care of it'?\"", Line_Normal);
 	ClearMessage();
@@ -617,8 +610,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Oko_Def2#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/oko_odoroki_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/14/vtk1_okonogi1007", 128);
@@ -653,7 +645,7 @@ void main()
 	OutputLine(NULL, "「…………そ、",
 		   NULL, "\"......Ah,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……それは確かにうまい手ね……。",
 		   NULL, " that sounds like a good idea...", Line_WaitForInput);
@@ -663,8 +655,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Oko_Warai#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/oko_niyari_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/14/vtk1_okonogi1009", 128);
@@ -700,7 +691,7 @@ void main()
 		   NULL, " I have the Mountain Dogs on my side!", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1203", 128);
@@ -709,8 +700,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Oko_Def#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/oko_def_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/14/vtk1_okonogi1011", 128);
@@ -787,8 +777,7 @@ void main()
 		   NULL, "...What a feeling it is to be above others.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小此木</color>", NULL, "<color=#f5e6d3>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/14/vtk1_okonogi1014", 128);
@@ -805,9 +794,9 @@ void main()
 		   NULL, " Ah... well... wait a minute...\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 400 );
+	DrawScene( "background/aka2", 400 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花の母親“だけ”でいいかって？",
@@ -979,16 +968,13 @@ void main()
 		   NULL, "My desire for revenge against God is coming together...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 3, 300, FALSE );
 
-	DrawBustshotWithFiltering( 2, "Oko_Def#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_sinsatu3", "maskup", 1, 0, 300 );
+	DrawBustshot(2, "sprite/oko_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_sinsatu3", "maskup", 1, 0, 300 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1206", 128);
@@ -997,8 +983,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oko_Warai#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/oko_niyari_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私がくすくすと笑い出すと、小此木も何を思いついたやらとニヤリと笑って興味を示してくれた。",
@@ -1043,6 +1028,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

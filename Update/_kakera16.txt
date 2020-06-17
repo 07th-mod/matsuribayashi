@@ -15,7 +15,7 @@ void main()
 		   NULL, "That was why we were able to start the investigation immediately by securing the crime scene.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　被害者は、例の北条夫妻の弟夫婦の妻。",
@@ -88,7 +88,8 @@ void main()
 		   NULL, "I have no concrete proof, but if I question him and shake him up a bit, I have a feeling he'll confess.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ke_Ky1", "maskup", 1, 0, 300 );
+	DrawBustshot(2, "sprite/kuma_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ke_ky1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/19/vtk1_kumagai1007", 128);
@@ -189,7 +190,7 @@ void main()
 		   NULL, " He was set up.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ke_S2", 400 );
+	DrawScene( "background/ke_s2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてその後、…私の予想は的中した。",
@@ -318,7 +319,7 @@ void main()
 		   NULL, "I'll return the arm to his grave, and make the principal offender and the masterminds both bow down before it.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Hi2", 1000 );
+	DrawScene( "background/hi1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……もっとも、北条悟史が消えたように、その主犯格もすでに消されているだろう。",
@@ -394,7 +395,7 @@ void main()
 	OutputLine(NULL, "　すでに四年うまく行っている事件だ。",
 		   NULL, "It happened four years in a row.", Line_WaitForInput);
 	OutputLine(NULL, "…恐らく、来年の五年目も起こる。",
-		   NULL, " So more than likely, there will be fifth curse too.", Line_Normal);
+		   NULL, " So more than likely, there will be a fifth curse too.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -450,6 +451,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

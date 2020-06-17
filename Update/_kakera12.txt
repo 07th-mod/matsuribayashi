@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
-	DrawSceneWithMask( "Hu_R1", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "background/hu_r1", "maskc", 1, 0, 1300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -69,7 +69,7 @@ void main()
 		   NULL, "Perhaps he was going to talk about joining the pro-evacuation camp.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Heya6", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/heya6", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1024", 128);
@@ -98,7 +98,7 @@ void main()
 		   NULL, "Yet, he said it wasn't about the dam. So what could he want to talk about?", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hu_R1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/hu_r1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1026", 128);
@@ -113,8 +113,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_NikoA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 1, "sprite/ri2_niko_a1_2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1049", 128);
@@ -122,6 +121,7 @@ void main()
 		   NULL, "\"......I'm the reincarnation of Oyashiro-sama, right?\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Rika's mom</color>", NULL, Line_ContinueAfterTyping); }
@@ -136,20 +136,13 @@ void main()
 		   NULL, " She's heard enough nonsense from the elderly people at the village hall already.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1029", 128);
 	OutputLine(NULL, "「その、オヤシロさまの生まれ変わりというのが、",
 		   NULL, "\"What she just said, about her being the reincarnation of Oyashiro-sama...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どうも本当らしいのだ。」",
 		   NULL, " That appears to be true.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -235,8 +228,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_DefA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 1, "sprite/ri2_def_a1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1050", 128);
@@ -249,7 +241,7 @@ void main()
 		   NULL, "Rika said it so calmly while her mother became frustrated.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Heya6", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/heya6", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1041", 128);
@@ -468,7 +460,7 @@ void main()
 		   NULL, " If it's actually backed by the Ministry of Health, why aren't they doing it out in the open?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Hu_R1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/hu_r1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の父</color>", NULL, "<color=#f5e6d3>Rika's dad</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikaf1072", 128);
@@ -509,8 +501,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_KomaruA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/ri2_komaru_a1_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1051", 128);
@@ -631,12 +622,12 @@ void main()
 	OutputLine(NULL, "「ま、",
 		   NULL, "\"A-", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…まさか、",
 		   NULL, " Are you saying...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "それが古手家だと仰るんですか！！」",
 		   NULL, " that's the Furude family?\"", Line_Normal);
@@ -656,8 +647,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_WaraiA1#", 300, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1053", 128);
@@ -665,7 +655,7 @@ void main()
 		   NULL, "\"......Meep.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 0 );
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Rika's mom</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk1_rikam1076", 128);
@@ -729,8 +719,8 @@ void main()
 		   NULL, " To discover a cure, it's extremely important that we participate in their research.\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 2, "Ri_DefA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Hu_R2", 400 );
+	DrawBustshot( 2, "sprite/ri2_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "background/hu_r1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1054", 128);
@@ -788,8 +778,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_warai_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk1_rika1059", 128);
@@ -855,13 +844,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_KomaruA1#", 200, TRUE );
-	DisplayWindow();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ChangeBustshot( 2, "sprite/ri2_komaru_a1_0", 200, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "yorumushi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -892,6 +876,7 @@ void main()
 		   NULL, " Dad, please let them know I'm willing to participate, okay?\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Rika's mom</color>", NULL, Line_ContinueAfterTyping); }
@@ -910,6 +895,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

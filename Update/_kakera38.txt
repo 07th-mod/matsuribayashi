@@ -2,12 +2,12 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawSceneWithMask( "Heya1", "maskleft", 1, 0, 1300 );
+	DrawSceneWithMask( "background/heya1", "maskleft", 1, 0, 1300 );
 
 	PlayBGM( 0, "z2_hig2", 120, 0 );
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>お手伝いさん</color>", NULL, "<color=#f5e6d3>Housekeeper</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「魅音さん〜〜〜〜。",
 		   NULL, "\"Mion-saaaaan!", Line_WaitForInput);
 	OutputLine(NULL, "お友達がいらっしゃってますよー。」",
@@ -52,7 +52,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Rouka1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/rouka1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2036", 128);
@@ -63,7 +63,7 @@ void main()
 		   NULL, " Who is it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>お手伝いさん</color>", NULL, "<color=#f5e6d3>Housekeeper</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「古手の梨花ちゃまですよ。」",
 		   NULL, "\"Rika Furude-chama.\"", Line_Normal);
 	ClearMessage();
@@ -84,7 +84,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora5", "maskm1", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　婆っちゃが、ずいぶんと立派なスイカをいくつも送ってもらったので、お裾分けをしようということになったのだ。",
@@ -122,8 +122,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "Ri_DefA1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "So_G1", "maskleft", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sprite/ri2_def_a1_0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/so_g1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2038", 128);
@@ -168,7 +168,7 @@ void main()
 		   NULL, " and it's too dangerous for her to ride while holding it in her hands.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Rouka1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/rouka1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/17/vtk2_oryou2043", 128);
@@ -180,8 +180,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_KomaruA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/ri2_komaru_a1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2041", 128);
@@ -214,7 +213,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	DrawSceneWithMask( "Sora2", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora2", "maskm1", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自転車に乗るにせよ押すにせよ、梨花ちゃんの両手は空かない。",
@@ -361,11 +360,8 @@ void main()
 		   NULL, "As we talked about ordinary things, I noticed Rika-chan seemed a little sad.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2055", 128);
@@ -374,15 +370,12 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	PlayBGM( 0, "higurashi", 120, 0 );
+	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2047", 128);
 	OutputLine(NULL, "「……………ボクはお買い物に行っても、",
 		   NULL, "\"............Whenever I run errands, ", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…よくお駄賃に飴をもらいますが。",
 		   NULL, "I get candy as a treat.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2048", 128);
@@ -487,11 +480,7 @@ void main()
 		   NULL, "Therefore, the Houjou family continues to be treated poorly.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Feel", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -525,7 +514,7 @@ void main()
 		   NULL, "From their point of view, I'm just another member of the family that keeps harassing them.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "M_Hi8", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/m_hi6_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2057", 128);
@@ -537,8 +526,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "Ri_DefA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 2, "sprite/sunset/ri2_def_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2049", 128);
@@ -590,8 +578,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_KomaruA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/sunset/ri2_komaru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2050", 128);
@@ -609,9 +596,6 @@ void main()
 	PlayVoice(4, "ps3/s20/03/vtk2_mion2061", 128);
 	OutputLine(NULL, "その時に押された烙印を払拭するんだから、",
 		   NULL, " They were branded back then, ", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……それと同じ年数はかかるかもしれないね。」",
 		   NULL, "so it might take years to clear up too.\"", Line_Normal);
 	ClearMessage();
@@ -633,14 +617,15 @@ void main()
 	OutputLine(NULL, "「それは、",
 		   NULL, "\"That's", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 3600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………あまりにも辛いね…。」",
 		   NULL, " pretty miserable, isn't it...\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Ri_MajimeA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "M_Hi8", "maskright", 1, 0, 300 );
+	DisableWindow();
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 0, "sprite/sunset/ri2_majime_a1_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2054", 128);
@@ -664,8 +649,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA2#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sunset/ri2_komaru_a2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2056", 128);
@@ -678,13 +662,13 @@ void main()
 	OutputLine(NULL, "「…………私たちに、",
 		   NULL, "\"......What", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……何ができるんだろうね。」",
 		   NULL, " exactly can we do?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora6", "maskup", 1, 0, 3000 );
+	DrawSceneWithMask( "background/sora6", "maskup", 1, 0, 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　仮に園崎本家が、ダム戦争はもう終わりました、北条家と仲良くしましょうと宣言を出したとしても、",
@@ -744,8 +728,8 @@ void main()
 		   NULL, "Now that the Houjou family are outcasts, not even the Sonozaki family can overturn the situation.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Ri_KomaruA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "M_Hi12", 400 );
+	DrawBustshot( 0, "sprite/sunset/ri2_komaru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/m_hi6_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2057", 128);
@@ -769,8 +753,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_MajimeA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sunset/ri2_majime_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2058", 128);
@@ -784,7 +767,7 @@ void main()
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora6", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花ちゃんの言うような、白馬の王子さまが村の外からやってきて、",
@@ -911,6 +894,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

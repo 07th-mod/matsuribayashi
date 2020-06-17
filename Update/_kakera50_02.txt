@@ -6,7 +6,7 @@ void main()
 
 	PlayBGM( 0, "maturi_01_Ver2", 120, 0 );
 
-	DrawSceneWithMask( "Fure3", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/fure2", "maskm1", 1, 0, 1300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -75,8 +75,12 @@ void main()
 		   NULL, "I've put in hundreds of years just for this moment.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
 
 }

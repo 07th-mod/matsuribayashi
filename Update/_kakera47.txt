@@ -4,12 +4,14 @@ void main()
 
 	PlayBGM( 0, "it_move2", 120, 0 );
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentCube", 400);
-		DrawScene( "Fure3", 400 );
-	} else {
-		DrawScene( "Kakera4", 1000 );
-	}
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentCube", 1000);
+	DrawScene( "background/kakera", 400 );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawBustshot( 2, "sprite/sato1_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sprite/si1a_hau_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/mati4", 400 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -19,6 +21,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　同情の余地もなく、哀れむ他ない心の痛むカケラだけれど。",
@@ -39,6 +42,8 @@ void main()
 	OutputLine(NULL, "　そして、園崎魅音が望んでいたように、…村に立ち込める澱んだ空気を一掃する。",
 		   NULL, "And as Mion Sonozaki wished for, he becomes a wind that clears out the stagnant air filling the village.", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "background/fure1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラもまた、学ぶ上での重要な課程なのだ。",
@@ -91,7 +96,8 @@ void main()
 		   NULL, "Every time I see Satoko and Shion argue about pumpkins, I think about that.", Line_Normal);
 	ClearMessage();
 
-	CallScript( "&eyefragment" );
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

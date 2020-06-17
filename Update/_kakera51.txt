@@ -4,15 +4,15 @@ void main()
 
 	PlayBGM( 0, "instict2", 120, 0 );
 
-	DrawScene( "Fure1", 1000 );
+	DrawScene( "background/fure1", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Fure2", 1000 );
+	DrawScene( "background/fure2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Fure3", 400 );
+	DrawScene( "background/fure1", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -78,12 +78,9 @@ void main()
 		   NULL, " the Himatsubushi Fragment.", Line_Normal);
 	ClearMessage();
 
-	if(GetGlobalFlag(GArtStyle) == 1) {
-		DrawFragment("minacubemap", "FragmentDiamondNarrow", 1300);
-		DrawSceneWithMask( "fure1", "maskleft", 1, 0, 1300 );
-	} else {
-		DrawSceneWithMask( "Kakera3", "maskleft", 1, 0, 1300 );
-	}
+	DrawScene( "background/fure1", 1300 );
+//	DrawFragment("minacubemap", "FragmentDiamondNarrow", 1300);
+	DrawScene( "background/kakera", 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラは元から歪な形をしていた。",
@@ -141,13 +138,11 @@ void main()
 		   NULL, "What kind of miracle will occur?", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 3, 255, 255, 255, 256, 0, 3000, TRUE );
+	DisableWindow();
+	Negative( 3000 , TRUE );
 	StopFragment(1000);
-	DrawScene( "white", 1000 );
-	DrawSprite( 0, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 40, 0, TRUE );
-	FadeFilm( 0, TRUE );
-	DrawScene( "black", 0 );
-	FadeSprite( 0, 0, TRUE );
+	DrawScene( "black", 1000 );
+	FadeFilm( 1000, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　世界がぐにゃりと歪む。",
@@ -180,13 +175,9 @@ void main()
 		   NULL, "It's a time long after Rika Furude and her friends' stories tragically ended in June 1983.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
 
-	DrawScene( "Mati9", 1000 );
+	DrawScene( "background/neki1_02", 1000 );
 
 	PlayBGM( 1, "Rain", 120, 0 );
 
@@ -237,7 +228,7 @@ void main()
 		   NULL, "\"They're dirtbags who hide under diplomatic immunity to deal with the local gangsters.", Line_WaitForInput);
 	OutputLine(NULL, "ヤクで荒稼ぎし、借金のカタにはめて人身売買にまで手を染めてやがる。",
 		   NULL, " They launder money from drug dealing and force people into the sex trade to pay off high interest debts. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>新見</color>", NULL, "<color=#f5e6d3>Niimi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現地大使館の話じゃ被害者には１０代未満の少女まで含まれてる。」",
 		   NULL, "According to the local embassy, some of the victims are younger than teenagers.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -290,7 +281,6 @@ void main()
 		   NULL, " And the case was put on a standstill at that point.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな中、自衛隊のレーダー技術、ミサイル技術に関する機密が売買されるとの情報が入った。",
@@ -355,11 +345,7 @@ void main()
 		   NULL, " Okay, let's move!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "G_Tactics", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -371,11 +357,10 @@ void main()
 		   NULL, " Let's go.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati13", 1000 );
+	DrawScene( "background/neki1_02", 1000 );
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Aks_majimeA1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/night/aks1_shinken_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　繁華街の中、ふらりと曲がり角より現れたのは、…赤坂だった。",
@@ -387,7 +372,7 @@ void main()
 		   NULL, "He displayed none of the naivete that he did when he first met Rika.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati15", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/neki1_02", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…赤坂が、地下クラブの入口にやって来ると、外国人的なイントネーションで護衛が制止してくる。",
@@ -407,7 +392,7 @@ void main()
 	OutputLine(NULL, "おニイさん、",
 		   NULL, " Do you", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "会員証ある？」",
 		   NULL, " have membership card?\"", GetGlobalFlag(GLinemodeSp));
@@ -521,14 +506,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_kano2002", 128);
-	OutputLine(NULL, "「まさか、カードの認証が変えられたか…？！」",
-		   NULL, "\"Did they change the system...?!\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「まさか、カードの認証が変えられたか…？！",
+		   NULL, "\"Did they change the system...?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_kano2003", 128);
-	OutputLine(NULL, "「……赤坂にトラブルが発生したら作戦変更するぞ。",
-		   NULL, "\"...If Akasaka's encountering trouble, we'll change plans.", Line_WaitForInput);
+	OutputLine(NULL, "……赤坂にトラブルが発生したら作戦変更するぞ。",
+		   NULL, "...If Akasaka's encountering trouble, we'll change plans.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk2_kano2004", 128);
 	OutputLine(NULL, "赤坂の安全を速攻で確保しろ…。」",
 		   NULL, " Secure his safety pronto...\"", Line_Normal);
@@ -569,14 +554,14 @@ void main()
 	ClearMessage();
 
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
-	DrawScene( "Ho1_Tokyo", 1000 );
+	DrawScene( "background/k_ten2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　護衛は懐の手を戻し、重い扉を開いた。",
 		   NULL, "The guard pulled his hand out of his jacket and opened up the heavy door.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　中からは騒がしい音楽と明滅する色とりどりの灯りが溢れ出して来る…。",
@@ -641,10 +626,9 @@ void main()
 		   NULL, " Entrance secured.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 0 );
+	FadeOutBGM( 1, 100, FALSE );
+	DrawScene( "black", 100 );
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
@@ -653,7 +637,6 @@ void main()
 		   NULL, "\"GO, GO, GO!!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Mati14", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂が入ったビルの向かいは、テナントの入れ替わりなのか、作業用のトラックが２台ほど停められていた。",
@@ -680,7 +663,6 @@ void main()
 		   NULL, "The ground level guards noticed this and began to draw their guns, but were taken down immediately by nearby investigators who had been pretending to be innocent bystanders.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして数十人が無言のまま、地下階段に一気に押し寄せた。",
@@ -712,8 +694,7 @@ void main()
 		   NULL, "That's why they had to secure the door before the ambush.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大勢が階段を駆け下りてくる異常な足音に、赤坂の両隣にいる護衛は気付く！",
@@ -725,15 +706,11 @@ void main()
 		   NULL, "The well-dressed guard also realized that something was wrong.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 400, FALSE );
 
-	DrawScene( "Ho1_Tokyo", 400 );
+	DrawScene( "background/k_ten2", 400 );
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　３人の護衛の意識の注視が、…赤坂を逸れて、後方の階段へ。",
@@ -744,13 +721,9 @@ void main()
 		   NULL, " Akasaka took a quick, deep breath, and then stopped breathing entirely.", Line_Normal);
 	ClearMessage();
 
-	DrawFilm( 3, 255, 255, 255, 256, 0, 0, TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	FadeOutBGM( 1, 100, FALSE );
+	Negative( 50 , TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　停止した空気の世界で、奇妙な姿勢で両脇の護衛が宙に浮かび上がる…ッ！！",
@@ -785,9 +758,10 @@ void main()
 		   NULL, "His moves were well-trained ones, and showed no mercy against evil. They were as destructive as armor-piercing ammunition.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "black", 10 );
-	DrawScene( "Ho1_Tokyo", 0 );
+	DrawScene( "black", 100 );
+	DrawScene( "background/k_ten2", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その両腕を、打ち抜いたのと同じ速度で引き戻す…！！",
@@ -820,8 +794,9 @@ void main()
 		   NULL, " Then that frozen moment shattered!!", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_glass", 128, 64 );
-	FadeFilm( 0, TRUE );
+	FadeFilm( 50, FALSE );
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
 
@@ -865,19 +840,15 @@ void main()
 		   NULL, "The room was filled with loud music, but everyone had already noticed the brouhaha at the entrance.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, FALSE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/13/vtk2_akasaka2006", 128);
 	OutputLine(NULL, "「全員、床に伏せろおおおおぉおッ！！！」",
 		   NULL, "\"Everyone, GET DOWN!!!\"", Line_Continue);
-
-	PlaySE( 0, "s_daidageki", 128, 64 );
-	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
-
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -906,17 +877,17 @@ void main()
 		   NULL, "In the midst of all this, there were a few people who were trying to make their escape through the back alongside several guards.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawScene( "black", 200 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂はそこで、初めて停止していた呼吸を一度だけ許し、再び息を止め……狼の如く疾駆するッ！！",
 		   NULL, "Akasaka restarted his breathing once and then stopped it again... and then ran after them like a wolf!!", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-
-	PlayBGM( 1, "yabaisemi", 120, 0 );
-
-	EnlargeScreen( 288, 216, 64, 48, FALSE, 500, TRUE );
-	DrawScene( "Ho1_Tokyo", 400 );
+	PlayBGM( 1, "kaze", 120, 0 );
+	DrawScene( "background/k_ten2", 400 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 
@@ -935,8 +906,9 @@ void main()
 		   NULL, "But Akasaka couldn't have cared less about that.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	DrawScene( "black", 0 );
+	DrawScene( "black", 50 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その男は、赤坂の拳から繰り出される一撃に対し、ガードを間に合わせたことだけが見せ場だったろう。",
@@ -948,21 +920,20 @@ void main()
 		   NULL, "The power of Akasaka's punches were so incredible that they simply broke the man's bones in his attempt to block them!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlaySE( 0, "s_furu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
+	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "white", 100 );
+	DrawSceneWithMask("background/ryuuketu1", "maskaa", 0, 0, 50 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　腕が奇妙に歪み、悶絶の表情を浮かべた次の瞬間、赤坂の左腕が顔面にブチ込まれるッ！！",
-		   NULL, "The man's arm warped in a strange way, and the moment after the agony showed on his face, Akasaka's left arm ground into it!!", Line_ContinueAfterTyping);
-
-	DrawScene( "white", 10 );
-	DrawScene( "ryuuketu1", 0 );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
-	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The man's arm warped in a strange way, and the moment after the agony showed on his face, Akasaka's left arm ground into it!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -1012,78 +983,69 @@ void main()
 		   NULL, "His body, more than his mind, remembered the timing for when menaces to society like these would make their move from behind him.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ho2_Tokyo", 400 );
+	DrawScene( "background/k_ten2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは正面のボクサー崩れを左の正拳で打ち抜いた姿勢からの一連の流れ。",
 		   NULL, "Akasaka's attack continued fluidly from the left-arm punch that he struck against the ex-boxer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	ChangeScene( "black", 8, 200 );
+	DrawScene( "black", 200 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その左が引き戻される流れから左足が美しいまでの軌道を持って、背後の男を食らう龍となって襲い掛かる！",
-		   NULL, "His left arm retracted, and at the same time, he arced his left leg around beautifully as it crashed into the man approaching him from behind.", Line_WaitForInput);
+		   NULL, "His left arm retracted, and at the same time, he arced his left leg around beautifully as it crashed into the man approaching him from behind.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawFilm( 2, 0xff, 0x00, 0x00, 256, 0, 0, TRUE );
+	DisableWindow();
 	PlaySE( 0, "s_tataku", 128, 64 );
-	DrawScene( "white", 200 );
-	DrawScene( "black", 10 );
+	DrawScene( "white_mono1", 100 );
+	DrawScene( "black", 400 );
 
-	FadeFilm( 0, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　形容し難い鈍い音がして鼻骨をへし折ったことを教えた。",
-		   NULL, " A dull sound signified that his nose had been broken. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "A dull sound signified that his nose had been broken. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……でも、赤坂はそんなことはわかってるッ！",
 		   NULL, "...But Akasaka already knew that!", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そのまま、姿勢は流れるように捻れ、右の拳が唸りをあげて側頭部にブチ込まれるッ！！！",
-		   NULL, "Akasaka continued his motion and directed a decisive right blow to the side of his assailant's head.", Line_ContinueAfterTyping);
-
-	DisplayWindow();
-	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "white", 100 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, TRUE );
-	DrawBustshot( 20, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	DrawScene( "black", 300 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのまま、姿勢は流れるように捻れ、右の拳が唸りをあげて側頭部にブチ込まれるッ！！！",
+		   NULL, "Akasaka continued his motion and directed a decisive right blow to the side of his assailant's head.", Line_WaitForInput);
 
 	PlaySE( 0, "s_glass", 128, 64 );
 
 	OutputLine(NULL, "　無様な男は壁に叩きつけられ、",
-		   NULL, " The man slammed into the wall", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "反射するように跳ね返って床に転がった。",
-		   NULL, " and bounced off of it, rolling on the floor.", Line_ContinueAfterTyping);
-
+		   NULL, " The man slammed into the wall", Line_WaitForInput);
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-
-	OutputLineAll(NULL, "", Line_Normal);
-
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, FALSE );
+	OutputLine(NULL, "反射するように跳ね返って床に転がった。",
+		   NULL, " and bounced off of it, rolling on the floor.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ho1_Tokyo", 400 );
+	FadeOutBGM( 1, 400, FALSE );
+	DrawScene( "background/k_ten2", 400 );
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこで赤坂はもう一度だけ呼吸を許す。",
@@ -1162,7 +1124,6 @@ void main()
 		   NULL, "Akasaka's intimidating first strike shattered the gang leaders' will to run. They were all down on the floor but one of them began smiling.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho2_Tokyo", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>外交官</color>", NULL, "<color=#f5e6d3>Diplomat</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_gaiko2001", 128);
@@ -1179,7 +1140,7 @@ void main()
 	OutputLine(NULL, "　だが赤坂はその襟首を掴み上げると、コンクリートの壁に乱暴に叩き付けた。",
 		   NULL, "Akasaka grabbed him by the collar and threw him against the concrete wall.", Line_ContinueAfterTyping);
 
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "s_tataku", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 0, 3*2, TRUE );
 
@@ -1213,21 +1174,18 @@ void main()
 	OutputLine(NULL, "「これ、外交問題になります！",
 		   NULL, "\"This will be an international incident!!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/00/vtk2_gaiko2007", 128);
-	OutputLine(NULL, "　大使館へ連絡させてくだ」",
-		   NULL, " I will be calling the embas-\"", Line_Continue);
+	OutputLine(NULL, "　大使館へ連絡させてくだ",
+		   NULL, " I will be calling the embas-", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
-	Wait( 600 );
-	OutputLine(NULL, "「おあああああぁッ！！！！」",
-		   NULL, " \"Ohhahhhhhhhh!!!!\"", Line_Continue);
-
-	DrawScene( "black", 0 );
-	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	Wait( 1600 );
+	DrawScene( "black", 100 );
+	DrawScene( "white", 50 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 0, 6*2, FALSE );
-	StartShakingOfAllObjects( 241, 40, 0, 0, 6*2, TRUE );
-	DrawScene( "Ho2_Tokyo", 400 );
-
-	OutputLineAll(NULL, "", Line_Normal);
+	StartShakingOfAllObjects( 241, 40, 0, 0, 6*2, FALSE );
+	DrawScene( "background/k_ten2", 200 );
+	OutputLine(NULL, "おあああああぁッ！！！！」",
+		   NULL, " Ohhahhhhhhhh!!!!\"", Line_Normal);
 
 	ClearMessage();
 
@@ -1238,12 +1196,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-
-	DisplayWindow();
-	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	DrawScene( "white", 200 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
@@ -1284,7 +1240,7 @@ void main()
 		   NULL, "The diplomat crumbled to the floor.", Line_Normal);
 	ClearMessage();
 
-	PlaySE( 0, "s_Down", 128, 64 );
+	PlaySE( 0, "wa_003", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>外交官</color>", NULL, "<color=#f5e6d3>Diplomat</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_gaiko2008", 128);
@@ -1301,7 +1257,7 @@ void main()
 		   NULL, " Target secured.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ho2_Tokyo", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/k_ten2", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　後の検分で、公安部が確認していなかった隠し通路からの逃走ルートが発見される。",
@@ -1323,7 +1279,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Mati14", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/neki1_02", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_kano2010", 128);
@@ -1391,13 +1347,9 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	DrawSceneWithMask( "Kuruma4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma5_04", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_kano2014", 128);
@@ -1429,7 +1381,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Mati14", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/neki1_02", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>新見</color>", NULL, "<color=#f5e6d3>Niimi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_niimi2015", 128);
@@ -1535,13 +1487,9 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
-	DrawScene( "Jimu1", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "background/tk_dojo", 1000 );
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	PlayBGM( 1, "semi", 120, 0 );
@@ -1673,7 +1621,7 @@ void main()
 		   NULL, "...The other students training on their own would glance over and sense a fearsome respect at his focused blows.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Jimu2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>門下生</color>", NULL, "<color=#f5e6d3>Disciple</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_monkaa2001", 128);
@@ -1762,17 +1710,16 @@ void main()
 		   NULL, "Karate is what Akasaka chose.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DisableWindow();
-	DrawBustshot( 20, "white_shake", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 10, TRUE );
+	DrawScene( "white", 50 );
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>門下生</color>", NULL, "<color=#f5e6d3>Disciple</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_monkaa2002", 128);
@@ -1798,7 +1745,7 @@ void main()
 		   NULL, " I heard he couldn't save a girl on the job, leading him to realize his weaknesses, or something like that...\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Jimu1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_dojo", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/13/vtk2_akasaka2020", 128);
@@ -1894,7 +1841,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	DrawSceneWithMask( "Mati1", "maskdown", 1, 0, 1300 );
+	DrawSceneWithMask( "background/sora", "maskdown", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　セミの声が、体に染み込んで行く。",
@@ -1914,11 +1861,8 @@ void main()
 		   NULL, "Still, he could feel the cool air, if just a little.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
+	DrawScene( "background/greyscale/sora", 1000 );
 	PlayBGM( 0, "er_Ver3", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1981,7 +1925,7 @@ void main()
 		   NULL, "And, in return, she wanted him to help her.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka2", 1000 );
+	DrawScene( "background/aka2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…雪絵の死は事故だった。",
@@ -2063,7 +2007,7 @@ void main()
 		   NULL, "He took the oath to serve the public as a police officer, yet he didn't even notice the plea for help from a little girl. He shoved aside a conspiracy surrounding her until it was too late. He had five years to do something about it, but he didn't do anything. And she died.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "aka1", 1000 );
+	DrawScene( "background/aka1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの、大臣の孫の誘拐事件で訪れた雛見沢には、",
@@ -2103,7 +2047,7 @@ void main()
 		   NULL, " continued to haunt him.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Jimu2", 1000 );
+	DrawScene( "background/tk_dojo", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -2182,6 +2126,8 @@ void main()
 		   NULL, "No, if I had listened to her, I could have prevented Yukie's accident too...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…諦められない…、",
 		   NULL, "...Damn it...", Line_WaitForInput);
@@ -2191,7 +2137,7 @@ void main()
 		   NULL, " Shiiiit!!", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
+	DrawScene( "background/k_oyashiro", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　後悔に頭を掻き毟る赤坂が見上げた先には、",
@@ -2227,11 +2173,7 @@ void main()
 		   NULL, "If his wish were to come true, everyone in the whole world would wish for the same thing.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/13/vtk2_akasaka2027", 128);
@@ -2244,12 +2186,12 @@ void main()
 	OutputLine(NULL, "そうしたら、",
 		   NULL, " I swear,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……今度こそ俺は、",
 		   NULL, " that this time,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 2900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "二人を救う…ッ！！」",
 		   NULL, " I will save the both of them!!\"", Line_Normal);
@@ -2278,7 +2220,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
-	DrawScene( "Fure2", 3000 );
+	DrawScene( "background/fure2", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2021", 128);
@@ -2303,9 +2245,6 @@ void main()
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2023", 128);
 	OutputLine(NULL, "「私たちが奇跡を願い、",
 		   NULL, "\"We must wish for a miracle,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……あなたも奇跡を願わなければ、奇跡は起こらない。",
 		   NULL, " and you must wish for a miracle too, otherwise a miracle will never occur.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2024", 128);
@@ -2353,7 +2292,7 @@ void main()
 	OutputLine(NULL, "「あの時に、",
 		   NULL, "\"Can you", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 2900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……もう一度時間を巻き戻してくれるというのか…？」",
 		   NULL, " turn back time to that day?\"", Line_Normal);
@@ -2439,6 +2378,7 @@ void main()
 	SetLocalFlag(FragmentStatus50, 2);
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

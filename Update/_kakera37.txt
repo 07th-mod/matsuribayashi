@@ -6,7 +6,7 @@ void main()
 
 	PlayBGM( 0, "sora_no_mukou", 120, 0 );
 
-	DrawSceneWithMask( "Sora2", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora2", "maskm1", 1, 0, 300 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -157,7 +157,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Hi8", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/hi5_01", "maskleft", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -239,7 +239,7 @@ void main()
 		   NULL, "I just wanted to be forgiven back then.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Sora6", "maskdown", 1, 0, 1300 );
+	DrawSceneWithMask( "background/sora6", "maskdown", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　母が許せなくて、",
@@ -338,7 +338,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Re_s3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_s4_01", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -346,7 +346,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Re_H1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/re_h1", "maskleft", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -526,7 +526,7 @@ void main()
 	OutputLine(NULL, "「…あ、",
 		   NULL, "\"...Ah,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…言葉だけは聞いたことあるかな。」",
 		   NULL, " I've heard of those before.\"", Line_Normal);
@@ -634,7 +634,7 @@ void main()
 		   NULL, "even with filth, everyone can live without blaming someone else.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Moon", 400 );
+	DrawScene( "background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　穢れが、人の死以外の方法で、許される。",
@@ -735,6 +735,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

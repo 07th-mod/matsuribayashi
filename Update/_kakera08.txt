@@ -4,7 +4,7 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	DrawScene( "Hi1", 1000 );
+	DrawScene( "background/hi1", 1000 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -17,7 +17,7 @@ void main()
 		   NULL, "Because the fourth mysterious death in a row, which everyone believed would happen, actually did.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "ryuuketu1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/ryuuketu1", "maskaa", 1, 0, 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　殺されたのは、……沙都子ちゃんの叔母だった。",
@@ -77,11 +77,7 @@ void main()
 		   NULL, " So I didn't even need to hear it from Satoshi-kun.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "Gray_2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -137,7 +133,7 @@ void main()
 
 	PlayBGM( 1, "higurashi", 120, 0 );
 
-	DrawSceneWithMask( "Denwa", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/denwa", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1095", 128);
@@ -191,14 +187,8 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1100", 128);
 	OutputLine(NULL, "「それで、沙都子の誕生日プレゼントのぬいぐるみを買えたんですけど、",
 		   NULL, "\"I found a teddy bear for Satoko's birthday...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……その、",
 		   NULL, " but...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……むぅ。",
 		   NULL, " mmph.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1101", 128);
@@ -221,8 +211,7 @@ void main()
 		   NULL, "\"......Mmph.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに気付かずに自転車に乗っておもちゃ屋に行ってしまい、それで途方にくれているというわけらしい。",
@@ -256,13 +245,9 @@ void main()
 		   NULL, " is a lot bigger than I imagined.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
-	DrawScene( "Sora", 400 );
+	DrawScene( "background/sora", 400 );
 
 	PlayBGM( 1, "Mati", 120, 0 );
 
@@ -298,8 +283,8 @@ void main()
 		   NULL, "We loaded the bicycle in the back seat and stuffed the teddy bear in the trunk.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Sato_Komaru", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "mati_O1", "maskup", 1, 0, 300 );
+	DrawBustshot(0, "sprite/sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/mati_o1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1328", 128);
@@ -308,8 +293,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Tukare", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_tukare_0", 200, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -317,12 +301,12 @@ void main()
 	OutputLine(NULL, "「……えぇ、",
 		   NULL, "\"...Ah...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………まぁ、",
 		   NULL, " yeah,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そこそこに。」",
 		   NULL, " I guess.\"", GetGlobalFlag(GLinemodeSp));
@@ -347,13 +331,9 @@ void main()
 		   NULL, "As if he has a high fever and his consciousness is coming and going.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1329", 128);
@@ -369,12 +349,12 @@ void main()
 	OutputLine(NULL, "「……多分、",
 		   NULL, "\"......I guess,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………いえ、",
 		   NULL, " well...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 1700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……風邪です…。」",
 		   NULL, " I think... I have a cold.\"", GetGlobalFlag(GLinemodeSp));
@@ -393,8 +373,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1105", 128);
@@ -404,7 +383,7 @@ void main()
 	OutputLine(NULL, "……はぁ……、",
 		   NULL, " Huff...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…はぁ………。」",
 		   NULL, " huff......\"", Line_Normal);
@@ -424,7 +403,7 @@ void main()
 
 	PlayBGM( 1, "Mati", 120, 0 );
 
-	DrawSceneWithMask( "Kuruma1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1334", 128);
@@ -444,12 +423,12 @@ void main()
 	OutputLine(NULL, "「…………はぁ、",
 		   NULL, "\"......Huff...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 1700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………はぁ",
 		   NULL, " ...huff...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 1700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………はぁ",
 		   NULL, " ......huff...", Line_Continue);
@@ -468,7 +447,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Kuruma2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悟史くんはこのぬいぐるみを買うために今日まで無理をしてきたのだ。",
@@ -498,8 +477,7 @@ void main()
 		   NULL, "...It's not unusual for a person to collapse after reaching his big goal.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 3, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1337", 128);
@@ -532,9 +510,6 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1109", 128);
 	OutputLine(NULL, "「……………もう、",
 		   NULL, "\"......Our", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………叔母さんもいない。",
 		   NULL, " aunt is gone.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1110", 128);
@@ -543,9 +518,6 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1111", 128);
 	OutputLine(NULL, "……もうこれで、",
 		   NULL, " There's", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……沙都子を苛める人はいないんですよね………？」",
 		   NULL, " nobody who can hurt her in any way anymore...... right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -566,9 +538,6 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1112", 128);
 	OutputLine(NULL, "「…………………叔母さんは、",
 		   NULL, "\"......Our aunt is gone...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……いないんですよね…？",
 		   NULL, " right?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1113", 128);
@@ -622,27 +591,15 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1116", 128);
 	OutputLine(NULL, "「………じゃあ、",
 		   NULL, "\"......So...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……たまに通りすがる、",
 		   NULL, " even if I see someone...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "叔母さんにそっくりな人がいても、",
 		   NULL, " who looks just like her......", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……それは叔母さんじゃないんですよね…？",
 		   NULL, " it's not her, right?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1117", 128);
 	OutputLine(NULL, "　……叔母さんが実は生きてて、",
 		   NULL, " ...It's not like she was actually alive", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……退院してきたとか、そういうのじゃないんですよね……？」",
 		   NULL, " and recovered, right?\"", Line_Continue);
 	OutputLineAll(NULL, "", Line_Normal);
@@ -662,7 +619,7 @@ void main()
 		   NULL, " She'll never come back to us.\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yabaisemi", 120, 0 );
+	PlayBGM( 0, "semi_r", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -702,7 +659,7 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawSceneWithMask( "Kuruma6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/kuruma6", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが怯えるように、対向車を指差した。",
@@ -716,9 +673,9 @@ void main()
 		   NULL, " But no matter how much she looks like her, it's impossible for her to be alive.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Kuruma2", 400 );
+	DrawScene( "background/kuruma2", 400 );
 
-	PlayBGM( 3, "yabaisemi", 120, 0 );
+	PlayBGM( 3, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1120", 128);
@@ -818,11 +775,9 @@ void main()
 		   NULL, " He's seeing his aunt coming back from the dead.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 3, 300, FALSE );
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
@@ -899,7 +854,7 @@ void main()
 		   NULL, "...As if he knows what is going through my mind, Satoshi-kun spoke to me quietly.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Kuruma1", 400 );
+	DrawScene( "background/kuruma1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1127", 128);
@@ -909,7 +864,7 @@ void main()
 	OutputLine(NULL, "……………これってやっぱり、",
 		   NULL, " is this...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 2700 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…オヤシロさまの祟りなんでしょうか。」",
 		   NULL, " the curse of Oyashiro-sama?\"", GetGlobalFlag(GLinemodeSp));
@@ -929,9 +884,6 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1129", 128);
 	OutputLine(NULL, "「…………沙都子、",
 		   NULL, "\"......Satoko,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ごめん。",
 		   NULL, " sorry...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1130", 128);
@@ -944,10 +896,7 @@ void main()
 		   NULL, " I was thinking about running away...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1131", 128);
 	OutputLine(NULL, "…だから、",
-		   NULL, " That's why...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " That's why...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1131", 128);
 	OutputLine(NULL, "…そんな僕をオヤシロさまは許さなかったんだ……。",
 		   NULL, " Oyashiro-sama got angry...", Line_WaitForInput);
@@ -963,7 +912,7 @@ void main()
 	OutputLine(NULL, "……僕は………、",
 		   NULL, " I'm...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……僕は……………。」",
 		   NULL, " I'm......\"", Line_Normal);
@@ -1003,14 +952,10 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Sya1", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Sinryo_soto3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_soto3", "maskleft", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1033,7 +978,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Sinryo_soto2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/sinryou_soto1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すぐにスタッフが何人か駆けて来てくれた。",
@@ -1108,27 +1053,27 @@ void main()
 	OutputLine(NULL, "「…",
 		   NULL, "\"...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 200 );
+	Wait( 100 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "んとく、",
 		   NULL, " Coach", Line_Continue);
@@ -1158,6 +1103,7 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -1167,14 +1113,17 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
 	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -1220,8 +1169,8 @@ void main()
 		   NULL, "After saying those words, he fell unconscious.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Ta_Def+", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Sinryo_soto1", "maskleft", 1, 0, 300 );
+	DrawBustshot(2, "sprite/ta2_def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/sinryou_soto1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1258", 128);
@@ -1245,8 +1194,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_AkuWarai+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ta2_akuwarai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1260", 128);
@@ -1266,6 +1214,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

@@ -6,12 +6,12 @@ void main()
 
 	PlayBGM( 0, "B11_Rika", 120, 0 );
 
-	DrawSceneWithMask( "M_Hi2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/hi4", "maskright", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "M_Hi10", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/hi9", "maskright", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -64,7 +64,7 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　集合の時間までまだ少しあるが、……完全に迷ってしまっている。",
@@ -134,13 +134,9 @@ void main()
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	DrawScene( "white", 1000 );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 400, FALSE );
 
-	DrawScene( "kusa", 400 );
+	DrawScene( "background/susuki", 400 );
 
 	PlayBGM( 0, "sora_no_mukou", 120, 0 );
 
@@ -213,8 +209,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Ri_NikoA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 0, "sprite/ri2_niko_a1_2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2001", 128);
@@ -226,8 +221,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ha_AuA1%", "maskleft", 1, -200, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 1, "sprite/ha1_au_2", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2001", 128);
@@ -238,7 +232,7 @@ void main()
 		   NULL, " Rika, that's not a suspicious person.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…え？",
 		   NULL, "\"...Eh?", Line_WaitForInput);
 	OutputLine(NULL, "　ぉわ！！",
@@ -252,8 +246,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri2_warai_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2003", 128);
@@ -264,7 +257,7 @@ void main()
 		   NULL, " Nipah~☆.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「みみ、見てないよ見てない！",
 		   NULL, "\"N-No, no! I'm not!", Line_WaitForInput);
 	OutputLine(NULL, "　見てないから駅員さんに突き出すのはやめてー！！",
@@ -274,8 +267,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ha_WaraiA1%", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 1, "sprite/ha1_warai_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2003", 128);
@@ -287,8 +279,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_NikoA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/ri2_niko_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2005", 128);
@@ -297,7 +288,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/sora5", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少女たちは、不意に現れた私をさんざんからかうと、やがてそれにも飽き、私が来る前からそうしていたように、再び二人で踊るように遊び始めた。",
@@ -509,7 +500,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "kusa", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "background/susuki", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さっきの少女たちは、この野原には場違いな立て看板のところでふざけあっていた。",
@@ -545,8 +536,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_WaraiA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/ri2_warai_a1_2", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2006", 128);
@@ -557,7 +547,7 @@ void main()
 		   NULL, " You will find lots of things you don't have in a big city.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだね。",
 		   NULL, "\"Yeah, that's right.", Line_WaitForInput);
 	OutputLine(NULL, "私もそんな気がするよ。」",
@@ -565,8 +555,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_NikoA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_niko_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2008", 128);
@@ -574,14 +563,13 @@ void main()
 		   NULL, "\"......But I think you'll bring some things from the city to this village that we don't have.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そんなもの、…私たちにあるのかな。」",
 		   NULL, "\"Do we have anything?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ha_WaraiA1%", "maskleft", 1, -200, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 1, "sprite/ha1_warai_2", "maskleft", 1, -200, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2005", 128);
@@ -593,8 +581,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_DefA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_def_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2009", 128);
@@ -608,14 +595,13 @@ void main()
 		   NULL, " ...And so, nothing ever changes.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何も変わらないのが、この村のいいことじゃないのかい。」",
 		   NULL, "\"Isn't that what's good about this place?\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_KomaruA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_komaru_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2011a", 128);
@@ -623,7 +609,7 @@ void main()
 		   NULL, "\"......Didn't you come here because you wanted to change something?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「確かに、",
 		   NULL, "\"Yeah...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -634,8 +620,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_warai_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2012", 128);
@@ -650,8 +635,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "Ha_DefA1%", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 1, "sprite/ha1_def_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/12/vtk2_hanyu2008", 128);
@@ -670,8 +654,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_NiyariA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_niyari_a1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2016", 128);
@@ -718,8 +701,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/ri2_warai_a1_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/05/vtk2_rika2019", 128);
@@ -730,7 +712,7 @@ void main()
 		   NULL, " Maebara.\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora3", 400 );
+	DrawScene( "background/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Real Estate Agent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/00/vtk2_hudou2001", 128);
@@ -765,7 +747,7 @@ void main()
 		   NULL, "I guess he's been looking for me because I didn't return.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>伊知郎</color>", NULL, "<color=#f5e6d3>Ichirou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「すみませんすみません…！",
 		   NULL, "\"Sorry about that!", Line_WaitForInput);
 	OutputLine(NULL, "　すっかり道に迷っちゃって…。」",

@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "Sinryo_sinsatu2", 1000 );
+	DrawScene( "background/sinryou_sinsatu2", 1000 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
@@ -56,7 +56,7 @@ void main()
 	OutputLine(NULL, "「…す、",
 		   NULL, "\"S...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…すみません。",
 		   NULL, " Sorry.", Line_WaitForInput);
@@ -161,18 +161,13 @@ void main()
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 1300, FALSE );
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
 
 	PlayBGM( 0, "Soul_scour", 120, 0 );
 
-	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
-	DrawScene( "Sora5", 400 );
+	DrawScene( "background/greyscale/sora5", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の本当の親父は、名古屋で死んだ。",
@@ -347,21 +342,21 @@ void main()
 		   NULL, "...Instead, they decided to go after the people buying the goods, and even confiscated the rice they bought by selling everything they owned.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鑑識</color>", NULL, "<color=#f5e6d3>Forensic Investigator</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そんな時代もあったの…。",
 		   NULL, "\"Yeah, I remember that...", Line_WaitForInput);
 	OutputLine(NULL, "どこぞの判事が餓死したなんてこともあったの？」",
 		   NULL, " Wasn't there a prosecutor who starved himself to death?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ありましたねぇ…。",
 		   NULL, "\"Yeah, there was.", Line_WaitForInput);
 	OutputLine(NULL, "闇米は一切食わないと公言した判事が餓死したのが、…昭和２２年でしたっけ？",
 		   NULL, " The prosecutor who vowed not to eat illegal rice starved to death... Wasn't it in 1947?", Line_WaitForInput);
 	OutputLine(NULL, "　………酷い話でした。",
 		   NULL, " That was horrible. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "法律に従ってたら生きていけないことを、法の番人である裁判官が自ら示したんですからねぇ…。」",
 		   NULL, "He, a public prosecutor, proved it himself that people couldn't survive by adhering to the law.\"", Line_Normal);
 	ClearMessage();
@@ -401,14 +396,14 @@ void main()
 		   NULL, "The death of the prosecutor was seen as a desperate message to the government about the unjustness of that law.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Sora", 1000 );
+	DrawScene( "background/greyscale/sora", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……米の袋を抱えた連中を、次々と引っ立てて、駅脇の臨時の検問所に並べましてね。",
 		   NULL, "\"...We rounded up people with bags of rice and lined them up at the temporary inspection point next to the station.", Line_WaitForInput);
 	OutputLine(NULL, "まるで戦時法廷みたいな感じなんですよ。",
 		   NULL, " It was like a military tribunal. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "次々ポンポンと没収してひっ捕らえていく感じです。",
 		   NULL, "We inspected their bags and confiscated everything that they bought at the black market.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1059", 128);
@@ -432,12 +427,12 @@ void main()
 		   NULL, " Yet they forbade you from going after the sellers. So it was absolutely unfair from the view of the people.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「皆さんも敏感でしてね。",
 		   NULL, "\"Everyone was on edge.", Line_WaitForInput);
 	OutputLine(NULL, "駅で検問があるかもしれないと察知すると、途中で列車から飛び降りたりして逃れるんですよ。",
 		   NULL, " If they heard a police inspection was set up at the next station, they'd jump off the train and run. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…そういう連中も逃さんと、私たちは駅近くの、飛び降り名所に重点的に警官を配備してましてね。",
 		   NULL, "We were aware of these people, so we set up several officers near jump-off spots in order to capture them.", Line_WaitForInput);
 	OutputLine(NULL, "……何十キロもある米袋を抱えたご婦人をよく追っ掛けましたっけ。」",
@@ -571,8 +566,7 @@ void main()
 		   NULL, "But a young man, like me, who'd barely grown any hairs yet, was no match for an older man used to fighting.", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, TRUE );
-	DrawScene( "Sinryo_sinsatu2", 1000 );
+	DrawScene( "background/sinryou_sinsatu2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/11/vtk1_oishi1071", 128);
@@ -697,6 +691,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

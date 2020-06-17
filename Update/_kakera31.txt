@@ -6,17 +6,12 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "background/sora", "maskm1", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskup", 1, 0, 300 );
-	DrawScene( "Oki_G1", 400 );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
+	DrawScene( "background/oki_g3", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -39,8 +34,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_Komaru", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshotWithFiltering( 2, "sprite/sato1_komaru_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1032", 128);
@@ -144,14 +138,10 @@ void main()
 		   NULL, "So I'm not surprised to hear that Satoshi-kun wants to quit the baseball team so he can be with his sister more.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
-	DrawBustshotWithFiltering( 0, "Sato_Tukare", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot(0, "sprite/sato1_tukare_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/oki_g3", "maskup", 1, 0, 300 );
 
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
@@ -168,9 +158,6 @@ void main()
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1307", 128);
 	OutputLine(NULL, "「…アルバイト、",
 		   NULL, "\"...A part-time", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ですか。",
 		   NULL, " job?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1308", 128);
@@ -220,8 +207,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1039", 128);
@@ -314,14 +300,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_komaru_0", 200, TRUE );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1040", 128);
@@ -332,7 +313,7 @@ void main()
 		   NULL, " ...Can I maybe borrow a bat?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その言葉の意味を、私は大きく履き違えてしまう。",
@@ -408,8 +389,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Tukare", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/sato1_tukare_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1042", 128);
@@ -418,9 +398,6 @@ void main()
 	PlayVoice(4, "ps3/s20/07/vtk1_satoshi1043", 128);
 	OutputLine(NULL, "……野球にはそんなに来れなくなりますけど、",
 		   NULL, " although I can't come to practice...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……でもきっと、一人で素振りの練習をするくらいの時間は取れると思うので。」",
 		   NULL, " I think I'll have a little time to practice swinging on my own.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -466,6 +443,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

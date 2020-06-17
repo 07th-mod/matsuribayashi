@@ -1,26 +1,18 @@
 void main()
 {
 
-	DrawScene( "Sora", 1000 );
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "pros", 120, 0 );
+	DrawScene( "background/sora", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawScene( "Sora2", 1000 );
+	DrawScene( "background/sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
-
-	PlayBGM( 0, "B_Dive", 120, 0 );
-
-	DrawScene( "Ryou1", 1000 );
+	DrawScene( "background/tk_ryou1", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	ClearMessage();
@@ -47,7 +39,6 @@ void main()
 		   NULL, "Takano was there, accompanied by about five gentlemen.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野は、一歩引いた位置でかしこまる様に座っていた。",
@@ -97,7 +88,6 @@ void main()
 		   NULL, "\"...I heard this research was barely even glanced at by the top brass.\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551300003", 128);
@@ -158,8 +148,6 @@ void main()
 		   NULL, " At least that's how the story went.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500062", 128);
@@ -173,14 +161,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551400001", 128);
 	OutputLine(NULL, "「うむ。",
-		   NULL, "\"Hmm.", Line_WaitForInput);
+		   NULL, "\"Hmm.", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "防衛庁がね、非常に強い関心を持ったよ。",
 		   NULL, " The Defense Agency was very interested.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551400002", 128);
 	OutputLine(NULL, "はっはっは！",
 		   NULL, " Ha ha ha!", Line_WaitForInput);
 	OutputLine(NULL, "　中川くんが言うには防衛庁技術研究本部が強い関心を示してくれてね。",
-		   NULL, " According to Nakagawa-kun, the Defense Ageny's Technical Research and Development Institute showed great interest.", Line_WaitForInput);
+		   NULL, " According to Nakagawa-kun, the Defense Agency's Technical Research and Development Institute showed great interest.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551400003", 128);
 	OutputLine(NULL, "研究のスポンサーを名乗り出てくれた。」",
 		   NULL, " They offered to sponsor the research too.\"", GetGlobalFlag(GLinemodeSp));
@@ -254,7 +243,7 @@ void main()
 		   NULL, "So there was no way of guessing just how the men at this meeting were connected.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Mati12", 1000 );
+	DrawScene( "background/mati12", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次世代抑止兵器の研究会。",
@@ -273,6 +262,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まず、抑止兵器という単語。",
@@ -301,7 +291,6 @@ void main()
 		   NULL, "Nuclear weapons are largely used as a threat to prevent enemy invasion.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　米ソは大量の核兵器を持ち合い、互いを牽制している。",
@@ -380,7 +369,7 @@ void main()
 		   NULL, "That society must have been put together by experts who believe in that ideal.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "Ryou1", 400 );
+	DrawScene( "background/tk_ryou1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこまで至れば、アルファベットプロジェクトという言葉も何となく察しがついた。",
@@ -439,50 +428,49 @@ void main()
 		   NULL, "As it happened, this guess of Takano's was correct.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「本来は、日本が核武装をするのが正しいのです。",
 		   NULL, "\"By rights, Japan should possess nuclear arms.", Line_WaitForInput);
 	OutputLine(NULL, "戦後、平和国家として確立し、多大な国際貢献を果たした我が国は、常任理事国入りを果たし、",
 		   NULL, " We established ourselves as a peace-loving nation after the war, and after our vast international contributions, we've been recognized as a permanent member of the UN. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "核武装してこそ初めて一人前の国家として認められる。",
 		   NULL, "Yet until we possess nuclear arms, we won't be recognized as a proper nation.", Line_WaitForInput);
 	OutputLine(NULL, "それこそが、戦後日本百年の悲願なのです。」",
 		   NULL, " That is the long-held desire of postwar Japan.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「左様です。",
 		   NULL, "\"Exactly.", Line_WaitForInput);
 	OutputLine(NULL, "だが、現実には核不拡散条約により、核は大国だけが独占。",
 		   NULL, " However, realistically, thanks to the Nuclear Non-Proliferation Treaty, the major nations hold a monopoly on nukes. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "また、国内世論は核アレルギーに染まり、内外からの締め付けで実現を不可能にしております。」",
 		   NULL, "Worse, our domestic public opinion is growing allergic to nukes, so foreign and domestic pressures make implementing them impossible.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「生物化学兵器は、別名、貧者の核兵器とも呼ばれる。",
 		   NULL, "\"Biological and chemical weapons are sometimes known as the poor man's nuke.", Line_WaitForInput);
 	OutputLine(NULL, "核を持てない小国はすでに熱心に研究を進めているという話です。」",
 		   NULL, " Small countries that can't own nuclear weapons have already started research into that kind of weaponry.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はっはっは、鷹野さん、誤解しないでくださいよ？",
 		   NULL, "\"Ha ha ha, Takano-san, please don't misunderstand us, okay?", Line_WaitForInput);
 	OutputLine(NULL, "　この度の研究は細菌兵器の保有が目的ではありません。",
 		   NULL, " The purpose of our research isn't to obtain a biological weapon.", Line_WaitForInput);
 	OutputLine(NULL, "同種の兵器が他国によって国内に持ち込まれる危険性について、事前に充分な対処を行なうための研究です。",
 		   NULL, " Instead, our goal is to prevent such weapons from coming into Japan from other countries. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "自衛のための研究であることを誤解しないようにお願いいたしますよ。」",
 		   NULL, "So this is research into self-defense. I want you to understand that.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	OutputLine(NULL, "存じております。」",
@@ -625,7 +613,7 @@ void main()
 		   NULL, "Takano was trying to stay calm, but she was about to jump up and down in excitement.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551400008", 128);
@@ -651,10 +639,9 @@ void main()
 		   NULL, "\"About that...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551400011", 128);
 	OutputLine(NULL, "ここからが交渉になるんだが……、",
-		   NULL, " Here's where the negotiations start, but...", Line_WaitForInput);
+		   NULL, " Here's where the negotiations start, but...", Line_Continue);
 	OutputLine(NULL, "向こうとしては、この研究、丸ごと抱えてしまいたいのが希望らしいんだ。",
-		   NULL, " Apparently they wish to take on this research in its entirety.", Line_ContinueAfterTyping);
-	Wait( 1000 );
+		   NULL, " Apparently they wish to take on this research in its entirety.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551400012", 128);
 	OutputLine(NULL, "…こう言っちゃ悪いんだが、君一人に任せるには荷が重いと考えてる。」",
 		   NULL, " ...I feel bad saying this, but they think the burden is too much for you to bear alone.\"", GetGlobalFlag(GLinemodeSp));
@@ -699,7 +686,6 @@ void main()
 		   NULL, "Considering they're hoping for results that merit the budget, they probably feel that Takano is still too young to handle it.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500001", 128);
@@ -762,7 +748,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500006", 128);
 	OutputLine(NULL, "「まままま！",
-		   NULL, "\"Now, now, now!", Line_WaitForInput);
+		   NULL, "\"Now, now, now!", Line_Continue);
 	OutputLine(NULL, "　そこは鷹野さん、抑えて抑えて！",
 		   NULL, " Please, calm down, Takano-san!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551500007", 128);
@@ -782,7 +768,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551400013", 128);
 	OutputLine(NULL, "「わっはっはっは。",
-		   NULL, "\"Wa ha ha ha.", Line_WaitForInput);
+		   NULL, "\"Wa ha ha ha.", Line_Continue);
 	OutputLine(NULL, "落ち着きなさい、鷹野さん。」",
 		   NULL, " Calm down, Takano-san.\"", Line_Normal);
 	ClearMessage();
@@ -810,7 +796,6 @@ void main()
 		   NULL, "On the contrary, they were trying to tell her to wait until the end.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200010", 128);
@@ -843,7 +828,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200016", 128);
 	OutputLine(NULL, "「その人物の人選は私が握っているということですよ。",
-		   NULL, "\"You see, I get to select the person in charge.", Line_WaitForInput);
+		   NULL, "\"You see, I get to select the person in charge.", Line_Continue);
 	OutputLine(NULL, "わはははははは！」",
 		   NULL, " Wahahahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -966,7 +951,7 @@ void main()
 		   NULL, " Thank you so much!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "background/tk_ryou1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500008", 128);
@@ -998,7 +983,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551200022", 128);
 	OutputLine(NULL, "「はっはっはっは。",
-		   NULL, "\"Ha ha ha ha.", Line_WaitForInput);
+		   NULL, "\"Ha ha ha ha.", Line_Continue);
 	OutputLine(NULL, "謙虚なのは実に良いことです。",
 		   NULL, " Being humble is a good virtue.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s13/00/551200023", 128);
@@ -1093,19 +1078,10 @@ void main()
 		   NULL, " Takano already heard that confession from the old man.", Line_Normal);
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawBustshot( 10, "mono_004_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 2000, TRUE );
-
-	PlayBGM( 0, "Feel", 120, 0 );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "background/greyscale/tk_ryou1", 1000 );
+	PlayBGM( 0, "msys06", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野はふっと意識が途切れるような気分を味わうと、目の前の会合が遠くの世界の出来事のように感じるのだった。",
@@ -1142,7 +1118,7 @@ void main()
 		   NULL, "...Takano thought that must be exactly what she was feeling.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou1", "maskleft", 1, 0, 0 );
+	DrawScene( "background/tk_ryou1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500015", 128);
@@ -1177,12 +1153,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500088", 128);
 	OutputLine(NULL, "「三佐？",
-		   NULL, "\"A Major?", Line_WaitForInput);
+		   NULL, "\"A Major?", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "　何ですか？」",
 		   NULL, " What does that signify?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Ryou2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Kanryou</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/00/551500018", 128);
@@ -1232,7 +1208,7 @@ void main()
 	OutputLine(NULL, "　そして揃ったお膳立て。",
 		   NULL, "Now everything had fallen into place.", Line_WaitForInput);
 	OutputLine(NULL, "……そしてその末に私に与えられるだろう階級が、当時で言うところの少佐で、祖父と同じもの。",
-		   NULL, " She had even been granted the same rank as her grandfather. ", Line_Normal);
+		   NULL, " She had even been granted the same rank as her grandfather.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1275,7 +1251,7 @@ void main()
 		   NULL, "Takano couldn't help but feel a sense of destiny for attaining the rank of Major.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s13/09/550500089", 128);
@@ -1384,5 +1360,6 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 1000, TRUE );
 
 }

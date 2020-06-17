@@ -2,7 +2,7 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	DrawScene( "File", 1000 );
+	DrawScene( "background/file", 1000 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
@@ -70,7 +70,7 @@ void main()
 
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
-	DrawScene( "Ka1", 400 );
+	DrawScene( "background/ka1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1066", 128);
@@ -82,8 +82,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Iri_majime2+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
+	DrawBustshot( 0, "sprite/iri2_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1048", 128);
@@ -107,8 +106,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def1+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1051", 128);
@@ -132,8 +130,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Majime+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_majime_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1054", 128);
@@ -215,8 +212,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_def2+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_def2_2", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1062", 128);
@@ -234,8 +230,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def1+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_def1_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1063", 128);
@@ -290,8 +285,8 @@ void main()
 		   NULL, " That'll be a plus for me.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 2, "Iri_majime+", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ka2", "maskup", 1, 0, 300 );
+	DrawBustshot(2, "sprite/iri2_majime_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1069", 128);
@@ -312,8 +307,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Majime2+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 2, "sprite/iri2_majime2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1071", 128);
@@ -336,17 +330,13 @@ void main()
 		   NULL, " In fact, even if I asked him, he wouldn't have agreed to be involved.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 400, FALSE );
 
 	DrawScene( "black", 400 );
 
 	PlayBGM( 0, "Z02_Kyousou", 120, 0 );
 
-	DrawSceneWithMask( "File", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "background/file", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この危険な試薬は、北条沙都子の脳を支配する病原体が、如何にして宿主を疑心暗鬼や錯乱に駆り立てていくかのメカニズムを解き明かす過程で作られたものだ。",
@@ -448,8 +438,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	DrawBustshotWithFiltering( 0, "Iri_majime+", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ka2", "maskup", 1, 0, 300 );
+	DrawBustshot(0, "sprite/iri2_majime_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ka1_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1073", 128);
@@ -473,25 +463,24 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_majime2+", 200, TRUE );
-	DisplayWindow();
+	ChangeBustshot( 0, "sprite/iri2_majime2_0", 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1075", 128);
 	OutputLine(NULL, "「……これだけの潤沢な資金を提供してくださるスポンサーさんには頭が上がりません。",
 		   NULL, "\"...We must thank the sponsor for giving us so much funding...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/10/vtk1_irie1076", 128);
-	OutputLine(NULL, "……これだけのお金が公費から出ているのですから…。",
-		   NULL, " ...For this much money to come from public expenses,", Line_WaitForInput);
-	PlayVoice(4, "ps3/s20/09/vtk1_takano1081", 128);
-	OutputLine(NULL, "日本という国は、私が想像しているよりずっと豊かなのかもしれませんね。」",
-		   NULL, " maybe Japan is richer than I thought.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……これだけのお金が公費から出ているのですから…。」",
+		   NULL, " ...For this much money to come from public expenses...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s20/09/vtk1_takano1081", 128);
+	OutputLine(NULL, "「日本という国は、私が想像しているよりずっと豊かなのかもしれませんね。",
+		   NULL, "\"Maybe Japan is richer than I thought.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1082", 128);
-	OutputLine(NULL, "「公費は公費でも、表に出せない黒い公費でしょうけれどね。",
-		   NULL, "\"They're public expenses, but they're expenses that can't be made public.", Line_WaitForInput);
+	OutputLine(NULL, "公費は公費でも、表に出せない黒い公費でしょうけれどね。",
+		   NULL, " They're public expenses, but they're expenses that can't be made public.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s20/09/vtk1_takano1083", 128);
 	OutputLine(NULL, "くすくす…。」",
 		   NULL, " Hee hee...\"", GetGlobalFlag(GLinemodeSp));
@@ -506,7 +495,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawScene( "Sora4", 1000 );
+	DrawScene( "background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……とにかく、研究は極めて順調。",
@@ -563,6 +552,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }
