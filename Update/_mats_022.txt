@@ -4429,9 +4429,10 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	ModDrawCharacter(0, 10, "sprite/greyscale/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	ModDrawCharacter(1, 6, "sprite/greyscale/si1a_tohoho_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "background/greyscale/chika_shisetsu", "maskc", 1, 0, 300 );
+	DrawFilm( 2, 255, 255, 255, 255, 0, 0, TRUE );
+	ModDrawCharacter(0, 10, "sprite/normal/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(1, 6, "sprite/normal/si1a_tohoho_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawSceneWithMask( "background/chika_shisetsu", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "G_Operation", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鳳３</color>", NULL, "<color=#f5e6d3>Phoenix 3</color>", NULL, Line_ContinueAfterTyping); }
@@ -4455,6 +4456,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	FadeFilm( 0 , TRUE );
 	DrawScene( "background/chika_sekyurithi", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鳳４</color>", NULL, "<color=#f5e6d3>Phoenix 4</color>", NULL, Line_ContinueAfterTyping); }
@@ -6599,39 +6601,55 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
 	OutputLine(NULL, "リテ・",
 		   NULL, " Leetay", Line_Continue);
 
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
 	OutputLine(NULL, "ラトバリタ・",
 		   NULL, " Latoparita", Line_Continue);
 
-	PlaySE( 0, "s_boyoon", 128, 64 );
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
-
+	PlaySE( 0, "s_boyoon", 128, 64 );
 	OutputLine(NULL, "メイドッ！！",
-		   NULL, " Maid!!", Line_WaitForInput);
+		   NULL, " Maid!! ", GetGlobalFlag(GLinemodeSp));
 
+	DisableWindow();
+	ModSetLayerFilter(2, 140, "none");
+	DrawBustshot(2, "scene/irie_mih", 20, -20, -60, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 100, TRUE );
+	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 600, FALSE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 2*2, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100440", 128, TRUE);
 	OutputLine(NULL, "　ふおおおおおおおおおおお！！！」",
-		   NULL, " Whoooooooooahhhhhhh!!!\"", Line_Normal);
+		   NULL, "Whoooooooooahhhhhhh!!!\"", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(2, 256, "none");
 
-	DrawScene( "text/maturi_txt8", 50 );
+	DrawBustshot(3, "scene/maid", -260, -60, 100, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSprite( 4, "scene/maid", NULL, 520, 520, 100, 0, 0, -180, FALSE, FALSE, 0, 0, 21, 0, FALSE );
+	DrawSceneWithMask("scene/imagebg", "v_heart", 0, 0, 400 );
+	MoveSprite( 3, -260, 150, 100, 0, 0, 0, 20, 3000, FALSE );
+	MoveSprite( 4, 520, 310, 100, -180, 0, 0, 21, 3000, FALSE );
+	DrawBustshot(5, "text/maturi_txt8-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
 	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100441", 128, TRUE);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1300 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
-	DrawScene( "text/maturi_txt9", 50 );
+	DrawBustshot(5, "text/maturi_txt9-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 700 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
+	DrawScene( "text/maturi_txt9", 100 );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DrawScene( "text/maturi_txt10", 50 );
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
@@ -6640,7 +6658,7 @@ void main()
 	Wait( 150 );
 	// (backup) SetValidityOfInput( TRUE );
 	DrawScene( "text/maturi_txt10b", 200 );
-	Wait( 1000 );
+	Wait( 700 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "white", 400 );
 	ModDrawCharacter(2, 13, "sprite/normal/aks1_shinken_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
