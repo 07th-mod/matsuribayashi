@@ -621,8 +621,10 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	MoveBustshot( 0, NULL, 160, 0, 0, 9, 200, TRUE );
+	MoveBustshot( 0, NULL, 220, 0, 0, 9, 200, TRUE );
 	PlaySE( 0, "s_kyupiin", 128, 64 );
+	DrawSprite( 5, "scene/cutin1", "maskright", 0, 0, 0, 0, 0, -105, FALSE, FALSE, 0, 0, 25, 200, TRUE );
+	FadeBustshotWithFiltering( 5, "maskright", 0, FALSE, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、その手刀を魅音はさも問題なさそうに避けると、その手刀に手を沿え、…さっきとまるで同じ。",

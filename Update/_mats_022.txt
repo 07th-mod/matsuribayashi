@@ -3058,26 +3058,37 @@ void main()
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
-	DrawScene( "background/furiker_a", 0 );
+	DrawScene( "background/furiker_b", 50 );
 	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 2*2, TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
-	DrawScene( "background/furiker_b", 0 );
+	DrawScene( "background/furiker_a", 50 );
 	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 2*2, TRUE );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene( "background/furiker_c", 0 );
+	PlaySE( 1, "s_daidageki", 128, 64 );
+	DrawScene( "background/furiker_c", 50 );
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	DrawScene( "background/sora" , 50 );
-	EnlargeScreen( 0, 0, 64, 48, FALSE, 400, FALSE );
-	DrawScene( "white", 500 );
-
+	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, FALSE );
+	DrawScene( "background/sora" , 400 );
+	Wait( 200 );
+	ModSetLayerFilter(4, 220, "none");
+	DrawBustshot(1, "scene/drum", 0, 0, 400, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
+	PlaySE( 0, "s_z02_kyousou", 128, 64 );
+	MoveSprite( 1, 0, 0, 60, 0, 0, 0, 0, 3000, TRUE );
+	DrawBustshot(2, "background/gr1", 0, -600, -1200, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(3, 0, "portrait/normal/ama_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 15, 0, FALSE );
+	DrawBustshot(4, "scene/drum_b", 0, -80, 400, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
+	MoveSprite( 4, 0, 0, 60, 0, 0, 0, 20, 3000, TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	DrawScene( "white", 200 );
+	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 245, 40, 0, 2, 2*2, TRUE );
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_kyupiin", 128, 64 );
 	DrawScene( "background/torakku2", 400 );
+	ModSetLayerFilter(4, 256, "none");
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鳳２</color>", NULL, "<color=#f5e6d3>Phoenix 2</color>", NULL, Line_ContinueAfterTyping); }

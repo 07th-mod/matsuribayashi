@@ -6676,7 +6676,12 @@ void main()
 		   NULL, "\"...Sh... Shiiiiiiiiit!!\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	DrawBustshot(5, "background/so2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
 	PlayBGM( 1, "kaze", 120, 0 );
+	PlaySE( 0, "s_furu", 128, 64 );
+	MoveSprite( 0, 0, -40, -100, 0, 0, 0, 9, 400, FALSE );
+	MoveSprite( 5, 0, -40, -100, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　赤坂が、……初めて歩く。",
@@ -6697,6 +6702,10 @@ void main()
 		   NULL, "To be within that radius meant \"death\"!!", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	PlaySE( 0, "s_furu", 128, 64 );
+	MoveSprite( 0, 0, 0, 0, 0, 0, 0, 9, 400, FALSE );
+	MoveSprite( 5, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　小此木はそれに合わせて後ずさる…。",
