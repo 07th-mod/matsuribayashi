@@ -232,6 +232,15 @@ void FinalFragment()
 
 }
 
+void UpdateHighestChapter()
+{
+	int chapter;
+	chapter = LoadValueFromLocalWork(ChapterNumber);
+
+	if(GetGlobalFlag(GHighestChapter) < chapter)
+		SetGlobalFlag(GHighestChapter, chapter);
+}
+
 void Game()
 {
 	FadeOutBGM( 0, 1000, FALSE );
@@ -254,10 +263,14 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 0)
 	{
 		CallScript( "_mats_op" );
+		StoreValueToLocalWork( ChapterNumber, 0 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 1)
 	{
 		CallScript( "_mats_001" );
+		StoreValueToLocalWork( ChapterNumber, 1 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 2)
 	{
@@ -265,7 +278,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_01");
 
-		StoreValueToLocalWork( ChapterNumber, 1 );
+		StoreValueToLocalWork( ChapterNumber, 2 );
 		SavePoint("Ch.1 終わり", "End of Chapter 1");
 
 		CallSection("ViewTips");
@@ -275,6 +288,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 3)
 	{
 		CallScript( "_mats_003" );
+		StoreValueToLocalWork( ChapterNumber, 3 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 4)
 	{
@@ -282,7 +297,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_02");
 
-		StoreValueToLocalWork( ChapterNumber, 2 );
+		StoreValueToLocalWork( ChapterNumber, 4 );
 		SavePoint("Ch.2 終わり", "End of Chapter 2");
 
 		CallSection("ViewTips");
@@ -291,6 +306,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 5)
 	{
 		CallScript( "_mats_005" );
+		StoreValueToLocalWork( ChapterNumber, 5 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 6)
 	{
@@ -298,7 +315,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_03");
 
-		StoreValueToLocalWork( ChapterNumber, 3 );
+		StoreValueToLocalWork( ChapterNumber, 6 );
 		SavePoint("Ch.3 終わり", "End of Chapter 3");
 
 		CallSection("ViewTips");
@@ -311,7 +328,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_04");
 
-		StoreValueToLocalWork( ChapterNumber, 4 );
+		StoreValueToLocalWork( ChapterNumber, 7 );
 		SavePoint("Ch.4 終わり", "End of Chapter 4");
 
 		CallSection("ViewTips");
@@ -324,11 +341,15 @@ void Game()
 		CallSection("StartFragmentLoop"); //Fraagggggmeeeentttsssss
 
 		GetAchievement("HIGURASHI_STORY_FRAGMENTS");
+		StoreValueToLocalWork( ChapterNumber, 8 );
+		CallSection("UpdateHighestChapter");
 	}
 
 	if(LoadValueFromLocalWork(s_jump) <= 9)
 	{
 		CallScript( "_mats_009" );
+		StoreValueToLocalWork( ChapterNumber, 9 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 10)
 	{
@@ -336,7 +357,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_05");
 
-		StoreValueToLocalWork( ChapterNumber, 5 );
+		StoreValueToLocalWork( ChapterNumber, 10 );
 		SavePoint("Ch.5 終わり", "End of Chapter 5");
 
 		CallSection("ViewTips");
@@ -347,6 +368,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 11)
 	{
 		CallScript( "_mats_011" );
+		StoreValueToLocalWork( ChapterNumber, 11 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 12)
 	{
@@ -354,7 +377,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_06");
 
-		StoreValueToLocalWork( ChapterNumber, 6 );
+		StoreValueToLocalWork( ChapterNumber, 12 );
 		SavePoint("Ch.6 終わり", "End of Chapter 6");
 
 		CallSection("ViewTips");
@@ -363,6 +386,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 13)
 	{
 		CallScript( "_mats_013" );
+		StoreValueToLocalWork( ChapterNumber, 13 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 14)
 	{
@@ -370,7 +395,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_07");
 
-		StoreValueToLocalWork( ChapterNumber, 7 );
+		StoreValueToLocalWork( ChapterNumber, 14 );
 		SavePoint("Ch.7 終わり", "End of Chapter 7");
 
 		CallSection("ViewTips");
@@ -380,6 +405,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 15)
 	{
 		CallScript( "_mats_015" );
+		StoreValueToLocalWork( ChapterNumber, 15 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 16)
 	{
@@ -387,7 +414,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_08");
 
-		StoreValueToLocalWork( ChapterNumber, 8 );
+		StoreValueToLocalWork( ChapterNumber, 16 );
 		SavePoint("Ch.8 終わり", "End of Chapter 8");
 
 		CallSection("ViewTips");
@@ -396,6 +423,8 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 17)
 	{
 		CallScript( "_mats_017" );
+		StoreValueToLocalWork( ChapterNumber, 17 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 18)
 	{
@@ -403,7 +432,7 @@ void Game()
 
 		GetAchievement("HIGURASHI_STORY_EP08_09");
 
-		StoreValueToLocalWork( ChapterNumber, 9 );
+		StoreValueToLocalWork( ChapterNumber, 18 );
 		SavePoint("Ch.9 終わり", "End of Chapter 9");
 
 		CallSection("ViewTips");
@@ -412,34 +441,48 @@ void Game()
 	if(LoadValueFromLocalWork(s_jump) <= 19)
 	{
 		CallScript( "_mats_019" );
+		StoreValueToLocalWork( ChapterNumber, 19 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 20)
 	{
 		CallScript( "_mats_020" );
+		StoreValueToLocalWork( ChapterNumber, 20 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 21)
 	{
 		CallScript( "_mats_021" );
+		StoreValueToLocalWork( ChapterNumber, 21 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 22)
 	{
 		CallScript( "_mats_022" );
+		StoreValueToLocalWork( ChapterNumber, 22 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 23)
 	{
 		CallScript( "_mats_023" );
+		StoreValueToLocalWork( ChapterNumber, 23 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 24)
 	{
 		CallScript( "_mats_024" );
+		StoreValueToLocalWork( ChapterNumber, 24 );
+		CallSection("UpdateHighestChapter");
 	}
 	if(LoadValueFromLocalWork(s_jump) <= 25)
 	{
 		CallScript( "_mats_025" );
+		StoreValueToLocalWork( ChapterNumber, 25 );
+		CallSection("UpdateHighestChapter");
 	}
 
 	SetGlobalFlag( GFlag_GameClear, TRUE );
-	SetGlobalFlag( GHighestChapter, 10 );
+	SetGlobalFlag( GHighestChapter, 26 );
 	GetAchievement("HIGURASHI_STORY_EP08_ENDING");
 
 	SetGlobalFlag(GTotalTips, 52);
