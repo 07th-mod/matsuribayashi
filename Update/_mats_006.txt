@@ -1267,7 +1267,8 @@ void main()
 
 	PlayBGM( 1, "Rain", 120, 0 );
 	PlayBGM( 2, "Rain", 120, 0 );
-	ModDrawCharacter(1, 48, "sprite/night/miyo3_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 48, "sprite/miyo3_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2830,7 +2831,7 @@ void main()
 	DrawScene( "white", 100 );
 	PlayBGM( 1, "Rain", 120, 0 );
 	PlayBGM( 2, "Rain", 120, 0 );
-	ModDrawCharacter(1, 48, "sprite/night/miyo3_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 48, "sprite/miyo3_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

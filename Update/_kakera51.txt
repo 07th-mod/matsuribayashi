@@ -360,7 +360,8 @@ void main()
 	DrawScene( "background/neki1_02", 1000 );
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(2, 13, "sprite/night/aks1_shinken_", "0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacterWithFiltering(2, 13, "sprite/aks1_shinken_", "0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　繁華街の中、ふらりと曲がり角より現れたのは、…赤坂だった。",

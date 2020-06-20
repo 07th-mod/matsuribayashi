@@ -9,7 +9,8 @@ void main()
 	DrawScene( "background/kakera", 400 );
 	StopFragment(1000);
 	DrawScene( "white", 1000 );
-	ModDrawCharacter(1, 9, "sprite/night/ta3_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 9, "sprite/ta3_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawScene( "background/ymo3", 400 );
 
 	ClearMessage();
