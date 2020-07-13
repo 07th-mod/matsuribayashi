@@ -706,9 +706,10 @@ void main()
 	OutputLine(NULL, "　左の腿の血管だけでこんなにもウジ虫が溢れ出すのだ。",
 		   NULL, "So many maggots spilled out from my left thigh.", Line_WaitForInput);
 	OutputLine(NULL, "ならば右の腿の血管にだって同じくらいに詰まっているに違いない。",
-		   NULL, " My right thigh must have the same amount of maggots in its blood vessels.", Line_WaitForInput);
+		   NULL, " My right thigh must have the same amount of maggots in its blood vessels. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "いや、ふくらはぎの血管だって、",
-		   NULL, " Maybe my calves, too.", Line_ContinueAfterTyping);
+		   NULL, "Maybe my calves, too.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
