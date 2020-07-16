@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Bug report template for users to fill out
+about: If you have a bug to report, please use this template.
 title: ''
 labels: ''
 assignees: ''
@@ -17,7 +17,7 @@ assignees: ''
 
 ## Install Information
 
-**The game**: [Higurashi Ch.3]
+**The game**: You should only report Higurashi Ch.8 related issues in this repository.
 
 **The mod variant**: [Full/Voice Only/ADV]
 
@@ -37,4 +37,4 @@ assignees: ''
 
 **Attach screenshots here if applicable**
 
-If you need help locating logs or writing a bug report, see this page: https*://07th-mod.com/wiki/Higurashi/support/
+If you need help locating logs or writing a bug report, see this page: https://07th-mod.com/wiki/Higurashi/support/
