@@ -151,12 +151,14 @@ void main()
 	OutputLine(NULL, "雛見沢症候群の病原体を特定し、今後の研究計画に具体的道筋をつけることができました。",
 		   NULL, "Not only have you found the cause of the syndrome, you've also provided a clear path towards future research.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s20/08/vtk1_tomitake1008", 128, TRUE);
-	OutputLine(NULL, "以後の進捗監査がとても楽しみになります。",
-		   NULL, " We're looking forward to hearing more progress when we come again next time. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "以後の進捗監査がとても楽しみになります。」",
+		   NULL, " We're looking forward to hearing more progress when we come again next time.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>官僚</color>", NULL, "<color=#f5e6d3>Bureaucrat</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s20/00/vtk1_kanryoua1011", 128, TRUE);
-	OutputLine(NULL, "これだけの成果があれば、東京はねちっこく予算を削減しろとは言いますまい。」",
-		   NULL, "I'm sure the Tokyo office will quit bothering us about cutting your budget with these sorts of results.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「これだけの成果があれば、東京はねちっこく予算を削減しろとは言いますまい。」",
+		   NULL, "\"I'm sure the Tokyo office will quit bothering us about cutting your budget with these sorts of results.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
