@@ -6699,6 +6699,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	//This sprite flips out when first drawn, so we draw it offscreen and let it stabilize before putting it onscreen
+	ModDrawCharacter(1, 6, "sprite/si1a_warai_a1_", "2", -1240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ModDrawCharacterWithFiltering(1, 6, "sprite/si1a_warai_a1_", "2", "maskright", 7, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

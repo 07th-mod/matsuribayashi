@@ -1817,6 +1817,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacterWithFiltering(1, 4, "sprite/sa2a_odoroki_a1_", "2", "maskleft", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1868,7 +1869,6 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/so_chikafuroa", "maskleft", 1, 0, 300 );
-	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacterWithFiltering(1, 10, "sprite/iri2_majime_", "2", "maskright", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
