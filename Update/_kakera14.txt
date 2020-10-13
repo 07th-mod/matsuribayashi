@@ -273,11 +273,8 @@ void main()
 	OutputLine(NULL, "「それのどこに嘘があるというんです？",
 		   NULL, "\"Where is the lie, exactly?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1124", 128, TRUE);
-	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、",
-		   NULL, " You aren't saying Satoko-chan wasn't really asleep and she went over to the viewing platform with her parents,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1083", 128, TRUE);
-	OutputLine(NULL, "そういう意味ですか？」",
-		   NULL, " are you?\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　まさか沙都子ちゃんが、実は眠っていなくて、両親と一緒に展望台へ行ったと、そういう意味ですか？」",
+		   NULL, " You aren't saying Satoko-chan wasn't really asleep and she went over to the viewing platform with her parents, are you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();

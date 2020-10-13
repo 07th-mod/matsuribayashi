@@ -1,0 +1,105 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…ナポレオンと組んでいたら今頃シベリアはフランス領。",
+		   NULL, "...If she were to join Napoleon, Siberia would be French territory.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ヒトラーと組んでたら今頃ヨーロッパは千年王国だ！！",
+		   NULL, "If she were to join Hitler, Europe would belong to the Third Reich!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100430", 128, TRUE);
+	OutputLine(NULL, "　今までＨビデオコーナーではキワモノ扱いだったオバサンシリーズがやがては一大コーナーを築くようになるのです！！",
+		   NULL, " Up until now, older women's series were treated as a niche in porn shops, but eventually they'll occupy a huge corner!!", Line_Continue);
+	Wait( 3700 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 50, TRUE );
+	StartShakingOfWindow( 241, 40, 0, 0, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 5*2, TRUE );
+	DrawBustshot(5, "background/fure2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 500, TRUE );
+}	
+
+void dialog002()
+{
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100432", 128, TRUE);
+	OutputLine(NULL, "　それを混ぜるとなぜかメイドでなく家政婦になり、",
+		   NULL, " If you mix them together, then you get housekeepers, not maids,", Line_Continue);
+	Wait( 3000 );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 0, 4*2, FALSE );
+	OutputLine(NULL, "家政婦は見ていたシリーズになっちゃうのです！！",
+		   NULL, " and housekeepers will be the series of videos people watch!! ", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog003()
+{
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100436", 128, TRUE);
+	OutputLine(NULL, "　全世界を偉大なるメイドカチューシャが覆いし時、真のメイド王が復活する！！",
+		   NULL, " When the great maid headbands cover the entire world, the true King of Maids will revive!!", Line_Continue);
+	Wait( 3800 );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	DrawBustshot(5, "background/furiker_c", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 50, TRUE );
+	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
+	DrawBustshot(5, "background/fure2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 500, TRUE );
+	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100437", 128, TRUE);
+	OutputLine(NULL, "　ふはははお静かに、諸君はメイド王の前にいるのだ！！",
+		   NULL, "Ha ha ha ha, listen carefully, you stand before the King of Maids!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "　跪けッ！！",
+		   NULL, " Kneel!!", Line_Continue);
+	Wait( 4000 );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	StartShakingOfWindow( 241, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 241, 40, 0, 2, 3*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100438", 128, TRUE);
+	OutputLine(NULL, "　小僧から石を取り戻せッ！！！",
+		   NULL, " Take back the stone from that kid!!!", Line_Continue);
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100439", 128, TRUE);
+	OutputLine(NULL, "　困った時のおまじない、",
+		   NULL, "Here are the magic words.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1800 );
+	// (backup) SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	OutputLine(NULL, "リテ・",
+		   NULL, " Leetay", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1100 );
+	// (backup) SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_Kyupiin", 128, 64 );
+
+	OutputLine(NULL, "ラトバリタ・",
+		   NULL, " Latoparita", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1100 );
+	// (backup) SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_boyoon", 128, 64 );
+	OutputLine(NULL, "メイドッ！！",
+		   NULL, " Maid!! ", GetGlobalFlag(GLinemodeSp));
+}
