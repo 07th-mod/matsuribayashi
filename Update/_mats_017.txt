@@ -1965,9 +1965,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 0, 1000, TRUE );
 	PlaySE( 0, "s_boyoon", 128, 64 );
-	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 16, "ps3/s14/16/222200080", 128, TRUE);
@@ -2029,7 +2027,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
-	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

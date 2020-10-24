@@ -5,7 +5,6 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -73,8 +72,6 @@ void main()
 		   NULL, "I was just on a little path in the woods.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	PlayBGM( 3, "semi_r", 120, 0 );
 
@@ -105,8 +102,6 @@ void main()
 
 	FadeOutBGM( 3, 400, FALSE );
 	DrawScene( "background/ymo3_01", 400 );
-	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……だから、私は絶対に慈愛の家に辿り着かなくてはならないのだ…。",
@@ -357,7 +352,7 @@ void main()
 		   NULL, "Everything went downhill after that train accident.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "kaze", 120, 0 );
+	PlayBGM( 1, "Rain", 120, 0 );
 	DrawScene( "background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -559,7 +554,6 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 	DrawSceneWithMask( "background/mo4_04", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -815,6 +809,8 @@ void main()
 	OutputLine(NULL, "　悲しみは、いつしか怒りに変わっていた。",
 		   NULL, "My sadness was turning into anger.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 300, FALSE );
 
 	DrawScene( "scene/401b", 1000 );
 	PlayBGM( 0, "Birth_and_death", 120, 0 );
@@ -1107,11 +1103,8 @@ void main()
 	DrawScene( "white", 50 );
 	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 5*2, TRUE );
-	FadeOutBGM( 1, 2000, FALSE );
-	FadeOutBGM( 2, 2000, FALSE );
-	FadeOutBGM( 0, 2000, FALSE );
+	PlayBGM( 1, "Rain", 100, 0 );
 	DrawScene( "black", 2000 );
-	PlayBGM( 1, "kaze", 100, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600001", 128, TRUE);
@@ -1254,7 +1247,6 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さぁ、神さま。",
@@ -1265,8 +1257,6 @@ void main()
 		   NULL, " I won the bet, so save me from this misery.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacter(1, 48, "sprite/miyo3_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 1000 );
@@ -1341,6 +1331,10 @@ void main()
 	OutputLine(NULL, "……そして、どうかこのまま私を消して欲しい……。",
 		   NULL, " I wished that I could just disappear...", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 2, "Rain", 120, 0 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1582,7 +1576,6 @@ void main()
 		   NULL, "I already knew the answer to that question, but no matter what, I just had to get in there.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 2, 400, FALSE );
 	DrawScene( "black", 400 );
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
 	DrawScene( "background/ta_tel_02", 400 );
@@ -1759,7 +1752,6 @@ void main()
 		   NULL, " But I didn't have any money.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 100, FALSE );
 	DrawScene( "white", 100 );
 	PlaySE( 0, "s_suzu", 128, 64 );
 	DrawScene( "background/ta_tel_02", 400 );
@@ -1811,7 +1803,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
-	PlayBGM( 1, "rain", 120, 0 );
 	DrawScene( "background/ta_tel_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1962,7 +1953,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "white", 50 );
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
 	StartShakingOfWindow( 245, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 245, 40, 0, 2, 4*2, TRUE );
@@ -2343,6 +2334,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　向こうの電話に届いたらしい。",
@@ -2378,6 +2370,8 @@ void main()
 	OutputLine(NULL, "　そう思った時、……受話器が取られた。",
 		   NULL, "But then, someone answered.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 300, FALSE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
@@ -2830,7 +2824,6 @@ void main()
 	PlaySE( 0, "s_M_Door8k", 128, 64 );
 	DrawScene( "white", 100 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 	ModDrawCharacter(1, 48, "sprite/miyo3_komari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "background/ymo3_01", 400 );
 
@@ -3000,6 +2993,7 @@ void main()
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	FadeOutBGM( 0, 4000, FALSE );
+	PlayBGM( 1, "Rain", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
@@ -3130,7 +3124,6 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3321,7 +3314,6 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "Rain", 120, 0 );
-	PlayBGM( 2, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　両脇の職員は、私を二度と逃がさないというのを握力で示すかのように、私の両肩を握り締めていた。",
@@ -3346,8 +3338,6 @@ void main()
 		   NULL, "Scared of what I would have to go through.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　通用口を潜らされ、…私はようやく、冷たい雨から解放された。",
@@ -3420,6 +3410,7 @@ void main()
 		   NULL, "A staff member knocked on the door of the storage room, and the door opened.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 3, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3756,7 +3747,7 @@ void main()
 		   NULL, " That was far too XXXXX!!!", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "semi", 120, 0 );
 
 	DrawScene( "background/aka2", 1000 );
 

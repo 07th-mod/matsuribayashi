@@ -202,7 +202,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	PlayBGM( 0, "bellflower", 120, 0 );
+	PlayBGM( 0, "tsutaetaikoto", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ホテル受付</color>", NULL, "<color=#f5e6d3>Hotel Receptionist</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_huke1001", 128, TRUE);
@@ -1034,7 +1034,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "bellflower", 120, 0 );
+	PlayBGM( 0, "tsutaetaikoto", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私だって医者の端くれだ。",
@@ -2007,7 +2007,6 @@ void main()
 		   NULL, " XXXXXXXXXXXX.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2032,6 +2031,7 @@ void main()
 		   NULL, " ...I don't have to hear... that scary metal noise...", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/ji2_01", "maskm1", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
