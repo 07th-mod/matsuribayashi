@@ -1963,7 +1963,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120437", 128, TRUE);
 	OutputLine(NULL, "隠れていた入江先生ともうひとりの少年も彼らに保護されたそうだよ。」",
-		   NULL, " Dr. Irie and a boy he was hiding with have been put under the Bloodhounds' protection as well.\"", Line_Normal);
+		   NULL, "Dr. Irie and a boy he was hiding with have been put under the Bloodhounds' protection as well.\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(1, 4, "sprite/sa2b_warai_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
@@ -5490,8 +5490,9 @@ void main()
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-1>", Line_Continue); }
 	OutputLine(NULL, "　動けぬはずの凍った世界で、",
-		   NULL, "In the the world of frozen time, in which nobody could move,", Line_ContinueAfterTyping);
+		   NULL, "In the world of frozen time, in which nobody could move,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
