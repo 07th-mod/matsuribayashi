@@ -50,8 +50,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/ji6", 200 );
-	ModSetLayerFilter(0, 256, "none");
-	ModDrawCharacterWithFiltering(0, 8, "sprite/tomi1_shinken_", "0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 8, "sprite/tomi1_shinken_", "0", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090008", 128, TRUE);
@@ -66,7 +66,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(0, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090011", 128, TRUE);
@@ -113,7 +113,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(0, 8, "sprite/tomi1_shinken_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_shinken_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090013", 128, TRUE);
@@ -143,7 +143,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(0, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090017", 128, TRUE);
@@ -195,7 +195,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(0, 8, "sprite/tomi1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090020", 128, TRUE);
@@ -234,7 +234,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(0, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090025", 128, TRUE);
@@ -339,6 +339,7 @@ void main()
 		   NULL, " What do you mean?\"", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(0, 256, "none");
 	ModDrawCharacter(0, 8, "sprite/tomi1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/ji6", "maskup", 1, 0, 300 );
 
