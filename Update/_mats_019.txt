@@ -53,7 +53,6 @@ void main()
 		   NULL, "After the TV broadcast went off the air a little past midnight, they usually ended up playing cards.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "M_Denwa8k", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -67,6 +66,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +84,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	PlayBGM( 0, "primal-beat-of-horrow_T", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　男の形相が変わって姿勢が伸びる。",
@@ -1203,7 +1203,6 @@ void main()
 		   NULL, " They opened the door very cautiously and very quietly...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/hoteru", "maskc", 1, 0, 300 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
@@ -1222,6 +1221,7 @@ void main()
 		   NULL, "...Clearly, only one person could stay in this room.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1230,7 +1230,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "black", 200 );
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	PlayBGM( 0, "primal-beat-of-horrow_T", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "…………いない。",
@@ -1845,6 +1845,7 @@ void main()
 		   NULL, "Okonogi tried to change the subject while pretending to laugh, but all he could hear was Takano's frantic voice. He couldn't even understand what she was trying to say.", Line_Normal);
 	ClearMessage();
 
+	PlayBGM( 1, "semi", 120, 0 );
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1867,7 +1868,6 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
 	DrawSceneWithMask( "background/ke1", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "semi", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -4041,8 +4041,6 @@ void main()
 		   NULL, " Also, that would've been perfect if you'd used 'a citizen' instead of 'the demon princess'.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大高</color>", NULL, "<color=#f5e6d3>Ootaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ootaka1102", 128, TRUE);
@@ -4140,6 +4138,8 @@ void main()
 
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
+	
+	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Sonozaki Representative</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/sonop11014", 128, TRUE);
@@ -4244,6 +4244,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 

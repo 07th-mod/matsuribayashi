@@ -100,8 +100,8 @@ void main()
 		   NULL, "Actually, I probably shouldn't keep anything from her.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "Gray_2", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "Gray_2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/vtk1_irie1010", 128, TRUE);
@@ -681,7 +681,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "black", 1000 );
 
 }

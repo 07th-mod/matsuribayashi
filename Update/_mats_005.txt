@@ -919,13 +919,11 @@ void main()
 		   NULL, "Now the position of Director has been filled. Everything is set.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "yorumushi", 120, 0 );
 	DrawScene( "background/moon", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "black", 1000 );
-	FadeOutBGM( 1, 1300, FALSE );
 	PlayBGM( 0, "G_Tactics", 120, 0 );
 	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 1300 );
 
@@ -1548,7 +1546,7 @@ void main()
 		   NULL, " So I took them into the garden.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 2, "Rain", 120, 0 );
+	PlayBGM( 1, "Rain", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　宴席から聞こえてくる品のない笑い声が少し遠のいた気がした。",

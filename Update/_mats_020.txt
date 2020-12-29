@@ -672,7 +672,6 @@ void main()
 		   NULL, " Do you understand that?\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "background/aka1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -727,7 +726,6 @@ void main()
 
 	FadeOutBGM( 3, 400, FALSE );
 	DrawScene( "black", 400 );
-	PlayBGM( 0, "higurashi_utu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>Nomura</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_nomura1120", 128, TRUE);
@@ -937,6 +935,7 @@ void main()
 		   NULL, " Who deceived Takano?", Line_Normal);
 	ClearMessage();
 
+	PlayBGM( 0, "higurashi_utu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……決まってる。",
@@ -1125,7 +1124,7 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(0, 14, "sprite/oko_niyari_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/kai_jyun", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	PlayBGM( 0, "primal-beat-of-horrow_T", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>Okonogi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s13/14/ds41130081", 128, TRUE);
@@ -1245,13 +1244,13 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　小此木造園の業務車両のシャッターが次々開き、白いワゴン車が次々飛び出していく…！",
 		   NULL, "The garage doors of Okonogi Gardeners opened one after another, and the white vans sped off in a hurry.", Line_Normal);
 	ClearMessage();
-
+	
+	FadeOutBGM( 1, 300, FALSE );
 
 	DrawSceneWithMask( "background/kai_ten", "maskup", 1, 0, 300 );
 
@@ -1370,7 +1369,7 @@ void main()
 
 	FadeOutBGM( 0, 40, FALSE );
 	DrawScene( "background/si_h2", 400 );
-	PlayBGM( 0, "deadend", 120, 0 );
+	PlayBGM( 0, "G_Operation", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、どこか遠くの部屋で女性の悲鳴が聞こえた。",
@@ -1508,7 +1507,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene( "background/sora", 400 );
 	PlaySE( 0, "s_Down", 128, 64 );
-	PlayBGM( 0, "samayoi", 120, 0 );
+	PlayBGM( 0, "attack", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　窓から威勢よく飛び出し、階下に降り立つ富竹…！",
@@ -2208,6 +2207,7 @@ void main()
 		   NULL, " Irie had to do it.", Line_Normal);
 	ClearMessage();
 
+	PlayBGM( 3, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　入江は自らの勇気を振り絞ろうと、両拳を作ってぐっと握り締めたが、自らの震えに気付かされるだけだった。",
@@ -2218,6 +2218,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
 	DrawBustshot( 7, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 700, FALSE );
 	ModSetLayerFilter(0, 179, "none");
 	ModDrawCharacter(0, 12, "sprite/ha1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9*2, 1000, TRUE );
@@ -2528,8 +2529,6 @@ void main()
 		   NULL, " I'll put it up over the speaker...!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "denwa_m", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　隊員がコンソールをいじると、室内スピーカーから電話の呼び出し音が聞こえてきた。",
@@ -2598,7 +2597,8 @@ void main()
 		   NULL, " ...I guess he's sure that she's home.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "G_Tactics", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "primal-beat-of-horrow_T", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_yamaa1043", 128, TRUE);
@@ -2658,7 +2658,6 @@ void main()
 		   NULL, " Catch him!!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
@@ -2689,7 +2688,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/sinryou_soto3", 400 );
-	PlayBGM( 1, "semi", 120, 0 );
+	PlayBGM( 0, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野たちが電話に耳を澄ませている最初の３０秒で診療所を脱出できたのだ。",
@@ -2793,7 +2792,6 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "background/kuruma2", 400 );
 
 	PlayBGM( 3, "kaze", 120, 0 );
@@ -2810,8 +2808,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 3, 300, FALSE );
-	PlayBGM( 1, "samayoi", 120, 0 );
+	PlayBGM( 2, "samayoi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼らが車に飛び乗る前に、入江の車はホイルスピンしながら急発進した。",
@@ -3266,7 +3265,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	PlaySE( 0, "s_glass", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　バサバサバキバキと木立をへし折る音と、車体が潰れたりガラスが砕ける音が、斜面の下へと消えていった。",

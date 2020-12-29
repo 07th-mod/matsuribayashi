@@ -291,7 +291,7 @@ void main()
 
 	DrawScene( "black", 400 );
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "semi", 120, 0 );
 
 	DrawScene( "background/sinryou_sinsatu4", 400 );
 
@@ -345,7 +345,7 @@ void main()
 		   NULL, "...So I will never let that woman get in the way!", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 3, "kaze", 120, 0 );
+	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………心を落ち着けろ。",
@@ -969,6 +969,7 @@ void main()
 		   NULL, "My desire for revenge against God is coming together...", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 3, 300, FALSE );
 
