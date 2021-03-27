@@ -1635,6 +1635,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
 	DrawBustshot( 7, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 700, FALSE );
 	ModSetLayerFilter(1, 179, "none");
 	ModDrawCharacterWithFiltering(1, 12, "sprite/ha1_def_", "0", "maskc", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8*2, 1000, TRUE );
@@ -1697,6 +1698,7 @@ void main()
 	DisableWindow();
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 1000, FALSE );
 	FadeBustshot( 7, FALSE, 0, 0, 0, 0, 1000, TRUE );
+	ModPlayBGM( 0, "higurashi", 120, 0, 0 );
 	ModDrawCharacter(0, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -2171,7 +2173,8 @@ void main()
 		   NULL, "That would be incredible...!", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 1, 1000, FALSE, 1 );
 	DrawScene( "black", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -4122,6 +4125,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 1300, FALSE, 0 );
 	DrawBustshot( 7, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 1000, FALSE );
 	ModSetLayerFilter(0, 179, "none");
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha1_def2_", "0", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9*2, 1300, TRUE );
@@ -4151,7 +4155,7 @@ void main()
 		   NULL, " We'll have to think of something to counteract that.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1300, FALSE );
+	ModFadeOutBGM( 0, 1300, FALSE, 1 );
 	DisableWindow();
 	ModDrawCharacter(0, 12, "sprite/ha1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9*2, 200, TRUE );
 
@@ -4511,6 +4515,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 1300, FALSE, 0 );
 	DrawBustshot( 7, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 12, 1000, FALSE );
 	ModSetLayerFilter(0, 179, "none");
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha1_def_", "0", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9*2, 1300, TRUE );
@@ -4560,7 +4565,7 @@ void main()
 		   NULL, " but it's possible that she won't.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 1300, FALSE );
+	ModFadeOutBGM( 0, 1300, FALSE, 1 );
 	DisableWindow();
 	ModDrawCharacter(0, 12, "sprite/ha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9*2, 200, TRUE );
 

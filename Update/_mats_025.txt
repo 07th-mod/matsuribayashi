@@ -1425,7 +1425,9 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 400 );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
 	DrawScene( "background/y_kawa3", 1000 );
+	ModPlayBGM( 1, "yorumushi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それが終わった後、割いた布団の綿が村人に配られた。",
@@ -1545,7 +1547,8 @@ void main()
 		   NULL, " surrounded by people sending their cotton flowing down the wondrous stream.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 3000, FALSE );
+	ModFadeOutBGM( 1, 3000, FALSE, 0 );
+	ModFadeOutBGM( 0, 3000, FALSE, 1 );
 	DrawScene( "black", 10000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );

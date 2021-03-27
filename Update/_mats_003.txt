@@ -2352,6 +2352,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 1, "semi", 120, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	DrawSceneWithMask( "background/tk_yo1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小泉</color>", NULL, "<color=#f5e6d3>Koizumi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2392,8 +2393,8 @@ void main()
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
-	
-	FadeOutBGM( 0, 300, FALSE );
+
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

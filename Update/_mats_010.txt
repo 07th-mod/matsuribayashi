@@ -390,7 +390,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 	DrawSceneWithMask( "background/ke5", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>老婦人</color>", NULL, "<color=#f5e6d3>Old Woman</color>", NULL, Line_ContinueAfterTyping); }
@@ -417,6 +417,7 @@ void main()
 		   NULL, "\"Madam, I understand what you're going though.\"", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 0, "livescene", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…よくある話だった。",
@@ -631,7 +632,8 @@ void main()
 		   NULL, " You have my word.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, TRUE );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
+	ModFadeOutBGM( 1, 400, TRUE, 1 );
 	DrawScene( "background/aka2", 1000 );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
@@ -1121,8 +1123,9 @@ void main()
 	OutputLine(NULL, "にもかかわらず、たったひとつ、そこだけが記憶に引っかかった。",
 		   NULL, " However, there was one thing that caught his attention.", Line_Normal);
 	ClearMessage();
-	
-	FadeOutBGM( 0, 300, FALSE );
+
+
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
@@ -1141,6 +1144,7 @@ void main()
 		   NULL, " Clinic.\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………………。",
@@ -1594,7 +1598,8 @@ void main()
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 0, 1000, TRUE );
 	DrawSceneWithMask( "background/ke_s2", "maskright", 1, 0, 300 );
-	PlayBGM( 0, "BIGBEAR", 120, 0 );
+	ModPlayBGM( 0, "msys32", 120, 0, 0 );
+	ModPlayBGM( 0, "BIGBEAR", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_keijia1003", 128, TRUE);

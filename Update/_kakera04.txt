@@ -537,7 +537,8 @@ void main()
 	ModDrawCharacter(0, 9, "sprite/ta2_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/sinryou_matiai1", 1000 );
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1126", 128, TRUE);
@@ -717,7 +718,8 @@ void main()
 		   NULL, " In the first place, the treatment and dissection are...\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	ModPlayBGM( 1, "kaze", 120, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 1 );
 	DisableWindow();
 	ModDrawCharacter(0, 9, "sprite/ta2_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 

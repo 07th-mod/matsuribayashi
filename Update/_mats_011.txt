@@ -1955,7 +1955,7 @@ void main()
 		   NULL, "...don't they?\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "higurashi", 120, 0 );
+	ModPlayBGM( 0, "higurashi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070044", 128, TRUE);
@@ -1968,6 +1968,7 @@ void main()
 		   NULL, "Suddenly Hanyuu moaned as if suffocating.", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 0, "higurashi", 120, 0, 0 );
 	ModDrawCharacter(2, 5, "sprite/ri1_majime_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/m_hi4", "maskup", 1, 0, 300 );
 
@@ -2058,6 +2059,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha3a_yowaki_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 1300, TRUE );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
@@ -2133,6 +2135,7 @@ void main()
 
 
 	DisableWindow();
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlayBGM( 3, "kaze", 120, 0 );
 	ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
@@ -2163,8 +2166,8 @@ void main()
 		   NULL, "Hanyuu stood straight up and grabbed Rika-chan's collar.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
+	ModFadeOutBGM( 0, 0, FALSE, 1 );
+	ModFadeOutBGM( 1, 0, FALSE, 1 );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawScene( "black", 50 );
 
