@@ -115,6 +115,7 @@ void main()
 		   NULL, " hah...!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鶯１</color>", NULL, "<color=#f5e6d3>Nightingale 1</color>", NULL, Line_ContinueAfterTyping); }
@@ -157,6 +158,7 @@ void main()
 		   NULL, " And he was next!!", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
 	PlayBGM( 3, "kaze", 120, 0 );
 
@@ -211,8 +213,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/mo2", "maskright", 7, 0, 300 );
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 3, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1120,7 +1122,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
-	PlayBGM( 3, "semi", 120, 0 );
+	ModPlayBGM( 3, "semi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鶯１</color>", NULL, "<color=#f5e6d3>Nightingale 1</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/ugu0111019", 128, TRUE);
@@ -1283,7 +1285,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 3, 300, FALSE );
+	ModFadeOutBGM( 3, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鶯１</color>", NULL, "<color=#f5e6d3>Nightingale 1</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/ugu0111022", 128, TRUE);
@@ -1813,7 +1815,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
+	ModPlayBGM( 2, "semi", 120, 0, 1 );
 	DrawSceneWithMask( "background/hi_scroll", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>白鷺２０</color>", NULL, "<color=#f5e6d3>Heron 20</color>", NULL, Line_ContinueAfterTyping); }
@@ -1851,6 +1854,7 @@ void main()
 		   NULL, "...In that case was a powerful anti-tank weapon, designated RPG-7.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
@@ -1894,6 +1898,7 @@ void main()
 
 	FadeOutBGM( 1, 400, FALSE );
 	DrawScene( "background/hi_scroll", 400 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼らはワゴン車の中に待機し、不審車両が来たら車を道路の真ん中に出して封鎖。",
@@ -1980,8 +1985,10 @@ void main()
 		   NULL, " Of course they'd be getting hungry.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 0, "primal-beat-of-horrow_T", 120, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
+	ModPlayBGM( 0, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、…雛見沢方向から車の爆音が聞こえてくる。",
@@ -2608,6 +2615,7 @@ void main()
 		   NULL, "\"Yeah, I'll leave it to you!!\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask( "background/kuruma6", "maskright", 7, 0, 300 );
 
 	PlayBGM( 3, "semi", 120, 0 );
@@ -2835,7 +2843,7 @@ void main()
 		   NULL, "Tomitake started to aim for the driver's seat to pressure them to give up.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 3, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

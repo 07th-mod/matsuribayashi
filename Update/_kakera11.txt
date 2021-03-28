@@ -4,7 +4,8 @@ void main()
 
 	DrawSceneWithMask( "background/heya6", "maskup", 1, 0, 1300 );
 
-	PlayBGM( 1, "semi", 120, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 1 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -334,7 +335,8 @@ void main()
 		   NULL, " You're misunderstanding us.\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 120, 0 );
+	ModPlayBGM( 1, "kaze", 120, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　少しだけぎょっとする。",

@@ -1233,7 +1233,7 @@ void main()
 	OutputLine(NULL, "…破られる！！",
 		   NULL, " was suddenly brought to an end!!", Line_ContinueAfterTyping);
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	OutputLineAll(NULL, "", Line_Normal);
@@ -1407,8 +1407,8 @@ void main()
 	OutputLine(NULL, "富竹さんが呼んでくれた番犬部隊だ！！",
 		   NULL, " The Bloodhounds that Tomitake had called in!!", Line_Normal);
 	ClearMessage();
-	
-	FadeOutBGM( 2, 300, FALSE );
+
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　小此木は我に帰ると山狗たちのところへ駆け戻る。",
@@ -1481,6 +1481,7 @@ void main()
 		   NULL, "...They were armed more heavily, and the guns they had were much larger. Such things clearly differentiated the two units.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	ModSetLayerFilter(2, 256, "night");
 	ModDrawCharacter(2, 4, "sprite/sa2a_odoroki_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/mo2_02", "maskup", 1, 0, 300 );
@@ -1833,7 +1834,7 @@ void main()
 		   NULL, "This was the happy ending that they had all been fighting for.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1865,6 +1866,7 @@ void main()
 		   NULL, " and that shortly after, she completely forgot about it... she could only feel a great sense of loss.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	DrawSceneWithMask( "background/koya1_02", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1923,6 +1925,7 @@ void main()
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	ModDrawCharacter(2, 13, "sprite/aks1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/mo2_02", "maskright", 1, 0, 300 );
+	ModPlayBGM( 0, "03_cele", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120431", 128, TRUE);
@@ -2091,7 +2094,8 @@ void main()
 		   NULL, " It was three times for the previous one!\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "03_cele", 120, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "03_cele", 120, 0, 1 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2138,6 +2142,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/heri_gunji_01", 1000 );
+	ModPlayBGM( 1, "Rain", 120, 0, 0 );
+	ModPlayBGM( 2, "Heri", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　１台のヘリに２０〜３０人は乗っていたのではないだろうか。",
@@ -2212,6 +2218,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 2, 1000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -3589,7 +3596,7 @@ void main()
 		   NULL, " Patrol the area, and force her out.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "background/mo3_02", "maskright", 1, 0, 300 );
 
@@ -3641,6 +3648,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/heri_gunji_01", 400 );
+	ModPlayBGM( 1, "Heri", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>番犬</color>", NULL, "<color=#f5e6d3>Bloodhound</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s13/00/vt4a_ldog1005", 128, TRUE);
@@ -3668,6 +3676,7 @@ void main()
 		   NULL, "The helicopter above my head is calling out my name...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3859,7 +3868,11 @@ void main()
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	DisableWindow();
+	ModFadeOutBGM( 0, 2000, FALSE, 0 );
+	ModFadeOutBGM( 1, 2000, FALSE, 0 );
+	ModFadeOutBGM( 3, 2000, FALSE, 0 );
 	Wait( 5000 );
+	ModPlayBGM( 1, "Rain", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　泣きじゃくる鷹野の前に、…………いつからいたのか。",
@@ -3901,8 +3914,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 3, 300, FALSE );
+	ModFadeOutBGM( 1, 200, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
+	ModFadeOutBGM( 3, 300, FALSE, 1 );
 	ModDrawCharacter(0, 12, "sprite/ha1_muhyou_", "0", -40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
 
@@ -5445,7 +5459,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "Soul_scour", 120, 0 );
+	ModPlayBGM( 0, "Soul_scour", 120, 0, 1 );
 	PlaySE( 0, "s_suzu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5470,9 +5484,11 @@ void main()
 	OutputLine(NULL, "……最善なんだ………。",
 		   NULL, " how it's supposed to be.", Line_Normal);
 	ClearMessage();
-	
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "sora-yume-", 120, 0 );
+
+	ModPlayBGM( 0, "Soul_scour", 120, 0, 0 );
+
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	ModPlayBGM( 1, "sora-yume-", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、",
@@ -6037,7 +6053,8 @@ void main()
 		   NULL, " begging them in tears not to step on her precious papers...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
@@ -6470,6 +6487,7 @@ void main()
 	DisableWindow();
 	Wait( 2000 );
 	DrawSceneWithMask( "background/mo1", "maskup", 1, 0, 300 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……やがて、…鷹野は手錠で拘束され、入江機関へ連行された。",
@@ -6564,6 +6582,7 @@ void main()
 		   NULL, "It was almost time for the Watanagashi festival.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 2000, FALSE, 0 );
 	DrawScene( "black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6746,6 +6765,7 @@ void main()
 		   NULL, " This miracle is more than enough...\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -6791,7 +6811,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/hi1", 400 );
-	FadeOutBGM( 0, 400, FALSE );
+	ModFadeOutBGM( 0, 400, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050554", 128, TRUE);

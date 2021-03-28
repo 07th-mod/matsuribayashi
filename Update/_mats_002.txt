@@ -1190,7 +1190,8 @@ void main()
 		   NULL, "Eriko tried to open the lock several times without success, but I got it open on the first attempt.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "Rain", 120, 0 );
+	ModPlayBGM( 1, "kaze", 120, 0, 0 );
+	ModPlayBGM( 1, "Rain", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　裏口の扉がゆっくりと開くと、",
@@ -1415,7 +1416,9 @@ void main()
 		   NULL, " Its pinky finger slipped into my open mouth.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawScene( "white", 100 );
+	ModPlayBGM( 2, "semi_r", 120, 0, 0 );
 	DrawScene( "background/ymo2_01", 50 );
 	PlaySE( 0, "wa_003", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
@@ -1435,8 +1438,8 @@ void main()
 	OutputLine(NULL, "その瞬間、職員の表情が目に入った。",
 		   NULL, " and then I saw his face.", Line_Normal);
 	ClearMessage();
-	
-	PlayBGM( 2, "semi_r", 120, 0 );
+
+	ModPlayBGM( 2, "semi_r", 120, 0, 1 );
 
 	DisableWindow();
 	PlaySE( 0, "s_jikuu", 128, 64 );
@@ -1477,7 +1480,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
-	FadeOutBGM( 1, 200, FALSE );
+	ModFadeOutBGM( 1, 200, FALSE, 1 );
 	FadeOutBGM( 2, 200, FALSE );
 	DrawScene( "black", 200 );
 	DrawScene( "background/ymo3_01", 50 );
@@ -1502,7 +1505,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "Rain", 120, 0 );
+	ModPlayBGM( 1, "Rain", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　口の中いっぱいに生暖かい気持ち悪いのが広がる。",
@@ -1518,9 +1521,10 @@ void main()
 	OutputLine(NULL, "　私はそれをブゥ！っと吐き捨てると、小指を押さえて転げまわる職員に、今度こそ振り返りもせず背を向けて駆け出した。",
 		   NULL, "I spit it from my mouth and ran without turning around, leaving behind the staff member clutching his pinky finger.", Line_Normal);
 	ClearMessage();
-	
-	PlayBGM( 2, "semi_r", 120, 0 );
 
+	ModPlayBGM( 2, "semi_r", 120, 0, 1 );
+
+	ModPlayBGM( 1, "Rain", 120, 0, 0 );
 	DrawSceneWithMask( "white", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
@@ -1586,9 +1590,11 @@ void main()
 	DrawSceneWithMask( "background/ymo3_01", "maskc", 1, 0, 300 );
 	Wait( 800 );
 	PlaySE( 0, "s_furu", 128, 64 );
+	ModFadeOutBGM( 1, 2000, FALSE, 0 );
 	DrawScene( "black", 1000 );
 	FadeFilm( 1000, TRUE );
 	Wait( 800 );
+	ModPlayBGM( 1, "kaze", 120, 0, 0 );
 	DrawScene( "background/mo4_04", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -1650,7 +1656,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	Negative( 50 , TRUE );
 	StartShakingOfWindow( 245, 40, 0, 2, 2*2, FALSE );
@@ -1905,7 +1911,8 @@ void main()
 		   NULL, " whew...\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "tsutaetaikoto", 120, 0 );
+	ModPlayBGM( 0, "msys06", 120, 0, 0 );
+	ModPlayBGM( 0, "tsutaetaikoto", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分らしくもなく緊張しているのかもしれない。",

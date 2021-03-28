@@ -2218,8 +2218,10 @@ void main()
 		   NULL, " We don't want to win by using you as a sacrifice.\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	ModDrawCharacter(2, 12, "sprite/ha2a_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/ima1", 1000 );
+	ModPlayBGM( 0, "higurashi", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰も言葉が掛けられない沈黙を、羽入がやさしく破った。",
@@ -2245,7 +2247,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 200, FALSE, 0 );
 	ModDrawCharacter(2, 12, "sprite/ha2a_warai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModPlayBGM( 0, "b11_rika", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070295", 128, TRUE);

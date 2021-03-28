@@ -2,7 +2,8 @@ void main()
 {
 	DrawScene( "black", 400 );
 
-	PlayBGM( 0, "Liberating", 120, 0 );
+	ModPlayBGM( 1, "semi", 120, 0, 0 );
+	ModPlayBGM( 0, "Liberating", 120, 0, 1 );
 	DrawScene( "white", 1000 );
 	DrawSceneWithMask( "background/hu_ima", "maskm1", 1, 0, 1300 );
 
@@ -101,7 +102,9 @@ void main()
 		   NULL, " If he asked a waitress, she'd bring one for him.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene( "black", 400 );
+	ModPlayBGM( 0, "Liberating", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その日、……鉄道のダイヤはちょっとした信号事故で、乱れていた。",
@@ -430,7 +433,9 @@ void main()
 		   NULL, "The girl was going to the mall with her family.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
 	DrawScene( "background/basu_soukou", 1000 );
+	ModPlayBGM( 1, "mati", 120, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、家族３人で駅へ行って、",
@@ -592,7 +597,8 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "white", 3000 );
-	FadeOutBGM( 0, 400, FALSE );
+	ModFadeOutBGM( 1, 3000, FALSE, 0 );
+	ModFadeOutBGM( 0, 400, FALSE, 1 );
 	DrawScene( "black", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );

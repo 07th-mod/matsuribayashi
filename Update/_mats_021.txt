@@ -516,6 +516,7 @@ void main()
 		   NULL, " ...But Irie still tried to run as far as he could.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>山狗</color>", NULL, "<color=#f5e6d3>Mountain Dog</color>", NULL, Line_ContinueAfterTyping); }
@@ -543,7 +544,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	FadeOutBGM( 0, 2000, FALSE );
+	ModFadeOutBGM( 0, 2000, FALSE, 1 );
 	FadeOutBGM( 1, 2000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -1451,6 +1452,7 @@ void main()
 		   NULL, " Then she asked Shion a question.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	ModDrawCharacter(2, 3, "sprite/me2_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/so1", "maskup", 1, 0, 300 );
 	PlayBGM( 1, "semi_r", 120, 0 );
@@ -1483,9 +1485,10 @@ void main()
 		   NULL, " I have a bad feeling.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 2, "primal-beat-of-horrow_T", 120, 0 );
+	ModPlayBGM( 0, "G_Tactics", 120, 0, 0 );
+	ModPlayBGM( 2, "primal-beat-of-horrow_T", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　車が近付いてくる音が聞こえてくる。",
@@ -1798,8 +1801,9 @@ void main()
 	OutputLine(NULL, "　重い扉も、この人数が力を合わせれば軽々だった。",
 		   NULL, "It was a heavy door, but when they put their strength together, it closed easily.", Line_WaitForInput);
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
 	OutputLine(NULL, "魅音は素早く鍵を掛け、さらに重そうなかんぬきも掛けた。",
@@ -3693,6 +3697,7 @@ void main()
 		   NULL, "Get going!!!\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	PlayBGM( 3, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3730,7 +3735,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 0, 200, FALSE );
-	FadeOutBGM( 1, 200, FALSE );
+	ModFadeOutBGM( 1, 200, FALSE, 1 );
 	FadeOutBGM( 3, 200, FALSE );
 	DrawScene( "white", 200 );
 	PlayBGM( 0, "Typewriter", 120, 0 );
@@ -5303,6 +5308,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5367,7 +5373,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
-	PlayBGM( 3, "Semi", 120, 0 );
+	ModPlayBGM( 3, "Semi", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　隊員のひとりが、ケースから注射器を取り出す。",
@@ -5481,9 +5487,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 0, 3000, FALSE );
+	ModFadeOutBGM( 0, 3000, FALSE, 1 );
 	FadeOutBGM( 1, 3000, FALSE );
-	FadeOutBGM( 3, 3000, FALSE );
+	ModFadeOutBGM( 3, 3000, FALSE, 1 );
 	FadeFilm( 4400, FALSE );
 	DrawScene( "black", 3000 );
 
@@ -5530,8 +5536,9 @@ void main()
 	ClearMessage();
 
 	DrawScene( "text/maturi_txt1", 100 );
+	ModPlayBGM( 0, "suzu", 120, 0, 0 );
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120347", 128, TRUE);
-	PlayBGM( 0, "demo_long", 120, 0 );
+	ModPlayBGM( 0, "demo_long", 120, 0, 1 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
@@ -5619,6 +5626,7 @@ void main()
 		   NULL, " But...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s13/13/ds41120350", 128, TRUE);
@@ -5666,6 +5674,7 @@ void main()
 
 	ModDrawCharacter(0, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "background/so3", 400 );
+	ModPlayBGM( 0, "demo_long", 120, 0, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -7383,7 +7392,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "amber", 120, 0 );
+	ModPlayBGM( 0, "iru", 120, 0, 0 );
+	ModPlayBGM( 0, "amber", 120, 0, 1 );
 	ModDrawCharacter(0, 10, "sprite/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "background/so_chikafuroa", "maskup", 1, 0, 300 );
 

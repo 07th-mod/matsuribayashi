@@ -1658,6 +1658,7 @@ void main()
 		   NULL, "Rattle, rattle, crash!", Line_Normal);
 
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まるでたらいがいくつも落ちてくるような賑やかな音が遠くで聞こえた。",
@@ -1673,7 +1674,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "background/hu_r1", "maskup", 1, 0, 300 );
-	PlayBGM( 1, "semi_r", 120, 0 );
+	ModPlayBGM( 0, "semi_r", 120, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女が昨夜教えてくれたトラップ地図によると、盗聴のための小屋に近付くとかなり賑やかな音をさせるトラップが発動すると描かれている。",
@@ -1747,8 +1749,9 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 2, "M_Denwa8k", 120, 0 );
+	ModPlayBGM( 1, "M_Denwa8k", 120, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
+	ModPlayBGM( 2, "M_Denwa8k", 120, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すると突然、電話が鳴った。",
@@ -1785,7 +1788,8 @@ void main()
 		   NULL, " which convinced me that it was indeed a call from the Mountain Dogs.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　電話で駄目なら、恐らく次は訪問だろう。",
