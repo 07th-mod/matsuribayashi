@@ -2052,12 +2052,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100051", 128, TRUE);
-	OutputLine(NULL, "「お父さん、",
-		   NULL, "\"Daddy,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100052", 128, TRUE);
-	OutputLine(NULL, "お父さんお父さんお父さん！！！」",
-		   NULL, " Daddy, Daddy, Daddy, Daddy!!!\"", Line_Normal);
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100051_org", 128, TRUE);
+	OutputLine(NULL, "「お父さん、お父さんお父さんお父さん！！！」",
+		   NULL, "\"Daddy, Daddy, Daddy, Daddy, Daddy!!!\"", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -2508,12 +2505,9 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100105", 128, TRUE);
-	OutputLine(NULL, "「あの、",
-		   NULL, "\"Uh...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100106", 128, TRUE);
-	OutputLine(NULL, "私の父に高野先生に電話しろって言われたんです。",
-		   NULL, " My father told me to get in touch with you.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100105_org", 128, TRUE);
+	OutputLine(NULL, "「あの、私の父に高野先生に電話しろって言われたんです。",
+		   NULL, "\"Uh... My father told me to get in touch with you.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100107", 128, TRUE);
 	OutputLine(NULL, "父は、田無武光と言います。」",
 		   NULL, " His name is Takemitsu Tanashi.\"", GetGlobalFlag(GLinemodeSp));
@@ -2626,24 +2620,15 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>一二三</color>", NULL, "<color=#f5e6d3>Hifumi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200102", 128, TRUE);
-	OutputLine(NULL, "「それで、",
-		   NULL, "\"So,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s13/00/550200103", 128, TRUE);
-	OutputLine(NULL, "田無くんは私に何と…？」",
-		   NULL, " what did Tanashi-kun want to tell me?\"", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 0, "org/s13/00/550200102_org", 128, TRUE);
+	OutputLine(NULL, "「それで、田無くんは私に何と…？」",
+		   NULL, "\"So, what did Tanashi-kun want to tell me?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100113", 128, TRUE);
-	OutputLine(NULL, "「あの、",
-		   NULL, "\"Ah...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100114", 128, TRUE);
-	OutputLine(NULL, "…えっと、",
-		   NULL, " well...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100115", 128, TRUE);
-	OutputLine(NULL, "……、」",
-		   NULL, "......\"", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100113_org", 128, TRUE);
+	OutputLine(NULL, "「あの、…えっと、……、」",
+		   NULL, "\"Ah... well.........\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3838,12 +3823,16 @@ void main()
 	FadeFilm( 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>職員</color>", NULL, "<color=#f5e6d3>Staff Member</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/shokuin7002", 128, TRUE);
 	OutputLine(NULL, "「田無。",
 		   NULL, "\"Tanashi,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/shokuin7003", 128, TRUE);
 	OutputLine(NULL, "これは施設のルールを守らない悪い子へのお仕置きなんだからな？",
 		   NULL, " this is your punishment for breaking the rules, okay?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/shokuin7004", 128, TRUE);
 	OutputLine(NULL, "　みんなちゃんとルールに沿って生活してる。",
 		   NULL, " Everyone must follow the rules.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/shokuin7005", 128, TRUE);
 	OutputLine(NULL, "それを守らなかったらお仕置きを受けなきゃならないのが法治国家のルールなんだからな…？」",
 		   NULL, " If you don't, you get punished. Do you understand?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

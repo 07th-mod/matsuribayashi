@@ -286,11 +286,13 @@ void main()
 	ModDrawCharacterWithFiltering(1, 3, "sprite/me1a_tokui_a1_", "2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030077", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion7005", 128, TRUE);
 	OutputLine(NULL, "「そうそう！",
 		   NULL, "\"Yeah!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion7006", 128, TRUE);
 	OutputLine(NULL, "　圭ちゃんなんか股間に角が生えてるしねぇ？",
 		   NULL, " Kei-chan even has a horn between his legs, don't you?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion7007", 128, TRUE);
 	OutputLine(NULL, "　硬くて反り返ったのが、",
 		   NULL, " Though it's hard and curves backw--", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -305,6 +307,7 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 400, TRUE );
 
+	ModPlayVoiceLS(4, 3, "org/mion7008", 128, TRUE);
 	OutputLine(NULL, "ぐえッ？！」",
 		   NULL, " Bwuh?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -313,9 +316,10 @@ void main()
 	ModDrawCharacter(0, 2, "sprite/re1a_hau_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s13/02/ds41020079", 128, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena7000", 128, TRUE);
 	OutputLine(NULL, "「は、はぅ！！",
 		   NULL, "\"H-Hau!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "org/rena7001", 128, TRUE);
 	OutputLine(NULL, "　股間の角って何だろ、何だろ…！」",
 		   NULL, " What kind of horn is between his legs? What kind?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

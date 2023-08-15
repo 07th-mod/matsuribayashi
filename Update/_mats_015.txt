@@ -661,17 +661,17 @@ void main()
 	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080050", 128, TRUE);
 	OutputLine(NULL, "それで施設に引き取られて、……くす、それがもう本当に劣悪な施設でして。",
 		   NULL, " So I was sent to an orphanage. It was a horrible place.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano7010", 128, TRUE);
 	OutputLine(NULL, "あの頃、戦災孤児ってまだまだいたでしょう？",
 		   NULL, " You remember how there was a flood of war orphans back then? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano7011", 128, TRUE);
 	OutputLine(NULL, "　そういうのを集めて補助金だけをせしめるのを目的にしたような本当にひどい施設で。",
 		   NULL, "I was in a truly awful orphanage built solely to gather up those children and bring in government subsidies.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080053", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7012", 128, TRUE);
 	OutputLine(NULL, "そこを脱走した時に助けてくれたのが、…祖父、",
-		   NULL, " When I escaped from there, I was rescued by my grandfather,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " When I escaped from there, I was rescued by my grandfather,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano7013", 128, TRUE);
 	OutputLine(NULL, "…高野先生でしたの。」",
 		   NULL, " Dr. Takano.\"", Line_Normal);
 	ClearMessage();
@@ -689,10 +689,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080054", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7014", 128, TRUE);
 	OutputLine(NULL, "「……まぁ、大人の事情ですわ。",
 		   NULL, "\"...Well, political reasons.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080055", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7015", 128, TRUE);
 	OutputLine(NULL, "奇病研究のために予算を求めるのと、死んだおじいちゃんの研究のために予算を求めるのでは、少々事情が変わってきますから。」",
 		   NULL, " It's one thing to request funding for research on a mysterious disease, but it's another thing to request it for a research project of my late grandpa's.\"", Line_Normal);
 	ClearMessage();

@@ -240,14 +240,11 @@ void main()
 	DisableWindow();
 	ModDrawCharacter(2, 4, "sprite/sa2a_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
-	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "org/satoko7800", 128, TRUE);
 	OutputLine(NULL, "「………………",
-		   NULL, "\".........", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	SetSpeedOfMessage( FALSE, 0 );
+		   NULL, "\".........", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "org/satoko7801", 128, TRUE);
 	OutputLine(NULL, "私に灰皿を投げつけましたわ。」",
 		   NULL, " He threw an ashtray at me.\"", Line_Normal);
 	ClearMessage();
@@ -265,13 +262,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "org/satoko7802", 128, TRUE);
 	OutputLine(NULL, "「…私をベランダに追い出して鍵をしましたわ。",
 		   NULL, "\"He locked me out on the veranda.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "org/satoko7803", 128, TRUE);
 	OutputLine(NULL, "お昼ご飯を抜きにされましたわ。",
 		   NULL, " He didn't feed me lunch.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "org/satoko7804", 128, TRUE);
 	OutputLine(NULL, "煙草の種類が違うと言われましたわ、好き嫌いは駄目だってほっぺたを叩かれましたわ！",
 		   NULL, " He complained I got him the wrong brand of cigarettes, then he slapped my face saying I shouldn't be a picky eater!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1014", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko7805", 128, TRUE);
 	OutputLine(NULL, "　それからそれから…！！」",
 		   NULL, " And then...!!\"", Line_Normal);
 	ClearMessage();
@@ -430,10 +430,10 @@ void main()
 	ModDrawCharacter(0, 4, "sprite/sa2a_hannbeso_a3_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1016", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko7806", 128, TRUE);
 	OutputLine(NULL, "「…………嘘ですわ。",
 		   NULL, "\"...That's a lie.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps3/s20/04/vtk1_satoko1017", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko7807", 128, TRUE);
 	OutputLine(NULL, "カボチャを食べるまでは食卓から逃がさないって言われて、イスにビニール紐で縛られましたわ。」",
 		   NULL, " He said I couldn't leave until I ate my pumpkin, and he tied me to the chair.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

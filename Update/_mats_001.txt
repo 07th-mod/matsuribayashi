@@ -480,12 +480,9 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efd4a3>美代子</color>", NULL, "<color=#efd4a3>Miyoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100051", 128, TRUE);
-	OutputLine(NULL, "「お父さん、",
-		   NULL, "\"Daddy,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 48, "ps3/s13/48/550100052", 128, TRUE);
-	OutputLine(NULL, "お父さんお父さんお父さん！！！」",
-		   NULL, " Daddy, Daddy, Daddy!!!\"", Line_Normal);
+	ModPlayVoiceLS(4, 48, "org/s13/48/550100051_org", 128, TRUE);
+	OutputLine(NULL, "「お父さん、お父さんお父さんお父さん！！！」",
+		   NULL, "\"Daddy, Daddy, Daddy, Daddy!!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_door", 128, 64 );

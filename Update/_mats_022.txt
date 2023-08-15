@@ -773,28 +773,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090183", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "org/tomitake7000", 128, TRUE);
 	OutputLine(NULL, "「田無美代子という少女は、……両親を失って施設に送られた。",
 		   NULL, "\"Tanashi Miyoko lost her parents... and was sent to an orphanage as a little girl.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090184", 128, TRUE);
+	ModPlayVoiceLS(4, 8, "org/tomitake7001", 128, TRUE);
 	OutputLine(NULL, "…………そして、そこで虐待されて死んだ、",
-		   NULL, " ......She died after being tortured.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, " ......She died after being tortured.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake7002", 128, TRUE);
 	OutputLine(NULL, "……君はそう言ったね。」",
 		   NULL, " ...That's what you said, right?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080315", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7016", 128, TRUE);
 	OutputLine(NULL, "「……えぇ、言ったわ。",
 		   NULL, "\"...Yes, I did.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080316", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7017", 128, TRUE);
 	OutputLine(NULL, "…………私は、あの日のあの金網の中に戻らなければならない。",
 		   NULL, " I'll have to go back inside of that metal fence.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s13/09/ds41080317", 128, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano7018", 128, TRUE);
 	OutputLine(NULL, "………ジロウさんは経験ある？」",
 		   NULL, " ...Have you experienced something like that, Jirou-san?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4986,16 +4983,18 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "org/irie7005", 128, TRUE);
 	OutputLine(NULL, "「た、確か、ジフェニルシアノアルシンです。",
 		   NULL, "\"I-I think it's diphenylcyanoarsine.", Line_WaitForInput);
-
+	ModPlayVoiceLS(4, 10, "org/irie7006", 128, TRUE);
 	OutputLine(NULL, "極めて高い濃度で吸えば危険ですが、命を直ちに脅かすものではありません。",
 		   NULL, " If you inhale a lot of it, it's dangerous, but it's not deadly.", Line_WaitForInput);
-
+	ModPlayVoiceLS(4, 10, "org/irie7007", 128, TRUE);
 	OutputLine(NULL, "吸入後数分で作用。",
 		   NULL, " It only takes a few seconds to take effect. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "org/irie7008", 128, TRUE);
 	OutputLine(NULL, "症状はいくつかありますが最大の特徴は約３０分間くしゃみが止まらなくなることです。」",
 		   NULL, "There are many symptoms, but the most common one is to sneeze for about thirty minutes.\"", Line_Normal);
 	ClearMessage();
