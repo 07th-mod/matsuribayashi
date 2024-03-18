@@ -561,7 +561,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+	ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE ); //ERROR_EXISTING: Priority 9 on layer 0 used here. Conflict is 36 lines away (line 600)
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -597,7 +597,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 5, "sprite/ri1_warai_a1_", "2", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri1_warai_a1_", "2", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE ); //ERROR: Priority 9 already in use 36 lines ago (line 564). Existing Layer: 0 Conflicting Layer: 1 Suggested Priority: 10
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s13/05/ds41050005", 128, TRUE);
