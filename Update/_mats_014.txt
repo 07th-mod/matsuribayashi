@@ -640,9 +640,10 @@ void main()
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090049", 128, TRUE);
 	OutputLine(NULL, "「…………………………ど、どうだろう。",
 		   NULL, "\"...............I-I don't know.", Line_WaitForInput);
-	OutputLine(NULL, "でも、今の東京のごたごたを見ていると、",
-		   NULL, " But if I think about what's going on in Tokyo...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s13/08/ds41090050", 128, TRUE);
+	OutputLine(NULL, "でも、今の東京のごたごたを見ていると、",
+		   NULL, " But if I think about what's going on in Tokyo...", Line_Continue);
+	Wait( 4000 );
 	OutputLine(NULL, "………なるほど、",
 		   NULL, " I guess...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -651,7 +652,7 @@ void main()
 	OutputLine(NULL, "…そんな恐ろしい絵を描いている連中がいたとしても、",
 		   NULL, " it is possible for some people to", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 3000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……、",
 		   NULL, "...", Line_Continue);
@@ -661,7 +662,7 @@ void main()
 	OutputLine(NULL, "…いや、",
 		   NULL, " think...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 1800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ありえるかもしれない…。」",
 		   NULL, " things like that...\"", Line_Normal);
