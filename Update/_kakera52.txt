@@ -174,6 +174,7 @@ void main()
 		   NULL, "The woman said to the girl:", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtk2_rika2082", 128, TRUE);
@@ -184,6 +185,7 @@ void main()
 		   NULL, " Or do you want to die?\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/koudou", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それだけを聞いたなら、普通の人なら、おかしな人だと訝しがるだろう。",

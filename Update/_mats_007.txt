@@ -5009,6 +5009,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/402a", 400 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Girl</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/550600005", 128, TRUE);
@@ -5068,6 +5070,8 @@ void main()
 	DrawBustshot(3, "scene/402b", 540, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
 	MoveBustshot( 3, NULL, 0, 0, 0, 20, 250, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	Wait( 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Girl</color>", NULL, Line_ContinueAfterTyping); }
@@ -5112,6 +5116,8 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 12, "sprite/ha1_muhyou_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>少女</color>", NULL, "<color=#6972c1>Girl</color>", NULL, Line_ContinueAfterTyping); }

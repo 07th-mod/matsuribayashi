@@ -5917,6 +5917,7 @@ void main()
 	DrawScene( "black", 50 );
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawBustshotWithFiltering(5, "scene/cutin2", "maskright", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "white", 150 );}
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
 	DrawScene( "black", 200 );
@@ -5956,11 +5957,13 @@ void main()
 	DrawScene( "black", 100 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawBustshotWithFiltering(5, "scene/cutin4", "maskdown", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 300, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_b", 150 );}
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 200 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawBustshotWithFiltering(5, "scene/cutin3", "maskup", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 300, TRUE );
+	if (GetGlobalFlag(GHideCG)) {DrawScene( "background/furiker_a", 150 );}
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
 	DrawScene( "black", 200 );
@@ -6890,6 +6893,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	DrawScene( "scene/405a", 300 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("black", 200 );}
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
 
@@ -6904,6 +6908,7 @@ void main()
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	FadeOutBGM( 0, 300, FALSE );
 	DrawScene( "scene/405b", 50 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/sora5", 50 );}
 	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

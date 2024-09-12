@@ -6509,7 +6509,7 @@ void main()
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
 	DrawBustshot(5, "background/fure2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 500, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
-	
+
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmats_022_vm0x_n01","dialog001");}
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmats_022_vm00_n01","dialog001");}
@@ -6591,6 +6591,7 @@ void main()
 	PlaySE( 0, "s_furu", 128, 64 );
 	Wait( 300 );
 	DrawBustshot(0, "scene/irie_mih", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 10, "sprite/iri2_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );}
 	DrawScene( "background/furiker_c", 50 );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	StartShakingOfWindow( 241, 40, 0, 2, 5*2, FALSE );

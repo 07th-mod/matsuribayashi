@@ -1837,6 +1837,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawScene( "scene/sil5", 400 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/aka1", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　蹴らないで、蹴らないで…！！",

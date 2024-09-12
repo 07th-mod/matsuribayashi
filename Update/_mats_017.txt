@@ -1079,6 +1079,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "scene/404b", "maskup", 1, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/sora2", "maskup", 1, 0, 300 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s13/11/ds41110257", 128, TRUE);
@@ -1167,6 +1168,11 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "scene/404a", "maskup", 1, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(1, 256, "sunset");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 16, "sprite/aka_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(2, 256, "sunset");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1a_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/ohaka_02", "maskup", 1, 0, 300 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s13/11/ds41110261", 128, TRUE);
@@ -1258,6 +1264,8 @@ void main()
 		   NULL, " They're nice.\"", Line_Normal);
 	ClearMessage();
 
+if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 6, "sprite/si1b_wink_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s13/06/ds41060001", 128, TRUE);

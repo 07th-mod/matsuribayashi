@@ -358,6 +358,10 @@ void main()
 	PlaySE( 0, "s_door", 128, 64 );
 	PlayBGM( 0, "air_pizz_ver2", 120, 0 );
 	DrawSceneWithMask( "scene/403a", "maskright", 7, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(1, 256, "none");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 22, "sprite/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask( "background/gk1", "maskright", 1, 0, 300 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070001", 128, TRUE);
@@ -479,6 +483,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/403b", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 12, "sprite/ha3a_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s13/12/ds41070002", 128, TRUE);

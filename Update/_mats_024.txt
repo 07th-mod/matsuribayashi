@@ -5170,6 +5170,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "scene/408a", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta5_iradachi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );}
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -5181,6 +5183,7 @@ void main()
 		   NULL, " Okay, okay, okay.", Line_Continue);
 	Wait( 2400 );
 	DrawBustshot(5, "scene/408b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 200, TRUE );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 9, "sprite/ta5_sakebi_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );}
 	OutputLine(NULL, "なら死ねッ！！！」",
 		   NULL, " Fine, die!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
