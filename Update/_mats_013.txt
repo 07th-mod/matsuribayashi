@@ -1834,8 +1834,8 @@ void main()
 	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030110", 128, TRUE);
 	OutputLine(NULL, "　あ、でね、秘密研究所の悪役はこういう設定にするの！",
 		   NULL, "Also, what about this backstory for the bad person at the secret research center? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s13/03/ds41030111", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　本当は研究をもっと続けたいんだけど、それが３年で打ち切られるって話が決まっちゃってるわけでしょ？",
 		   NULL, "She wants to keep her research going, but it's already been decided it'll end within three years, right?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
